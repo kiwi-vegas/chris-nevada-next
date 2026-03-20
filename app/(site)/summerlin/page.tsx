@@ -88,17 +88,17 @@ export default async function SummerlinPage() {
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Live MLS Data</span>
-            <h2>Browse Summerlin Listings</h2>
-            <p>Updated daily from the MLS — search homes by price, size, and style across all Summerlin villages.</p>
+            <span className="section-label">New Listings · Updated Daily</span>
+            <h2>New Summerlin Listings</h2>
+            <p>The 12 most recently listed homes in Summerlin — houses, condos, and townhomes starting at $200K.</p>
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"community":"Summerlin","state":"NV"}],"pageSize":12}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"community":"Summerlin","state":"NV"}],"numResults":12,"sortBy":"listDate","sortOrder":"desc"}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Summerlin Listings →</a>
+            <a href="https://search.nevadarealestategroup.net/" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Summerlin Listings Now →</a>
             <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
           </div>
         </div>
