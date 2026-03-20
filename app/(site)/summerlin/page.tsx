@@ -94,7 +94,7 @@ export default async function SummerlinPage() {
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"community":"Summerlin","state":"NV"}],"maxResults":12,"sortBy":"listDate","sortOrder":"desc"}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"community":"Summerlin","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc"}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
