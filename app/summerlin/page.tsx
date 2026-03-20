@@ -2,6 +2,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import SummerlinMapWrapper from '@/components/SummerlinMapWrapper'
 
 export const metadata: Metadata = {
   title: 'Summerlin Homes For Sale | Nevada Real Estate Group',
@@ -40,6 +41,45 @@ export default function SummerlinPage() {
           </div>
         </div>
       </header>
+
+      {/* MAP */}
+      <section id="map" style={{ padding: '64px 0', background: 'var(--charcoal)', borderBottom: '1px solid var(--border-dim)' }}>
+        <div className="container">
+          <div className="section-header" style={{ marginBottom: '32px' }}>
+            <span className="section-label">Location</span>
+            <h2>Where is Summerlin?</h2>
+            <p>Located along the western rim of the Las Vegas Valley — backed against the Spring Mountains and Red Rock Canyon.</p>
+          </div>
+          <div style={{
+            height: '480px',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            border: '1px solid var(--border)',
+            boxShadow: '0 24px 64px rgba(0,0,0,0.5)',
+          }}>
+            <SummerlinMapWrapper />
+          </div>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(4, 1fr)',
+            gap: '16px',
+            marginTop: '24px',
+          }}>
+            {[
+              ['~20 min', 'to the Strip', 'via Summerlin Pkwy → I-15'],
+              ['~10 min', 'to Red Rock Canyon', 'via W Charleston Blvd'],
+              ['~15 min', 'to Downtown Las Vegas', 'via US-95'],
+              ['~30 min', 'to Harry Reid Airport', 'via I-215 South'],
+            ].map(([time, label, route]) => (
+              <div key={label} style={{ background: 'var(--dark-3)', border: '1px solid var(--border-dim)', borderRadius: '6px', padding: '16px 18px' }}>
+                <div style={{ fontFamily: 'var(--font-serif)', fontSize: '20px', fontWeight: 700, color: 'var(--gold)', marginBottom: '4px' }}>{time}</div>
+                <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--white)', marginBottom: '2px' }}>{label}</div>
+                <div style={{ fontSize: '11px', color: 'var(--white-40)' }}>{route}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* LISTINGS */}
       <section id="listings">
