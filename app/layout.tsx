@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Nevada Real Estate Group | Las Vegas & Reno Homes For Sale | Chris Nevada',
@@ -17,9 +16,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <Nav />
         {children}
-        <Footer />
+        <Script id="ylopo-config" strategy="beforeInteractive">
+          {`window.YLOPO_WIDGETS = {"domain": "search.nevadarealestategroup.net"}`}
+        </Script>
+        <Script
+          src="https://search.nevadarealestategroup.net/build/js/widgets-1.0.0.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
