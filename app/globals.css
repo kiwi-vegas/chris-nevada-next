@@ -247,6 +247,7 @@ footer { background: var(--charcoal); border-top: 1px solid var(--border-dim); p
 #listings { padding: 64px 0; background: var(--charcoal); }
 .ylopo-wrap { background: #fff; border-radius: var(--radius-lg); overflow: hidden; min-height: 300px; color: #1a1a1a; }
 .ylopo-note { font-size: 12px; color: var(--white-30); text-align: center; margin-top: 20px; font-style: italic; }
+.listings-actions { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 36px; flex-wrap: wrap; }
 #overview { padding: 96px 0; background: var(--dark); }
 .overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
 .overview-text h2 { font-family: var(--font-serif); font-size: clamp(26px, 3.5vw, 40px); font-weight: 600; color: var(--white); line-height: 1.25; margin-bottom: 24px; }
