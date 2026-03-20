@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef } from 'react'
 
-const TOKEN = 'pk.eyJ1IjoidmVnYXMta2l3aSIsImEiOiJjbW15dTZqZHAwMWx0MnJxOXY2a3IwZW1mIn0.SY-_CDAwcvuhzQETeViOzg'
+const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''
 
 // Center of Summerlin
 const CENTER: [number, number] = [-115.305, 36.178]
