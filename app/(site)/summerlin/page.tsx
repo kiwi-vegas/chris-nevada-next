@@ -94,11 +94,11 @@ export default async function SummerlinPage() {
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"community":"Summerlin","state":"NV"}],"numResults":12,"sortBy":"listDate","sortOrder":"desc"}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"community":"Summerlin","state":"NV"}],"maxResults":12,"sortBy":"listDate","sortOrder":"desc"}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Summerlin Listings Now →</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=Summerlin&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Summerlin Listings Now →</a>
             <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
           </div>
         </div>
