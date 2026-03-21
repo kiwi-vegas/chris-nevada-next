@@ -112,7 +112,7 @@ export default function SouthernHighlandsPage() {
               ['~20 min', 'to the Strip', 'via I-15 N'],
               ['~15 min', 'to Harry Reid Airport', 'via I-15 N → I-215 W'],
               ['~15 min', 'to Henderson', 'via I-215 E'],
-              ['~2 hrs', 'to Los Angeles', 'via I-15 S'],
+              ['~4.5 hrs', 'to Los Angeles', 'via I-15 S'],
             ].map(([time, label, route]) => (
               <div key={label} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
@@ -133,11 +133,11 @@ export default function SouthernHighlandsPage() {
             <p>The latest homes listed in Southern Highlands — guard-gated luxury, golf course living, and executive estates from $500K.</p>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":500000,"locations":[{"city":"Southern Highlands","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":500000,"locations":[{"community":"Southern Highlands","city":"Las Vegas","state":"NV"}],"limit":12}'></div>
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Southern+Highlands&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Southern Highlands Listings →</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=Southern+Highlands&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Southern Highlands Listings →</a>
             <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
           </div>
         </div>
@@ -260,7 +260,7 @@ export default function SouthernHighlandsPage() {
                   '24-hour guard-gated security across the community and secondary gates in premium enclaves',
                   'Harry Reid Airport 15 minutes away — the best business traveler commute in Las Vegas',
                   'Community parks, walking paths, and maintained open space throughout the development',
-                  'Quick I-15 access south to Jean, Primm, and ultimately Los Angeles (2 hours)',
+                  'Quick I-15 access south to Jean, Primm, and ultimately Los Angeles (~4.5 hours)',
                   'Henderson\'s retail, dining, and arts district 15 minutes east via the 215',
                 ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
               </div>
