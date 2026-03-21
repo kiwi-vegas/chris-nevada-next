@@ -26,12 +26,11 @@ export default function HomepageListings() {
             Reno
           </button>
         </div>
-        <div className="ylopo-wrap">
-          {activeTab === 'lv' ? (
-            <div className="YLOPO_resultsWidget" data-search='{"locations":[{"city":"Las Vegas","state":"NV"}],"propertyTypes":["house","condo"],"minPrice":400000}'></div>
-          ) : (
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo"],"minPrice":400000,"locations":[{"city":"Reno","state":"NV"}]}'></div>
-          )}
+        <div style={{ display: activeTab === 'lv' ? 'block' : 'none' }} className="ylopo-wrap">
+          <div className="YLOPO_resultsWidget" data-search='{"locations":[{"city":"Las Vegas","state":"NV"}],"propertyTypes":["house","condo"],"minPrice":400000}'></div>
+        </div>
+        <div style={{ display: activeTab === 'reno' ? 'block' : 'none' }} className="ylopo-wrap">
+          <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo"],"minPrice":400000,"locations":[{"city":"Reno","state":"NV"}]}'></div>
         </div>
       </div>
     </section>
