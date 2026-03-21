@@ -67,13 +67,17 @@ export default function Nav() {
                 <div>
                   <div className="comm-col-label">Las Vegas</div>
                   <Link href="/summerlin/" style={{color:'var(--gold)'}}>Summerlin</Link>
-                  <a href="#">Centennial Hills</a>
-                  <a href="#">Henderson / Anthem</a>
-                  <a href="#">Southern Highlands</a>
-                  <a href="#">Lake Las Vegas</a>
-                  <a href="#">MacDonald Highlands</a>
-                  <a href="#">Green Valley Ranch</a>
-                  <a href="#">Mountains Edge</a>
+                  <Link href="/centennial-hills/">Centennial Hills</Link>
+                  <Link href="/henderson/">Henderson / Anthem</Link>
+                  <Link href="/southern-highlands/">Southern Highlands</Link>
+                  <Link href="/lake-las-vegas/">Lake Las Vegas</Link>
+                  <Link href="/macdonald-highlands/">MacDonald Highlands</Link>
+                  <Link href="/green-valley-ranch/">Green Valley Ranch</Link>
+                  <Link href="/mountains-edge/">Mountains Edge</Link>
+                  <Link href="/the-lakes/">The Lakes</Link>
+                  <Link href="/desert-shores/">Desert Shores</Link>
+                  <Link href="/red-rock-country-club/">Red Rock Country Club</Link>
+                  <Link href="/north-las-vegas/">North Las Vegas</Link>
                 </div>
                 <div>
                   <div className="comm-col-label">Reno</div>
@@ -88,7 +92,7 @@ export default function Nav() {
                 </div>
               </div>
             </li>
-            <li className="nav-item"><a href="https://www.nevadarealestategroup.com/blog/" className="nav-link">Blog</a></li>
+            <li className="nav-item"><Link href="/blog" className="nav-link">Blog</Link></li>
             <li className="nav-item"><a href="https://www.nevadarealestategroup.com/about/" className="nav-link">About Us</a></li>
           </ul>
 
@@ -125,8 +129,17 @@ export default function Nav() {
               {group === 'Communities' && <>
                 <div className="mob-city-label">Las Vegas</div>
                 <Link href="/summerlin/" className="mobile-nav-link" onClick={closeMobile}>Summerlin</Link>
-                <a href="#" className="mobile-nav-link" onClick={closeMobile}>Centennial Hills</a>
-                <a href="#" className="mobile-nav-link" onClick={closeMobile}>Henderson / Anthem</a>
+                <Link href="/centennial-hills/" className="mobile-nav-link" onClick={closeMobile}>Centennial Hills</Link>
+                <Link href="/henderson/" className="mobile-nav-link" onClick={closeMobile}>Henderson / Anthem</Link>
+                <Link href="/southern-highlands/" className="mobile-nav-link" onClick={closeMobile}>Southern Highlands</Link>
+                <Link href="/lake-las-vegas/" className="mobile-nav-link" onClick={closeMobile}>Lake Las Vegas</Link>
+                <Link href="/macdonald-highlands/" className="mobile-nav-link" onClick={closeMobile}>MacDonald Highlands</Link>
+                <Link href="/green-valley-ranch/" className="mobile-nav-link" onClick={closeMobile}>Green Valley Ranch</Link>
+                <Link href="/mountains-edge/" className="mobile-nav-link" onClick={closeMobile}>Mountains Edge</Link>
+                <Link href="/the-lakes/" className="mobile-nav-link" onClick={closeMobile}>The Lakes</Link>
+                <Link href="/desert-shores/" className="mobile-nav-link" onClick={closeMobile}>Desert Shores</Link>
+                <Link href="/red-rock-country-club/" className="mobile-nav-link" onClick={closeMobile}>Red Rock Country Club</Link>
+                <Link href="/north-las-vegas/" className="mobile-nav-link" onClick={closeMobile}>North Las Vegas</Link>
                 <div className="mob-city-label" style={{marginTop:'8px'}}>Reno</div>
                 <a href="#" className="mobile-nav-link" onClick={closeMobile}>Damonte Ranch</a>
                 <a href="#" className="mobile-nav-link" onClick={closeMobile}>Somersett</a>
@@ -134,7 +147,7 @@ export default function Nav() {
             </div>
           </div>
         ))}
-        <a href="https://www.nevadarealestategroup.com/blog/" className="mobile-nav-link" onClick={closeMobile}>Blog</a>
+        <Link href="/blog" className="mobile-nav-link" onClick={closeMobile}>Blog</Link>
         <a href="https://www.nevadarealestategroup.com/about/" className="mobile-nav-link" onClick={closeMobile}>About Us</a>
         <div className="mob-cta">
           <a href="tel:+17252399950" className="btn-nav">Call 725.239.9950</a>

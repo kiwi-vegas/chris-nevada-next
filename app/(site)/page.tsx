@@ -1,9 +1,40 @@
 import TrustBar from '@/components/TrustBar'
 import CommunityTabs from '@/components/CommunityTabs'
-import Image from 'next/image'
-import Link from 'next/link'
+import { getHomepage, getFeaturedReviews } from '@/sanity/queries'
 
-export default function HomePage() {
+export const revalidate = 60
+
+export default async function HomePage() {
+  const [cms, reviews] = await Promise.all([
+    getHomepage(),
+    getFeaturedReviews(),
+  ])
+
+  const heroHeadline = cms?.heroHeadline ?? "Nevada's Premier Real Estate Group"
+  const heroSubheadline = cms?.heroSubheadline ?? 'Expert agents. Local knowledge.\nFrom luxury estates to first homes — we know every community.'
+  const ctaHeadline = cms?.ctaStripHeadline ?? "Ready to Make Your Move?"
+  const ctaBody = cms?.ctaStripBody ?? "Whether you're buying your first home or selling a luxury estate — our team of 150+ Nevada specialists is ready to deliver results."
+
+  const googleReviews = reviews.filter(r => r.platform === 'google')
+  const zillowReviews = reviews.filter(r => r.platform === 'zillow')
+
+  // Fallback review content if Sanity has none yet
+  const fallbackGoogle = [
+    { reviewText: "Chris and his team went above and beyond from start to finish. We were relocating from California and they made the entire process seamless. Found our dream home in Summerlin in under two weeks.", reviewerName: "Sarah M. — Summerlin" },
+    { reviewText: "Nevada Real Estate Group sold our Henderson home in 4 days, $22,000 over asking price. Their marketing strategy and negotiation skills are next level. Highly recommend.", reviewerName: "James & Lisa T. — Henderson" },
+    { reviewText: "As a first-time buyer, I was nervous about the whole process. My agent walked me through every step and never made me feel pressured. Closed on a beautiful townhome in Green Valley Ranch.", reviewerName: "Marcus D. — Green Valley Ranch" },
+    { reviewText: "We've worked with Chris Nevada's team twice now — once buying and once selling. Both experiences were exceptional. They know the Las Vegas market better than anyone.", reviewerName: "Patricia K. — Lake Las Vegas" },
+  ]
+  const fallbackZillow = [
+    { reviewText: "Exceptional service from beginning to end. Our agent found us a home in Summerlin that wasn't even on the market yet. That kind of access and local knowledge is invaluable.", reviewerName: "Robert & Angela S. — Summerlin" },
+    { reviewText: "The team's knowledge of the Reno market is unmatched. They helped us find a home in Damonte Ranch that checked every box and came in under budget.", reviewerName: "Kevin H. — Damonte Ranch, Reno" },
+    { reviewText: "Sold my condo in 3 days. The professional photography and marketing package they put together was incredible. I've never seen a real estate team operate with this level of professionalism.", reviewerName: "Diana L. — Las Vegas" },
+    { reviewText: "Chris Nevada's team handled our complex 1031 exchange with complete expertise. They coordinated everything across two states seamlessly. Outstanding professionals.", reviewerName: "Michael & Susan F. — Investor" },
+  ]
+
+  const displayGoogle = googleReviews.length ? googleReviews.map(r => ({ reviewText: r.reviewText, reviewerName: r.reviewerName })) : fallbackGoogle
+  const displayZillow = zillowReviews.length ? zillowReviews.map(r => ({ reviewText: r.reviewText, reviewerName: r.reviewerName })) : fallbackZillow
+
   return (
     <main>
       {/* HERO */}
@@ -24,10 +55,13 @@ export default function HomePage() {
               <span className="hero-eyebrow-line" />
               <span>Las Vegas and Reno</span>
             </div>
-            <h1>Nevada&apos;s <em>Premier</em><br />Real Estate Group</h1>
+            <h1>{heroHeadline.includes("Premier") ? (
+              <>Nevada&apos;s <em>Premier</em><br />Real Estate Group</>
+            ) : heroHeadline}</h1>
             <p className="hero-sub">
-              <strong>Expert agents. Local knowledge.</strong><br />
-              From luxury estates to first homes — we know every community.
+              {heroSubheadline.split('\n').map((line, i) => (
+                <span key={i}>{i === 0 ? <strong>{line}</strong> : line}{i === 0 && <br />}</span>
+              ))}
             </p>
             <div className="hero-ctas">
               <a href="#communities" className="btn-primary">
@@ -45,7 +79,7 @@ export default function HomePage() {
       </section>
 
       {/* TRUST BAR */}
-      <TrustBar />
+      <TrustBar stats={cms?.trustStats} />
 
       {/* COMMUNITIES */}
       <CommunityTabs />
@@ -60,14 +94,14 @@ export default function HomePage() {
           </div>
           <div className="property-grid">
             {[
-              { price: '$1,240,000', addr: '2847 Quiet Sunrise Ct', city: 'Summerlin, Las Vegas NV', beds: 5, baths: 4, sqft: '4,280', days: '11 days', img: '1613977257363-707ba9348227' },
-              { price: '$875,000', addr: '9134 Marble Canyon Dr', city: 'The Ridges, Las Vegas NV', beds: 4, baths: 3, sqft: '3,190', days: '8 days', img: '1600047509807-ba8f99d2cdde' },
-              { price: '$649,000', addr: '5521 Eagle Talon Ct', city: 'Henderson / Anthem, NV', beds: 4, baths: 3, sqft: '2,640', days: '14 days', img: '1564013799019-4e83e912d666' },
-              { price: '$525,000', addr: '3318 Quiet Brook Ave', city: 'Green Valley Ranch, NV', beds: 3, baths: 2, sqft: '2,150', days: '6 days', img: '1558618666-fcd25c85cd64' },
-              { price: '$1,850,000', addr: '7742 Painted Feather Way', city: 'MacDonald Highlands, NV', beds: 6, baths: 5, sqft: '5,920', days: '19 days', img: '1512917774080-a3d80f5e9bc2' },
-              { price: '$415,000', addr: '4409 Chaparral Ridge Pl', city: 'North Las Vegas, NV', beds: 3, baths: 2, sqft: '1,890', days: '4 days', img: '1570129477492-1f17d2b9e76f' },
-              { price: '$780,000', addr: '1205 Alton Rd', city: 'Damonte Ranch, Reno NV', beds: 4, baths: 3, sqft: '3,020', days: '9 days', img: '1560518883-ce09059eeffa' },
-              { price: '$595,000', addr: '889 Caughlin Creek Rd', city: 'Caughlin Ranch, Reno NV', beds: 3, baths: 3, sqft: '2,480', days: '12 days', img: '1448630483-2f0060fb9dc8' },
+              { price: '$1,240,000', addr: '2847 Quiet Sunrise Ct', city: 'Summerlin, Las Vegas NV', beds: 5, baths: 4, sqft: '4,280', days: '11 days', img: '1613490493576-7fde63acd811' },
+              { price: '$875,000', addr: '9134 Marble Canyon Dr', city: 'The Ridges, Las Vegas NV', beds: 4, baths: 3, sqft: '3,190', days: '8 days', img: '1706808849780-7a04fbac83ef' },
+              { price: '$649,000', addr: '5521 Eagle Talon Ct', city: 'Henderson / Anthem, NV', beds: 4, baths: 3, sqft: '2,640', days: '14 days', img: '1591474200742-8e512e6f98f8' },
+              { price: '$525,000', addr: '3318 Quiet Brook Ave', city: 'Green Valley Ranch, NV', beds: 3, baths: 2, sqft: '2,150', days: '6 days', img: '1676500684456-99f21e42a6fe' },
+              { price: '$1,850,000', addr: '7742 Painted Feather Way', city: 'MacDonald Highlands, NV', beds: 6, baths: 5, sqft: '5,920', days: '19 days', img: '1711426793020-9eb590f2fc12' },
+              { price: '$415,000', addr: '4409 Chaparral Ridge Pl', city: 'North Las Vegas, NV', beds: 3, baths: 2, sqft: '1,890', days: '4 days', img: '1692133188474-8c5591e6a6a8' },
+              { price: '$780,000', addr: '1205 Alton Rd', city: 'Damonte Ranch, Reno NV', beds: 4, baths: 3, sqft: '3,020', days: '9 days', img: '1512917774080-9991f1c4c750' },
+              { price: '$595,000', addr: '889 Caughlin Creek Rd', city: 'Caughlin Ranch, Reno NV', beds: 3, baths: 3, sqft: '2,480', days: '12 days', img: '1600585154340-be6161a56a0c' },
             ].map((p, i) => (
               <div className="property-card" key={i}>
                 <div className="property-photo">
@@ -165,16 +199,11 @@ export default function HomePage() {
               <h3>Google Reviews</h3>
             </div>
             <div className="reviews-carousel" id="carousel-google">
-              {[
-                { text: "Chris and his team went above and beyond from start to finish. We were relocating from California and they made the entire process seamless. Found our dream home in Summerlin in under two weeks.", author: "Sarah M. — Summerlin" },
-                { text: "Nevada Real Estate Group sold our Henderson home in 4 days, $22,000 over asking price. Their marketing strategy and negotiation skills are next level. Highly recommend.", author: "James & Lisa T. — Henderson" },
-                { text: "As a first-time buyer, I was nervous about the whole process. My agent walked me through every step and never made me feel pressured. Closed on a beautiful townhome in Green Valley Ranch.", author: "Marcus D. — Green Valley Ranch" },
-                { text: "We've worked with Chris Nevada's team twice now — once buying and once selling. Both experiences were exceptional. They know the Las Vegas market better than anyone.", author: "Patricia K. — Lake Las Vegas" },
-              ].map((r, i) => (
+              {displayGoogle.map((r, i) => (
                 <div className="review-card" key={i}>
                   <div className="review-card-stars">★★★★★</div>
-                  <p className="review-card-text">&ldquo;{r.text}&rdquo;</p>
-                  <div className="review-card-author">— {r.author}</div>
+                  <p className="review-card-text">&ldquo;{r.reviewText}&rdquo;</p>
+                  <div className="review-card-author">— {r.reviewerName}</div>
                 </div>
               ))}
             </div>
@@ -185,16 +214,11 @@ export default function HomePage() {
               <h3>Zillow Reviews</h3>
             </div>
             <div className="reviews-carousel" id="carousel-zillow">
-              {[
-                { text: "Exceptional service from beginning to end. Our agent found us a home in Summerlin that wasn't even on the market yet. That kind of access and local knowledge is invaluable.", author: "Robert & Angela S. — Summerlin" },
-                { text: "The team's knowledge of the Reno market is unmatched. They helped us find a home in Damonte Ranch that checked every box and came in under budget.", author: "Kevin H. — Damonte Ranch, Reno" },
-                { text: "Sold my condo in 3 days. The professional photography and marketing package they put together was incredible. I've never seen a real estate team operate with this level of professionalism.", author: "Diana L. — Las Vegas" },
-                { text: "Chris Nevada's team handled our complex 1031 exchange with complete expertise. They coordinated everything across two states seamlessly. Outstanding professionals.", author: "Michael & Susan F. — Investor" },
-              ].map((r, i) => (
+              {displayZillow.map((r, i) => (
                 <div className="review-card" key={i}>
                   <div className="review-card-stars">★★★★★</div>
-                  <p className="review-card-text">&ldquo;{r.text}&rdquo;</p>
-                  <div className="review-card-author">— {r.author}</div>
+                  <p className="review-card-text">&ldquo;{r.reviewText}&rdquo;</p>
+                  <div className="review-card-author">— {r.reviewerName}</div>
                 </div>
               ))}
             </div>
@@ -206,8 +230,8 @@ export default function HomePage() {
       <section id="cta-strip">
         <div className="container">
           <span className="gold-rule" />
-          <h2>Ready to Make <em>Your Move?</em></h2>
-          <p>Whether you&apos;re buying your first home or selling a luxury estate — our team of 150+ Nevada specialists is ready to deliver results.</p>
+          <h2>{ctaHeadline.includes("Move") ? <>Ready to Make <em>Your Move?</em></> : ctaHeadline}</h2>
+          <p>{ctaBody}</p>
           <div className="cta-strip-buttons">
             <a href="tel:+17252399950" className="btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.12 2.74 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.46-.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>

@@ -256,8 +256,30 @@ footer { background: var(--charcoal); border-top: 1px solid var(--border-dim); p
 .breadcrumb-inner a { color: var(--white-50); transition: color var(--transition); }
 .breadcrumb-inner a:hover { color: var(--gold); }
 .breadcrumb-sep { color: var(--white-30); }
-#hero.summerlin-hero { position: relative; min-height: 560px; height: auto; display: flex; align-items: flex-end; overflow: hidden; }
+#hero.summerlin-hero,
+#hero.henderson-hero,
+#hero.centennial-hills-hero,
+#hero.mountains-edge-hero,
+#hero.southern-highlands-hero,
+#hero.desert-shores-hero,
+#hero.the-lakes-hero,
+#hero.red-rock-cc-hero,
+#hero.green-valley-ranch-hero,
+#hero.lake-las-vegas-hero,
+#hero.macdonald-highlands-hero,
+#hero.north-las-vegas-hero { position: relative; min-height: 560px; height: auto; display: flex; align-items: flex-end; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1600&h=700&q=80'); background-size: cover; background-position: center 40%; }
+#hero.henderson-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 50%; }
+#hero.centennial-hills-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1570126618953-d437176e8c79?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 40%; }
+#hero.mountains-edge-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 50%; }
+#hero.southern-highlands-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 40%; }
+#hero.desert-shores-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 50%; }
+#hero.the-lakes-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 45%; }
+#hero.red-rock-cc-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 40%; }
+#hero.green-valley-ranch-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 50%; }
+#hero.lake-las-vegas-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 50%; }
+#hero.macdonald-highlands-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6d349947?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 40%; }
+#hero.north-las-vegas-hero .hero-bg { background-image: url('https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=1600&h=700&q=80'); background-position: center 50%; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.6) 50%, rgba(10,10,10,0.3) 100%); }
 .hero-content.summerlin { position: relative; z-index: 2; padding: 60px 0 64px; width: 100%; }
 .hero-rule { width: 48px; height: 2px; background: var(--gold); margin-bottom: 20px; }
@@ -432,4 +454,56 @@ footer { background: var(--charcoal); border-top: 1px solid var(--border-dim); p
   .lifestyle-img { max-height: 260px; }
   footer { padding: 56px 0 32px; }
   .footer-grid { margin-bottom: 40px; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BLOG PAGES
+═══════════════════════════════════════════════════════════════ */
+
+/* ── Blog Hero ─────────────────────────────────────────────── */
+.blog-hero { padding: calc(var(--nav-h) + 56px) 0 48px; }
+.blog-hero-title { font-family: var(--font-serif); font-size: clamp(32px, 5vw, 52px); font-weight: 800; letter-spacing: -0.02em; color: var(--white); margin: 12px 0 16px; }
+.blog-hero-sub { font-size: 17px; color: var(--white-70); max-width: 560px; line-height: 1.7; }
+
+/* ── Blog Listing ──────────────────────────────────────────── */
+.blog-listing { padding: 0 0 96px; }
+.blog-empty { text-align: center; padding: 80px 0; color: var(--white-50); font-size: 16px; }
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+/* ── Blog Card ─────────────────────────────────────────────── */
+.blog-card { display: flex; flex-direction: column; background: var(--dark); border: 1px solid var(--border-dim); border-radius: var(--radius-lg); overflow: hidden; transition: border-color var(--transition), transform var(--transition); }
+.blog-card:hover { border-color: var(--border); transform: translateY(-2px); }
+.blog-card-img { position: relative; height: 200px; background: var(--dark-2); flex-shrink: 0; }
+.blog-card-placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, var(--dark-2) 0%, var(--dark-3) 100%); }
+.blog-card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+.blog-card-category { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); display: inline-block; margin-bottom: 8px; }
+.blog-card-title { font-family: var(--font-serif); font-size: 18px; font-weight: 700; line-height: 1.4; color: var(--white); margin-bottom: 8px; flex: 1; }
+.blog-card-excerpt { font-size: 13px; color: var(--white-50); line-height: 1.65; margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-card-meta { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--white-30); margin-top: auto; }
+.blog-ai-badge { background: rgba(201,168,76,0.12); color: var(--gold); font-size: 9px; font-weight: 700; letter-spacing: 0.1em; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; }
+
+/* ── Blog Post Page ────────────────────────────────────────── */
+.blog-post { padding-bottom: 96px; }
+.blog-post-hero { position: relative; height: 420px; width: 100%; margin-top: var(--nav-h); }
+.blog-post-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,15,15,0.3) 0%, rgba(15,15,15,0.7) 100%); }
+.blog-post-header { padding: 48px 0 40px; border-bottom: 1px solid var(--border-dim); margin-bottom: 48px; }
+.blog-post-title { font-family: var(--font-serif); font-size: clamp(26px, 4vw, 44px); font-weight: 800; letter-spacing: -0.02em; color: var(--white); margin: 12px 0 16px; line-height: 1.2; max-width: 800px; }
+.blog-post-meta { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--white-40); flex-wrap: wrap; margin-bottom: 16px; }
+.blog-post-sep { color: var(--white-15); }
+.blog-post-excerpt { font-size: 17px; color: var(--white-70); line-height: 1.7; max-width: 700px; }
+.blog-post-body { max-width: 720px; }
+.blog-post-body h2 { font-family: var(--font-serif); font-size: 26px; font-weight: 700; color: var(--white); margin: 40px 0 16px; }
+.blog-post-body h3 { font-family: var(--font-serif); font-size: 20px; font-weight: 600; color: var(--white); margin: 32px 0 12px; }
+.blog-post-body p { font-size: 16px; line-height: 1.8; color: var(--white-70); margin-bottom: 20px; }
+.blog-post-body blockquote { border-left: 3px solid var(--gold); padding-left: 20px; margin: 28px 0; }
+.blog-post-body blockquote p { color: var(--white-50); font-style: italic; }
+.blog-post-body a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.blog-post-footer { padding-top: 48px; border-top: 1px solid var(--border-dim); margin-top: 48px; }
+
+@media (max-width: 900px) {
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-post-hero { height: 260px; }
 }

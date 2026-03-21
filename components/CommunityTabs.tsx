@@ -3,17 +3,17 @@ import { useState, useEffect, useRef } from 'react'
 
 const LV_COMMUNITIES = [
   { name: 'Summerlin', area: 'Las Vegas, NV', href: '/summerlin/', map: 'Summerlin+Las+Vegas+NV' },
-  { name: 'Centennial Hills', area: 'Northwest Las Vegas', href: '#', map: 'Centennial+Hills+Las+Vegas+NV' },
-  { name: 'Mountains Edge', area: 'Southwest Las Vegas', href: '#', map: 'Mountains+Edge+Las+Vegas+NV' },
-  { name: 'Red Rock Country Club', area: 'Summerlin, Las Vegas', href: '#', map: 'Red+Rock+Country+Club+Las+Vegas+NV' },
-  { name: 'The Lakes', area: 'Las Vegas, NV', href: '#', map: 'The+Lakes+Las+Vegas+NV' },
-  { name: 'Southern Highlands', area: 'South Las Vegas', href: '#', map: 'Southern+Highlands+Las+Vegas+NV' },
-  { name: 'Desert Shores', area: 'Northwest Las Vegas', href: '#', map: 'Desert+Shores+Las+Vegas+NV' },
-  { name: 'Henderson / Anthem', area: 'Henderson, NV', href: '#', map: 'Anthem+Henderson+NV' },
-  { name: 'Green Valley Ranch', area: 'Henderson, NV', href: '#', map: 'Green+Valley+Ranch+Henderson+NV' },
-  { name: 'Lake Las Vegas', area: 'Henderson, NV', href: '#', map: 'Lake+Las+Vegas+Henderson+NV' },
-  { name: 'MacDonald Highlands', area: 'Henderson, NV', href: '#', map: 'MacDonald+Highlands+Henderson+NV' },
-  { name: 'North Las Vegas', area: 'North Las Vegas, NV', href: '#', map: 'North+Las+Vegas+NV' },
+  { name: 'Centennial Hills', area: 'Northwest Las Vegas', href: '/centennial-hills/', map: 'Centennial+Hills+Las+Vegas+NV' },
+  { name: 'Mountains Edge', area: 'Southwest Las Vegas', href: '/mountains-edge/', map: 'Mountains+Edge+Las+Vegas+NV' },
+  { name: 'Red Rock Country Club', area: 'Summerlin, Las Vegas', href: '/red-rock-country-club/', map: 'Red+Rock+Country+Club+Las+Vegas+NV' },
+  { name: 'The Lakes', area: 'Las Vegas, NV', href: '/the-lakes/', map: 'The+Lakes+Las+Vegas+NV' },
+  { name: 'Southern Highlands', area: 'South Las Vegas', href: '/southern-highlands/', map: 'Southern+Highlands+Las+Vegas+NV' },
+  { name: 'Desert Shores', area: 'Northwest Las Vegas', href: '/desert-shores/', map: 'Desert+Shores+Las+Vegas+NV' },
+  { name: 'Henderson / Anthem', area: 'Henderson, NV', href: '/henderson/', map: 'Anthem+Henderson+NV' },
+  { name: 'Green Valley Ranch', area: 'Henderson, NV', href: '/green-valley-ranch/', map: 'Green+Valley+Ranch+Henderson+NV' },
+  { name: 'Lake Las Vegas', area: 'Henderson, NV', href: '/lake-las-vegas/', map: 'Lake+Las+Vegas+Henderson+NV' },
+  { name: 'MacDonald Highlands', area: 'Henderson, NV', href: '/macdonald-highlands/', map: 'MacDonald+Highlands+Henderson+NV' },
+  { name: 'North Las Vegas', area: 'North Las Vegas, NV', href: '/north-las-vegas/', map: 'North+Las+Vegas+NV' },
 ]
 
 const RENO_COMMUNITIES = [

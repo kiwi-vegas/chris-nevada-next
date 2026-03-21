@@ -3,13 +3,17 @@ import Link from 'next/link'
 
 const LV_COMMUNITIES = [
   { name: 'Summerlin', href: '/summerlin/' },
-  { name: 'Centennial Hills', href: '#' },
-  { name: 'Henderson / Anthem', href: '#' },
-  { name: 'Southern Highlands', href: '#' },
-  { name: 'Lake Las Vegas', href: '#' },
-  { name: 'MacDonald Highlands', href: '#' },
-  { name: 'Green Valley Ranch', href: '#' },
-  { name: 'Mountains Edge', href: '#' },
+  { name: 'Centennial Hills', href: '/centennial-hills/' },
+  { name: 'Henderson / Anthem', href: '/henderson/' },
+  { name: 'Southern Highlands', href: '/southern-highlands/' },
+  { name: 'Lake Las Vegas', href: '/lake-las-vegas/' },
+  { name: 'MacDonald Highlands', href: '/macdonald-highlands/' },
+  { name: 'Green Valley Ranch', href: '/green-valley-ranch/' },
+  { name: 'Mountains Edge', href: '/mountains-edge/' },
+  { name: 'The Lakes', href: '/the-lakes/' },
+  { name: 'Desert Shores', href: '/desert-shores/' },
+  { name: 'Red Rock Country Club', href: '/red-rock-country-club/' },
+  { name: 'North Las Vegas', href: '/north-las-vegas/' },
 ]
 
 const RENO_COMMUNITIES = [
@@ -92,7 +96,7 @@ export default function Footer() {
             <h4 style={{ marginTop: '24px' }}>Company</h4>
             <ul>
               <li><a href="https://www.nevadarealestategroup.com/about/">About Us</a></li>
-              <li><a href="https://www.nevadarealestategroup.com/blog/">Blog</a></li>
+              <li><Link href="/blog">Blog</Link></li>
               <li><a href="tel:+17252399950">Call 725.239.9950</a></li>
             </ul>
           </div>
@@ -100,9 +104,7 @@ export default function Footer() {
             <h4>Las Vegas Communities</h4>
             <ul>
               {LV_COMMUNITIES.map(c => (
-                <li key={c.name}>
-                  {c.href === '#' ? <a href={c.href}>{c.name}</a> : <Link href={c.href}>{c.name}</Link>}
-                </li>
+                <li key={c.name}><Link href={c.href}>{c.name}</Link></li>
               ))}
             </ul>
           </div>

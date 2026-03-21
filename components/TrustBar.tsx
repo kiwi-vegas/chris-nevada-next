@@ -1,8 +1,33 @@
 'use client'
 import { useEffect, useRef } from 'react'
 
-export default function TrustBar() {
+type StatItem = { value: string; label: string; isStatic?: boolean }
+
+// Parse a value string like "$3.5B+", "5,500+", "#1", "150+" into animation params
+function parseStat(value: string) {
+  if (value.startsWith('#')) return { static: value }
+  const prefix = value.match(/^([^0-9]*)/)?.[1] ?? ''
+  const suffix = value.match(/([^0-9.]+)$/)?.[1] ?? ''
+  const numStr = value.slice(prefix.length, suffix ? value.lastIndexOf(suffix) : undefined).replace(/,/g, '')
+  const num = parseFloat(numStr)
+  if (isNaN(num)) return { static: value }
+  const decimals = numStr.includes('.') ? numStr.split('.')[1].length : 0
+  const useComma = value.includes(',')
+  return { prefix, suffix, target: num, decimals, useComma, display: value }
+}
+
+const FALLBACK_STATS: StatItem[] = [
+  { value: '#1',     label: 'Team in Nevada',    isStatic: true },
+  { value: '$3.5B+', label: 'Total Sales Volume' },
+  { value: '5,500+', label: 'Properties Sold' },
+  { value: '150+',   label: 'Team Members' },
+  { value: '2,560+', label: 'Google Reviews' },
+  { value: '3,210+', label: 'Zillow Reviews' },
+]
+
+export default function TrustBar({ stats }: { stats?: StatItem[] }) {
   const ref = useRef<HTMLElement>(null)
+  const items = stats?.length ? stats : FALLBACK_STATS
 
   useEffect(() => {
     const DURATION = 2000
@@ -23,7 +48,9 @@ export default function TrustBar() {
       const tick = (now: number) => {
         const p = Math.min((now - start) / DURATION, 1)
         const v = easeOut(p) * target
-        const fmt = decimals > 0 ? v.toFixed(decimals) : (useComma ? Math.round(v).toLocaleString('en-US') : String(Math.round(v)))
+        const fmt = decimals > 0
+          ? v.toFixed(decimals)
+          : useComma ? Math.round(v).toLocaleString('en-US') : String(Math.round(v))
         el.textContent = prefix + fmt + suffix
         if (p < 1) requestAnimationFrame(tick)
       }
@@ -34,7 +61,9 @@ export default function TrustBar() {
     if (!els) return
 
     const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) { animate(e.target as HTMLElement); observer.unobserve(e.target) } })
+      entries.forEach(e => {
+        if (e.isIntersecting) { animate(e.target as HTMLElement); observer.unobserve(e.target) }
+      })
     }, { threshold: 0.3 })
 
     els.forEach(el => observer.observe(el))
@@ -45,30 +74,30 @@ export default function TrustBar() {
     <section id="trust" ref={ref}>
       <div className="container">
         <div className="trust-grid">
-          {[
-            { static: '#1', label: 'Team in Nevada' },
-            { prefix: '$', target: '3.5', suffix: 'B+', decimals: '1', label: 'Total Sales Volume', display: '$3.5B+' },
-            { target: '5500', suffix: '+', comma: true, label: 'Properties Sold', display: '5,500+' },
-            { target: '150', suffix: '+', label: 'Team Members', display: '150+' },
-            { target: '2560', suffix: '+', comma: true, label: 'Google Reviews', display: '2,560+' },
-            { target: '3210', suffix: '+', comma: true, label: 'Zillow Reviews', display: '3,210+' },
-          ].map((item, i) => (
-            <div className="trust-item" key={i}>
-              <div
-                className="trust-num"
-                {...('static' in item ? { 'data-count-static': item.static } : {
-                  'data-count-target': item.target,
-                  ...(item.prefix ? { 'data-count-prefix': item.prefix } : {}),
-                  ...(item.suffix ? { 'data-count-suffix': item.suffix } : {}),
-                  ...(item.decimals ? { 'data-count-decimals': item.decimals } : {}),
-                  ...(item.comma ? { 'data-count-comma': '' } : {}),
-                })}
-              >
-                {'static' in item ? item.static : item.display}
+          {items.map((item, i) => {
+            const parsed = item.isStatic ? { static: item.value } : parseStat(item.value)
+            const isStatic = 'static' in parsed
+            return (
+              <div className="trust-item" key={i}>
+                <div
+                  className="trust-num"
+                  {...(isStatic
+                    ? { 'data-count-static': parsed.static }
+                    : {
+                        'data-count-target': String((parsed as any).target),
+                        ...((parsed as any).prefix ? { 'data-count-prefix': (parsed as any).prefix } : {}),
+                        ...((parsed as any).suffix ? { 'data-count-suffix': (parsed as any).suffix } : {}),
+                        ...((parsed as any).decimals ? { 'data-count-decimals': String((parsed as any).decimals) } : {}),
+                        ...((parsed as any).useComma ? { 'data-count-comma': '' } : {}),
+                      }
+                  )}
+                >
+                  {isStatic ? (parsed as any).static : (parsed as any).display}
+                </div>
+                <div className="trust-label">{item.label}</div>
               </div>
-              <div className="trust-label">{item.label}</div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
