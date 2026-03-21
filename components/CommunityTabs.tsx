@@ -17,16 +17,11 @@ const LV_COMMUNITIES = [
 ]
 
 const RENO_COMMUNITIES = [
-  { name: 'Damonte Ranch', area: 'South Reno, NV', href: '#', map: 'Damonte+Ranch+Reno+NV' },
-  { name: 'Double Diamond', area: 'South Reno, NV', href: '#', map: 'Double+Diamond+Reno+NV' },
-  { name: 'Somersett', area: 'West Reno, NV', href: '#', map: 'Somersett+Reno+NV' },
-  { name: 'Caughlin Ranch', area: 'West Reno, NV', href: '#', map: 'Caughlin+Ranch+Reno+NV' },
-  { name: 'ArrowCreek', area: 'South Reno, NV', href: '#', map: 'ArrowCreek+Reno+NV' },
-  { name: 'Spanish Springs', area: 'Sparks, NV', href: '#', map: 'Spanish+Springs+Sparks+NV' },
-  { name: 'Incline Village', area: 'Lake Tahoe, NV', href: '#', map: 'Incline+Village+Lake+Tahoe+NV' },
-  { name: 'South Reno', area: 'Reno, NV', href: '#', map: 'South+Reno+NV' },
-  { name: 'Midtown Reno', area: 'Reno, NV', href: '#', map: 'Midtown+Reno+NV' },
-  { name: 'Carson City', area: 'Carson City, NV', href: '#', map: 'Carson+City+NV' },
+  { name: 'Reno', area: 'Reno, NV', href: '/reno/', map: 'Reno+NV' },
+  { name: 'Sparks', area: 'Sparks, NV', href: '/sparks/', map: 'Sparks+NV' },
+  { name: 'Spanish Springs', area: 'Spanish Springs, NV', href: '/spanish-springs/', map: 'Spanish+Springs+NV' },
+  { name: 'Sun Valley', area: 'Sun Valley, NV', href: '/sun-valley/', map: 'Sun+Valley+NV' },
+  { name: 'Incline Village', area: 'Lake Tahoe, NV', href: '/incline-village/', map: 'Incline+Village+Lake+Tahoe+NV' },
 ]
 
 function CommunityCard({ name, area, href, map }: typeof LV_COMMUNITIES[0]) {

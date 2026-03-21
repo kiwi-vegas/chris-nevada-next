@@ -81,14 +81,11 @@ export default function Nav() {
                 </div>
                 <div>
                   <div className="comm-col-label">Reno</div>
-                  <a href="#">Damonte Ranch</a>
-                  <a href="#">Double Diamond</a>
-                  <a href="#">Somersett</a>
-                  <a href="#">Caughlin Ranch</a>
-                  <a href="#">ArrowCreek</a>
-                  <a href="#">Spanish Springs</a>
-                  <a href="#">Incline Village</a>
-                  <a href="#">South Reno</a>
+                  <Link href="/reno/">Reno</Link>
+                  <Link href="/sparks/">Sparks</Link>
+                  <Link href="/spanish-springs/">Spanish Springs</Link>
+                  <Link href="/sun-valley/">Sun Valley</Link>
+                  <Link href="/incline-village/">Incline Village</Link>
                 </div>
               </div>
             </li>
@@ -141,8 +138,11 @@ export default function Nav() {
                 <Link href="/red-rock-country-club/" className="mobile-nav-link" onClick={closeMobile}>Red Rock Country Club</Link>
                 <Link href="/north-las-vegas/" className="mobile-nav-link" onClick={closeMobile}>North Las Vegas</Link>
                 <div className="mob-city-label" style={{marginTop:'8px'}}>Reno</div>
-                <a href="#" className="mobile-nav-link" onClick={closeMobile}>Damonte Ranch</a>
-                <a href="#" className="mobile-nav-link" onClick={closeMobile}>Somersett</a>
+                <Link href="/reno/" className="mobile-nav-link" onClick={closeMobile}>Reno</Link>
+                <Link href="/sparks/" className="mobile-nav-link" onClick={closeMobile}>Sparks</Link>
+                <Link href="/spanish-springs/" className="mobile-nav-link" onClick={closeMobile}>Spanish Springs</Link>
+                <Link href="/sun-valley/" className="mobile-nav-link" onClick={closeMobile}>Sun Valley</Link>
+                <Link href="/incline-village/" className="mobile-nav-link" onClick={closeMobile}>Incline Village</Link>
               </>}
             </div>
           </div>

@@ -17,14 +17,11 @@ const LV_COMMUNITIES = [
 ]
 
 const RENO_COMMUNITIES = [
-  { name: 'Damonte Ranch', href: '#' },
-  { name: 'Double Diamond', href: '#' },
-  { name: 'Somersett', href: '#' },
-  { name: 'Caughlin Ranch', href: '#' },
-  { name: 'ArrowCreek', href: '#' },
-  { name: 'Spanish Springs', href: '#' },
-  { name: 'Incline Village', href: '#' },
-  { name: 'South Reno', href: '#' },
+  { name: 'Reno', href: '/reno/' },
+  { name: 'Sparks', href: '/sparks/' },
+  { name: 'Spanish Springs', href: '/spanish-springs/' },
+  { name: 'Sun Valley', href: '/sun-valley/' },
+  { name: 'Incline Village', href: '/incline-village/' },
 ]
 
 export default function Footer() {
@@ -112,7 +109,7 @@ export default function Footer() {
             <h4>Reno Communities</h4>
             <ul>
               {RENO_COMMUNITIES.map(c => (
-                <li key={c.name}><a href={c.href}>{c.name}</a></li>
+                <li key={c.name}><Link href={c.href}>{c.name}</Link></li>
               ))}
             </ul>
           </div>
