@@ -94,11 +94,11 @@ export default function TheLakesPage() {
             <p>The latest homes listed in The Lakes community — houses, condos, and townhomes with water views starting at $400K.</p>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":400000,"locations":[{"city":"The Lakes","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":400000,"locations":[{"community":"The Lakes","city":"Las Vegas","state":"NV"}],"limit":12}'></div>
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=The+Lakes&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All The Lakes Listings →</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=The+Lakes&s[locations][0][city]=Las+Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All The Lakes Listings →</a>
             <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
           </div>
         </div>
