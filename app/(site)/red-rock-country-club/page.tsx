@@ -94,11 +94,11 @@ export default function RedRockCountryClubPage() {
             <p>The latest homes listed at Red Rock Country Club — villas, single-family, and custom estates on and around two Arnold Palmer-designed courses.</p>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":800000,"locations":[{"community":"Red Rock Country Club","city":"Las Vegas","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":800000,"locations":[{"city":"Red Rock Country Club","state":"NV"}],"limit":12}'></div>
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=Red+Rock+Country+Club&s[locations][0][city]=Las+Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Red Rock CC Listings →</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Red+Rock+Country+Club&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Red Rock CC Listings →</a>
             <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
           </div>
         </div>

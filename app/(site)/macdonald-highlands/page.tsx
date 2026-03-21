@@ -131,11 +131,11 @@ export default function MacdonaldHighlandsPage() {
             <p>The latest luxury homes listed in MacDonald Highlands — guard-gated hillside estates, custom villas, and trophy properties from $1.5M to $15M+.</p>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":1500000,"locations":[{"community":"MacDonald Highlands","city":"Henderson","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":1500000,"locations":[{"city":"MacDonald Highlands","state":"NV"}],"limit":12}'></div>
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=MacDonald+Highlands&s[locations][0][city]=Henderson&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All MacDonald Highlands Listings →</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=MacDonald+Highlands&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All MacDonald Highlands Listings →</a>
             <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
           </div>
         </div>

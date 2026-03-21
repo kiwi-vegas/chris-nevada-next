@@ -133,11 +133,11 @@ export default function SouthernHighlandsPage() {
             <p>The latest homes listed in Southern Highlands — guard-gated luxury, golf course living, and executive estates from $500K.</p>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":500000,"locations":[{"community":"Southern Highlands","city":"Las Vegas","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":500000,"locations":[{"city":"Southern Highlands","state":"NV"}],"limit":12}'></div>
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=Southern+Highlands&s[locations][0][city]=Las+Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Southern Highlands Listings →</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Southern+Highlands&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Southern Highlands Listings →</a>
             <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
           </div>
         </div>
