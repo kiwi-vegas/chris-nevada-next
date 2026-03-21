@@ -1,5 +1,6 @@
 import TrustBar from '@/components/TrustBar'
 import CommunityTabs from '@/components/CommunityTabs'
+import HomepageListings from '@/components/HomepageListings'
 import { getHomepage, getFeaturedReviews } from '@/sanity/queries'
 
 export const revalidate = 60
@@ -84,54 +85,8 @@ export default async function HomePage() {
       {/* COMMUNITIES */}
       <CommunityTabs />
 
-      {/* RECENT SALES */}
-      <section id="recent-sales">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Track Record</span>
-            <h2>Recently Sold Properties</h2>
-            <p>A snapshot of our recent closings across Las Vegas and Reno — representing buyers and sellers at every price point.</p>
-          </div>
-          <div className="property-grid">
-            {[
-              { price: '$1,240,000', addr: '2847 Quiet Sunrise Ct', city: 'Summerlin, Las Vegas NV', beds: 5, baths: 4, sqft: '4,280', days: '11 days', img: '1613490493576-7fde63acd811' },
-              { price: '$875,000', addr: '9134 Marble Canyon Dr', city: 'The Ridges, Las Vegas NV', beds: 4, baths: 3, sqft: '3,190', days: '8 days', img: '1706808849780-7a04fbac83ef' },
-              { price: '$649,000', addr: '5521 Eagle Talon Ct', city: 'Henderson / Anthem, NV', beds: 4, baths: 3, sqft: '2,640', days: '14 days', img: '1591474200742-8e512e6f98f8' },
-              { price: '$525,000', addr: '3318 Quiet Brook Ave', city: 'Green Valley Ranch, NV', beds: 3, baths: 2, sqft: '2,150', days: '6 days', img: '1676500684456-99f21e42a6fe' },
-              { price: '$1,850,000', addr: '7742 Painted Feather Way', city: 'MacDonald Highlands, NV', beds: 6, baths: 5, sqft: '5,920', days: '19 days', img: '1711426793020-9eb590f2fc12' },
-              { price: '$415,000', addr: '4409 Chaparral Ridge Pl', city: 'North Las Vegas, NV', beds: 3, baths: 2, sqft: '1,890', days: '4 days', img: '1692133188474-8c5591e6a6a8' },
-              { price: '$780,000', addr: '1205 Alton Rd', city: 'Damonte Ranch, Reno NV', beds: 4, baths: 3, sqft: '3,020', days: '9 days', img: '1512917774080-9991f1c4c750' },
-              { price: '$595,000', addr: '889 Caughlin Creek Rd', city: 'Caughlin Ranch, Reno NV', beds: 3, baths: 3, sqft: '2,480', days: '12 days', img: '1600585154340-be6161a56a0c' },
-            ].map((p, i) => (
-              <div className="property-card" key={i}>
-                <div className="property-photo">
-                  <img src={`https://images.unsplash.com/photo-${p.img}?auto=format&fit=crop&w=600&h=400&q=80`} alt={p.addr} />
-                  <span className="sold-badge">Sold</span>
-                  <span className="days-badge">{p.days}</span>
-                </div>
-                <div className="property-body">
-                  <div className="property-price">{p.price}</div>
-                  <div className="property-address">{p.addr}</div>
-                  <div className="property-city">{p.city}</div>
-                  <div className="property-specs">
-                    <span className="property-spec">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-                      {p.beds} bd
-                    </span>
-                    <span className="property-spec">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 12h16M4 6h16M4 18h7"/></svg>
-                      {p.baths} ba
-                    </span>
-                    <span className="property-spec">{p.sqft} sqft</span>
-                  </div>
-                  <span className="property-tag">Represented Client</span>
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="sold-disclaimer">Recently sold properties shown for illustrative purposes. MLS data deemed reliable but not guaranteed. © 2025 Nevada Real Estate Group.</p>
-        </div>
-      </section>
+      {/* ALL LISTINGS */}
+      <HomepageListings />
 
       {/* CALLOUTS */}
       <section id="callouts">
