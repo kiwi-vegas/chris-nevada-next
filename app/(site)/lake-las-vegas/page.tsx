@@ -2,20 +2,45 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('lake-las-vegas')
   return {
-    title: 'Lake Las Vegas Homes For Sale | Nevada Real Estate Group',
-    description: "Browse homes for sale in Lake Las Vegas, Henderson — Nevada's largest private lake, Mediterranean architecture, two Jack Nicklaus golf courses, and resort living 30 minutes from the Strip. Homes from $600K. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Lake Las Vegas Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse homes for sale in Lake Las Vegas, Henderson — Nevada's largest private lake, Mediterranean architecture, two Jack Nicklaus golf courses, and resort living 30 minutes from the Strip. Homes from $600K. Call 725.239.9950.",
   }
 }
 
-const heroHeadline = 'Lake Las Vegas\nHomes For Sale'
-const heroSubheadline = "320 acres of man-made water in the Nevada desert — Mediterranean-inspired architecture, lakefront dining, two Jack Nicklaus-designed golf courses, and resort living 30 minutes from the Strip."
+export default async function LakeLasVegasPage() {
+  const cms = await getCommunityPage('lake-las-vegas')
 
-export default function LakeLasVegasPage() {
+  const heroHeadline = cms?.heroHeadline ?? 'Lake Las Vegas\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "320 acres of man-made water in the Nevada desert — Mediterranean-inspired architecture, lakefront dining, two Jack Nicklaus-designed golf courses, and resort living 30 minutes from the Strip."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'NE Henderson, NV'],
+    ['Lake', '320 acres (largest private lake in NV)'],
+    ['Golf', '2 Jack Nicklaus designs'],
+    ['Resort Hotels', 'Westin + Hilton'],
+    ['Min Price', '$600K', 'gold'],
+    ['Architecture', 'Mediterranean / Tuscan'],
+    ['Lake Mead NRA', '~10 min'],
+    ['Distance to Strip', '~30 min'],
+    ['Distance to Airport', '~25 min'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
+
   return (
     <main>
       <div className="breadcrumb">
@@ -30,6 +55,13 @@ export default function LakeLasVegasPage() {
 
       {/* HERO */}
       <header id="hero" className="lake-las-vegas-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Lake Las Vegas hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -120,19 +152,7 @@ export default function LakeLasVegasPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Lake Las Vegas At a Glance</h3>
-                {[
-                  ['Location', 'NE Henderson, NV'],
-                  ['Lake', '320 acres (largest private lake in NV)'],
-                  ['Golf', '2 Jack Nicklaus designs'],
-                  ['Resort Hotels', 'Westin + Hilton'],
-                  ['Min Price', '$600K', 'gold'],
-                  ['Architecture', 'Mediterranean / Tuscan'],
-                  ['Lake Mead NRA', '~10 min'],
-                  ['Distance to Strip', '~30 min'],
-                  ['Distance to Airport', '~25 min'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -208,7 +228,7 @@ export default function LakeLasVegasPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80" alt="Lake Las Vegas waterfront resort community in Henderson Nevada" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80'} alt="Lake Las Vegas waterfront resort community in Henderson Nevada" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Resort Living</span>

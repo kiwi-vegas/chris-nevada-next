@@ -2,13 +2,20 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('mountains-edge')
   return {
-    title: 'Mountains Edge Homes For Sale | Nevada Real Estate Group',
-    description: 'Browse Mountains Edge homes for sale. Southwest Las Vegas\'s largest master-planned community — 3,500 acres, dramatic mountain views, Red Rock Canyon nearby. 350+ active listings from $350K. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Mountains Edge Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Mountains Edge homes for sale. Southwest Las Vegas\'s largest master-planned community — 3,500 acres, dramatic mountain views, Red Rock Canyon nearby. 350+ active listings from $350K. Call 725.239.9950.',
   }
 }
 
@@ -51,9 +58,26 @@ const faqs = [
   },
 ]
 
-export default function MountainsEdgePage() {
-  const heroHeadline = 'Mountains Edge\nHomes For Sale'
-  const heroSubheadline = "Southwest Las Vegas's largest master-planned community — 3,500 acres of thoughtfully designed neighborhoods, dramatic desert mountain backdrops, and quick access to Red Rock Canyon."
+export default async function MountainsEdgePage() {
+  const cms = await getCommunityPage('mountains-edge')
+
+  const heroHeadline = cms?.heroHeadline ?? 'Mountains Edge\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Southwest Las Vegas's largest master-planned community — 3,500 acres of thoughtfully designed neighborhoods, dramatic desert mountain backdrops, and quick access to Red Rock Canyon."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'SW Las Vegas, NV'],
+    ['Development', '3,500 Acres'],
+    ['Built', '2004–Present'],
+    ['Min Price', '$350K', 'gold'],
+    ['HOA', '$50–$120/mo'],
+    ['To Strip', '~20 min'],
+    ['To Red Rock', '~15 min'],
+    ['Anchor Park', 'Exploration Peak'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -69,6 +93,13 @@ export default function MountainsEdgePage() {
 
       {/* HERO */}
       <header id="hero" className="mountains-edge-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Mountains Edge hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -158,18 +189,7 @@ export default function MountainsEdgePage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Mountains Edge At a Glance</h3>
-                {[
-                  ['Location', 'SW Las Vegas, NV'],
-                  ['Development', '3,500 Acres'],
-                  ['Built', '2004–Present'],
-                  ['Min Price', '$350K', 'gold'],
-                  ['HOA', '$50–$120/mo'],
-                  ['To Strip', '~20 min'],
-                  ['To Red Rock', '~15 min'],
-                  ['Anchor Park', 'Exploration Peak'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -245,7 +265,7 @@ export default function MountainsEdgePage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&h=600&q=80" alt="Red Rock Canyon desert landscape near Mountains Edge Las Vegas" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&h=600&q=80'} alt="Red Rock Canyon desert landscape near Mountains Edge Las Vegas" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Outdoor Living</span>

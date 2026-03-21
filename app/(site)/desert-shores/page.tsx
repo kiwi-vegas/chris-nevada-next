@@ -2,13 +2,20 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('desert-shores')
   return {
-    title: 'Desert Shores Homes For Sale | Nevada Real Estate Group',
-    description: 'Browse Desert Shores homes for sale. Las Vegas\'s hidden waterfront community — four man-made lakes, lakeside walking paths, boat launches, and established neighborhoods. 200+ listings from $350K. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Desert Shores Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Desert Shores homes for sale. Las Vegas\'s hidden waterfront community — four man-made lakes, lakeside walking paths, boat launches, and established neighborhoods. 200+ listings from $350K. Call 725.239.9950.',
   }
 }
 
@@ -51,9 +58,27 @@ const faqs = [
   },
 ]
 
-export default function DesertShoresPage() {
-  const heroHeadline = 'Desert Shores\nHomes For Sale'
-  const heroSubheadline = "Las Vegas's hidden waterfront community — four man-made lakes, lakeside walking paths, boat launches, and established neighborhoods that established the template for Vegas resort living."
+export default async function DesertShoresPage() {
+  const cms = await getCommunityPage('desert-shores')
+
+  const heroHeadline = cms?.heroHeadline ?? 'Desert Shores\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Las Vegas's hidden waterfront community — four man-made lakes, lakeside walking paths, boat launches, and established neighborhoods that established the template for Vegas resort living."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'NW Las Vegas, NV'],
+    ['Lakes', '4 man-made lakes', 'gold'],
+    ['Built', '1980s–1990s'],
+    ['Min Price', '$350K'],
+    ['HOA', '$60–$150/mo'],
+    ['To Strip', '~15 min'],
+    ['To Downtown', '~10 min'],
+    ['Dining', 'Duck Club on the Lake'],
+    ['Watercraft', 'Kayak, Paddleboard, Sail'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -69,6 +94,13 @@ export default function DesertShoresPage() {
 
       {/* HERO */}
       <header id="hero" className="desert-shores-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Desert Shores hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -158,19 +190,7 @@ export default function DesertShoresPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Desert Shores At a Glance</h3>
-                {[
-                  ['Location', 'NW Las Vegas, NV'],
-                  ['Lakes', '4 man-made lakes', 'gold'],
-                  ['Built', '1980s–1990s'],
-                  ['Min Price', '$350K'],
-                  ['HOA', '$60–$150/mo'],
-                  ['To Strip', '~15 min'],
-                  ['To Downtown', '~10 min'],
-                  ['Dining', 'Duck Club on the Lake'],
-                  ['Watercraft', 'Kayak, Paddleboard, Sail'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -246,7 +266,7 @@ export default function DesertShoresPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80" alt="Lakeside living and waterfront homes at Desert Shores Las Vegas" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80'} alt="Lakeside living and waterfront homes at Desert Shores Las Vegas" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Waterfront Living</span>

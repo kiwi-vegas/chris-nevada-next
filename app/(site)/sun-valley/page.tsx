@@ -2,19 +2,43 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
-export function generateMetadata(): Metadata {
+export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('sun-valley')
   return {
-    title: 'Sun Valley NV Homes For Sale | Nevada Real Estate Group',
-    description: "Browse Sun Valley, NV homes for sale. Reno metro's most affordable established community — entry-level pricing, strong rental demand, US-395 access. 300+ listings from $250K. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Sun Valley NV Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse Sun Valley, NV homes for sale. Reno metro's most affordable established community — entry-level pricing, strong rental demand, US-395 access. 300+ listings from $250K. Call 725.239.9950.",
   }
 }
 
-export default function SunValleyPage() {
-  const heroHeadline = 'Sun Valley, NV\nHomes For Sale'
-  const heroSubheadline = "The Reno metro's most affordable established community — a no-frills, unincorporated neighborhood north of Reno with quick freeway access, growing investment interest, and some of the valley's best entry-level price points."
+export default async function SunValleyPage() {
+  const cms = await getCommunityPage('sun-valley')
+
+  const heroHeadline = cms?.heroHeadline ?? 'Sun Valley, NV\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "The Reno metro's most affordable established community — a no-frills, unincorporated neighborhood north of Reno with quick freeway access, growing investment interest, and some of the valley's best entry-level price points."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Area', 'N. Washoe County (uninc.)'],
+    ['To Reno', '~15 min'],
+    ['Entry Price', 'From ~$250K'],
+    ['Best for', 'First-time buyers, investors'],
+    ['State Income Tax', 'None'],
+    ['Regional Park', 'Sun Valley Regional Park'],
+    ['To Pyramid Lake', '~20 min'],
+    ['School District', 'Washoe County SD'],
+    ['Property Tax Rate', '~0.7%'],
+    ['Market Character', 'Value · Investment-friendly'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -30,6 +54,13 @@ export default function SunValleyPage() {
 
       {/* HERO */}
       <header id="hero" className="sun-valley-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Sun Valley hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -120,21 +151,10 @@ export default function SunValleyPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Sun Valley At a Glance</h3>
-                {[
-                  ['Area', 'N. Washoe County (uninc.)'],
-                  ['To Reno', '~15 min'],
-                  ['Entry Price', 'From ~$250K'],
-                  ['Best for', 'First-time buyers, investors'],
-                  ['State Income Tax', 'None'],
-                  ['Regional Park', 'Sun Valley Regional Park'],
-                  ['To Pyramid Lake', '~20 min'],
-                  ['School District', 'Washoe County SD'],
-                  ['Property Tax Rate', '~0.7%'],
-                  ['Market Character', 'Value · Investment-friendly'],
-                ].map(([label, value]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
-                    <span className="fact-value">{value}</span>
+                    <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
                   </div>
                 ))}
               </div>
@@ -207,7 +227,7 @@ export default function SunValleyPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&h=600&q=80" alt="Desert landscape near Sun Valley, Nevada" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&h=600&q=80'} alt="Desert landscape near Sun Valley, Nevada" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Community & Access</span>

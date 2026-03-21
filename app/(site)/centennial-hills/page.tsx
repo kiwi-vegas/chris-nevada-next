@@ -2,13 +2,20 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('centennial-hills')
   return {
-    title: 'Centennial Hills Homes For Sale | Nevada Real Estate Group',
-    description: 'Browse Centennial Hills homes for sale. Northwest Las Vegas\'s fastest-growing master-planned corridor — newer construction, mountain views, top-rated schools. 400+ active listings from $350K. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Centennial Hills Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Centennial Hills homes for sale. Northwest Las Vegas\'s fastest-growing master-planned corridor — newer construction, mountain views, top-rated schools. 400+ active listings from $350K. Call 725.239.9950.',
   }
 }
 
@@ -51,9 +58,27 @@ const faqs = [
   },
 ]
 
-export default function CentennialHillsPage() {
-  const heroHeadline = 'Centennial Hills\nHomes For Sale'
-  const heroSubheadline = "Northwest Las Vegas's fastest-growing master-planned corridor — newer construction, mountain views, family-friendly neighborhoods, and some of the best school zoning in the valley."
+export default async function CentennialHillsPage() {
+  const cms = await getCommunityPage('centennial-hills')
+
+  const heroHeadline = cms?.heroHeadline ?? 'Centennial Hills\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Northwest Las Vegas's fastest-growing master-planned corridor — newer construction, mountain views, family-friendly neighborhoods, and some of the best school zoning in the valley."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'NW Las Vegas, NV'],
+    ['Development Type', 'Master-Planned'],
+    ['Built', '1990s–Present'],
+    ['Min Price', '$350K', 'gold'],
+    ['HOA', '$50–$150/mo'],
+    ['Nearest Strip', '~25 min'],
+    ['Schools', 'Arbor View, Centennial, Legacy'],
+    ['Golf', 'TPC Las Vegas'],
+    ['Mountain Access', 'Mount Charleston ~30 min'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -69,6 +94,13 @@ export default function CentennialHillsPage() {
 
       {/* HERO */}
       <header id="hero" className="centennial-hills-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Centennial Hills hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -158,19 +190,7 @@ export default function CentennialHillsPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Centennial Hills At a Glance</h3>
-                {[
-                  ['Location', 'NW Las Vegas, NV'],
-                  ['Development Type', 'Master-Planned'],
-                  ['Built', '1990s–Present'],
-                  ['Min Price', '$350K', 'gold'],
-                  ['HOA', '$50–$150/mo'],
-                  ['Nearest Strip', '~25 min'],
-                  ['Schools', 'Arbor View, Centennial, Legacy'],
-                  ['Golf', 'TPC Las Vegas'],
-                  ['Mountain Access', 'Mount Charleston ~30 min'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -246,7 +266,7 @@ export default function CentennialHillsPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80" alt="Mount Charleston mountain views near Centennial Hills Las Vegas" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80'} alt="Mount Charleston mountain views near Centennial Hills Las Vegas" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Outdoor Living</span>

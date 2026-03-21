@@ -4,6 +4,11 @@ import type { Metadata } from 'next'
 import HendersonMapWrapper from '@/components/HendersonMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
@@ -22,6 +27,23 @@ export default async function HendersonPage() {
   const heroSubheadline = cms?.heroSubheadline ?? "Nevada's second largest city — and consistently ranked one of the safest and most livable in America. Anthem, Green Valley Ranch, MacDonald Highlands, and Lake Las Vegas all call Henderson home."
   const overviewTitle = cms?.overviewTitle ?? 'Henderson: The Best-Kept Secret in the Las Vegas Metro'
 
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Incorporated', '1953'],
+    ['Population', '320,000+'],
+    ['Median Home Price', '$485,000', 'gold'],
+    ['Neighborhoods', '30+'],
+    ['Schools', '45+ public, private & charter'],
+    ['Parks', '160+'],
+    ['Area', '105 sq miles'],
+    ['Ranking', '#1 Safest City in NV'],
+    ['Distance to Strip', '~15 min'],
+    ['Distance to Lake Mead', '~15 min'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
+
   return (
     <main>
       <div className="breadcrumb">
@@ -36,6 +58,13 @@ export default async function HendersonPage() {
 
       {/* HERO */}
       <header id="hero" className="henderson-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Henderson hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -126,20 +155,7 @@ export default async function HendersonPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Henderson At a Glance</h3>
-                {[
-                  ['Incorporated', '1953'],
-                  ['Population', '320,000+'],
-                  ['Median Home Price', '$485,000', 'gold'],
-                  ['Neighborhoods', '30+'],
-                  ['Schools', '45+ public, private & charter'],
-                  ['Parks', '160+'],
-                  ['Area', '105 sq miles'],
-                  ['Ranking', '#1 Safest City in NV'],
-                  ['Distance to Strip', '~15 min'],
-                  ['Distance to Lake Mead', '~15 min'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -218,7 +234,7 @@ export default async function HendersonPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?auto=format&fit=crop&w=900&h=600&q=80" alt="Beautiful Henderson, Nevada home with mountain views" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1570126618953-d437176e8c79?auto=format&fit=crop&w=900&h=600&q=80'} alt="Beautiful Henderson, Nevada home with mountain views" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Outdoor Living</span>

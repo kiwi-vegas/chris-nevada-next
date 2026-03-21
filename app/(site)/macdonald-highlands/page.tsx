@@ -2,18 +2,22 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('macdonald-highlands')
   return {
-    title: 'MacDonald Highlands Homes For Sale | Nevada Real Estate Group',
-    description: "Browse MacDonald Highlands homes for sale in Henderson, NV. Guard-gated hillside estates with panoramic Las Vegas Strip views, anchored by DragonRidge Country Club. 100+ active listings from $1.5M to $15M+. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'MacDonald Highlands Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse MacDonald Highlands homes for sale in Henderson, NV. Guard-gated hillside estates with panoramic Las Vegas Strip views, anchored by DragonRidge Country Club. 100+ active listings from $1.5M to $15M+. Call 725.239.9950.",
   }
 }
-
-const heroHeadline = 'MacDonald Highlands\nHomes For Sale'
-const heroSubheadline = "Henderson's most exclusive address — guard-gated hillside estates with panoramic Las Vegas Strip and valley views, anchored by DragonRidge Country Club and the Tom Fazio-designed championship course."
 
 const macdonaldFaqs = [
   {
@@ -42,7 +46,25 @@ const macdonaldFaqs = [
   },
 ]
 
-export default function MacdonaldHighlandsPage() {
+export default async function MacdonaldHighlandsPage() {
+  const cms = await getCommunityPage('macdonald-highlands')
+
+  const heroHeadline = cms?.heroHeadline ?? 'MacDonald Highlands\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Henderson's most exclusive address — guard-gated hillside estates with panoramic Las Vegas Strip and valley views, anchored by DragonRidge Country Club and the Tom Fazio-designed championship course."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'SE Henderson, NV'],
+    ['Golf', 'DragonRidge (Tom Fazio, private)'],
+    ['Access', '24/7 Guard-Gated'],
+    ['Min Price', '$1.5M', 'gold'],
+    ['Club Dues', 'Required'],
+    ['Views', 'Las Vegas Strip'],
+    ['Property Tax Rate', '~0.6%'],
+    ['State Income Tax', 'None'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
+
   return (
     <main>
       <div className="breadcrumb">
@@ -57,6 +79,13 @@ export default function MacdonaldHighlandsPage() {
 
       {/* HERO */}
       <header id="hero" className="macdonald-highlands-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="MacDonald Highlands hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -156,16 +185,7 @@ export default function MacdonaldHighlandsPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>MacDonald Highlands At a Glance</h3>
-                {[
-                  ['Location', 'SE Henderson, NV'],
-                  ['Golf', 'DragonRidge (Tom Fazio, private)'],
-                  ['Access', '24/7 Guard-Gated'],
-                  ['Min Price', '$1.5M', 'gold'],
-                  ['Club Dues', 'Required'],
-                  ['Views', 'Las Vegas Strip'],
-                  ['Property Tax Rate', '~0.6%'],
-                  ['State Income Tax', 'None'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -241,7 +261,7 @@ export default function MacdonaldHighlandsPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&h=600&q=80" alt="Luxury estate home with pool and Las Vegas valley views" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&h=600&q=80'} alt="Luxury estate home with pool and Las Vegas valley views" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">The MacDonald Highlands Lifestyle</span>

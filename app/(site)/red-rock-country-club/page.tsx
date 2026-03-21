@@ -2,20 +2,45 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('red-rock-country-club')
   return {
-    title: 'Red Rock Country Club Homes For Sale | Nevada Real Estate Group',
-    description: "Browse homes for sale in Red Rock Country Club, Summerlin — Las Vegas's premier private golf community with two Arnold Palmer-designed courses, guard-gated enclaves, and dramatic Spring Mountain views from $800K. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Red Rock Country Club Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse homes for sale in Red Rock Country Club, Summerlin — Las Vegas's premier private golf community with two Arnold Palmer-designed courses, guard-gated enclaves, and dramatic Spring Mountain views from $800K. Call 725.239.9950.",
   }
 }
 
-const heroHeadline = 'Red Rock Country Club\nHomes For Sale'
-const heroSubheadline = "Summerlin's premier private golf community — two Arnold Palmer-designed courses, guard-gated enclaves, and a clubhouse lifestyle set against the red sandstone drama of the Spring Mountains."
+export default async function RedRockCountryClubPage() {
+  const cms = await getCommunityPage('red-rock-country-club')
 
-export default function RedRockCountryClubPage() {
+  const heroHeadline = cms?.heroHeadline ?? 'Red Rock Country Club\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Summerlin's premier private golf community — two Arnold Palmer-designed courses, guard-gated enclaves, and a clubhouse lifestyle set against the red sandstone drama of the Spring Mountains."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'West Summerlin, NV'],
+    ['Golf', '2 Arnold Palmer courses'],
+    ['Access', 'Guard-gated'],
+    ['Min Price', '$800K', 'gold'],
+    ['HOA + Club Dues', 'Separate fees apply'],
+    ['Red Rock Canyon', '~5 min'],
+    ['Downtown Summerlin', '~5 min'],
+    ['Distance to Strip', '~20 min'],
+    ['Distance to Airport', '~35 min'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
+
   return (
     <main>
       <div className="breadcrumb">
@@ -30,6 +55,13 @@ export default function RedRockCountryClubPage() {
 
       {/* HERO */}
       <header id="hero" className="red-rock-cc-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Red Rock Country Club hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -120,19 +152,7 @@ export default function RedRockCountryClubPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Red Rock CC At a Glance</h3>
-                {[
-                  ['Location', 'West Summerlin, NV'],
-                  ['Golf', '2 Arnold Palmer courses'],
-                  ['Access', 'Guard-gated'],
-                  ['Min Price', '$800K', 'gold'],
-                  ['HOA + Club Dues', 'Separate fees apply'],
-                  ['Red Rock Canyon', '~5 min'],
-                  ['Downtown Summerlin', '~5 min'],
-                  ['Distance to Strip', '~20 min'],
-                  ['Distance to Airport', '~35 min'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -208,7 +228,7 @@ export default function RedRockCountryClubPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=900&h=600&q=80" alt="Golf course and mountain views at Red Rock Country Club, Summerlin" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=900&h=600&q=80'} alt="Golf course and mountain views at Red Rock Country Club, Summerlin" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Club Living</span>

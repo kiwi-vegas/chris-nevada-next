@@ -2,19 +2,43 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
-export function generateMetadata(): Metadata {
+export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('incline-village')
   return {
-    title: 'Incline Village NV Homes For Sale | Nevada Real Estate Group',
-    description: "Browse Incline Village, NV homes for sale. Nevada's most coveted Lake Tahoe address — private beach clubs, Diamond Peak ski resort, Nevada tax advantages. 250+ listings from $800K to $15M+. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Incline Village NV Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse Incline Village, NV homes for sale. Nevada's most coveted Lake Tahoe address — private beach clubs, Diamond Peak ski resort, Nevada tax advantages. 250+ listings from $800K to $15M+. Call 725.239.9950.",
   }
 }
 
-export default function InclineVillagePage() {
-  const heroHeadline = 'Incline Village, NV\nHomes For Sale'
-  const heroSubheadline = "Nevada's most coveted Lake Tahoe address — private beach clubs on the clearest alpine lake in North America, Diamond Peak ski resort, and the tax advantages of Nevada residency steps from California's backyard."
+export default async function InclineVillagePage() {
+  const cms = await getCommunityPage('incline-village')
+
+  const heroHeadline = cms?.heroHeadline ?? 'Incline Village, NV\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Nevada's most coveted Lake Tahoe address — private beach clubs on the clearest alpine lake in North America, Diamond Peak ski resort, and the tax advantages of Nevada residency steps from California's backyard."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['County', 'Washoe'],
+    ['Lake', 'Lake Tahoe (NE shore)'],
+    ['Ski Resort', 'Diamond Peak'],
+    ['Golf', 'Incline Village GC (RTJ Jr.)'],
+    ['State Income Tax', 'None'],
+    ['Population', '~9,000'],
+    ['Beach Clubs', '2 private (IVGID)'],
+    ['To Reno', '~35 min'],
+    ['Elevation', '6,300 ft'],
+    ['Season', 'Year-round'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -30,6 +54,13 @@ export default function InclineVillagePage() {
 
       {/* HERO */}
       <header id="hero" className="incline-village-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Incline Village hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -120,21 +151,10 @@ export default function InclineVillagePage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Incline Village At a Glance</h3>
-                {[
-                  ['County', 'Washoe'],
-                  ['Lake', 'Lake Tahoe (NE shore)'],
-                  ['Ski Resort', 'Diamond Peak'],
-                  ['Golf', 'Incline Village GC (RTJ Jr.)'],
-                  ['State Income Tax', 'None'],
-                  ['Population', '~9,000'],
-                  ['Beach Clubs', '2 private (IVGID)'],
-                  ['To Reno', '~35 min'],
-                  ['Elevation', '6,300 ft'],
-                  ['Season', 'Year-round'],
-                ].map(([label, value]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
-                    <span className="fact-value">{value}</span>
+                    <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
                   </div>
                 ))}
               </div>
@@ -207,7 +227,7 @@ export default function InclineVillagePage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=900&h=600&q=80" alt="Lake Tahoe crystal clear water from Incline Village Nevada" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=900&h=600&q=80'} alt="Lake Tahoe crystal clear water from Incline Village Nevada" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Year-Round Living</span>

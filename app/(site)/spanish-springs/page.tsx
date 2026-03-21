@@ -2,19 +2,43 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
-export function generateMetadata(): Metadata {
+export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('spanish-springs')
   return {
-    title: 'Spanish Springs NV Homes For Sale | Nevada Real Estate Group',
-    description: "Browse Spanish Springs, NV homes for sale. Northeast Reno's fastest-growing valley — newer construction, mountain views, master-planned neighborhoods from $350K to $1.5M+. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Spanish Springs NV Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse Spanish Springs, NV homes for sale. Northeast Reno's fastest-growing valley — newer construction, mountain views, master-planned neighborhoods from $350K to $1.5M+. Call 725.239.9950.",
   }
 }
 
-export default function SpanishSpringsPage() {
-  const heroHeadline = 'Spanish Springs, NV\nHomes For Sale'
-  const heroSubheadline = "Northeast Reno's fastest-growing residential valley — master-planned neighborhoods, newer construction, mountain views in every direction, and access to Sparks and Reno without the density of either."
+export default async function SpanishSpringsPage() {
+  const cms = await getCommunityPage('spanish-springs')
+
+  const heroHeadline = cms?.heroHeadline ?? 'Spanish Springs, NV\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Northeast Reno's fastest-growing residential valley — master-planned neighborhoods, newer construction, mountain views in every direction, and access to Sparks and Reno without the density of either."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Area', 'NE Washoe County'],
+    ['Built Era', 'Primarily 2000s–2020s'],
+    ['Commute to Reno', '~20 min'],
+    ['Commute to Sparks', '~15 min'],
+    ['State Income Tax', 'None'],
+    ['School District', 'Washoe County SD'],
+    ['To Pyramid Lake', '~35 min'],
+    ['To Lake Tahoe', '~60 min'],
+    ['Property Tax Rate', '~0.7%'],
+    ['Best for', 'Families, CA relocations'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -30,6 +54,13 @@ export default function SpanishSpringsPage() {
 
       {/* HERO */}
       <header id="hero" className="spanish-springs-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Spanish Springs hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -120,21 +151,10 @@ export default function SpanishSpringsPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Spanish Springs At a Glance</h3>
-                {[
-                  ['Area', 'NE Washoe County'],
-                  ['Built Era', 'Primarily 2000s–2020s'],
-                  ['Commute to Reno', '~20 min'],
-                  ['Commute to Sparks', '~15 min'],
-                  ['State Income Tax', 'None'],
-                  ['School District', 'Washoe County SD'],
-                  ['To Pyramid Lake', '~35 min'],
-                  ['To Lake Tahoe', '~60 min'],
-                  ['Property Tax Rate', '~0.7%'],
-                  ['Best for', 'Families, CA relocations'],
-                ].map(([label, value]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
-                    <span className="fact-value">{value}</span>
+                    <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
                   </div>
                 ))}
               </div>
@@ -207,7 +227,7 @@ export default function SpanishSpringsPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&h=600&q=80" alt="Desert mountain landscape near Spanish Springs, Nevada" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&h=600&q=80'} alt="Desert mountain landscape near Spanish Springs, Nevada" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Suburban Living, Natural Access</span>

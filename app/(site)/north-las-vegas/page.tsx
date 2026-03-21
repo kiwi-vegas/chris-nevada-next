@@ -2,18 +2,22 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('north-las-vegas')
   return {
-    title: 'North Las Vegas Homes For Sale | Nevada Real Estate Group',
-    description: "Browse North Las Vegas homes for sale. Nevada's fastest-growing city — master-planned communities, affordable prices from $250K, Brightline West terminus, and direct Mount Charleston access. 800+ active listings. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'North Las Vegas Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse North Las Vegas homes for sale. Nevada's fastest-growing city — master-planned communities, affordable prices from $250K, Brightline West terminus, and direct Mount Charleston access. 800+ active listings. Call 725.239.9950.",
   }
 }
-
-const heroHeadline = 'North Las Vegas\nHomes For Sale'
-const heroSubheadline = "Nevada's fastest-growing city — an independent municipality north of Las Vegas with newer master-planned communities, affordable entry prices, the Valley's largest industrial job base, and direct access to Mount Charleston."
 
 const northLVFaqs = [
   {
@@ -42,7 +46,25 @@ const northLVFaqs = [
   },
 ]
 
-export default function NorthLasVegasPage() {
+export default async function NorthLasVegasPage() {
+  const cms = await getCommunityPage('north-las-vegas')
+
+  const heroHeadline = cms?.heroHeadline ?? 'North Las Vegas\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Nevada's fastest-growing city — an independent municipality north of Las Vegas with newer master-planned communities, affordable entry prices, the Valley's largest industrial job base, and direct access to Mount Charleston."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'North Las Vegas, NV (incorporated city)'],
+    ['Population', '~290,000'],
+    ['Notable', 'Nellis AFB adjacent'],
+    ['Min Price', '$250K', 'gold'],
+    ['Brightline West', 'Nearby terminus'],
+    ['Mount Charleston', '30 min'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
+
   return (
     <main>
       <div className="breadcrumb">
@@ -57,6 +79,13 @@ export default function NorthLasVegasPage() {
 
       {/* HERO */}
       <header id="hero" className="north-las-vegas-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="North Las Vegas hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -158,16 +187,7 @@ export default function NorthLasVegasPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>North Las Vegas At a Glance</h3>
-                {[
-                  ['Location', 'North Las Vegas, NV (incorporated city)'],
-                  ['Population', '~290,000'],
-                  ['Notable', 'Nellis AFB adjacent'],
-                  ['Min Price', '$250K', 'gold'],
-                  ['Brightline West', 'Nearby terminus'],
-                  ['Mount Charleston', '30 min'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -243,7 +263,7 @@ export default function NorthLasVegasPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&h=600&q=80" alt="North Las Vegas neighborhood with mountain backdrop" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&h=600&q=80'} alt="North Las Vegas neighborhood with mountain backdrop" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Outdoor Living &amp; Recreation</span>

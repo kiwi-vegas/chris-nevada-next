@@ -2,13 +2,20 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('southern-highlands')
   return {
-    title: 'Southern Highlands Homes For Sale | Nevada Real Estate Group',
-    description: 'Browse Southern Highlands homes for sale. Las Vegas\'s most prestigious gated master-planned community — private golf club, guard-gated enclaves, 15 min to airport. 300+ active listings from $500K. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Southern Highlands Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse Southern Highlands homes for sale. Las Vegas's most prestigious gated master-planned community — private golf club, guard-gated enclaves, 15 min to airport. 300+ active listings from $500K. Call 725.239.9950.",
   }
 }
 
@@ -47,13 +54,31 @@ const faqs = [
   },
   {
     q: 'Is Southern Highlands a good investment?',
-    a: 'Southern Highlands has demonstrated strong investment fundamentals — guard-gated prestige, private golf club anchoring, limited land available for new development, and consistent executive-level demand. The community has held value well through market cycles and benefits from being perceived as one of Las Vegas\'s most prestigious addresses. The airport proximity also makes it popular with short-term rental investors in appropriate zones.',
+    a: "Southern Highlands has demonstrated strong investment fundamentals — guard-gated prestige, private golf club anchoring, limited land available for new development, and consistent executive-level demand. The community has held value well through market cycles and benefits from being perceived as one of Las Vegas's most prestigious addresses. The airport proximity also makes it popular with short-term rental investors in appropriate zones.",
   },
 ]
 
-export default function SouthernHighlandsPage() {
-  const heroHeadline = 'Southern Highlands\nHomes For Sale'
-  const heroSubheadline = "Las Vegas's most livable zip code — a prestigious master-planned community with a private golf club, guard-gated enclaves, and a price-per-square-foot that would stun any California buyer."
+export default async function SouthernHighlandsPage() {
+  const cms = await getCommunityPage('southern-highlands')
+
+  const heroHeadline = cms?.heroHeadline ?? 'Southern Highlands\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Las Vegas's most livable zip code — a prestigious master-planned community with a private golf club, guard-gated enclaves, and a price-per-square-foot that would stun any California buyer."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'South Las Vegas, NV'],
+    ['Type', 'Gated Master-Planned'],
+    ['Golf Club', 'Private (Arnold Palmer)', 'gold'],
+    ['Min Price', '$500K'],
+    ['HOA', '$75–$200/mo'],
+    ['Airport', '15 min'],
+    ['To Strip', '~20 min'],
+    ['To Henderson', '~15 min'],
+    ['Security', '24-hr Guard-Gated'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -69,6 +94,13 @@ export default function SouthernHighlandsPage() {
 
       {/* HERO */}
       <header id="hero" className="southern-highlands-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Southern Highlands hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -158,19 +190,7 @@ export default function SouthernHighlandsPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Southern Highlands At a Glance</h3>
-                {[
-                  ['Location', 'South Las Vegas, NV'],
-                  ['Type', 'Gated Master-Planned'],
-                  ['Golf Club', 'Private (Arnold Palmer)', 'gold'],
-                  ['Min Price', '$500K'],
-                  ['HOA', '$75–$200/mo'],
-                  ['Airport', '15 min'],
-                  ['To Strip', '~20 min'],
-                  ['To Henderson', '~15 min'],
-                  ['Security', '24-hr Guard-Gated'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -201,7 +221,7 @@ export default function SouthernHighlandsPage() {
               { icon: '✈️', title: 'Airport 15 Minutes Away', body: 'Harry Reid International Airport is the shortest executive commute of any upscale Las Vegas community. For frequent flyers and business travelers, this single geographic fact makes Southern Highlands the rational choice.' },
               { icon: '🛡️', title: 'Ultra-Low Crime Rate', body: 'Southern Highlands consistently records among the lowest crime rates in all of Las Vegas, benefiting from gated access, private security, and the demographic consistency of the community.' },
               { icon: '💼', title: 'Executive Lifestyle', body: 'The community profile skews heavily toward executives, business owners, and professionals. The private club, gating, and community character create an environment that supports that lifestyle throughout.' },
-              { icon: '🏫', title: 'Excellent School Options', body: 'Southern Highlands is zoned to strong CCSD schools including Liberty High School, one of Henderson area\'s highest-rated public schools. Private options including Faith Lutheran serve the community as well.' },
+              { icon: '🏫', title: 'Excellent School Options', body: "Southern Highlands is zoned to strong CCSD schools including Liberty High School, one of Henderson area's highest-rated public schools. Private options including Faith Lutheran serve the community as well." },
             ].map(h => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
@@ -246,7 +266,7 @@ export default function SouthernHighlandsPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=900&h=600&q=80" alt="Championship golf course at Southern Highlands Las Vegas" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=900&h=600&q=80'} alt="Championship golf course at Southern Highlands Las Vegas" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Executive Living</span>
@@ -261,7 +281,7 @@ export default function SouthernHighlandsPage() {
                   'Harry Reid Airport 15 minutes away — the best business traveler commute in Las Vegas',
                   'Community parks, walking paths, and maintained open space throughout the development',
                   'Quick I-15 access south to Jean, Primm, and ultimately Los Angeles (~4.5 hours)',
-                  'Henderson\'s retail, dining, and arts district 15 minutes east via the 215',
+                  "Henderson's retail, dining, and arts district 15 minutes east via the 215",
                 ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
               </div>
             </div>

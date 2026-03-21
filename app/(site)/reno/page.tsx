@@ -2,19 +2,43 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
-export function generateMetadata(): Metadata {
+export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('reno')
   return {
-    title: 'Reno NV Homes For Sale | Nevada Real Estate Group',
-    description: "Browse Reno, NV homes for sale. The Biggest Little City — tech industry growth, Midtown arts district, 45 min to Lake Tahoe. 1,200+ active listings from $300K to $3M+. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Reno NV Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse Reno, NV homes for sale. The Biggest Little City — tech industry growth, Midtown arts district, 45 min to Lake Tahoe. 1,200+ active listings from $300K to $3M+. Call 725.239.9950.",
   }
 }
 
-export default function RenoPage() {
-  const heroHeadline = 'Reno, NV\nHomes For Sale'
-  const heroSubheadline = "The Biggest Little City in the World — a dynamic Nevada city reinventing itself with tech industry growth, a thriving arts district, world-class skiing 45 minutes away, and a real estate market that still defies its quality."
+export default async function RenoPage() {
+  const cms = await getCommunityPage('reno')
+
+  const heroHeadline = cms?.heroHeadline ?? 'Reno, NV\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "The Biggest Little City in the World — a dynamic Nevada city reinventing itself with tech industry growth, a thriving arts district, world-class skiing 45 minutes away, and a real estate market that still defies its quality."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['County', 'Washoe'],
+    ['Population', '~275,000'],
+    ['University', 'UNR (21,000 students)'],
+    ['Airport', 'RNO (Reno-Tahoe Intl)'],
+    ['State Income Tax', 'None'],
+    ['To Lake Tahoe', '~45 min'],
+    ['To Bay Area', '~3.5 hrs'],
+    ['Elevation', '4,505 ft'],
+    ['Property Tax Rate', '~0.7%'],
+    ['Median Home Price', '~$480,000'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -30,6 +54,13 @@ export default function RenoPage() {
 
       {/* HERO */}
       <header id="hero" className="reno-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Reno hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -120,21 +151,10 @@ export default function RenoPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Reno At a Glance</h3>
-                {[
-                  ['County', 'Washoe'],
-                  ['Population', '~275,000'],
-                  ['University', 'UNR (21,000 students)'],
-                  ['Airport', 'RNO (Reno-Tahoe Intl)'],
-                  ['State Income Tax', 'None'],
-                  ['To Lake Tahoe', '~45 min'],
-                  ['To Bay Area', '~3.5 hrs'],
-                  ['Elevation', '4,505 ft'],
-                  ['Property Tax Rate', '~0.7%'],
-                  ['Median Home Price', '~$480,000'],
-                ].map(([label, value]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
-                    <span className="fact-value">{value}</span>
+                    <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
                   </div>
                 ))}
               </div>
@@ -207,7 +227,7 @@ export default function RenoPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80" alt="Sierra Nevada mountains near Reno, Nevada" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80'} alt="Sierra Nevada mountains near Reno, Nevada" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Outdoor Living</span>

@@ -2,20 +2,45 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('the-lakes')
   return {
-    title: 'The Lakes Las Vegas Homes For Sale | Nevada Real Estate Group',
-    description: "Browse homes for sale in The Lakes, Las Vegas — a distinctive 320-acre waterfront master-planned community in west Las Vegas. Lakefront paths, private beach club, and water views from $400K. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'The Lakes Las Vegas Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse homes for sale in The Lakes, Las Vegas — a distinctive 320-acre waterfront master-planned community in west Las Vegas. Lakefront paths, private beach club, and water views from $400K. Call 725.239.9950.",
   }
 }
 
-const heroHeadline = 'The Lakes\nHomes For Sale'
-const heroSubheadline = "Las Vegas's original waterfront community — built around a 320-acre artificial lake in the heart of the city, with lakefront paths, private beach clubs, and homes that command water views from just about every street."
+export default async function TheLakesPage() {
+  const cms = await getCommunityPage('the-lakes')
 
-export default function TheLakesPage() {
+  const heroHeadline = cms?.heroHeadline ?? 'The Lakes\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Las Vegas's original waterfront community — built around a 320-acre artificial lake in the heart of the city, with lakefront paths, private beach clubs, and homes that command water views from just about every street."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'West Las Vegas, NV'],
+    ['Water', '320-acre lake system'],
+    ['Built', 'Late 1980s'],
+    ['Min Price', '$400K', 'gold'],
+    ['HOA', '$70–$160/mo'],
+    ['Beach Club', 'Private (residents only)'],
+    ['Nearby Casino', 'Suncoast Hotel & Casino'],
+    ['Distance to Strip', '~15 min'],
+    ['Distance to Summerlin', '~10 min'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
+
   return (
     <main>
       <div className="breadcrumb">
@@ -30,6 +55,13 @@ export default function TheLakesPage() {
 
       {/* HERO */}
       <header id="hero" className="the-lakes-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="The Lakes hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -120,19 +152,7 @@ export default function TheLakesPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>The Lakes At a Glance</h3>
-                {[
-                  ['Location', 'West Las Vegas, NV'],
-                  ['Water', '320-acre lake system'],
-                  ['Built', 'Late 1980s'],
-                  ['Min Price', '$400K', 'gold'],
-                  ['HOA', '$70–$160/mo'],
-                  ['Beach Club', 'Private (residents only)'],
-                  ['Nearby Casino', 'Suncoast Hotel & Casino'],
-                  ['Distance to Strip', '~15 min'],
-                  ['Distance to Summerlin', '~10 min'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -208,7 +228,7 @@ export default function TheLakesPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&h=600&q=80" alt="Waterfront living in The Lakes community, Las Vegas" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&h=600&q=80'} alt="Waterfront living in The Lakes community, Las Vegas" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Waterfront Living</span>

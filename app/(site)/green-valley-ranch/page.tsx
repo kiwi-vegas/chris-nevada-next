@@ -2,20 +2,46 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
 export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('green-valley-ranch')
   return {
-    title: 'Green Valley Ranch Homes For Sale | Nevada Real Estate Group',
-    description: "Browse homes for sale in Green Valley Ranch, Henderson — Henderson's most walkable master-planned community with top-rated CCSD schools, the District town center, and Green Valley Ranch Resort. Homes from $450K. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Green Valley Ranch Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse homes for sale in Green Valley Ranch, Henderson — Henderson's most walkable master-planned community with top-rated CCSD schools, the District town center, and Green Valley Ranch Resort. Homes from $450K. Call 725.239.9950.",
   }
 }
 
-const heroHeadline = 'Green Valley Ranch\nHomes For Sale'
-const heroSubheadline = "Henderson's most walkable and established master-planned community — anchored by the Green Valley Ranch Resort & Spa, a vibrant town center, and some of CCSD's most consistently top-rated schools."
+export default async function GreenValleyRanchPage() {
+  const cms = await getCommunityPage('green-valley-ranch')
 
-export default function GreenValleyRanchPage() {
+  const heroHeadline = cms?.heroHeadline ?? 'Green Valley Ranch\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Henderson's most walkable and established master-planned community — anchored by the Green Valley Ranch Resort & Spa, a vibrant town center, and some of CCSD's most consistently top-rated schools."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Location', 'Green Valley, Henderson, NV'],
+    ['Developer', 'American Nevada Corp'],
+    ['Built', '1980s–2000s'],
+    ['Min Price', '$450K', 'gold'],
+    ['HOA', '$60–$160/mo'],
+    ['Resort', 'Green Valley Ranch Resort & Spa'],
+    ['Town Center', 'The District at GVR'],
+    ['Distance to Strip', '~15 min'],
+    ['Distance to Airport', '~15 min'],
+    ['Distance to Lake Mead', '~20 min'],
+    ['State Income Tax', 'None'],
+    ['Property Tax Rate', '~0.6%'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
+
   return (
     <main>
       <div className="breadcrumb">
@@ -30,6 +56,13 @@ export default function GreenValleyRanchPage() {
 
       {/* HERO */}
       <header id="hero" className="green-valley-ranch-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Green Valley Ranch hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -120,20 +153,7 @@ export default function GreenValleyRanchPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Green Valley Ranch At a Glance</h3>
-                {[
-                  ['Location', 'Green Valley, Henderson, NV'],
-                  ['Developer', 'American Nevada Corp'],
-                  ['Built', '1980s–2000s'],
-                  ['Min Price', '$450K', 'gold'],
-                  ['HOA', '$60–$160/mo'],
-                  ['Resort', 'Green Valley Ranch Resort & Spa'],
-                  ['Town Center', 'The District at GVR'],
-                  ['Distance to Strip', '~15 min'],
-                  ['Distance to Airport', '~15 min'],
-                  ['Distance to Lake Mead', '~20 min'],
-                  ['State Income Tax', 'None'],
-                  ['Property Tax Rate', '~0.6%'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -209,7 +229,7 @@ export default function GreenValleyRanchPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&h=600&q=80" alt="Beautiful home in Green Valley Ranch, Henderson Nevada" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&h=600&q=80'} alt="Beautiful home in Green Valley Ranch, Henderson Nevada" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Community Living</span>

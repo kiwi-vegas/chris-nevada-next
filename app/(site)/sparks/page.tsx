@@ -2,19 +2,43 @@ import CommunityFAQ from '@/components/CommunityFAQ'
 import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
-export function generateMetadata(): Metadata {
+export async function generateMetadata(): Promise<Metadata> {
+  const cms = await getCommunityPage('sparks')
   return {
-    title: 'Sparks NV Homes For Sale | Nevada Real Estate Group',
-    description: "Browse Sparks, NV homes for sale. Reno's twin city — Tesla Gigafactory proximity, Sparks Marina, Victorian Square, master-planned communities. 800+ listings from $300K to $2M+. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Sparks NV Homes For Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? "Browse Sparks, NV homes for sale. Reno's twin city — Tesla Gigafactory proximity, Sparks Marina, Victorian Square, master-planned communities. 800+ listings from $300K to $2M+. Call 725.239.9950.",
   }
 }
 
-export default function SparksPage() {
-  const heroHeadline = 'Sparks, NV\nHomes For Sale'
-  const heroSubheadline = "Reno's twin city — an independent Nevada municipality east of Reno with its own downtown, the Tesla Gigafactory in its backyard, a booming job market, and newer master-planned communities that rival anything in the valley."
+export default async function SparksPage() {
+  const cms = await getCommunityPage('sparks')
+
+  const heroHeadline = cms?.heroHeadline ?? 'Sparks, NV\nHomes For Sale'
+  const heroSubheadline = cms?.heroSubheadline ?? "Reno's twin city — an independent Nevada municipality east of Reno with its own downtown, the Tesla Gigafactory in its backyard, a booming job market, and newer master-planned communities that rival anything in the valley."
+
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Status', 'Independent City'],
+    ['Population', '~110,000'],
+    ['Notable Employer', 'Tesla Gigafactory (~20 min)'],
+    ['Downtown', 'Victorian Square'],
+    ['Marina', 'Sparks Marina (77-acre lake)'],
+    ['State Income Tax', 'None'],
+    ['To Reno', '~10 min via I-80'],
+    ['To Tahoe', '~65 min via I-80 W'],
+    ['Property Tax Rate', '~0.7%'],
+    ['Median Home Price', '~$450,000'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -30,6 +54,13 @@ export default function SparksPage() {
 
       {/* HERO */}
       <header id="hero" className="sparks-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Sparks hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -120,21 +151,10 @@ export default function SparksPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Sparks At a Glance</h3>
-                {[
-                  ['Status', 'Independent City'],
-                  ['Population', '~110,000'],
-                  ['Notable Employer', 'Tesla Gigafactory (~20 min)'],
-                  ['Downtown', 'Victorian Square'],
-                  ['Marina', 'Sparks Marina (77-acre lake)'],
-                  ['State Income Tax', 'None'],
-                  ['To Reno', '~10 min via I-80'],
-                  ['To Tahoe', '~65 min via I-80 W'],
-                  ['Property Tax Rate', '~0.7%'],
-                  ['Median Home Price', '~$450,000'],
-                ].map(([label, value]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
-                    <span className="fact-value">{value}</span>
+                    <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
                   </div>
                 ))}
               </div>
@@ -207,7 +227,7 @@ export default function SparksPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80" alt="Active outdoor lifestyle near Sparks, Nevada" />
+              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80'} alt="Active outdoor lifestyle near Sparks, Nevada" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Recreation & Community</span>
