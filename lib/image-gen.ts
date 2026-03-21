@@ -31,26 +31,33 @@ async function buildImagePrompt(article: ScoredArticle): Promise<string | null> 
 
     const response = await anthropic.messages.create({
       model: 'claude-haiku-4-5-20251001',
-      max_tokens: 300,
+      max_tokens: 400,
       messages: [
         {
           role: 'user',
-          content: `You are writing an image generation prompt for a real estate blog post cover image.
-
-The image should look like a bold, eye-catching YouTube thumbnail — cinematic, conceptual, photorealistic.
-It must visually represent the SPECIFIC story of this article, not generic real estate.
+          content: `You are an art director creating a cover image for a real estate blog post. Think Architectural Digest editorial photography meets Netflix documentary thumbnail — cinematic, specific, emotionally resonant.
 
 Article title: ${article.title}
-Article summary: ${article.whyItMatters}
+Article angle: ${article.whyItMatters}
 Category: ${article.category}
 
-Write a single DALL-E 3 image prompt (2-4 sentences). Requirements:
-- Describe a specific, vivid scene that captures the article's core story
-- Style: photorealistic, cinematic lighting, bold colors, YouTube thumbnail composition
-- Landscape orientation (16:9)
-- No text, logos, or watermarks in the image
-- No people's faces clearly visible (avoids likeness issues)
-- DO NOT mention "blog post", "thumbnail", or "real estate agent"
+Your job: describe a SPECIFIC visual scene that captures the emotional story of this article. Not a literal illustration of the words — an atmospheric, evocative image that makes someone want to read more.
+
+HARD RULES — never include any of these:
+- Moving trucks, vans, U-Haul, storage units, cardboard boxes, or anything associated with moving companies
+- Generic stock-photo scenes (handshakes, keys on counters, "sold" signs, agents pointing at houses)
+- Branded vehicles, logos, or signage of any company
+- Text, watermarks, or overlaid graphics
+- Faces clearly visible (keep people at a distance or shown from behind)
+- The words "blog post", "thumbnail", "real estate agent", or "DALL-E"
+
+Instead, go for:
+- Lifestyle moments: a family on a beautiful patio at golden hour, a couple walking through a luxury neighborhood, someone relaxing by a pool with mountain views
+- Dramatic Nevada scenery: Las Vegas skyline at dusk, Red Rock Canyon from an upscale community, Lake Las Vegas reflections, Reno mountains with snow
+- Architectural beauty: a stunning modern home exterior at magic hour, a luxury kitchen with natural light, resort-style backyard with desert landscaping
+- Mood and aspiration: what does it FEEL like to live here?
+
+Write a single DALL-E 3 image prompt (3-5 sentences). Style: photorealistic, cinematic lighting, rich warm tones, 16:9 landscape orientation.
 
 Return ONLY the prompt text, nothing else.`,
         },

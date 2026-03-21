@@ -1,5 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk'
 import type { RawArticle, ScoredArticle, ArticleCategory } from './types'
+import { getSkippedUrls } from './store'
 
 const SEARCH_QUERIES = [
   'Las Vegas real estate market news 2025',
@@ -81,10 +82,18 @@ export async function fetchAndScoreArticles(): Promise<ScoredArticle[]> {
 
   if (rawArticles.length === 0) return []
 
+  // Filter out articles the operator has skipped twice without picking
+  const skippedUrls = await getSkippedUrls()
+  const filteredArticles = skippedUrls.size > 0
+    ? rawArticles.filter((a) => !skippedUrls.has(a.url))
+    : rawArticles
+
+  if (filteredArticles.length === 0) return []
+
   // Claude scores and categorizes the articles
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
-  const articleList = rawArticles
+  const articleList = filteredArticles
     .slice(0, 30) // cap at 30 to stay within token budget
     .map(
       (a, i) =>
@@ -132,7 +141,7 @@ ${articleList}`,
     .sort((a, b) => b.relevanceScore - a.relevanceScore)
     .slice(0, 10)
     .map((s) => ({
-      ...rawArticles[s.index],
+      ...filteredArticles[s.index],
       relevanceScore: s.relevanceScore,
       category: s.category,
       whyItMatters: s.whyItMatters,

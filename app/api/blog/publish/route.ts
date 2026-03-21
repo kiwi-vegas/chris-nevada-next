@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { loadArticles } from '@/lib/store'
+import { loadArticles, recordShownArticles } from '@/lib/store'
 import { writePost } from '@/lib/writer'
 import { fetchAndUploadCoverImage } from '@/lib/images'
 import { publishBlogPost } from '@/lib/sanity-write'
@@ -36,6 +36,13 @@ export async function POST(request: Request) {
 
   if (selectedArticles.length !== 3) {
     return NextResponse.json({ error: 'One or more article IDs not found' }, { status: 400 })
+  }
+
+  // Mark the articles the operator skipped so they aren't shown again after 2 passes
+  const selectedUrls = new Set(selectedArticles.map((a) => a!.url))
+  const skippedUrls = stored.articles.filter((a) => !selectedUrls.has(a.url)).map((a) => a.url)
+  if (skippedUrls.length > 0) {
+    await recordShownArticles(skippedUrls)
   }
 
   const results: Array<{ id: string; title: string; slug: string }> = []
