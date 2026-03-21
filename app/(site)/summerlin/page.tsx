@@ -4,6 +4,11 @@ import type { Metadata } from 'next'
 import SummerlinMapWrapper from '@/components/SummerlinMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
+import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from '@/sanity/client'
+
+const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
 
 export const revalidate = 60
 
@@ -22,6 +27,23 @@ export default async function SummerlinPage() {
   const heroSubheadline = cms?.heroSubheadline ?? "Nevada's most celebrated master-planned community — 22,500 acres of refined desert living against the Red Rock Canyon skyline."
   const overviewTitle = cms?.overviewTitle ?? 'Summerlin: Where Las Vegas Does Living Right'
 
+  const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
+    ['Established', '1990'],
+    ['Developer', 'Howard Hughes Corp.'],
+    ['Total Acreage', '22,500 acres'],
+    ['Population', '130,000+'],
+    ['Median Home Price', '$686,000', 'gold'],
+    ['Villages', '20+'],
+    ['Schools', '26 public, private & charter'],
+    ['Parks', '250+'],
+    ['Miles of Trails', '200+'],
+    ['Golf Courses', '10'],
+    ['Distance to Strip', '~20 min'],
+    ['Distance to Red Rock', '~10 min'],
+  ]
+  const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
+
   return (
     <main>
       <div className="breadcrumb">
@@ -36,6 +58,13 @@ export default async function SummerlinPage() {
 
       {/* HERO */}
       <header id="hero" className="summerlin-hero">
+        {cms?.heroImage && (
+          <img
+            src={urlFor(cms.heroImage).width(1920).url()}
+            alt="Summerlin hero"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+          />
+        )}
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
@@ -126,20 +155,7 @@ export default async function SummerlinPage() {
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Summerlin At a Glance</h3>
-                {[
-                  ['Established', '1990'],
-                  ['Developer', 'Howard Hughes Corp.'],
-                  ['Total Acreage', '22,500 acres'],
-                  ['Population', '130,000+'],
-                  ['Median Home Price', '$686,000', 'gold'],
-                  ['Villages', '20+'],
-                  ['Schools', '26 public, private & charter'],
-                  ['Parks', '250+'],
-                  ['Miles of Trails', '200+'],
-                  ['Golf Courses', '10'],
-                  ['Distance to Strip', '~20 min'],
-                  ['Distance to Red Rock', '~10 min'],
-                ].map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -218,7 +234,10 @@ export default async function SummerlinPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src="/red-rock-canyon.jpg" alt="Red Rock Canyon National Conservation Area near Summerlin, Las Vegas" />
+              <img
+                src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : '/red-rock-canyon.jpg'}
+                alt="Red Rock Canyon National Conservation Area near Summerlin, Las Vegas"
+              />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Outdoor Living</span>

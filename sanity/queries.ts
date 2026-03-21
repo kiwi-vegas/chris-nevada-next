@@ -18,6 +18,9 @@ export type SanityCommunityPage = {
   overviewBody?: any[]
   metaTitle?: string
   metaDescription?: string
+  quickStats?: Array<{ key: string; value: string }>
+  heroImage?: any
+  sectionImages?: Array<{ role: string; image: any }>
 }
 
 export type SanityReview = {
@@ -65,7 +68,10 @@ export async function getCommunityPage(slug: string): Promise<SanityCommunityPag
     `*[_type == "communityPage" && slug.current == $slug][0]{
       name, heroHeadline, heroSubheadline,
       overviewTitle, overviewBody,
-      metaTitle, metaDescription
+      metaTitle, metaDescription,
+      quickStats[]{ key, value },
+      heroImage,
+      sectionImages[]{ role, image }
     }`,
     { slug },
     { next: { revalidate: 60 } }

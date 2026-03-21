@@ -1,0 +1,234 @@
+import Anthropic from '@anthropic-ai/sdk'
+import { client } from '@/sanity/client'
+import { getSanityWriteClient } from './sanity-write'
+
+// ─── Community registry ───────────────────────────────────────────────────────
+
+const COMMUNITY_PAGES = [
+  { slug: 'summerlin', name: 'Summerlin' },
+  { slug: 'henderson', name: 'Henderson' },
+  { slug: 'centennial-hills', name: 'Centennial Hills' },
+  { slug: 'desert-shores', name: 'Desert Shores' },
+  { slug: 'mountains-edge', name: 'Mountains Edge' },
+  { slug: 'southern-highlands', name: 'Southern Highlands' },
+  { slug: 'macdonald-highlands', name: 'MacDonald Highlands' },
+  { slug: 'north-las-vegas', name: 'North Las Vegas' },
+  { slug: 'the-lakes', name: 'The Lakes' },
+  { slug: 'red-rock-country-club', name: 'Red Rock Country Club' },
+  { slug: 'green-valley-ranch', name: 'Green Valley Ranch' },
+  { slug: 'lake-las-vegas', name: 'Lake Las Vegas' },
+  { slug: 'reno', name: 'Reno' },
+  { slug: 'sparks', name: 'Sparks' },
+  { slug: 'spanish-springs', name: 'Spanish Springs' },
+  { slug: 'sun-valley', name: 'Sun Valley' },
+  { slug: 'incline-village', name: 'Incline Village' },
+]
+
+// ─── Tool definitions (Anthropic tool_use format) ─────────────────────────────
+
+export const TOOLS: Anthropic.Tool[] = [
+  {
+    name: 'list_community_pages',
+    description: 'Returns the list of all community pages on the site with their slugs and names.',
+    input_schema: { type: 'object', properties: {}, required: [] },
+  },
+  {
+    name: 'get_community_content',
+    description: 'Fetches the current CMS content for a specific community page — headlines, stats, meta fields.',
+    input_schema: {
+      type: 'object',
+      properties: {
+        slug: { type: 'string', description: 'Community slug, e.g. summerlin, henderson, reno' },
+      },
+      required: ['slug'],
+    },
+  },
+  {
+    name: 'update_community_stats',
+    description: 'Updates one or more "At a Glance" stats for a community page. Stats are flexible key/value pairs. Existing keys are updated; new keys are added. The change goes live within 60 seconds.',
+    input_schema: {
+      type: 'object',
+      properties: {
+        slug: { type: 'string', description: 'Community slug' },
+        stats: {
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              key: { type: 'string', description: 'Stat label, e.g. Distance to Strip' },
+              value: { type: 'string', description: 'Stat value, e.g. ~22 min' },
+            },
+            required: ['key', 'value'],
+          },
+        },
+      },
+      required: ['slug', 'stats'],
+    },
+  },
+  {
+    name: 'update_community_text',
+    description: 'Updates a text field on a community page. Allowed fields: heroHeadline, heroSubheadline, overviewTitle, metaTitle, metaDescription.',
+    input_schema: {
+      type: 'object',
+      properties: {
+        slug: { type: 'string' },
+        field: {
+          type: 'string',
+          enum: ['heroHeadline', 'heroSubheadline', 'overviewTitle', 'metaTitle', 'metaDescription'],
+        },
+        value: { type: 'string' },
+      },
+      required: ['slug', 'field', 'value'],
+    },
+  },
+  {
+    name: 'upload_community_image',
+    description: 'Uploads an image and applies it to a community page. Use role="hero" for the main hero background, or any other role name (e.g. "lifestyle") for a section image.',
+    input_schema: {
+      type: 'object',
+      properties: {
+        slug: { type: 'string' },
+        role: { type: 'string', description: '"hero" or a section name like "lifestyle"' },
+        imageBase64: { type: 'string', description: 'Base64-encoded image data' },
+        mimeType: { type: 'string', description: 'e.g. image/jpeg, image/png, image/webp' },
+      },
+      required: ['slug', 'role', 'imageBase64', 'mimeType'],
+    },
+  },
+  {
+    name: 'get_homepage_content',
+    description: 'Fetches the current homepage CMS content — hero headline, subheadline, CTA text.',
+    input_schema: { type: 'object', properties: {}, required: [] },
+  },
+  {
+    name: 'update_homepage_field',
+    description: 'Updates a text field on the homepage. Allowed fields: heroHeadline, heroSubheadline, ctaStripHeadline, ctaStripBody.',
+    input_schema: {
+      type: 'object',
+      properties: {
+        field: {
+          type: 'string',
+          enum: ['heroHeadline', 'heroSubheadline', 'ctaStripHeadline', 'ctaStripBody'],
+        },
+        value: { type: 'string' },
+      },
+      required: ['field', 'value'],
+    },
+  },
+]
+
+// ─── Helper: get or create communityPage doc ──────────────────────────────────
+
+async function getOrCreateCommunityDoc(slug: string): Promise<string> {
+  const writeClient = getSanityWriteClient()
+  const existing = await client.fetch<{ _id: string } | null>(
+    `*[_type == "communityPage" && slug.current == $slug][0]{ _id }`,
+    { slug }
+  )
+  if (existing?._id) return existing._id
+
+  const community = COMMUNITY_PAGES.find((c) => c.slug === slug)
+  const doc = await writeClient.create({
+    _type: 'communityPage',
+    name: community?.name ?? slug,
+    slug: { _type: 'slug', current: slug },
+  })
+  return doc._id
+}
+
+// ─── Tool executor ────────────────────────────────────────────────────────────
+
+export async function executeToolCall(name: string, input: Record<string, any>): Promise<string> {
+  const writeClient = getSanityWriteClient()
+
+  switch (name) {
+    case 'list_community_pages': {
+      return JSON.stringify(COMMUNITY_PAGES)
+    }
+
+    case 'get_community_content': {
+      const doc = await client.fetch(
+        `*[_type == "communityPage" && slug.current == $slug][0]{
+          name, heroHeadline, heroSubheadline, overviewTitle, metaTitle, metaDescription,
+          quickStats[]{ key, value },
+          "hasHeroImage": defined(heroImage),
+          sectionImages[]{ role }
+        }`,
+        { slug: input.slug }
+      )
+      if (!doc) return `No CMS overrides found for "${input.slug}". The page uses all hardcoded defaults.`
+      return JSON.stringify(doc, null, 2)
+    }
+
+    case 'update_community_stats': {
+      const docId = await getOrCreateCommunityDoc(input.slug)
+      const current = await client.fetch<{ quickStats?: Array<{ key: string; value: string }> }>(
+        `*[_id == $id][0]{ quickStats[]{ key, value } }`,
+        { id: docId }
+      )
+      const existing = current?.quickStats ?? []
+      const updateMap = new Map((input.stats as Array<{ key: string; value: string }>).map((s) => [s.key.toLowerCase(), s]))
+      const merged = existing.map((s) => updateMap.has(s.key.toLowerCase()) ? updateMap.get(s.key.toLowerCase())! : s)
+      const mergedKeys = new Set(merged.map((s) => s.key.toLowerCase()))
+      for (const s of input.stats as Array<{ key: string; value: string }>) {
+        if (!mergedKeys.has(s.key.toLowerCase())) merged.push(s)
+      }
+      await writeClient.patch(docId).set({ quickStats: merged }).commit()
+      const changed = (input.stats as Array<{ key: string; value: string }>).map((s) => `${s.key}: ${s.value}`).join(', ')
+      return `Updated stats for ${input.slug}: ${changed}. Live within 60 seconds.`
+    }
+
+    case 'update_community_text': {
+      const ALLOWED = ['heroHeadline', 'heroSubheadline', 'overviewTitle', 'metaTitle', 'metaDescription']
+      if (!ALLOWED.includes(input.field)) return `Field "${input.field}" is not editable via this tool.`
+      const docId = await getOrCreateCommunityDoc(input.slug)
+      await writeClient.patch(docId).set({ [input.field]: input.value }).commit()
+      return `Updated ${input.field} for ${input.slug}. Live within 60 seconds.`
+    }
+
+    case 'upload_community_image': {
+      const buffer = Buffer.from(input.imageBase64, 'base64')
+      const ext = input.mimeType.split('/')[1] ?? 'jpg'
+      const asset = await writeClient.assets.upload('image', buffer, {
+        filename: `${input.slug}-${input.role}-${Date.now()}.${ext}`,
+        contentType: input.mimeType,
+      })
+      const imageRef = { _type: 'image', asset: { _type: 'reference', _ref: asset._id } }
+      const docId = await getOrCreateCommunityDoc(input.slug)
+
+      if (input.role === 'hero') {
+        await writeClient.patch(docId).set({ heroImage: imageRef }).commit()
+        return `Hero image updated for ${input.slug}. Live within 60 seconds.`
+      } else {
+        const current = await client.fetch<{ sectionImages?: Array<{ role: string; image: any }> }>(
+          `*[_id == $id][0]{ sectionImages[]{ role, image } }`,
+          { id: docId }
+        )
+        const existing = (current?.sectionImages ?? []).filter((s) => s.role !== input.role)
+        existing.push({ role: input.role, image: imageRef })
+        await writeClient.patch(docId).set({ sectionImages: existing }).commit()
+        return `"${input.role}" section image updated for ${input.slug}. Live within 60 seconds.`
+      }
+    }
+
+    case 'get_homepage_content': {
+      const doc = await client.fetch(
+        `*[_type == "homepage" && _id == "homepage"][0]{
+          heroHeadline, heroSubheadline, ctaStripHeadline, ctaStripBody,
+          trustStats[]{ value, label }
+        }`
+      )
+      return doc ? JSON.stringify(doc, null, 2) : 'Homepage document not found in CMS.'
+    }
+
+    case 'update_homepage_field': {
+      const ALLOWED = ['heroHeadline', 'heroSubheadline', 'ctaStripHeadline', 'ctaStripBody']
+      if (!ALLOWED.includes(input.field)) return `Field "${input.field}" is not editable.`
+      await writeClient.patch('homepage').set({ [input.field]: input.value }).commit()
+      return `Updated homepage ${input.field}. Live within 60 seconds.`
+    }
+
+    default:
+      return `Unknown tool: ${name}`
+  }
+}
