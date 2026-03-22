@@ -3,7 +3,7 @@ import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getCommunityPage } from '@/sanity/queries'
-import { mergeQuickStats, getSectionImageUrl } from '@/lib/community-utils'
+import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
 
 export const revalidate = 60
 
@@ -34,7 +34,17 @@ export default async function RenoPage() {
     ['Median Home Price', '~$480,000'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const HARDCODED_DRIVE_TIMES = [
+    { time: '~45 min', destination: 'to Lake Tahoe', route: 'via US-395 S → NV-431' },
+    { time: '~25 min', destination: 'to Sparks', route: 'via I-80 E' },
+    { time: '~30 min', destination: 'to Truckee, CA', route: 'via I-80 W' },
+    { time: '~5 min', destination: 'to RNO Airport', route: 'via US-395 N' },
+  ]
+  const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
   const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
+
+  const qs = (key: string, fallback: string) =>
+    cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
 
   return (
     <main>
@@ -64,9 +74,9 @@ export default async function RenoPage() {
             ))}</h1>
             <p className="hero-sub">{heroSubheadline}</p>
             <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">1,200+</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">$300K–$3M+</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">3</span><span className="hero-stat-lbl">Property Types</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '1,200+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$300K–$3M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Property Types', '3')}</span><span className="hero-stat-lbl">Property Types</span></div>
               <div className="hero-stat"><span className="hero-stat-num">Daily</span><span className="hero-stat-lbl">Updates</span></div>
             </div>
           </div>
@@ -92,15 +102,10 @@ export default async function RenoPage() {
             />
           </div>
           <div className="drive-time-grid">
-            {[
-              ['~45 min', 'to Lake Tahoe', 'via US-395 S → NV-431'],
-              ['~25 min', 'to Sparks', 'via I-80 E'],
-              ['~30 min', 'to Truckee, CA', 'via I-80 W'],
-              ['~5 min', 'to RNO Airport', 'via US-395 N'],
-            ].map(([time, label, route]) => (
-              <div key={label} className="drive-time-card">
+            {displayDriveTimes.map(({ time, destination, route }) => (
+              <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
-                <div className="drive-time-label">{label}</div>
+                <div className="drive-time-label">{destination}</div>
                 <div className="drive-time-route">{route}</div>
               </div>
             ))}

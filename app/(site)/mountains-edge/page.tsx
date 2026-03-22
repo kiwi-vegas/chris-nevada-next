@@ -3,7 +3,7 @@ import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getCommunityPage } from '@/sanity/queries'
-import { mergeQuickStats, getSectionImageUrl } from '@/lib/community-utils'
+import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
 
 export const revalidate = 60
 
@@ -73,7 +73,17 @@ export default async function MountainsEdgePage() {
     ['Property Tax Rate', '~0.6%'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const HARDCODED_DRIVE_TIMES = [
+    { time: '~20 min', destination: 'to the Strip', route: 'via Blue Diamond → I-15 N' },
+    { time: '~15 min', destination: 'to Red Rock Canyon', route: 'via W Charleston Blvd' },
+    { time: '~25 min', destination: 'to Downtown Las Vegas', route: 'via I-15 N → US-95' },
+    { time: '~25 min', destination: 'to Harry Reid Airport', route: 'via I-15 N → I-215 E' },
+  ]
+  const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
   const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
+
+  const qs = (key: string, fallback: string) =>
+    cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
 
   return (
     <main>
@@ -103,9 +113,9 @@ export default async function MountainsEdgePage() {
             ))}</h1>
             <p className="hero-sub">{heroSubheadline}</p>
             <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">350+</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">$350K–$1.5M+</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">3</span><span className="hero-stat-lbl">Property Types</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '350+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$350K–$1.5M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Property Types', '3')}</span><span className="hero-stat-lbl">Property Types</span></div>
               <div className="hero-stat"><span className="hero-stat-num">Daily</span><span className="hero-stat-lbl">Updates</span></div>
             </div>
           </div>
@@ -131,15 +141,10 @@ export default async function MountainsEdgePage() {
             />
           </div>
           <div className="drive-time-grid">
-            {[
-              ['~20 min', 'to the Strip', 'via Blue Diamond → I-15 N'],
-              ['~15 min', 'to Red Rock Canyon', 'via W Charleston Blvd'],
-              ['~25 min', 'to Downtown Las Vegas', 'via I-15 N → US-95'],
-              ['~25 min', 'to Harry Reid Airport', 'via I-15 N → I-215 E'],
-            ].map(([time, label, route]) => (
-              <div key={label} className="drive-time-card">
+            {displayDriveTimes.map(({ time, destination, route }) => (
+              <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
-                <div className="drive-time-label">{label}</div>
+                <div className="drive-time-label">{destination}</div>
                 <div className="drive-time-route">{route}</div>
               </div>
             ))}

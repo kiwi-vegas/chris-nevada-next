@@ -3,7 +3,7 @@ import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getCommunityPage } from '@/sanity/queries'
-import { mergeQuickStats, getSectionImageUrl } from '@/lib/community-utils'
+import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
 
 export const revalidate = 60
 
@@ -35,7 +35,17 @@ export default async function LakeLasVegasPage() {
     ['Property Tax Rate', '~0.6%'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const HARDCODED_DRIVE_TIMES = [
+    { time: '~30 min', destination: 'to the Strip', route: 'via Lake Mead Pkwy → I-515' },
+    { time: '~10 min', destination: 'to Lake Mead NRA', route: 'via Lake Mead Dr E' },
+    { time: '~25 min', destination: 'to Harry Reid Airport', route: 'via Lake Mead Pkwy → I-215' },
+    { time: '~30 min', destination: 'to Downtown Henderson', route: 'via Lake Mead Pkwy W' },
+  ]
+  const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
   const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
+
+  const qs = (key: string, fallback: string) =>
+    cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
 
   return (
     <main>
@@ -65,9 +75,9 @@ export default async function LakeLasVegasPage() {
             ))}</h1>
             <p className="hero-sub">{heroSubheadline}</p>
             <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">150+</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">$600K–$8M+</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">3</span><span className="hero-stat-lbl">Property Types</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '150+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$600K–$8M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Property Types', '3')}</span><span className="hero-stat-lbl">Property Types</span></div>
               <div className="hero-stat"><span className="hero-stat-num">Daily</span><span className="hero-stat-lbl">Updates</span></div>
             </div>
           </div>
@@ -93,15 +103,10 @@ export default async function LakeLasVegasPage() {
             />
           </div>
           <div className="drive-time-grid">
-            {[
-              ['~30 min', 'to the Strip', 'via Lake Mead Pkwy → I-515'],
-              ['~10 min', 'to Lake Mead NRA', 'via Lake Mead Dr E'],
-              ['~25 min', 'to Harry Reid Airport', 'via Lake Mead Pkwy → I-215'],
-              ['~30 min', 'to Downtown Henderson', 'via Lake Mead Pkwy W'],
-            ].map(([time, label, route]) => (
-              <div key={label} className="drive-time-card">
+            {displayDriveTimes.map(({ time, destination, route }) => (
+              <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
-                <div className="drive-time-label">{label}</div>
+                <div className="drive-time-label">{destination}</div>
                 <div className="drive-time-route">{route}</div>
               </div>
             ))}

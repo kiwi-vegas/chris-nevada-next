@@ -3,7 +3,7 @@ import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getCommunityPage } from '@/sanity/queries'
-import { mergeQuickStats, getSectionImageUrl } from '@/lib/community-utils'
+import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
 
 export const revalidate = 60
 
@@ -59,7 +59,17 @@ export default async function NorthLasVegasPage() {
     ['Property Tax Rate', '~0.6%'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const HARDCODED_DRIVE_TIMES = [
+    { time: '~25 min', destination: 'to the Strip', route: 'via I-15 S or US-95 S' },
+    { time: '~30 min', destination: 'to Mount Charleston', route: 'via US-95 N → NV-157' },
+    { time: '~20 min', destination: 'to Downtown Las Vegas', route: 'via US-95 S' },
+    { time: '~35 min', destination: 'to Harry Reid Airport', route: 'via I-15 S' },
+  ]
+  const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
   const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
+
+  const qs = (key: string, fallback: string) =>
+    cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
 
   return (
     <main>
@@ -89,9 +99,9 @@ export default async function NorthLasVegasPage() {
             ))}</h1>
             <p className="hero-sub">{heroSubheadline}</p>
             <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">800+</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">$250K–$1M+</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">3</span><span className="hero-stat-lbl">Property Types</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '800+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$250K–$1M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Property Types', '3')}</span><span className="hero-stat-lbl">Property Types</span></div>
               <div className="hero-stat"><span className="hero-stat-num">Daily</span><span className="hero-stat-lbl">Updates</span></div>
             </div>
           </div>
@@ -129,15 +139,10 @@ export default async function NorthLasVegasPage() {
             />
           </div>
           <div className="drive-time-grid">
-            {[
-              ['~25 min', 'to the Strip', 'via I-15 S or US-95 S'],
-              ['~30 min', 'to Mount Charleston', 'via US-95 N → NV-157'],
-              ['~20 min', 'to Downtown Las Vegas', 'via US-95 S'],
-              ['~35 min', 'to Harry Reid Airport', 'via I-15 S'],
-            ].map(([time, label, route]) => (
-              <div key={label} className="drive-time-card">
+            {displayDriveTimes.map(({ time, destination, route }) => (
+              <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
-                <div className="drive-time-label">{label}</div>
+                <div className="drive-time-label">{destination}</div>
                 <div className="drive-time-route">{route}</div>
               </div>
             ))}

@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import SummerlinMapWrapper from '@/components/SummerlinMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
-import { mergeQuickStats, getSectionImageUrl } from '@/lib/community-utils'
+import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
 
 export const revalidate = 60
 
@@ -38,7 +38,17 @@ export default async function SummerlinPage() {
     ['Distance to Red Rock', '~10 min'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const HARDCODED_DRIVE_TIMES = [
+    { time: '~20 min', destination: 'to the Strip', route: 'via Summerlin Pkwy → I-15' },
+    { time: '~10 min', destination: 'to Red Rock Canyon', route: 'via W Charleston Blvd' },
+    { time: '~15 min', destination: 'to Downtown Las Vegas', route: 'via US-95' },
+    { time: '~30 min', destination: 'to Harry Reid Airport', route: 'via I-215 South' },
+  ]
+  const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
   const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
+
+  const qs = (key: string, fallback: string) =>
+    cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
 
   return (
     <main>
@@ -68,10 +78,10 @@ export default async function SummerlinPage() {
             ))}</h1>
             <p className="hero-sub">{heroSubheadline}</p>
             <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">700+</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">$450K–$10M+</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">26</span><span className="hero-stat-lbl">Schools</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">200+</span><span className="hero-stat-lbl">Miles of Trails</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '700+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$450K–$10M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Schools', '26')}</span><span className="hero-stat-lbl">Schools</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Miles of Trails', '200+')}</span><span className="hero-stat-lbl">Miles of Trails</span></div>
             </div>
           </div>
         </div>
@@ -89,15 +99,10 @@ export default async function SummerlinPage() {
             <SummerlinMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {[
-              ['~20 min', 'to the Strip', 'via Summerlin Pkwy → I-15'],
-              ['~10 min', 'to Red Rock Canyon', 'via W Charleston Blvd'],
-              ['~15 min', 'to Downtown Las Vegas', 'via US-95'],
-              ['~30 min', 'to Harry Reid Airport', 'via I-215 South'],
-            ].map(([time, label, route]) => (
-              <div key={label} className="drive-time-card">
+            {displayDriveTimes.map(({ time, destination, route }) => (
+              <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
-                <div className="drive-time-label">{label}</div>
+                <div className="drive-time-label">{destination}</div>
                 <div className="drive-time-route">{route}</div>
               </div>
             ))}

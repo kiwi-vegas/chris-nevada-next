@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import HendersonMapWrapper from '@/components/HendersonMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
-import { mergeQuickStats, getSectionImageUrl } from '@/lib/community-utils'
+import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
 
 export const revalidate = 60
 
@@ -38,7 +38,17 @@ export default async function HendersonPage() {
     ['Property Tax Rate', '~0.6%'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
+  const HARDCODED_DRIVE_TIMES = [
+    { time: '~15 min', destination: 'to the Strip', route: 'via I-215 W → I-15' },
+    { time: '~15 min', destination: 'to Lake Mead', route: 'via Lake Mead Dr E' },
+    { time: '~20 min', destination: 'to Downtown Las Vegas', route: 'via US-95 N' },
+    { time: '~25 min', destination: 'to Harry Reid Airport', route: 'via I-215 W → I-15 S' },
+  ]
+  const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
   const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
+
+  const qs = (key: string, fallback: string) =>
+    cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
 
   return (
     <main>
@@ -68,10 +78,10 @@ export default async function HendersonPage() {
             ))}</h1>
             <p className="hero-sub">{heroSubheadline}</p>
             <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">1,200+</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">$300K–$10M+</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">45+</span><span className="hero-stat-lbl">Schools</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">160+</span><span className="hero-stat-lbl">Parks</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '1,200+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$300K–$10M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Schools', '45+')}</span><span className="hero-stat-lbl">Schools</span></div>
+              <div className="hero-stat"><span className="hero-stat-num">{qs('Parks', '160+')}</span><span className="hero-stat-lbl">Parks</span></div>
             </div>
           </div>
         </div>
@@ -89,15 +99,10 @@ export default async function HendersonPage() {
             <HendersonMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {[
-              ['~15 min', 'to the Strip', 'via I-215 W → I-15'],
-              ['~15 min', 'to Lake Mead', 'via Lake Mead Dr E'],
-              ['~20 min', 'to Downtown Las Vegas', 'via US-95 N'],
-              ['~25 min', 'to Harry Reid Airport', 'via I-215 W → I-15 S'],
-            ].map(([time, label, route]) => (
-              <div key={label} className="drive-time-card">
+            {displayDriveTimes.map(({ time, destination, route }) => (
+              <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
-                <div className="drive-time-label">{label}</div>
+                <div className="drive-time-label">{destination}</div>
                 <div className="drive-time-route">{route}</div>
               </div>
             ))}

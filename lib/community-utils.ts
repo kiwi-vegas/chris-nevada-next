@@ -47,6 +47,23 @@ export function getSectionImage(
 }
 
 /**
+ * Merges Sanity quickStats overrides into a hardcoded drive times array.
+ * The override key is the destination string (case-insensitive match).
+ * e.g. quickStats key "to Harry Reid Airport" overrides the time for that card.
+ */
+export function mergeDriveTimes(
+  hardcoded: Array<{ time: string; destination: string; route: string }>,
+  quickStats?: Array<{ key: string; value: string }> | null
+): Array<{ time: string; destination: string; route: string }> {
+  if (!quickStats?.length) return hardcoded
+  const overrides = new Map(quickStats.map((s) => [s.key.toLowerCase().trim(), s.value]))
+  return hardcoded.map((dt) => ({
+    ...dt,
+    time: overrides.get(dt.destination.toLowerCase().trim()) ?? dt.time,
+  }))
+}
+
+/**
  * Returns the direct Sanity CDN URL for a section image role (or null).
  * Prefer this over getSectionImage + urlFor for reliable image display.
  */
