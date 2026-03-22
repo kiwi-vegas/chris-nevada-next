@@ -19,7 +19,8 @@ export default function AssistantLoginPage() {
         body: JSON.stringify({ password }),
       })
       if (res.ok) {
-        router.push('/admin/assistant')
+        const hasAvatar = localStorage.getItem('assistant_avatar')
+        router.push(hasAvatar ? '/admin/assistant' : '/admin/assistant/setup')
       } else {
         setError('Incorrect password. Please try again.')
       }
