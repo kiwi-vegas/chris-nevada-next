@@ -55,8 +55,22 @@ export default function AssistantPage() {
     const reader = new FileReader()
     reader.onload = () => {
       const dataUrl = reader.result as string
-      const base64 = dataUrl.split(',')[1]
-      setPendingImage({ base64, mimeType: file.type, preview: dataUrl })
+      const img = new Image()
+      img.onload = () => {
+        const MAX = 1200
+        let { width, height } = img
+        if (width > MAX || height > MAX) {
+          if (width > height) { height = Math.round((height * MAX) / width); width = MAX }
+          else { width = Math.round((width * MAX) / height); height = MAX }
+        }
+        const canvas = document.createElement('canvas')
+        canvas.width = width
+        canvas.height = height
+        canvas.getContext('2d')!.drawImage(img, 0, 0, width, height)
+        const resized = canvas.toDataURL('image/jpeg', 0.85)
+        setPendingImage({ base64: resized.split(',')[1], mimeType: 'image/jpeg', preview: resized })
+      }
+      img.src = dataUrl
     }
     reader.readAsDataURL(file)
     e.target.value = ''
