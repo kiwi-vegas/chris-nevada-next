@@ -3,11 +3,7 @@ import CommunityMapWrapper from '@/components/CommunityMapWrapper'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getCommunityPage } from '@/sanity/queries'
-import { mergeQuickStats, getSectionImage } from '@/lib/community-utils'
-import { createImageUrlBuilder } from '@sanity/image-url'
-import { client } from '@/sanity/client'
-
-const urlFor = (source: any) => createImageUrlBuilder(client).image(source)
+import { mergeQuickStats, getSectionImageUrl } from '@/lib/community-utils'
 
 export const revalidate = 60
 
@@ -39,7 +35,7 @@ export default async function RedRockCountryClubPage() {
     ['Property Tax Rate', '~0.6%'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
-  const lifestyleImage = getSectionImage(cms?.sectionImages, 'lifestyle')
+  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   return (
     <main>
@@ -55,14 +51,10 @@ export default async function RedRockCountryClubPage() {
 
       {/* HERO */}
       <header id="hero" className="red-rock-cc-hero">
-        {cms?.heroImage && (
-          <img
-            src={urlFor(cms.heroImage).width(1920).url()}
-            alt="Red Rock Country Club hero"
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
-          />
-        )}
-        <div className="hero-bg" />
+        {cms?.heroImageUrl
+          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Red Rock Country Club hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+          : <div className="hero-bg" />
+        }
         <div className="hero-overlay" />
         <div className="hero-content summerlin">
           <div className="container">
@@ -228,7 +220,7 @@ export default async function RedRockCountryClubPage() {
         <div className="container">
           <div className="lifestyle-split">
             <div className="lifestyle-img">
-              <img src={lifestyleImage ? urlFor(lifestyleImage).width(900).url() : 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=900&h=600&q=80'} alt="Golf course and mountain views at Red Rock Country Club, Summerlin" />
+              <img src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=900&h=600&q=80'} alt="Golf course and mountain views at Red Rock Country Club, Summerlin" />
             </div>
             <div className="lifestyle-content">
               <span className="section-label">Club Living</span>

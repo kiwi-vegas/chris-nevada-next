@@ -45,3 +45,15 @@ export function getSectionImage(
   if (!sectionImages?.length || !role) return null
   return sectionImages.find((s) => s.role.toLowerCase() === role.toLowerCase())?.image ?? null
 }
+
+/**
+ * Returns the direct Sanity CDN URL for a section image role (or null).
+ * Prefer this over getSectionImage + urlFor for reliable image display.
+ */
+export function getSectionImageUrl(
+  sectionImages?: Array<{ role: string; image: any; imageUrl?: string }> | null,
+  role?: string
+): string | null {
+  if (!sectionImages?.length || !role) return null
+  return sectionImages.find((s) => s.role.toLowerCase() === role.toLowerCase())?.imageUrl ?? null
+}

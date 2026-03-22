@@ -2,35 +2,30 @@
 import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
 
+// Module-level flag — true on the initial hard page load (direct URL, refresh, or
+// post-reload). The browser re-executes JS from scratch on every hard load, so this
+// resets automatically. It never resets on SPA navigations within the same session.
+let isHardLoad = true
+
 export default function YlopoInit() {
   const pathname = usePathname()
 
   useEffect(() => {
-    // Give React a tick to finish rendering the widget divs
-    const timer = setTimeout(() => {
-      const win = window as any
+    // On a hard load the YLOPO script (strategy="afterInteractive" in root layout)
+    // already ran and initialized any widget divs on the page — nothing to do.
+    if (isHardLoad) {
+      isHardLoad = false
+      return
+    }
 
-      // Try YLOPO's native re-init method first
-      if (win.YlopoWidgets?.init) {
-        win.YlopoWidgets.init()
-        return
-      }
-      if (win.YLOPO_WIDGETS?.init) {
-        win.YLOPO_WIDGETS.init()
-        return
-      }
+    // Blog pages have no YLOPO widgets — skip.
+    if (pathname.startsWith('/blog')) return
 
-      // Fallback: remove and re-inject the script so it re-scans the DOM
-      const existing = document.querySelector('script[src*="widgets-1.0.0"]')
-      if (existing) existing.remove()
-
-      const script = document.createElement('script')
-      script.src = 'https://search.nevadarealestategroup.net/build/js/widgets-1.0.0.js'
-      script.async = true
-      document.body.appendChild(script)
-    }, 150)
-
-    return () => clearTimeout(timer)
+    // SPA navigation to a community/listing page: the YLOPO script has already run
+    // and won't re-scan the DOM for widget divs that weren't there on initial load.
+    // A hard reload is the only reliable way to make it re-initialize. We skip the
+    // DOM query (the new page may not have committed to the DOM yet at this point).
+    window.location.reload()
   }, [pathname])
 
   return null

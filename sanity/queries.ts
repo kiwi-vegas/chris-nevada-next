@@ -20,7 +20,8 @@ export type SanityCommunityPage = {
   metaDescription?: string
   quickStats?: Array<{ key: string; value: string }>
   heroImage?: any
-  sectionImages?: Array<{ role: string; image: any }>
+  heroImageUrl?: string
+  sectionImages?: Array<{ role: string; image: any; imageUrl?: string }>
 }
 
 export type SanityReview = {
@@ -71,7 +72,8 @@ export async function getCommunityPage(slug: string): Promise<SanityCommunityPag
       metaTitle, metaDescription,
       quickStats[]{ key, value },
       heroImage,
-      sectionImages[]{ role, image }
+      "heroImageUrl": heroImage.asset->url,
+      sectionImages[]{ role, image, "imageUrl": image.asset->url }
     }`,
     { slug },
     { next: { revalidate: 60 } }
