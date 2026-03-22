@@ -5,23 +5,91 @@ import { getSanityWriteClient } from './sanity-write'
 // ─── Community registry ───────────────────────────────────────────────────────
 
 const COMMUNITY_PAGES = [
-  { slug: 'summerlin', name: 'Summerlin' },
-  { slug: 'henderson', name: 'Henderson' },
-  { slug: 'centennial-hills', name: 'Centennial Hills' },
-  { slug: 'desert-shores', name: 'Desert Shores' },
-  { slug: 'mountains-edge', name: 'Mountains Edge' },
-  { slug: 'southern-highlands', name: 'Southern Highlands' },
-  { slug: 'macdonald-highlands', name: 'MacDonald Highlands' },
-  { slug: 'north-las-vegas', name: 'North Las Vegas' },
-  { slug: 'the-lakes', name: 'The Lakes' },
-  { slug: 'red-rock-country-club', name: 'Red Rock Country Club' },
-  { slug: 'green-valley-ranch', name: 'Green Valley Ranch' },
-  { slug: 'lake-las-vegas', name: 'Lake Las Vegas' },
-  { slug: 'reno', name: 'Reno' },
-  { slug: 'sparks', name: 'Sparks' },
-  { slug: 'spanish-springs', name: 'Spanish Springs' },
-  { slug: 'sun-valley', name: 'Sun Valley' },
-  { slug: 'incline-village', name: 'Incline Village' },
+  {
+    slug: 'summerlin',
+    name: 'Summerlin',
+    driveTimes: ['to the Strip', 'to Red Rock Canyon', 'to Downtown Las Vegas', 'to Harry Reid Airport'],
+  },
+  {
+    slug: 'henderson',
+    name: 'Henderson',
+    driveTimes: ['to the Strip', 'to Lake Mead', 'to Downtown Las Vegas', 'to Harry Reid Airport'],
+  },
+  {
+    slug: 'centennial-hills',
+    name: 'Centennial Hills',
+    driveTimes: ['to the Strip', 'to Mount Charleston', 'to Downtown Las Vegas', 'to Harry Reid Airport'],
+  },
+  {
+    slug: 'desert-shores',
+    name: 'Desert Shores',
+    driveTimes: ['to the Strip', 'to Downtown Las Vegas', 'to Summerlin', 'to Harry Reid Airport'],
+  },
+  {
+    slug: 'mountains-edge',
+    name: 'Mountains Edge',
+    driveTimes: ['to the Strip', 'to Red Rock Canyon', 'to Downtown Las Vegas', 'to Harry Reid Airport'],
+  },
+  {
+    slug: 'southern-highlands',
+    name: 'Southern Highlands',
+    driveTimes: ['to the Strip', 'to Harry Reid Airport', 'to Henderson', 'to Los Angeles'],
+  },
+  {
+    slug: 'macdonald-highlands',
+    name: 'MacDonald Highlands',
+    driveTimes: ['to the Strip', 'to Henderson', 'to Harry Reid Airport', 'to Lake Mead'],
+  },
+  {
+    slug: 'north-las-vegas',
+    name: 'North Las Vegas',
+    driveTimes: ['to the Strip', 'to Mount Charleston', 'to Downtown Las Vegas', 'to Harry Reid Airport'],
+  },
+  {
+    slug: 'the-lakes',
+    name: 'The Lakes',
+    driveTimes: ['to the Strip', 'to Summerlin', 'to Downtown Las Vegas', 'to Harry Reid Airport'],
+  },
+  {
+    slug: 'red-rock-country-club',
+    name: 'Red Rock Country Club',
+    driveTimes: ['to Red Rock Canyon', 'to the Strip', 'to Downtown Summerlin', 'to Harry Reid Airport'],
+  },
+  {
+    slug: 'green-valley-ranch',
+    name: 'Green Valley Ranch',
+    driveTimes: ['to the Strip', 'to Harry Reid Airport', 'to Downtown Las Vegas', 'to Lake Mead'],
+  },
+  {
+    slug: 'lake-las-vegas',
+    name: 'Lake Las Vegas',
+    driveTimes: ['to the Strip', 'to Lake Mead NRA', 'to Harry Reid Airport', 'to Downtown Henderson'],
+  },
+  {
+    slug: 'reno',
+    name: 'Reno',
+    driveTimes: ['to Lake Tahoe', 'to Sparks', 'to Truckee, CA', 'to RNO Airport'],
+  },
+  {
+    slug: 'sparks',
+    name: 'Sparks',
+    driveTimes: ['to Downtown Reno', 'to Tesla Gigafactory', 'to Spanish Springs', 'to Lake Tahoe'],
+  },
+  {
+    slug: 'spanish-springs',
+    name: 'Spanish Springs',
+    driveTimes: ['to Downtown Reno', 'to Sparks', 'to Pyramid Lake', 'to Lake Tahoe'],
+  },
+  {
+    slug: 'sun-valley',
+    name: 'Sun Valley',
+    driveTimes: ['to Downtown Reno', 'to Sparks', 'to Pyramid Lake', 'to Lake Tahoe'],
+  },
+  {
+    slug: 'incline-village',
+    name: 'Incline Village',
+    driveTimes: ['to Reno', 'to Truckee, CA', 'to Crystal Bay', 'to South Lake Tahoe'],
+  },
 ]
 
 // ─── Tool definitions (Anthropic tool_use format) ─────────────────────────────
@@ -34,7 +102,7 @@ export const TOOLS: Anthropic.Tool[] = [
   },
   {
     name: 'get_community_content',
-    description: 'Fetches the current CMS content for a specific community page — headlines, stats, meta fields.',
+    description: 'Fetches the current CMS content for a specific community page — headlines, stats, meta fields, and the available drive time destination keys.',
     input_schema: {
       type: 'object',
       properties: {
@@ -156,8 +224,13 @@ export async function executeToolCall(name: string, input: Record<string, any>):
         }`,
         { slug: input.slug }
       )
-      if (!doc) return `No CMS overrides found for "${input.slug}". The page uses all hardcoded defaults.`
-      return JSON.stringify(doc, null, 2)
+      const community = COMMUNITY_PAGES.find((c) => c.slug === input.slug)
+      const result = {
+        ...(doc ?? { note: `No CMS overrides found for "${input.slug}". Page uses hardcoded defaults.` }),
+        driveTimeKeys: community?.driveTimes ?? [],
+        driveTimeNote: 'To update a drive time, use update_community_stats with key = the destination string (e.g. "to Harry Reid Airport") and value = the time (e.g. "~5 min")',
+      }
+      return JSON.stringify(result, null, 2)
     }
 
     case 'update_community_stats': {

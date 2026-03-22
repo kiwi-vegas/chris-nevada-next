@@ -18,8 +18,8 @@ export default function YlopoInit() {
       return
     }
 
-    // Blog pages have no YLOPO widgets — skip.
-    if (pathname.startsWith('/blog')) return
+    // SPA navigation: skip blog and info pages (no YLOPO widgets)
+    if (pathname.startsWith('/blog') || pathname.startsWith('/buyers') || pathname.startsWith('/sellers')) return
 
     // SPA navigation to a community/listing page: the YLOPO script has already run
     // and won't re-scan the DOM for widget divs that weren't there on initial load.

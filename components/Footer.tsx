@@ -75,20 +75,21 @@ export default function Footer() {
           <div className="footer-nav-col">
             <h4>Buyers</h4>
             <ul>
-              <li><a href="https://www.nevadarealestategroup.com/work-with-a-realtor/">Work With a Realtor</a></li>
-              <li><a href="https://www.nevadarealestategroup.com/property-search/">Browse Homes for Sale</a></li>
-              <li><a href="https://www.nevadarealestategroup.com/get-alerts/">Get Listing Alerts</a></li>
-              <li><a href="https://www.nevadarealestategroup.com/first-time-home-buyers/">First Time Buyers</a></li>
-              <li><a href="https://www.nevadarealestategroup.com/mortgage-calculator/">Mortgage Calculator</a></li>
-              <li><a href="https://www.nevadarealestategroup.com/mortgage-pre-approval/">Mortgage Pre-Approval</a></li>
+              <li><Link href="/buyers/">Work With a Realtor</Link></li>
+              <li><a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer">Browse Homes for Sale</a></li>
+              <li><Link href="/buyers/personalized-home-search/">Get Listing Alerts</Link></li>
+              <li><Link href="/buyers/first-time-buyers/">First Time Buyers</Link></li>
+              <li><Link href="/buyers/mortgage-calculator/">Mortgage Calculator</Link></li>
+              <li><Link href="/buyers/mortgage-pre-approval/">Mortgage Pre-Approval</Link></li>
             </ul>
           </div>
           <div className="footer-nav-col">
             <h4>Sell Your Home</h4>
             <ul>
-              <li><a href="https://www.nevadarealestategroup.com/free-market-analysis/">Free Market Analysis</a></li>
-              <li><a href="https://www.nevadarealestategroup.com/7-day-listing-agreement/">7-Day Listing Agreement</a></li>
-              <li><a href="https://www.nevadarealestategroup.com/resources-for-sellers/">Resources for Sellers</a></li>
+              <li><Link href="/sellers/">Work With a Realtor</Link></li>
+              <li><a href="https://nevadarealestategroup.hifello.com/lp/63ef80d5109ae10018e62028" target="_blank" rel="noopener noreferrer">Free Market Analysis</a></li>
+              <li><Link href="/sellers/7-day-listing-agreement/">7-Day Listing Agreement</Link></li>
+              <li><Link href="/sellers/#resources">Resources for Sellers</Link></li>
             </ul>
             <h4 style={{ marginTop: '24px' }}>Company</h4>
             <ul>

@@ -37,13 +37,16 @@ export default function Nav() {
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M6 9l6 6 6-6"/></svg>
               </button>
               <div className="nav-dropdown">
-                <a href="https://www.nevadarealestategroup.com/work-with-a-realtor/">Work With a Realtor</a>
-                <a href="https://www.nevadarealestategroup.com/property-search/">Browse Homes for Sale</a>
-                <a href="https://www.nevadarealestategroup.com/get-alerts/">Get Alerts</a>
+                <Link href="/buyers/">Work With a Realtor</Link>
+                <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer">Browse Homes for Sale</a>
+                <Link href="/buyers/personalized-home-search/">Get Listing Alerts</Link>
                 <hr />
-                <a href="https://www.nevadarealestategroup.com/first-time-home-buyers/">First Time Home Buyers</a>
-                <a href="https://www.nevadarealestategroup.com/mortgage-calculator/">Mortgage Calculator</a>
-                <a href="https://www.nevadarealestategroup.com/mortgage-pre-approval/">Mortgage Pre-Approval</a>
+                <Link href="/buyers/#resources">Resources for Buyers</Link>
+                <Link href="/buyers/first-time-buyers/">First Time Buyers</Link>
+                <Link href="/buyers/mortgage-calculator/">Mortgage Calculator</Link>
+                <Link href="/buyers/mortgage-pre-approval/">Mortgage Pre-Approval</Link>
+                <hr />
+                <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[yearMin]=2025" target="_blank" rel="noopener noreferrer">New Construction</a>
               </div>
             </li>
             <li className="nav-item">
@@ -52,10 +55,11 @@ export default function Nav() {
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M6 9l6 6 6-6"/></svg>
               </button>
               <div className="nav-dropdown">
-                <a href="https://www.nevadarealestategroup.com/free-market-analysis/">Free Market Analysis</a>
-                <a href="https://www.nevadarealestategroup.com/7-day-listing-agreement/">7-Day Listing Agreement</a>
+                <Link href="/sellers/">Work With a Realtor</Link>
+                <a href="https://nevadarealestategroup.hifello.com/lp/63ef80d5109ae10018e62028" target="_blank" rel="noopener noreferrer">Free Market Analysis</a>
+                <Link href="/sellers/7-day-listing-agreement/">7-Day Listing Agreement</Link>
                 <hr />
-                <a href="https://www.nevadarealestategroup.com/resources-for-sellers/">Resources for Sellers</a>
+                <Link href="/sellers/#resources">Resources for Sellers</Link>
               </div>
             </li>
             <li className="nav-item communities-trigger">
@@ -115,13 +119,19 @@ export default function Nav() {
             </button>
             <div className={`mob-submenu${openGroups[group] ? ' open' : ''}`}>
               {group === 'Buyers' && <>
-                <a href="https://www.nevadarealestategroup.com/work-with-a-realtor/" className="mobile-nav-link" onClick={closeMobile}>Work With a Realtor</a>
-                <a href="https://www.nevadarealestategroup.com/property-search/" className="mobile-nav-link" onClick={closeMobile}>Browse Homes</a>
-                <a href="https://www.nevadarealestategroup.com/mortgage-calculator/" className="mobile-nav-link" onClick={closeMobile}>Mortgage Calculator</a>
+                <Link href="/buyers/" className="mobile-nav-link" onClick={closeMobile}>Work With a Realtor</Link>
+                <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="mobile-nav-link" onClick={closeMobile}>Browse Homes</a>
+                <Link href="/buyers/personalized-home-search/" className="mobile-nav-link" onClick={closeMobile}>Get Listing Alerts</Link>
+                <Link href="/buyers/first-time-buyers/" className="mobile-nav-link" onClick={closeMobile}>First Time Buyers</Link>
+                <Link href="/buyers/mortgage-calculator/" className="mobile-nav-link" onClick={closeMobile}>Mortgage Calculator</Link>
+                <Link href="/buyers/mortgage-pre-approval/" className="mobile-nav-link" onClick={closeMobile}>Mortgage Pre-Approval</Link>
+                <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[yearMin]=2025" target="_blank" rel="noopener noreferrer" className="mobile-nav-link" onClick={closeMobile}>New Construction</a>
               </>}
               {group === 'Sell Your Home' && <>
-                <a href="https://www.nevadarealestategroup.com/free-market-analysis/" className="mobile-nav-link" onClick={closeMobile}>Free Market Analysis</a>
-                <a href="https://www.nevadarealestategroup.com/7-day-listing-agreement/" className="mobile-nav-link" onClick={closeMobile}>7-Day Listing</a>
+                <Link href="/sellers/" className="mobile-nav-link" onClick={closeMobile}>Work With a Realtor</Link>
+                <a href="https://nevadarealestategroup.hifello.com/lp/63ef80d5109ae10018e62028" target="_blank" rel="noopener noreferrer" className="mobile-nav-link" onClick={closeMobile}>Free Market Analysis</a>
+                <Link href="/sellers/7-day-listing-agreement/" className="mobile-nav-link" onClick={closeMobile}>7-Day Listing Agreement</Link>
+                <Link href="/sellers/#resources" className="mobile-nav-link" onClick={closeMobile}>Resources for Sellers</Link>
               </>}
               {group === 'Communities' && <>
                 <div className="mob-city-label">Las Vegas</div>
