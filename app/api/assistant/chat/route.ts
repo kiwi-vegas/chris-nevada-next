@@ -39,11 +39,20 @@ WHAT YOU CANNOT DO (decline politely if asked):
 - Add or remove entire page sections
 - Modify blog posts or reviews
 
+IMAGE UPLOADS — follow these rules exactly:
+- When Chris attaches an image, it is automatically available in the system. NEVER ask him to upload it again.
+- If he hasn't specified which page the image is for, ask him.
+- If he hasn't clearly said which section, ask ONE question: "Where should I place this image — the hero background (large banner at the top), the lifestyle section, or somewhere else on the page?"
+- Do NOT assume hero unless he explicitly says so.
+- Once you know the page and section, call upload_community_image with just slug and role — the image data is injected automatically, do not include imageBase64 or mimeType.
+- Image uploads can take up to 30 seconds. Tell Chris "Working on it — uploading the image now, this takes about 30 seconds." before calling the tool.
+- Once done, confirm exactly what was updated and that it will be live within 60 seconds.
+
 Always confirm exactly what you changed, including the community name and field. If a change will be live in 60 seconds, say so. If you're unsure which community Chris means, ask for clarification.
 
 Be friendly, efficient, and specific. Chris is not technical — speak in plain English.`
 
-export const maxDuration = 60
+export const maxDuration = 120
 
 export async function POST(req: NextRequest) {
   const secret = process.env.ADMIN_SECRET
@@ -54,7 +63,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  let body: { messages?: any[]; imageBase64?: string; mimeType?: string }
+  let body: { messages?: any[] }
   try { body = await req.json() } catch { return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 }) }
 
   const { messages = [] } = body
@@ -62,6 +71,21 @@ export async function POST(req: NextRequest) {
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
   let conversationMessages: Anthropic.MessageParam[] = messages
+
+  // Find the most recent image in conversation messages (for auto-injection into upload tool)
+  function findLatestImage(): { base64: string; mimeType: string } | null {
+    for (let i = conversationMessages.length - 1; i >= 0; i--) {
+      const msg = conversationMessages[i]
+      if (msg.role !== 'user') continue
+      const content = Array.isArray(msg.content) ? msg.content : []
+      for (const block of content as any[]) {
+        if (block.type === 'image' && block.source?.type === 'base64') {
+          return { base64: block.source.data, mimeType: block.source.media_type }
+        }
+      }
+    }
+    return null
+  }
 
   // Agentic tool-use loop
   for (let i = 0; i < MAX_TOOL_ITERATIONS; i++) {
@@ -94,7 +118,14 @@ export async function POST(req: NextRequest) {
     for (const block of response.content) {
       if (block.type !== 'tool_use') continue
       try {
-        const result = await executeToolCall(block.name, block.input as Record<string, any>)
+        const input = { ...(block.input as Record<string, any>) }
+        // Auto-inject image data for upload tool when Claude omits it
+        if (block.name === 'upload_community_image' && !input.imageBase64) {
+          const img = findLatestImage()
+          if (img) { input.imageBase64 = img.base64; input.mimeType = img.mimeType }
+          else { toolResults.push({ type: 'tool_result', tool_use_id: block.id, content: 'Error: No image found in conversation. Ask Chris to attach the image.', is_error: true }); continue }
+        }
+        const result = await executeToolCall(block.name, input)
         toolResults.push({ type: 'tool_result', tool_use_id: block.id, content: result })
       } catch (err) {
         toolResults.push({

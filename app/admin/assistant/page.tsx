@@ -28,6 +28,7 @@ export default function AssistantPage() {
   const [apiMessages, setApiMessages] = useState<any[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
+  const [loadingHasImage, setLoadingHasImage] = useState(false)
   const [pendingImage, setPendingImage] = useState<{ base64: string; mimeType: string; preview: string } | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
   const bottomRef = useRef<HTMLDivElement>(null)
@@ -102,8 +103,10 @@ export default function AssistantPage() {
     }
 
     const newApiMessages = [...apiMessages, newApiMessage]
+    const hadImage = !!pendingImage
     setPendingImage(null)
     setLoading(true)
+    setLoadingHasImage(hadImage)
 
     try {
       const res = await fetch('/api/assistant/chat', {
@@ -122,6 +125,7 @@ export default function AssistantPage() {
       setDisplayMessages((prev) => [...prev, { role: 'assistant', text: 'Connection error. Please try again.' }])
     } finally {
       setLoading(false)
+      setLoadingHasImage(false)
     }
   }
 
@@ -220,7 +224,7 @@ export default function AssistantPage() {
             <div style={{
               padding: '13px 17px', borderRadius: '18px 18px 18px 4px',
               background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.08)',
-              fontSize: '14px', display: 'flex', gap: '4px', alignItems: 'center',
+              fontSize: '14px', display: 'flex', gap: '8px', alignItems: 'center',
             }}>
               {[0, 1, 2].map((n) => (
                 <div key={n} style={{
@@ -228,6 +232,11 @@ export default function AssistantPage() {
                   animation: `pulse 1.2s ease-in-out ${n * 0.2}s infinite`,
                 }} />
               ))}
+              {loadingHasImage && (
+                <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: '12px', marginLeft: '4px' }}>
+                  Uploading image…
+                </span>
+              )}
             </div>
           </div>
         )}

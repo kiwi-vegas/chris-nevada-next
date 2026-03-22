@@ -83,16 +83,16 @@ export const TOOLS: Anthropic.Tool[] = [
   },
   {
     name: 'upload_community_image',
-    description: 'Uploads an image and applies it to a community page. Use role="hero" for the main hero background, or any other role name (e.g. "lifestyle") for a section image.',
+    description: 'Uploads an image and applies it to a community page. The image is automatically extracted from the conversation — do NOT include imageBase64 or mimeType in your call. Use role="hero" for the hero background banner at the top of the page, or role="lifestyle" for the lifestyle section image. For any other section, use a descriptive role name (e.g. "neighborhood", "amenities").',
     input_schema: {
       type: 'object',
       properties: {
         slug: { type: 'string' },
-        role: { type: 'string', description: '"hero" or a section name like "lifestyle"' },
-        imageBase64: { type: 'string', description: 'Base64-encoded image data' },
-        mimeType: { type: 'string', description: 'e.g. image/jpeg, image/png, image/webp' },
+        role: { type: 'string', description: 'Where to place the image: "hero", "lifestyle", or another section name' },
+        imageBase64: { type: 'string', description: 'Leave blank — auto-filled from conversation' },
+        mimeType: { type: 'string', description: 'Leave blank — auto-filled from conversation' },
       },
-      required: ['slug', 'role', 'imageBase64', 'mimeType'],
+      required: ['slug', 'role'],
     },
   },
   {
