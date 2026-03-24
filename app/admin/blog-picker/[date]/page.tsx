@@ -57,7 +57,7 @@ export default function BlogPickerPage() {
       const next = new Set(prev)
       if (next.has(id)) {
         next.delete(id)
-      } else if (next.size < 3) {
+      } else {
         next.add(id)
       }
       return next
@@ -65,7 +65,7 @@ export default function BlogPickerPage() {
   }
 
   async function handlePublish() {
-    if (selected.size !== 3) return
+    if (selected.size === 0) return
     setPublishing(true)
     setError(null)
 
@@ -136,27 +136,16 @@ export default function BlogPickerPage() {
         {/* Header */}
         <div style={styles.header}>
           <div style={styles.headerLabel}>Nevada Real Estate Group · Blog Pipeline</div>
-          <h1 style={styles.headerTitle}>Pick 3 Articles to Publish</h1>
-          <p style={styles.headerSub}>{dateFormatted} · {articles.length} articles found</p>
+          <h1 style={styles.headerTitle}>Pick Articles to Publish</h1>
+          <p style={styles.headerSub}>{dateFormatted} · {articles.length} articles found · select 1 or more</p>
         </div>
 
         {error && <div style={styles.errorBox}>{error}</div>}
 
-        {/* Progress bar */}
+        {/* Selection counter */}
         <div style={styles.progressBar}>
           <div style={styles.progressLabel}>
-            {selected.size}/3 selected
-          </div>
-          <div style={styles.progressTrack}>
-            {[0, 1, 2].map((i) => (
-              <div
-                key={i}
-                style={{
-                  ...styles.progressDot,
-                  background: i < selected.size ? '#C9A84C' : 'rgba(201,168,76,0.2)',
-                }}
-              />
-            ))}
+            {selected.size === 0 ? 'None selected' : `${selected.size} selected`}
           </div>
         </div>
 
@@ -175,8 +164,8 @@ export default function BlogPickerPage() {
                     ? '2px solid #C9A84C'
                     : '2px solid rgba(201,168,76,0.15)',
                   background: isSelected ? 'rgba(201,168,76,0.06)' : '#141414',
-                  cursor: selected.size >= 3 && !isSelected ? 'not-allowed' : 'pointer',
-                  opacity: selected.size >= 3 && !isSelected ? 0.4 : 1,
+                  cursor: 'pointer',
+                  opacity: 1,
                 }}
               >
                 <div style={styles.cardTop}>
@@ -208,17 +197,21 @@ export default function BlogPickerPage() {
         <div style={styles.footer}>
           <button
             onClick={handlePublish}
-            disabled={selected.size !== 3 || publishing}
+            disabled={selected.size === 0 || publishing}
             style={{
               ...styles.publishBtn,
-              opacity: selected.size !== 3 || publishing ? 0.4 : 1,
-              cursor: selected.size !== 3 || publishing ? 'not-allowed' : 'pointer',
+              opacity: selected.size === 0 || publishing ? 0.4 : 1,
+              cursor: selected.size === 0 || publishing ? 'not-allowed' : 'pointer',
             }}
           >
-            {publishing ? 'Publishing...' : selected.size === 3 ? 'Publish 3 Posts →' : `Select ${3 - selected.size} more`}
+            {publishing
+              ? 'Publishing...'
+              : selected.size === 0
+              ? 'Select articles to publish'
+              : `Publish ${selected.size} Post${selected.size !== 1 ? 's' : ''} →`}
           </button>
           <p style={styles.footerNote}>
-            Claude will write and publish all 3 posts to the site simultaneously. This may take up to 60 seconds.
+            Claude will write and publish all selected posts simultaneously. Allow 30–90 seconds depending on how many you picked.
           </p>
         </div>
 
