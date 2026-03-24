@@ -36,9 +36,9 @@ const SEARCH_QUERIES = [
   'Tesla Apple Google Microsoft Nevada facility expansion',
   'Las Vegas economy jobs growth Fortune 500 2025',
 
-  // Relocation & lifestyle (California migration)
-  'California residents moving to Las Vegas Nevada',
-  'Nevada relocation migration population growth 2025',
+  // Relocation & lifestyle
+  'people relocating to Las Vegas Henderson Summerlin 2025',
+  'Nevada population growth housing demand Las Vegas Reno',
 ]
 
 // Pick 8 queries per day, rotating through the full list so all topics get covered
@@ -125,12 +125,17 @@ export async function fetchAndScoreArticles(): Promise<ScoredArticle[]> {
     messages: [
       {
         role: 'user',
-        content: `You are a real estate content strategist for Nevada Real Estate Group, a luxury real estate agency serving Las Vegas and Reno, NV. Their clients are home buyers, sellers, and investors in Nevada.
+        content: `You are a real estate content strategist for Nevada Real Estate Group, a luxury real estate agency serving Las Vegas, Henderson, Summerlin, North Las Vegas, and Reno, NV. Their clients are home buyers, sellers, and investors in Nevada.
 
 Evaluate these articles and return a JSON array. For each article, assign:
-- relevanceScore: 1-10 (how useful/interesting is this for Nevada homebuyers, sellers, or investors?)
+- relevanceScore: 1-10 (how useful/interesting is this for Las Vegas / Reno homebuyers, sellers, or investors?)
 - category: one of "market-update" | "buying-tips" | "selling-tips" | "community-spotlight" | "investment" | "news"
-- whyItMatters: exactly 2 sentences explaining why a Nevada homeowner or buyer should care
+- whyItMatters: exactly 2 sentences explaining why a Las Vegas or Reno homeowner or buyer should care
+
+MARKET RESTRICTION — THIS IS CRITICAL:
+Only include articles that are specifically about Nevada, Las Vegas, Henderson, Summerlin, North Las Vegas, Reno, or the greater Las Vegas / Reno metro area.
+Score any article about California, Virginia, Texas, Florida, or any other non-Nevada market as 1 — these must be dropped.
+Score any national article (interest rates, mortgage trends, Fed policy) at 6 or above ONLY if it has clear direct relevance to Las Vegas or Reno buyers and sellers.
 
 SCORING PRIORITY (give extra weight to):
 1. Las Vegas / Reno property values and investment returns — what affects buyers and current homeowners
