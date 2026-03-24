@@ -3,34 +3,52 @@ import type { RawArticle, ScoredArticle, ArticleCategory } from './types'
 import { getSkippedUrls } from './store'
 
 const SEARCH_QUERIES = [
+  // Property values & investment — buyer/owner impact
   'Las Vegas real estate market news 2025',
-  'Nevada first time home buyer programs 2025',
+  'Las Vegas home prices forecast appreciation 2025',
+  'Henderson Summerlin home values market update 2025',
+  'Reno Nevada real estate market trends 2025',
+  'Las Vegas investment property rental market returns',
+  'Nevada real estate investment opportunity outlook 2025',
+
+  // Law & policy changes affecting homeowners
+  'Nevada homeowner law changes 2025 property rights',
+  'Nevada property tax changes homeowners exemptions 2025',
+  'Nevada HOA law regulations changes 2025',
+  'Las Vegas zoning development law changes 2025',
+  'Nevada real estate legislation buyers sellers 2025',
+
+  // Major development projects & economic growth signals
+  'Las Vegas major development projects jobs economy 2025',
+  'Las Vegas new construction billion dollar development',
+  'Nevada corporate relocation headquarters Las Vegas 2025',
+  'Las Vegas stadium arena district development',
+  'Nevada data center tech campus expansion 2025',
+  'Reno Nevada economic growth development 2025',
+
+  // Celebrity & high-profile moves to Las Vegas / Nevada
+  'celebrity moving Las Vegas Nevada 2025',
+  'billionaire executive relocating Las Vegas Nevada',
+  'Las Vegas luxury real estate high profile purchase 2025',
+
+  // Big corporate investments (Tesla-scale signals)
+  'major company factory warehouse Las Vegas Nevada 2025',
+  'Tesla Apple Google Microsoft Nevada facility expansion',
+  'Las Vegas economy jobs growth Fortune 500 2025',
+
+  // Relocation & lifestyle (California migration)
   'California residents moving to Las Vegas Nevada',
-  'Summerlin Las Vegas homes community news',
-  'Las Vegas luxury real estate celebrity sold',
-  'Nevada mortgage rates housing market update',
-  'Henderson Nevada homes for sale market',
-  'Las Vegas new construction homes development',
-  'Reno Nevada real estate market trends',
-  'Nevada property tax homeowner laws 2025',
-  'Las Vegas investment property rental market',
-  'North Las Vegas community homes growth',
-  'Lake Las Vegas luxury homes market',
-  'Southern Highlands Las Vegas real estate',
-  'Nevada relocation migration population growth',
-  'Las Vegas condo townhouse market 2025',
-  'Nevada real estate interest rates buyers',
-  'Las Vegas neighborhoods top rated schools homes',
+  'Nevada relocation migration population growth 2025',
 ]
 
-// Pick 6 queries, rotating by day of week
+// Pick 8 queries per day, rotating through the full list so all topics get covered
 function getQueriesForToday(): string[] {
   const dayOfYear = Math.floor(
     (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000
   )
-  const start = (dayOfYear * 6) % SEARCH_QUERIES.length
+  const start = (dayOfYear * 8) % SEARCH_QUERIES.length
   const queries: string[] = []
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 8; i++) {
     queries.push(SEARCH_QUERIES[(start + i) % SEARCH_QUERIES.length])
   }
   return queries
@@ -113,6 +131,13 @@ Evaluate these articles and return a JSON array. For each article, assign:
 - relevanceScore: 1-10 (how useful/interesting is this for Nevada homebuyers, sellers, or investors?)
 - category: one of "market-update" | "buying-tips" | "selling-tips" | "community-spotlight" | "investment" | "news"
 - whyItMatters: exactly 2 sentences explaining why a Nevada homeowner or buyer should care
+
+SCORING PRIORITY (give extra weight to):
+1. Las Vegas / Reno property values and investment returns — what affects buyers and current homeowners
+2. Nevada law changes affecting homeowners (property tax, HOA rules, zoning, tenant/landlord laws)
+3. Major development projects bringing jobs and economic growth to Las Vegas or Reno (stadiums, tech campuses, factories, corporate HQ relocations)
+4. High-profile celebrity or executive moves to Las Vegas or Nevada — signals lifestyle appeal and market confidence
+5. Large corporate investments in Nevada (major employers opening facilities, data centers, manufacturing plants)
 
 Return ONLY a valid JSON array with objects in this format:
 {"index": 0, "relevanceScore": 8, "category": "market-update", "whyItMatters": "..."}
