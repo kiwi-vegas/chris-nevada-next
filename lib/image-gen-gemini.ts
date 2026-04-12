@@ -38,105 +38,65 @@ export async function generateAndUploadCoverImageGemini(
   }
 }
 
-// ─── Step 1: Claude writes the psychology-driven image prompt ─────────────────
+// ─── Step 1: Build the image prompt ─────────────────────────────────────────
+// Uses a direct template keyed by category — no external API call needed.
+// Each category maps to a specific cinematic Nevada scene that works for any
+// article in that category, with the article title woven in for context.
+
+const CATEGORY_SCENES: Record<string, string> = {
+  'market-update':
+    'Photorealistic aerial photograph of a sprawling Las Vegas master-planned community at golden hour, shot from a helicopter with a full-frame camera and 24mm wide-angle lens. Hundreds of terra-cotta-roofed luxury homes arranged along curving streets with mature desert landscaping, palm-lined boulevards, and emerald green golf course fairways weaving between neighborhoods. The warm amber light of late afternoon bathes everything in gold. In the background, the Spring Mountains rise with jagged red and cream layered rock formations glowing orange-pink. The sky transitions from deep cobalt blue to warm peach and gold near the horizon with wispy cirrus clouds. Cinematic depth of field, 16:9 widescreen. No text, no signs, no visible faces, no logos.',
+  'buying-tips':
+    'Photorealistic photograph of a stunning modern luxury home in Henderson, Nevada at golden hour. The home features clean contemporary architecture with floor-to-ceiling windows reflecting the desert sunset, a pristine pool with turquoise water in the foreground, and mature desert landscaping with agave and palm trees. Behind the home, dramatic mountain views with layers of desert hills fading into a warm peach and lavender sky. Shot on a full-frame camera with a 24mm lens, rule of thirds composition, strong leading lines from the pool edge toward the mountain backdrop. Rich warm tones, cinematic quality. 16:9 widescreen. No text, no signs, no visible faces, no logos.',
+  'selling-tips':
+    'Photorealistic photograph of a beautifully staged luxury home exterior in Summerlin, Las Vegas at sunset. A Mediterranean-style elevation with warm stone facade, manicured front yard with desert landscaping, and a wide circular driveway. Golden hour light creates long dramatic shadows and warm highlights on the stone. The Red Rock Canyon escarpment glows orange-pink in the distant background under a spectacular Nevada sky with streaks of coral and gold clouds. Shot on a full-frame camera with a 35mm lens, inviting curb appeal composition. 16:9 widescreen. No text, no signs, no for-sale signs, no visible faces, no logos.',
+  'community-spotlight':
+    'Photorealistic aerial photograph of a premium Las Vegas master-planned community park and recreation area at golden hour. A sparkling community pool complex with turquoise water, surrounded by palm trees and walking paths that wind through native desert gardens. Luxury homes with red tile roofs line the surrounding streets. In the background, the Las Vegas valley stretches toward distant mountains under a dramatic Nevada sky with warm golden light. Shot from above with a drone-style perspective, full-frame quality, 24mm wide angle. Lush yet desert-appropriate landscaping creates an oasis feeling. 16:9 widescreen. No text, no signs, no visible faces, no logos.',
+  investment:
+    'Photorealistic aerial photograph showing the scale of Las Vegas development and growth. A sweeping view of new construction neighborhoods expanding into the desert, with completed luxury homes in the foreground transitioning to active construction sites and then raw desert land in the background. Cranes and framing visible at tasteful distance. The Las Vegas Strip skyline is a shimmering silhouette on the horizon. Shot at golden hour with warm light emphasizing growth and momentum. Full-frame camera, 24mm wide angle, cinematic depth. The sky is dramatic with scattered clouds catching golden and coral light. 16:9 widescreen. No text, no signs, no visible faces, no logos.',
+  news:
+    'Photorealistic photograph of the Las Vegas skyline at dusk, shot from an elevated desert vantage point west of the city. The Strip and downtown buildings create a glowing cluster of lights against a deep twilight sky transitioning from navy blue to warm amber at the horizon. In the foreground, a luxury Summerlin neighborhood with warmly lit homes and palm-lined streets leads the eye toward the city center. The composition creates a sense of energy and momentum — a city that is thriving. Shot on a full-frame camera with a 35mm lens, rich colors, cinematic quality. 16:9 widescreen. No text, no signs, no visible faces, no logos.',
+}
 
 async function buildImagePrompt(article: ScoredArticle): Promise<string | null> {
+  // First try Claude for a custom, article-specific prompt
   try {
-    const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+    if (process.env.ANTHROPIC_API_KEY) {
+      const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+      console.log('[image-gen] Trying Claude for custom image prompt...')
 
-    // Category-level visual direction — what story does each category tell?
-    const categoryContext: Record<string, string> = {
-      'market-update':
-        'DESIRE: Confidence and clarity in a confusing market. PAIN: Uncertainty about whether to buy, sell, or hold. TRANSFORMATION: They\'ll understand exactly what\'s happening and what to do next. Visual: Show market momentum — a stunning aerial of Las Vegas neighborhoods at golden hour, beautifully lit homes that signal demand, or a cinematic Summerlin streetscape that makes you feel the market is alive.',
-      'buying-tips':
-        'DESIRE: The feeling of finally finding the right home. PAIN: The fear of making the wrong decision or missing out. TRANSFORMATION: They\'ll feel equipped and confident. Visual: The emotional moment of possibility — a perfect backyard overlooking a Red Rock Canyon vista, a luxury home in Henderson catching the afternoon light, a pool deck that makes someone imagine their life there.',
-      'selling-tips':
-        'DESIRE: Maximum price, minimal stress, a clean close. PAIN: Worry about leaving money on the table or a slow sale. TRANSFORMATION: Their home sells fast and above asking. Visual: A staged Las Vegas home that looks absolutely irresistible — a beautifully lit great room with desert views, a curb-appealing front elevation at sunset, the feeling of a premium Nevada property.',
-      'community-spotlight':
-        'DESIRE: Finding a neighborhood that truly feels like home. PAIN: Not knowing which area is right for your family. TRANSFORMATION: A vivid sense of place and community. Visual: The best version of Las Vegas life — Summerlin parks at golden hour, tree-lined Henderson streets, a master-planned community pool, Red Rock Canyon as a dramatic backdrop, the feeling of a place worth belonging to.',
-      investment:
-        'DESIRE: Smart returns and long-term wealth. PAIN: Fear of making the wrong real estate investment. TRANSFORMATION: Clarity on where the real opportunity is. Visual: Scale and growth — luxury multi-unit properties against a Nevada blue sky, an aerial showing a rapidly expanding neighborhood, the visual language of opportunity and return in the desert Southwest.',
-      news:
-        'DESIRE: Being ahead of the curve and making informed decisions. PAIN: Feeling blindsided by changes that affect their home\'s value. TRANSFORMATION: They\'ll know about this before everyone else. Visual: Urgency and relevance — something is happening right now in Las Vegas. The Strip skyline silhouette at dusk, a dramatic desert sky over a thriving neighborhood, the energy of a story that matters.',
+      const scene = CATEGORY_SCENES[article.category] ?? CATEGORY_SCENES['news']
+
+      const response = await anthropic.messages.create({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 500,
+        messages: [
+          {
+            role: 'user',
+            content: `Write a photorealistic image generation prompt for a blog hero image. The article is about: "${article.title}" — ${article.whyItMatters}
+
+Base your prompt on this scene template but make it specific to the article topic:
+${scene}
+
+Return ONLY the prompt text, 5-8 sentences. No explanation, no markdown.`,
+          },
+        ],
+      })
+
+      const text = response.content[0].type === 'text' ? response.content[0].text.trim() : null
+      if (text && text.length > 50) {
+        console.log('[image-gen] Claude custom prompt built successfully')
+        return text
+      }
     }
-
-    const desireLoop = categoryContext[article.category] ?? categoryContext['news']
-
-    console.log('[image-gen] Building prompt with Claude thumbnail psychology...')
-
-    const response = await anthropic.messages.create({
-      model: 'claude-sonnet-4-6',
-      max_tokens: 900,
-      messages: [
-        {
-          role: 'user',
-          content: `You are a world-class creative director applying YouTube thumbnail psychology to blog hero images for a Las Vegas and Reno real estate brand. Your images stop scrollers and make them feel something before they read a word.
-
-ARTICLE:
-Title: "${article.title}"
-Angle: ${article.whyItMatters}
-Category: ${article.category}
-
-DESIRE LOOP FOR THIS CATEGORY:
-${desireLoop}
-
-─────────────────────────────────────
-THE 3-STEP READER PSYCHOLOGY (your image must pass all 3):
-
-1. VISUAL STUN GUN — The image must POP and stop the scroll immediately. Ask: "Would someone slow their thumb for this?"
-2. TITLE VALUE HUNT — After stopping, the reader scans the headline. The image must make that headline feel MORE urgent and relevant.
-3. VISUAL VALIDATION — The reader returns to the image to confirm the article is worth reading. The image must support the article's promise.
-─────────────────────────────────────
-
-VISUAL STUN GUN TOOLKIT (choose the strongest 2-3 for this article):
-• Color contrast — vivid, saturated colors that pop against competing content
-• Compelling scene — a visual that immediately represents the desire or transformation
-• Big implied number or scale — show magnitude without text (a sprawling neighborhood, a luxury estate, a dramatic skyline)
-• Aesthetic imagery — cinematic, beautiful, the kind of photo you'd hang on a wall
-• A→B transformation — show contrast: before/after, problem/solution, old/new
-• Emotional atmosphere — golden hour warmth = opportunity; dark sky = urgency; blue dawn = fresh start
-
-LAS VEGAS / NEVADA VISUAL ANCHORS (use what naturally fits):
-• Summerlin neighborhoods at golden hour — warmth, master-planned community, aspiration
-• Red Rock Canyon escarpment as backdrop — drama, natural beauty, the premium side of Las Vegas
-• Henderson luxury homes with mountain views — family stability, affluence, growth
-• Las Vegas Strip silhouette at dusk — economic energy, ambition, urban momentum
-• Lake Las Vegas waterfront — leisure, waterfront lifestyle, high-end investment
-• Aerial of expanding master-planned communities — scale, growth, opportunity
-• Desert landscape with a dramatic Nevada sky — wide open, distinct, unlike anywhere else
-• Reno neighborhoods with Sierra Nevada peaks — Northern Nevada beauty, outdoor lifestyle
-
-YOUR TASK:
-Write the final image generation prompt for Gemini. It must describe ONE specific, vivid, cinematic scene. Not a generic photo — a deliberately crafted image that:
-- Passes the stun gun test (you'd stop scrolling for it)
-- Reinforces the article's emotional promise
-- Feels authentic to Las Vegas / Nevada
-
-FORMAT REQUIREMENTS:
-- Photorealistic, shot on a high-end full-frame camera with a 24mm wide lens
-- Cinematic composition with rule of thirds and strong leading lines
-- Golden hour, dramatic desert light, or dynamic Nevada sky — never flat, grey, or overcast
-- 16:9 widescreen, optimized for web hero display
-- Depth of field: sharp foreground subject, layered background
-
-HARD PROHIBITIONS (if included the image fails entirely):
-- NO text, words, numbers, signs, overlays, watermarks of any kind
-- NO clearly visible faces — people only at distance, silhouette, or from behind
-- NO for-sale signs, sold signs, keys, moving trucks, handshakes
-- NO logos, brand names, flags, casino signs, or company signage
-- NOTHING that looks like a generic real estate stock photo
-
-Write the prompt now. 5-8 rich sentences. Return ONLY the prompt — nothing else.`,
-        },
-      ],
-    })
-
-    const text = response.content[0].type === 'text' ? response.content[0].text.trim() : null
-    return text
   } catch (err) {
-    console.error('[image-gen] Prompt build error:', err instanceof Error ? err.message : err)
-    return null
+    console.warn('[image-gen] Claude unavailable, using direct template:', err instanceof Error ? err.message : err)
   }
+
+  // Fallback: use the category template directly — no Claude needed
+  const template = CATEGORY_SCENES[article.category] ?? CATEGORY_SCENES['news']
+  console.log(`[image-gen] Using direct template for category: ${article.category}`)
+  return template
 }
 
 // ─── Step 2: Gemini generates the image ──────────────────────────────────────
