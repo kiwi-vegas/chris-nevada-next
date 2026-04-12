@@ -111,12 +111,6 @@ export default function Nav() {
                 <div>
                   <div className="comm-col-label">Boulder City</div>
                   <Link href="/boulder-city/">Boulder City</Link>
-                  <div className="comm-col-label" style={{marginTop:'16px'}}>Northern Nevada</div>
-                  <Link href="/reno/">Reno</Link>
-                  <Link href="/sparks/">Sparks</Link>
-                  <Link href="/spanish-springs/">Spanish Springs</Link>
-                  <Link href="/sun-valley/">Sun Valley</Link>
-                  <Link href="/incline-village/">Incline Village</Link>
                 </div>
               </div>
             </li>
@@ -195,12 +189,6 @@ export default function Nav() {
                 <Link href="/red-rock-country-club/" className="mobile-nav-link" onClick={closeMobile}>Red Rock Country Club</Link>
                 <div className="mob-city-label" style={{marginTop:'8px'}}>Boulder City</div>
                 <Link href="/boulder-city/" className="mobile-nav-link" onClick={closeMobile}>Boulder City</Link>
-                <div className="mob-city-label" style={{marginTop:'8px'}}>Northern Nevada</div>
-                <Link href="/reno/" className="mobile-nav-link" onClick={closeMobile}>Reno</Link>
-                <Link href="/sparks/" className="mobile-nav-link" onClick={closeMobile}>Sparks</Link>
-                <Link href="/spanish-springs/" className="mobile-nav-link" onClick={closeMobile}>Spanish Springs</Link>
-                <Link href="/sun-valley/" className="mobile-nav-link" onClick={closeMobile}>Sun Valley</Link>
-                <Link href="/incline-village/" className="mobile-nav-link" onClick={closeMobile}>Incline Village</Link>
               </>}
             </div>
           </div>
