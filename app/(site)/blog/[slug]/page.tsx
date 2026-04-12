@@ -86,7 +86,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <div className="blog-post-meta">
             <span>Chris Nevada · Nevada Real Estate Group</span>
             {pubDate && <><span className="blog-post-sep">·</span><span>{pubDate}</span></>}
-            {post.aiGenerated && <span className="blog-ai-badge">AI-Assisted</span>}
           </div>
           {post.excerpt && <p className="blog-post-excerpt">{post.excerpt}</p>}
         </div>

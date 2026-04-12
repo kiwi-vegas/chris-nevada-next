@@ -53,7 +53,7 @@ export default async function BlogPage() {
         <div className="container">
           {posts.length === 0 ? (
             <div className="blog-empty">
-              <p>No posts yet — check back soon. Our AI blog agent publishes daily insights every morning.</p>
+              <p>No posts yet — check back soon. New insights published daily.</p>
             </div>
           ) : (
             <div className="blog-grid">
@@ -89,7 +89,6 @@ export default async function BlogPage() {
                       )}
                       <div className="blog-card-meta">
                         <span>{pubDate}</span>
-                        {post.aiGenerated && <span className="blog-ai-badge">AI</span>}
                       </div>
                     </div>
                   </Link>
