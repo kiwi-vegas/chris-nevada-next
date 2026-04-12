@@ -54,7 +54,7 @@ export default async function HomePage() {
           <div className="hero-content">
             <div className="hero-eyebrow">
               <span className="hero-eyebrow-line" />
-              <span>Las Vegas and Reno</span>
+              <span>Las Vegas</span>
             </div>
             <h1>{heroHeadline.includes("Premier") ? (
               <>Nevada&apos;s <em>Premier</em><br />Real Estate Group</>
@@ -113,7 +113,7 @@ export default async function HomePage() {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
               </div>
               <h3>Meet the Team</h3>
-              <p>150+ agents across Las Vegas and Reno. Specialists in every price point, every neighborhood, and every type of transaction — from first homes to trophy estates.</p>
+              <p>150+ agents across Las Vegas. Specialists in every price point, every neighborhood, and every type of transaction — from first homes to trophy estates.</p>
               <a href="https://www.nevadarealestategroup.com/about/" className="callout-btn">Meet Our Agents →</a>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default async function HomePage() {
             </a>
             <a href="https://www.nevadarealestategroup.com/property-search/" className="btn-outline">Search Homes</a>
           </div>
-          <p className="license-note">Nevada Lic. #S.0181401.LLC · lpt Realty · Equal Housing Opportunity</p>
+          <p className="license-note">Nevada Lic. #S.0181401.LLC · Equal Housing Opportunity</p>
         </div>
       </section>
     </main>
