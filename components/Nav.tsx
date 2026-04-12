@@ -32,7 +32,7 @@ export default function Nav() {
 
           {/* CENTER LOGO */}
           <Link href="/" className="nav-logo">
-            <Image src="/NREG-LOGO.png" alt="Nevada Real Estate Group" width={160} height={40} priority />
+            <Image src="/NREG-LOGO.png" alt="Nevada Real Estate Group" width={640} height={160} priority />
           </Link>
 
           {/* RIGHT LINKS */}
