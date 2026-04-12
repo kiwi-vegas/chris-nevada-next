@@ -3,16 +3,25 @@ import { useEffect, useRef } from 'react'
 
 const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''
 
-export interface CommunityMapProps {
-  center: [number, number]
-  zoom: number
-  boundary: [number, number][]
-  name: string
-  subtitle: string
-  id: string
-}
+// Center of Seven Hills — south Henderson on elevated terrain
+const CENTER: [number, number] = [-115.100, 36.010]
 
-export default function CommunityMap({ center, zoom, boundary, name, subtitle, id }: CommunityMapProps) {
+// Approximate Seven Hills boundary polygon
+const BOUNDARY: [number, number][] = [
+  [-115.125, 36.025], // NW
+  [-115.108, 36.028], // N
+  [-115.088, 36.026], // NE
+  [-115.078, 36.018], // E
+  [-115.075, 36.005], // SE
+  [-115.078, 35.993], // S
+  [-115.090, 35.990], // S
+  [-115.108, 35.992], // SW
+  [-115.122, 35.998], // W
+  [-115.128, 36.010], // W
+  [-115.125, 36.025], // back to NW
+]
+
+export default function SevenHillsMap() {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
 
@@ -30,8 +39,8 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map = new mapboxgl.Map({
         container: containerRef.current!,
         style: 'mapbox://styles/mapbox/light-v11',
-        center,
-        zoom,
+        center: CENTER,
+        zoom: 13.5,
         attributionControl: false,
         pitchWithRotate: false,
         dragRotate: false,
@@ -43,27 +52,34 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right')
 
       map.on('load', () => {
-        map.addSource(`${id}-boundary`, {
+        map.addSource('seven-hills-boundary', {
           type: 'geojson',
           data: {
             type: 'Feature',
-            geometry: { type: 'Polygon', coordinates: [boundary] },
+            geometry: { type: 'Polygon', coordinates: [BOUNDARY] },
             properties: {},
           },
         })
 
         map.addLayer({
-          id: `${id}-fill`,
+          id: 'seven-hills-fill',
           type: 'fill',
-          source: `${id}-boundary`,
-          paint: { 'fill-color': '#C9A96E', 'fill-opacity': 0.10 },
+          source: 'seven-hills-boundary',
+          paint: {
+            'fill-color': '#C9A96E',
+            'fill-opacity': 0.10,
+          },
         })
 
         map.addLayer({
-          id: `${id}-outline`,
+          id: 'seven-hills-outline',
           type: 'line',
-          source: `${id}-boundary`,
-          paint: { 'line-color': '#C9A96E', 'line-width': 2, 'line-opacity': 0.85 },
+          source: 'seven-hills-boundary',
+          paint: {
+            'line-color': '#C9A96E',
+            'line-width': 2,
+            'line-opacity': 0.85,
+          },
         })
 
         const el = document.createElement('div')
@@ -76,10 +92,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         `
 
         new mapboxgl.Marker({ element: el })
-          .setLngLat(center)
+          .setLngLat(CENTER)
           .setPopup(
-            new mapboxgl.Popup({ offset: 16 })
-              .setHTML(`<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">${name}</div><div style="font-size:11px;color:#555;margin-top:2px;">Nevada</div>`)
+            new mapboxgl.Popup({ offset: 16, className: 'summerlin-popup' })
+              .setHTML('<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Seven Hills</div><div style="font-size:11px;color:#555;margin-top:2px;">Henderson, NV</div>')
           )
           .addTo(map)
       })
@@ -110,10 +126,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         pointerEvents: 'none',
       }}>
         <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1B2A4A', fontFamily: 'DM Sans,sans-serif' }}>
-          {name}
+          Seven Hills
         </div>
         <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
-          {subtitle}
+          Henderson, Nevada · ~1,300 acres
         </div>
       </div>
     </div>

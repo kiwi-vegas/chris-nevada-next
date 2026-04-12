@@ -40,7 +40,7 @@ export default function HendersonMap() {
 
       map = new mapboxgl.Map({
         container: containerRef.current!,
-        style: 'mapbox://styles/mapbox/dark-v11',
+        style: 'mapbox://styles/mapbox/light-v11',
         center: CENTER,
         zoom: 10.5,
         attributionControl: false,
@@ -70,7 +70,7 @@ export default function HendersonMap() {
           type: 'fill',
           source: 'henderson-boundary',
           paint: {
-            'fill-color': '#C9A84C',
+            'fill-color': '#C9A96E',
             'fill-opacity': 0.10,
           },
         })
@@ -81,7 +81,7 @@ export default function HendersonMap() {
           type: 'line',
           source: 'henderson-boundary',
           paint: {
-            'line-color': '#C9A84C',
+            'line-color': '#C9A96E',
             'line-width': 2,
             'line-opacity': 0.85,
           },
@@ -91,10 +91,10 @@ export default function HendersonMap() {
         const el = document.createElement('div')
         el.style.cssText = `
           width: 14px; height: 14px;
-          background: #C9A84C;
+          background: #C9A96E;
           border: 2px solid #fff;
           border-radius: 50%;
-          box-shadow: 0 0 12px rgba(201,168,76,0.7);
+          box-shadow: 0 0 12px rgba(27,42,74,0.4);
         `
 
         new mapboxgl.Marker({ element: el })
@@ -124,17 +124,17 @@ export default function HendersonMap() {
         position: 'absolute',
         bottom: '40px',
         left: '16px',
-        background: 'rgba(10,10,10,0.85)',
+        background: 'rgba(255,255,255,0.95)',
         backdropFilter: 'blur(8px)',
-        border: '1px solid rgba(201,168,76,0.3)',
+        border: '1px solid #EDE9E3',
         borderRadius: '4px',
         padding: '8px 12px',
         pointerEvents: 'none',
       }}>
-        <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#C9A84C', fontFamily: 'Inter,sans-serif' }}>
+        <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1B2A4A', fontFamily: 'DM Sans,sans-serif' }}>
           Henderson
         </div>
-        <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)', marginTop: '2px', fontFamily: 'Inter,sans-serif' }}>
+        <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
           Henderson, Nevada · 105 sq miles
         </div>
       </div>

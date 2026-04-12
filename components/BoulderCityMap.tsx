@@ -3,16 +3,26 @@ import { useEffect, useRef } from 'react'
 
 const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''
 
-export interface CommunityMapProps {
-  center: [number, number]
-  zoom: number
-  boundary: [number, number][]
-  name: string
-  subtitle: string
-  id: string
-}
+// Center of Boulder City — southeast of Henderson, gateway to Lake Mead
+const CENTER: [number, number] = [-114.832, 35.979]
 
-export default function CommunityMap({ center, zoom, boundary, name, subtitle, id }: CommunityMapProps) {
+// Approximate Boulder City boundary polygon
+const BOUNDARY: [number, number][] = [
+  [-114.860, 36.000], // NW — near Railroad Pass
+  [-114.842, 36.005], // N
+  [-114.820, 36.003], // NE — toward Lake Mead Dr
+  [-114.808, 35.995], // E — near Hemenway Valley
+  [-114.805, 35.980], // E
+  [-114.808, 35.965], // SE — toward US-93
+  [-114.818, 35.955], // S
+  [-114.835, 35.952], // S — southern boundary
+  [-114.852, 35.955], // SW
+  [-114.862, 35.965], // W
+  [-114.865, 35.980], // W
+  [-114.860, 36.000], // back to NW
+]
+
+export default function BoulderCityMap() {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
 
@@ -30,8 +40,8 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map = new mapboxgl.Map({
         container: containerRef.current!,
         style: 'mapbox://styles/mapbox/light-v11',
-        center,
-        zoom,
+        center: CENTER,
+        zoom: 13,
         attributionControl: false,
         pitchWithRotate: false,
         dragRotate: false,
@@ -43,27 +53,34 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right')
 
       map.on('load', () => {
-        map.addSource(`${id}-boundary`, {
+        map.addSource('boulder-city-boundary', {
           type: 'geojson',
           data: {
             type: 'Feature',
-            geometry: { type: 'Polygon', coordinates: [boundary] },
+            geometry: { type: 'Polygon', coordinates: [BOUNDARY] },
             properties: {},
           },
         })
 
         map.addLayer({
-          id: `${id}-fill`,
+          id: 'boulder-city-fill',
           type: 'fill',
-          source: `${id}-boundary`,
-          paint: { 'fill-color': '#C9A96E', 'fill-opacity': 0.10 },
+          source: 'boulder-city-boundary',
+          paint: {
+            'fill-color': '#C9A96E',
+            'fill-opacity': 0.10,
+          },
         })
 
         map.addLayer({
-          id: `${id}-outline`,
+          id: 'boulder-city-outline',
           type: 'line',
-          source: `${id}-boundary`,
-          paint: { 'line-color': '#C9A96E', 'line-width': 2, 'line-opacity': 0.85 },
+          source: 'boulder-city-boundary',
+          paint: {
+            'line-color': '#C9A96E',
+            'line-width': 2,
+            'line-opacity': 0.85,
+          },
         })
 
         const el = document.createElement('div')
@@ -76,10 +93,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         `
 
         new mapboxgl.Marker({ element: el })
-          .setLngLat(center)
+          .setLngLat(CENTER)
           .setPopup(
-            new mapboxgl.Popup({ offset: 16 })
-              .setHTML(`<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">${name}</div><div style="font-size:11px;color:#555;margin-top:2px;">Nevada</div>`)
+            new mapboxgl.Popup({ offset: 16, className: 'summerlin-popup' })
+              .setHTML('<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Boulder City</div><div style="font-size:11px;color:#555;margin-top:2px;">Boulder City, NV</div>')
           )
           .addTo(map)
       })
@@ -110,10 +127,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         pointerEvents: 'none',
       }}>
         <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1B2A4A', fontFamily: 'DM Sans,sans-serif' }}>
-          {name}
+          Boulder City
         </div>
         <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
-          {subtitle}
+          Boulder City, Nevada · ~208 sq mi
         </div>
       </div>
     </div>

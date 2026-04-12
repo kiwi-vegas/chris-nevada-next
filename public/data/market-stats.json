@@ -1,0 +1,696 @@
+{
+  "_meta": {
+    "source": "Zillow Research (zillow.com/research/data/)",
+    "attribution": "Data sourced from Zillow Research. Used with permission under Zillow Terms of Use.",
+    "fetchedAt": "2026-04-12T04:02:31.754Z",
+    "latestDataDate": "2026-02-28"
+  },
+  "communities": {
+    "summerlin": {
+      "name": "Summerlin",
+      "city": "Las Vegas",
+      "zips": [
+        "89134",
+        "89135",
+        "89138",
+        "89144",
+        "89145"
+      ],
+      "neighborhoods": [
+        "Summerlin North",
+        "Summerlin South",
+        "Sun City Summerlin"
+      ],
+      "stats": {
+        "homeValue": "$598,731",
+        "homeValueRaw": 598731,
+        "medianSalePrice": "$657,266",
+        "medianSalePriceRaw": 657266,
+        "medianListPrice": "$708,000",
+        "medianListPriceRaw": 708000,
+        "newListings": "83",
+        "newPending": "61",
+        "avgDaysToClose": "28",
+        "saleToListRatio": "96.2%",
+        "priceCutPercent": "25.8%"
+      }
+    },
+    "summerlin-west": {
+      "name": "Summerlin West",
+      "city": "Las Vegas",
+      "zips": [
+        "89138"
+      ],
+      "neighborhoods": [
+        "Summerlin South"
+      ],
+      "stats": {
+        "homeValue": "$715,261",
+        "homeValueRaw": 715261,
+        "medianSalePrice": "$806,248",
+        "medianSalePriceRaw": 806248,
+        "medianListPrice": "$900,000",
+        "medianListPriceRaw": 900000,
+        "newListings": "66",
+        "newPending": "41",
+        "avgDaysToClose": "27",
+        "saleToListRatio": "95.2%",
+        "priceCutPercent": "24.2%"
+      }
+    },
+    "henderson": {
+      "name": "Henderson",
+      "city": "Henderson",
+      "zips": [
+        "89002",
+        "89011",
+        "89012",
+        "89014",
+        "89015",
+        "89052",
+        "89074"
+      ],
+      "neighborhoods": [
+        "Anthem",
+        "Green Valley",
+        "Seven Hills"
+      ],
+      "stats": {
+        "homeValue": "$600,198",
+        "homeValueRaw": 600198,
+        "medianSalePrice": "$627,903",
+        "medianSalePriceRaw": 627903,
+        "medianListPrice": "$679,000",
+        "medianListPriceRaw": 679000,
+        "newListings": "83",
+        "newPending": "67",
+        "avgDaysToClose": "30",
+        "saleToListRatio": "96.5%",
+        "priceCutPercent": "23.7%"
+      }
+    },
+    "anthem": {
+      "name": "Anthem",
+      "city": "Henderson",
+      "zips": [
+        "89052"
+      ],
+      "neighborhoods": [
+        "Anthem"
+      ],
+      "stats": {
+        "homeValue": "$600,198",
+        "homeValueRaw": 600198,
+        "medianSalePrice": "$627,903",
+        "medianSalePriceRaw": 627903,
+        "medianListPrice": "$679,000",
+        "medianListPriceRaw": 679000,
+        "newListings": "83",
+        "newPending": "67",
+        "avgDaysToClose": "30",
+        "saleToListRatio": "96.5%",
+        "priceCutPercent": "23.7%"
+      }
+    },
+    "cadence": {
+      "name": "Cadence",
+      "city": "Henderson",
+      "zips": [
+        "89011"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$470,111",
+        "homeValueRaw": 470111,
+        "medianSalePrice": "$452,706",
+        "medianSalePriceRaw": 452706,
+        "medianListPrice": "$538,000",
+        "medianListPriceRaw": 538000,
+        "newListings": "97",
+        "newPending": "59",
+        "avgDaysToClose": "30",
+        "saleToListRatio": "97.7%",
+        "priceCutPercent": "27.4%"
+      }
+    },
+    "inspirada": {
+      "name": "Inspirada",
+      "city": "Henderson",
+      "zips": [
+        "89044"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$535,385",
+        "homeValueRaw": 535385,
+        "medianSalePrice": "$543,986",
+        "medianSalePriceRaw": 543986,
+        "medianListPrice": "$599,888",
+        "medianListPriceRaw": 599888,
+        "newListings": "86",
+        "newPending": "64",
+        "avgDaysToClose": "27",
+        "saleToListRatio": "97.6%",
+        "priceCutPercent": "25.2%"
+      }
+    },
+    "green-valley-ranch": {
+      "name": "Green Valley Ranch",
+      "city": "Henderson",
+      "zips": [
+        "89012",
+        "89014",
+        "89052"
+      ],
+      "neighborhoods": [
+        "Green Valley",
+        "Green Valley Ranch"
+      ],
+      "stats": {
+        "homeValue": "$559,539",
+        "homeValueRaw": 559539,
+        "medianSalePrice": "$530,767",
+        "medianSalePriceRaw": 530767,
+        "medianListPrice": "$630,000",
+        "medianListPriceRaw": 630000,
+        "newListings": "31",
+        "newPending": "22",
+        "avgDaysToClose": "30",
+        "saleToListRatio": "97.5%",
+        "priceCutPercent": "21.3%"
+      }
+    },
+    "seven-hills": {
+      "name": "Seven Hills",
+      "city": "Henderson",
+      "zips": [
+        "89052"
+      ],
+      "neighborhoods": [
+        "Seven Hills"
+      ],
+      "stats": {
+        "homeValue": "$602,142",
+        "homeValueRaw": 602142,
+        "medianSalePrice": "$661,029",
+        "medianSalePriceRaw": 661029,
+        "medianListPrice": "$640,000",
+        "medianListPriceRaw": 640000,
+        "newListings": "91",
+        "newPending": "83",
+        "avgDaysToClose": "32",
+        "saleToListRatio": "96.7%",
+        "priceCutPercent": "24.3%"
+      }
+    },
+    "lake-las-vegas": {
+      "name": "Lake Las Vegas",
+      "city": "Henderson",
+      "zips": [
+        "89011"
+      ],
+      "neighborhoods": [
+        "Lake Las Vegas"
+      ],
+      "stats": {
+        "homeValue": "$685,805",
+        "homeValueRaw": 685805,
+        "medianSalePrice": "$452,706",
+        "medianSalePriceRaw": 452706,
+        "medianListPrice": "$798,000",
+        "medianListPriceRaw": 798000,
+        "newListings": "36",
+        "newPending": "19",
+        "avgDaysToClose": "30",
+        "saleToListRatio": "97.7%",
+        "priceCutPercent": "26.4%"
+      }
+    },
+    "macdonald-highlands": {
+      "name": "Macdonald Highlands",
+      "city": "Henderson",
+      "zips": [
+        "89012"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$525,447",
+        "homeValueRaw": 525447,
+        "medianSalePrice": "$529,513",
+        "medianSalePriceRaw": 529513,
+        "medianListPrice": "$629,450",
+        "medianListPriceRaw": 629450,
+        "newListings": "70",
+        "newPending": "52",
+        "avgDaysToClose": "29",
+        "saleToListRatio": "98.1%",
+        "priceCutPercent": "23.7%"
+      }
+    },
+    "whitney-ranch": {
+      "name": "Whitney Ranch",
+      "city": "Henderson",
+      "zips": [
+        "89014"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$402,994",
+        "homeValueRaw": 402994,
+        "medianSalePrice": "$401,758",
+        "medianSalePriceRaw": 401758,
+        "medianListPrice": "$428,450",
+        "medianListPriceRaw": 428450,
+        "newListings": "37",
+        "newPending": "42",
+        "avgDaysToClose": "29",
+        "saleToListRatio": "97.6%",
+        "priceCutPercent": "27.0%"
+      }
+    },
+    "tuscany-village": {
+      "name": "Tuscany Village",
+      "city": "Henderson",
+      "zips": [
+        "89014"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$402,994",
+        "homeValueRaw": 402994,
+        "medianSalePrice": "$401,758",
+        "medianSalePriceRaw": 401758,
+        "medianListPrice": "$428,450",
+        "medianListPriceRaw": 428450,
+        "newListings": "37",
+        "newPending": "42",
+        "avgDaysToClose": "29",
+        "saleToListRatio": "97.6%",
+        "priceCutPercent": "27.0%"
+      }
+    },
+    "silverado-ranch": {
+      "name": "Silverado Ranch",
+      "city": "Las Vegas",
+      "zips": [
+        "89123",
+        "89183"
+      ],
+      "neighborhoods": [
+        "Silverado Ranch"
+      ],
+      "stats": {
+        "homeValue": "$423,457",
+        "homeValueRaw": 423457,
+        "medianSalePrice": "$442,415",
+        "medianSalePriceRaw": 442415,
+        "medianListPrice": "$417,495",
+        "medianListPriceRaw": 417495,
+        "newListings": "57",
+        "newPending": "48",
+        "avgDaysToClose": "27",
+        "saleToListRatio": "98.4%",
+        "priceCutPercent": "21.0%"
+      }
+    },
+    "southern-highlands": {
+      "name": "Southern Highlands",
+      "city": "Las Vegas",
+      "zips": [
+        "89141",
+        "89178"
+      ],
+      "neighborhoods": [
+        "Southern Highlands"
+      ],
+      "stats": {
+        "homeValue": "$502,168",
+        "homeValueRaw": 502168,
+        "medianSalePrice": "$479,424",
+        "medianSalePriceRaw": 479424,
+        "medianListPrice": "$549,500",
+        "medianListPriceRaw": 549500,
+        "newListings": "53",
+        "newPending": "52",
+        "avgDaysToClose": "31",
+        "saleToListRatio": "97.6%",
+        "priceCutPercent": "26.8%"
+      }
+    },
+    "mountains-edge": {
+      "name": "Mountains Edge",
+      "city": "Las Vegas",
+      "zips": [
+        "89141",
+        "89178"
+      ],
+      "neighborhoods": [
+        "Mountains Edge"
+      ],
+      "stats": {
+        "homeValue": "$502,168",
+        "homeValueRaw": 502168,
+        "medianSalePrice": "$479,424",
+        "medianSalePriceRaw": 479424,
+        "medianListPrice": "$549,500",
+        "medianListPriceRaw": 549500,
+        "newListings": "53",
+        "newPending": "52",
+        "avgDaysToClose": "31",
+        "saleToListRatio": "97.6%",
+        "priceCutPercent": "26.8%"
+      }
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "city": "Las Vegas",
+      "zips": [
+        "89113",
+        "89139",
+        "89141",
+        "89178"
+      ],
+      "neighborhoods": [
+        "Enterprise"
+      ],
+      "stats": {
+        "homeValue": "$476,010",
+        "homeValueRaw": 476010,
+        "medianSalePrice": "$462,387",
+        "medianSalePriceRaw": 462387,
+        "medianListPrice": "$520,000",
+        "medianListPriceRaw": 520000,
+        "newListings": "227",
+        "newPending": "188",
+        "avgDaysToClose": "31",
+        "saleToListRatio": "98.1%",
+        "priceCutPercent": "23.6%"
+      }
+    },
+    "spring-valley": {
+      "name": "Spring Valley",
+      "city": "Las Vegas",
+      "zips": [
+        "89113",
+        "89117",
+        "89147"
+      ],
+      "neighborhoods": [
+        "Spring Valley"
+      ],
+      "stats": {
+        "homeValue": "$417,655",
+        "homeValueRaw": 417655,
+        "medianSalePrice": "$420,123",
+        "medianSalePriceRaw": 420123,
+        "medianListPrice": "$449,900",
+        "medianListPriceRaw": 449900,
+        "newListings": "232",
+        "newPending": "194",
+        "avgDaysToClose": "31",
+        "saleToListRatio": "97.5%",
+        "priceCutPercent": "24.5%"
+      }
+    },
+    "paradise": {
+      "name": "Paradise",
+      "city": "Las Vegas",
+      "zips": [
+        "89109",
+        "89119",
+        "89121",
+        "89169"
+      ],
+      "neighborhoods": [
+        "Paradise"
+      ],
+      "stats": {
+        "homeValue": "$390,422",
+        "homeValueRaw": 390422,
+        "medianSalePrice": "$396,193",
+        "medianSalePriceRaw": 396193,
+        "medianListPrice": "$388,000",
+        "medianListPriceRaw": 388000,
+        "newListings": "231",
+        "newPending": "179",
+        "avgDaysToClose": "31",
+        "saleToListRatio": "97.5%",
+        "priceCutPercent": "21.9%"
+      }
+    },
+    "the-lakes": {
+      "name": "The Lakes",
+      "city": "Las Vegas",
+      "zips": [
+        "89117",
+        "89128"
+      ],
+      "neighborhoods": [
+        "The Lakes"
+      ],
+      "stats": {
+        "homeValue": "$486,501",
+        "homeValueRaw": 486501,
+        "medianSalePrice": "$458,743",
+        "medianSalePriceRaw": 458743,
+        "medianListPrice": "$500,000",
+        "medianListPriceRaw": 500000,
+        "newListings": "42",
+        "newPending": "32",
+        "avgDaysToClose": "30",
+        "saleToListRatio": "96.5%",
+        "priceCutPercent": "19.0%"
+      }
+    },
+    "desert-shores": {
+      "name": "Desert Shores",
+      "city": "Las Vegas",
+      "zips": [
+        "89128"
+      ],
+      "neighborhoods": [
+        "Desert Shores"
+      ],
+      "stats": {
+        "homeValue": "$458,487",
+        "homeValueRaw": 458487,
+        "medianSalePrice": "$410,875",
+        "medianSalePriceRaw": 410875,
+        "medianListPrice": "$507,450",
+        "medianListPriceRaw": 507450,
+        "newListings": "20",
+        "newPending": "12",
+        "avgDaysToClose": "30",
+        "saleToListRatio": "97.7%",
+        "priceCutPercent": "19.4%"
+      }
+    },
+    "rhodes-ranch": {
+      "name": "Rhodes Ranch",
+      "city": "Las Vegas",
+      "zips": [
+        "89148"
+      ],
+      "neighborhoods": [
+        "Rhodes Ranch"
+      ],
+      "stats": {
+        "homeValue": "$472,805",
+        "homeValueRaw": 472805,
+        "medianSalePrice": "$495,764",
+        "medianSalePriceRaw": 495764,
+        "medianListPrice": "$518,700",
+        "medianListPriceRaw": 518700,
+        "newListings": "64",
+        "newPending": "50",
+        "avgDaysToClose": "33",
+        "saleToListRatio": "97.9%",
+        "priceCutPercent": "26.7%"
+      }
+    },
+    "red-rock-country-club": {
+      "name": "Red Rock Country Club",
+      "city": "Las Vegas",
+      "zips": [
+        "89135"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$714,468",
+        "homeValueRaw": 714468,
+        "medianSalePrice": "$804,926",
+        "medianSalePriceRaw": 804926,
+        "medianListPrice": "$900,000",
+        "medianListPriceRaw": 900000,
+        "newListings": "66",
+        "newPending": "41",
+        "avgDaysToClose": "27",
+        "saleToListRatio": "95.2%",
+        "priceCutPercent": "24.2%"
+      }
+    },
+    "north-las-vegas": {
+      "name": "North Las Vegas",
+      "city": "North Las Vegas",
+      "zips": [
+        "89030",
+        "89031",
+        "89032",
+        "89033",
+        "89081",
+        "89084",
+        "89085",
+        "89086"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$410,923",
+        "homeValueRaw": 410923,
+        "medianSalePrice": "$416,868",
+        "medianSalePriceRaw": 416868,
+        "medianListPrice": "$413,233",
+        "medianListPriceRaw": 413233,
+        "newListings": "38",
+        "newPending": "34",
+        "avgDaysToClose": "32",
+        "saleToListRatio": "99.3%",
+        "priceCutPercent": "22.2%"
+      }
+    },
+    "aliante": {
+      "name": "Aliante",
+      "city": "North Las Vegas",
+      "zips": [
+        "89084",
+        "89085"
+      ],
+      "neighborhoods": [
+        "Aliante"
+      ],
+      "stats": {
+        "homeValue": "$441,298",
+        "homeValueRaw": 441298,
+        "medianSalePrice": "$427,589",
+        "medianSalePriceRaw": 427589,
+        "medianListPrice": "$429,999",
+        "medianListPriceRaw": 429999,
+        "newListings": "30",
+        "newPending": "24",
+        "avgDaysToClose": "31",
+        "saleToListRatio": "99.1%",
+        "priceCutPercent": "33.6%"
+      }
+    },
+    "skye-canyon": {
+      "name": "Skye Canyon",
+      "city": "Las Vegas",
+      "zips": [
+        "89166"
+      ],
+      "neighborhoods": [
+        "Skye Canyon"
+      ],
+      "stats": {
+        "homeValue": "$596,928",
+        "homeValueRaw": 596928,
+        "medianSalePrice": "$508,069",
+        "medianSalePriceRaw": 508069,
+        "medianListPrice": "$607,500",
+        "medianListPriceRaw": 607500,
+        "newListings": "23",
+        "newPending": "9",
+        "avgDaysToClose": "32",
+        "saleToListRatio": "99.2%",
+        "priceCutPercent": "20.8%"
+      }
+    },
+    "centennial-hills": {
+      "name": "Centennial Hills",
+      "city": "Las Vegas",
+      "zips": [
+        "89131",
+        "89149"
+      ],
+      "neighborhoods": [
+        "Centennial Hills"
+      ],
+      "stats": {
+        "homeValue": "$447,541",
+        "homeValueRaw": 447541,
+        "medianSalePrice": "$445,631",
+        "medianSalePriceRaw": 445631,
+        "medianListPrice": "$499,450",
+        "medianListPriceRaw": 499450,
+        "newListings": "117",
+        "newPending": "94",
+        "avgDaysToClose": "33",
+        "saleToListRatio": "98.2%",
+        "priceCutPercent": "22.7%"
+      }
+    },
+    "lone-mountain": {
+      "name": "Lone Mountain",
+      "city": "Las Vegas",
+      "zips": [
+        "89129",
+        "89131"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$489,081",
+        "homeValueRaw": 489081,
+        "medianSalePrice": "$475,339",
+        "medianSalePriceRaw": 475339,
+        "medianListPrice": "$542,450",
+        "medianListPriceRaw": 542450,
+        "newListings": "69",
+        "newPending": "56",
+        "avgDaysToClose": "31",
+        "saleToListRatio": "97.9%",
+        "priceCutPercent": "26.1%"
+      }
+    },
+    "providence": {
+      "name": "Providence",
+      "city": "North Las Vegas",
+      "zips": [
+        "89166"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$498,935",
+        "homeValueRaw": 498935,
+        "medianSalePrice": "$508,069",
+        "medianSalePriceRaw": 508069,
+        "medianListPrice": "$549,999",
+        "medianListPriceRaw": 549999,
+        "newListings": "82",
+        "newPending": "45",
+        "avgDaysToClose": "32",
+        "saleToListRatio": "99.2%",
+        "priceCutPercent": "21.8%"
+      }
+    },
+    "boulder-city": {
+      "name": "Boulder City",
+      "city": "Boulder City",
+      "zips": [
+        "89005"
+      ],
+      "neighborhoods": [],
+      "stats": {
+        "homeValue": "$466,767",
+        "homeValueRaw": 466767,
+        "medianSalePrice": "N/A",
+        "medianSalePriceRaw": null,
+        "medianListPrice": "$499,999",
+        "medianListPriceRaw": 499999,
+        "newListings": "18",
+        "newPending": "19",
+        "avgDaysToClose": "N/A",
+        "saleToListRatio": "N/A",
+        "priceCutPercent": "27.8%"
+      }
+    }
+  }
+}

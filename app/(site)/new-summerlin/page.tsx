@@ -18,7 +18,7 @@ const BREADCRUMB_SCHEMA = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chris-nevada-next.vercel.app/' },
     { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://chris-nevada-next.vercel.app/#communities' },
-    { '@type': 'ListItem', position: 3, name: 'Summerlin', item: 'https://chris-nevada-next.vercel.app/summerlin/' },
+    { '@type': 'ListItem', position: 3, name: 'Summerlin', item: 'https://chris-nevada-next.vercel.app/new-summerlin/' },
   ],
 }
 
@@ -117,7 +117,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 /* ── Page Component ─────────────────────────────────────────── */
 
-export default async function SummerlinPage() {
+export default async function NewSummerlinPage() {
   const cms = await getCommunityPage('summerlin')
 
   const heroHeadline = cms?.heroHeadline ?? 'Summerlin'

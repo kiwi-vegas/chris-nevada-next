@@ -3,16 +3,27 @@ import { useEffect, useRef } from 'react'
 
 const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''
 
-export interface CommunityMapProps {
-  center: [number, number]
-  zoom: number
-  boundary: [number, number][]
-  name: string
-  subtitle: string
-  id: string
-}
+// Center of Summerlin West — westernmost expansion near Red Rock
+const CENTER: [number, number] = [-115.345, 36.145]
 
-export default function CommunityMap({ center, zoom, boundary, name, subtitle, id }: CommunityMapProps) {
+// Approximate Summerlin West boundary polygon
+const BOUNDARY: [number, number][] = [
+  [-115.385, 36.175], // NW — near Red Rock foothills
+  [-115.360, 36.180], // N
+  [-115.330, 36.178], // NE
+  [-115.310, 36.170], // E — transition to central Summerlin
+  [-115.305, 36.150], // E
+  [-115.308, 36.130], // SE
+  [-115.315, 36.115], // S — Blue Diamond corridor
+  [-115.335, 36.110], // S
+  [-115.360, 36.112], // SW
+  [-115.380, 36.125], // W — Red Rock boundary
+  [-115.388, 36.145], // W
+  [-115.387, 36.165], // NW
+  [-115.385, 36.175], // back to NW
+]
+
+export default function SummerlinWestMap() {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
 
@@ -30,8 +41,8 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map = new mapboxgl.Map({
         container: containerRef.current!,
         style: 'mapbox://styles/mapbox/light-v11',
-        center,
-        zoom,
+        center: CENTER,
+        zoom: 12.5,
         attributionControl: false,
         pitchWithRotate: false,
         dragRotate: false,
@@ -43,27 +54,34 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right')
 
       map.on('load', () => {
-        map.addSource(`${id}-boundary`, {
+        map.addSource('summerlin-west-boundary', {
           type: 'geojson',
           data: {
             type: 'Feature',
-            geometry: { type: 'Polygon', coordinates: [boundary] },
+            geometry: { type: 'Polygon', coordinates: [BOUNDARY] },
             properties: {},
           },
         })
 
         map.addLayer({
-          id: `${id}-fill`,
+          id: 'summerlin-west-fill',
           type: 'fill',
-          source: `${id}-boundary`,
-          paint: { 'fill-color': '#C9A96E', 'fill-opacity': 0.10 },
+          source: 'summerlin-west-boundary',
+          paint: {
+            'fill-color': '#C9A96E',
+            'fill-opacity': 0.10,
+          },
         })
 
         map.addLayer({
-          id: `${id}-outline`,
+          id: 'summerlin-west-outline',
           type: 'line',
-          source: `${id}-boundary`,
-          paint: { 'line-color': '#C9A96E', 'line-width': 2, 'line-opacity': 0.85 },
+          source: 'summerlin-west-boundary',
+          paint: {
+            'line-color': '#C9A96E',
+            'line-width': 2,
+            'line-opacity': 0.85,
+          },
         })
 
         const el = document.createElement('div')
@@ -76,10 +94,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         `
 
         new mapboxgl.Marker({ element: el })
-          .setLngLat(center)
+          .setLngLat(CENTER)
           .setPopup(
-            new mapboxgl.Popup({ offset: 16 })
-              .setHTML(`<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">${name}</div><div style="font-size:11px;color:#555;margin-top:2px;">Nevada</div>`)
+            new mapboxgl.Popup({ offset: 16, className: 'summerlin-popup' })
+              .setHTML('<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Summerlin West</div><div style="font-size:11px;color:#555;margin-top:2px;">Las Vegas, NV</div>')
           )
           .addTo(map)
       })
@@ -110,10 +128,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         pointerEvents: 'none',
       }}>
         <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1B2A4A', fontFamily: 'DM Sans,sans-serif' }}>
-          {name}
+          Summerlin West
         </div>
         <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
-          {subtitle}
+          Las Vegas, Nevada · Summerlin&rsquo;s Newest Expansion
         </div>
       </div>
     </div>

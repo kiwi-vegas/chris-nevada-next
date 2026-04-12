@@ -3,16 +3,25 @@ import { useEffect, useRef } from 'react'
 
 const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''
 
-export interface CommunityMapProps {
-  center: [number, number]
-  zoom: number
-  boundary: [number, number][]
-  name: string
-  subtitle: string
-  id: string
-}
+// Center of Cadence — south Henderson near Lake Mead Pkwy & Boulder Hwy
+const CENTER: [number, number] = [-114.960, 36.015]
 
-export default function CommunityMap({ center, zoom, boundary, name, subtitle, id }: CommunityMapProps) {
+// Approximate Cadence boundary polygon
+const BOUNDARY: [number, number][] = [
+  [-114.978, 36.030], // NW
+  [-114.963, 36.033], // N
+  [-114.945, 36.030], // NE — near Boulder Hwy
+  [-114.938, 36.022], // E
+  [-114.937, 36.010], // SE
+  [-114.940, 36.000], // S
+  [-114.952, 35.996], // S
+  [-114.968, 35.998], // SW
+  [-114.980, 36.005], // W
+  [-114.982, 36.018], // W
+  [-114.978, 36.030], // back to NW
+]
+
+export default function CadenceMap() {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
 
@@ -30,8 +39,8 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map = new mapboxgl.Map({
         container: containerRef.current!,
         style: 'mapbox://styles/mapbox/light-v11',
-        center,
-        zoom,
+        center: CENTER,
+        zoom: 13,
         attributionControl: false,
         pitchWithRotate: false,
         dragRotate: false,
@@ -43,27 +52,34 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right')
 
       map.on('load', () => {
-        map.addSource(`${id}-boundary`, {
+        map.addSource('cadence-boundary', {
           type: 'geojson',
           data: {
             type: 'Feature',
-            geometry: { type: 'Polygon', coordinates: [boundary] },
+            geometry: { type: 'Polygon', coordinates: [BOUNDARY] },
             properties: {},
           },
         })
 
         map.addLayer({
-          id: `${id}-fill`,
+          id: 'cadence-fill',
           type: 'fill',
-          source: `${id}-boundary`,
-          paint: { 'fill-color': '#C9A96E', 'fill-opacity': 0.10 },
+          source: 'cadence-boundary',
+          paint: {
+            'fill-color': '#C9A96E',
+            'fill-opacity': 0.10,
+          },
         })
 
         map.addLayer({
-          id: `${id}-outline`,
+          id: 'cadence-outline',
           type: 'line',
-          source: `${id}-boundary`,
-          paint: { 'line-color': '#C9A96E', 'line-width': 2, 'line-opacity': 0.85 },
+          source: 'cadence-boundary',
+          paint: {
+            'line-color': '#C9A96E',
+            'line-width': 2,
+            'line-opacity': 0.85,
+          },
         })
 
         const el = document.createElement('div')
@@ -76,10 +92,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         `
 
         new mapboxgl.Marker({ element: el })
-          .setLngLat(center)
+          .setLngLat(CENTER)
           .setPopup(
-            new mapboxgl.Popup({ offset: 16 })
-              .setHTML(`<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">${name}</div><div style="font-size:11px;color:#555;margin-top:2px;">Nevada</div>`)
+            new mapboxgl.Popup({ offset: 16, className: 'summerlin-popup' })
+              .setHTML('<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Cadence</div><div style="font-size:11px;color:#555;margin-top:2px;">Henderson, NV</div>')
           )
           .addTo(map)
       })
@@ -110,10 +126,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         pointerEvents: 'none',
       }}>
         <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1B2A4A', fontFamily: 'DM Sans,sans-serif' }}>
-          {name}
+          Cadence
         </div>
         <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
-          {subtitle}
+          Henderson, Nevada · ~2,200 acres
         </div>
       </div>
     </div>

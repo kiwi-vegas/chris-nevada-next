@@ -3,16 +3,27 @@ import { useEffect, useRef } from 'react'
 
 const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''
 
-export interface CommunityMapProps {
-  center: [number, number]
-  zoom: number
-  boundary: [number, number][]
-  name: string
-  subtitle: string
-  id: string
-}
+// Center of Paradise — central Las Vegas encompassing the Strip corridor
+const CENTER: [number, number] = [-115.150, 36.105]
 
-export default function CommunityMap({ center, zoom, boundary, name, subtitle, id }: CommunityMapProps) {
+// Approximate Paradise boundary polygon
+const BOUNDARY: [number, number][] = [
+  [-115.185, 36.160], // NW — near Sahara / I-15
+  [-115.155, 36.165], // N — near Convention Center
+  [-115.120, 36.162], // NE — near Maryland Pkwy / Sahara
+  [-115.105, 36.145], // E — near Boulder Hwy
+  [-115.100, 36.115], // E — UNLV area
+  [-115.095, 36.085], // SE — near I-215 / airport
+  [-115.105, 36.060], // S — near airport south
+  [-115.135, 36.055], // S
+  [-115.165, 36.058], // SW
+  [-115.185, 36.070], // W — near I-15 south
+  [-115.192, 36.100], // W — Strip corridor
+  [-115.190, 36.135], // W — near I-15 / Flamingo
+  [-115.185, 36.160], // back to NW
+]
+
+export default function ParadiseMap() {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
 
@@ -30,8 +41,8 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map = new mapboxgl.Map({
         container: containerRef.current!,
         style: 'mapbox://styles/mapbox/light-v11',
-        center,
-        zoom,
+        center: CENTER,
+        zoom: 11.5,
         attributionControl: false,
         pitchWithRotate: false,
         dragRotate: false,
@@ -43,27 +54,34 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right')
 
       map.on('load', () => {
-        map.addSource(`${id}-boundary`, {
+        map.addSource('paradise-boundary', {
           type: 'geojson',
           data: {
             type: 'Feature',
-            geometry: { type: 'Polygon', coordinates: [boundary] },
+            geometry: { type: 'Polygon', coordinates: [BOUNDARY] },
             properties: {},
           },
         })
 
         map.addLayer({
-          id: `${id}-fill`,
+          id: 'paradise-fill',
           type: 'fill',
-          source: `${id}-boundary`,
-          paint: { 'fill-color': '#C9A96E', 'fill-opacity': 0.10 },
+          source: 'paradise-boundary',
+          paint: {
+            'fill-color': '#C9A96E',
+            'fill-opacity': 0.10,
+          },
         })
 
         map.addLayer({
-          id: `${id}-outline`,
+          id: 'paradise-outline',
           type: 'line',
-          source: `${id}-boundary`,
-          paint: { 'line-color': '#C9A96E', 'line-width': 2, 'line-opacity': 0.85 },
+          source: 'paradise-boundary',
+          paint: {
+            'line-color': '#C9A96E',
+            'line-width': 2,
+            'line-opacity': 0.85,
+          },
         })
 
         const el = document.createElement('div')
@@ -76,10 +94,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         `
 
         new mapboxgl.Marker({ element: el })
-          .setLngLat(center)
+          .setLngLat(CENTER)
           .setPopup(
-            new mapboxgl.Popup({ offset: 16 })
-              .setHTML(`<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">${name}</div><div style="font-size:11px;color:#555;margin-top:2px;">Nevada</div>`)
+            new mapboxgl.Popup({ offset: 16, className: 'summerlin-popup' })
+              .setHTML('<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Paradise</div><div style="font-size:11px;color:#555;margin-top:2px;">Las Vegas, NV</div>')
           )
           .addTo(map)
       })
@@ -110,10 +128,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         pointerEvents: 'none',
       }}>
         <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1B2A4A', fontFamily: 'DM Sans,sans-serif' }}>
-          {name}
+          Paradise
         </div>
         <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
-          {subtitle}
+          Central Las Vegas, Nevada
         </div>
       </div>
     </div>

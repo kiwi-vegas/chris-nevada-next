@@ -3,16 +3,27 @@ import { useEffect, useRef } from 'react'
 
 const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''
 
-export interface CommunityMapProps {
-  center: [number, number]
-  zoom: number
-  boundary: [number, number][]
-  name: string
-  subtitle: string
-  id: string
-}
+// Center of Skye Canyon
+const CENTER: [number, number] = [-115.310, 36.315]
 
-export default function CommunityMap({ center, zoom, boundary, name, subtitle, id }: CommunityMapProps) {
+// Approximate Skye Canyon boundary polygon
+// Bounded by US-95 to east, Iron Mountain Rd area to north, Grand Teton Dr to west
+const BOUNDARY: [number, number][] = [
+  [-115.340, 36.330], // NW
+  [-115.318, 36.335], // N
+  [-115.295, 36.332], // NE
+  [-115.280, 36.325], // E — near US-95
+  [-115.275, 36.312], // E
+  [-115.278, 36.298], // SE
+  [-115.290, 36.292], // S
+  [-115.310, 36.290], // S
+  [-115.330, 36.293], // SW
+  [-115.342, 36.305], // W — foothills
+  [-115.343, 36.318], // W
+  [-115.340, 36.330], // back to NW
+]
+
+export default function SkyeCanyonMap() {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
 
@@ -30,8 +41,8 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map = new mapboxgl.Map({
         container: containerRef.current!,
         style: 'mapbox://styles/mapbox/light-v11',
-        center,
-        zoom,
+        center: CENTER,
+        zoom: 12.5,
         attributionControl: false,
         pitchWithRotate: false,
         dragRotate: false,
@@ -43,29 +54,40 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
       map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right')
 
       map.on('load', () => {
-        map.addSource(`${id}-boundary`, {
+        // Boundary polygon
+        map.addSource('skye-canyon-boundary', {
           type: 'geojson',
           data: {
             type: 'Feature',
-            geometry: { type: 'Polygon', coordinates: [boundary] },
+            geometry: { type: 'Polygon', coordinates: [BOUNDARY] },
             properties: {},
           },
         })
 
+        // Gold fill (semi-transparent)
         map.addLayer({
-          id: `${id}-fill`,
+          id: 'skye-canyon-fill',
           type: 'fill',
-          source: `${id}-boundary`,
-          paint: { 'fill-color': '#C9A96E', 'fill-opacity': 0.10 },
+          source: 'skye-canyon-boundary',
+          paint: {
+            'fill-color': '#C9A96E',
+            'fill-opacity': 0.10,
+          },
         })
 
+        // Gold outline
         map.addLayer({
-          id: `${id}-outline`,
+          id: 'skye-canyon-outline',
           type: 'line',
-          source: `${id}-boundary`,
-          paint: { 'line-color': '#C9A96E', 'line-width': 2, 'line-opacity': 0.85 },
+          source: 'skye-canyon-boundary',
+          paint: {
+            'line-color': '#C9A96E',
+            'line-width': 2,
+            'line-opacity': 0.85,
+          },
         })
 
+        // Center marker
         const el = document.createElement('div')
         el.style.cssText = `
           width: 14px; height: 14px;
@@ -76,10 +98,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         `
 
         new mapboxgl.Marker({ element: el })
-          .setLngLat(center)
+          .setLngLat(CENTER)
           .setPopup(
-            new mapboxgl.Popup({ offset: 16 })
-              .setHTML(`<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">${name}</div><div style="font-size:11px;color:#555;margin-top:2px;">Nevada</div>`)
+            new mapboxgl.Popup({ offset: 16, className: 'summerlin-popup' })
+              .setHTML('<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Skye Canyon</div><div style="font-size:11px;color:#555;margin-top:2px;">Las Vegas, NV</div>')
           )
           .addTo(map)
       })
@@ -110,10 +132,10 @@ export default function CommunityMap({ center, zoom, boundary, name, subtitle, i
         pointerEvents: 'none',
       }}>
         <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1B2A4A', fontFamily: 'DM Sans,sans-serif' }}>
-          {name}
+          Skye Canyon
         </div>
         <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
-          {subtitle}
+          Las Vegas, Nevada · ~1,700 acres
         </div>
       </div>
     </div>
