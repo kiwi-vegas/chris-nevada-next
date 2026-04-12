@@ -103,7 +103,7 @@ why_it_matters: ${article.whyItMatters}
 
 BODY STRUCTURE (follow this exactly):
 
-Length: Aim for 700–1,000 words.
+Length: Aim for 1,500–2,000 words.
 
 Use these H2 sections in order:
 
@@ -144,7 +144,7 @@ Return ONLY valid JSON, no markdown fences.`
 
   const response = await anthropic.messages.create({
     model: 'claude-sonnet-4-6',
-    max_tokens: 4000,
+    max_tokens: 6000,
     system: SYSTEM_PROMPT,
     messages: [
       {
