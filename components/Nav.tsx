@@ -27,7 +27,7 @@ export default function Nav() {
       <nav id="nav" className={scrolled ? 'scrolled' : ''}>
         <div className="nav-inner">
           <Link href="/" className="nav-logo">
-            <Image src="/logo.png" alt="Nevada Real Estate Group" width={160} height={40} priority />
+            <Image src="/NREG-LOGO.png" alt="Nevada Real Estate Group" width={160} height={40} priority />
           </Link>
 
           <ul className="nav-links">

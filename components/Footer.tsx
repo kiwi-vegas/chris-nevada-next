@@ -31,7 +31,7 @@ export default function Footer() {
 
         {/* ── LOGO ROW ──────────────────────────────────────────── */}
         <div className="footer-logos-row">
-          <Image src="/logo.png" alt="Nevada Real Estate Group" width={180} height={44} style={{ filter: 'brightness(0) invert(1)' }} />
+          <Image src="/NREG-LOGO.png" alt="Nevada Real Estate Group" width={180} height={44} style={{ filter: 'brightness(0) invert(1)' }} />
           <div className="footer-logo-divider" />
           <span className="footer-lpt">lpt Realty</span>
         </div>
