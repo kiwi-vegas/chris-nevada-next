@@ -154,8 +154,10 @@ Return ONLY valid JSON, no markdown fences.`
     ],
   })
 
-  const text = response.content[0].type === 'text' ? response.content[0].text : '{}'
-  const data = JSON.parse(text.trim())
+  let text = response.content[0].type === 'text' ? response.content[0].text : '{}'
+  // Strip markdown fences if the model wraps JSON in ```json ... ```
+  text = text.replace(/^```(?:json)?\s*\n?/i, '').replace(/\n?```\s*$/i, '').trim()
+  const data = JSON.parse(text)
 
   const bodyText: string = data.body ?? ''
 
