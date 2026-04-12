@@ -50,6 +50,10 @@ export default async function HomePage() {
         </div>
         <div className="hero-overlay-gradient" />
         <div className="hero-overlay-bottom" />
+        <div className="hero-tagline">
+          <span className="hero-tagline-number">#1</span>
+          <span className="hero-tagline-text">REAL ESTATE TEAM IN NEVADA</span>
+        </div>
       </section>
 
       {/* TRUST BAR */}
