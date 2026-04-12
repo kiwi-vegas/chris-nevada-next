@@ -50,33 +50,6 @@ export default async function HomePage() {
         </div>
         <div className="hero-overlay-gradient" />
         <div className="hero-overlay-bottom" />
-        <div className="container">
-          <div className="hero-content">
-            <div className="hero-eyebrow">
-              <span className="hero-eyebrow-line" />
-              <span>Las Vegas</span>
-            </div>
-            <h1>{heroHeadline.includes("Premier") ? (
-              <>Nevada&apos;s <em>Premier</em><br />Real Estate Group</>
-            ) : heroHeadline}</h1>
-            <p className="hero-sub">
-              {heroSubheadline.split('\n').map((line, i) => (
-                <span key={i}>{i === 0 ? <strong>{line}</strong> : line}{i === 0 && <br />}</span>
-              ))}
-            </p>
-            <div className="hero-ctas">
-              <a href="#communities" className="btn-primary">
-                Search Homes
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-              <a href="tel:+17252399950" className="btn-outline">Free Consultation</a>
-            </div>
-          </div>
-        </div>
-        <div className="hero-scroll">
-          <span>Scroll</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-        </div>
       </section>
 
       {/* TRUST BAR */}
