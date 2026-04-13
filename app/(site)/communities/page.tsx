@@ -91,6 +91,22 @@ export default function CommunitiesPage() {
             ))}
           </div>
 
+          <div className="comm-hub-nav" style={{ marginTop: '-40px', marginBottom: '56px' }}>
+            {[
+              { label: 'Guard-Gated', href: '/guard-gated-communities/' },
+              { label: '55+ Active Adult', href: '/55-plus-communities/' },
+              { label: 'Luxury', href: '/luxury-communities/' },
+              { label: 'High-Rise & Condos', href: '/high-rise-condos/' },
+              { label: 'New Construction', href: '/new-construction/' },
+              { label: 'Golf Communities', href: '/golf-communities/' },
+              { label: 'Vintage & Historic', href: '/vintage-historic-neighborhoods/' },
+            ].map(item => (
+              <a key={item.label} href={item.href} className="comm-hub-nav-item" style={{ background: 'var(--navy)', color: 'var(--white)', borderColor: 'var(--navy)' }}>
+                {item.label}
+              </a>
+            ))}
+          </div>
+
           {groups.map(group => (
             <div key={group.label} id={group.label.toLowerCase().replace(/\s+/g, '-')} className="comm-hub-section">
               <h2 className="comm-hub-section-title">{group.label} <span className="comm-hub-section-count">{group.count} communities</span></h2>
