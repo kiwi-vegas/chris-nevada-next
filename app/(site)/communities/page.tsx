@@ -168,7 +168,7 @@ export default function CommunitiesPage() {
         name: 'Las Vegas Communities and Neighborhoods',
         description: `${communities.length} communities across Las Vegas, Henderson, Summerlin, and North Las Vegas.`,
         numberOfItems: communities.length,
-        itemListElement: communities.slice(0, 100).map((c, i) => ({
+        itemListElement: communities.map((c, i) => ({
           '@type': 'ListItem',
           position: i + 1,
           name: c.name,
