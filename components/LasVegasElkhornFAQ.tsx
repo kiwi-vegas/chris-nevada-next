@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes cover the Elkhorn area?",
-    "a": "The Elkhorn area spans portions of ZIP codes 89129 and 89131 in the northwest Las Vegas Valley."
+    "a": "The Elkhorn area spans portions of ZIP codes 89129 and 89131 in the northwest Las Vegas Valley. Home prices range from $350K–$600K."
   },
   {
     "q": "What schools serve the Elkhorn area?",
@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "How far is the Elkhorn area from the Strip?",
-    "a": "The Elkhorn area is approximately 20 minutes from the Las Vegas Strip via US-95 South and I-15."
+    "a": "The Elkhorn area is approximately 20 minutes from the Las Vegas Strip via US-95 South and I-15. Home prices range from $350K–$600K."
   },
   {
     "q": "Is the Elkhorn area near Summerlin?",

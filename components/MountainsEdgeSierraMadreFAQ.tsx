@@ -16,11 +16,11 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Sierra Madre in?",
-    "a": "Sierra Madre at Mountains Edge is located in ZIP code 89178 in southwest Las Vegas."
+    "a": "Sierra Madre at Mountains Edge is located in ZIP code 89178 in southwest Las Vegas. Home prices range from $450K–$700K."
   },
   {
     "q": "What are HOA fees in Sierra Madre?",
-    "a": "HOA fees are low, typically $65 to $150 per month, covering common area maintenance, trails, and community parks."
+    "a": "HOA fees are low, typically $65 to $150 per month, covering common area maintenance, trails, and community parks in Sierra Madre at Mountains Edge."
   },
   {
     "q": "Is Sierra Madre near hiking?",

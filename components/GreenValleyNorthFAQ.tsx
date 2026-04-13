@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes cover Green Valley North?",
-    "a": "Green Valley North spans ZIP codes 89014 and 89074 in Henderson, Nevada."
+    "a": "Green Valley North spans ZIP codes 89014 and 89074 in Henderson, Nevada. Home prices range from $400K–$1.5M."
   },
   {
     "q": "What golf course is in Green Valley North?",

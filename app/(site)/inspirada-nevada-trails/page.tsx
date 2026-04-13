@@ -30,11 +30,11 @@ const FAQ_DATA = [
   },
   {
     "q": "Is Nevada Trails guard-gated?",
-    "a": "No — Nevada Trails is part of the open Inspirada master plan with HOA governance. There are no guard gates."
+    "a": "No — Nevada Trails is part of the open Inspirada master plan with HOA governance. There are no guard gates in Nevada Trails at Inspirada."
   },
   {
     "q": "What ZIP code is Nevada Trails in?",
-    "a": "Nevada Trails at Inspirada is located in ZIP code 89044 in southern Henderson."
+    "a": "Nevada Trails at Inspirada is located in ZIP code 89044 in southern Henderson. Home prices range from $450K–$700K."
   },
   {
     "q": "What are HOA fees in Nevada Trails?",

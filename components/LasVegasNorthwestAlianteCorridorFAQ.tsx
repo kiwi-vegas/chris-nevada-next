@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes are in the Aliante Corridor?",
-    "a": "The Aliante Corridor spans ZIP codes 89084 and 89085 in North Las Vegas, Nevada."
+    "a": "The Aliante Corridor spans ZIP codes 89084 and 89085 in North Las Vegas, Nevada. Home prices range from $300K–$500K."
   },
   {
     "q": "Is the Aliante Corridor part of the Aliante master plan?",
@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     "q": "How far is the Aliante Corridor from the Strip?",
-    "a": "The Aliante Corridor is approximately 20 minutes from the Las Vegas Strip via I-15 South."
+    "a": "The Aliante Corridor is approximately 20 minutes from the Las Vegas Strip via I-15 South. Home prices range from $300K–$500K."
   },
   {
     "q": "Is North Las Vegas growing?",

@@ -38,7 +38,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Tule Springs?",
-    "a": "Tule Springs spans ZIP codes 89131 and 89085 in the North Las Vegas / northwest Las Vegas area."
+    "a": "Tule Springs spans ZIP codes 89131 and 89085 in the North Las Vegas / northwest Las Vegas area. Home prices range from $300K–$500K."
   },
   {
     "q": "Is there new construction in Tule Springs?",

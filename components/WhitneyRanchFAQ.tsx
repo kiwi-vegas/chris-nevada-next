@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is Whitney Ranch in?",
-    "a": "Whitney Ranch spans ZIP codes 89014 and 89074 in Henderson, Nevada."
+    "a": "Whitney Ranch spans ZIP codes 89014 and 89074 in Henderson, Nevada. Home prices range from $350K–$600K."
   },
   {
     "q": "What are HOA fees in Whitney Ranch?",

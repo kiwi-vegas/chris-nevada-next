@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Redpoint in?",
-    "a": "Redpoint is located in ZIP code 89138 in the Summerlin West area of Las Vegas."
+    "a": "Redpoint is located in ZIP code 89138 in the Summerlin West area of Las Vegas. Home prices range from $650K–$2M+."
   },
   {
     "q": "How close is Redpoint to Red Rock Canyon?",

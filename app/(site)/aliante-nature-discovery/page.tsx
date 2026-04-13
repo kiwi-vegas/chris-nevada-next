@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Nature Discovery at Aliante in?",
-    "a": "Nature Discovery at Aliante is in ZIP code 89084 in North Las Vegas."
+    "a": "Nature Discovery at Aliante is in ZIP code 89084 in North Las Vegas. Home prices range from $350K–$500K."
   },
   {
     "q": "What are HOA fees in the Nature Discovery area?",

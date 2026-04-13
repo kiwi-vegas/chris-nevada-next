@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Carlisle Peak in?",
-    "a": "Carlisle Peak is located in ZIP code 89138 in the Summerlin West area of Las Vegas."
+    "a": "Carlisle Peak is located in ZIP code 89138 in the Summerlin West area of Las Vegas. Home prices range from $1.55M–$2M+."
   },
   {
     "q": "How does the guard gate entry process work?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Carlisle Peak features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

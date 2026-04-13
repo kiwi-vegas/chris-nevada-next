@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Centennial Hills North?",
-    "a": "Centennial Hills North primarily spans ZIP codes 89149 and 89166 in northwest Las Vegas."
+    "a": "Centennial Hills North primarily spans ZIP codes 89149 and 89166 in northwest Las Vegas. Home prices range from $400K–$700K."
   },
   {
     "q": "How does Centennial Hills North compare to Summerlin?",

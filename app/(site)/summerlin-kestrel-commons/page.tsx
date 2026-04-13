@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Kestrel Commons in?",
-    "a": "Kestrel Commons is located in ZIP code 89138 in the Summerlin West area of Las Vegas."
+    "a": "Kestrel Commons is located in ZIP code 89138 in the Summerlin West area of Las Vegas. Home prices range from $450K–$900K."
   },
   {
     "q": "What schools serve Kestrel Commons?",

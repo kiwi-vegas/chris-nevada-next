@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is The Willows in?",
-    "a": "The Willows is located in ZIP code 89134 in the Summerlin North area of Las Vegas."
+    "a": "The Willows is located in ZIP code 89134 in the Summerlin North area of Las Vegas. Home prices range from $450K–$750K."
   },
   {
     "q": "When was The Willows built?",

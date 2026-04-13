@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "Is Tuscan Cliffs guard-gated?",
-    "a": "Yes — Tuscan Cliffs is double guard-gated within the Southern Highlands master plan. The community has its own staffed guard gate, and the broader Southern Highlands community also has guard-gated entry points."
+    "a": "Yes — Tuscan Cliffs is double guard-gated within the Southern Highlands master plan. The community has its own staffed guard gate, and the broader Southern Highlands community also has guard-gated entry points. Tuscan Cliffs features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "What style of homes are in Tuscan Cliffs?",
@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Tuscan Cliffs in?",
-    "a": "Tuscan Cliffs is located in ZIP code 89141 in the Southern Highlands area of Las Vegas, Nevada."
+    "a": "Tuscan Cliffs is located in ZIP code 89141 in the Southern Highlands area of Las Vegas, Nevada. Home prices range from $800K–$3M."
   },
   {
     "q": "How does Tuscan Cliffs compare to Olympia Ridge?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Tuscan Cliffs features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

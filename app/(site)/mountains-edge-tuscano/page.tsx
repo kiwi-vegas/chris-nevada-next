@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Tuscano in?",
-    "a": "Tuscano at Mountains Edge is located in ZIP code 89178 in southwest Las Vegas."
+    "a": "Tuscano at Mountains Edge is located in ZIP code 89178 in southwest Las Vegas. Home prices range from $400K–$600K."
   },
   {
     "q": "What are HOA fees in Tuscano?",

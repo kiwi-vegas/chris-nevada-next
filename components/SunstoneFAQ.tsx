@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is Sunstone in?",
-    "a": "Sunstone spans ZIP codes 89081 and 89086 in North Las Vegas."
+    "a": "Sunstone spans ZIP codes 89081 and 89086 in North Las Vegas. Home prices range from $380K–$650K."
   },
   {
     "q": "What are HOA fees at Sunstone?",

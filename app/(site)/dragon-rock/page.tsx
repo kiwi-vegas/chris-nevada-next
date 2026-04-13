@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What does 'double guard-gated' mean?",
-    "a": "Dragon Rock is located within MacDonald Highlands, which has its own guard gate. Dragon Rock then has a second, private guard gate. Residents pass through two layers of controlled access — the MacDonald Highlands gate and the Dragon Rock gate — for maximum security and privacy."
+    "a": "Dragon Rock is located within MacDonald Highlands, which has its own guard gate. Dragon Rock then has a second, private guard gate. Residents pass through two layers of controlled access — the MacDonald Highlands gate and the Dragon Rock gate — for maximum security and privacy. Dragon Rock features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Who builds the homes in Dragon Rock?",
@@ -42,7 +42,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Dragon Rock in?",
-    "a": "Dragon Rock is located in ZIP code 89012 within MacDonald Highlands in Henderson, Nevada."
+    "a": "Dragon Rock is located in ZIP code 89012 within MacDonald Highlands in Henderson, Nevada. Home prices range from $5M–$15M+."
   },
   {
     "q": "What are HOA fees at Dragon Rock?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Dragon Rock features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

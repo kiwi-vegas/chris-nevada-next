@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Reverence in?",
-    "a": "Reverence is located in ZIP code 89166 in the Summerlin West area of Las Vegas."
+    "a": "Reverence is located in ZIP code 89166 in the Summerlin West area of Las Vegas. Home prices range from $600K–$1.5M."
   },
   {
     "q": "What schools serve Reverence?",

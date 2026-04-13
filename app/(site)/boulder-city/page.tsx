@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Boulder City in?",
-    "a": "Boulder City is in ZIP code 89005."
+    "a": "Boulder City is in ZIP code 89005. Home prices range from $400K–$1M+."
   },
   {
     "q": "How close is Boulder City to Lake Mead?",

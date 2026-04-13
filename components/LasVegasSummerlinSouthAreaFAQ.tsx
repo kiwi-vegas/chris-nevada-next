@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes cover Summerlin South?",
-    "a": "The Summerlin South Area primarily spans ZIP codes 89135 and 89138."
+    "a": "The Summerlin South Area primarily spans ZIP codes 89135 and 89138. Home prices range from $500K–$3M+."
   },
   {
     "q": "What is Downtown Summerlin?",
@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     "q": "What schools serve Summerlin South?",
-    "a": "The area is served by top-rated schools including Bonner Elementary (9/10), Rogich Middle (7/10), and Palo Verde High (8/10). Premier private schools include The Meadows (A+) and Bishop Gorman (A+)."
+    "a": "The area is served by top-rated schools including Bonner Elementary (9/10), Rogich Middle (7/10), and Palo Verde High (8/10). Premier private schools include The Meadows (A+) and Bishop Gorman (A+). Notable schools serving Summerlin South Area include John W. Bonner Elementary (9/10), Sig Rogich Middle School (7/10), Palo Verde High School (8/10)."
   },
   {
     "q": "What golf courses are in Summerlin South?",
@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     "q": "How far is Summerlin South from the Strip?",
-    "a": "Summerlin South is approximately 20 minutes from the Las Vegas Strip via Summerlin Parkway and I-15."
+    "a": "Summerlin South is approximately 20 minutes from the Las Vegas Strip via Summerlin Parkway and I-15 in Summerlin South Area."
   },
   {
     "q": "What are the best sub-neighborhoods within Summerlin South Area?",

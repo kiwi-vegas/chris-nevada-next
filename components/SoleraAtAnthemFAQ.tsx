@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Solera at Anthem in?",
-    "a": "Solera at Anthem is located in ZIP code 89044 in Henderson, Nevada."
+    "a": "Solera at Anthem is located in ZIP code 89044 in Henderson, Nevada. Home prices range from $350K–$650K."
   },
   {
     "q": "Does Solera at Anthem have a golf course?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Solera at Anthem features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

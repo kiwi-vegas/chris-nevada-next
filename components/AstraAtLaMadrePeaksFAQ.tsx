@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Astra at La Madre Peaks features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

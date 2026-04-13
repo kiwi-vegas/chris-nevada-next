@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in the Tropical Parkway area?",
-    "a": "The Tropical Parkway residential corridor spans ZIP codes 89084 and 89085 in North Las Vegas, Nevada."
+    "a": "The Tropical Parkway residential corridor spans ZIP codes 89084 and 89085 in North Las Vegas, Nevada in Tropical Parkway Corridor."
   },
   {
     "q": "What shopping is near Tropical Parkway?",
@@ -42,7 +42,7 @@ const FAQ_DATA = [
   },
   {
     "q": "Are there HOA fees in the Tropical Parkway area?",
-    "a": "HOA fees vary by subdivision, typically ranging from $40 to $120 per month. Some older properties may not have an HOA."
+    "a": "HOA fees vary by subdivision, typically ranging from $40 to $120 per month. Some older properties may not have an HOA in Tropical Parkway Corridor."
   },
   {
     "q": "Is Tropical Parkway a good area for investment?",

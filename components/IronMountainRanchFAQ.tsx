@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Iron Mountain Ranch in?",
-    "a": "Iron Mountain Ranch is located in ZIP code 89131 in northwest Las Vegas."
+    "a": "Iron Mountain Ranch is located in ZIP code 89131 in northwest Las Vegas. Home prices range from $350K–$600K."
   },
   {
     "q": "What schools serve Iron Mountain Ranch?",
@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     "q": "What are HOA fees in Iron Mountain Ranch?",
-    "a": "HOA fees are low, typically $50 to $150 per month, covering common area maintenance and community landscaping."
+    "a": "HOA fees are low, typically $50 to $150 per month, covering common area maintenance and community landscaping in Iron Mountain Ranch."
   },
   {
     "q": "How does Iron Mountain Ranch compare to Skye Canyon?",

@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Mira Villa in?",
-    "a": "Mira Villa is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+    "a": "Mira Villa is located in ZIP code 89135 in the Summerlin South area of Las Vegas. Home prices range from $1M–$2.2M."
   },
   {
     "q": "What are HOA fees in Mira Villa?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Mira Villa features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

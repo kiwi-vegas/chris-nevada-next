@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is Cadence in?",
-    "a": "Cadence spans ZIP codes 89011 and 89015 in Henderson, Nevada."
+    "a": "Cadence spans ZIP codes 89011 and 89015 in Henderson, Nevada. Home prices range from $350K–$800K."
   },
   {
     "q": "What are HOA fees in Cadence?",

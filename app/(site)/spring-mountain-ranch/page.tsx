@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Spring Mountain Ranch?",
-    "a": "Spring Mountain Ranch is located in ZIP codes 89148 and 89113 in southwest Las Vegas."
+    "a": "Spring Mountain Ranch is located in ZIP codes 89148 and 89113 in southwest Las Vegas. Home prices range from $500K–$1.2M."
   },
   {
     "q": "Is Spring Mountain Ranch near hiking?",
@@ -38,7 +38,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What are HOA fees in Spring Mountain Ranch?",
-    "a": "HOA fees typically range from $75 to $200 per month, covering common area maintenance and community landscaping."
+    "a": "HOA fees typically range from $75 to $200 per month, covering common area maintenance and community landscaping in Spring Mountain Ranch."
   },
   {
     "q": "What schools serve Spring Mountain Ranch?",

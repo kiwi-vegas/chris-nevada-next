@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Section 10 in?",
-    "a": "Section 10 spans ZIP codes 89134 and 89144 in the heart of Summerlin, Las Vegas."
+    "a": "Section 10 spans ZIP codes 89134 and 89144 in the heart of Summerlin, Las Vegas. Home prices range from $800K–$3M+."
   },
   {
     "q": "What is TPC Summerlin?",

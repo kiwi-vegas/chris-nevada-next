@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Watermark in?",
-    "a": "Watermark is located in ZIP code 89011 in eastern Henderson."
+    "a": "Watermark is located in ZIP code 89011 in eastern Henderson. Home prices range from $400K–$700K."
   },
   {
     "q": "What schools serve Watermark?",

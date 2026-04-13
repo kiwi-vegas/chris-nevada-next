@@ -42,7 +42,7 @@ const FAQ_DATA = [
   },
   {
     "q": "How far is East Henderson from the Strip?",
-    "a": "East Henderson is approximately 25 minutes from the Las Vegas Strip via I-515 and I-15 North."
+    "a": "East Henderson is approximately 25 minutes from the Las Vegas Strip via I-515 and I-15 North. Home prices range from $350K–$600K."
   },
   {
     "q": "What are HOA fees in East Henderson?",

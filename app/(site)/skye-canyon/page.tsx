@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Skye Canyon in?",
-    "a": "Skye Canyon is in ZIP code 89166 in northwest Las Vegas."
+    "a": "Skye Canyon is in ZIP code 89166 in northwest Las Vegas. Home prices range from $400K–$800K."
   },
   {
     "q": "How close is Skye Canyon to the mountains?",

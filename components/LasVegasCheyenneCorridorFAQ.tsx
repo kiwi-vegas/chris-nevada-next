@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "What are HOA fees along the Cheyenne Corridor?",
-    "a": "HOA fees range from $25 to $150 per month depending on the specific subdivision and its amenities."
+    "a": "HOA fees range from $25 to $150 per month depending on the specific subdivision and its amenities in Cheyenne Corridor."
   },
   {
     "q": "Is the Cheyenne Corridor a good investment?",

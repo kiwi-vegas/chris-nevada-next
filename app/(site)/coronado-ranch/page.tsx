@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Coronado Ranch in?",
-    "a": "Coronado Ranch is located in ZIP code 89052 in Henderson, Nevada."
+    "a": "Coronado Ranch is located in ZIP code 89052 in Henderson, Nevada. Home prices range from $400K–$650K."
   },
   {
     "q": "What are HOA fees in Coronado Ranch?",

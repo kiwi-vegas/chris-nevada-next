@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is the Garden area in?",
-    "a": "The Garden at Centennial Hills spans portions of ZIP codes 89131 and 89149 in northwest Las Vegas."
+    "a": "The Garden at Centennial Hills spans portions of ZIP codes 89131 and 89149 in northwest Las Vegas. Home prices range from $400K–$650K."
   },
   {
     "q": "What schools serve the Garden at Centennial Hills?",

@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Cadence Park in?",
-    "a": "Cadence Park is located in ZIP code 89011 in Henderson, Nevada."
+    "a": "Cadence Park is located in ZIP code 89011 in Henderson, Nevada. Home prices range from $400K–$650K."
   },
   {
     "q": "What are HOA fees in Cadence Park?",

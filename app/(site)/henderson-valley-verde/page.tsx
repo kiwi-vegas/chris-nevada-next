@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes cover Valley Verde?",
-    "a": "Valley Verde spans portions of ZIP codes 89014 and 89074 in Henderson, Nevada."
+    "a": "Valley Verde spans portions of ZIP codes 89014 and 89074 in Henderson, Nevada. Home prices range from $400K–$700K."
   },
   {
     "q": "What schools serve Valley Verde?",
@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "How far is Valley Verde from the Strip?",
-    "a": "Valley Verde is approximately 20 minutes from the Las Vegas Strip via I-215 and I-15 North."
+    "a": "Valley Verde is approximately 20 minutes from the Las Vegas Strip via I-215 and I-15 North. Home prices range from $400K–$700K."
   },
   {
     "q": "Is Valley Verde a good area for families?",

@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Whitney?",
-    "a": "Whitney spans ZIP codes 89122, 89121, and 89142 in the east-central Las Vegas Valley."
+    "a": "Whitney spans ZIP codes 89122, 89121, and 89142 in the east-central Las Vegas Valley. Home prices range from $200K–$400K."
   },
   {
     "q": "Is Whitney a good area for investment?",

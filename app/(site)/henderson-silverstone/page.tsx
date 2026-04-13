@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes cover Silverstone?",
-    "a": "Silverstone spans portions of ZIP codes 89074 and 89052 in Henderson, Nevada."
+    "a": "Silverstone spans portions of ZIP codes 89074 and 89052 in Henderson, Nevada. Home prices range from $400K–$700K."
   },
   {
     "q": "What schools serve Silverstone?",
@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "How far is Silverstone from the Strip?",
-    "a": "Silverstone is approximately 20 minutes from the Las Vegas Strip via I-215 and I-15 North."
+    "a": "Silverstone is approximately 20 minutes from the Las Vegas Strip via I-215 and I-15 North. Home prices range from $400K–$700K."
   },
   {
     "q": "Is Silverstone a good area for families?",

@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is The Crossing in?",
-    "a": "The Crossing is located in ZIP code 89134 in the Summerlin North area of Las Vegas."
+    "a": "The Crossing is located in ZIP code 89134 in the Summerlin North area of Las Vegas. Home prices range from $400K–$700K."
   },
   {
     "q": "When was The Crossing built?",

@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes are in the Green Valley Plaza area?",
-    "a": "The Green Valley Plaza area spans ZIP codes 89014 and 89074 in Henderson, Nevada."
+    "a": "The Green Valley Plaza area spans ZIP codes 89014 and 89074 in Henderson, Nevada in Green Valley Plaza Area."
   },
   {
     "q": "Is the Green Valley Plaza area part of the original Green Valley?",
@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     "q": "How far is the Green Valley Plaza area from the Strip?",
-    "a": "The Green Valley Plaza area is approximately 18 minutes from the Las Vegas Strip via I-215 and I-15."
+    "a": "The Green Valley Plaza area is approximately 18 minutes from the Las Vegas Strip via I-215 and I-15 in Green Valley Plaza Area."
   },
   {
     "q": "What are the best sub-neighborhoods within Green Valley Plaza Area?",

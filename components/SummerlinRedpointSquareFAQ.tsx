@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Redpoint Square in?",
-    "a": "Redpoint Square is located in ZIP code 89166 in the Summerlin West area of Las Vegas."
+    "a": "Redpoint Square is located in ZIP code 89166 in the Summerlin West area of Las Vegas. Home prices range from $450K–$1.5M+."
   },
   {
     "q": "What schools serve Redpoint Square?",

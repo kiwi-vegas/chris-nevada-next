@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes cover Meadows Village?",
-    "a": "Meadows Village spans portions of ZIP codes 89107 and 89146 in the City of Las Vegas."
+    "a": "Meadows Village spans portions of ZIP codes 89107 and 89146 in the City of Las Vegas. Home prices range from $300K–$600K."
   },
   {
     "q": "Is Meadows Village near The Meadows School?",

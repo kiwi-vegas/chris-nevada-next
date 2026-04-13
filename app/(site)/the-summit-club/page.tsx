@@ -42,7 +42,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is The Summit Club in?",
-    "a": "The Summit Club is located in ZIP code 89135 within Summerlin, Las Vegas."
+    "a": "The Summit Club is located in ZIP code 89135 within Summerlin, Las Vegas. Home prices range from $5M–$30M+."
   },
   {
     "q": "Who developed The Summit Club?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. The Summit Club features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

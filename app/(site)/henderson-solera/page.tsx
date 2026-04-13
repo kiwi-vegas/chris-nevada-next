@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "Is Solera Henderson guard-gated?",
-    "a": "Yes. Solera Henderson is a guard-gated community with controlled access. All visitors must be registered and cleared through the gate."
+    "a": "Yes. Solera Henderson is a guard-gated community with controlled access. All visitors must be registered and cleared through the gate. Solera Henderson features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "What amenities does Solera Henderson offer?",
@@ -50,7 +50,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Solera Henderson in?",
-    "a": "Solera Henderson is in ZIP code 89052 in Henderson, Nevada."
+    "a": "Solera Henderson is in ZIP code 89052 in Henderson, Nevada. Home prices range from $350K–$550K."
   },
   {
     "q": "How does the guard gate entry process work?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Solera Henderson features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

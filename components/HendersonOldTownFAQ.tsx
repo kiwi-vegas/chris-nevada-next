@@ -16,11 +16,11 @@ const FAQS = [
   },
   {
     "q": "Are there HOA fees in Old Town Henderson?",
-    "a": "Most of Old Town Henderson has no HOA, which means no monthly fees and considerable flexibility for renovations, expansions, and personal expression."
+    "a": "Most of Old Town Henderson has no HOA, which means no monthly fees and considerable flexibility for renovations, expansions, and personal expression. Monthly HOA fees in Old Town Henderson range from None–$50/mo, which typically covers common area maintenance, landscaping, and reserve fund contributions."
   },
   {
     "q": "What ZIP code is Old Town Henderson?",
-    "a": "Old Town Henderson is located in ZIP code 89015 in Henderson, Nevada."
+    "a": "Old Town Henderson is located in ZIP code 89015 in Henderson, Nevada. Home prices range from $300K–$600K."
   },
   {
     "q": "Is Old Town Henderson walkable?",

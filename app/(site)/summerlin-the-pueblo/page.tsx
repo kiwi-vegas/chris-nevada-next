@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is The Pueblo in?",
-    "a": "The Pueblo is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+    "a": "The Pueblo is located in ZIP code 89135 in the Summerlin South area of Las Vegas. Home prices range from $400K–$650K."
   },
   {
     "q": "When was The Pueblo built?",

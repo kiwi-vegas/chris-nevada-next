@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "Does Blue Diamond have an HOA?",
-    "a": "No. Blue Diamond has no homeowners association. Property use is governed by county zoning regulations, giving owners significant freedom in how they use and develop their land."
+    "a": "No. Blue Diamond has no homeowners association. Property use is governed by county zoning regulations, giving owners significant freedom in how they use and develop their land. Monthly HOA fees in Blue Diamond range from $0/mo, which typically covers common area maintenance, landscaping, and reserve fund contributions."
   },
   {
     "q": "What is the history of Blue Diamond?",

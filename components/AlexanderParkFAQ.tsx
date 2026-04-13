@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes are in Alexander Park?",
-    "a": "Alexander Park spans ZIP codes 89032 and 89086 in North Las Vegas."
+    "a": "Alexander Park spans ZIP codes 89032 and 89086 in North Las Vegas. Home prices range from $350K–$550K."
   },
   {
     "q": "What are HOA fees in Alexander Park?",
@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "What schools serve Alexander Park?",
-    "a": "Alexander Park is served by CCSD schools. Charter options including Somerset Academy NLV (8/10) and Doral Academy (9/10) provide higher-rated alternatives. Bishop Gorman (A+) is the top private option."
+    "a": "Alexander Park is served by CCSD schools. Charter options including Somerset Academy NLV (8/10) and Doral Academy (9/10) provide higher-rated alternatives. Bishop Gorman (A+) is the top private option. Notable schools serving Alexander Park include Elbert Edwards Elementary (5/10), Kathleen & Tim Harney Middle (6/10), Legacy High School (5/10)."
   },
   {
     "q": "How does Alexander Park compare to Aliante?",

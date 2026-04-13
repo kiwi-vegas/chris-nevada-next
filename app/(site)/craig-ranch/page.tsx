@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Craig Ranch?",
-    "a": "Craig Ranch spans ZIP codes 89032 and 89081 in North Las Vegas."
+    "a": "Craig Ranch spans ZIP codes 89032 and 89081 in North Las Vegas. Home prices range from $300K–$500K."
   },
   {
     "q": "What are HOA fees in Craig Ranch?",
@@ -46,7 +46,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What schools serve Craig Ranch?",
-    "a": "Craig Ranch is served by CCSD schools. Charter options including Somerset Academy NLV (8/10) and Doral Academy (9/10) provide higher-rated alternatives. Bishop Gorman (A+) is a private option."
+    "a": "Craig Ranch is served by CCSD schools. Charter options including Somerset Academy NLV (8/10) and Doral Academy (9/10) provide higher-rated alternatives. Bishop Gorman (A+) is a private option. Notable schools serving Craig Ranch include Elbert Edwards Elementary (5/10), Lois Craig Elementary (5/10), Cheyenne High School (4/10)."
   },
   {
     "q": "How does Craig Ranch compare to Aliante?",

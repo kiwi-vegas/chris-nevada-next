@@ -38,7 +38,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Sierra Sage in?",
-    "a": "Sierra Sage is in ZIP code 89011 in Henderson, Nevada, within the Cadence master-planned community."
+    "a": "Sierra Sage is in ZIP code 89011 in Henderson, Nevada, within the Cadence master-planned community. Home prices range from $450K–$700K."
   },
   {
     "q": "What are HOA fees in Sierra Sage?",

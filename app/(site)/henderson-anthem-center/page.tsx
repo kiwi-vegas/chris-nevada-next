@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Anthem Center in?",
-    "a": "Anthem Center is located in ZIP code 89052 in Henderson, Nevada."
+    "a": "Anthem Center is located in ZIP code 89052 in Henderson, Nevada. Home prices range from $500K–$800K."
   },
   {
     "q": "What schools serve Anthem Center?",

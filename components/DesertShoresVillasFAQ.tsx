@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code are Desert Shores Villas in?",
-    "a": "Desert Shores Villas are located in ZIP code 89128 in northwest Las Vegas."
+    "a": "Desert Shores Villas are located in ZIP code 89128 in northwest Las Vegas. Home prices range from $200K–$450K."
   },
   {
     "q": "Is Desert Shores guard-gated?",

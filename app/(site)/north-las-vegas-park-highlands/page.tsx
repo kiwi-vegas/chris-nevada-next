@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes is Park Highlands in?",
-    "a": "Park Highlands spans ZIP codes 89085 and 89086 in North Las Vegas, Nevada."
+    "a": "Park Highlands spans ZIP codes 89085 and 89086 in North Las Vegas, Nevada. Home prices range from $350K–$600K."
   },
   {
     "q": "Is Park Highlands guard-gated?",

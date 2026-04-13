@@ -38,7 +38,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is The Mesa in?",
-    "a": "The Mesa is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+    "a": "The Mesa is located in ZIP code 89135 in the Summerlin South area of Las Vegas. Home prices range from $600K–$1M."
   },
   {
     "q": "What schools serve The Mesa?",

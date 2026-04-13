@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is Mission Hills in?",
-    "a": "Mission Hills spans ZIP codes 89002 and 89074 in Henderson, Nevada."
+    "a": "Mission Hills spans ZIP codes 89002 and 89074 in Henderson, Nevada. Home prices range from $400K–$700K."
   },
   {
     "q": "What are HOA fees in Mission Hills?",

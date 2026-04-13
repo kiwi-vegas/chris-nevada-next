@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes is Silverado Ranch in?",
-    "a": "Silverado Ranch spans ZIP codes 89123 and 89183 in the Henderson/Las Vegas area."
+    "a": "Silverado Ranch spans ZIP codes 89123 and 89183 in the Henderson/Las Vegas area. Home prices range from $350K–$600K."
   },
   {
     "q": "What are HOA fees in Silverado Ranch?",

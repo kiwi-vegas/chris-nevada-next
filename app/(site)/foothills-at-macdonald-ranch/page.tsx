@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is The Foothills at MacDonald Ranch in?",
-    "a": "The Foothills at MacDonald Ranch is located in ZIP code 89012 in Henderson, Nevada."
+    "a": "The Foothills at MacDonald Ranch is located in ZIP code 89012 in Henderson, Nevada. Home prices range from $1M–$4M+."
   },
   {
     "q": "How does The Foothills compare to MacDonald Highlands?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Foothills at MacDonald Ranch features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

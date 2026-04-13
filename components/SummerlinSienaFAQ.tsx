@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "Does the HOA maintain the front yard?",
-    "a": "Yes — Siena's HOA maintains all front-yard landscaping and handles exterior painting on a scheduled rotation. This is one of the community's most popular features for active adults."
+    "a": "Yes — Siena's HOA maintains all front-yard landscaping and handles exterior painting on a scheduled rotation. This is one of the community's most popular features for active adults. Monthly HOA fees in Siena range from $200–$450/mo, which typically covers common area maintenance, landscaping, guard gate staffing, security patrols, and reserve fund contributions."
   },
   {
     "q": "What is Sun Colony at Siena?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Siena features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

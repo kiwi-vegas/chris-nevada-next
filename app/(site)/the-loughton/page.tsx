@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is The Loughton in?",
-    "a": "The Loughton is located in ZIP code 89138 in the Summerlin area of Las Vegas."
+    "a": "The Loughton is located in ZIP code 89138 in the Summerlin area of Las Vegas. Home prices range from $500K+."
   },
   {
     "q": "What are HOA fees at The Loughton?",

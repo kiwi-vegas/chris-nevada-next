@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Rhodes Ranch South in?",
-    "a": "Rhodes Ranch South is in ZIP code 89148 in Las Vegas, Nevada."
+    "a": "Rhodes Ranch South is in ZIP code 89148 in Las Vegas, Nevada. Home prices range from $350K–$600K."
   },
   {
     "q": "What amenities does Rhodes Ranch offer?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Rhodes Ranch South features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "Where is The Ogden located?",
-    "a": "The Ogden is located at the intersection of Ogden Avenue and Las Vegas Boulevard in Downtown Las Vegas, directly above the Fremont East entertainment district."
+    "a": "The Ogden is located at the intersection of Ogden Avenue and Las Vegas Boulevard in Downtown Las Vegas, directly above the Fremont East entertainment district. The Ogden is ~5 min to the Strip via Las Vegas Blvd."
   },
   {
     "q": "What amenities does The Ogden offer?",
@@ -36,7 +36,7 @@ const FAQS = [
   },
   {
     "q": "What are the HOA/condo fees and what do they cover?",
-    "a": "Monthly fees vary by building and unit size but typically range from  to ,000+ per month. Fees generally cover building insurance, common area maintenance, pools, fitness center, concierge, valet, and building reserves. Higher floors and larger units pay proportionally more."
+    "a": "Monthly fees vary by building and unit size but typically range from  to ,000+ per month. Fees generally cover building insurance, common area maintenance, pools, fitness center, concierge, valet, and building reserves. Higher floors and larger units pay proportionally more. Monthly HOA fees in The Ogden range from $250–$900/mo, which typically covers common area maintenance, landscaping, and reserve fund contributions."
   },
   {
     "q": "Can units be rented out?",

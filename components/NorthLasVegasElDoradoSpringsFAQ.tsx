@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes are in El Dorado Springs?",
-    "a": "El Dorado Springs spans ZIP codes 89031 and 89032 in North Las Vegas, Nevada."
+    "a": "El Dorado Springs spans ZIP codes 89031 and 89032 in North Las Vegas, Nevada. Home prices range from $300K–$500K."
   },
   {
     "q": "Is El Dorado Springs a good investment area?",

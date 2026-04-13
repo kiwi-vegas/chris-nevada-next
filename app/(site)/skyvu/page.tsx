@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is SkyVu in?",
-    "a": "SkyVu is located in ZIP code 89012 in Henderson, Nevada, within the MacDonald Highlands community."
+    "a": "SkyVu is located in ZIP code 89012 in Henderson, Nevada, within the MacDonald Highlands community. Home prices range from $800K–$2M+."
   },
   {
     "q": "Can SkyVu residents join DragonRidge Country Club?",

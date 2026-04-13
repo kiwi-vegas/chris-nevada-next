@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "Where is Cello Tower located?",
-    "a": "Cello Tower is located in Downtown Las Vegas, near Symphony Park and the Arts District. It is steps from the Smith Center for the Performing Arts, Fremont East, and downtown's growing dining and entertainment corridor."
+    "a": "Cello Tower is located in Downtown Las Vegas, near Symphony Park and the Arts District. It is steps from the Smith Center for the Performing Arts, Fremont East, and downtown's growing dining and entertainment corridor. Cello Tower is ~5 min to the Strip via Las Vegas Blvd."
   },
   {
     "q": "What amenities does Cello Tower offer?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Cello Tower features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

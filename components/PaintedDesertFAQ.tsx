@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "Is Painted Desert guard-gated?",
-    "a": "Yes. Painted Desert is a guard-gated community with controlled access providing security for the approximately 1,200 homes across 320 acres."
+    "a": "Yes. Painted Desert is a guard-gated community with controlled access providing security for the approximately 1,200 homes across 320 acres. Painted Desert features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Who designed the golf course at Painted Desert?",
@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Painted Desert in?",
-    "a": "Painted Desert is located in ZIP code 89149 in northwest Las Vegas."
+    "a": "Painted Desert is located in ZIP code 89149 in northwest Las Vegas. Home prices range from $400K–$800K."
   },
   {
     "q": "How does Painted Desert compare to Los Prados?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Painted Desert features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

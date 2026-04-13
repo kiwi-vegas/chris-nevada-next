@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Dover in?",
-    "a": "Dover at Summerlin West is located in ZIP code 89138 in the western Las Vegas area."
+    "a": "Dover at Summerlin West is located in ZIP code 89138 in the western Las Vegas area. Home prices range from $500K–$800K."
   },
   {
     "q": "What are HOA fees in Dover?",

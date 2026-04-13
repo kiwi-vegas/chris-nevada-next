@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is South Square in?",
-    "a": "South Square is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+    "a": "South Square is located in ZIP code 89135 in the Summerlin South area of Las Vegas. Home prices range from $400K–$750K."
   },
   {
     "q": "What amenities does South Square offer?",

@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Vu Residences in?",
-    "a": "Vu Residences is located in ZIP code 89012 in Henderson, Nevada, within MacDonald Highlands."
+    "a": "Vu Residences is located in ZIP code 89012 in Henderson, Nevada, within MacDonald Highlands. Home prices range from $1M–$3M+."
   },
   {
     "q": "Can Vu Residences homeowners join DragonRidge Country Club?",

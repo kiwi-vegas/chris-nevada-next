@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     "q": "How far is the Fort Apache Corridor from the Strip?",
-    "a": "The corridor is approximately 15 minutes from the Strip via Flamingo Road or Spring Mountain Road heading east."
+    "a": "The corridor is approximately 15 minutes from the Strip via Flamingo Road or Spring Mountain Road heading east in Fort Apache Corridor."
   },
   {
     "q": "Is the Fort Apache Corridor good for families?",
@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "What are HOA fees along the Fort Apache Corridor?",
-    "a": "HOA fees range from $50 to $250 per month depending on the specific community and its amenities."
+    "a": "HOA fees range from $50 to $250 per month depending on the specific community and its amenities in Fort Apache Corridor."
   },
   {
     "q": "Is the Fort Apache Corridor a good investment?",

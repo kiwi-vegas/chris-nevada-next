@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Anthem East in?",
-    "a": "Anthem East is located in ZIP code 89052 in Henderson, Nevada."
+    "a": "Anthem East is located in ZIP code 89052 in Henderson, Nevada. Home prices range from $500K–$900K."
   },
   {
     "q": "What schools serve Anthem East?",

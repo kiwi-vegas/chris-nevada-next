@@ -22,7 +22,7 @@ const BREADCRUMB_SCHEMA = {
 const FAQ_DATA = [
   {
     "q": "What is the price range for homes in Country Rose Estates?",
-    "a": "Homes in Country Rose Estates start at approximately $800,000 and go up from there, with premium lots and larger custom homes commanding higher prices. The generous lot sizes and guard-gated address support strong values."
+    "a": "Homes in Country Rose Estates start at approximately $800,000 and go up from there, with premium lots and larger custom homes commanding higher prices. The generous lot sizes and guard-gated address support strong values. Home prices in Country Rose Estates currently range from $800K+ depending on home size, lot position, and condition."
   },
   {
     "q": "Is Country Rose Estates guard-gated?",
@@ -30,11 +30,11 @@ const FAQ_DATA = [
   },
   {
     "q": "What village is Country Rose Estates in?",
-    "a": "Country Rose Estates is located within The Trails village of the Summerlin North Association."
+    "a": "Country Rose Estates is located within The Trails village of the Summerlin North Association. Home prices range from $800K+."
   },
   {
     "q": "What ZIP code is Country Rose Estates in?",
-    "a": "Country Rose Estates is located in ZIP code 89134 in the Summerlin North area of Las Vegas."
+    "a": "Country Rose Estates is located in ZIP code 89134 in the Summerlin North area of Las Vegas. Home prices range from $800K+."
   },
   {
     "q": "How large are the lots in Country Rose Estates?",
@@ -50,7 +50,7 @@ const FAQ_DATA = [
   },
   {
     "q": "How does Country Rose compare to other Summerlin guard-gated communities?",
-    "a": "Country Rose Estates is unique for its large lots and traditional estate character. Most Summerlin guard-gated communities feature smaller lots with Mediterranean or contemporary homes. Country Rose appeals to buyers who want acreage and privacy over modern luxury design."
+    "a": "Country Rose Estates is unique for its large lots and traditional estate character. Most Summerlin guard-gated communities feature smaller lots with Mediterranean or contemporary homes. Country Rose appeals to buyers who want acreage and privacy over modern luxury design. Country Rose Estates features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "How does the guard gate entry process work?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Country Rose Estates features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

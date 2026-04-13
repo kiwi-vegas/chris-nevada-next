@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Skye Hills in?",
-    "a": "Skye Hills is located in ZIP code 89166 in northwest Las Vegas."
+    "a": "Skye Hills is located in ZIP code 89166 in northwest Las Vegas. Home prices range from $450K–$750K."
   },
   {
     "q": "Is Skye Hills guard-gated?",

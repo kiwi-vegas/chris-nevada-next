@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Summerlin West?",
-    "a": "Summerlin West primarily spans ZIP codes 89138 and 89166 in the western Las Vegas Valley."
+    "a": "Summerlin West primarily spans ZIP codes 89138 and 89166 in the western Las Vegas Valley. Home prices range from $400K–$1M+."
   },
   {
     "q": "Is Summerlin West guard-gated?",

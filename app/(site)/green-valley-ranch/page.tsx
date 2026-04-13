@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes is Green Valley Ranch in?",
-    "a": "Green Valley Ranch spans ZIP codes 89012, 89052, and 89074 in Henderson, Nevada."
+    "a": "Green Valley Ranch spans ZIP codes 89012, 89052, and 89074 in Henderson, Nevada. Home prices range from $400K–$900K."
   },
   {
     "q": "What are HOA fees in Green Valley Ranch?",

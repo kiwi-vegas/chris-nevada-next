@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Centennial Hills?",
-    "a": "Centennial Hills spans ZIP codes 89131, 89149, and 89143 in northwest Las Vegas."
+    "a": "Centennial Hills spans ZIP codes 89131, 89149, and 89143 in northwest Las Vegas. Home prices range from $350K–$700K."
   },
   {
     "q": "What is Floyd Lamb Park?",

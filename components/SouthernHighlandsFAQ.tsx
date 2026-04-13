@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "Is Southern Highlands guard-gated?",
-    "a": "Southern Highlands includes both guard-gated and non-gated sections. The guard-gated enclaves include The Estates, Tuscan Cliffs, Olympia Ridge, The Foothills, Royal Highlands, The Enclave, Vintage Canyon, and others. The broader community has non-gated sections as well."
+    "a": "Southern Highlands includes both guard-gated and non-gated sections. The guard-gated enclaves include The Estates, Tuscan Cliffs, Olympia Ridge, The Foothills, Royal Highlands, The Enclave, Vintage Canyon, and others. The broader community has non-gated sections as well. Southern Highlands features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "What golf course is in Southern Highlands?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Southern Highlands features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

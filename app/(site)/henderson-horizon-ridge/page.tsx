@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in the Horizon Ridge corridor?",
-    "a": "The Horizon Ridge corridor spans ZIP codes 89012 and 89052 in Henderson, Nevada."
+    "a": "The Horizon Ridge corridor spans ZIP codes 89012 and 89052 in Henderson, Nevada in Horizon Ridge Corridor."
   },
   {
     "q": "Is the Horizon Ridge area guard-gated?",
@@ -42,7 +42,7 @@ const FAQ_DATA = [
   },
   {
     "q": "How far is Horizon Ridge from the Strip?",
-    "a": "The Horizon Ridge corridor is approximately 20 minutes from the Las Vegas Strip via I-215 and I-15."
+    "a": "The Horizon Ridge corridor is approximately 20 minutes from the Las Vegas Strip via I-215 and I-15 in Horizon Ridge Corridor."
   },
   {
     "q": "What are HOA fees along Horizon Ridge?",

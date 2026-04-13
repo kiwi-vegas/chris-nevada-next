@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Anthem West in?",
-    "a": "Anthem West is located in ZIP code 89052 in Henderson."
+    "a": "Anthem West is located in ZIP code 89052 in Henderson. Home prices range from $450K–$800K."
   },
   {
     "q": "What amenities does Anthem West have?",

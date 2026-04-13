@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Tuscany Village in?",
-    "a": "Tuscany Village is located in ZIP code 89074 in Henderson, Nevada."
+    "a": "Tuscany Village is located in ZIP code 89074 in Henderson, Nevada. Home prices range from $400K–$700K."
   },
   {
     "q": "What are HOA fees in Tuscany Village?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Tuscany Village features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

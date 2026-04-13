@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Sun Colony at Siena in?",
-    "a": "Sun Colony at Siena is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+    "a": "Sun Colony at Siena is located in ZIP code 89135 in the Summerlin South area of Las Vegas. Home prices range from $700K–$1.3M+."
   },
   {
     "q": "What is Siena Golf Club?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Sun Colony at Siena features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

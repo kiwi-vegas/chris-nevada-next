@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Anthem Village in?",
-    "a": "Anthem Village is primarily in ZIP code 89052 in Henderson, Nevada."
+    "a": "Anthem Village is primarily in ZIP code 89052 in Henderson, Nevada. Home prices range from $400K–$700K."
   },
   {
     "q": "What schools serve Anthem Village?",

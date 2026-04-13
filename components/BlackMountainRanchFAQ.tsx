@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Black Mountain Ranch in?",
-    "a": "Black Mountain Ranch spans ZIP codes 89002 and 89015 in Henderson, Nevada."
+    "a": "Black Mountain Ranch spans ZIP codes 89002 and 89015 in Henderson, Nevada. Home prices range from $400K–$800K."
   },
   {
     "q": "Can you have horses in Black Mountain Ranch?",
@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "Is Black Mountain Ranch close to hiking trails?",
-    "a": "Yes. Black Mountain Ranch has direct trailhead access to the Black Mountain Trail system, offering miles of hiking, mountain biking, and horseback riding trails. Sloan Canyon National Conservation Area is also nearby."
+    "a": "Yes. Black Mountain Ranch has direct trailhead access to the Black Mountain Trail system, offering miles of hiking, mountain biking, and horseback riding trails. Sloan Canyon National Conservation Area is also nearby. Black Mountain Ranch is ~20 min to the Strip via I-215 → I-15."
   },
   {
     "q": "How far is Black Mountain Ranch from the Strip?",

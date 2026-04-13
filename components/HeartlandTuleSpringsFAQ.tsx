@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Heartland at Tule Springs in?",
-    "a": "Heartland at Tule Springs spans ZIP codes 89166 and 89084 in North Las Vegas."
+    "a": "Heartland at Tule Springs spans ZIP codes 89166 and 89084 in North Las Vegas. Home prices range from $350K–$550K."
   },
   {
     "q": "What schools serve Heartland at Tule Springs?",

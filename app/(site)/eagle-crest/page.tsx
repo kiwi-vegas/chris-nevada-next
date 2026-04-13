@@ -46,7 +46,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Eagle Crest in?",
-    "a": "Eagle Crest is in ZIP code 89134 in Summerlin, Las Vegas."
+    "a": "Eagle Crest is in ZIP code 89134 in Summerlin, Las Vegas. Home prices range from $400K–$700K."
   },
   {
     "q": "Can non-residents play Eagle Crest?",

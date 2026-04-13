@@ -42,7 +42,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Vistana in?",
-    "a": "Vistana is in ZIP code 89011 in Henderson, Nevada, within the Lake Las Vegas resort community."
+    "a": "Vistana is in ZIP code 89011 in Henderson, Nevada, within the Lake Las Vegas resort community. Home prices range from $500K–$1.2M."
   },
   {
     "q": "What are HOA fees in Vistana?",

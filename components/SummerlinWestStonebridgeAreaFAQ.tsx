@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is the Stonebridge area in?",
-    "a": "The Stonebridge area of Summerlin West is primarily in ZIP code 89138 in the western portion of Las Vegas."
+    "a": "The Stonebridge area of Summerlin West is primarily in ZIP code 89138 in the western portion of Las Vegas in Stonebridge Area."
   },
   {
     "q": "Are there 55+ communities in the Stonebridge area?",

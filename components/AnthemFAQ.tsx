@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is Anthem in?",
-    "a": "Anthem spans ZIP codes 89052 and 89044 in Henderson, Nevada."
+    "a": "Anthem spans ZIP codes 89052 and 89044 in Henderson, Nevada. Home prices range from $400K–$8M+."
   },
   {
     "q": "What golf courses are in Anthem?",

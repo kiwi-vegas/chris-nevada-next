@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes cover Peccole Ranch?",
-    "a": "Peccole Ranch spans ZIP codes 89117 and 89145, located in the western Las Vegas Valley."
+    "a": "Peccole Ranch spans ZIP codes 89117 and 89145, located in the western Las Vegas Valley. Home prices range from $400K–$3M+."
   },
   {
     "q": "Is Queensridge part of Peccole Ranch?",

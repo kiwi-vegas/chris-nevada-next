@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes cover Lone Mountain West?",
-    "a": "Lone Mountain West spans ZIP codes 89166 and 89149 in the northwest Las Vegas Valley."
+    "a": "Lone Mountain West spans ZIP codes 89166 and 89149 in the northwest Las Vegas Valley. Home prices range from $500K–$1M."
   },
   {
     "q": "How far is Lone Mountain West from the Strip?",

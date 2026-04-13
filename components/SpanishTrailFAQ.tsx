@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Spanish Trail in?",
-    "a": "Spanish Trail spans ZIP codes 89113 and 89148 in southwest Las Vegas."
+    "a": "Spanish Trail spans ZIP codes 89113 and 89148 in southwest Las Vegas. Home prices range from $600K–$3M+."
   },
   {
     "q": "How does Spanish Trail compare to Southern Highlands?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Spanish Trail features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

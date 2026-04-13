@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Coronado Ranch in?",
-    "a": "The Coronado Ranch area is primarily in ZIP code 89052 in Henderson, Nevada."
+    "a": "The Coronado Ranch area is primarily in ZIP code 89052 in Henderson, Nevada in Coronado Ranch Area. Home prices range from $400K–$600K."
   },
   {
     "q": "What schools serve the Coronado Ranch area?",
@@ -38,7 +38,7 @@ const FAQ_DATA = [
   },
   {
     "q": "How far is Coronado Ranch from the Strip?",
-    "a": "The Coronado Ranch area is approximately 20 minutes from the Las Vegas Strip via St. Rose Parkway and I-15."
+    "a": "The Coronado Ranch area is approximately 20 minutes from the Las Vegas Strip via St. Rose Parkway and I-15 in Coronado Ranch Area."
   },
   {
     "q": "What are HOA fees in Coronado Ranch?",

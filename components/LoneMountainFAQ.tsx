@@ -16,11 +16,11 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes are in the Lone Mountain area?",
-    "a": "The Lone Mountain area spans portions of ZIP codes 89129, 89131, and 89149 in northwest Las Vegas."
+    "a": "The Lone Mountain area spans portions of ZIP codes 89129, 89131, and 89149 in northwest Las Vegas. Home prices range from $400K–$900K."
   },
   {
     "q": "Do homes in Lone Mountain have an HOA?",
-    "a": "Many Lone Mountain properties — particularly the larger-lot and equestrian properties — have no HOA. This gives owners maximum flexibility for land use. Some newer subdivisions on the community's periphery do have HOA associations."
+    "a": "Many Lone Mountain properties — particularly the larger-lot and equestrian properties — have no HOA. This gives owners maximum flexibility for land use. Some newer subdivisions on the community's periphery do have HOA associations. Monthly HOA fees in Lone Mountain range from $0–$150/mo, which typically covers common area maintenance, landscaping, and reserve fund contributions."
   },
   {
     "q": "How far is Lone Mountain from the Strip?",

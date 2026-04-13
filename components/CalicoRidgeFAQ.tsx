@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is Calico Ridge in?",
-    "a": "Calico Ridge spans ZIP codes 89012 and 89052 in Henderson, Nevada."
+    "a": "Calico Ridge spans ZIP codes 89012 and 89052 in Henderson, Nevada. Home prices range from $500K–$1.2M."
   },
   {
     "q": "What views do Calico Ridge homes have?",

@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is The District in?",
-    "a": "The District at Green Valley Ranch is located in ZIP code 89052 in Henderson, Nevada."
+    "a": "The District at Green Valley Ranch is located in ZIP code 89052 in Henderson, Nevada. Home prices range from $300K–$600K."
   },
   {
     "q": "What are HOA fees at The District?",

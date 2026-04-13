@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Valley Vista in?",
-    "a": "Valley Vista is located in ZIP code 89086 in North Las Vegas, Nevada."
+    "a": "Valley Vista is located in ZIP code 89086 in North Las Vegas, Nevada. Home prices range from $350K–$550K."
   },
   {
     "q": "Is Valley Vista guard-gated?",

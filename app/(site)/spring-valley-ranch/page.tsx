@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes is Spring Valley Ranch in?",
-    "a": "Spring Valley Ranch is located in ZIP codes 89147 and 89148 in the Spring Valley area of Las Vegas."
+    "a": "Spring Valley Ranch is located in ZIP codes 89147 and 89148 in the Spring Valley area of Las Vegas. Home prices range from $350K–$600K."
   },
   {
     "q": "Is Spring Valley Ranch a good area for families?",

@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes is Madeira Canyon in?",
-    "a": "Madeira Canyon spans ZIP codes 89052 and 89044 in the southern Henderson area."
+    "a": "Madeira Canyon spans ZIP codes 89052 and 89044 in the southern Henderson area. Home prices range from $400K–$1.5M+."
   },
   {
     "q": "What amenities does Madeira Canyon have?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Madeira Canyon features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

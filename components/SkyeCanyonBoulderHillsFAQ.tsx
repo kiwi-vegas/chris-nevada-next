@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Boulder Hills in?",
-    "a": "Boulder Hills at Skye Canyon is located in ZIP code 89166 in northwest Las Vegas."
+    "a": "Boulder Hills at Skye Canyon is located in ZIP code 89166 in northwest Las Vegas. Home prices range from $450K–$700K."
   },
   {
     "q": "What are HOA fees in Boulder Hills?",

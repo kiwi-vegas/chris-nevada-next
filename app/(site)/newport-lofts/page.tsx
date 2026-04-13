@@ -46,7 +46,7 @@ const FAQ_DATA = [
   },
   {
     "q": "Where is Newport Lofts located?",
-    "a": "Newport Lofts is located in Downtown Las Vegas between the Fremont East entertainment district and the Arts District, within walking distance of both neighborhoods' restaurants, bars, and cultural venues."
+    "a": "Newport Lofts is located in Downtown Las Vegas between the Fremont East entertainment district and the Arts District, within walking distance of both neighborhoods' restaurants, bars, and cultural venues. Newport Lofts is ~5 min to the Strip via Las Vegas Blvd."
   },
   {
     "q": "How many units are in Newport Lofts?",

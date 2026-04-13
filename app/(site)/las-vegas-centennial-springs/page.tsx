@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes cover Centennial Springs?",
-    "a": "Centennial Springs spans portions of ZIP codes 89149 and 89131 in the northwest Las Vegas Valley."
+    "a": "Centennial Springs spans portions of ZIP codes 89149 and 89131 in the northwest Las Vegas Valley. Home prices range from $400K–$650K."
   },
   {
     "q": "Is Centennial Springs part of Centennial Hills?",
@@ -38,7 +38,7 @@ const FAQ_DATA = [
   },
   {
     "q": "How far is Centennial Springs from the Strip?",
-    "a": "Centennial Springs is approximately 25 minutes from the Las Vegas Strip via US-95 South and I-15."
+    "a": "Centennial Springs is approximately 25 minutes from the Las Vegas Strip via US-95 South and I-15. Home prices range from $400K–$650K."
   },
   {
     "q": "Is there new construction in Centennial Springs?",

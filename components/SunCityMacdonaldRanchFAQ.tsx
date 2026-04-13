@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Sun City MacDonald Ranch in?",
-    "a": "Sun City MacDonald Ranch is located in ZIP code 89012 in Henderson, Nevada."
+    "a": "Sun City MacDonald Ranch is located in ZIP code 89012 in Henderson, Nevada. Home prices range from $300K–$600K."
   },
   {
     "q": "Who built Sun City MacDonald Ranch?",

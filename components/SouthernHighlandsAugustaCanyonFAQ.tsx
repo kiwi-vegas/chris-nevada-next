@@ -8,11 +8,11 @@ const FAQS = [
   },
   {
     "q": "Is Augusta Canyon guard-gated?",
-    "a": "Yes — Augusta Canyon is double guard-gated within Southern Highlands. Residents pass through two staffed guard gates to reach the enclave, providing exceptional security and privacy."
+    "a": "Yes — Augusta Canyon is double guard-gated within Southern Highlands. Residents pass through two staffed guard gates to reach the enclave, providing exceptional security and privacy. Augusta Canyon at Southern Highlands features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "What ZIP code is Augusta Canyon in?",
-    "a": "Augusta Canyon at Southern Highlands is in ZIP code 89141 in southwest Las Vegas."
+    "a": "Augusta Canyon at Southern Highlands is in ZIP code 89141 in southwest Las Vegas. Home prices range from $1M–$4M+."
   },
   {
     "q": "Can I build a custom home in Augusta Canyon?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Augusta Canyon at Southern Highlands features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

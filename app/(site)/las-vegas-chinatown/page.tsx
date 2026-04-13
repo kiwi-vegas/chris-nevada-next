@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "Where is Las Vegas Chinatown located?",
-    "a": "Las Vegas Chinatown stretches along Spring Mountain Road between Valley View Boulevard and Rainbow Boulevard, approximately 2 miles west of the Las Vegas Strip."
+    "a": "Las Vegas Chinatown stretches along Spring Mountain Road between Valley View Boulevard and Rainbow Boulevard, approximately 2 miles west of the Las Vegas Strip. Chinatown is ~8 min to the Strip via Spring Mountain Rd East."
   },
   {
     "q": "Is Las Vegas Chinatown a good area to live?",
@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes cover Chinatown?",
-    "a": "The Chinatown area spans ZIP codes 89102, 89103, and 89146 in central Las Vegas."
+    "a": "The Chinatown area spans ZIP codes 89102, 89103, and 89146 in central Las Vegas. Home prices range from $250K–$600K."
   },
   {
     "q": "How far is Chinatown from the Strip?",

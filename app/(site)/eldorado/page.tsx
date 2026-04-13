@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Eldorado?",
-    "a": "Eldorado spans ZIP codes 89032 and 89031 in North Las Vegas."
+    "a": "Eldorado spans ZIP codes 89032 and 89031 in North Las Vegas. Home prices range from $300K–$500K."
   },
   {
     "q": "What is Craig Ranch Regional Park?",

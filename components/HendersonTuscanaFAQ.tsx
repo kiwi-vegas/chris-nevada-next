@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Tuscana in?",
-    "a": "Tuscana is located in ZIP code 89052 in southern Henderson."
+    "a": "Tuscana is located in ZIP code 89052 in southern Henderson. Home prices range from $350K–$600K."
   },
   {
     "q": "Is Tuscana guard-gated?",

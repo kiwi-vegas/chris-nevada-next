@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is Sun City Anthem in?",
-    "a": "Sun City Anthem spans ZIP codes 89052 and 89044 in Henderson, Nevada."
+    "a": "Sun City Anthem spans ZIP codes 89052 and 89044 in Henderson, Nevada. Home prices range from $350K–$700K."
   },
   {
     "q": "Are homes in Sun City Anthem single-story?",

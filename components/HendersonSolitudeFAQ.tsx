@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Solitude in?",
-    "a": "Solitude at Seven Hills is located in ZIP code 89052 in Henderson."
+    "a": "Solitude at Seven Hills is located in ZIP code 89052 in Henderson. Home prices range from $500K–$900K."
   },
   {
     "q": "What are HOA fees in Solitude?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Solitude at Seven Hills features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

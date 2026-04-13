@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Aliante?",
-    "a": "Aliante is located in ZIP codes 89084 and 89085 in North Las Vegas."
+    "a": "Aliante is located in ZIP codes 89084 and 89085 in North Las Vegas. Home prices range from $300K–$650K."
   },
   {
     "q": "What is the Aliante Casino?",

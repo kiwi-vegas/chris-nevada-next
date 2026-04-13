@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes are in Rhodes Ranch?",
-    "a": "Rhodes Ranch is located in ZIP codes 89148 and 89113 in southwest Las Vegas."
+    "a": "Rhodes Ranch is located in ZIP codes 89148 and 89113 in southwest Las Vegas. Home prices range from $350K–$700K."
   },
   {
     "q": "What are HOA fees in Rhodes Ranch?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Rhodes Ranch features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

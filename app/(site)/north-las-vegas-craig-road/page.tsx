@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in the Craig Road corridor?",
-    "a": "The Craig Road corridor spans ZIP codes 89032 and 89081 in North Las Vegas, Nevada."
+    "a": "The Craig Road corridor spans ZIP codes 89032 and 89081 in North Las Vegas, Nevada in Craig Road Corridor."
   },
   {
     "q": "What is Craig Ranch Regional Park?",
@@ -50,7 +50,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What are HOA fees along Craig Road?",
-    "a": "HOA fees are among the lowest in the valley at $40–$125 per month. Some standalone homes have no HOA."
+    "a": "HOA fees are among the lowest in the valley at $40–$125 per month. Some standalone homes have no HOA in Craig Road Corridor."
   },
   {
     "q": "What are the best sub-neighborhoods within Craig Road Corridor?",

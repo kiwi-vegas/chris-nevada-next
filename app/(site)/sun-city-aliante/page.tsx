@@ -50,7 +50,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Sun City Aliante in?",
-    "a": "Sun City Aliante is located in ZIP code 89084 in North Las Vegas, Nevada."
+    "a": "Sun City Aliante is located in ZIP code 89084 in North Las Vegas, Nevada. Home prices range from $300K–$500K."
   },
   {
     "q": "What is the age requirement?",

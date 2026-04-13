@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "Is Los Prados guard-gated?",
-    "a": "Yes. Los Prados is a guard-gated community with controlled access. It provides security at one of the most affordable price points of any gated golf community in the Las Vegas Valley."
+    "a": "Yes. Los Prados is a guard-gated community with controlled access. It provides security at one of the most affordable price points of any gated golf community in the Las Vegas Valley. Los Prados features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "What golf course is in Los Prados?",
@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Los Prados in?",
-    "a": "Los Prados is located in ZIP code 89130 in northwest Las Vegas."
+    "a": "Los Prados is located in ZIP code 89130 in northwest Las Vegas. Home prices range from $300K–$600K."
   },
   {
     "q": "How does Los Prados compare to Painted Desert?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Los Prados features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

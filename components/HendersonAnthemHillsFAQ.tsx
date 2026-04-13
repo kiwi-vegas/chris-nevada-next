@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Anthem Hills in?",
-    "a": "Anthem Hills is in ZIP code 89052 in Henderson, Nevada."
+    "a": "Anthem Hills is in ZIP code 89052 in Henderson, Nevada. Home prices range from $600K–$1M."
   },
   {
     "q": "How does Anthem Hills compare to Anthem Country Club?",

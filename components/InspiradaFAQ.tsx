@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Inspirada in?",
-    "a": "Inspirada is located in ZIP code 89044 in Henderson, Nevada."
+    "a": "Inspirada is located in ZIP code 89044 in Henderson, Nevada. Home prices range from $420K–$1.1M+."
   },
   {
     "q": "What are HOA fees in Inspirada?",

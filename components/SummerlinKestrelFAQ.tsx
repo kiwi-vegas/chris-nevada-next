@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Kestrel in?",
-    "a": "Kestrel is located in ZIP code 89138 in the Summerlin West area of Las Vegas."
+    "a": "Kestrel is located in ZIP code 89138 in the Summerlin West area of Las Vegas. Home prices range from $500K–$800K."
   },
   {
     "q": "How close is Kestrel to Red Rock Canyon?",

@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Sunridge in?",
-    "a": "Sunridge at MacDonald Ranch is located in ZIP code 89012 in Henderson, Nevada."
+    "a": "Sunridge at MacDonald Ranch is located in ZIP code 89012 in Henderson, Nevada. Home prices range from $600K–$1.5M."
   },
   {
     "q": "How does Sunridge compare to Foothills at MacDonald Ranch?",

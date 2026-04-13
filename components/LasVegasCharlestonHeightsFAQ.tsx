@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes are in Charleston Heights?",
-    "a": "Charleston Heights primarily spans ZIP codes 89107 and 89106 in the City of Las Vegas."
+    "a": "Charleston Heights primarily spans ZIP codes 89107 and 89106 in the City of Las Vegas. Home prices range from $250K–$500K."
   },
   {
     "q": "Is Charleston Heights good for investment?",

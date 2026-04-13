@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes cover Paseo Verde?",
-    "a": "Paseo Verde spans portions of ZIP codes 89012 and 89052 in Henderson, Nevada."
+    "a": "Paseo Verde spans portions of ZIP codes 89012 and 89052 in Henderson, Nevada. Home prices range from $400K–$700K."
   },
   {
     "q": "What schools serve Paseo Verde?",
@@ -38,7 +38,7 @@ const FAQ_DATA = [
   },
   {
     "q": "How far is Paseo Verde from the Strip?",
-    "a": "Paseo Verde is approximately 20 minutes from the Las Vegas Strip via I-215 and I-15 North."
+    "a": "Paseo Verde is approximately 20 minutes from the Las Vegas Strip via I-215 and I-15 North. Home prices range from $400K–$700K."
   },
   {
     "q": "Is Paseo Verde a good area for families?",

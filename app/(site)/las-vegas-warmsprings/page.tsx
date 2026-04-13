@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in the Warm Springs area?",
-    "a": "The Warm Springs area spans ZIP codes 89148 and 89113 in southwest Las Vegas."
+    "a": "The Warm Springs area spans ZIP codes 89148 and 89113 in southwest Las Vegas. Home prices range from $350K–$650K."
   },
   {
     "q": "Is Warm Springs a good location for commuters?",

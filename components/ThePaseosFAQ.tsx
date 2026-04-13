@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is The Paseos in?",
-    "a": "The Paseos is located in ZIP code 89138 in the Summerlin area of Las Vegas."
+    "a": "The Paseos is located in ZIP code 89138 in the Summerlin area of Las Vegas. Home prices range from $550K–$1.2M."
   },
   {
     "q": "What builders built homes in The Paseos?",

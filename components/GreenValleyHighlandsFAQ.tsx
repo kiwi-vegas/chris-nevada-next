@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is Green Valley Highlands in?",
-    "a": "Green Valley Highlands spans ZIP codes 89052 and 89012 in Henderson, Nevada."
+    "a": "Green Valley Highlands spans ZIP codes 89052 and 89012 in Henderson, Nevada. Home prices range from $500K–$1M."
   },
   {
     "q": "What schools serve Green Valley Highlands?",

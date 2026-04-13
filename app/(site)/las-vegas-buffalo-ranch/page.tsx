@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Buffalo Ranch?",
-    "a": "Buffalo Ranch spans ZIP codes 89149 and 89129 in northwest Las Vegas."
+    "a": "Buffalo Ranch spans ZIP codes 89149 and 89129 in northwest Las Vegas. Home prices range from $400K–$700K."
   },
   {
     "q": "Is Buffalo Ranch a master-planned community?",

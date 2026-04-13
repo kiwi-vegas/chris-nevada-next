@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is The Fountains in?",
-    "a": "The Fountains is located in ZIP code 89074 in Henderson, Nevada, within the Green Valley corridor."
+    "a": "The Fountains is located in ZIP code 89074 in Henderson, Nevada, within the Green Valley corridor. Home prices range from $800K–$3M."
   },
   {
     "q": "How large are lots in The Fountains?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. The Fountains features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

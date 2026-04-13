@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Silverstone Ranch in?",
-    "a": "Silverstone Ranch is located in ZIP code 89131 in northwest Las Vegas."
+    "a": "Silverstone Ranch is located in ZIP code 89131 in northwest Las Vegas. Home prices range from $400K–$800K."
   },
   {
     "q": "What are HOA fees in Silverstone Ranch?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Silverstone Ranch features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Neo in?",
-    "a": "Neo is located in ZIP code 89012 in Henderson, Nevada, within the MacDonald Highlands master plan."
+    "a": "Neo is located in ZIP code 89012 in Henderson, Nevada, within the MacDonald Highlands master plan. Home prices range from $2.34M–$4.97M."
   },
   {
     "q": "Do Neo homeowners have access to DragonRidge Country Club?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Neo features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

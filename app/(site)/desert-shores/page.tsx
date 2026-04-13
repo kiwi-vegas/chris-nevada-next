@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Desert Shores?",
-    "a": "Desert Shores is located in ZIP codes 89128 and 89145 in northwest Las Vegas."
+    "a": "Desert Shores is located in ZIP codes 89128 and 89145 in northwest Las Vegas. Home prices range from $350K–$800K."
   },
   {
     "q": "Is Desert Shores close to Summerlin?",

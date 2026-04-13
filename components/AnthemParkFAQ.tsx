@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Anthem Park in?",
-    "a": "Anthem Park is located in ZIP code 89052 in Henderson, Nevada."
+    "a": "Anthem Park is located in ZIP code 89052 in Henderson, Nevada. Home prices range from $500K–$800K."
   },
   {
     "q": "What schools serve Anthem Park?",

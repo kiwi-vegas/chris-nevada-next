@@ -46,7 +46,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is La Madre Peaks in?",
-    "a": "La Madre Peaks is located in ZIP code 89138 in the Summerlin West area of Las Vegas."
+    "a": "La Madre Peaks is located in ZIP code 89138 in the Summerlin West area of Las Vegas. Home prices range from $800K–$5M+."
   },
   {
     "q": "Can I build a custom home in La Madre Peaks?",

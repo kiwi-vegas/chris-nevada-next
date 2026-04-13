@@ -38,7 +38,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Ridgeline in?",
-    "a": "Ridgeline at Skye Canyon is located in ZIP code 89166 in northwest Las Vegas."
+    "a": "Ridgeline at Skye Canyon is located in ZIP code 89166 in northwest Las Vegas. Home prices range from $500K–$800K."
   },
   {
     "q": "What are HOA fees in Ridgeline?",

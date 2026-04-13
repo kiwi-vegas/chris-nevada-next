@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Regency at Summerlin in?",
-    "a": "Regency at Summerlin is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+    "a": "Regency at Summerlin is located in ZIP code 89135 in the Summerlin South area of Las Vegas. Home prices range from $500K–$800K+."
   },
   {
     "q": "How does the guard gate entry process work?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Regency at Summerlin features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

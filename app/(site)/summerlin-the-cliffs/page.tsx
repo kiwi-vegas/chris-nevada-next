@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is The Cliffs in?",
-    "a": "The Cliffs is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+    "a": "The Cliffs is located in ZIP code 89135 in the Summerlin South area of Las Vegas. Home prices range from $600K–$1.2M."
   },
   {
     "q": "How close is The Cliffs to Red Rock Canyon?",

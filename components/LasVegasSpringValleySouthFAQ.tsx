@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes are in Spring Valley South?",
-    "a": "Spring Valley South spans ZIP codes 89147 and 89148 in Las Vegas, Nevada."
+    "a": "Spring Valley South spans ZIP codes 89147 and 89148 in Las Vegas, Nevada. Home prices range from $350K–$700K."
   },
   {
     "q": "How far is Spring Valley South from the Strip?",

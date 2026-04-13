@@ -50,7 +50,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes is Sun City Summerlin in?",
-    "a": "Sun City Summerlin spans ZIP codes 89134 and 89144 in the Summerlin area of Las Vegas."
+    "a": "Sun City Summerlin spans ZIP codes 89134 and 89144 in the Summerlin area of Las Vegas. Home prices range from $300K–$700K."
   },
   {
     "q": "What is the age requirement?",

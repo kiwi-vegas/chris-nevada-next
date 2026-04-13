@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Seven Hills in?",
-    "a": "Seven Hills is located in ZIP code 89052 in Henderson, Nevada."
+    "a": "Seven Hills is located in ZIP code 89052 in Henderson, Nevada. Home prices range from $500K–$7M+."
   },
   {
     "q": "What are HOA fees in Seven Hills?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Seven Hills features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

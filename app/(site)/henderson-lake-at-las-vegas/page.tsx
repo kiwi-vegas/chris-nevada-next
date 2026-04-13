@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "Is Lake Las Vegas guard-gated?",
-    "a": "Portions of Lake Las Vegas are guard-gated, including the South Shore enclave and several newer developments. The MonteLago Village and some lakeside areas are accessible to the public for dining and recreation."
+    "a": "Portions of Lake Las Vegas are guard-gated, including the South Shore enclave and several newer developments. The MonteLago Village and some lakeside areas are accessible to the public for dining and recreation. The Lake at Las Vegas features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Can you boat on the lake?",
@@ -42,7 +42,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Lake Las Vegas in?",
-    "a": "Lake Las Vegas is in ZIP code 89011 in Henderson, Nevada."
+    "a": "Lake Las Vegas is in ZIP code 89011 in Henderson, Nevada in The Lake at Las Vegas. Home prices range from $500K–$2M+."
   },
   {
     "q": "Is Lake Las Vegas a good investment?",
@@ -62,7 +62,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. The Lake at Las Vegas features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

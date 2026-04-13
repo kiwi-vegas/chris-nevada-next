@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in Providence?",
-    "a": "Providence is located in ZIP codes 89166 and 89131 in northwest Las Vegas."
+    "a": "Providence is located in ZIP codes 89166 and 89131 in northwest Las Vegas. Home prices range from $350K–$600K."
   },
   {
     "q": "Who developed Providence?",

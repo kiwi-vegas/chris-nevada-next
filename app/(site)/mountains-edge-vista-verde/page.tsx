@@ -34,11 +34,11 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP code is Vista Verde in?",
-    "a": "Vista Verde at Mountains Edge is located in ZIP code 89178 in southwest Las Vegas."
+    "a": "Vista Verde at Mountains Edge is located in ZIP code 89178 in southwest Las Vegas. Home prices range from $350K–$550K."
   },
   {
     "q": "What are HOA fees in Vista Verde?",
-    "a": "HOA fees are low, typically $55 to $130 per month, covering common area maintenance, trails, and community landscaping."
+    "a": "HOA fees are low, typically $55 to $130 per month, covering common area maintenance, trails, and community landscaping in Vista Verde at Mountains Edge."
   },
   {
     "q": "Is Vista Verde a good investment property area?",

@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in North Valley?",
-    "a": "North Valley spans ZIP codes 89084, 89085, and 89086 in the northern Las Vegas Valley."
+    "a": "North Valley spans ZIP codes 89084, 89085, and 89086 in the northern Las Vegas Valley. Home prices range from $300K–$500K."
   },
   {
     "q": "Is North Valley safe?",
@@ -38,7 +38,7 @@ const FAQ_DATA = [
   },
   {
     "q": "How far is North Valley from the Strip?",
-    "a": "North Valley is approximately 20 minutes from the Las Vegas Strip via I-15 South."
+    "a": "North Valley is approximately 20 minutes from the Las Vegas Strip via I-15 South. Home prices range from $300K–$500K."
   },
   {
     "q": "Is there new construction in North Valley?",

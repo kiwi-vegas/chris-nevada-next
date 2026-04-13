@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes cover Legacy at Green Valley?",
-    "a": "Legacy at Green Valley spans ZIP codes 89014 and 89074 in Henderson, Nevada."
+    "a": "Legacy at Green Valley spans ZIP codes 89014 and 89074 in Henderson, Nevada. Home prices range from $700K–$2.5M."
   },
   {
     "q": "Do I need a golf membership to live in Legacy at Green Valley?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Legacy at Green Valley features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   },
   {
     "q": "Are there custom home lot opportunities?",

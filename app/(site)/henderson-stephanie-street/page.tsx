@@ -26,7 +26,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in the Stephanie Street corridor?",
-    "a": "The Stephanie Street corridor spans ZIP codes 89014 and 89074 in Henderson, Nevada."
+    "a": "The Stephanie Street corridor spans ZIP codes 89014 and 89074 in Henderson, Nevada in Stephanie Street Corridor."
   },
   {
     "q": "Is the Stephanie Street area a good investment?",

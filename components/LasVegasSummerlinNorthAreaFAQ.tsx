@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes are in Summerlin North?",
-    "a": "Summerlin North spans ZIP codes 89134 and 89144 in Las Vegas, Nevada."
+    "a": "Summerlin North spans ZIP codes 89134 and 89144 in Las Vegas, Nevada in Summerlin North Area. Home prices range from $400K–$1.5M."
   },
   {
     "q": "What is TPC Las Vegas?",

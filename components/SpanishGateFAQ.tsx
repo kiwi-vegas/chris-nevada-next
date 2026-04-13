@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     "q": "Where is Spanish Gate located?",
-    "a": "Spanish Gate is located in the southwest Las Vegas valley along South Rainbow Boulevard, with convenient access to the I-215 Beltway, the Strip, and the growing retail corridor along Blue Diamond Road."
+    "a": "Spanish Gate is located in the southwest Las Vegas valley along South Rainbow Boulevard, with convenient access to the I-215 Beltway, the Strip, and the growing retail corridor along Blue Diamond Road. Spanish Gate is ~15 min to the Strip via I-215 → I-15."
   },
   {
     "q": "Is Spanish Gate good for families?",
@@ -44,7 +44,7 @@ const FAQS = [
   },
   {
     "q": "What security features are included beyond the guard gate?",
-    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems. Spanish Gate features a 24-hour staffed guard gate with controlled vehicle access, security patrols, and perimeter walls."
   }
 ]
 

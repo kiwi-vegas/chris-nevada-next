@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP code is Terra Bella in?",
-    "a": "Terra Bella is located in ZIP code 89044 in Henderson, Nevada."
+    "a": "Terra Bella is located in ZIP code 89044 in Henderson, Nevada. Home prices range from $300K–$600K+."
   },
   {
     "q": "Does Terra Bella have a golf course?",

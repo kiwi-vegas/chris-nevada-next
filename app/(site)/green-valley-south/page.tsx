@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes cover Green Valley South?",
-    "a": "Green Valley South spans ZIP codes 89012 and 89052 in Henderson, Nevada."
+    "a": "Green Valley South spans ZIP codes 89012 and 89052 in Henderson, Nevada. Home prices range from $350K–$3M+."
   },
   {
     "q": "How does Green Valley South compare to Green Valley North?",

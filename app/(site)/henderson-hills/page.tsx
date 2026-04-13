@@ -34,7 +34,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are Henderson Hills in?",
-    "a": "Henderson Hills spans ZIP codes 89015 and 89002 in the eastern foothills area of Henderson, Nevada."
+    "a": "Henderson Hills spans ZIP codes 89015 and 89002 in the eastern foothills area of Henderson, Nevada. Home prices range from $400K–$700K."
   },
   {
     "q": "Are there hiking trails near Henderson Hills?",

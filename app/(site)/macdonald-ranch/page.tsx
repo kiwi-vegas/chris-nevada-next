@@ -50,7 +50,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes cover MacDonald Ranch?",
-    "a": "MacDonald Ranch spans ZIP codes 89012 and 89052 in the southeastern Henderson foothills."
+    "a": "MacDonald Ranch spans ZIP codes 89012 and 89052 in the southeastern Henderson foothills. Home prices range from $300K–$15M+."
   },
   {
     "q": "What are the best sub-neighborhoods within MacDonald Ranch?",

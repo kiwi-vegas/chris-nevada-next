@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     "q": "What ZIP codes is Gibson Springs in?",
-    "a": "Gibson Springs spans ZIP codes 89074 and 89014 in central Henderson, Nevada."
+    "a": "Gibson Springs spans ZIP codes 89074 and 89014 in central Henderson, Nevada. Home prices range from $350K–$550K."
   },
   {
     "q": "What are HOA fees in Gibson Springs?",

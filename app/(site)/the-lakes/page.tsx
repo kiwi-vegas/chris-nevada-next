@@ -30,7 +30,7 @@ const FAQ_DATA = [
   },
   {
     "q": "What ZIP codes are in The Lakes?",
-    "a": "The Lakes is located in ZIP codes 89117 and 89128 in central-west Las Vegas."
+    "a": "The Lakes is located in ZIP codes 89117 and 89128 in central-west Las Vegas. Home prices range from $400K–$1.2M."
   },
   {
     "q": "What is Canyon Gate Country Club?",

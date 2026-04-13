@@ -8,7 +8,7 @@ const FAQS = [
   },
   {
     "q": "Where is the Arts District in Las Vegas?",
-    "a": "The Arts District (18b) occupies 18 blocks in Downtown Las Vegas, bounded approximately by Las Vegas Boulevard, I-15, Charleston Boulevard, and Sahara Avenue. It is just south of Fremont Street."
+    "a": "The Arts District (18b) occupies 18 blocks in Downtown Las Vegas, bounded approximately by Las Vegas Boulevard, I-15, Charleston Boulevard, and Sahara Avenue. It is just south of Fremont Street. Arts District / 18b is ~5 min to Downtown Las Vegas via Las Vegas Blvd North."
   },
   {
     "q": "What is First Friday?",
