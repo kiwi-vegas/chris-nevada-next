@@ -87,7 +87,7 @@ export default function Nav() {
                 </div>
               </div>
             </div>
-            <a href="https://www.nevadarealestategroup.com/about/" className="nav-link">About Us</a>
+            <a href="/about" className="nav-link">About Us</a>
             <Link href="/contact/" className="nav-link">Contact Us</Link>
           </div>
 
@@ -143,7 +143,7 @@ export default function Nav() {
           <Link href="/high-rise-condos/" className="mobile-nav-link" onClick={closeMobile}>High-Rise Condos</Link>
           <Link href="/communities" className="mobile-nav-link" onClick={closeMobile} style={{color:'var(--gold)',fontWeight:600}}>All Communities &rarr;</Link>
         </div>
-        <a href="https://www.nevadarealestategroup.com/about/" className="mobile-nav-link" onClick={closeMobile}>About Us</a>
+        <a href="/about" className="mobile-nav-link" onClick={closeMobile}>About Us</a>
         <Link href="/contact/" className="mobile-nav-link" onClick={closeMobile}>Contact Us</Link>
         <div className="mob-cta">
           <a href="tel:+17252399950" className="btn-nav">Call 725.239.9950</a>
