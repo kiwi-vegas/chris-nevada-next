@@ -311,6 +311,36 @@ export default async function NorthLasVegasPage() {
         </div>
       </section>
 
+      <section id="villages">
+        <div className="villages-header-bar">
+          <h2>NORTH LAS VEGAS COMMUNITIES</h2>
+        </div>
+        <div className="container">
+          <div className="villages-grid">
+            {[
+              { name: 'Aliante', href: '/aliante/', type: 'Master-Planned \u00B7 Golf', price: 'From $300K' },
+              { name: 'Skye Canyon', href: '/skye-canyon/', type: 'Master-Planned \u00B7 New Construction', price: 'From $400K' },
+              { name: 'Centennial Hills', href: '/centennial-hills/', type: 'Master-Planned', price: 'From $350K' },
+              { name: 'Providence', href: '/providence/', type: 'Master-Planned', price: 'From $350K' },
+              { name: 'Lone Mountain', href: '/lone-mountain/', type: 'Semi-Rural \u00B7 Equestrian', price: 'From $400K' },
+              { name: 'Heartland at Tule Springs', href: '/heartland-tule-springs/', type: 'New Construction', price: 'From $350K' },
+              { name: 'Sunstone', href: '/sunstone/', type: 'Master-Planned \u00B7 New Construction', price: 'From $380K' },
+              { name: 'Sun City Aliante', href: '/sun-city-aliante/', type: '55+ Active Adult', price: 'From $300K' },
+              { name: 'Park Highlands', href: '/north-las-vegas-park-highlands/', type: 'Master-Planned', price: 'From $350K' },
+              { name: 'Craig Ranch', href: '/craig-ranch/', type: 'Family \u00B7 Parks', price: 'From $300K' },
+              { name: 'Eldorado', href: '/eldorado/', type: 'Established', price: 'From $300K' },
+              { name: 'Tule Springs', href: '/tule-springs/', type: 'Established', price: 'From $300K' },
+            ].map(v => (
+              <a href={v.href} className="village-card" key={v.name} style={{ textDecoration: 'none' }}>
+                <div className="village-name">{v.name}</div>
+                <div className="village-type">{v.type}</div>
+                <div className="village-price">{v.price}</div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

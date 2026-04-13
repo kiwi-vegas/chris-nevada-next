@@ -426,22 +426,25 @@ export default async function SummerlinPage() {
         <div className="container">
           <div className="villages-grid">
             {[
-              { name: 'The Ridges', type: 'Guard-Gated \u00B7 Ultra-Luxury', desc: '793 acres of the most exclusive addresses in Las Vegas. Custom and semi-custom estates anchored by Bear\u2019s Best golf course.', price: 'From $1.5M+' },
-              { name: 'The Paseos', type: 'Family \u00B7 Master-Planned', desc: 'One of Summerlin\u2019s largest villages with 29 neighborhoods. Home to Fox Hill Park, extensive trail access, and top-rated schools.', price: 'From $650K' },
-              { name: 'Stonebridge', type: 'Modern \u00B7 Growing', desc: 'Summerlin\u2019s newest major village, developed from 2017 onward. Contemporary architecture with dramatic Spring Mountain views.', price: 'From $700K' },
-              { name: 'Red Rock Country Club', type: 'Guard-Gated \u00B7 Golf', desc: 'Gated golf community with two Arnold Palmer-designed courses \u2014 The Arroyo and The Mountain.', price: 'From $1.2M' },
-              { name: 'The Summit Club', type: 'Ultra-Private \u00B7 Trophy Estates', desc: 'Las Vegas\u2019 most exclusive private community with a Tom Fazio golf course. By invitation only.', price: 'From $5M+' },
-              { name: 'The Canyons', type: 'Established \u00B7 Diverse', desc: 'A well-established village with a range of housing from starter homes to larger estates. Great freeway access and strong schools.', price: 'From $550K' },
-              { name: 'Summerlin Centre', type: 'Walkable \u00B7 Mixed-Use', desc: 'At the heart of the community, directly adjacent to Downtown Summerlin. Townhomes and condos within walking distance of everything.', price: 'From $480K' },
-              { name: 'The Vistas', type: 'Family \u00B7 Active Lifestyle', desc: 'Known for its resident-only community center with Olympic pool. A popular choice for families who want top-tier amenities.', price: 'From $600K' },
-              { name: 'Sun City Summerlin', type: '55+ Active Adult', desc: 'The original active adult community in Las Vegas. Multiple golf courses, fitness centers, clubs, and organized activities.', price: 'From $400K' },
+              { name: 'The Ridges', href: '/summerlin-the-ridges/', type: 'Guard-Gated \u00B7 Ultra-Luxury', desc: '793 acres of the most exclusive addresses in Las Vegas. Bear\u2019s Best golf course.', price: 'From $2M+' },
+              { name: 'The Paseos', href: '/the-paseos/', type: 'Family \u00B7 Master-Planned', desc: 'One of Summerlin\u2019s largest villages. Fox Hill Park, trails, and top-rated schools.', price: 'From $550K' },
+              { name: 'The Peaks', href: '/the-peaks/', type: 'Guard-Gated \u00B7 Luxury', desc: 'Guard-gated luxury village with active new construction. Includes Ascension.', price: 'From $1M+' },
+              { name: 'Grand Park', href: '/summerlin-grand-park/', type: 'New Construction \u00B7 Growing', desc: 'Summerlin\u2019s newest and largest village. 13 sub-communities from $400K to $3M+.', price: 'From $400K' },
+              { name: 'Stonebridge', href: '/summerlin-stonebridge/', type: 'Modern \u00B7 55+', desc: 'Newest major village. Contemporary architecture with Heritage 55+ section.', price: 'From $550K' },
+              { name: 'The Canyons', href: '/summerlin-the-canyons/', type: 'Established \u00B7 Guard-Gated', desc: 'Diverse village with guard-gated enclaves including Bellacere and Eagle Rock.', price: 'From $500K' },
+              { name: 'The Hills South', href: '/summerlin-the-hills-south/', type: 'Guard-Gated \u00B7 Golf', desc: 'Four guard-gated enclaves including Country Club Hills and Tournament Hills.', price: 'From $600K' },
+              { name: 'Siena', href: '/summerlin-siena/', type: 'Guard-Gated \u00B7 55+', desc: 'Guard-gated village with Siena Golf Club. Sun Colony 55+ enclave.', price: 'From $400K' },
+              { name: 'La Madre Peaks', href: '/summerlin-la-madre-peaks/', type: 'Luxury \u00B7 New Construction', desc: 'Summerlin West luxury. Includes Astra custom lots from $2M+.', price: 'From $800K' },
+              { name: 'Red Rock CC', href: '/red-rock-country-club/', type: 'Guard-Gated \u00B7 Golf', desc: 'Two Arnold Palmer courses. Guard-gated golf community living.', price: 'From $800K' },
+              { name: 'The Summit Club', href: '/the-summit-club/', type: 'Ultra-Private \u00B7 Golf', desc: 'Las Vegas\u2019 most exclusive community. Tom Fazio golf. By invitation.', price: 'From $5M+' },
+              { name: 'Sun City Summerlin', href: '/sun-city-summerlin/', type: '55+ Active Adult', desc: '7,779 homes. Multiple golf courses, fitness centers, and social clubs.', price: 'From $300K' },
             ].map(v => (
-              <div className="village-card" key={v.name}>
+              <a href={v.href} className="village-card" key={v.name} style={{ textDecoration: 'none' }}>
                 <div className="village-name">{v.name}</div>
                 <div className="village-type">{v.type}</div>
                 <p className="village-desc">{v.desc}</p>
                 <div className="village-price">{v.price}</div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
