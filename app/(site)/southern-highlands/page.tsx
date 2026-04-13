@@ -342,6 +342,8 @@ export default async function SouthernHighlandsPage() {
         </div>
       </section>
 
+      <section id="villages"><div className="villages-header-bar"><h2>SOUTHERN HIGHLANDS ENCLAVES</h2></div><div className="container"><div className="villages-grid">{[{name:'The Estates',href:'/southern-highlands-the-estates/',type:'Guard-Gated · Ultra-Luxury',price:'$2M–$10M+'},{name:'Olympia Ridge',href:'/olympia-ridge/',type:'Guard-Gated · Golf · Luxury',price:'$1.5M–$5M+'},{name:'Tuscan Cliffs',href:'/tuscan-cliffs/',type:'Guard-Gated · Mediterranean',price:'$800K–$3M'},{name:'Golf Estates',href:'/southern-highlands-golf-estates/',type:'Guard-Gated · Golf',price:'$800K–$3M+'},{name:'Portofino',href:'/southern-highlands-portofino/',type:'Guard-Gated',price:'$600K–$1.5M'},{name:'Augusta Canyon',href:'/southern-highlands-augusta-canyon/',type:'Guard-Gated · Golf · Ultra-Luxury',price:'$1M–$4M+'}].map((v:any)=>(<a href={v.href} className="village-card" key={v.name} style={{textDecoration:'none'}}><div className="village-name">{v.name}</div><div className="village-type">{v.type}</div><div className="village-price">{v.price}</div></a>))}</div></div></section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">
@@ -584,6 +586,21 @@ export default async function SouthernHighlandsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Southern Highlands Guard-Gated Enclaves',
+        description: 'Guard-gated luxury enclaves within Southern Highlands, Las Vegas.',
+        numberOfItems: 6,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'The Estates at Southern Highlands', url: 'https://www.lasvegashomesearchexperts.com/southern-highlands-the-estates/' },
+          { '@type': 'ListItem', position: 2, name: 'Olympia Ridge', url: 'https://www.lasvegashomesearchexperts.com/olympia-ridge/' },
+          { '@type': 'ListItem', position: 3, name: 'Tuscan Cliffs', url: 'https://www.lasvegashomesearchexperts.com/tuscan-cliffs/' },
+          { '@type': 'ListItem', position: 4, name: 'Southern Highlands Golf Estates', url: 'https://www.lasvegashomesearchexperts.com/southern-highlands-golf-estates/' },
+          { '@type': 'ListItem', position: 5, name: 'Portofino at Southern Highlands', url: 'https://www.lasvegashomesearchexperts.com/southern-highlands-portofino/' },
+          { '@type': 'ListItem', position: 6, name: 'Augusta Canyon', url: 'https://www.lasvegashomesearchexperts.com/southern-highlands-augusta-canyon/' },
+        ],
+      }) }} />
     </main>
   )
 }
