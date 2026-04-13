@@ -45,47 +45,45 @@ export default function Nav() {
               <div className="communities-panel-nav">
                 <div>
                   <div className="comm-col-label">Las Vegas</div>
-                  <Link href="/enterprise/">Enterprise</Link>
-                  <Link href="/spring-valley/">Spring Valley</Link>
-                  <Link href="/paradise/">Paradise</Link>
+                  <Link href="/summerlin/">Summerlin</Link>
                   <Link href="/southern-highlands/">Southern Highlands</Link>
                   <Link href="/mountains-edge/">Mountains Edge</Link>
-                  <Link href="/the-lakes/">The Lakes</Link>
-                  <Link href="/desert-shores/">Desert Shores</Link>
+                  <Link href="/enterprise/">Enterprise</Link>
+                  <Link href="/spring-valley/">Spring Valley</Link>
                   <Link href="/rhodes-ranch/">Rhodes Ranch</Link>
+                  <Link href="/skye-canyon/">Skye Canyon</Link>
+                  <Link href="/downtown-las-vegas/">Downtown</Link>
                 </div>
                 <div>
                   <div className="comm-col-label">Henderson</div>
-                  <Link href="/henderson/">Henderson / Anthem</Link>
                   <Link href="/anthem/">Anthem</Link>
-                  <Link href="/cadence/">Cadence</Link>
-                  <Link href="/inspirada/">Inspirada</Link>
-                  <Link href="/green-valley-ranch/">Green Valley Ranch</Link>
+                  <Link href="/green-valley/">Green Valley</Link>
                   <Link href="/seven-hills/">Seven Hills</Link>
-                  <Link href="/lake-las-vegas/">Lake Las Vegas</Link>
                   <Link href="/macdonald-highlands/">MacDonald Highlands</Link>
-                  <Link href="/whitney-ranch/">Whitney Ranch</Link>
-                  <Link href="/tuscany-village/">Tuscany Village</Link>
-                  <Link href="/silverado-ranch/">Silverado Ranch</Link>
-                </div>
-                <div>
-                  <div className="comm-col-label">North Las Vegas</div>
-                  <Link href="/north-las-vegas/">North Las Vegas</Link>
-                  <Link href="/aliante/">Aliante</Link>
-                  <Link href="/skye-canyon/">Skye Canyon</Link>
-                  <Link href="/centennial-hills/">Centennial Hills</Link>
-                  <Link href="/lone-mountain/">Lone Mountain</Link>
-                  <Link href="/providence/">Providence</Link>
+                  <Link href="/lake-las-vegas/">Lake Las Vegas</Link>
+                  <Link href="/inspirada/">Inspirada</Link>
+                  <Link href="/cadence/">Cadence</Link>
+                  <Link href="/ascaya/">Ascaya</Link>
                 </div>
                 <div>
                   <div className="comm-col-label">Summerlin</div>
-                  <Link href="/summerlin/">Summerlin</Link>
-                  <Link href="/summerlin-west/">Summerlin West</Link>
-                  <Link href="/red-rock-country-club/">Red Rock Country Club</Link>
+                  <Link href="/summerlin-the-ridges/">The Ridges</Link>
+                  <Link href="/the-peaks/">The Peaks</Link>
+                  <Link href="/summerlin-grand-park/">Grand Park</Link>
+                  <Link href="/summerlin-stonebridge/">Stonebridge</Link>
+                  <Link href="/sun-city-summerlin/">Sun City Summerlin</Link>
+                  <Link href="/red-rock-country-club/">Red Rock CC</Link>
+                  <Link href="/the-summit-club/">The Summit Club</Link>
                 </div>
                 <div>
-                  <div className="comm-col-label">Boulder City</div>
-                  <Link href="/boulder-city/">Boulder City</Link>
+                  <div className="comm-col-label">Browse by Type</div>
+                  <Link href="/guard-gated-communities/">Guard-Gated</Link>
+                  <Link href="/55-plus-communities/">55+ Communities</Link>
+                  <Link href="/luxury-communities/">Luxury Estates</Link>
+                  <Link href="/new-construction/">New Construction</Link>
+                  <Link href="/golf-communities/">Golf Communities</Link>
+                  <Link href="/high-rise-condos/">High-Rise Condos</Link>
+                  <Link href="/communities" style={{ color: 'var(--gold)', fontWeight: 600 }}>All Communities &rarr;</Link>
                 </div>
               </div>
             </div>
@@ -111,39 +109,39 @@ export default function Nav() {
         </button>
         <div className={`mob-submenu${commOpen ? ' open' : ''}`}>
           <div className="mob-city-label">Las Vegas</div>
-          <Link href="/enterprise/" className="mobile-nav-link" onClick={closeMobile}>Enterprise</Link>
-          <Link href="/spring-valley/" className="mobile-nav-link" onClick={closeMobile}>Spring Valley</Link>
-          <Link href="/paradise/" className="mobile-nav-link" onClick={closeMobile}>Paradise</Link>
+          <Link href="/summerlin/" className="mobile-nav-link" onClick={closeMobile}>Summerlin</Link>
           <Link href="/southern-highlands/" className="mobile-nav-link" onClick={closeMobile}>Southern Highlands</Link>
           <Link href="/mountains-edge/" className="mobile-nav-link" onClick={closeMobile}>Mountains Edge</Link>
-          <Link href="/the-lakes/" className="mobile-nav-link" onClick={closeMobile}>The Lakes</Link>
-          <Link href="/desert-shores/" className="mobile-nav-link" onClick={closeMobile}>Desert Shores</Link>
+          <Link href="/enterprise/" className="mobile-nav-link" onClick={closeMobile}>Enterprise</Link>
+          <Link href="/spring-valley/" className="mobile-nav-link" onClick={closeMobile}>Spring Valley</Link>
           <Link href="/rhodes-ranch/" className="mobile-nav-link" onClick={closeMobile}>Rhodes Ranch</Link>
-          <div className="mob-city-label" style={{marginTop:'8px'}}>Henderson</div>
-          <Link href="/henderson/" className="mobile-nav-link" onClick={closeMobile}>Henderson / Anthem</Link>
-          <Link href="/anthem/" className="mobile-nav-link" onClick={closeMobile}>Anthem</Link>
-          <Link href="/cadence/" className="mobile-nav-link" onClick={closeMobile}>Cadence</Link>
-          <Link href="/inspirada/" className="mobile-nav-link" onClick={closeMobile}>Inspirada</Link>
-          <Link href="/green-valley-ranch/" className="mobile-nav-link" onClick={closeMobile}>Green Valley Ranch</Link>
-          <Link href="/seven-hills/" className="mobile-nav-link" onClick={closeMobile}>Seven Hills</Link>
-          <Link href="/lake-las-vegas/" className="mobile-nav-link" onClick={closeMobile}>Lake Las Vegas</Link>
-          <Link href="/macdonald-highlands/" className="mobile-nav-link" onClick={closeMobile}>MacDonald Highlands</Link>
-          <Link href="/whitney-ranch/" className="mobile-nav-link" onClick={closeMobile}>Whitney Ranch</Link>
-          <Link href="/tuscany-village/" className="mobile-nav-link" onClick={closeMobile}>Tuscany Village</Link>
-          <Link href="/silverado-ranch/" className="mobile-nav-link" onClick={closeMobile}>Silverado Ranch</Link>
-          <div className="mob-city-label" style={{marginTop:'8px'}}>North Las Vegas</div>
-          <Link href="/north-las-vegas/" className="mobile-nav-link" onClick={closeMobile}>North Las Vegas</Link>
-          <Link href="/aliante/" className="mobile-nav-link" onClick={closeMobile}>Aliante</Link>
           <Link href="/skye-canyon/" className="mobile-nav-link" onClick={closeMobile}>Skye Canyon</Link>
-          <Link href="/centennial-hills/" className="mobile-nav-link" onClick={closeMobile}>Centennial Hills</Link>
-          <Link href="/lone-mountain/" className="mobile-nav-link" onClick={closeMobile}>Lone Mountain</Link>
-          <Link href="/providence/" className="mobile-nav-link" onClick={closeMobile}>Providence</Link>
-          <div className="mob-city-label" style={{marginTop:'8px'}}>Summerlin</div>
-          <Link href="/summerlin/" className="mobile-nav-link" onClick={closeMobile}>Summerlin</Link>
-          <Link href="/summerlin-west/" className="mobile-nav-link" onClick={closeMobile}>Summerlin West</Link>
-          <Link href="/red-rock-country-club/" className="mobile-nav-link" onClick={closeMobile}>Red Rock Country Club</Link>
-          <div className="mob-city-label" style={{marginTop:'8px'}}>Boulder City</div>
-          <Link href="/boulder-city/" className="mobile-nav-link" onClick={closeMobile}>Boulder City</Link>
+          <Link href="/downtown-las-vegas/" className="mobile-nav-link" onClick={closeMobile}>Downtown</Link>
+          <div className="mob-city-label" style={{marginTop:'8px'}}>Henderson</div>
+          <Link href="/anthem/" className="mobile-nav-link" onClick={closeMobile}>Anthem</Link>
+          <Link href="/green-valley/" className="mobile-nav-link" onClick={closeMobile}>Green Valley</Link>
+          <Link href="/seven-hills/" className="mobile-nav-link" onClick={closeMobile}>Seven Hills</Link>
+          <Link href="/macdonald-highlands/" className="mobile-nav-link" onClick={closeMobile}>MacDonald Highlands</Link>
+          <Link href="/lake-las-vegas/" className="mobile-nav-link" onClick={closeMobile}>Lake Las Vegas</Link>
+          <Link href="/inspirada/" className="mobile-nav-link" onClick={closeMobile}>Inspirada</Link>
+          <Link href="/cadence/" className="mobile-nav-link" onClick={closeMobile}>Cadence</Link>
+          <Link href="/ascaya/" className="mobile-nav-link" onClick={closeMobile}>Ascaya</Link>
+          <div className="mob-city-label" style={{marginTop:'8px'}}>Summerlin Villages</div>
+          <Link href="/summerlin-the-ridges/" className="mobile-nav-link" onClick={closeMobile}>The Ridges</Link>
+          <Link href="/the-peaks/" className="mobile-nav-link" onClick={closeMobile}>The Peaks</Link>
+          <Link href="/summerlin-grand-park/" className="mobile-nav-link" onClick={closeMobile}>Grand Park</Link>
+          <Link href="/summerlin-stonebridge/" className="mobile-nav-link" onClick={closeMobile}>Stonebridge</Link>
+          <Link href="/sun-city-summerlin/" className="mobile-nav-link" onClick={closeMobile}>Sun City Summerlin</Link>
+          <Link href="/red-rock-country-club/" className="mobile-nav-link" onClick={closeMobile}>Red Rock CC</Link>
+          <Link href="/the-summit-club/" className="mobile-nav-link" onClick={closeMobile}>The Summit Club</Link>
+          <div className="mob-city-label" style={{marginTop:'8px'}}>Browse by Type</div>
+          <Link href="/guard-gated-communities/" className="mobile-nav-link" onClick={closeMobile}>Guard-Gated</Link>
+          <Link href="/55-plus-communities/" className="mobile-nav-link" onClick={closeMobile}>55+ Communities</Link>
+          <Link href="/luxury-communities/" className="mobile-nav-link" onClick={closeMobile}>Luxury Estates</Link>
+          <Link href="/new-construction/" className="mobile-nav-link" onClick={closeMobile}>New Construction</Link>
+          <Link href="/golf-communities/" className="mobile-nav-link" onClick={closeMobile}>Golf Communities</Link>
+          <Link href="/high-rise-condos/" className="mobile-nav-link" onClick={closeMobile}>High-Rise Condos</Link>
+          <Link href="/communities" className="mobile-nav-link" onClick={closeMobile} style={{color:'var(--gold)',fontWeight:600}}>All Communities &rarr;</Link>
         </div>
         <a href="https://www.nevadarealestategroup.com/about/" className="mobile-nav-link" onClick={closeMobile}>About Us</a>
         <Link href="/contact/" className="mobile-nav-link" onClick={closeMobile}>Contact Us</Link>
