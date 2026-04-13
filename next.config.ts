@@ -96,6 +96,8 @@ const nextConfig: NextConfig = {
       // Duplicate content redirects
       { source: '/canyon-gate-country-club', destination: '/canyon-gate', permanent: true },
       { source: '/canyon-gate-country-club/', destination: '/canyon-gate', permanent: true },
+      { source: '/new-summerlin', destination: '/summerlin', permanent: true },
+      { source: '/new-summerlin/', destination: '/summerlin', permanent: true },
     ]
   },
 }
