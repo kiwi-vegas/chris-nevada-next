@@ -1,0 +1,4325 @@
+[
+  {
+    "slug": "summerlin-the-crossing",
+    "name": "The Crossing",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": [
+      "89134"
+    ],
+    "center": [
+      -115.292,
+      36.212
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$400K–$700K",
+    "established": "1997",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "450 acres",
+    "homeCount": "2,800+",
+    "guardGated": false,
+    "hoaRange": "$75–$175/mo",
+    "overview": [
+      "The Crossing is one of Summerlin North's most accessible and family-friendly villages, offering solid Summerlin living at price points that are among the most affordable in the master plan. Developed beginning in 1997 by the Howard Hughes Corporation, The Crossing was designed as a classic suburban neighborhood with curving streets, cul-de-sacs, community parks, and easy access to Summerlin's trail network.",
+      "Homes in The Crossing range from approximately $400,000 for smaller single-family homes to around $700,000 for larger, updated properties on premium lots. The architectural character reflects the late-1990s and early-2000s Summerlin aesthetic — Mediterranean-influenced single-family homes built by a mix of regional and national builders. Many homeowners have invested significantly in modern updates, including renovated kitchens, updated pools, and desert-friendly landscaping.",
+      "The village's position in Summerlin North provides quick access to Downtown Summerlin, which is approximately 10 minutes south via Summerlin Parkway. The 215 Beltway runs along the eastern edge of the area, making valley-wide commutes straightforward. Red Rock Canyon is about 15 minutes to the west, and the Las Vegas Strip is reachable in about 20 minutes via Summerlin Parkway and I-15.",
+      "For buyers looking for a well-established Summerlin address with strong schools, community parks, and a true neighborhood feel without the premium pricing of newer or guard-gated villages, The Crossing delivers one of the best value propositions in the master plan. The mature landscaping and three decades of residential continuity create a warmth and livability that newer communities are still working to develop."
+    ],
+    "highlights": [
+      {
+        "title": "Affordable Summerlin Entry",
+        "body": "One of the most accessible price points in Summerlin, with homes starting in the low $400Ks. Full access to the Summerlin lifestyle at family-friendly prices.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Mature Neighborhood Character",
+        "body": "Over 25 years of established landscaping, tree-lined streets, and residential continuity create a neighborhood warmth that newer villages cannot replicate.",
+        "iconType": "park"
+      },
+      {
+        "title": "Strong School Zoning",
+        "body": "Zoned for well-regarded CCSD schools in the Summerlin North corridor. Close to private options including The Meadows School (A+) and Faith Lutheran.",
+        "iconType": "school"
+      },
+      {
+        "title": "Trail System Access",
+        "body": "Connected to Summerlin's 200+ mile trail network for walking, running, and cycling. Multiple parks and playgrounds within the village.",
+        "iconType": "park"
+      },
+      {
+        "title": "Central Location",
+        "body": "10 minutes to Downtown Summerlin, 15 minutes to Red Rock Canyon, 20 minutes to the Strip. Quick 215 Beltway access for valley-wide commuting.",
+        "iconType": "building"
+      },
+      {
+        "title": "Proven Resale Value",
+        "body": "As one of Summerlin's established villages, The Crossing has demonstrated consistent appreciation over two decades. Established Summerlin neighborhoods hold value through every market cycle.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Crossing Ridge",
+        "type": "Family · Established",
+        "desc": "The core of The Crossing — established single-family homes on traditional lots with mature landscaping and neighborhood parks.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Crossing Village",
+        "type": "Starter · Value",
+        "desc": "Smaller single-family homes and attached products at The Crossing's most accessible price points. Popular with first-time buyers.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Crossing Estates",
+        "type": "Premium · Larger Lots",
+        "desc": "Larger homes on premium lots in the western portion of the village. Many feature pools, updated interiors, and spacious backyards.",
+        "price": "From $550K"
+      },
+      {
+        "name": "Crossing Terrace",
+        "type": "Family · Updated",
+        "desc": "Renovated homes with modern finishes. A popular section for buyers who want a move-in-ready Summerlin home without new-construction pricing.",
+        "price": "From $500K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "The Crossing Park",
+        "address": "Near N Hualapai Way, Las Vegas, NV 89134",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Playground",
+          "Walking paths",
+          "Open fields",
+          "Picnic areas",
+          "Basketball court"
+        ]
+      },
+      {
+        "name": "Gardens Park",
+        "address": "10401 Garden Park Dr, Las Vegas, NV 89134",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Adventure playground",
+          "Basketball courts",
+          "Walking trails",
+          "Picnic areas",
+          "Dog park"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout The Crossing",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Marion B. Earl Elementary",
+          "K–5",
+          "7/10"
+        ],
+        [
+          "Jack & Terry Mannion Middle",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "7,500+",
+      "medianAge": "38",
+      "avgIncome": "$110,000+",
+      "households": "2,800+",
+      "homeownership": "78%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Summerlin Pkwy"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in The Crossing?",
+        "a": "Homes in The Crossing range from approximately $400,000 for smaller single-family homes to around $700,000 for larger, updated properties on premium lots."
+      },
+      {
+        "q": "Is The Crossing guard-gated?",
+        "a": "No — The Crossing is not guard-gated. Some neighborhoods within the village have gated entry with key-fob or code access, but there is no staffed guard gate."
+      },
+      {
+        "q": "What ZIP code is The Crossing in?",
+        "a": "The Crossing is located in ZIP code 89134 in the Summerlin North area of Las Vegas."
+      },
+      {
+        "q": "When was The Crossing built?",
+        "a": "The Crossing was developed beginning in 1997. Most homes were built between 1997 and the early 2000s as part of the Summerlin North expansion."
+      },
+      {
+        "q": "What schools serve The Crossing?",
+        "a": "The Crossing is served by CCSD schools including Marion B. Earl Elementary (7/10), Mannion Middle (7/10), and Palo Verde High School (8/10). Top private schools including The Meadows School (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in The Crossing?",
+        "a": "HOA fees in The Crossing are among the most affordable in Summerlin, ranging from approximately $75 to $175 per month. This includes the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "Is The Crossing a good value in Summerlin?",
+        "a": "Yes — The Crossing is one of the most affordable villages in Summerlin while still delivering the full Summerlin lifestyle: trail access, community parks, strong schools, and proximity to Downtown Summerlin."
+      },
+      {
+        "q": "How does The Crossing compare to The Arbors?",
+        "a": "Both are established Summerlin North villages at accessible price points. The Crossing tends to have slightly lower entry prices. The Arbors is slightly older with more mature landscaping. Both deliver excellent Summerlin value."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Arbors",
+        "href": "/summerlin-the-arbors/",
+        "price": "From $450K",
+        "compare": "Adjacent Summerlin North village with similar pricing and mature neighborhood character."
+      },
+      {
+        "name": "The Trails",
+        "href": "/summerlin-the-trails/",
+        "price": "From $500K",
+        "compare": "Nearby Summerlin North village with guard-gated Country Rose Estates enclave."
+      },
+      {
+        "name": "The Willows",
+        "href": "/summerlin-the-willows/",
+        "price": "From $450K",
+        "compare": "Another established Summerlin North village at a similar price point."
+      },
+      {
+        "name": "Discovery",
+        "href": "/summerlin-discovery/",
+        "price": "From $450K",
+        "compare": "Summerlin North village featuring newer construction and modern floor plans."
+      },
+      {
+        "name": "Sun City Summerlin",
+        "href": "/sun-city-summerlin/",
+        "price": "From $300K",
+        "compare": "Adjacent 55+ community with golf courses and extensive amenities."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We wanted a Summerlin address without breaking the bank. Nevada Real Estate Group found us a beautifully updated home in The Crossing with a pool, great schools, and the whole Summerlin lifestyle for hundreds of thousands less than newer villages.",
+        "name": "Ryan & Michelle T.",
+        "detail": "Bought in The Crossing, Summerlin · 2024"
+      },
+      {
+        "quote": "After 15 years in The Crossing, our home sold in one weekend. The mature trees and established feel are exactly what buyers love about this village. Nevada Real Estate Group positioned it perfectly.",
+        "name": "David H.",
+        "detail": "Sold in The Crossing, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Crossing Summerlin",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "summerlin-discovery",
+    "name": "Discovery",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction",
+    "zipCodes": [
+      "89134",
+      "89138"
+    ],
+    "center": [
+      -115.298,
+      36.218
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$450K–$750K",
+    "established": "2016",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "350 acres",
+    "homeCount": "1,800+",
+    "guardGated": false,
+    "hoaRange": "$100–$225/mo",
+    "overview": [
+      "Discovery is one of Summerlin North's newer villages, representing the next generation of Summerlin living. Launched in 2016 by the Howard Hughes Corporation, Discovery offers modern construction with contemporary desert architecture, energy-efficient design, and open floor plans that reflect current buyer preferences. The village has attracted a mix of young professionals, growing families, and move-up buyers looking for new-build quality within the established Summerlin framework.",
+      "Homes in Discovery range from approximately $450,000 for smaller production homes to around $750,000 for larger floor plans on premium lots. Builders active in Discovery include Toll Brothers, Lennar, Pulte, and KB Home, offering a range of architectural styles from modern farmhouse to desert contemporary. Most homes feature 10-foot ceilings, covered patios, smart-home wiring, and energy-efficient construction that meaningfully reduces utility costs compared to the valley's older housing stock.",
+      "Discovery benefits from its position in the northwest corridor of Summerlin North, with direct access to the 215 Beltway and Summerlin Parkway. Downtown Summerlin is approximately 10 minutes south, offering 125+ shops and restaurants, Las Vegas Ballpark, and City National Arena. Red Rock Canyon is approximately 15 minutes west, and the Strip is about 25 minutes southeast.",
+      "The village's appeal is its combination of new-construction quality at mid-range Summerlin pricing. Buyers get modern floor plans, builder warranties, and current building codes without paying the significant premiums associated with Summerlin's luxury and guard-gated villages. For families and professionals who want new construction within a proven master plan, Discovery is one of the smartest buys in Summerlin."
+    ],
+    "highlights": [
+      {
+        "title": "Modern New Construction",
+        "body": "Homes built from 2016 to present with contemporary architecture, open floor plans, energy-efficient systems, and smart-home technology. Current building codes and builder warranties.",
+        "iconType": "home"
+      },
+      {
+        "title": "National Builder Quality",
+        "body": "Builders include Toll Brothers, Lennar, Pulte, and KB Home — offering diverse floor plans, design centers, and the backing of nationally recognized homebuilders.",
+        "iconType": "building"
+      },
+      {
+        "title": "Energy Efficiency",
+        "body": "Modern construction with high-performance insulation, dual-pane windows, and efficient HVAC systems. Meaningfully lower utility costs compared to older Las Vegas homes.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Summerlin Trail Access",
+        "body": "Connected to Summerlin's 200+ mile trail network. New parks and community green spaces designed into the village from the ground up.",
+        "iconType": "park"
+      },
+      {
+        "title": "Convenient Commuting",
+        "body": "Direct access to the 215 Beltway and Summerlin Parkway. 10 minutes to Downtown Summerlin, 25 minutes to the Strip, 15 minutes to Red Rock Canyon.",
+        "iconType": "building"
+      },
+      {
+        "title": "Mid-Range Summerlin Pricing",
+        "body": "New-construction quality starting in the $450Ks — one of the best values for buyers who want modern homes without the premiums of luxury villages.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Discovery Village",
+        "type": "New Construction · Family",
+        "desc": "The primary collection of single-family homes in Discovery with modern floor plans, covered patios, and community parks.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Discovery Ridge",
+        "type": "New Construction · Premium",
+        "desc": "Premium home sites with larger floor plans and upgraded finishes. Many homes feature three-car garages and expanded outdoor living areas.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Discovery Terrace",
+        "type": "Townhome · Modern",
+        "desc": "Attached and semi-attached modern townhomes at Discovery's most accessible price points. Ideal for first-time buyers and young professionals.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Discovery Park",
+        "type": "Family · Park-Adjacent",
+        "desc": "Homes adjacent to the village's community parks and green spaces. Popular with families with young children.",
+        "price": "From $525K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Discovery Park",
+        "address": "Within Discovery Village, Las Vegas, NV 89134",
+        "acreage": "~8 acres",
+        "amenities": [
+          "Modern playground",
+          "Open fields",
+          "Walking paths",
+          "Shade structures",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Gardens Park",
+        "address": "10401 Garden Park Dr, Las Vegas, NV 89134",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Playground",
+          "Basketball courts",
+          "Walking trails",
+          "Dog park",
+          "Open fields"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout Discovery",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Lorna J. Kesterson Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "5,000+",
+      "medianAge": "35",
+      "avgIncome": "$120,000+",
+      "households": "1,800+",
+      "homeownership": "80%"
+    },
+    "driveTimes": [
+      {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Summerlin Pkwy"
+      },
+      {
+        "time": "~35 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in Discovery?",
+        "a": "Homes in Discovery range from approximately $450,000 for smaller production homes and townhomes to around $750,000 for larger floor plans on premium lots."
+      },
+      {
+        "q": "Is Discovery new construction?",
+        "a": "Yes — Discovery is one of Summerlin North's newest villages, with construction beginning in 2016 and new homes still being built. Buyers can choose from both new-build and recent resale options."
+      },
+      {
+        "q": "What builders are in Discovery?",
+        "a": "Builders active in Discovery include Toll Brothers, Lennar, Pulte, and KB Home. Each offers multiple floor plans with design center options for personalizing finishes."
+      },
+      {
+        "q": "Is Discovery guard-gated?",
+        "a": "No — Discovery is not guard-gated. Some neighborhoods within the village have gated entry with key-fob or code access, but there is no staffed guard gate."
+      },
+      {
+        "q": "What ZIP code is Discovery in?",
+        "a": "Discovery is located primarily in ZIP codes 89134 and 89138 in the Summerlin North area of Las Vegas."
+      },
+      {
+        "q": "What schools serve Discovery?",
+        "a": "Discovery is served by CCSD schools including Kesterson Elementary (8/10), Rogich Middle (10/10), and Palo Verde High School (8/10). Top private schools including The Meadows School are nearby."
+      },
+      {
+        "q": "What are HOA fees in Discovery?",
+        "a": "HOA fees in Discovery range from approximately $100 to $225 per month, which includes the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "How does Discovery compare to The Crossing?",
+        "a": "Discovery offers modern new construction with current floor plans and energy efficiency, while The Crossing offers established neighborhoods at slightly lower price points. Discovery appeals to buyers who prioritize new construction; The Crossing appeals to buyers who value mature neighborhoods."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Crossing",
+        "href": "/summerlin-the-crossing/",
+        "price": "From $400K",
+        "compare": "Adjacent Summerlin North village with established character and lower entry pricing."
+      },
+      {
+        "name": "The Arbors",
+        "href": "/summerlin-the-arbors/",
+        "price": "From $450K",
+        "compare": "Established Summerlin North village with mature landscaping and similar pricing."
+      },
+      {
+        "name": "The Trails",
+        "href": "/summerlin-the-trails/",
+        "price": "From $500K",
+        "compare": "Summerlin North village with guard-gated Country Rose Estates and a broader price range."
+      },
+      {
+        "name": "The Willows",
+        "href": "/summerlin-the-willows/",
+        "price": "From $450K",
+        "compare": "Established Summerlin North village with parks and a family-friendly character."
+      },
+      {
+        "name": "Kestrel",
+        "href": "/summerlin-kestrel/",
+        "price": "From $500K",
+        "compare": "New construction village in Summerlin West with modern architecture."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We wanted new construction in Summerlin without paying $800K+. Nevada Real Estate Group walked us through every builder option in Discovery and helped us negotiate upgrades that made the home feel custom. We love it here.",
+        "name": "Jason & Sarah P.",
+        "detail": "Bought in Discovery, Summerlin · 2024"
+      },
+      {
+        "quote": "Discovery was the perfect balance of new construction quality and Summerlin location. The team at Nevada Real Estate Group made the new-build process simple and got us into the exact floor plan we wanted.",
+        "name": "Marcus & Lindsay K.",
+        "detail": "Bought in Discovery, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Discovery Summerlin",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "summerlin-the-trails",
+    "name": "The Trails",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Guard-Gated",
+    "zipCodes": [
+      "89134",
+      "89144"
+    ],
+    "center": [
+      -115.305,
+      36.208
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$500K–$2M+",
+    "established": "1995",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "650 acres",
+    "homeCount": "3,200+",
+    "guardGated": true,
+    "hoaRange": "$100–$400/mo",
+    "overview": [
+      "The Trails is one of Summerlin North's most diverse and desirable villages, spanning a wide range of home styles and price points from approximately $500,000 to over $2 million. Developed beginning in 1995 by the Howard Hughes Corporation, The Trails earned its name from the extensive trail system that winds through the village, connecting neighborhoods to parks, open spaces, and the broader Summerlin trail network.",
+      "The village's defining feature is its breadth. The Trails encompasses everything from accessible single-family homes in family-oriented neighborhoods to the prestigious guard-gated enclave of Country Rose Estates, where custom homes on large lots can exceed $2 million. This range makes The Trails appealing to a wide variety of buyers — from young families entering the Summerlin market to established professionals seeking privacy and space within a guard-gated community.",
+      "Country Rose Estates is the crown jewel of The Trails — a guard-gated neighborhood with a staffed entry gate, large custom lots, mature landscaping, and some of the most substantial estate-style homes in Summerlin North. Homes in Country Rose typically feature 4,000 to 7,000+ square feet, pools, expansive yards, and architectural character that reflects the community's custom-home heritage.",
+      "The Trails' central location in Summerlin North places it within easy reach of Downtown Summerlin (approximately 10 minutes), Red Rock Canyon (approximately 15 minutes), and the 215 Beltway for quick access throughout the valley. For buyers who want the flexibility of choosing their price point within a single, well-established village, The Trails is one of the most versatile communities in all of Summerlin."
+    ],
+    "highlights": [
+      {
+        "title": "Guard-Gated Country Rose Estates",
+        "body": "The prestigious Country Rose Estates enclave features a staffed guard gate, custom homes on large lots, and some of the finest estate-style living in Summerlin North.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Extensive Trail System",
+        "body": "The village's namesake trail system winds through neighborhoods, connecting to parks, open spaces, and the broader 200+ mile Summerlin trail network.",
+        "iconType": "park"
+      },
+      {
+        "title": "Diverse Price Range",
+        "body": "From $500K single-family homes to $2M+ custom estates in Country Rose. One of the broadest price ranges of any Summerlin village, accommodating multiple buyer profiles.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Mature Established Neighborhoods",
+        "body": "Over 25 years of residential continuity with mature landscaping, established trees, and the neighborhood character that only comes with decades of community development.",
+        "iconType": "park"
+      },
+      {
+        "title": "Strong School Options",
+        "body": "Zoned for well-regarded CCSD schools in the Summerlin North corridor. Close to The Meadows School (A+), Faith Lutheran (A), and Bishop Gorman (A+).",
+        "iconType": "school"
+      },
+      {
+        "title": "Central Summerlin Location",
+        "body": "10 minutes to Downtown Summerlin, 15 minutes to Red Rock Canyon, 20 minutes to the Strip. The 215 Beltway provides quick access to the entire valley.",
+        "iconType": "building"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Country Rose Estates",
+        "type": "Guard-Gated · Custom",
+        "desc": "The guard-gated luxury enclave of The Trails. Custom estate homes on large lots with mature landscaping, pools, and views. Staffed guard gate and 24-hour security.",
+        "price": "From $800K"
+      },
+      {
+        "name": "Trail Ridge",
+        "type": "Family · Established",
+        "desc": "Established single-family homes along the village's trail system. Tree-lined streets with parks and playgrounds throughout.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Trails Edge",
+        "type": "Family · Accessible",
+        "desc": "The most accessible neighborhoods in The Trails with well-maintained homes at family-friendly price points.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Trails Premium",
+        "type": "Premium · Cul-de-Sac",
+        "desc": "Premium cul-de-sac and corner lots with larger yards, mature trees, and upgraded homes. Many have been extensively renovated.",
+        "price": "From $700K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89134",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Walking trails",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "The Trails Park",
+        "address": "Within The Trails Village, Las Vegas, NV 89134",
+        "acreage": "~8 acres",
+        "amenities": [
+          "Playground",
+          "Basketball courts",
+          "Open fields",
+          "Walking paths",
+          "Shade structures"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout The Trails",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John W. Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "8,500+",
+      "medianAge": "42",
+      "avgIncome": "$145,000+",
+      "households": "3,200+",
+      "homeownership": "85%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Summerlin Pkwy"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in The Trails?",
+        "a": "Homes in The Trails range from approximately $500,000 for single-family homes in the village's more accessible neighborhoods to over $2 million for custom estates in the guard-gated Country Rose Estates enclave."
+      },
+      {
+        "q": "Is The Trails guard-gated?",
+        "a": "The Trails village as a whole is not guard-gated, but Country Rose Estates — the luxury enclave within The Trails — features a 24-hour staffed guard gate and comprehensive security."
+      },
+      {
+        "q": "What is Country Rose Estates?",
+        "a": "Country Rose Estates is a guard-gated neighborhood within The Trails featuring custom estate homes on large lots with mature landscaping. Homes in Country Rose typically feature 4,000 to 7,000+ square feet with prices starting around $800K and exceeding $2M."
+      },
+      {
+        "q": "What ZIP code is The Trails in?",
+        "a": "The Trails is located primarily in ZIP codes 89134 and 89144 in the Summerlin North area of Las Vegas."
+      },
+      {
+        "q": "What schools serve The Trails?",
+        "a": "The Trails is served by CCSD schools including Bonner Elementary (9/10), Rogich Middle (10/10), and Palo Verde High School (8/10). Private options including The Meadows School (A+) and Bishop Gorman (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in The Trails?",
+        "a": "HOA fees in The Trails range from approximately $100 to $400 per month depending on the neighborhood. Country Rose Estates has higher fees due to guard-gate staffing and enhanced amenities."
+      },
+      {
+        "q": "What makes The Trails unique in Summerlin?",
+        "a": "The Trails is one of Summerlin's most diverse villages, spanning entry-level to luxury in a single community. Its namesake trail system connects neighborhoods to parks and the broader Summerlin network, and Country Rose Estates offers guard-gated luxury within an accessible village."
+      },
+      {
+        "q": "When was The Trails built?",
+        "a": "The Trails was developed beginning in 1995, with homes built through the 2000s. Country Rose Estates features custom homes built across multiple decades."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Arbors",
+        "href": "/summerlin-the-arbors/",
+        "price": "From $450K",
+        "compare": "Adjacent Summerlin North village with similar established character and mature landscaping."
+      },
+      {
+        "name": "The Vistas",
+        "href": "/summerlin-the-vistas/",
+        "price": "From $450K",
+        "compare": "Nearby Summerlin North village with guard-gated The Vineyards enclave."
+      },
+      {
+        "name": "The Crossing",
+        "href": "/summerlin-the-crossing/",
+        "price": "From $400K",
+        "compare": "Summerlin North village with more accessible entry pricing."
+      },
+      {
+        "name": "The Hills",
+        "href": "/summerlin-the-hills/",
+        "price": "From $500K",
+        "compare": "Summerlin North village with guard-gated Mountain Trails enclave."
+      },
+      {
+        "name": "The Canyons",
+        "href": "/summerlin-the-canyons/",
+        "price": "From $500K",
+        "compare": "Summerlin North village with guard-gated enclaves and dramatic canyon views."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We found our dream home in Country Rose Estates — guard-gated, huge lot, mature trees, and the kids can walk to top-rated schools. Nevada Real Estate Group understood exactly what we needed and delivered.",
+        "name": "Kevin & Diana S.",
+        "detail": "Bought in The Trails, Summerlin · 2024"
+      },
+      {
+        "quote": "The Trails has everything from starter homes to estates. When we upgraded from our smaller home to Country Rose, Nevada Real Estate Group handled both transactions seamlessly. We never had to leave our favorite village.",
+        "name": "Brian & Jen C.",
+        "detail": "Bought and Sold in The Trails, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Trails Summerlin",
+    "ylopoMinPrice": 450000
+  },
+  {
+    "slug": "summerlin-the-vistas",
+    "name": "The Vistas",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Guard-Gated",
+    "zipCodes": [
+      "89134",
+      "89144"
+    ],
+    "center": [
+      -115.312,
+      36.205
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$450K–$1.5M+",
+    "established": "1996",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "600 acres",
+    "homeCount": "3,000+",
+    "guardGated": true,
+    "hoaRange": "$100–$500/mo",
+    "overview": [
+      "The Vistas is one of Summerlin North's premier villages, offering an impressive range of housing from family-oriented single-family homes to luxurious custom estates within the guard-gated Vineyards enclave. Developed beginning in 1996 by the Howard Hughes Corporation, The Vistas quickly established itself as one of the most desirable addresses in Summerlin North, thanks to its elevated position, mountain views, and diverse neighborhood offerings.",
+      "Homes in The Vistas range from approximately $450,000 for well-maintained single-family homes in the village's core neighborhoods to over $1.5 million for premium properties in The Vineyards — the guard-gated luxury enclave that anchors the western portion of the village. The Vineyards features custom and semi-custom homes on large lots with mountain views, staffed guard-gate security, and some of the most expansive properties in Summerlin North.",
+      "The village's western position provides many homes with views of the Spring Mountains and Red Rock Canyon, particularly in the elevated neighborhoods along the village's western boundary. Mature landscaping throughout The Vistas creates a lush, established feel with tree-lined streets, manicured common areas, and the kind of neighborhood character that only develops over decades.",
+      "The Vistas is ideally positioned for access to both Downtown Summerlin (approximately 10 minutes) and Red Rock Canyon (approximately 12 minutes). The 215 Beltway and Summerlin Parkway provide quick connections to the rest of the valley. For buyers who want the combination of established neighborhood character, mountain views, and the option to live within a guard-gated enclave, The Vistas is one of the most compelling villages in Summerlin."
+    ],
+    "highlights": [
+      {
+        "title": "Guard-Gated Vineyards Enclave",
+        "body": "The Vineyards features staffed guard-gate security, custom homes on large lots, mountain views, and some of the most substantial estate-style properties in Summerlin North. Prices from $900K to $3M+.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Mountain & Red Rock Views",
+        "body": "The village's western position provides many homes with dramatic views of the Spring Mountains and Red Rock Canyon, particularly in elevated neighborhoods.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Broad Price Range",
+        "body": "From $450K family homes to $1.5M+ estates in The Vineyards. One of Summerlin North's most diverse villages, accommodating first-time buyers through luxury seekers.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Mature Established Village",
+        "body": "Nearly 30 years of landscaping maturity, tree-lined streets, and residential continuity. The Vistas offers established neighborhood character newer villages cannot match.",
+        "iconType": "park"
+      },
+      {
+        "title": "Excellent School Access",
+        "body": "Zoned for top-rated CCSD schools including Rogich Middle (10/10). Close to The Meadows School (A+), Faith Lutheran (A), and Bishop Gorman (A+).",
+        "iconType": "school"
+      },
+      {
+        "title": "Red Rock Canyon Proximity",
+        "body": "Approximately 12 minutes to Red Rock Canyon National Conservation Area. Direct access to the Summerlin trail system for hiking, biking, and outdoor recreation.",
+        "iconType": "park"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "The Vineyards",
+        "type": "Guard-Gated · Luxury",
+        "desc": "The prestigious guard-gated enclave within The Vistas. Custom and semi-custom homes on large lots with mountain views, mature landscaping, and 24-hour security.",
+        "price": "From $900K"
+      },
+      {
+        "name": "Vistas Ridge",
+        "type": "Family · Views",
+        "desc": "Elevated neighborhoods with mountain views, established landscaping, and well-maintained single-family homes. Popular with families seeking space and scenery.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Vistas Village",
+        "type": "Family · Established",
+        "desc": "The core residential area of The Vistas with tree-lined streets, neighborhood parks, and classic Summerlin character.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Vistas Entry",
+        "type": "Starter · Accessible",
+        "desc": "The most accessible neighborhoods in The Vistas with well-maintained homes at entry-level Summerlin pricing.",
+        "price": "From $450K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "The Vistas Park",
+        "address": "Within The Vistas Village, Las Vegas, NV 89134",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Playground",
+          "Walking trails",
+          "Open fields",
+          "Picnic shelters",
+          "Basketball courts"
+        ]
+      },
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89134",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Walking trails",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout The Vistas",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John W. Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "8,000+",
+      "medianAge": "43",
+      "avgIncome": "$155,000+",
+      "households": "3,000+",
+      "homeownership": "85%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~12 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Summerlin Pkwy"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in The Vistas?",
+        "a": "Homes in The Vistas range from approximately $450,000 for single-family homes in the village's core neighborhoods to over $1.5 million for luxury estates in the guard-gated Vineyards enclave."
+      },
+      {
+        "q": "Is The Vistas guard-gated?",
+        "a": "The Vistas village as a whole is not guard-gated, but The Vineyards — the luxury enclave within The Vistas — features a 24-hour staffed guard gate and comprehensive security."
+      },
+      {
+        "q": "What is The Vineyards?",
+        "a": "The Vineyards is a guard-gated neighborhood within The Vistas featuring custom and semi-custom homes on large lots with mountain views. Homes typically range from $900K to $3M+, with staffed guard-gate security and extensive landscaping."
+      },
+      {
+        "q": "What ZIP code is The Vistas in?",
+        "a": "The Vistas is located primarily in ZIP codes 89134 and 89144 in the Summerlin North area of Las Vegas."
+      },
+      {
+        "q": "What schools serve The Vistas?",
+        "a": "The Vistas is served by CCSD schools including Bonner Elementary (9/10), Rogich Middle (10/10), and Palo Verde High School (8/10). Private options including The Meadows School (A+) and Bishop Gorman (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in The Vistas?",
+        "a": "HOA fees in The Vistas range from approximately $100 to $500 per month depending on the neighborhood. The Vineyards has higher fees due to guard-gate staffing and enhanced amenities."
+      },
+      {
+        "q": "Does The Vistas have mountain views?",
+        "a": "Yes — The Vistas' western position in Summerlin North provides many homes with views of the Spring Mountains and Red Rock Canyon, particularly in the elevated neighborhoods and The Vineyards enclave."
+      },
+      {
+        "q": "How does The Vistas compare to The Trails?",
+        "a": "Both villages offer a wide price range and include guard-gated luxury enclaves. The Vistas features The Vineyards (guard-gated luxury); The Trails features Country Rose Estates (guard-gated custom). Both are excellent established Summerlin North villages."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Trails",
+        "href": "/summerlin-the-trails/",
+        "price": "From $500K",
+        "compare": "Adjacent Summerlin North village with guard-gated Country Rose Estates."
+      },
+      {
+        "name": "The Arbors",
+        "href": "/summerlin-the-arbors/",
+        "price": "From $450K",
+        "compare": "Established Summerlin North village with mature character and accessible pricing."
+      },
+      {
+        "name": "The Hills",
+        "href": "/summerlin-the-hills/",
+        "price": "From $500K",
+        "compare": "Summerlin North village with guard-gated Mountain Trails enclave."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated community with Bear's Best golf."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community within Summerlin. Two Arnold Palmer courses."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "The Vineyards was everything we wanted — guard-gated, mountain views, large lot, and still close to Downtown Summerlin. Nevada Real Estate Group helped us find a home that checked every box.",
+        "name": "Richard & Katherine P.",
+        "detail": "Bought in The Vistas, Summerlin · 2024"
+      },
+      {
+        "quote": "We've been in The Vistas for 20 years and watched the village mature into one of the most desirable neighborhoods in Las Vegas. When we finally decided to sell, Nevada Real Estate Group got us top dollar.",
+        "name": "Greg & Laura M.",
+        "detail": "Sold in The Vistas, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Vistas Summerlin",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "summerlin-the-willows",
+    "name": "The Willows",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": [
+      "89134"
+    ],
+    "center": [
+      -115.285,
+      36.215
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$450K–$750K",
+    "established": "1998",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "400 acres",
+    "homeCount": "2,500+",
+    "guardGated": false,
+    "hoaRange": "$75–$200/mo",
+    "overview": [
+      "The Willows is a well-established Summerlin North village known for its family-friendly character, mature landscaping, and strong sense of community. Developed beginning in 1998 by the Howard Hughes Corporation, The Willows was designed as a classic residential village with parks, walking trails, and the quiet, tree-lined streets that define the best of Summerlin's established neighborhoods.",
+      "Homes in The Willows range from approximately $450,000 for smaller single-family homes to around $750,000 for larger, updated properties on premium lots. The architectural style is predominantly Mediterranean and transitional, consistent with the late-1990s Summerlin aesthetic. Many homes have been significantly updated with modern kitchens, new flooring, energy-efficient windows, and desert landscaping. The village offers a mix of single-family homes and attached products, providing options for various household sizes and budgets.",
+      "The Willows benefits from a central position in Summerlin North with convenient access to multiple amenities. Downtown Summerlin is approximately 10 minutes south, the 215 Beltway is minutes east for valley-wide commuting, and Red Rock Canyon is approximately 15 minutes to the west. The village is also close to Summerlin's community centers, library, and recreation facilities.",
+      "For buyers seeking an established Summerlin neighborhood with mature trees, community parks, strong schools, and a genuine neighborhood feel, The Willows represents one of the most reliable values in the master plan. The village's consistent appeal with families has created a stable, close-knit community that many residents call home for decades."
+    ],
+    "highlights": [
+      {
+        "title": "Family-Oriented Community",
+        "body": "The Willows is one of Summerlin North's most family-friendly villages with parks, playgrounds, and tree-lined streets throughout. A strong sense of community with multi-decade residents.",
+        "iconType": "home"
+      },
+      {
+        "title": "Mature Landscaping",
+        "body": "Over 25 years of established trees and landscaping create a lush, inviting neighborhood character. Tree-lined streets and manicured common areas throughout.",
+        "iconType": "park"
+      },
+      {
+        "title": "Accessible Summerlin Pricing",
+        "body": "Entry into the Summerlin lifestyle from the mid-$400Ks. One of the most affordable villages in the master plan while delivering strong schools and full amenity access.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Community Parks & Trails",
+        "body": "Multiple neighborhood parks with playgrounds, open fields, and walking paths. Connected to the Summerlin trail system for outdoor recreation.",
+        "iconType": "park"
+      },
+      {
+        "title": "Strong Schools",
+        "body": "Zoned for well-regarded CCSD schools in the Summerlin North corridor. Close to The Meadows School (A+) and Faith Lutheran (A) for private options.",
+        "iconType": "school"
+      },
+      {
+        "title": "Central Summerlin North Location",
+        "body": "10 minutes to Downtown Summerlin, 15 minutes to Red Rock Canyon, easy 215 Beltway access. Central to everything Summerlin offers.",
+        "iconType": "building"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Willows Village",
+        "type": "Family · Established",
+        "desc": "The heart of The Willows with established single-family homes, mature trees, and neighborhood parks. Classic Summerlin family living.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Willows Park",
+        "type": "Family · Park-Adjacent",
+        "desc": "Homes adjacent to the village's community parks and green spaces. Ideal for families with young children seeking outdoor play areas.",
+        "price": "From $525K"
+      },
+      {
+        "name": "Willows Entry",
+        "type": "Starter · Value",
+        "desc": "Smaller homes and attached products at The Willows' most accessible price points. Popular with first-time buyers and downsizers.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Willows Premium",
+        "type": "Premium · Updated",
+        "desc": "Larger homes on premium lots with updated interiors, pools, and spacious yards. The village's most sought-after addresses.",
+        "price": "From $625K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Willows Park",
+        "address": "Within The Willows Village, Las Vegas, NV 89134",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Playground",
+          "Open fields",
+          "Walking paths",
+          "Picnic areas",
+          "Shade structures"
+        ]
+      },
+      {
+        "name": "Gardens Park",
+        "address": "10401 Garden Park Dr, Las Vegas, NV 89134",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Playground",
+          "Basketball courts",
+          "Walking trails",
+          "Dog park",
+          "Open fields"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout The Willows",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Helen Jydstrup Elementary",
+          "K–5",
+          "7/10"
+        ],
+        [
+          "Jack & Terry Mannion Middle",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "6,500+",
+      "medianAge": "39",
+      "avgIncome": "$115,000+",
+      "households": "2,500+",
+      "homeownership": "80%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Summerlin Pkwy"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in The Willows?",
+        "a": "Homes in The Willows range from approximately $450,000 for smaller homes and attached products to around $750,000 for larger, updated properties on premium lots."
+      },
+      {
+        "q": "Is The Willows guard-gated?",
+        "a": "No — The Willows is not guard-gated. Some neighborhoods within the village have gated entry with key-fob or code access, but there is no staffed guard gate."
+      },
+      {
+        "q": "What ZIP code is The Willows in?",
+        "a": "The Willows is located in ZIP code 89134 in the Summerlin North area of Las Vegas."
+      },
+      {
+        "q": "When was The Willows built?",
+        "a": "The Willows was developed beginning in 1998. Most homes were built between 1998 and the mid-2000s as part of the Summerlin North expansion."
+      },
+      {
+        "q": "What schools serve The Willows?",
+        "a": "The Willows is served by CCSD schools including Jydstrup Elementary (7/10), Mannion Middle (7/10), and Palo Verde High School (8/10). Top private schools including The Meadows School (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in The Willows?",
+        "a": "HOA fees in The Willows range from approximately $75 to $200 per month, including the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "Is The Willows good for families?",
+        "a": "Yes — The Willows is one of the most family-oriented villages in Summerlin. Community parks, playgrounds, mature tree-lined streets, and strong school zoning make it a top choice for families with children."
+      },
+      {
+        "q": "How does The Willows compare to The Arbors?",
+        "a": "Both are established Summerlin North villages at similar price points. The Arbors is slightly older with more mature trees. The Willows was built a few years later and has a slightly newer feel. Both offer excellent Summerlin value for families."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Arbors",
+        "href": "/summerlin-the-arbors/",
+        "price": "From $450K",
+        "compare": "Adjacent Summerlin North village with the most mature landscaping in the area."
+      },
+      {
+        "name": "The Crossing",
+        "href": "/summerlin-the-crossing/",
+        "price": "From $400K",
+        "compare": "Nearby Summerlin North village with the lowest entry pricing in the area."
+      },
+      {
+        "name": "Discovery",
+        "href": "/summerlin-discovery/",
+        "price": "From $450K",
+        "compare": "Summerlin North village with newer construction and modern floor plans."
+      },
+      {
+        "name": "The Trails",
+        "href": "/summerlin-the-trails/",
+        "price": "From $500K",
+        "compare": "Summerlin North village with guard-gated Country Rose Estates and a broader price range."
+      },
+      {
+        "name": "Sun City Summerlin",
+        "href": "/sun-city-summerlin/",
+        "price": "From $300K",
+        "compare": "Adjacent 55+ community with golf courses and extensive social programming."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "The Willows is the quintessential Summerlin family neighborhood. Mature trees, kids riding bikes, and great schools. Nevada Real Estate Group helped us find a move-in ready home with a pool and backyard our kids love.",
+        "name": "Matt & Emily R.",
+        "detail": "Bought in The Willows, Summerlin · 2024"
+      },
+      {
+        "quote": "We raised our family in The Willows over 18 years. When it was time to downsize, Nevada Real Estate Group sold our home quickly and at the right price. This village holds its value because families want to be here.",
+        "name": "Steve & Carla F.",
+        "detail": "Sold in The Willows, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Willows Summerlin",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "summerlin-the-cliffs",
+    "name": "The Cliffs",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Elevated Living",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.318,
+      36.165
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$600K–$1.2M",
+    "established": "2003",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "380 acres",
+    "homeCount": "1,800+",
+    "guardGated": false,
+    "hoaRange": "$125–$300/mo",
+    "overview": [
+      "The Cliffs is a desirable Summerlin South village known for its elevated position, mountain proximity, and move-up home quality. Developed beginning in 2003 by the Howard Hughes Corporation, The Cliffs was positioned along the western edge of the Summerlin master plan where the valley floor begins to rise toward the Spring Mountains, giving many homes elevated perspectives and views that are uncommon at this price point.",
+      "Homes in The Cliffs range from approximately $600,000 for well-maintained single-family homes to around $1.2 million for larger properties on premium lots with upgraded finishes and views. The architectural character reflects the early 2000s shift toward more contemporary Summerlin design — cleaner lines, natural stone accents, and larger windows compared to the Mediterranean-heavy style of the 1990s villages. Home sizes typically range from 2,200 to 4,500 square feet.",
+      "The village's western position places it among the closest Summerlin villages to Red Rock Canyon, approximately 10 minutes away via West Charleston Boulevard. Downtown Summerlin is about 8 minutes north, and the community benefits from proximity to the TPC Las Vegas and the Summerlin trail system. The 215 Beltway provides efficient connections to the south side of the valley and Harry Reid Airport.",
+      "The Cliffs occupies a sweet spot in the Summerlin market — it delivers elevated living, mountain proximity, and quality construction at price points below the village's guard-gated luxury neighbors like The Ridges and Red Rock Country Club. For move-up buyers who want more home, more views, and more proximity to the outdoor lifestyle without the premium of ultra-luxury communities, The Cliffs is one of the smartest buys in Summerlin South."
+    ],
+    "highlights": [
+      {
+        "title": "Elevated Mountain-Adjacent Position",
+        "body": "Located along Summerlin's western edge where the valley rises toward the Spring Mountains. Many homes enjoy elevated perspectives and mountain views rare at this price point.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Red Rock Canyon Proximity",
+        "body": "One of the closest Summerlin villages to Red Rock Canyon National Conservation Area — approximately 10 minutes by car. Direct trail access for hiking and outdoor recreation.",
+        "iconType": "park"
+      },
+      {
+        "title": "Move-Up Quality Homes",
+        "body": "Well-built homes from 2,200 to 4,500 square feet with early-2000s transitional architecture. Many feature updated kitchens, pools, and spacious floor plans.",
+        "iconType": "home"
+      },
+      {
+        "title": "Downtown Summerlin Access",
+        "body": "Approximately 8 minutes to Downtown Summerlin's 125+ shops, restaurants, Las Vegas Ballpark, and City National Arena.",
+        "iconType": "building"
+      },
+      {
+        "title": "Trail System Connectivity",
+        "body": "Connected to Summerlin's 200+ mile trail network with excellent access to Red Rock-area hiking and biking trails.",
+        "iconType": "park"
+      },
+      {
+        "title": "Value Below Luxury Neighbors",
+        "body": "Premium location and quality at price points significantly below neighboring guard-gated communities like The Ridges and Red Rock Country Club.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Cliffs Ridge",
+        "type": "Premium · Views",
+        "desc": "Elevated homes along the western portion of the village with mountain views and larger lots. The most desirable addresses in The Cliffs.",
+        "price": "From $800K"
+      },
+      {
+        "name": "Cliffs Village",
+        "type": "Family · Established",
+        "desc": "The core of The Cliffs with well-maintained single-family homes, mature landscaping, and neighborhood parks.",
+        "price": "From $700K"
+      },
+      {
+        "name": "Cliffs Terrace",
+        "type": "Move-Up · Quality",
+        "desc": "Move-up homes with spacious floor plans, updated interiors, and covered outdoor living areas.",
+        "price": "From $650K"
+      },
+      {
+        "name": "Cliffs Entry",
+        "type": "Accessible · Updated",
+        "desc": "The Cliffs' most accessible neighborhoods with well-maintained homes at the village's entry price points.",
+        "price": "From $600K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "The Paseos Linear Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89135",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Open space",
+          "Dog-friendly areas",
+          "Shade structures"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout The Cliffs",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ],
+        [
+          "Zel & Mary Lowman Elementary",
+          "K–5",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "5,000+",
+      "medianAge": "44",
+      "avgIncome": "$160,000+",
+      "households": "1,800+",
+      "homeownership": "88%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~8 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in The Cliffs?",
+        "a": "Homes in The Cliffs range from approximately $600,000 for well-maintained single-family homes to around $1.2 million for larger properties on premium lots with mountain views and upgraded finishes."
+      },
+      {
+        "q": "Is The Cliffs guard-gated?",
+        "a": "No — The Cliffs is not guard-gated. Some neighborhoods within the village have gated entry with key-fob or code access, but there is no staffed guard gate. For guard-gated options nearby, The Ridges and Red Rock Country Club are within minutes."
+      },
+      {
+        "q": "What ZIP code is The Cliffs in?",
+        "a": "The Cliffs is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "How close is The Cliffs to Red Rock Canyon?",
+        "a": "The Cliffs is one of the closest Summerlin villages to Red Rock Canyon — approximately 10 minutes by car via West Charleston Boulevard. Direct trail access is also available through the Summerlin trail network."
+      },
+      {
+        "q": "What schools serve The Cliffs?",
+        "a": "The Cliffs is served by CCSD schools including Lowman Elementary (8/10), Rogich Middle (10/10), and Palo Verde High School (8/10). Private options including The Meadows School (A+) and Bishop Gorman (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in The Cliffs?",
+        "a": "HOA fees in The Cliffs range from approximately $125 to $300 per month, including the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "How does The Cliffs compare to The Ridges?",
+        "a": "The Ridges is Summerlin's ultra-luxury guard-gated community with homes starting at $2M. The Cliffs offers similar mountain proximity and views at significantly more accessible price points ($600K–$1.2M) without guard-gated security."
+      },
+      {
+        "q": "When was The Cliffs built?",
+        "a": "The Cliffs was developed beginning in 2003, with homes built through the late 2000s. The village features transitional architecture that bridges the Mediterranean style of earlier villages with more contemporary design."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated community with Bear's Best golf. Adjacent to The Cliffs."
+      },
+      {
+        "name": "The Paseos",
+        "href": "/summerlin-the-paseos/",
+        "price": "From $550K",
+        "compare": "Adjacent Summerlin South village with similar pricing and the Paseos Linear Park."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community within Summerlin. Two Arnold Palmer courses."
+      },
+      {
+        "name": "The Gardens",
+        "href": "/summerlin-the-gardens/",
+        "price": "From $450K",
+        "compare": "Summerlin South village with more accessible pricing and established neighborhoods."
+      },
+      {
+        "name": "The Mesa",
+        "href": "/summerlin-the-mesa/",
+        "price": "From $600K",
+        "compare": "Nearby Summerlin South village with newer construction and modern floor plans."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "The Cliffs gave us the mountain views and Red Rock proximity we wanted without the $2M+ price tag of The Ridges. Nevada Real Estate Group helped us find a home with views that rival properties at twice the price.",
+        "name": "Andrew & Nicole J.",
+        "detail": "Bought in The Cliffs, Summerlin · 2024"
+      },
+      {
+        "quote": "Our home in The Cliffs has been one of our best investments. The location is unbeatable — 10 minutes to Red Rock, 8 minutes to Downtown Summerlin. Nevada Real Estate Group understood exactly what makes this village special.",
+        "name": "Paul & Maria T.",
+        "detail": "Sold in The Cliffs, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Cliffs Summerlin",
+    "ylopoMinPrice": 550000
+  },
+  {
+    "slug": "summerlin-the-gardens",
+    "name": "The Gardens",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": [
+      "89135",
+      "89134"
+    ],
+    "center": [
+      -115.295,
+      36.175
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$450K–$750K",
+    "established": "1999",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "420 acres",
+    "homeCount": "2,600+",
+    "guardGated": false,
+    "hoaRange": "$75–$200/mo",
+    "overview": [
+      "The Gardens is a well-established Summerlin South village that lives up to its name with lush landscaping, community parks, and a green, inviting neighborhood character. Developed beginning in 1999 by the Howard Hughes Corporation, The Gardens was designed around the concept of community green spaces — parks, trails, and landscaped common areas woven throughout the residential neighborhoods to create one of the most livable villages in Summerlin.",
+      "Homes in The Gardens range from approximately $450,000 for smaller single-family homes to around $750,000 for larger, updated properties on premium lots. The architectural character is late-1990s and early-2000s Summerlin — Mediterranean and transitional styles with stucco exteriors, tile roofs, and covered patios. Many homes have been updated with modern kitchens, new pools, and contemporary finishes while maintaining the village's warm residential character.",
+      "The village is centrally located within Summerlin South, providing convenient access to Downtown Summerlin (approximately 10 minutes), the 215 Beltway, and the commercial amenities along West Sahara and West Charleston. Gardens Park, a major Summerlin community park, anchors the village and provides playgrounds, basketball courts, walking trails, and open green space that serve as a gathering point for the community.",
+      "For buyers seeking a well-maintained Summerlin address with genuine neighborhood character, community parks, and price points that remain accessible relative to Summerlin's newer and more premium villages, The Gardens delivers reliable value. The village's emphasis on green space and community amenities creates a quality of daily life that resonates particularly well with families and active adults."
+    ],
+    "highlights": [
+      {
+        "title": "Park-Centered Design",
+        "body": "The Gardens was designed around community green spaces — parks, trails, and landscaped common areas throughout. Gardens Park is a major Summerlin community park at the village's heart.",
+        "iconType": "park"
+      },
+      {
+        "title": "Accessible Summerlin South Pricing",
+        "body": "Entry into Summerlin South from the mid-$400Ks. One of the most affordable villages in the Summerlin South Association while delivering full Summerlin amenities.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Mature Landscaping",
+        "body": "Over 25 years of established trees, manicured common areas, and lush landscaping create an inviting neighborhood character that justifies the village's name.",
+        "iconType": "park"
+      },
+      {
+        "title": "Central Summerlin South Location",
+        "body": "10 minutes to Downtown Summerlin, quick 215 Beltway access, and convenient to the commercial corridors along West Sahara and West Charleston.",
+        "iconType": "building"
+      },
+      {
+        "title": "Family-Friendly Amenities",
+        "body": "Multiple parks with playgrounds, basketball courts, walking trails, and open fields. Connected to the Summerlin trail system for hiking and biking.",
+        "iconType": "home"
+      },
+      {
+        "title": "Strong School Zoning",
+        "body": "Zoned for well-regarded CCSD schools in the Summerlin South corridor. Close to private options including The Meadows School (A+) and Bishop Gorman (A+).",
+        "iconType": "school"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Gardens Park",
+        "type": "Family · Park-Adjacent",
+        "desc": "Homes adjacent to the flagship Gardens Park with direct access to playgrounds, courts, and green spaces. The village's most desirable family addresses.",
+        "price": "From $525K"
+      },
+      {
+        "name": "Gardens Village",
+        "type": "Family · Established",
+        "desc": "The core residential area with tree-lined streets, mature landscaping, and classic Summerlin character.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Gardens Entry",
+        "type": "Starter · Value",
+        "desc": "Smaller homes and attached products at the village's most accessible price points. Ideal for first-time Summerlin buyers.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Gardens Premium",
+        "type": "Premium · Updated",
+        "desc": "Larger homes on premium lots with renovated interiors, pools, and spacious outdoor living. The village's highest-value properties.",
+        "price": "From $625K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Gardens Park",
+        "address": "10401 Garden Park Dr, Las Vegas, NV 89134",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Playground",
+          "Basketball courts",
+          "Walking trails",
+          "Picnic areas",
+          "Open fields",
+          "Dog park"
+        ]
+      },
+      {
+        "name": "The Paseos Linear Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89135",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Open space",
+          "Dog-friendly areas"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout The Gardens",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Zel & Mary Lowman Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "7,000+",
+      "medianAge": "40",
+      "avgIncome": "$120,000+",
+      "households": "2,600+",
+      "homeownership": "82%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~12 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~28 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in The Gardens?",
+        "a": "Homes in The Gardens range from approximately $450,000 for smaller homes and attached products to around $750,000 for larger, updated properties on premium lots."
+      },
+      {
+        "q": "Is The Gardens guard-gated?",
+        "a": "No — The Gardens is not guard-gated. Some neighborhoods within the village have gated entry with key-fob or code access, but there is no staffed guard gate."
+      },
+      {
+        "q": "What ZIP code is The Gardens in?",
+        "a": "The Gardens is located primarily in ZIP codes 89135 and 89134 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "When was The Gardens built?",
+        "a": "The Gardens was developed beginning in 1999. Most homes were built between 1999 and the mid-2000s as part of the Summerlin South expansion."
+      },
+      {
+        "q": "What schools serve The Gardens?",
+        "a": "The Gardens is served by CCSD schools including Lowman Elementary (8/10), Rogich Middle (10/10), and Palo Verde High School (8/10). Private options including The Meadows School (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in The Gardens?",
+        "a": "HOA fees in The Gardens range from approximately $75 to $200 per month, including the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "What is Gardens Park?",
+        "a": "Gardens Park is a major Summerlin community park located within The Gardens village. It features approximately 15 acres of playgrounds, basketball courts, walking trails, picnic areas, open fields, and a dog park."
+      },
+      {
+        "q": "How does The Gardens compare to The Pueblo?",
+        "a": "Both are established Summerlin South villages at accessible price points. The Gardens emphasizes park-centered design with extensive green spaces. The Pueblo tends to have slightly lower entry pricing. Both offer excellent Summerlin South value."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Cliffs",
+        "href": "/summerlin-the-cliffs/",
+        "price": "From $600K",
+        "compare": "Summerlin South village with elevated position, mountain views, and move-up pricing."
+      },
+      {
+        "name": "The Pueblo",
+        "href": "/summerlin-the-pueblo/",
+        "price": "From $400K",
+        "compare": "Adjacent Summerlin South village with the most accessible pricing in the area."
+      },
+      {
+        "name": "Summerlin Centre",
+        "href": "/summerlin-centre/",
+        "price": "From $450K",
+        "compare": "Centrally located Summerlin South village with similar pricing and amenities."
+      },
+      {
+        "name": "The Paseos",
+        "href": "/summerlin-the-paseos/",
+        "price": "From $550K",
+        "compare": "Summerlin South village known for the Paseos Linear Park and trail connectivity."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated community nearby."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "The Gardens lives up to its name — the parks, the trees, the green spaces. It feels like a different world from the rest of the desert. Nevada Real Estate Group helped us find a home backing to Gardens Park, and our kids practically live out there.",
+        "name": "Josh & Rebecca L.",
+        "detail": "Bought in The Gardens, Summerlin · 2024"
+      },
+      {
+        "quote": "We chose The Gardens for the parks and stayed 16 years. When we sold, buyers loved the mature landscaping and park access. Nevada Real Estate Group marketed it perfectly and got us above asking.",
+        "name": "Dan & Susan W.",
+        "detail": "Sold in The Gardens, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Gardens Summerlin",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "summerlin-the-mesa",
+    "name": "The Mesa",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.322,
+      36.158
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$600K–$1M",
+    "established": "2018",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "300 acres",
+    "homeCount": "1,200+",
+    "guardGated": false,
+    "hoaRange": "$150–$300/mo",
+    "overview": [
+      "The Mesa is one of Summerlin South's newest villages, bringing modern new construction to one of the most desirable positions in the master plan. Launched in 2018 by the Howard Hughes Corporation, The Mesa features contemporary desert architecture, energy-efficient homes, and thoughtfully designed community spaces that reflect current design sensibilities and buyer expectations.",
+      "Homes in The Mesa range from approximately $600,000 for production homes to around $1 million for larger semi-custom homes on premium lots. Active builders include Toll Brothers, Lennar, and Taylor Morrison, offering a range of floor plans from approximately 2,000 to 4,000 square feet. The architectural standard is distinctly modern — flat and low-slope rooflines, clean stucco lines, natural stone accents, and large windows that connect indoor and outdoor living.",
+      "The Mesa's position in the western portion of Summerlin South places it close to Red Rock Canyon (approximately 10 minutes), the Summerlin trail system, and the outdoor recreation opportunities that define the western Summerlin lifestyle. Downtown Summerlin is approximately 10 minutes north, and the 215 Beltway provides efficient connections throughout the valley.",
+      "For buyers who want new-construction quality in Summerlin South with modern architecture and proximity to Red Rock Canyon, The Mesa hits a compelling price-to-value ratio. It delivers contemporary design and builder warranties at price points below the guard-gated luxury communities like The Ridges, while still commanding the premium location and mountain proximity that make western Summerlin so desirable."
+    ],
+    "highlights": [
+      {
+        "title": "Modern New Construction",
+        "body": "Homes built from 2018 to present with contemporary desert architecture, energy-efficient systems, and open floor plans. Builder warranties and current building codes throughout.",
+        "iconType": "home"
+      },
+      {
+        "title": "Desert Contemporary Design",
+        "body": "Modern architectural standards with flat rooflines, natural stone, large windows, and seamless indoor-outdoor living. A distinctly different aesthetic from Summerlin's older villages.",
+        "iconType": "building"
+      },
+      {
+        "title": "Red Rock Canyon Proximity",
+        "body": "Approximately 10 minutes to Red Rock Canyon NCA. One of the closest new-construction villages to the outdoor recreation hub of western Las Vegas.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Premium Builder Selection",
+        "body": "Active builders include Toll Brothers, Lennar, and Taylor Morrison. Design center options for personalizing finishes, flooring, and kitchen selections.",
+        "iconType": "building"
+      },
+      {
+        "title": "Energy Efficiency",
+        "body": "Modern construction with high-performance insulation, solar-ready roofing, efficient HVAC systems, and smart-home technology. Meaningfully lower utility costs.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Summerlin South Location",
+        "body": "10 minutes to Downtown Summerlin, quick 215 Beltway access, and proximate to The Ridges, Red Rock Country Club, and the premium western Summerlin corridor.",
+        "iconType": "building"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Mesa Ridge",
+        "type": "New Construction · Premium",
+        "desc": "Larger new-construction homes on premium lots with elevated views and desert contemporary architecture. Upgraded finishes and expanded outdoor living.",
+        "price": "From $800K"
+      },
+      {
+        "name": "Mesa Village",
+        "type": "New Construction · Family",
+        "desc": "The core of The Mesa with production homes in a range of floor plans. Modern design, covered patios, and community park access.",
+        "price": "From $700K"
+      },
+      {
+        "name": "Mesa Terrace",
+        "type": "New Construction · Entry",
+        "desc": "The Mesa's most accessible new-construction homes with efficient floor plans and modern finishes. An excellent entry into Summerlin South new construction.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Mesa Park",
+        "type": "New Construction · Park-Adjacent",
+        "desc": "Homes adjacent to The Mesa's community parks and green spaces. Contemporary architecture with seamless park access.",
+        "price": "From $725K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "The Mesa Community Park",
+        "address": "Within The Mesa Village, Las Vegas, NV 89135",
+        "acreage": "~8 acres",
+        "amenities": [
+          "Modern playground",
+          "Open fields",
+          "Walking paths",
+          "Shade structures",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout The Mesa",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Zel & Mary Lowman Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "3,500+",
+      "medianAge": "38",
+      "avgIncome": "$165,000+",
+      "households": "1,200+",
+      "homeownership": "85%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in The Mesa?",
+        "a": "Homes in The Mesa range from approximately $600,000 for production homes to around $1 million for larger semi-custom homes on premium lots."
+      },
+      {
+        "q": "Is The Mesa new construction?",
+        "a": "Yes — The Mesa is one of Summerlin South's newest villages, with construction beginning in 2018 and new homes still being built. Buyers can choose from new-build and recent resale options."
+      },
+      {
+        "q": "What builders are in The Mesa?",
+        "a": "Active builders in The Mesa include Toll Brothers, Lennar, and Taylor Morrison, offering diverse floor plans with design center options for personalizing finishes."
+      },
+      {
+        "q": "Is The Mesa guard-gated?",
+        "a": "No — The Mesa is not guard-gated. For guard-gated options in the same area, The Ridges and Red Rock Country Club are within minutes."
+      },
+      {
+        "q": "What ZIP code is The Mesa in?",
+        "a": "The Mesa is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "What schools serve The Mesa?",
+        "a": "The Mesa is served by CCSD schools including Lowman Elementary (8/10), Rogich Middle (10/10), and Palo Verde High School (8/10). Private options including The Meadows School (A+) and Bishop Gorman (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in The Mesa?",
+        "a": "HOA fees in The Mesa range from approximately $150 to $300 per month, including the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "How does The Mesa compare to Ridgebrook?",
+        "a": "Both are new-construction Summerlin South villages at similar price points. The Mesa tends toward contemporary flat-roof architecture, while Ridgebrook offers a mix of styles. Both deliver modern construction and builder warranties in premium Summerlin South locations."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated community. Adjacent to The Mesa at much higher price points."
+      },
+      {
+        "name": "The Cliffs",
+        "href": "/summerlin-the-cliffs/",
+        "price": "From $600K",
+        "compare": "Summerlin South village with similar pricing and mountain proximity. Slightly older construction."
+      },
+      {
+        "name": "Ridgebrook",
+        "href": "/summerlin-ridgebrook/",
+        "price": "From $600K",
+        "compare": "Another new-construction Summerlin South village at similar price points."
+      },
+      {
+        "name": "The Paseos",
+        "href": "/summerlin-the-paseos/",
+        "price": "From $550K",
+        "compare": "Nearby Summerlin South village known for linear park and trail connectivity."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community within Summerlin. Two Arnold Palmer courses."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "The Mesa was exactly what we wanted — brand new construction with a modern look, close to Red Rock, and at a price point that made sense. Nevada Real Estate Group helped us navigate the builder options and get the upgrades that mattered.",
+        "name": "Tyler & Hannah D.",
+        "detail": "Bought in The Mesa, Summerlin · 2024"
+      },
+      {
+        "quote": "We love the desert contemporary architecture in The Mesa — it's a completely different feel from the older Summerlin villages. Nevada Real Estate Group helped us find the right floor plan with mountain views from our backyard.",
+        "name": "Alex & Rachel S.",
+        "detail": "Bought in The Mesa, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Mesa Summerlin",
+    "ylopoMinPrice": 550000
+  },
+  {
+    "slug": "summerlin-the-pueblo",
+    "name": "The Pueblo",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Value",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.302,
+      36.160
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$400K–$650K",
+    "established": "2000",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "380 acres",
+    "homeCount": "2,400+",
+    "guardGated": false,
+    "hoaRange": "$75–$175/mo",
+    "overview": [
+      "The Pueblo is one of Summerlin South's most accessible villages, offering a genuine Summerlin address and full access to the master plan's amenities at price points that are among the lowest in the community. Developed beginning in 2000 by the Howard Hughes Corporation, The Pueblo was positioned as an entry point into Summerlin South living — a well-designed residential village with parks, trails, and convenient access to everything Summerlin has to offer.",
+      "Homes in The Pueblo range from approximately $400,000 for smaller single-family homes and attached products to around $650,000 for larger homes on premium lots. The architectural character reflects the turn-of-the-millennium Summerlin style — clean Mediterranean lines, stucco and tile construction, and efficient floor plans from 1,400 to 3,200 square feet. Many homes have been updated over the past two decades with modern kitchens, energy-efficient upgrades, and desert landscaping.",
+      "The village's central position in Summerlin South provides convenient access to Downtown Summerlin (approximately 10 minutes), the 215 Beltway, and the shopping and dining along West Sahara Avenue. Red Rock Canyon is approximately 12 minutes west, and the Strip is about 20 minutes via Summerlin Parkway and I-15.",
+      "The Pueblo is the right choice for buyers who prioritize the Summerlin address — the schools, the trails, the amenities, the community — without the price premium of newer or more upscale villages. It delivers honest, well-built homes in a well-maintained community at price points that represent the best entry into the Summerlin South Association."
+    ],
+    "highlights": [
+      {
+        "title": "Most Accessible Summerlin South Pricing",
+        "body": "Entry into Summerlin South from the low $400Ks. The most affordable village in the Summerlin South Association while delivering full access to the master plan's amenities and schools.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Established Neighborhood Character",
+        "body": "Over 20 years of mature landscaping, established trees, and residential continuity. The Pueblo has developed a warm, settled neighborhood character.",
+        "iconType": "park"
+      },
+      {
+        "title": "Community Parks & Trails",
+        "body": "Neighborhood parks, walking trails, and playgrounds throughout the village. Connected to Summerlin's 200+ mile trail network for outdoor recreation.",
+        "iconType": "park"
+      },
+      {
+        "title": "Strong School Access",
+        "body": "Zoned for well-regarded CCSD schools in the Summerlin South corridor. Close to The Meadows School (A+) and Bishop Gorman (A+) for private options.",
+        "iconType": "school"
+      },
+      {
+        "title": "Full Summerlin Lifestyle",
+        "body": "All the benefits of the Summerlin address — trails, parks, Downtown Summerlin, community events — at the master plan's most accessible Summerlin South pricing.",
+        "iconType": "home"
+      },
+      {
+        "title": "Central Location",
+        "body": "10 minutes to Downtown Summerlin, 12 minutes to Red Rock Canyon, 20 minutes to the Strip. The 215 Beltway provides quick access throughout the valley.",
+        "iconType": "building"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Pueblo Village",
+        "type": "Family · Established",
+        "desc": "The heart of The Pueblo with well-maintained single-family homes, neighborhood parks, and tree-lined streets.",
+        "price": "From $475K"
+      },
+      {
+        "name": "Pueblo Entry",
+        "type": "Starter · Value",
+        "desc": "The most accessible homes in The Pueblo — smaller floor plans and attached products ideal for first-time buyers and downsizers.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Pueblo Park",
+        "type": "Family · Park-Adjacent",
+        "desc": "Homes adjacent to the village's community parks and green spaces. Popular with families seeking outdoor play areas.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Pueblo Premium",
+        "type": "Premium · Updated",
+        "desc": "Larger homes on cul-de-sac and premium lots. Many feature updated interiors, pools, and expanded outdoor living areas.",
+        "price": "From $550K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Pueblo Park",
+        "address": "Within The Pueblo Village, Las Vegas, NV 89135",
+        "acreage": "~8 acres",
+        "amenities": [
+          "Playground",
+          "Walking paths",
+          "Open fields",
+          "Picnic areas",
+          "Basketball court"
+        ]
+      },
+      {
+        "name": "The Paseos Linear Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89135",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Open space",
+          "Dog-friendly areas"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout The Pueblo",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Zel & Mary Lowman Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "6,500+",
+      "medianAge": "38",
+      "avgIncome": "$105,000+",
+      "households": "2,400+",
+      "homeownership": "78%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~12 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~28 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in The Pueblo?",
+        "a": "Homes in The Pueblo range from approximately $400,000 for smaller homes and attached products to around $650,000 for larger, updated properties on premium lots."
+      },
+      {
+        "q": "Is The Pueblo guard-gated?",
+        "a": "No — The Pueblo is not guard-gated. Some neighborhoods have gated entry with key-fob or code access, but there is no staffed guard gate."
+      },
+      {
+        "q": "What ZIP code is The Pueblo in?",
+        "a": "The Pueblo is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "When was The Pueblo built?",
+        "a": "The Pueblo was developed beginning in 2000. Most homes were built between 2000 and the mid-2000s as part of the Summerlin South expansion."
+      },
+      {
+        "q": "What schools serve The Pueblo?",
+        "a": "The Pueblo is served by CCSD schools including Lowman Elementary (8/10), Rogich Middle (10/10), and Palo Verde High School (8/10). Private options including The Meadows School (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in The Pueblo?",
+        "a": "HOA fees in The Pueblo are among the most affordable in Summerlin South, ranging from approximately $75 to $175 per month."
+      },
+      {
+        "q": "Is The Pueblo a good first home in Summerlin?",
+        "a": "Yes — The Pueblo is one of the most affordable villages in Summerlin South, making it an excellent choice for first-time buyers who want the Summerlin address, schools, and lifestyle at the most accessible price point."
+      },
+      {
+        "q": "How does The Pueblo compare to The Gardens?",
+        "a": "Both are established Summerlin South villages at accessible price points. The Pueblo has slightly lower entry pricing, while The Gardens emphasizes park-centered design. Both deliver excellent value within the Summerlin South Association."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Gardens",
+        "href": "/summerlin-the-gardens/",
+        "price": "From $450K",
+        "compare": "Adjacent Summerlin South village with park-centered design at similar pricing."
+      },
+      {
+        "name": "Summerlin Centre",
+        "href": "/summerlin-centre/",
+        "price": "From $450K",
+        "compare": "Centrally located Summerlin South village with similar established character."
+      },
+      {
+        "name": "South Square",
+        "href": "/summerlin-south-square/",
+        "price": "From $400K",
+        "compare": "Summerlin South 55+ village at similar pricing. Age-restricted community."
+      },
+      {
+        "name": "The Cliffs",
+        "href": "/summerlin-the-cliffs/",
+        "price": "From $600K",
+        "compare": "Move-up Summerlin South village with mountain views at higher price points."
+      },
+      {
+        "name": "The Paseos",
+        "href": "/summerlin-the-paseos/",
+        "price": "From $550K",
+        "compare": "Summerlin South village known for the Paseos Linear Park."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "The Pueblo was our entry into Summerlin and we couldn't be happier. Great schools, parks right outside our door, and a neighborhood where the kids ride bikes until sunset. Nevada Real Estate Group made the buying process effortless.",
+        "name": "Carlos & Jennifer M.",
+        "detail": "Bought in The Pueblo, Summerlin · 2024"
+      },
+      {
+        "quote": "We bought in The Pueblo because it was the most affordable way into Summerlin South. Twenty years later, our home has more than doubled in value. Nevada Real Estate Group helped us sell at the top of the market.",
+        "name": "Tom & Lisa G.",
+        "detail": "Sold in The Pueblo, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Pueblo Summerlin",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "summerlin-ridgebrook",
+    "name": "Ridgebrook",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.315,
+      36.152
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$600K–$900K",
+    "established": "2019",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "280 acres",
+    "homeCount": "1,000+",
+    "guardGated": false,
+    "hoaRange": "$150–$300/mo",
+    "overview": [
+      "Ridgebrook is one of Summerlin South's newest villages, delivering fresh new-construction homes with modern architecture in the premium western Summerlin corridor. Launched in 2019 by the Howard Hughes Corporation, Ridgebrook was designed to offer move-up quality new construction at price points accessible to a broad range of buyers — from young professionals to growing families upgrading to more space.",
+      "Homes in Ridgebrook range from approximately $600,000 to around $900,000, with a mix of production and semi-custom homes built by national and regional builders. Floor plans typically range from 2,200 to 3,800 square feet, featuring open layouts, modern kitchens with quartz counters, covered patios for outdoor entertaining, and energy-efficient construction. The architectural character blends desert contemporary elements with transitional styling.",
+      "Ridgebrook's position in the southwestern portion of Summerlin South places it near Red Rock Canyon (approximately 10 minutes), the premium western Summerlin communities, and the trail system that connects to the broader outdoor recreation network. Downtown Summerlin is approximately 12 minutes north, and the 215 Beltway provides efficient access throughout the valley.",
+      "For buyers seeking new construction in Summerlin South without the ultra-luxury price points of nearby communities like The Ridges or The Peaks, Ridgebrook delivers a compelling combination of modern design, builder warranties, and western Summerlin location. The village is still actively under development, meaning buyers have the opportunity to purchase new-build homes and choose their finishes."
+    ],
+    "highlights": [
+      {
+        "title": "Active New Construction",
+        "body": "Ridgebrook is still actively building, giving buyers the opportunity to purchase new homes and customize finishes through builder design centers. Builder warranties on all new construction.",
+        "iconType": "home"
+      },
+      {
+        "title": "Modern Architecture",
+        "body": "Desert contemporary and transitional styling with open floor plans, modern kitchens, covered patios, and energy-efficient construction throughout.",
+        "iconType": "building"
+      },
+      {
+        "title": "Western Summerlin Location",
+        "body": "Located in the premium western Summerlin corridor near Red Rock Canyon, The Ridges, and the outdoor recreation opportunities that define this part of the valley.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Energy-Efficient Homes",
+        "body": "Modern construction with high-performance insulation, solar-ready roofing, efficient HVAC, and smart-home wiring. Lower utility costs compared to older housing stock.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Trail & Recreation Access",
+        "body": "Connected to the Summerlin trail system with access to Red Rock-area hiking and biking. Approximately 10 minutes to Red Rock Canyon NCA.",
+        "iconType": "park"
+      },
+      {
+        "title": "Move-Up Value",
+        "body": "New construction from the $600Ks in western Summerlin South — significantly below nearby guard-gated communities while sharing the same premium location.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Ridgebrook Village",
+        "type": "New Construction · Family",
+        "desc": "The core of Ridgebrook with production homes in diverse floor plans. Modern design, community parks, and trail connectivity.",
+        "price": "From $650K"
+      },
+      {
+        "name": "Ridgebrook Ridge",
+        "type": "New Construction · Premium",
+        "desc": "Premium home sites with larger floor plans, elevated positions, and upgraded builder finishes. The village's most desirable addresses.",
+        "price": "From $750K"
+      },
+      {
+        "name": "Ridgebrook Entry",
+        "type": "New Construction · Accessible",
+        "desc": "The most accessible new-construction homes in Ridgebrook with efficient floor plans and modern finishes.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Ridgebrook Park",
+        "type": "New Construction · Park-Adjacent",
+        "desc": "Homes adjacent to community green spaces and parks. Modern architecture with convenient outdoor recreation access.",
+        "price": "From $700K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Ridgebrook Community Park",
+        "address": "Within Ridgebrook Village, Las Vegas, NV 89135",
+        "acreage": "~6 acres",
+        "amenities": [
+          "Modern playground",
+          "Walking paths",
+          "Open fields",
+          "Shade structures",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout Ridgebrook",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Zel & Mary Lowman Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "3,000+",
+      "medianAge": "36",
+      "avgIncome": "$155,000+",
+      "households": "1,000+",
+      "homeownership": "86%"
+    },
+    "driveTimes": [
+      {
+        "time": "~22 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~12 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~28 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in Ridgebrook?",
+        "a": "Homes in Ridgebrook range from approximately $600,000 for production homes to around $900,000 for larger semi-custom homes on premium lots."
+      },
+      {
+        "q": "Is Ridgebrook still building new homes?",
+        "a": "Yes — Ridgebrook is an actively developing village with new construction available. Buyers can purchase from builders and customize finishes through design centers."
+      },
+      {
+        "q": "Is Ridgebrook guard-gated?",
+        "a": "No — Ridgebrook is not guard-gated. For guard-gated options nearby, The Ridges and Red Rock Country Club are within minutes."
+      },
+      {
+        "q": "What ZIP code is Ridgebrook in?",
+        "a": "Ridgebrook is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "What schools serve Ridgebrook?",
+        "a": "Ridgebrook is served by CCSD schools including Lowman Elementary (8/10), Rogich Middle (10/10), and Palo Verde High School (8/10). Private options including The Meadows School (A+) and Bishop Gorman (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in Ridgebrook?",
+        "a": "HOA fees in Ridgebrook range from approximately $150 to $300 per month, including the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "How does Ridgebrook compare to The Mesa?",
+        "a": "Both are new-construction Summerlin South villages at similar price points. Ridgebrook offers a blend of desert contemporary and transitional styles; The Mesa leans more contemporary. Both deliver modern construction in the premium western Summerlin corridor."
+      },
+      {
+        "q": "When was Ridgebrook established?",
+        "a": "Ridgebrook was launched in 2019 and is still actively under development. It is one of the newest villages in the Summerlin South Association."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Mesa",
+        "href": "/summerlin-the-mesa/",
+        "price": "From $600K",
+        "compare": "Another new-construction Summerlin South village with contemporary architecture."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated community. Nearby at much higher price points."
+      },
+      {
+        "name": "The Cliffs",
+        "href": "/summerlin-the-cliffs/",
+        "price": "From $600K",
+        "compare": "Summerlin South village with similar pricing and elevated mountain views."
+      },
+      {
+        "name": "The Peaks",
+        "href": "/summerlin-the-peaks/",
+        "price": "From $1M",
+        "compare": "Luxury new-construction village with guard-gated options at higher price points."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community within Summerlin. Two Arnold Palmer courses."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Ridgebrook gave us everything — new construction, modern design, proximity to Red Rock, and a Summerlin South address, all under $800K. Nevada Real Estate Group helped us navigate the builder options and negotiate smart upgrades.",
+        "name": "Mike & Amy B.",
+        "detail": "Bought in Ridgebrook, Summerlin · 2024"
+      },
+      {
+        "quote": "We looked at new construction all over Summerlin and Ridgebrook was the clear winner for value. The location, the floor plans, and the price made it an easy choice. Nevada Real Estate Group made the whole process smooth.",
+        "name": "Chris & Natalie W.",
+        "detail": "Bought in Ridgebrook, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Ridgebrook Summerlin",
+    "ylopoMinPrice": 550000
+  },
+  {
+    "slug": "summerlin-south-square",
+    "name": "South Square",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · 55+ · Active Adult",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.308,
+      36.155
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$400K–$750K",
+    "established": "2005",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "250 acres",
+    "homeCount": "1,400+",
+    "guardGated": false,
+    "hoaRange": "$150–$350/mo",
+    "overview": [
+      "South Square is a 55+ active adult village within the Summerlin South Association, offering age-restricted living in one of the most desirable master-planned communities in Nevada. Developed beginning in 2005 by the Howard Hughes Corporation, South Square was designed specifically for active adults who want the Summerlin lifestyle — trails, parks, shopping, dining — without the maintenance burden of a traditional large-lot home.",
+      "Homes in South Square range from approximately $400,000 for smaller single-story homes and attached products to around $750,000 for larger, updated properties with premium finishes. The village features predominantly single-story floor plans designed for aging in place, with features like wide hallways, zero-step entries, first-floor master suites, and low-maintenance desert landscaping. Home sizes typically range from 1,200 to 2,800 square feet.",
+      "South Square residents benefit from community amenities designed for the active adult lifestyle, including a clubhouse, fitness facilities, social programming, and organized activities. The village is connected to Summerlin's trail system for walking and cycling, and Downtown Summerlin is approximately 10 minutes north with 125+ shops and restaurants.",
+      "For buyers aged 55 and over who want an active adult community within a premier master plan, South Square offers a compelling alternative to Sun City Summerlin — newer construction, smaller community size, and integration into the broader Summerlin South village system. The combination of age-restricted tranquility, low-maintenance living, and full access to Summerlin's amenities makes South Square one of the most desirable 55+ communities in the Las Vegas Valley."
+    ],
+    "highlights": [
+      {
+        "title": "55+ Active Adult Community",
+        "body": "Age-restricted to residents 55 and older (with limited exceptions). Designed for active adults who want community, amenities, and low-maintenance living.",
+        "iconType": "home"
+      },
+      {
+        "title": "Single-Story Living",
+        "body": "Predominantly single-story floor plans with age-in-place features: wide hallways, zero-step entries, first-floor master suites, and accessible design throughout.",
+        "iconType": "home"
+      },
+      {
+        "title": "Community Amenities",
+        "body": "Clubhouse, fitness facilities, social programming, and organized activities designed specifically for the active adult lifestyle.",
+        "iconType": "building"
+      },
+      {
+        "title": "Low-Maintenance Living",
+        "body": "Desert landscaping, HOA-maintained common areas, and manageable home sizes reduce the maintenance burden. Focus on living, not upkeep.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Summerlin Trail Access",
+        "body": "Connected to Summerlin's 200+ mile trail network for walking, cycling, and outdoor recreation. An active lifestyle without leaving the community.",
+        "iconType": "park"
+      },
+      {
+        "title": "Accessible Pricing",
+        "body": "Entry from the low $400Ks makes South Square one of the most affordable 55+ options within a premier master-planned community in Las Vegas.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "South Square Village",
+        "type": "55+ · Single-Story",
+        "desc": "The core of South Square with single-story homes, clubhouse access, and community programming. The village's most popular addresses.",
+        "price": "From $475K"
+      },
+      {
+        "name": "South Square Entry",
+        "type": "55+ · Starter",
+        "desc": "Smaller homes and attached products at South Square's most accessible price points. Ideal for active adult buyers seeking low-maintenance Summerlin living.",
+        "price": "From $400K"
+      },
+      {
+        "name": "South Square Premium",
+        "type": "55+ · Upgraded",
+        "desc": "Larger, updated homes with premium finishes, expanded patios, and upgraded kitchens. The village's finest addresses for discerning active adults.",
+        "price": "From $600K"
+      },
+      {
+        "name": "South Square Garden Homes",
+        "type": "55+ · Low-Maintenance",
+        "desc": "Garden-style homes with minimal yards and maximum indoor living space. Perfect for buyers who want to lock and leave.",
+        "price": "From $425K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "South Square Clubhouse",
+        "address": "Within South Square Village, Las Vegas, NV 89135",
+        "acreage": "~3 acres",
+        "amenities": [
+          "Clubhouse",
+          "Fitness center",
+          "Social room",
+          "Outdoor lounge",
+          "Community pool"
+        ]
+      },
+      {
+        "name": "The Paseos Linear Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89135",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Open space",
+          "Dog-friendly areas"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points near South Square",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Zel & Mary Lowman Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "2,800+",
+      "medianAge": "65",
+      "avgIncome": "$95,000+",
+      "households": "1,400+",
+      "homeownership": "90%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~12 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~28 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in South Square?",
+        "a": "Homes in South Square range from approximately $400,000 for smaller homes and attached products to around $750,000 for larger, updated properties with premium finishes."
+      },
+      {
+        "q": "Is South Square a 55+ community?",
+        "a": "Yes — South Square is a 55+ age-restricted community. At least one resident in each home must be 55 or older, and no residents under 18 may be permanent occupants (some limited exceptions apply per federal fair housing law)."
+      },
+      {
+        "q": "Is South Square guard-gated?",
+        "a": "No — South Square is not guard-gated. Some neighborhoods have gated entry with key-fob or code access, but there is no staffed guard gate. For guard-gated 55+ living, Siena is nearby."
+      },
+      {
+        "q": "What ZIP code is South Square in?",
+        "a": "South Square is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "What amenities does South Square offer?",
+        "a": "South Square features a community clubhouse, fitness center, community pool, social programming, and organized activities. The village is also connected to Summerlin's trail system for walking and cycling."
+      },
+      {
+        "q": "What are HOA fees in South Square?",
+        "a": "HOA fees in South Square range from approximately $150 to $350 per month, covering the Summerlin master association fee, village sub-association fee, clubhouse operations, and common area maintenance."
+      },
+      {
+        "q": "How does South Square compare to Sun City Summerlin?",
+        "a": "Sun City Summerlin is a much larger 55+ community (7,700+ homes) with golf courses and extensive amenities, starting around $300K. South Square is smaller and newer, integrated into the Summerlin South Association with access to the broader Summerlin amenity ecosystem."
+      },
+      {
+        "q": "How does South Square compare to Siena?",
+        "a": "Siena is a guard-gated 55+ village with higher price points and staffed security. South Square offers similar age-restricted living at more accessible price points without guard-gated security."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "Siena",
+        "href": "/summerlin-siena/",
+        "price": "From $400K",
+        "compare": "Guard-gated 55+ village in Summerlin South with staffed security."
+      },
+      {
+        "name": "Sun City Summerlin",
+        "href": "/sun-city-summerlin/",
+        "price": "From $300K",
+        "compare": "Summerlin's largest 55+ community with golf courses and extensive amenities."
+      },
+      {
+        "name": "The Pueblo",
+        "href": "/summerlin-the-pueblo/",
+        "price": "From $400K",
+        "compare": "Adjacent Summerlin South village (not age-restricted) at similar price points."
+      },
+      {
+        "name": "Stonebridge",
+        "href": "/summerlin-stonebridge/",
+        "price": "From $550K",
+        "compare": "55+ new-construction village in Summerlin with mountain views."
+      },
+      {
+        "name": "The Gardens",
+        "href": "/summerlin-the-gardens/",
+        "price": "From $450K",
+        "compare": "Summerlin South village with park-centered design (not age-restricted)."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "South Square was the perfect next chapter. Single-story, low-maintenance, great community, and we still have the entire Summerlin lifestyle at our doorstep. Nevada Real Estate Group helped us find exactly the right floor plan.",
+        "name": "Robert & Diane K.",
+        "detail": "Bought in South Square, Summerlin · 2024"
+      },
+      {
+        "quote": "After 30 years in a big family home, we downsized to South Square and love it. The community events, the trails, and no yard work. Nevada Real Estate Group handled both our sale and purchase seamlessly.",
+        "name": "Jim & Patty N.",
+        "detail": "Bought in South Square, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "South Square Summerlin",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "summerlin-centre",
+    "name": "Summerlin Centre",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Central · Convenient",
+    "zipCodes": [
+      "89135",
+      "89144"
+    ],
+    "center": [
+      -115.290,
+      36.165
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$450K–$800K",
+    "established": "2001",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "400 acres",
+    "homeCount": "2,500+",
+    "guardGated": false,
+    "hoaRange": "$100–$225/mo",
+    "overview": [
+      "Summerlin Centre is a well-positioned village at the geographic heart of the Summerlin South Association, offering convenient access to the community's commercial, recreational, and educational amenities. Developed beginning in 2001 by the Howard Hughes Corporation, Summerlin Centre was designed around the concept of central convenience — a residential village where everything Summerlin has to offer is within a short drive or walk.",
+      "Homes in Summerlin Centre range from approximately $450,000 for smaller single-family homes to around $800,000 for larger, updated properties on premium lots. The architectural character reflects early-2000s Summerlin design with Mediterranean and transitional styling, stucco construction, and tile roofs. Home sizes typically range from 1,600 to 3,800 square feet, providing options for families of all sizes.",
+      "The village's central location is its defining advantage. Downtown Summerlin is approximately 8 minutes north, the 215 Beltway is minutes away for efficient valley-wide commuting, and the commercial corridors along West Sahara and West Charleston provide everyday shopping and services within walking distance. Multiple parks and the Summerlin trail system are accessible from within the village.",
+      "Summerlin Centre delivers the core Summerlin proposition at moderate price points: strong schools, community amenities, well-maintained neighborhoods, and the central location that makes the most of the Summerlin lifestyle. For buyers who want to be in the middle of everything Summerlin offers without paying a premium for mountain views or guard-gated security, Summerlin Centre is one of the most practical and well-located villages in the master plan."
+    ],
+    "highlights": [
+      {
+        "title": "Central Summerlin Location",
+        "body": "Positioned at the geographic heart of Summerlin South with everything within easy reach — Downtown Summerlin (8 min), 215 Beltway, schools, parks, and commercial corridors.",
+        "iconType": "building"
+      },
+      {
+        "title": "Walkable Convenience",
+        "body": "Close to shopping, dining, and services along West Sahara and West Charleston. One of the most convenient villages for daily errands and amenity access.",
+        "iconType": "building"
+      },
+      {
+        "title": "Moderate Pricing",
+        "body": "Entry from the mid-$400Ks with homes up to $800K. Solid Summerlin value at mid-range price points that work for families, professionals, and investors.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Established Community",
+        "body": "Over 20 years of residential continuity with mature landscaping, established neighborhoods, and a settled community character.",
+        "iconType": "park"
+      },
+      {
+        "title": "Strong School Zoning",
+        "body": "Zoned for well-regarded CCSD schools in the Summerlin South corridor. Close to The Meadows School (A+) and Bishop Gorman (A+) for private options.",
+        "iconType": "school"
+      },
+      {
+        "title": "Trail & Park Access",
+        "body": "Connected to Summerlin's 200+ mile trail network. Multiple parks and green spaces within the village provide outdoor recreation opportunities.",
+        "iconType": "park"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Centre Village",
+        "type": "Family · Established",
+        "desc": "The core of Summerlin Centre with well-maintained single-family homes, mature landscaping, and neighborhood parks.",
+        "price": "From $525K"
+      },
+      {
+        "name": "Centre Park",
+        "type": "Family · Park-Adjacent",
+        "desc": "Homes near the village's parks and green spaces. Popular with families seeking outdoor amenities and trail access.",
+        "price": "From $550K"
+      },
+      {
+        "name": "Centre Entry",
+        "type": "Starter · Accessible",
+        "desc": "Smaller homes and attached products at Summerlin Centre's most accessible price points. Ideal for first-time buyers.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Centre Premium",
+        "type": "Premium · Updated",
+        "desc": "Larger homes on premium lots with updated interiors, pools, and spacious outdoor living areas.",
+        "price": "From $650K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Summerlin Centre Park",
+        "address": "Within Summerlin Centre Village, Las Vegas, NV 89135",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Playground",
+          "Walking paths",
+          "Open fields",
+          "Picnic areas",
+          "Basketball courts"
+        ]
+      },
+      {
+        "name": "The Paseos Linear Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89135",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Open space",
+          "Dog-friendly areas"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout Summerlin Centre",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Zel & Mary Lowman Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "6,800+",
+      "medianAge": "41",
+      "avgIncome": "$130,000+",
+      "households": "2,500+",
+      "homeownership": "82%"
+    },
+    "driveTimes": [
+      {
+        "time": "~18 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~12 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~8 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in Summerlin Centre?",
+        "a": "Homes in Summerlin Centre range from approximately $450,000 for smaller homes to around $800,000 for larger, updated properties on premium lots."
+      },
+      {
+        "q": "Is Summerlin Centre guard-gated?",
+        "a": "No — Summerlin Centre is not guard-gated. Some neighborhoods have gated entry with key-fob or code access, but there is no staffed guard gate."
+      },
+      {
+        "q": "What ZIP code is Summerlin Centre in?",
+        "a": "Summerlin Centre is located primarily in ZIP codes 89135 and 89144 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "When was Summerlin Centre built?",
+        "a": "Summerlin Centre was developed beginning in 2001. Most homes were built between 2001 and the mid-2000s as part of the Summerlin South expansion."
+      },
+      {
+        "q": "What schools serve Summerlin Centre?",
+        "a": "Summerlin Centre is served by CCSD schools including Lowman Elementary (8/10), Rogich Middle (10/10), and Palo Verde High School (8/10). Private options including The Meadows School (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in Summerlin Centre?",
+        "a": "HOA fees in Summerlin Centre range from approximately $100 to $225 per month, including the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "What makes Summerlin Centre unique?",
+        "a": "Summerlin Centre's defining advantage is its central location — positioned at the heart of Summerlin South with the shortest distances to Downtown Summerlin, the 215 Beltway, and multiple commercial corridors. Everything is close."
+      },
+      {
+        "q": "How does Summerlin Centre compare to The Gardens?",
+        "a": "Both are established Summerlin South villages at similar price points. The Gardens emphasizes parks and green spaces. Summerlin Centre emphasizes central location and commercial convenience. Both are excellent mid-range Summerlin South values."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "The Gardens",
+        "href": "/summerlin-the-gardens/",
+        "price": "From $450K",
+        "compare": "Adjacent Summerlin South village with park-centered design."
+      },
+      {
+        "name": "The Pueblo",
+        "href": "/summerlin-the-pueblo/",
+        "price": "From $400K",
+        "compare": "Summerlin South village with the most accessible entry pricing."
+      },
+      {
+        "name": "The Paseos",
+        "href": "/summerlin-the-paseos/",
+        "price": "From $550K",
+        "compare": "Summerlin South village known for the Paseos Linear Park."
+      },
+      {
+        "name": "The Cliffs",
+        "href": "/summerlin-the-cliffs/",
+        "price": "From $600K",
+        "compare": "Move-up Summerlin South village with mountain views."
+      },
+      {
+        "name": "South Square",
+        "href": "/summerlin-south-square/",
+        "price": "From $400K",
+        "compare": "Summerlin South 55+ active adult village at accessible pricing."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Summerlin Centre puts you in the middle of everything. We walk to shopping, the kids bike to school, and Downtown Summerlin is eight minutes away. Nevada Real Estate Group found us a beautifully updated home that checked every box.",
+        "name": "Jeff & Christine A.",
+        "detail": "Bought in Summerlin Centre, Summerlin · 2024"
+      },
+      {
+        "quote": "The central location is what sold us on Summerlin Centre, and it's what sold our home 15 years later. Nevada Real Estate Group understood the value proposition and priced it perfectly.",
+        "name": "Mark & Karen P.",
+        "detail": "Sold in Summerlin Centre, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Summerlin Centre",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "summerlin-kestrel",
+    "name": "Kestrel",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction",
+    "zipCodes": [
+      "89138"
+    ],
+    "center": [
+      -115.335,
+      36.195
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$500K–$800K",
+    "established": "2020",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "320 acres",
+    "homeCount": "1,200+",
+    "guardGated": false,
+    "hoaRange": "$150–$300/mo",
+    "overview": [
+      "Kestrel is one of the newest villages in the Summerlin West Association, representing the latest generation of Summerlin living with modern architecture, energy-efficient construction, and thoughtfully designed community spaces. Launched in 2020 by the Howard Hughes Corporation, Kestrel is part of Summerlin's active western expansion, bringing new residential neighborhoods to the foothills of the Spring Mountains.",
+      "Homes in Kestrel range from approximately $500,000 for production homes to around $800,000 for larger floor plans on premium lots. Active builders include Toll Brothers, Lennar, Taylor Morrison, and Woodside Homes, offering a range of contemporary floor plans from approximately 1,800 to 3,600 square feet. The architectural standard is distinctly modern — clean lines, mixed materials, flat and low-slope rooflines, and large windows that embrace the desert landscape.",
+      "Kestrel's position in Summerlin West places it among the closest villages to Red Rock Canyon (approximately 8 minutes) and the outdoor recreation opportunities of the western Las Vegas Valley. The village sits at a slightly higher elevation than most of Summerlin, providing many homes with views of the Spring Mountains, Red Rock Canyon, and the Las Vegas Valley below. Downtown Summerlin is approximately 15 minutes east.",
+      "For buyers who want new construction in the newest section of Summerlin with proximity to Red Rock Canyon and contemporary desert architecture, Kestrel is one of the most compelling options. The village is still actively developing, offering buyers the opportunity to purchase from builders, customize finishes, and be among the first residents in an emerging Summerlin West neighborhood."
+    ],
+    "highlights": [
+      {
+        "title": "Summerlin's Newest Construction",
+        "body": "Actively building with new homes available from multiple national builders. Buyers can customize finishes through builder design centers and choose from the latest floor plans.",
+        "iconType": "home"
+      },
+      {
+        "title": "Closest to Red Rock Canyon",
+        "body": "One of the closest Summerlin villages to Red Rock Canyon NCA — approximately 8 minutes by car. Unparalleled access to hiking, cycling, and desert recreation.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Desert Contemporary Architecture",
+        "body": "Modern architectural standards with clean lines, mixed materials, and large windows. A distinctly different feel from Summerlin's earlier Mediterranean villages.",
+        "iconType": "building"
+      },
+      {
+        "title": "Mountain & Valley Views",
+        "body": "Elevated Summerlin West position provides many homes with views of the Spring Mountains, Red Rock Canyon, and the Las Vegas Valley.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Energy-Efficient Construction",
+        "body": "Solar-ready roofing, high-performance insulation, efficient HVAC, and smart-home technology. Built to current energy codes for lower utility costs.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Summerlin West Lifestyle",
+        "body": "Part of the dynamic Summerlin West Association with new parks, trails, and amenities being developed alongside the residential neighborhoods.",
+        "iconType": "park"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Kestrel Ridge",
+        "type": "New Construction · Premium",
+        "desc": "Premium home sites with larger floor plans, elevated positions, and mountain views. Upgraded builder options and expanded outdoor living areas.",
+        "price": "From $650K"
+      },
+      {
+        "name": "Kestrel Village",
+        "type": "New Construction · Family",
+        "desc": "The core of Kestrel with production homes in diverse floor plans. Modern design, community parks, and trail access.",
+        "price": "From $575K"
+      },
+      {
+        "name": "Kestrel Terrace",
+        "type": "New Construction · Entry",
+        "desc": "The most accessible homes in Kestrel with efficient floor plans and modern finishes. An excellent entry into Summerlin West new construction.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Kestrel Views",
+        "type": "New Construction · Views",
+        "desc": "Homes positioned for optimal mountain and valley views. Contemporary architecture with large windows to frame the desert landscape.",
+        "price": "From $700K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Kestrel Community Park",
+        "address": "Within Kestrel Village, Las Vegas, NV 89138",
+        "acreage": "~8 acres",
+        "amenities": [
+          "Modern playground",
+          "Open fields",
+          "Walking paths",
+          "Shade structures",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout Kestrel",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Lorna J. Kesterson Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Arbor View High School",
+          "9–12",
+          "7/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "3,500+",
+      "medianAge": "35",
+      "avgIncome": "$145,000+",
+      "households": "1,200+",
+      "homeownership": "84%"
+    },
+    "driveTimes": [
+      {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~8 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Lake Mead Blvd"
+      },
+      {
+        "time": "~35 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in Kestrel?",
+        "a": "Homes in Kestrel range from approximately $500,000 for production homes to around $800,000 for larger floor plans on premium lots."
+      },
+      {
+        "q": "Is Kestrel new construction?",
+        "a": "Yes — Kestrel is one of the newest villages in the Summerlin West Association, actively building since 2020. New homes are available from multiple national builders."
+      },
+      {
+        "q": "What builders are in Kestrel?",
+        "a": "Active builders in Kestrel include Toll Brothers, Lennar, Taylor Morrison, and Woodside Homes, each offering multiple floor plans with design center customization."
+      },
+      {
+        "q": "Is Kestrel guard-gated?",
+        "a": "No — Kestrel is not guard-gated. For guard-gated options in Summerlin West, Grand Park is nearby with higher price points."
+      },
+      {
+        "q": "What ZIP code is Kestrel in?",
+        "a": "Kestrel is located in ZIP code 89138 in the Summerlin West area of Las Vegas."
+      },
+      {
+        "q": "How close is Kestrel to Red Rock Canyon?",
+        "a": "Kestrel is one of the closest Summerlin villages to Red Rock Canyon — approximately 8 minutes by car. The village's western position provides direct access to the outdoor recreation hub of the western Las Vegas Valley."
+      },
+      {
+        "q": "What are HOA fees in Kestrel?",
+        "a": "HOA fees in Kestrel range from approximately $150 to $300 per month, including the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "How does Kestrel compare to Kestrel Commons?",
+        "a": "Both are new-construction Summerlin West villages. Kestrel focuses on single-family homes from the $500Ks. Kestrel Commons offers a broader product mix with some townhome and attached options at slightly lower and higher price points."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "Kestrel Commons",
+        "href": "/summerlin-kestrel-commons/",
+        "price": "From $450K",
+        "compare": "Adjacent Summerlin West village with a broader product mix and new construction."
+      },
+      {
+        "name": "Redpoint",
+        "href": "/summerlin-redpoint/",
+        "price": "From $650K",
+        "compare": "Summerlin West village with higher-end new construction and premium positioning."
+      },
+      {
+        "name": "Grand Park",
+        "href": "/summerlin-grand-park/",
+        "price": "From $400K",
+        "compare": "Summerlin West village with guard-gated options and the broadest price range in the area."
+      },
+      {
+        "name": "La Madre Peaks",
+        "href": "/summerlin-la-madre-peaks/",
+        "price": "From $800K",
+        "compare": "Luxury new-construction village in Summerlin West at higher price points."
+      },
+      {
+        "name": "Discovery",
+        "href": "/summerlin-discovery/",
+        "price": "From $450K",
+        "compare": "Summerlin North new-construction village at similar price points."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Kestrel was exactly right — brand new construction, modern design, and Red Rock Canyon practically in our backyard. Nevada Real Estate Group helped us compare every builder and negotiate the right upgrades.",
+        "name": "Derek & Megan V.",
+        "detail": "Bought in Kestrel, Summerlin · 2024"
+      },
+      {
+        "quote": "We moved to Kestrel from California and the value is incredible. New construction, mountain views, and a Summerlin address for under $700K. Nevada Real Estate Group made the relocation seamless.",
+        "name": "Peter & Amanda C.",
+        "detail": "Bought in Kestrel, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Kestrel Summerlin",
+    "ylopoMinPrice": 450000
+  },
+  {
+    "slug": "summerlin-kestrel-commons",
+    "name": "Kestrel Commons",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction · Mixed",
+    "zipCodes": [
+      "89138"
+    ],
+    "center": [
+      -115.330,
+      36.190
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$450K–$900K",
+    "established": "2021",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "350 acres",
+    "homeCount": "1,500+",
+    "guardGated": false,
+    "hoaRange": "$150–$325/mo",
+    "overview": [
+      "Kestrel Commons is one of the newest and most diverse villages in the Summerlin West Association, offering a broad product mix that ranges from modern townhomes to larger single-family homes. Launched in 2021 by the Howard Hughes Corporation, Kestrel Commons was designed to serve the full spectrum of Summerlin West buyers — from first-time buyers and young professionals to growing families seeking more space.",
+      "Homes in Kestrel Commons range from approximately $450,000 for townhomes and smaller attached products to around $900,000 for larger single-family homes on premium lots. The village features multiple builders offering a variety of floor plans, from efficient 1,400-square-foot townhomes to spacious 3,800-square-foot single-family homes. The architectural character is modern and cohesive — desert contemporary styling with clean lines, mixed materials, and covered outdoor living spaces.",
+      "Kestrel Commons benefits from its position in the heart of the Summerlin West expansion area. Red Rock Canyon is approximately 10 minutes west, and the village is connected to the growing network of parks, trails, and community spaces being developed throughout Summerlin West. Downtown Summerlin is approximately 15 minutes east via West Lake Mead Boulevard or Summerlin Parkway.",
+      "The village's strength is its diversity. Kestrel Commons is one of the few Summerlin West villages where a first-time buyer can enter in the $450Ks and a move-up buyer can find a 3,500+ square-foot home under $900K — all within the same community. For buyers who want the newest construction in Summerlin with flexibility in product type and price point, Kestrel Commons delivers the broadest range of options in Summerlin West."
+    ],
+    "highlights": [
+      {
+        "title": "Diverse Product Mix",
+        "body": "From townhomes starting in the $450Ks to single-family homes approaching $900K. One of the broadest product ranges in Summerlin West, serving first-time buyers through move-up families.",
+        "iconType": "home"
+      },
+      {
+        "title": "Active New Construction",
+        "body": "Actively building with multiple national builders offering diverse floor plans. Buyers can customize finishes and choose from the latest designs.",
+        "iconType": "building"
+      },
+      {
+        "title": "Modern Desert Architecture",
+        "body": "Cohesive desert contemporary styling throughout — clean lines, mixed materials, covered patios, and modern kitchens with quartz counters and contemporary finishes.",
+        "iconType": "building"
+      },
+      {
+        "title": "Red Rock Canyon Access",
+        "body": "Approximately 10 minutes to Red Rock Canyon NCA. Part of the western Summerlin lifestyle with direct access to trails, hiking, and desert recreation.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Growing Community Amenities",
+        "body": "New parks, trails, and community spaces being developed throughout Summerlin West alongside the residential neighborhoods.",
+        "iconType": "park"
+      },
+      {
+        "title": "Entry-Level to Move-Up",
+        "body": "The rare Summerlin West village where first-time buyers and move-up families can both find new-construction options within the same community.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Kestrel Commons Townhomes",
+        "type": "New Construction · Attached",
+        "desc": "Modern townhomes with efficient floor plans and contemporary finishes. The most accessible entry into Summerlin West new construction.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Kestrel Commons Village",
+        "type": "New Construction · Family",
+        "desc": "Single-family production homes in a range of floor plans. Modern design, covered patios, and community park access.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Kestrel Commons Ridge",
+        "type": "New Construction · Premium",
+        "desc": "Larger single-family homes on premium lots with upgraded finishes, expanded outdoor living, and mountain views.",
+        "price": "From $750K"
+      },
+      {
+        "name": "Kestrel Commons Park",
+        "type": "New Construction · Park-Adjacent",
+        "desc": "Homes adjacent to the village's community parks and green spaces. Contemporary design with convenient outdoor recreation access.",
+        "price": "From $575K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Kestrel Commons Park",
+        "address": "Within Kestrel Commons, Las Vegas, NV 89138",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Modern playground",
+          "Open fields",
+          "Walking paths",
+          "Shade structures",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout Kestrel Commons",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Lorna J. Kesterson Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Arbor View High School",
+          "9–12",
+          "7/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "4,000+",
+      "medianAge": "34",
+      "avgIncome": "$135,000+",
+      "households": "1,500+",
+      "homeownership": "78%"
+    },
+    "driveTimes": [
+      {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Lake Mead Blvd"
+      },
+      {
+        "time": "~35 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in Kestrel Commons?",
+        "a": "Homes in Kestrel Commons range from approximately $450,000 for townhomes and attached products to around $900,000 for larger single-family homes on premium lots."
+      },
+      {
+        "q": "Does Kestrel Commons have townhomes?",
+        "a": "Yes — Kestrel Commons offers modern townhomes starting in the $450Ks alongside single-family homes, making it one of the most diverse product offerings in Summerlin West."
+      },
+      {
+        "q": "Is Kestrel Commons guard-gated?",
+        "a": "No — Kestrel Commons is not guard-gated. For guard-gated options in Summerlin West, Grand Park is nearby."
+      },
+      {
+        "q": "What ZIP code is Kestrel Commons in?",
+        "a": "Kestrel Commons is located in ZIP code 89138 in the Summerlin West area of Las Vegas."
+      },
+      {
+        "q": "What schools serve Kestrel Commons?",
+        "a": "Kestrel Commons is served by CCSD schools including Kesterson Elementary (8/10), Rogich Middle (10/10), and Arbor View High School (7/10). Private options including The Meadows School (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in Kestrel Commons?",
+        "a": "HOA fees in Kestrel Commons range from approximately $150 to $325 per month, including the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "How does Kestrel Commons compare to Kestrel?",
+        "a": "Both are new-construction Summerlin West villages. Kestrel focuses on single-family homes from $500K–$800K. Kestrel Commons offers a broader mix — townhomes from $450K and single-family homes up to $900K — providing more entry-level and move-up options."
+      },
+      {
+        "q": "Is Kestrel Commons still building?",
+        "a": "Yes — Kestrel Commons is an actively developing village with new construction available from multiple builders. Buyers can purchase new homes and customize finishes."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "Kestrel",
+        "href": "/summerlin-kestrel/",
+        "price": "From $500K",
+        "compare": "Adjacent Summerlin West village focusing on single-family new construction."
+      },
+      {
+        "name": "Redpoint",
+        "href": "/summerlin-redpoint/",
+        "price": "From $650K",
+        "compare": "Premium Summerlin West village with higher-end new construction."
+      },
+      {
+        "name": "Grand Park",
+        "href": "/summerlin-grand-park/",
+        "price": "From $400K",
+        "compare": "Summerlin West village with guard-gated options and a wide price range."
+      },
+      {
+        "name": "La Madre Peaks",
+        "href": "/summerlin-la-madre-peaks/",
+        "price": "From $800K",
+        "compare": "Luxury Summerlin West village with premium new construction."
+      },
+      {
+        "name": "Discovery",
+        "href": "/summerlin-discovery/",
+        "price": "From $450K",
+        "compare": "Summerlin North new-construction village at similar entry-level pricing."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Kestrel Commons had exactly what we needed — a modern townhome in Summerlin West at a price that worked for our budget. Nevada Real Estate Group walked us through every option and helped us get the best upgrades for the money.",
+        "name": "Sarah & David T.",
+        "detail": "Bought in Kestrel Commons, Summerlin · 2024"
+      },
+      {
+        "quote": "We started in a Kestrel Commons townhome and loved the village so much that we upgraded to a single-family home in the same community. Nevada Real Estate Group handled both transactions and made upgrading easy.",
+        "name": "Justin & Lauren H.",
+        "detail": "Bought in Kestrel Commons, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Kestrel Commons Summerlin",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "summerlin-redpoint",
+    "name": "Redpoint",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction · Premium",
+    "zipCodes": [
+      "89138"
+    ],
+    "center": [
+      -115.340,
+      36.185
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$650K–$2M+",
+    "established": "2020",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "400 acres",
+    "homeCount": "1,400+",
+    "guardGated": false,
+    "hoaRange": "$175–$400/mo",
+    "overview": [
+      "Redpoint is one of the premier new-construction villages in the Summerlin West Association, positioned along the western edge of the master plan where the valley floor meets the foothills of the Spring Mountains. Launched in 2020 by the Howard Hughes Corporation, Redpoint was conceived as a premium village — offering larger homes, more refined architecture, and a location that places residents at the doorstep of Red Rock Canyon and the outdoor lifestyle that defines western Las Vegas.",
+      "Homes in Redpoint range from approximately $650,000 for production homes to over $2 million for semi-custom and custom homes on premium lots with mountain views. The village attracts a caliber of builders that matches its premium positioning — Toll Brothers, Taylor Morrison, and other builders known for luxury-leaning new construction. Floor plans range from approximately 2,200 to 5,000+ square feet, with architectural standards that emphasize desert contemporary design: natural stone, metal accents, expansive glass, and indoor-outdoor living.",
+      "Redpoint's western position makes it one of the closest Summerlin villages to Red Rock Canyon — approximately 7 minutes by car. Many homes enjoy direct views of the canyon's sandstone formations and the Spring Mountains beyond. The village is elevated compared to the valley floor, enhancing both views and the sense of living at the edge of the desert wilderness. Downtown Summerlin is approximately 15 minutes east.",
+      "For buyers seeking premium new construction in the most desirable position in Summerlin West — mountain views, Red Rock proximity, contemporary architecture — Redpoint delivers at price points that remain accessible compared to the ultra-luxury guard-gated communities. It represents the highest-quality non-guard-gated new construction available in Summerlin, with a location and lifestyle that rival communities at twice the price."
+    ],
+    "highlights": [
+      {
+        "title": "Premium Western Location",
+        "body": "Positioned at the western edge of Summerlin where the valley meets the Spring Mountains. Approximately 7 minutes to Red Rock Canyon — one of the closest communities in Las Vegas.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Mountain & Canyon Views",
+        "body": "Many homes enjoy direct views of Red Rock Canyon's sandstone formations and the Spring Mountains. Elevated position enhances views across the Las Vegas Valley.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Premium New Construction",
+        "body": "Larger floor plans and higher-quality construction compared to standard Summerlin villages. Semi-custom and custom options available up to 5,000+ square feet.",
+        "iconType": "home"
+      },
+      {
+        "title": "Desert Contemporary Architecture",
+        "body": "Premium architectural standards — natural stone, metal accents, expansive glass, and seamless indoor-outdoor living. A distinctly elevated aesthetic.",
+        "iconType": "building"
+      },
+      {
+        "title": "Premium Builder Selection",
+        "body": "Builders include Toll Brothers, Taylor Morrison, and others known for luxury-leaning production and semi-custom homes. Design center customization available.",
+        "iconType": "building"
+      },
+      {
+        "title": "Outdoor Lifestyle Hub",
+        "body": "Red Rock Canyon, the Summerlin trail system, and the outdoor recreation network of western Las Vegas are essentially at the doorstep. A true outdoor lifestyle community.",
+        "iconType": "park"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Redpoint Summit",
+        "type": "New Construction · Premium Views",
+        "desc": "The most elevated home sites in Redpoint with panoramic views of Red Rock Canyon and the Las Vegas Valley. Premium floor plans and upgraded finishes.",
+        "price": "From $1.2M"
+      },
+      {
+        "name": "Redpoint Ridge",
+        "type": "New Construction · Semi-Custom",
+        "desc": "Larger semi-custom homes with enhanced architectural standards, expanded lots, and mountain view orientations.",
+        "price": "From $900K"
+      },
+      {
+        "name": "Redpoint Village",
+        "type": "New Construction · Family",
+        "desc": "The core of Redpoint with premium production homes in a range of contemporary floor plans. Modern design and community amenities.",
+        "price": "From $750K"
+      },
+      {
+        "name": "Redpoint Entry",
+        "type": "New Construction · Accessible",
+        "desc": "Redpoint's most accessible homes — still premium new construction with desert contemporary architecture at the village's entry price points.",
+        "price": "From $650K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Redpoint Community Park",
+        "address": "Within Redpoint Village, Las Vegas, NV 89138",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Modern playground",
+          "Open fields",
+          "Walking paths",
+          "Shade structures",
+          "Picnic areas",
+          "Fitness stations"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Access points throughout Redpoint",
+        "acreage": "Connected network",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert landscape",
+          "Connects to Red Rock trails",
+          "Dog-friendly"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Lorna J. Kesterson Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Arbor View High School",
+          "9–12",
+          "7/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "4,000+",
+      "medianAge": "38",
+      "avgIncome": "$180,000+",
+      "households": "1,400+",
+      "homeownership": "87%"
+    },
+    "driveTimes": [
+      {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~7 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Lake Mead Blvd"
+      },
+      {
+        "time": "~35 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range in Redpoint?",
+        "a": "Homes in Redpoint range from approximately $650,000 for production homes to over $2 million for larger semi-custom and custom homes on premium lots with mountain views."
+      },
+      {
+        "q": "Is Redpoint new construction?",
+        "a": "Yes — Redpoint is actively building with new homes available from premium national builders. Construction began in 2020 and the village continues to expand."
+      },
+      {
+        "q": "Is Redpoint guard-gated?",
+        "a": "No — Redpoint is not guard-gated. It delivers premium new construction and mountain views without the guard-gate premium. For guard-gated options nearby, Grand Park is within the Summerlin West Association."
+      },
+      {
+        "q": "What ZIP code is Redpoint in?",
+        "a": "Redpoint is located in ZIP code 89138 in the Summerlin West area of Las Vegas."
+      },
+      {
+        "q": "How close is Redpoint to Red Rock Canyon?",
+        "a": "Redpoint is approximately 7 minutes from Red Rock Canyon NCA — one of the closest residential communities to Red Rock in all of Las Vegas. Many homes enjoy direct views of the canyon."
+      },
+      {
+        "q": "What schools serve Redpoint?",
+        "a": "Redpoint is served by CCSD schools including Kesterson Elementary (8/10), Rogich Middle (10/10), and Arbor View High School (7/10). Private options including The Meadows School (A+) and Bishop Gorman (A+) are nearby."
+      },
+      {
+        "q": "What are HOA fees in Redpoint?",
+        "a": "HOA fees in Redpoint range from approximately $175 to $400 per month, including the Summerlin master association fee plus the village sub-association fee."
+      },
+      {
+        "q": "How does Redpoint compare to La Madre Peaks?",
+        "a": "Both are premium Summerlin West villages. La Madre Peaks offers luxury and ultra-luxury homes from $800K to $5M+. Redpoint offers premium new construction from $650K to $2M+. Redpoint provides exceptional value at the premium-but-not-ultra-luxury tier."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages."
+      },
+      {
+        "name": "La Madre Peaks",
+        "href": "/summerlin-la-madre-peaks/",
+        "price": "From $800K",
+        "compare": "Luxury Summerlin West village at higher price points with mountain-adjacent positioning."
+      },
+      {
+        "name": "Grand Park",
+        "href": "/summerlin-grand-park/",
+        "price": "From $400K",
+        "compare": "Summerlin West village with guard-gated options and the broadest price range."
+      },
+      {
+        "name": "Kestrel",
+        "href": "/summerlin-kestrel/",
+        "price": "From $500K",
+        "compare": "Adjacent Summerlin West village with more accessible new-construction pricing."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin South ultra-luxury guard-gated community with similar Red Rock proximity."
+      },
+      {
+        "name": "Kestrel Commons",
+        "href": "/summerlin-kestrel-commons/",
+        "price": "From $450K",
+        "compare": "Summerlin West village with townhomes and single-family homes at lower entry pricing."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Redpoint gave us everything — new construction, mountain views, contemporary design, and Red Rock Canyon seven minutes away. Nevada Real Estate Group helped us secure a premium lot that we would have missed without their market knowledge.",
+        "name": "Scott & Vanessa R.",
+        "detail": "Bought in Redpoint, Summerlin · 2024"
+      },
+      {
+        "quote": "We looked at guard-gated communities but Redpoint's views and quality rivaled homes at twice the price. Nevada Real Estate Group showed us that the best value in western Summerlin isn't always behind a gate.",
+        "name": "Brian & Kathleen F.",
+        "detail": "Bought in Redpoint, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Redpoint Summerlin",
+    "ylopoMinPrice": 600000
+  }
+]

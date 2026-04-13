@@ -1,0 +1,4447 @@
+[
+  {
+    "slug": "summerlin-redpoint-square",
+    "name": "Redpoint Square",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction",
+    "zipCodes": [
+      "89166"
+    ],
+    "center": [
+      -115.346,
+      36.218
+    ],
+    "heroEyebrow": "Summerlin West, Las Vegas",
+    "priceRange": "$450K–$1.5M+",
+    "established": "2021",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "~400 acres",
+    "homeCount": "1,500+ at buildout",
+    "guardGated": false,
+    "hoaRange": "$150–$350/mo",
+    "overview": [
+      "Redpoint Square is one of the newest villages in Summerlin West, representing the next generation of master-planned living along the western edge of the Las Vegas Valley. Developed by the Howard Hughes Corporation, Redpoint Square offers a curated mix of production homes from nationally recognized builders, with pricing that spans from attainable new construction in the mid-$400s to premium semi-custom homes exceeding $1.5 million.",
+      "The village is anchored by a central park and gathering area that reflects Summerlin's commitment to connected, walkable neighborhoods. Extensive trail networks link Redpoint Square to the broader Summerlin trail system, providing residents with direct access to miles of jogging, cycling, and walking paths. The village sits at a slightly higher elevation than older Summerlin neighborhoods, offering improved mountain views toward the Spring Mountains and Red Rock Canyon.",
+      "Builders in Redpoint Square include Toll Brothers, Taylor Morrison, Woodside Homes, Shea Homes, and Tri Pointe Homes, offering floor plans ranging from approximately 1,800 to 4,500+ square feet. The architectural standards maintain Summerlin's desert-modern aesthetic with contemporary elevations, courtyards, and energy-efficient construction that meets current Nevada building codes.",
+      "Redpoint Square's location in Summerlin West provides convenient access to the 215 Beltway, Downtown Summerlin's 125+ shops and restaurants, and the upcoming commercial development planned for the western corridor. New schools, parks, and retail are being built alongside the residential neighborhoods, creating a fully integrated community from day one."
+    ],
+    "highlights": [
+      {
+        "title": "Brand-New Construction",
+        "body": "Every home in Redpoint Square is new construction from nationally recognized builders. Modern floor plans, energy-efficient systems, and current building codes throughout.",
+        "iconType": "home"
+      },
+      {
+        "title": "Central Park & Trails",
+        "body": "A landscaped central park anchors the village, with trail connections to the broader Summerlin trail system and access to Red Rock Canyon trailheads.",
+        "iconType": "park"
+      },
+      {
+        "title": "Mountain Views",
+        "body": "Elevated positioning in Summerlin West provides views of the Spring Mountains and Red Rock Canyon from many homesites and community trails.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Premier Builders",
+        "body": "Toll Brothers, Taylor Morrison, Woodside Homes, Shea Homes, and Tri Pointe Homes offer a range of floor plans from 1,800 to 4,500+ square feet.",
+        "iconType": "building"
+      },
+      {
+        "title": "Downtown Summerlin Access",
+        "body": "Minutes from Downtown Summerlin's 125+ shops, restaurants, and entertainment venues including City National Arena and Red Rock Resort.",
+        "iconType": "building"
+      },
+      {
+        "title": "Growth Corridor Value",
+        "body": "Summerlin West is the fastest-growing section of the master plan. Early buyers in Redpoint Square benefit from new-community pricing in a proven appreciation corridor.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Avenida",
+        "type": "New Construction · Single-Family",
+        "desc": "Single-family homes by Tri Pointe Homes with contemporary desert architecture. Open floor plans designed for indoor-outdoor living.",
+        "price": "From $550K"
+      },
+      {
+        "name": "Perspective",
+        "type": "New Construction · Single-Family",
+        "desc": "Woodside Homes collection offering mid-size single-family residences with modern finishes and flexible living spaces.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Cerrada",
+        "type": "New Construction · Townhome",
+        "desc": "Attached townhome-style residences offering lower-maintenance living with community amenities and trail access.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Sterling Ridge",
+        "type": "New Construction · Premium",
+        "desc": "Larger premium homesites with enhanced views and upgraded architectural standards. Ideal for move-up buyers seeking more space.",
+        "price": "From $800K"
+      },
+      {
+        "name": "Camino",
+        "type": "New Construction · Single-Family",
+        "desc": "Taylor Morrison single-family homes with flexible floor plans, gourmet kitchens, and multi-generational living options.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Toll Brothers Collection",
+        "type": "New Construction · Semi-Custom",
+        "desc": "Toll Brothers' semi-custom homes representing the upper tier of Redpoint Square with premium finishes and larger lots.",
+        "price": "From $1M+"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Redpoint Square Central Park",
+        "address": "Redpoint Square, Las Vegas, NV 89166",
+        "acreage": "~8 acres",
+        "amenities": [
+          "Playground",
+          "Walking paths",
+          "Picnic areas",
+          "Open turf",
+          "Community gathering space"
+        ]
+      },
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89138",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Trails",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Summerlin West Trail System",
+        "address": "Summerlin West, Las Vegas, NV 89166",
+        "acreage": "~100+ acres",
+        "amenities": [
+          "Paved multi-use trails",
+          "Desert hiking paths",
+          "Cycling routes",
+          "Mountain viewpoints"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Arbor View High School",
+          "9–12",
+          "7/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~3,000",
+      "medianAge": "37",
+      "avgIncome": "$130,000+",
+      "households": "~1,200",
+      "homeownership": "85%"
+    },
+    "driveTimes": [
+      {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~8 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Summerlin Pkwy"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South → I-15"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Redpoint Square?",
+        "a": "Homes in Redpoint Square range from approximately $450,000 for attached townhome-style residences to over $1.5 million for premium semi-custom homes by Toll Brothers. The majority of single-family homes fall in the $500,000 to $900,000 range."
+      },
+      {
+        "q": "Is Redpoint Square guard-gated?",
+        "a": "No. Redpoint Square is not guard-gated. It is an open-access village within the Summerlin master plan, but it benefits from Summerlin's community patrol and well-maintained standards."
+      },
+      {
+        "q": "What builders are in Redpoint Square?",
+        "a": "Redpoint Square features homes from Toll Brothers, Taylor Morrison, Woodside Homes, Shea Homes, and Tri Pointe Homes. Each builder offers different architectural styles and floor plan sizes."
+      },
+      {
+        "q": "What ZIP code is Redpoint Square in?",
+        "a": "Redpoint Square is located in ZIP code 89166 in the Summerlin West area of Las Vegas."
+      },
+      {
+        "q": "What schools serve Redpoint Square?",
+        "a": "Redpoint Square is served by CCSD schools including Bonner Elementary (9/10), Sig Rogich Middle School (10/10), and Arbor View High School (7/10). Private options include The Meadows School and Bishop Gorman High School."
+      },
+      {
+        "q": "What are HOA fees in Redpoint Square?",
+        "a": "HOA fees in Redpoint Square typically range from $150 to $350 per month, which includes the Summerlin master association fee. Fees cover common area maintenance, trail system upkeep, parks, and community amenities."
+      },
+      {
+        "q": "Is Redpoint Square a good investment?",
+        "a": "Redpoint Square is in the fastest-growing section of Summerlin, which has a 35+ year track record of strong appreciation. New-construction buyers typically benefit from early-phase pricing before the village is fully built out."
+      },
+      {
+        "q": "How far is Redpoint Square from the Strip?",
+        "a": "Redpoint Square is approximately 25 minutes from the Las Vegas Strip via Summerlin Parkway and I-15. Downtown Summerlin is about 8 minutes away."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community encompassing 20+ villages and every price point."
+      },
+      {
+        "name": "Reverence",
+        "href": "/summerlin-reverence/",
+        "price": "From $600K",
+        "compare": "Nearby Summerlin West village with new construction homes and mountain views."
+      },
+      {
+        "name": "Skye Canyon",
+        "href": "/skye-canyon/",
+        "price": "From $450K",
+        "compare": "New master-planned community in the northwest with resort-style amenities."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave with Bear's Best golf course."
+      },
+      {
+        "name": "Providence",
+        "href": "/providence/",
+        "price": "From $450K",
+        "compare": "Family-friendly master-planned community in the northwest Las Vegas corridor."
+      },
+      {
+        "name": "Centennial Hills",
+        "href": "/centennial-hills/",
+        "price": "From $400K",
+        "compare": "Established northwest Las Vegas community with parks, trails, and top-rated schools."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Nevada Real Estate Group helped us navigate the new-construction process at Redpoint Square from builder selection to closing. They knew which lots had the best views and which upgrades were worth the investment.",
+        "name": "Tyler & Amanda R.",
+        "detail": "Bought in Redpoint Square, Summerlin · 2025"
+      },
+      {
+        "quote": "We looked at new construction all over Las Vegas and kept coming back to Summerlin West. Nevada Real Estate Group showed us why Redpoint Square offered the best combination of value, location, and builder quality.",
+        "name": "Jessica M.",
+        "detail": "Bought in Redpoint Square, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Redpoint Square Summerlin",
+    "ylopoMinPrice": 450000
+  },
+  {
+    "slug": "summerlin-reverence",
+    "name": "Reverence",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction",
+    "zipCodes": [
+      "89166"
+    ],
+    "center": [
+      -115.338,
+      36.210
+    ],
+    "heroEyebrow": "Summerlin West, Las Vegas",
+    "priceRange": "$600K–$1.5M",
+    "established": "2019",
+    "developer": "Howard Hughes Corporation / Pulte Homes",
+    "acreage": "300+ acres",
+    "homeCount": "900+ at buildout",
+    "guardGated": false,
+    "hoaRange": "$180–$400/mo",
+    "overview": [
+      "Reverence is a premier village in Summerlin West that occupies a coveted position along the western rim of the Las Vegas Valley, offering residents dramatic mountain views and direct access to some of the best trail systems in Southern Nevada. Developed by Pulte Homes within the Howard Hughes Corporation's Summerlin master plan, Reverence was designed from the ground up as an elevated living experience with resort-caliber amenities.",
+      "The centerpiece of Reverence is its private residents' club, featuring a resort-style pool with cabanas, a state-of-the-art fitness center, outdoor gathering spaces with fire pits, bocce ball courts, and event lawns. The community's trail system connects directly to the Summerlin trail network and provides access to Red Rock Canyon trailheads, making it one of the most trail-connected neighborhoods in the entire master plan.",
+      "Homes in Reverence range from approximately $600,000 for single-story ranch plans to $1.5 million for larger two-story estate-style homes on premium lots. Pulte Homes delivers modern desert-contemporary architecture with open floor plans, multi-slide glass doors, chef-grade kitchens, and energy-efficient construction. Many floor plans feature casitas, courtyards, and multi-generational suites.",
+      "Reverence's elevated position in Summerlin West provides mountain views from many homesites, particularly those along the western edge of the community. The combination of resort amenities, trail connectivity, mountain views, and the Summerlin address makes Reverence one of the most desirable new-construction communities for buyers seeking a premium lifestyle without guard-gated pricing."
+    ],
+    "highlights": [
+      {
+        "title": "Private Residents' Club",
+        "body": "Resort-style pool with cabanas, fitness center, fire pit lounges, bocce ball courts, and event lawns exclusively for Reverence residents.",
+        "iconType": "building"
+      },
+      {
+        "title": "Trail Connectivity",
+        "body": "Direct connections to the Summerlin trail system and Red Rock Canyon trailheads. One of the most trail-connected neighborhoods in Summerlin.",
+        "iconType": "park"
+      },
+      {
+        "title": "Mountain Views",
+        "body": "Elevated western position offers dramatic views of the Spring Mountains and Red Rock Canyon from homesites, trails, and the residents' club.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Pulte Homes Quality",
+        "body": "All homes built by Pulte Homes with desert-contemporary architecture, open floor plans, multi-slide glass doors, and energy-efficient systems.",
+        "iconType": "home"
+      },
+      {
+        "title": "Modern Floor Plans",
+        "body": "Floor plans from 2,200 to 4,200+ square feet with options for casitas, courtyards, multi-generational suites, and home offices.",
+        "iconType": "home"
+      },
+      {
+        "title": "Summerlin Appreciation",
+        "body": "Summerlin West is the growth corridor of a 35-year master plan with a proven track record of strong home value appreciation across market cycles.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Ridgeline Collection",
+        "type": "New Construction · Premium",
+        "desc": "Premium homesites along the western edge of Reverence with the best mountain views. Larger lots and upgraded architectural standards.",
+        "price": "From $1M+"
+      },
+      {
+        "name": "Summit Collection",
+        "type": "New Construction · Estate",
+        "desc": "Pulte's largest floor plans at Reverence with up to 4,200+ square feet. Grand entries, gourmet kitchens, and expansive outdoor living.",
+        "price": "From $900K"
+      },
+      {
+        "name": "Vista Collection",
+        "type": "New Construction · Single-Family",
+        "desc": "Mid-range single-family homes with open floor plans, courtyards, and modern desert finishes. Popular with move-up buyers.",
+        "price": "From $700K"
+      },
+      {
+        "name": "Terrace Collection",
+        "type": "New Construction · Single-Story",
+        "desc": "Single-story ranch-style homes designed for easy living with open layouts and private courtyard entries.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Casita Collection",
+        "type": "New Construction · Multi-Gen",
+        "desc": "Floor plans featuring detached or attached casitas for guests, extended family, or home offices. Ideal for multi-generational households.",
+        "price": "From $750K"
+      },
+      {
+        "name": "Trailside",
+        "type": "New Construction · Trail-Adjacent",
+        "desc": "Homesites directly adjacent to the community trail system with immediate access to walking, jogging, and cycling paths.",
+        "price": "From $650K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Reverence Residents' Club",
+        "address": "Reverence, Las Vegas, NV 89166",
+        "acreage": "~5 acres",
+        "amenities": [
+          "Resort pool",
+          "Cabanas",
+          "Fitness center",
+          "Fire pit lounge",
+          "Bocce courts",
+          "Event lawn"
+        ]
+      },
+      {
+        "name": "Reverence Trail System",
+        "address": "Reverence, Las Vegas, NV 89166",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Paved walking paths",
+          "Desert hiking trails",
+          "Mountain viewpoints",
+          "Bike routes"
+        ]
+      },
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89138",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Trails",
+          "Picnic areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Arbor View High School",
+          "9–12",
+          "7/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~2,500",
+      "medianAge": "42",
+      "avgIncome": "$150,000+",
+      "households": "~900",
+      "homeownership": "88%"
+    },
+    "driveTimes": [
+      {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~8 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Summerlin Pkwy"
+      },
+      {
+        "time": "~35 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South → I-15"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Reverence?",
+        "a": "Homes in Reverence range from approximately $600,000 for single-story ranch plans to $1.5 million for larger estate-style homes on premium lots with mountain views."
+      },
+      {
+        "q": "Who builds homes in Reverence?",
+        "a": "All homes in Reverence are built by Pulte Homes, a nationally recognized builder known for innovative floor plans and energy-efficient construction. Pulte offers multiple collections within the community."
+      },
+      {
+        "q": "What amenities does Reverence have?",
+        "a": "Reverence features a private residents' club with a resort-style pool, cabanas, fitness center, fire pit lounges, bocce ball courts, and event lawns. The community also has an extensive trail system connecting to Summerlin's broader network."
+      },
+      {
+        "q": "Is Reverence guard-gated?",
+        "a": "No. Reverence is not guard-gated. It is an open-access village within Summerlin West that relies on community design, Summerlin patrols, and a strong HOA for security and neighborhood standards."
+      },
+      {
+        "q": "What ZIP code is Reverence in?",
+        "a": "Reverence is located in ZIP code 89166 in the Summerlin West area of Las Vegas."
+      },
+      {
+        "q": "What schools serve Reverence?",
+        "a": "Reverence is served by CCSD schools including Bonner Elementary (9/10), Sig Rogich Middle School (10/10), and Arbor View High School (7/10). Private options include The Meadows School (A+) and Bishop Gorman High School (A+)."
+      },
+      {
+        "q": "Does Reverence have mountain views?",
+        "a": "Yes. Reverence's elevated position in Summerlin West provides views of the Spring Mountains and Red Rock Canyon from many homesites, community trails, and the residents' club. Western-facing premium lots have the best views."
+      },
+      {
+        "q": "How far is Reverence from Red Rock Canyon?",
+        "a": "Reverence is approximately 8 minutes from Red Rock Canyon's scenic loop entrance via West Charleston Boulevard. Hiking trails are accessible directly from the community's trail system."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Redpoint Square",
+        "href": "/summerlin-redpoint-square/",
+        "price": "From $450K",
+        "compare": "Adjacent Summerlin West village with new construction from multiple builders."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages and every price point."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave with Bear's Best golf course."
+      },
+      {
+        "name": "Mesa Ridge",
+        "href": "/mesa-ridge/",
+        "price": "From $1M",
+        "compare": "Guard-gated luxury community in Summerlin with semi-custom and custom homes."
+      },
+      {
+        "name": "Skye Canyon",
+        "href": "/skye-canyon/",
+        "price": "From $450K",
+        "compare": "New master-planned community in the northwest with resort-style amenities."
+      },
+      {
+        "name": "Centennial Hills",
+        "href": "/centennial-hills/",
+        "price": "From $400K",
+        "compare": "Established northwest Las Vegas community with parks, trails, and top-rated schools."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We fell in love with Reverence the moment we saw the residents' club and mountain views. Nevada Real Estate Group helped us select the right lot and negotiate upgrades that made our home exactly what we wanted.",
+        "name": "Mark & Lisa D.",
+        "detail": "Bought in Reverence, Summerlin · 2024"
+      },
+      {
+        "quote": "The trail access at Reverence is unbeatable. Nevada Real Estate Group knew which homesites had the best trail connections and mountain views. They made the new-construction process easy.",
+        "name": "Sarah K.",
+        "detail": "Bought in Reverence, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Reverence Summerlin",
+    "ylopoMinPrice": 600000
+  },
+  {
+    "slug": "mesa-ridge",
+    "name": "Mesa Ridge",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.315,
+      36.155
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$1M–$3M+",
+    "established": "2016",
+    "developer": "Toll Brothers",
+    "acreage": "~200 acres",
+    "homeCount": "350+",
+    "guardGated": true,
+    "hoaRange": "$350–$700/mo",
+    "overview": [
+      "Mesa Ridge is a guard-gated luxury community in Summerlin built by Toll Brothers, one of the nation's premier luxury homebuilders. Located in the southern foothills of the master plan, Mesa Ridge offers semi-custom and custom homes ranging from approximately $1 million to over $3 million, set against a backdrop of Red Rock Canyon views and the Spring Mountains.",
+      "The community features a 24-hour staffed guard gate, private streets, and beautifully landscaped common areas. Homes in Mesa Ridge are characterized by their contemporary desert architecture, generous lot sizes, and premium finishes including quartz countertops, designer lighting packages, and multi-slide glass doors that open to expansive outdoor living spaces with views.",
+      "Mesa Ridge homes range from approximately 3,000 to 6,000+ square feet across multiple floor plans. Many homes feature casitas, home theaters, wine rooms, and resort-style backyards with pools, spas, and outdoor kitchens. The architectural standards are among the most stringent in Summerlin, ensuring a cohesive luxury aesthetic throughout the community.",
+      "The location provides convenient access to Downtown Summerlin's 125+ shops and restaurants, Red Rock Canyon National Conservation Area, and the 215 Beltway. Mesa Ridge appeals to executives, professionals, and families seeking guard-gated security, premium construction quality, and the prestige of a Summerlin address without the ultra-luxury pricing of The Ridges or The Summit Club."
+    ],
+    "highlights": [
+      {
+        "title": "Guard-Gated Security",
+        "body": "24-hour staffed guard gate with private streets and security patrols. Mesa Ridge offers one of the most secure residential settings in Summerlin.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Toll Brothers Quality",
+        "body": "Every home built by Toll Brothers with semi-custom options, premium finishes, and the quality standards of America's luxury homebuilder.",
+        "iconType": "home"
+      },
+      {
+        "title": "Red Rock Canyon Views",
+        "body": "Southern foothills positioning provides views of Red Rock Canyon and the Spring Mountains from many homesites. Just 10 minutes to the scenic loop.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Contemporary Architecture",
+        "body": "Desert-contemporary design with flat rooflines, multi-slide glass doors, natural stone accents, and seamless indoor-outdoor living spaces.",
+        "iconType": "building"
+      },
+      {
+        "title": "Resort-Style Living",
+        "body": "Many homes feature pool-ready backyards, outdoor kitchens, fire features, and covered patios designed for year-round outdoor entertaining.",
+        "iconType": "park"
+      },
+      {
+        "title": "Premier Summerlin Location",
+        "body": "Minutes from Downtown Summerlin, Red Rock Casino Resort, and the 215 Beltway. Guard-gated luxury at a more accessible price than The Ridges.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Mesa Ridge Estate Collection",
+        "type": "Guard-Gated · Custom",
+        "desc": "The largest homes in Mesa Ridge with 5,000 to 6,000+ square feet on premium oversized lots. Full customization options and panoramic views.",
+        "price": "From $2.5M+"
+      },
+      {
+        "name": "Mesa Ridge Premier Collection",
+        "type": "Guard-Gated · Semi-Custom",
+        "desc": "Semi-custom homes from 4,000 to 5,000 square feet with upgraded finishes, multi-slide glass walls, and mountain-view lots.",
+        "price": "From $1.8M+"
+      },
+      {
+        "name": "Mesa Ridge Classic Collection",
+        "type": "Guard-Gated · Luxury",
+        "desc": "Entry-level luxury homes in Mesa Ridge from 3,000 to 4,000 square feet. Contemporary architecture with Toll Brothers premium finishes.",
+        "price": "From $1M+"
+      },
+      {
+        "name": "View Lots",
+        "type": "Guard-Gated · Premium Views",
+        "desc": "Select homesites along the community's western edge with unobstructed views of Red Rock Canyon and the Spring Mountains.",
+        "price": "From $2M+"
+      },
+      {
+        "name": "Interior Estates",
+        "type": "Guard-Gated · Privacy",
+        "desc": "Interior lots offering enhanced privacy with mature landscaping and quiet cul-de-sac positioning.",
+        "price": "From $1.2M+"
+      },
+      {
+        "name": "Casita Homes",
+        "type": "Guard-Gated · Multi-Gen",
+        "desc": "Floor plans featuring detached casitas ideal for guests, home offices, or multi-generational living arrangements.",
+        "price": "From $1.5M+"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89138",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Trails",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "The Paseos Linear Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89138",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Open space",
+          "Dog-friendly areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John W. Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~1,200",
+      "medianAge": "48",
+      "avgIncome": "$250,000+",
+      "households": "~350",
+      "homeownership": "90%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~5 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Mesa Ridge?",
+        "a": "Homes in Mesa Ridge range from approximately $1 million for resale homes in the Classic Collection to over $3 million for premium estate-style homes on view lots with Red Rock Canyon panoramas."
+      },
+      {
+        "q": "Is Mesa Ridge guard-gated?",
+        "a": "Yes. Mesa Ridge is a fully guard-gated community with a 24-hour staffed guard gate, private streets, and security patrols throughout the neighborhood."
+      },
+      {
+        "q": "Who built homes in Mesa Ridge?",
+        "a": "All homes in Mesa Ridge were built by Toll Brothers, nationally recognized as America's luxury homebuilder. Toll Brothers offers semi-custom options with premium finishes and design flexibility."
+      },
+      {
+        "q": "What ZIP code is Mesa Ridge in?",
+        "a": "Mesa Ridge is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Mesa Ridge?",
+        "a": "HOA fees in Mesa Ridge typically range from $350 to $700 per month, which includes the Summerlin master association fee plus the Mesa Ridge guard-gated sub-association fee covering guard gate staffing, security, and common area maintenance."
+      },
+      {
+        "q": "How does Mesa Ridge compare to The Ridges?",
+        "a": "Mesa Ridge offers guard-gated luxury in Summerlin at a more accessible price point than The Ridges. While The Ridges starts at $2 million and features custom estates, Mesa Ridge provides luxury living from $1 million with Toll Brothers semi-custom construction."
+      },
+      {
+        "q": "What schools serve Mesa Ridge?",
+        "a": "Mesa Ridge is served by CCSD schools including Bonner Elementary (9/10), Sig Rogich Middle School (10/10), and Palo Verde High School (8/10). Private options include The Meadows School (A+) and Bishop Gorman High School (A+)."
+      },
+      {
+        "q": "Are there mountain views in Mesa Ridge?",
+        "a": "Yes. Many homesites in Mesa Ridge offer views of Red Rock Canyon and the Spring Mountains, particularly lots along the western edge of the community. The community is approximately 10 minutes from the Red Rock Canyon scenic loop."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave with Bear's Best golf and custom estates."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer courses."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages and every price point."
+      },
+      {
+        "name": "The Summit Club",
+        "href": "/the-summit-club/",
+        "price": "From $5M",
+        "compare": "Las Vegas' most exclusive private community with Tom Fazio golf."
+      },
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $550K",
+        "compare": "Guard-gated golf community in the south valley with Jack Nicklaus course."
+      },
+      {
+        "name": "MacDonald Highlands",
+        "href": "/macdonald-highlands/",
+        "price": "From $800K",
+        "compare": "Henderson's premier luxury community with DragonRidge Country Club."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Mesa Ridge gave us the guard-gated security and Toll Brothers quality we wanted without having to stretch into ultra-luxury pricing. Nevada Real Estate Group helped us find the perfect view lot.",
+        "name": "Brian & Catherine S.",
+        "detail": "Bought in Mesa Ridge, Summerlin · 2024"
+      },
+      {
+        "quote": "We upgraded from a non-gated Summerlin neighborhood to Mesa Ridge and couldn't be happier. Nevada Real Estate Group handled the sale of our old home and the purchase of our new one seamlessly.",
+        "name": "Diane T.",
+        "detail": "Bought in Mesa Ridge, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Mesa Ridge Summerlin",
+    "ylopoMinPrice": 1000000
+  },
+  {
+    "slug": "regency-at-summerlin",
+    "name": "Regency at Summerlin",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "55+ · Guard-Gated",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.310,
+      36.160
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$500K–$800K+",
+    "established": "2015",
+    "developer": "Toll Brothers",
+    "acreage": "~120 acres",
+    "homeCount": "400+",
+    "guardGated": true,
+    "hoaRange": "$250–$500/mo",
+    "overview": [
+      "Regency at Summerlin is a premier 55+ guard-gated active adult community built by Toll Brothers within the Summerlin master plan. Designed for active adults who demand more than a typical age-restricted community, Regency combines guard-gated security, resort-caliber amenities, and the luxury construction quality that Toll Brothers is known for — all wrapped in the unmatched Summerlin lifestyle.",
+      "The community's private clubhouse is the social and recreational hub, featuring a resort-style pool and spa, state-of-the-art fitness center, movement studio, demonstration kitchen, card and game rooms, and outdoor terraces with fire features. A bocce ball court, putting green, and community gardens provide additional outdoor recreation within the gates.",
+      "Homes in Regency at Summerlin are exclusively single-story, ranging from approximately 1,800 to 3,200 square feet. Toll Brothers offers several collections with flexible floor plans, gourmet kitchens, spa-inspired master bathrooms, and optional upgrades including casitas, extended covered patios, and multi-slide glass doors. The desert-contemporary architecture features clean lines, stone accents, and landscaped courtyards.",
+      "The Summerlin address gives Regency residents access to Downtown Summerlin's 125+ shops and restaurants, Red Rock Canyon, championship golf courses, and the entire Summerlin trail system — all within minutes of the guard gate. For active adults seeking a luxury 55+ lifestyle with Toll Brothers quality and Summerlin's amenity infrastructure, Regency at Summerlin is one of the top choices in the Las Vegas Valley."
+    ],
+    "highlights": [
+      {
+        "title": "Guard-Gated 55+ Living",
+        "body": "24-hour staffed guard gate provides security and privacy for an active adult community designed for residents 55 and older.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Private Clubhouse",
+        "body": "Resort-style pool and spa, fitness center, movement studio, demonstration kitchen, game rooms, fire pit terraces, and community gathering spaces.",
+        "iconType": "building"
+      },
+      {
+        "title": "Toll Brothers Quality",
+        "body": "Single-story luxury homes from 1,800 to 3,200 square feet with gourmet kitchens, spa bathrooms, and desert-contemporary architecture.",
+        "iconType": "home"
+      },
+      {
+        "title": "Summerlin Lifestyle",
+        "body": "Minutes from Downtown Summerlin, Red Rock Canyon, championship golf, and the 150+ miles of Summerlin's interconnected trail system.",
+        "iconType": "park"
+      },
+      {
+        "title": "Active Social Calendar",
+        "body": "Community-organized events, fitness classes, cooking demonstrations, card tournaments, and social gatherings throughout the year.",
+        "iconType": "building"
+      },
+      {
+        "title": "Strong Resale Market",
+        "body": "Toll Brothers 55+ communities in premier master-planned locations hold value well. The combination of guard-gated security and Summerlin address drives consistent demand.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Avanti Collection",
+        "type": "55+ · Premium",
+        "desc": "Toll Brothers' largest floor plans at Regency, ranging from 2,600 to 3,200 square feet with gourmet kitchens, courtyards, and optional casitas.",
+        "price": "From $700K"
+      },
+      {
+        "name": "Loft Collection",
+        "type": "55+ · Flexible",
+        "desc": "Mid-range single-story homes with open floor plans, loft-style ceilings, and flexible bonus spaces. Popular with downsizing buyers.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Villa Collection",
+        "type": "55+ · Low-Maintenance",
+        "desc": "Attached villa-style homes offering the most maintenance-free lifestyle within Regency. Compact floor plans with luxury finishes.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Clubhouse Row",
+        "type": "55+ · Amenity-Adjacent",
+        "desc": "Homesites closest to the private clubhouse with walking-distance access to the pool, fitness center, and social spaces.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Mountain View Sites",
+        "type": "55+ · Views",
+        "desc": "Premium homesites along the community's western edge with views toward Red Rock Canyon and the Spring Mountains.",
+        "price": "From $700K+"
+      },
+      {
+        "name": "Garden Court Homes",
+        "type": "55+ · Courtyard",
+        "desc": "Floor plans featuring private entry courtyards with mature landscaping, fountain features, and outdoor seating areas.",
+        "price": "From $550K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Regency Clubhouse & Pool",
+        "address": "Regency at Summerlin, Las Vegas, NV 89135",
+        "acreage": "~4 acres",
+        "amenities": [
+          "Resort pool and spa",
+          "Fitness center",
+          "Movement studio",
+          "Demonstration kitchen",
+          "Bocce court",
+          "Putting green"
+        ]
+      },
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89138",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Trails",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "The Paseos Linear Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89138",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Open space",
+          "Dog-friendly areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John W. Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~800",
+      "medianAge": "65",
+      "avgIncome": "$120,000+",
+      "households": "~400",
+      "homeownership": "92%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~5 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the age requirement for Regency at Summerlin?",
+        "a": "Regency at Summerlin is a 55+ community. At least one resident in each home must be 55 years of age or older. No residents under 19 are permitted as permanent residents, per HUD guidelines for age-restricted communities."
+      },
+      {
+        "q": "What is the price range for homes in Regency at Summerlin?",
+        "a": "Homes in Regency at Summerlin range from approximately $500,000 for attached villas to over $800,000 for larger single-family homes on premium lots with mountain views."
+      },
+      {
+        "q": "Is Regency at Summerlin guard-gated?",
+        "a": "Yes. Regency at Summerlin is a fully guard-gated community with a 24-hour staffed gate and private streets, providing security and privacy for residents."
+      },
+      {
+        "q": "Who built homes in Regency at Summerlin?",
+        "a": "All homes in Regency at Summerlin were built by Toll Brothers, nationally recognized as America's luxury homebuilder. Toll Brothers offers multiple floor plan collections with semi-custom options."
+      },
+      {
+        "q": "What amenities does Regency at Summerlin have?",
+        "a": "The private clubhouse features a resort-style pool and spa, fitness center, movement studio, demonstration kitchen, game rooms, bocce ball court, putting green, outdoor fire pit terraces, and community gardens."
+      },
+      {
+        "q": "What are HOA fees in Regency at Summerlin?",
+        "a": "HOA fees typically range from $250 to $500 per month, covering guard gate staffing, clubhouse operations, pool and fitness center maintenance, landscaping, and the Summerlin master association fee."
+      },
+      {
+        "q": "How does Regency compare to Sun City Summerlin?",
+        "a": "Regency at Summerlin is a smaller, guard-gated luxury 55+ community built by Toll Brothers, while Sun City Summerlin is a much larger Del Webb community with 7,000+ homes. Regency offers newer construction, higher-end finishes, and guard-gated security at a higher price point."
+      },
+      {
+        "q": "What ZIP code is Regency at Summerlin in?",
+        "a": "Regency at Summerlin is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Sun City Summerlin",
+        "href": "/sun-city-summerlin/",
+        "price": "From $300K",
+        "compare": "Del Webb's original 55+ community in Summerlin with 7,200+ homes and three golf courses."
+      },
+      {
+        "name": "Trilogy at Summerlin",
+        "href": "/trilogy-at-summerlin/",
+        "price": "From $500K",
+        "compare": "Shea Homes 55+ guard-gated community with resort clubhouse in Summerlin."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages and every price point."
+      },
+      {
+        "name": "Heritage at Stonebridge",
+        "href": "/heritage-at-stonebridge/",
+        "price": "From $500K",
+        "compare": "Taylor Morrison's new-construction 55+ guard-gated community in Summerlin."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave for buyers without age restrictions."
+      },
+      {
+        "name": "Sun Colony at Siena",
+        "href": "/sun-colony-at-siena/",
+        "price": "From $700K",
+        "compare": "55+ guard-gated enclave within Siena village offering luxury active adult living."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Regency at Summerlin was exactly what we wanted — guard-gated security, a beautiful clubhouse, and a quiet neighborhood without sacrificing access to everything Summerlin offers. Nevada Real Estate Group found us the perfect home.",
+        "name": "Richard & Joan P.",
+        "detail": "Bought in Regency at Summerlin · 2024"
+      },
+      {
+        "quote": "We downsized from a large Summerlin home and Regency gave us everything we needed in a single-story layout with Toll Brothers quality. Nevada Real Estate Group understood our priorities perfectly.",
+        "name": "Barbara H.",
+        "detail": "Bought in Regency at Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Regency at Summerlin",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "heritage-at-stonebridge",
+    "name": "Heritage at Stonebridge",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "55+ · Guard-Gated · New Construction",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.318,
+      36.162
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$500K–$700K",
+    "established": "2022",
+    "developer": "Taylor Morrison",
+    "acreage": "~80 acres",
+    "homeCount": "300+ at buildout",
+    "guardGated": true,
+    "hoaRange": "$200–$400/mo",
+    "overview": [
+      "Heritage at Stonebridge is one of the newest 55+ guard-gated communities in Summerlin, developed by Taylor Morrison within the Stonebridge village of the master plan. Offering brand-new construction with modern floor plans, a private residents' club, and guard-gated security, Heritage at Stonebridge represents the latest evolution of active adult living in Las Vegas' most prestigious master-planned community.",
+      "The community's private clubhouse serves as the social and recreational center, featuring a resort-style pool and spa, fitness center, pickleball courts, bocce ball, a multi-purpose room for events and classes, and outdoor gathering spaces with fire features. The emphasis on pickleball reflects the sport's explosive growth among active adults, and Heritage at Stonebridge was designed with dedicated courts from the start.",
+      "Taylor Morrison offers single-story homes ranging from approximately 1,600 to 2,800 square feet, with open floor plans, gourmet kitchen islands, spa-inspired master suites, and covered outdoor living spaces. Buyers can personalize their homes through Taylor Morrison's design studio, selecting finishes, fixtures, and layout options. Energy-efficient construction meets current building codes with smart-home pre-wiring standard.",
+      "Heritage at Stonebridge's Summerlin location provides residents with access to the master plan's 150+ miles of trails, Downtown Summerlin shopping and dining, Red Rock Canyon, and multiple championship golf courses — all within a short drive of the guard gate. For active adults seeking brand-new construction in a guard-gated 55+ setting within Summerlin, Heritage at Stonebridge offers exceptional value."
+    ],
+    "highlights": [
+      {
+        "title": "Brand-New 55+ Construction",
+        "body": "One of the newest 55+ communities in all of Summerlin. Every home is new construction with current building codes, modern floor plans, and smart-home technology.",
+        "iconType": "home"
+      },
+      {
+        "title": "Guard-Gated Security",
+        "body": "24-hour staffed guard gate with private streets. Security and privacy for active adult residents in a controlled-access community.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Pickleball & Fitness",
+        "body": "Dedicated pickleball courts built from day one, plus a fitness center, resort pool, spa, bocce ball, and indoor/outdoor event spaces.",
+        "iconType": "park"
+      },
+      {
+        "title": "Taylor Morrison Quality",
+        "body": "Taylor Morrison's single-story homes from 1,600 to 2,800 sq ft with personalizable finishes through their design studio experience.",
+        "iconType": "building"
+      },
+      {
+        "title": "Summerlin Trail Access",
+        "body": "Direct access to Summerlin's 150+ miles of interconnected trails for walking, jogging, and cycling through the master plan.",
+        "iconType": "park"
+      },
+      {
+        "title": "Competitive Pricing",
+        "body": "New-construction 55+ homes starting around $500K in a guard-gated Summerlin setting — strong value compared to older resale options at similar price points.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Signature Collection",
+        "type": "55+ · Premium",
+        "desc": "Taylor Morrison's largest floor plans at Heritage, from 2,400 to 2,800 square feet with chef kitchens, extended patios, and optional casitas.",
+        "price": "From $650K"
+      },
+      {
+        "name": "Classic Collection",
+        "type": "55+ · Mid-Range",
+        "desc": "Popular mid-size floor plans from 2,000 to 2,400 square feet with open living areas and two-car garages. The community's best-selling homes.",
+        "price": "From $575K"
+      },
+      {
+        "name": "Garden Collection",
+        "type": "55+ · Entry",
+        "desc": "Efficient single-story homes from 1,600 to 2,000 square feet ideal for buyers seeking new construction at Heritage's most accessible price point.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Clubhouse Adjacent",
+        "type": "55+ · Amenity-Close",
+        "desc": "Homesites within easy walking distance of the private clubhouse, pool, pickleball courts, and community gathering spaces.",
+        "price": "From $550K"
+      },
+      {
+        "name": "Perimeter Sites",
+        "type": "55+ · Views",
+        "desc": "Lots along the community's outer edge with enhanced views and a sense of spaciousness. Some sites offer mountain vistas.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Interior Courts",
+        "type": "55+ · Private",
+        "desc": "Quiet interior cul-de-sac positions with enhanced privacy and lower traffic. Popular with buyers seeking a peaceful setting.",
+        "price": "From $525K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Heritage Clubhouse & Pool",
+        "address": "Heritage at Stonebridge, Las Vegas, NV 89135",
+        "acreage": "~3 acres",
+        "amenities": [
+          "Resort pool and spa",
+          "Fitness center",
+          "Pickleball courts",
+          "Bocce court",
+          "Multi-purpose room",
+          "Outdoor fire features"
+        ]
+      },
+      {
+        "name": "Stonebridge Park",
+        "address": "Stonebridge Village, Las Vegas, NV 89135",
+        "acreage": "~6 acres",
+        "amenities": [
+          "Walking paths",
+          "Open turf",
+          "Shade structures",
+          "Playground"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Summerlin, Las Vegas, NV 89135",
+        "acreage": "150+ miles",
+        "amenities": [
+          "Paved walking paths",
+          "Jogging trails",
+          "Cycling routes",
+          "Desert viewpoints"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John W. Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~600",
+      "medianAge": "63",
+      "avgIncome": "$110,000+",
+      "households": "~300",
+      "homeownership": "90%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~5 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the age requirement for Heritage at Stonebridge?",
+        "a": "Heritage at Stonebridge is a 55+ community. At least one resident in each home must be 55 years of age or older. No residents under 19 are permitted as permanent residents, per HUD guidelines."
+      },
+      {
+        "q": "What is the price range for homes in Heritage at Stonebridge?",
+        "a": "Homes in Heritage at Stonebridge range from approximately $500,000 for the Garden Collection to around $700,000 for premium Signature Collection homes on larger lots."
+      },
+      {
+        "q": "Is Heritage at Stonebridge guard-gated?",
+        "a": "Yes. Heritage at Stonebridge is a guard-gated community with a 24-hour staffed gate and private streets within the Stonebridge village of Summerlin."
+      },
+      {
+        "q": "Who builds homes in Heritage at Stonebridge?",
+        "a": "All homes in Heritage at Stonebridge are built by Taylor Morrison, a nationally recognized homebuilder. Buyers can personalize finishes through Taylor Morrison's design studio."
+      },
+      {
+        "q": "Does Heritage at Stonebridge have pickleball?",
+        "a": "Yes. Heritage at Stonebridge was designed with dedicated pickleball courts from the start, reflecting the sport's popularity among active adults. Courts are located near the private clubhouse."
+      },
+      {
+        "q": "What are HOA fees in Heritage at Stonebridge?",
+        "a": "HOA fees typically range from $200 to $400 per month, covering guard gate staffing, clubhouse operations, pool maintenance, landscaping, and the Summerlin master association fee."
+      },
+      {
+        "q": "What ZIP code is Heritage at Stonebridge in?",
+        "a": "Heritage at Stonebridge is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "How does Heritage compare to Regency at Summerlin?",
+        "a": "Both are guard-gated 55+ communities in Summerlin. Heritage at Stonebridge offers newer construction by Taylor Morrison at a slightly lower price point ($500K–$700K), while Regency at Summerlin by Toll Brothers ranges from $500K to $800K+ with larger floor plans."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Regency at Summerlin",
+        "href": "/regency-at-summerlin/",
+        "price": "From $500K",
+        "compare": "Toll Brothers' guard-gated 55+ community in Summerlin with larger floor plans."
+      },
+      {
+        "name": "Trilogy at Summerlin",
+        "href": "/trilogy-at-summerlin/",
+        "price": "From $500K",
+        "compare": "Shea Homes 55+ guard-gated community with resort clubhouse."
+      },
+      {
+        "name": "Sun City Summerlin",
+        "href": "/sun-city-summerlin/",
+        "price": "From $300K",
+        "compare": "Del Webb's original large-scale 55+ community with three golf courses."
+      },
+      {
+        "name": "Sun Colony at Siena",
+        "href": "/sun-colony-at-siena/",
+        "price": "From $700K",
+        "compare": "55+ guard-gated enclave within Siena village at a higher price point."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages and all-ages neighborhoods."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave for buyers without age restrictions."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Heritage at Stonebridge had everything on our list — new construction, guard-gated, pickleball, and Summerlin location. Nevada Real Estate Group walked us through the entire Taylor Morrison build process.",
+        "name": "George & Martha C.",
+        "detail": "Bought in Heritage at Stonebridge · 2025"
+      },
+      {
+        "quote": "We compared every 55+ community in Summerlin and Heritage offered the best value for new construction. Nevada Real Estate Group helped us understand the differences and make the right choice.",
+        "name": "Linda R.",
+        "detail": "Bought in Heritage at Stonebridge · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Heritage at Stonebridge Summerlin",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "trilogy-at-summerlin",
+    "name": "Trilogy at Summerlin",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "55+ · Guard-Gated",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.320,
+      36.165
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$500K–$800K",
+    "established": "2017",
+    "developer": "Shea Homes",
+    "acreage": "~120 acres",
+    "homeCount": "350+",
+    "guardGated": true,
+    "hoaRange": "$250–$500/mo",
+    "overview": [
+      "Trilogy at Summerlin is a guard-gated 55+ active adult community built by Shea Homes, known nationally for creating resort-style communities under the Trilogy brand. Located within the Summerlin master plan, Trilogy offers single-story luxury homes, a stunning private clubhouse, and a lifestyle program designed to keep active adults engaged, connected, and healthy.",
+      "The centerpiece of Trilogy at Summerlin is the Outlook Club, a private amenity center featuring a resort-style pool and spa, indoor-outdoor event spaces, a full-service restaurant and bar, fitness center, movement studio, culinary studio, arts and crafts workshops, and an outdoor amphitheater for live entertainment. The Outlook Club is staffed by a full-time Lifestyle Director who curates events, classes, and social programming year-round.",
+      "Homes in Trilogy at Summerlin range from approximately $500,000 to $800,000, with single-story floor plans spanning 1,700 to 3,100 square feet. Shea Homes' SheaXero and SheaConnect technology packages come standard, offering advanced energy efficiency and smart-home connectivity. Floor plans feature open great rooms, gourmet kitchens with quartz countertops, spa master suites, and flexible bonus rooms.",
+      "Trilogy's Summerlin location places residents minutes from Downtown Summerlin, Red Rock Canyon, and the master plan's extensive trail system. The Trilogy brand has a loyal following among active adults who want more than just a house — they want a lifestyle community with built-in social infrastructure, resort amenities, and like-minded neighbors."
+    ],
+    "highlights": [
+      {
+        "title": "The Outlook Club",
+        "body": "Private amenity center with resort pool, restaurant and bar, fitness center, culinary studio, arts workshops, and outdoor amphitheater for live events.",
+        "iconType": "building"
+      },
+      {
+        "title": "Guard-Gated 55+ Living",
+        "body": "24-hour staffed guard gate with private streets. Secure, peaceful environment designed exclusively for active adults 55 and older.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Lifestyle Director",
+        "body": "A full-time Lifestyle Director curates events, classes, excursions, and social programming year-round — from wine tastings to hiking groups.",
+        "iconType": "park"
+      },
+      {
+        "title": "Shea Homes Innovation",
+        "body": "SheaXero energy-efficient construction and SheaConnect smart-home technology come standard. Homes range from 1,700 to 3,100 square feet.",
+        "iconType": "home"
+      },
+      {
+        "title": "Restaurant & Bar",
+        "body": "The Outlook Club features a full-service restaurant and bar exclusively for residents and guests — a rare amenity in 55+ communities.",
+        "iconType": "building"
+      },
+      {
+        "title": "Proven Trilogy Brand",
+        "body": "Trilogy communities have a national reputation for excellence in 55+ living. Strong resale demand from active adults seeking the Trilogy lifestyle.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Pinnacle Collection",
+        "type": "55+ · Premium",
+        "desc": "Shea Homes' largest floor plans from 2,600 to 3,100 square feet with premium lots, extended outdoor living, and designer upgrade packages.",
+        "price": "From $700K"
+      },
+      {
+        "name": "Inspire Collection",
+        "type": "55+ · Mid-Range",
+        "desc": "Popular mid-size plans from 2,100 to 2,600 square feet with open great rooms, gourmet kitchens, and flexible den/office spaces.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Reflect Collection",
+        "type": "55+ · Entry",
+        "desc": "Efficient single-story plans from 1,700 to 2,100 square feet. The most accessible entry point to Trilogy's resort-style lifestyle.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Club-Adjacent Homes",
+        "type": "55+ · Amenity-Close",
+        "desc": "Homesites closest to The Outlook Club with easy walking access to the pool, restaurant, fitness center, and event spaces.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Mountain View Lots",
+        "type": "55+ · Views",
+        "desc": "Premium homesites with views toward the Spring Mountains and Red Rock Canyon. The most sought-after positions in Trilogy.",
+        "price": "From $700K+"
+      },
+      {
+        "name": "Interior Retreat",
+        "type": "55+ · Private",
+        "desc": "Quiet interior positions within the community offering enhanced privacy and a peaceful residential setting.",
+        "price": "From $525K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "The Outlook Club",
+        "address": "Trilogy at Summerlin, Las Vegas, NV 89135",
+        "acreage": "~6 acres",
+        "amenities": [
+          "Resort pool and spa",
+          "Restaurant and bar",
+          "Fitness center",
+          "Culinary studio",
+          "Amphitheater",
+          "Arts workshops"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Summerlin, Las Vegas, NV 89135",
+        "acreage": "150+ miles",
+        "amenities": [
+          "Paved walking paths",
+          "Jogging trails",
+          "Cycling routes",
+          "Desert viewpoints"
+        ]
+      },
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89138",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Trails",
+          "Picnic areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John W. Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~700",
+      "medianAge": "64",
+      "avgIncome": "$115,000+",
+      "households": "~350",
+      "homeownership": "91%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~5 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the age requirement for Trilogy at Summerlin?",
+        "a": "Trilogy at Summerlin is a 55+ community. At least one resident in each home must be 55 years of age or older. No residents under 19 are permitted as permanent residents, per HUD guidelines."
+      },
+      {
+        "q": "What is the price range for homes in Trilogy at Summerlin?",
+        "a": "Homes in Trilogy at Summerlin range from approximately $500,000 for the Reflect Collection to around $800,000 for premium Pinnacle Collection homes on mountain-view lots."
+      },
+      {
+        "q": "Does Trilogy at Summerlin have a restaurant?",
+        "a": "Yes. The Outlook Club features a full-service restaurant and bar exclusively for residents and their guests. It is one of the few 55+ communities in Las Vegas with an on-site dining venue."
+      },
+      {
+        "q": "Is Trilogy at Summerlin guard-gated?",
+        "a": "Yes. Trilogy at Summerlin is a guard-gated community with a 24-hour staffed gate and private streets, providing security and controlled access for residents."
+      },
+      {
+        "q": "Who builds homes in Trilogy at Summerlin?",
+        "a": "All homes in Trilogy at Summerlin are built by Shea Homes under the nationally recognized Trilogy brand. Shea Homes' SheaXero and SheaConnect technology packages come standard."
+      },
+      {
+        "q": "What are HOA fees in Trilogy at Summerlin?",
+        "a": "HOA fees typically range from $250 to $500 per month, covering guard gate staffing, Outlook Club operations, restaurant, pool, fitness center, lifestyle programming, and the Summerlin master association fee."
+      },
+      {
+        "q": "What is the Lifestyle Director at Trilogy?",
+        "a": "Trilogy communities employ a full-time Lifestyle Director who plans and coordinates events, classes, excursions, and social activities year-round — from wine tastings and cooking classes to hiking groups and live entertainment."
+      },
+      {
+        "q": "What ZIP code is Trilogy at Summerlin in?",
+        "a": "Trilogy at Summerlin is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Regency at Summerlin",
+        "href": "/regency-at-summerlin/",
+        "price": "From $500K",
+        "compare": "Toll Brothers' guard-gated 55+ community in Summerlin with comparable pricing."
+      },
+      {
+        "name": "Heritage at Stonebridge",
+        "href": "/heritage-at-stonebridge/",
+        "price": "From $500K",
+        "compare": "Taylor Morrison's newest 55+ guard-gated community in Summerlin with new construction."
+      },
+      {
+        "name": "Sun City Summerlin",
+        "href": "/sun-city-summerlin/",
+        "price": "From $300K",
+        "compare": "Del Webb's original 55+ community with 7,200+ homes and three golf courses."
+      },
+      {
+        "name": "Sun Colony at Siena",
+        "href": "/sun-colony-at-siena/",
+        "price": "From $700K",
+        "compare": "55+ guard-gated enclave within Siena village at a higher price point."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages and all-ages neighborhoods."
+      },
+      {
+        "name": "Sun City Anthem",
+        "href": "/sun-city-anthem/",
+        "price": "From $350K",
+        "compare": "Henderson's premier Del Webb 55+ community with two golf courses and 7,200+ homes."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "The Outlook Club at Trilogy is incredible — the restaurant, pool, and social events make it feel like living at a resort. Nevada Real Estate Group helped us see why Trilogy was the best 55+ community for our lifestyle.",
+        "name": "Steve & Karen W.",
+        "detail": "Bought in Trilogy at Summerlin · 2024"
+      },
+      {
+        "quote": "We looked at 55+ communities across the entire valley and Trilogy stood out for the lifestyle programming and Shea Homes quality. Nevada Real Estate Group knew every floor plan and guided us perfectly.",
+        "name": "Donna M.",
+        "detail": "Bought in Trilogy at Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Trilogy at Summerlin",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "sun-colony-at-siena",
+    "name": "Sun Colony at Siena",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "55+ · Guard-Gated · Luxury",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.308,
+      36.158
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$700K–$1.3M+",
+    "established": "2004",
+    "developer": "William Lyon Homes / Taylor Morrison",
+    "acreage": "~100 acres",
+    "homeCount": "275+",
+    "guardGated": true,
+    "hoaRange": "$300–$600/mo",
+    "overview": [
+      "Sun Colony at Siena is the luxury tier of 55+ guard-gated living within Summerlin's Siena village. Nestled within the guard-gated Siena community in the southern foothills, Sun Colony offers larger homes, premium lots, and an elevated lifestyle compared to the broader Siena neighborhood. With prices ranging from approximately $700,000 to over $1.3 million, it is the most upscale 55+ community in the Summerlin master plan.",
+      "The community shares access to the Siena Golf Club, an 18-hole championship course designed by Schmidt-Curley that winds through the master plan with dramatic mountain backdrops. Residents also enjoy the Siena Community Center, which features a pool and spa, fitness center, tennis courts, and community gathering spaces. Sun Colony's position within the guard-gated perimeter provides an additional layer of security and exclusivity.",
+      "Homes in Sun Colony at Siena are predominantly single-story, ranging from approximately 2,200 to 3,800 square feet. The architecture reflects Tuscan and Mediterranean influences with upgraded natural stone exteriors, tile roofing, and mature landscaping. Interior features include gourmet kitchens, formal living and dining rooms, home offices, and spacious master suites with luxury bath fixtures.",
+      "Sun Colony's location within Siena places residents minutes from Downtown Summerlin, Red Rock Canyon, and the broader Summerlin amenity package. For active adults seeking a premium 55+ lifestyle with golf course access, guard-gated security, and larger luxury homes, Sun Colony at Siena occupies a unique position in the Las Vegas market — it is the only upscale golf-community 55+ option within Summerlin."
+    ],
+    "highlights": [
+      {
+        "title": "Siena Golf Club",
+        "body": "Access to Siena's 18-hole Schmidt-Curley championship golf course with mountain views. Preferred tee times and membership options for residents.",
+        "iconType": "golf"
+      },
+      {
+        "title": "Guard-Gated Security",
+        "body": "Sun Colony sits within the guard-gated Siena community, providing 24-hour security, controlled access, and enhanced privacy for residents.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Luxury 55+ Homes",
+        "body": "Larger homes from 2,200 to 3,800 square feet with gourmet kitchens, premium finishes, and the most spacious floor plans of any 55+ community in Summerlin.",
+        "iconType": "home"
+      },
+      {
+        "title": "Community Center",
+        "body": "The Siena Community Center offers resort pool and spa, fitness center, tennis courts, and event spaces shared with the broader Siena community.",
+        "iconType": "building"
+      },
+      {
+        "title": "Tuscan Architecture",
+        "body": "Tuscan and Mediterranean architectural styles with natural stone, tile roofing, and mature landscaping that create a timeless, established aesthetic.",
+        "iconType": "building"
+      },
+      {
+        "title": "Premium Resale Value",
+        "body": "Sun Colony commands the highest prices among Summerlin's 55+ communities. The combination of golf, guard gate, and larger homes drives consistent luxury resale demand.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Golf Course Estates",
+        "type": "55+ · Golf Views",
+        "desc": "Premium lots along the Siena Golf Club fairways with direct course and mountain views. The most desirable positions in Sun Colony.",
+        "price": "From $1M+"
+      },
+      {
+        "name": "Ridge View Estates",
+        "type": "55+ · Mountain Views",
+        "desc": "Elevated homesites with panoramic views of the Spring Mountains and Red Rock Canyon. Larger lots with expansive backyard spaces.",
+        "price": "From $900K"
+      },
+      {
+        "name": "Garden Estates",
+        "type": "55+ · Established",
+        "desc": "Well-established interior homes with mature landscaping and private courtyard entries. Quiet residential setting within the guard gate.",
+        "price": "From $700K"
+      },
+      {
+        "name": "Custom Homes",
+        "type": "55+ · Custom",
+        "desc": "Select custom-built homes within Sun Colony offering unique architectural designs and premium appointments not found in production floor plans.",
+        "price": "From $1.1M+"
+      },
+      {
+        "name": "Clubhouse Proximity",
+        "type": "55+ · Amenity-Close",
+        "desc": "Homes within easy walking distance of the Siena Community Center pool, fitness facilities, and tennis courts.",
+        "price": "From $800K"
+      },
+      {
+        "name": "Entry Collection",
+        "type": "55+ · Mid-Range",
+        "desc": "The most accessible homes in Sun Colony from 2,200 to 2,600 square feet, offering luxury living at the community's entry price point.",
+        "price": "From $700K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Siena Community Center",
+        "address": "Siena, Summerlin, Las Vegas, NV 89135",
+        "acreage": "~5 acres",
+        "amenities": [
+          "Resort pool and spa",
+          "Fitness center",
+          "Tennis courts",
+          "Event spaces",
+          "Community rooms"
+        ]
+      },
+      {
+        "name": "Siena Golf Club",
+        "address": "10575 Siena Monte Ave, Las Vegas, NV 89135",
+        "acreage": "~150 acres",
+        "amenities": [
+          "18-hole championship course",
+          "Pro shop",
+          "Driving range",
+          "Restaurant and grill",
+          "Private lessons"
+        ]
+      },
+      {
+        "name": "The Paseos Linear Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89138",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Open space",
+          "Dog-friendly areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John W. Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~550",
+      "medianAge": "67",
+      "avgIncome": "$175,000+",
+      "households": "~275",
+      "homeownership": "93%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~5 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the age requirement for Sun Colony at Siena?",
+        "a": "Sun Colony at Siena is a 55+ community within the guard-gated Siena neighborhood. At least one resident in each home must be 55 or older, per HUD guidelines."
+      },
+      {
+        "q": "What is the price range for homes in Sun Colony at Siena?",
+        "a": "Homes in Sun Colony at Siena range from approximately $700,000 for established interior homes to over $1.3 million for golf course or mountain-view estate homes."
+      },
+      {
+        "q": "Is Sun Colony at Siena guard-gated?",
+        "a": "Yes. Sun Colony is within the guard-gated Siena community, which has a 24-hour staffed guard gate and security patrols covering the entire Siena neighborhood."
+      },
+      {
+        "q": "Does Sun Colony have golf?",
+        "a": "Sun Colony residents have access to the Siena Golf Club, an 18-hole Schmidt-Curley championship course with mountain views, a pro shop, driving range, and restaurant."
+      },
+      {
+        "q": "What are HOA fees in Sun Colony at Siena?",
+        "a": "HOA fees typically range from $300 to $600 per month, covering guard gate staffing, community center operations, pool maintenance, landscaping, and the Summerlin master association fee."
+      },
+      {
+        "q": "How does Sun Colony compare to other 55+ communities in Summerlin?",
+        "a": "Sun Colony at Siena is the most upscale 55+ community in Summerlin, with larger homes ($700K–$1.3M+) and golf course access. Regency, Trilogy, and Heritage at Stonebridge offer newer construction at lower price points but without golf."
+      },
+      {
+        "q": "What ZIP code is Sun Colony at Siena in?",
+        "a": "Sun Colony at Siena is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "What is Siena Golf Club?",
+        "a": "Siena Golf Club is an 18-hole championship golf course designed by Schmidt-Curley Design, located within the guard-gated Siena community. The course features dramatic mountain views and is available to Siena residents."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Regency at Summerlin",
+        "href": "/regency-at-summerlin/",
+        "price": "From $500K",
+        "compare": "Toll Brothers guard-gated 55+ community at a more accessible price point."
+      },
+      {
+        "name": "Trilogy at Summerlin",
+        "href": "/trilogy-at-summerlin/",
+        "price": "From $500K",
+        "compare": "Shea Homes 55+ community with resort clubhouse and restaurant."
+      },
+      {
+        "name": "Sun City Summerlin",
+        "href": "/sun-city-summerlin/",
+        "price": "From $300K",
+        "compare": "Del Webb's large-scale 55+ community with three golf courses and 7,200+ homes."
+      },
+      {
+        "name": "Heritage at Stonebridge",
+        "href": "/heritage-at-stonebridge/",
+        "price": "From $500K",
+        "compare": "Newest 55+ guard-gated community in Summerlin with new construction."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community without age restrictions. Two Arnold Palmer courses."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave for buyers without age restrictions."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Sun Colony at Siena gave us the golf course lifestyle and guard-gated luxury we wanted in a 55+ setting. Nevada Real Estate Group found us a golf course lot that checked every box.",
+        "name": "Robert & Patricia N.",
+        "detail": "Bought in Sun Colony at Siena · 2024"
+      },
+      {
+        "quote": "We wanted the best 55+ community in Summerlin and Nevada Real Estate Group showed us why Sun Colony stands above the rest. The golf, the homes, and the Siena community are exceptional.",
+        "name": "Thomas G.",
+        "detail": "Bought in Sun Colony at Siena · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Sun Colony Siena Summerlin",
+    "ylopoMinPrice": 700000
+  },
+  {
+    "slug": "one-queensridge-place",
+    "name": "One Queensridge Place",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Guard-Gated · Luxury",
+    "zipCodes": [
+      "89145"
+    ],
+    "center": [
+      -115.278,
+      36.178
+    ],
+    "heroEyebrow": "Queensridge, Las Vegas",
+    "priceRange": "$500K–$5M+",
+    "established": "2006",
+    "developer": "Turnberry Associates / Jaffe Group",
+    "acreage": "~20 acres",
+    "homeCount": "219 residences",
+    "guardGated": true,
+    "hoaRange": "$1,500–$5,000/mo",
+    "overview": [
+      "One Queensridge Place is the most prestigious luxury high-rise condominium in Las Vegas, consisting of two 18-story towers set within the guard-gated Queensridge community. Located along the Badlands Golf Course and offering panoramic views of the Las Vegas Strip, the Spring Mountains, and Red Rock Canyon, One Queensridge Place has been the address of choice for Las Vegas' most discerning high-rise buyers since its completion in 2006.",
+      "The 219 residences range from approximately 2,800 to over 10,000 square feet across multiple floor plan configurations including one-story flats, two-story penthouses, and full-floor Sky Residences. Every unit features floor-to-ceiling glass, private elevator access, gourmet kitchens with premium appliances, and expansive terraces designed for outdoor entertaining with views. The finishes and appointments rival any luxury high-rise in the country.",
+      "Building amenities include a resort-style pool deck with cabanas, concierge services, valet parking, a state-of-the-art fitness center, business center, private wine storage, and a residents' lounge. The guard-gated entry ensures privacy and security for residents, many of whom are high-net-worth individuals, corporate executives, and entertainment industry professionals.",
+      "One Queensridge Place's location in the Queensridge neighborhood provides easy access to Summerlin, the 215 Beltway, and the western Las Vegas corridor. The combination of full-service luxury living, panoramic views, guard-gated security, and unmatched unit sizes makes One Queensridge Place the definitive Las Vegas high-rise for buyers who refuse to compromise."
+    ],
+    "highlights": [
+      {
+        "title": "Panoramic Views",
+        "body": "Floor-to-ceiling glass in every residence with panoramic views of the Las Vegas Strip, Spring Mountains, Red Rock Canyon, and the Badlands Golf Course.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Guard-Gated Security",
+        "body": "24-hour guard-gated entry, concierge services, valet parking, and advanced building security. One of the most secure residential addresses in Las Vegas.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Unmatched Unit Sizes",
+        "body": "Residences from 2,800 to over 10,000 square feet — far larger than any other Las Vegas high-rise. Full-floor Sky Residences and two-story penthouses available.",
+        "iconType": "home"
+      },
+      {
+        "title": "Full-Service Luxury",
+        "body": "Concierge, valet, resort pool with cabanas, fitness center, business center, private wine storage, and residents' lounge with white-glove service.",
+        "iconType": "building"
+      },
+      {
+        "title": "Private Elevator Access",
+        "body": "Every residence features a private elevator foyer. Penthouse and Sky Residences have dedicated private elevators opening directly into the home.",
+        "iconType": "home"
+      },
+      {
+        "title": "Iconic Investment",
+        "body": "One Queensridge Place is irreplaceable — no other Las Vegas high-rise matches its unit sizes, views, and guard-gated setting. Premium units command top-of-market pricing.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Sky Residences",
+        "type": "High-Rise · Full-Floor",
+        "desc": "Full-floor residences occupying the top levels of each tower. Over 10,000 square feet with 360-degree views and private elevators.",
+        "price": "From $4M+"
+      },
+      {
+        "name": "Penthouse Collection",
+        "type": "High-Rise · Two-Story",
+        "desc": "Two-story penthouse residences with dramatic double-height living rooms, private terraces, and panoramic Strip and mountain views.",
+        "price": "From $2.5M+"
+      },
+      {
+        "name": "Grand Residences",
+        "type": "High-Rise · Premium",
+        "desc": "Large single-floor residences from 5,000 to 7,000 square feet on the upper floors with premium views and upgraded finishes.",
+        "price": "From $1.5M+"
+      },
+      {
+        "name": "Tower Residences",
+        "type": "High-Rise · Mid-Rise",
+        "desc": "Mid-floor residences from 3,500 to 5,000 square feet with Strip and mountain views. The community's core inventory.",
+        "price": "From $800K"
+      },
+      {
+        "name": "Garden-Level Residences",
+        "type": "High-Rise · Entry",
+        "desc": "Lower-floor residences from 2,800 to 3,500 square feet offering the most accessible entry to One Queensridge Place living.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Tower II",
+        "type": "High-Rise · South Tower",
+        "desc": "The south tower offering slightly different view angles and floor plan configurations. Direct views toward the Strip and Henderson hills.",
+        "price": "From $600K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "One Queensridge Place Pool Deck",
+        "address": "9103 Alta Dr, Las Vegas, NV 89145",
+        "acreage": "~2 acres",
+        "amenities": [
+          "Resort pool",
+          "Cabanas",
+          "Outdoor lounge",
+          "Spa",
+          "Poolside service"
+        ]
+      },
+      {
+        "name": "Badlands Golf Course",
+        "address": "9119 Alta Dr, Las Vegas, NV 89145",
+        "acreage": "~250 acres",
+        "amenities": [
+          "27-hole golf course",
+          "Pro shop",
+          "Driving range",
+          "Restaurant"
+        ]
+      },
+      {
+        "name": "Angel Park",
+        "address": "900 S Rampart Blvd, Las Vegas, NV 89145",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Playground",
+          "Walking paths",
+          "Sports courts",
+          "Picnic areas",
+          "Open turf"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Cynthia Cunningham Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Becker Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~400",
+      "medianAge": "55",
+      "avgIncome": "$400,000+",
+      "households": "219",
+      "homeownership": "75%"
+    },
+    "driveTimes": [
+      {
+        "time": "~15 min",
+        "destination": "to the Strip",
+        "route": "via Rampart Blvd → I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Rampart Blvd"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for residences at One Queensridge Place?",
+        "a": "Residences at One Queensridge Place range from approximately $500,000 for lower-floor units to over $5 million for penthouse and full-floor Sky Residences on the upper levels."
+      },
+      {
+        "q": "Is One Queensridge Place guard-gated?",
+        "a": "Yes. One Queensridge Place is within the guard-gated Queensridge community and has its own 24-hour security, concierge services, and valet parking."
+      },
+      {
+        "q": "How large are the units at One Queensridge Place?",
+        "a": "Residences range from approximately 2,800 square feet to over 10,000 square feet for full-floor Sky Residences. These are among the largest condominium units in any Las Vegas high-rise."
+      },
+      {
+        "q": "What amenities does One Queensridge Place offer?",
+        "a": "The building features a resort-style pool deck with cabanas, fitness center, concierge services, valet parking, business center, private wine storage, residents' lounge, and 24-hour security."
+      },
+      {
+        "q": "What are HOA fees at One Queensridge Place?",
+        "a": "HOA fees range from approximately $1,500 to $5,000 or more per month depending on unit size. Fees cover concierge, valet, security, pool, fitness center, common area maintenance, building insurance, and reserves."
+      },
+      {
+        "q": "What ZIP code is One Queensridge Place in?",
+        "a": "One Queensridge Place is located in ZIP code 89145 in the Queensridge area of western Las Vegas."
+      },
+      {
+        "q": "Do units at One Queensridge Place have terraces?",
+        "a": "Yes. Most residences feature expansive private terraces designed for outdoor entertaining with panoramic views of the Strip, mountains, and Badlands Golf Course."
+      },
+      {
+        "q": "How does One Queensridge Place compare to other Las Vegas high-rises?",
+        "a": "One Queensridge Place offers the largest unit sizes of any Las Vegas high-rise, the only guard-gated setting, and one of the few high-rises not located on the Strip. It is considered the definitive luxury high-rise for buyers seeking space, privacy, and views."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Queensridge",
+        "href": "/queensridge/",
+        "price": "From $600K",
+        "compare": "The guard-gated single-family community surrounding One Queensridge Place with estate homes."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave for buyers who prefer single-family estates."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community adjacent to Queensridge with 20+ villages."
+      },
+      {
+        "name": "Peccole Ranch",
+        "href": "/peccole-ranch/",
+        "price": "From $250K",
+        "compare": "Adjacent established community with guard-gated and non-gated neighborhoods."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community in Summerlin for buyers seeking course-front single-family living."
+      },
+      {
+        "name": "The Summit Club",
+        "href": "/the-summit-club/",
+        "price": "From $5M",
+        "compare": "The most exclusive private community in Las Vegas with Tom Fazio golf."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "One Queensridge Place is in a class by itself. Nevada Real Estate Group knew the building intimately — which units had the best views, which floors had the best value, and how to negotiate in this market.",
+        "name": "Alexander & Victoria K.",
+        "detail": "Bought at One Queensridge Place · 2024"
+      },
+      {
+        "quote": "We sold our Summerlin estate and moved to One Queensridge Place for the lock-and-leave lifestyle. Nevada Real Estate Group handled both transactions and made the transition seamless.",
+        "name": "Margaret L.",
+        "detail": "Bought at One Queensridge Place · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "One Queensridge Place",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "mira-villa",
+    "name": "Mira Villa",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury · New Construction",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.322,
+      36.150
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$1M–$2.2M",
+    "established": "2023",
+    "developer": "William Lyon Homes / Taylor Morrison",
+    "acreage": "~60 acres",
+    "homeCount": "200+ at buildout",
+    "guardGated": true,
+    "hoaRange": "$350–$650/mo",
+    "overview": [
+      "Mira Villa is a guard-gated luxury new-construction community in Summerlin delivering resort-caliber homes in a secure, private setting. Developed by Taylor Morrison (formerly William Lyon Homes), Mira Villa offers spacious floor plans from approximately 2,800 to 4,800 square feet with the contemporary desert architecture, premium finishes, and elevated indoor-outdoor living that define Summerlin's newest luxury neighborhoods.",
+      "The community's guard-gated entry ensures privacy and exclusivity, while the landscaped streets, pocket parks, and walking paths within the gates create a polished residential environment. Mira Villa homes feature open floor plans with multi-slide glass doors, gourmet kitchen islands with quartz countertops, spa-inspired master suites, and covered outdoor living spaces designed for year-round entertaining.",
+      "Many Mira Villa floor plans offer optional casitas, home offices, wine rooms, and multi-generational suites, providing the flexibility that today's luxury buyers demand. The architectural standards enforce a cohesive desert-contemporary aesthetic with flat rooflines, natural stone and stucco exteriors, and contemporary landscape design that complements the desert environment.",
+      "Mira Villa's location in the Summerlin foothills places residents just minutes from Red Rock Canyon, Downtown Summerlin, and the 215 Beltway. For buyers seeking new-construction luxury with guard-gated security in the $1M to $2.2M range, Mira Villa fills the gap between Summerlin's upper-middle-market communities and the ultra-luxury pricing of The Ridges."
+    ],
+    "highlights": [
+      {
+        "title": "Guard-Gated New Construction",
+        "body": "Brand-new luxury homes within a 24-hour guard-gated community. Every home features current building codes, smart-home technology, and energy-efficient systems.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Resort-Style Homes",
+        "body": "Spacious floor plans from 2,800 to 4,800 square feet with multi-slide glass doors, gourmet kitchens, and seamless indoor-outdoor living spaces.",
+        "iconType": "home"
+      },
+      {
+        "title": "Desert-Contemporary Design",
+        "body": "Cohesive architectural standards with flat rooflines, natural stone, contemporary stucco, and desert-forward landscape design throughout the community.",
+        "iconType": "building"
+      },
+      {
+        "title": "Flexible Floor Plans",
+        "body": "Optional casitas, home offices, wine rooms, and multi-generational suites provide the flexibility that modern luxury buyers require.",
+        "iconType": "home"
+      },
+      {
+        "title": "Red Rock Proximity",
+        "body": "Minutes from Red Rock Canyon National Conservation Area, with mountain views from many homesites and the community's internal pathways.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Sweet-Spot Pricing",
+        "body": "Guard-gated luxury from $1M to $2.2M fills the gap between Summerlin's upper-middle market and ultra-luxury communities like The Ridges ($2M+).",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Grand Estate Collection",
+        "type": "Guard-Gated · Premium",
+        "desc": "The largest homes in Mira Villa from 4,000 to 4,800 square feet on premium oversized lots with mountain views and extended outdoor living.",
+        "price": "From $1.8M+"
+      },
+      {
+        "name": "Estate Collection",
+        "type": "Guard-Gated · Semi-Custom",
+        "desc": "Mid-range luxury homes from 3,500 to 4,000 square feet with gourmet kitchens, spa master suites, and optional casitas.",
+        "price": "From $1.4M"
+      },
+      {
+        "name": "Signature Collection",
+        "type": "Guard-Gated · Luxury",
+        "desc": "Entry-level luxury floor plans from 2,800 to 3,500 square feet. Contemporary architecture with premium standard finishes.",
+        "price": "From $1M"
+      },
+      {
+        "name": "View Lots",
+        "type": "Guard-Gated · Views",
+        "desc": "Select homesites along the community perimeter with unobstructed views toward Red Rock Canyon and the Spring Mountains.",
+        "price": "From $1.6M+"
+      },
+      {
+        "name": "Casita Homes",
+        "type": "Guard-Gated · Multi-Gen",
+        "desc": "Floor plans featuring detached or attached casitas for guests, extended family, or a private home office.",
+        "price": "From $1.3M"
+      },
+      {
+        "name": "Interior Estates",
+        "type": "Guard-Gated · Private",
+        "desc": "Interior cul-de-sac positions offering enhanced privacy with landscaped streetscapes and low traffic.",
+        "price": "From $1.1M"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Mira Villa Community Park",
+        "address": "Mira Villa, Las Vegas, NV 89135",
+        "acreage": "~3 acres",
+        "amenities": [
+          "Walking paths",
+          "Pocket parks",
+          "Desert landscaping",
+          "Seating areas"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "The Paseos Linear Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89138",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Open space",
+          "Dog-friendly areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John W. Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~500",
+      "medianAge": "46",
+      "avgIncome": "$280,000+",
+      "households": "~200",
+      "homeownership": "92%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~5 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Mira Villa?",
+        "a": "Homes in Mira Villa range from approximately $1 million for the Signature Collection to $2.2 million or more for Grand Estate Collection homes on premium view lots."
+      },
+      {
+        "q": "Is Mira Villa guard-gated?",
+        "a": "Yes. Mira Villa is a guard-gated community with a 24-hour staffed gate and private streets within the Summerlin master plan."
+      },
+      {
+        "q": "Who builds homes in Mira Villa?",
+        "a": "Homes in Mira Villa are built by Taylor Morrison (which acquired William Lyon Homes). Taylor Morrison is a nationally recognized luxury homebuilder offering semi-custom options."
+      },
+      {
+        "q": "What ZIP code is Mira Villa in?",
+        "a": "Mira Villa is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Mira Villa?",
+        "a": "HOA fees typically range from $350 to $650 per month, covering guard gate staffing, security patrols, common area maintenance, and the Summerlin master association fee."
+      },
+      {
+        "q": "How does Mira Villa compare to Mesa Ridge?",
+        "a": "Both are guard-gated luxury communities in Summerlin. Mira Villa offers newer construction by Taylor Morrison in a similar price range ($1M–$2.2M). Mesa Ridge was built by Toll Brothers at $1M–$3M+ with slightly larger estate options."
+      },
+      {
+        "q": "Do Mira Villa homes have casitas?",
+        "a": "Yes. Many Mira Villa floor plans offer optional casitas, providing flexible space for guests, extended family, home offices, or creative studios."
+      },
+      {
+        "q": "What schools serve Mira Villa?",
+        "a": "Mira Villa is served by CCSD schools including Bonner Elementary (9/10), Sig Rogich Middle School (10/10), and Palo Verde High School (8/10). Private options include The Meadows School (A+) and Bishop Gorman High School (A+)."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave with Bear's Best golf for buyers with a higher budget."
+      },
+      {
+        "name": "Mesa Ridge",
+        "href": "/mesa-ridge/",
+        "price": "From $1M",
+        "compare": "Toll Brothers guard-gated community in Summerlin in a similar price range."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer courses."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages and every price point."
+      },
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $550K",
+        "compare": "Guard-gated golf community in the south valley with Jack Nicklaus course."
+      },
+      {
+        "name": "MacDonald Highlands",
+        "href": "/macdonald-highlands/",
+        "price": "From $800K",
+        "compare": "Henderson's premier luxury community with DragonRidge Country Club."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Mira Villa was the perfect sweet spot — guard-gated luxury in Summerlin without the ultra-luxury price tag. Nevada Real Estate Group helped us navigate the new-construction process and select the right lot.",
+        "name": "Andrew & Michelle F.",
+        "detail": "Bought in Mira Villa, Summerlin · 2025"
+      },
+      {
+        "quote": "We wanted new construction with guard-gated security and Summerlin schools. Nevada Real Estate Group showed us Mira Villa and it checked every box. The Taylor Morrison quality exceeded our expectations.",
+        "name": "Daniel H.",
+        "detail": "Bought in Mira Villa, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Mira Villa Summerlin",
+    "ylopoMinPrice": 1000000
+  },
+  {
+    "slug": "shawood-at-arcadia",
+    "name": "SHAWOOD at Arcadia",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury · New Construction",
+    "zipCodes": [
+      "89135"
+    ],
+    "center": [
+      -115.330,
+      36.148
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$1.56M+",
+    "established": "2024",
+    "developer": "Sekisui House",
+    "acreage": "~30 acres",
+    "homeCount": "75+ at buildout",
+    "guardGated": true,
+    "hoaRange": "$400–$800/mo",
+    "overview": [
+      "SHAWOOD at Arcadia is one of the most distinctive luxury communities in Las Vegas, representing the first U.S. residential development by Sekisui House — Japan's largest homebuilder and a global leader in precision-engineered, sustainable luxury construction. Located within the guard-gated Summerlin master plan, SHAWOOD brings an entirely new level of build quality to the Las Vegas market with homes starting from $1.56 million.",
+      "The SHAWOOD construction system uses precision-milled steel-framed panels manufactured in Sekisui House's facilities and assembled on-site, resulting in homes with tolerances measured in millimeters rather than inches. The result is a level of fit, finish, and structural integrity that surpasses conventional American stick-frame construction. Each home undergoes rigorous quality inspections at multiple stages of the build process.",
+      "Homes in SHAWOOD at Arcadia range from approximately 3,200 to 5,000+ square feet with floor plans designed around the Japanese concept of 'slow living' — seamless indoor-outdoor flow, natural light optimization, courtyard gardens, and spaces designed for contemplation and comfort. Premium standard features include multi-slide glass walls, floating cabinetry, integrated smart-home systems, and imported fixtures and materials.",
+      "The guard-gated setting provides security and exclusivity, while the Summerlin address gives residents access to the master plan's 150+ miles of trails, Downtown Summerlin shopping, Red Rock Canyon, and championship golf courses. SHAWOOD at Arcadia appeals to discerning buyers who value world-class construction quality, architectural innovation, and a fundamentally different approach to luxury homebuilding."
+    ],
+    "highlights": [
+      {
+        "title": "Sekisui House Quality",
+        "body": "Built by Japan's largest homebuilder using the precision-engineered SHAWOOD steel-frame system. Millimeter-level tolerances and rigorous multi-stage quality inspections.",
+        "iconType": "home"
+      },
+      {
+        "title": "Guard-Gated Exclusivity",
+        "body": "A private guard-gated enclave within Summerlin limited to approximately 75 homes. 24-hour security ensures privacy for an exclusive residential experience.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Japanese Design Philosophy",
+        "body": "Homes designed around 'slow living' principles: seamless indoor-outdoor flow, natural light optimization, courtyard gardens, and contemplative spaces.",
+        "iconType": "building"
+      },
+      {
+        "title": "Premium Standard Features",
+        "body": "Multi-slide glass walls, floating cabinetry, integrated smart-home systems, and imported fixtures come standard — not as expensive upgrades.",
+        "iconType": "home"
+      },
+      {
+        "title": "Sustainable Construction",
+        "body": "Sekisui House is a global leader in sustainable building. SHAWOOD homes feature advanced energy efficiency, reduced waste construction, and environmentally responsible materials.",
+        "iconType": "park"
+      },
+      {
+        "title": "Rare Investment",
+        "body": "The first Sekisui House community in the U.S. residential market. Limited inventory and a construction method unavailable anywhere else in Las Vegas.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Estate Collection",
+        "type": "Guard-Gated · Custom",
+        "desc": "The largest SHAWOOD homes from 4,500 to 5,000+ square feet on premium lots with courtyard gardens and the most extensive indoor-outdoor living spaces.",
+        "price": "From $2.5M+"
+      },
+      {
+        "name": "Grand Collection",
+        "type": "Guard-Gated · Premium",
+        "desc": "Mid-range SHAWOOD homes from 3,800 to 4,500 square feet with multi-slide glass walls, floating kitchens, and private courtyard entries.",
+        "price": "From $2M"
+      },
+      {
+        "name": "Signature Collection",
+        "type": "Guard-Gated · Entry",
+        "desc": "The entry point to SHAWOOD living from 3,200 to 3,800 square feet. Full Sekisui House quality with the community's most accessible pricing.",
+        "price": "From $1.56M"
+      },
+      {
+        "name": "View Sites",
+        "type": "Guard-Gated · Views",
+        "desc": "Select homesites with views toward Red Rock Canyon and the Spring Mountains. Premium lots command the highest pricing in the community.",
+        "price": "From $2.2M+"
+      },
+      {
+        "name": "Courtyard Homes",
+        "type": "Guard-Gated · Japanese Garden",
+        "desc": "Floor plans featuring central courtyard gardens inspired by traditional Japanese residential design. Natural light and greenery integrated throughout.",
+        "price": "From $1.8M"
+      },
+      {
+        "name": "Interior Lots",
+        "type": "Guard-Gated · Private",
+        "desc": "Quiet interior positions within the small community offering enhanced privacy and a serene residential experience.",
+        "price": "From $1.6M"
+      }
+    ],
+    "parks": [
+      {
+        "name": "SHAWOOD Community Gardens",
+        "address": "SHAWOOD at Arcadia, Las Vegas, NV 89135",
+        "acreage": "~2 acres",
+        "amenities": [
+          "Japanese-inspired gardens",
+          "Walking paths",
+          "Meditation spaces",
+          "Native desert landscaping"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89138",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Trails",
+          "Picnic areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John W. Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Alexander Dawson School",
+          "K–8",
+          "A+"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~150",
+      "medianAge": "48",
+      "avgIncome": "$350,000+",
+      "households": "~75",
+      "homeownership": "95%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~5 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is SHAWOOD construction?",
+        "a": "SHAWOOD is Sekisui House's proprietary precision-engineered steel-frame construction system. Panels are manufactured in controlled facilities and assembled on-site with millimeter-level tolerances, resulting in superior structural integrity and fit-and-finish compared to conventional stick-frame construction."
+      },
+      {
+        "q": "What is the price range for homes at SHAWOOD at Arcadia?",
+        "a": "Homes at SHAWOOD at Arcadia start from $1.56 million and can exceed $2.5 million or more for the largest estate-style homes on premium view lots."
+      },
+      {
+        "q": "Who is Sekisui House?",
+        "a": "Sekisui House is Japan's largest homebuilder and one of the most respected construction companies in the world. SHAWOOD at Arcadia represents their first U.S. residential community, bringing decades of precision engineering expertise to the Las Vegas market."
+      },
+      {
+        "q": "Is SHAWOOD at Arcadia guard-gated?",
+        "a": "Yes. SHAWOOD at Arcadia is a guard-gated community within Summerlin with 24-hour security and controlled access. The community is limited to approximately 75 homes."
+      },
+      {
+        "q": "What ZIP code is SHAWOOD at Arcadia in?",
+        "a": "SHAWOOD at Arcadia is located in ZIP code 89135 in the Summerlin South area of Las Vegas."
+      },
+      {
+        "q": "What makes SHAWOOD homes different from other luxury homes?",
+        "a": "SHAWOOD homes use precision-engineered steel frames with millimeter tolerances (vs. typical construction tolerances of 1/4 inch or more), Japanese 'slow living' design philosophy, integrated smart-home systems, and premium imported fixtures as standard features."
+      },
+      {
+        "q": "What are HOA fees at SHAWOOD at Arcadia?",
+        "a": "HOA fees typically range from $400 to $800 per month, covering guard gate staffing, security, community garden maintenance, and the Summerlin master association fee."
+      },
+      {
+        "q": "How many homes will be in SHAWOOD at Arcadia?",
+        "a": "SHAWOOD at Arcadia is a small, exclusive community planned for approximately 75 homes at full buildout, making it one of the most limited luxury enclaves in Summerlin."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave with Bear's Best golf and custom estates."
+      },
+      {
+        "name": "Mira Villa",
+        "href": "/mira-villa/",
+        "price": "From $1M",
+        "compare": "Guard-gated luxury new construction in Summerlin at a more accessible price point."
+      },
+      {
+        "name": "Mesa Ridge",
+        "href": "/mesa-ridge/",
+        "price": "From $1M",
+        "compare": "Toll Brothers guard-gated community in Summerlin with semi-custom luxury homes."
+      },
+      {
+        "name": "The Summit Club",
+        "href": "/the-summit-club/",
+        "price": "From $5M",
+        "compare": "The most exclusive private community in Las Vegas with Tom Fazio golf."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer courses."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages and every price point."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "SHAWOOD at Arcadia is unlike anything else in Las Vegas. The construction quality is extraordinary — you can feel the difference. Nevada Real Estate Group introduced us to Sekisui House and guided us through the entire process.",
+        "name": "William & Naomi T.",
+        "detail": "Bought at SHAWOOD at Arcadia · 2025"
+      },
+      {
+        "quote": "We came from a market where precision construction matters, and SHAWOOD delivered. Nevada Real Estate Group understood why this community appealed to us and made the purchase seamless.",
+        "name": "Kenji & Laura M.",
+        "detail": "Bought at SHAWOOD at Arcadia · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "SHAWOOD Arcadia Summerlin",
+    "ylopoMinPrice": 1560000
+  },
+  {
+    "slug": "the-loughton",
+    "name": "The Loughton",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Luxury · New Construction",
+    "zipCodes": [
+      "89138"
+    ],
+    "center": [
+      -115.312,
+      36.175
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$500K+",
+    "established": "2024",
+    "developer": "Christopher Homes",
+    "acreage": "~40 acres",
+    "homeCount": "150+ at buildout",
+    "guardGated": false,
+    "hoaRange": "$150–$350/mo",
+    "overview": [
+      "The Loughton is a luxury new-construction community in Summerlin developed by Christopher Homes, one of Las Vegas' most respected local luxury homebuilders. Known for a design-forward approach and attention to detail, Christopher Homes delivers a boutique luxury experience at The Loughton with floor plans and finishes that rival guard-gated communities at a more accessible price point, starting from approximately $500,000.",
+      "Homes at The Loughton feature contemporary desert architecture with clean lines, generous window packages for natural light, open-concept living areas, and outdoor living spaces designed for the Las Vegas climate. Floor plans range from approximately 2,200 to 3,800 square feet with options for single-story and two-story configurations. Standard features include quartz countertops, designer lighting, soft-close cabinetry, and tankless water heaters.",
+      "Christopher Homes has a long track record of building luxury homes in Summerlin and Henderson, and The Loughton reflects their expertise in creating communities that feel curated rather than mass-produced. The streetscapes, landscaping, and architectural standards create a cohesive, polished aesthetic that distinguishes The Loughton from nearby production-builder neighborhoods.",
+      "The Loughton's Summerlin location provides access to the master plan's trail system, Downtown Summerlin, Red Rock Canyon, and highly rated schools. For buyers seeking luxury new construction from a boutique local builder without the premium of a guard-gated community, The Loughton offers exceptional value within the Summerlin address."
+    ],
+    "highlights": [
+      {
+        "title": "Christopher Homes Quality",
+        "body": "Built by Christopher Homes, one of Las Vegas' most respected luxury homebuilders with decades of experience in Summerlin and Henderson.",
+        "iconType": "home"
+      },
+      {
+        "title": "Design-Forward Architecture",
+        "body": "Contemporary desert design with clean lines, generous windows, and indoor-outdoor living spaces. Homes feel curated, not mass-produced.",
+        "iconType": "building"
+      },
+      {
+        "title": "Boutique Community",
+        "body": "Approximately 150 homes at buildout — smaller and more intimate than typical production communities. Cohesive architectural standards throughout.",
+        "iconType": "building"
+      },
+      {
+        "title": "Premium Standard Features",
+        "body": "Quartz countertops, designer lighting, soft-close cabinetry, tankless water heaters, and modern fixtures come standard in every home.",
+        "iconType": "home"
+      },
+      {
+        "title": "Summerlin Lifestyle",
+        "body": "Full access to Summerlin's 150+ miles of trails, Downtown Summerlin shopping, Red Rock Canyon, and top-rated CCSD and private schools.",
+        "iconType": "park"
+      },
+      {
+        "title": "Accessible Luxury",
+        "body": "Luxury new construction starting from $500K — boutique builder quality at a price point significantly below guard-gated alternatives in Summerlin.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Estate Series",
+        "type": "New Construction · Premium",
+        "desc": "Christopher Homes' largest floor plans at The Loughton from 3,200 to 3,800 square feet with premium lot positions and extended outdoor living.",
+        "price": "From $700K+"
+      },
+      {
+        "name": "Signature Series",
+        "type": "New Construction · Mid-Range",
+        "desc": "Mid-size luxury homes from 2,800 to 3,200 square feet with open floor plans and gourmet kitchen islands. The community's core collection.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Classic Series",
+        "type": "New Construction · Entry",
+        "desc": "The entry point to The Loughton from 2,200 to 2,800 square feet. Full Christopher Homes quality at the community's most accessible pricing.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Single-Story Plans",
+        "type": "New Construction · Ranch",
+        "desc": "Single-story floor plan options for buyers seeking main-floor living. Open layouts with covered patios and optional casita spaces.",
+        "price": "From $550K"
+      },
+      {
+        "name": "Two-Story Plans",
+        "type": "New Construction · Family",
+        "desc": "Two-story floor plans maximizing square footage with upper-level bedrooms, bonus rooms, and first-floor primary suites.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Perimeter Lots",
+        "type": "New Construction · Premium",
+        "desc": "Lots along the community's outer edge with enhanced views and a sense of spaciousness. Premium positioning within The Loughton.",
+        "price": "From $650K+"
+      }
+    ],
+    "parks": [
+      {
+        "name": "The Loughton Community Area",
+        "address": "The Loughton, Las Vegas, NV 89138",
+        "acreage": "~2 acres",
+        "amenities": [
+          "Walking paths",
+          "Pocket park",
+          "Desert landscaping",
+          "Community seating"
+        ]
+      },
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89138",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Trails",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Summerlin Trail System",
+        "address": "Summerlin, Las Vegas, NV 89138",
+        "acreage": "150+ miles",
+        "amenities": [
+          "Paved walking paths",
+          "Jogging trails",
+          "Cycling routes",
+          "Desert viewpoints"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Bonner Elementary",
+          "K–5",
+          "9/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~400",
+      "medianAge": "40",
+      "avgIncome": "$150,000+",
+      "households": "~150",
+      "homeownership": "87%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~12 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~5 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Sahara Ave"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes at The Loughton?",
+        "a": "Homes at The Loughton start from approximately $500,000 and range upward to $700,000 or more for premium Estate Series homes on larger lots."
+      },
+      {
+        "q": "Who builds homes at The Loughton?",
+        "a": "The Loughton is built by Christopher Homes, one of Las Vegas' most respected local luxury homebuilders with decades of experience building premium communities in Summerlin and Henderson."
+      },
+      {
+        "q": "Is The Loughton guard-gated?",
+        "a": "No. The Loughton is not guard-gated. It is an open-access community within Summerlin that offers luxury construction quality and a boutique feel without guard-gated pricing premiums."
+      },
+      {
+        "q": "What ZIP code is The Loughton in?",
+        "a": "The Loughton is located in ZIP code 89138 in the Summerlin area of Las Vegas."
+      },
+      {
+        "q": "What are HOA fees at The Loughton?",
+        "a": "HOA fees typically range from $150 to $350 per month, covering common area maintenance, landscaping, and the Summerlin master association fee."
+      },
+      {
+        "q": "What makes Christopher Homes different from national builders?",
+        "a": "Christopher Homes is a local luxury builder that emphasizes design-forward architecture, premium standard features, and a curated community feel. They build fewer homes with more attention to detail than national production builders."
+      },
+      {
+        "q": "What schools serve The Loughton?",
+        "a": "The Loughton is served by CCSD schools including Bonner Elementary (9/10), Sig Rogich Middle School (10/10), and Palo Verde High School (8/10). Private options include The Meadows School (A+) and Bishop Gorman (A+)."
+      },
+      {
+        "q": "How does The Loughton compare to other Summerlin new construction?",
+        "a": "The Loughton offers boutique luxury from a local builder at a lower price point than guard-gated communities like Mira Villa ($1M+) or Mesa Ridge ($1M+). It provides similar design quality and attention to detail without the guard-gated premium."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community with 20+ villages and every price point."
+      },
+      {
+        "name": "Mira Villa",
+        "href": "/mira-villa/",
+        "price": "From $1M",
+        "compare": "Guard-gated luxury new construction in Summerlin for buyers seeking gated security."
+      },
+      {
+        "name": "Mesa Ridge",
+        "href": "/mesa-ridge/",
+        "price": "From $1M",
+        "compare": "Toll Brothers guard-gated community for buyers with a higher budget."
+      },
+      {
+        "name": "Reverence",
+        "href": "/summerlin-reverence/",
+        "price": "From $600K",
+        "compare": "Pulte Homes new-construction village in Summerlin West with resort amenities."
+      },
+      {
+        "name": "Redpoint Square",
+        "href": "/summerlin-redpoint-square/",
+        "price": "From $450K",
+        "compare": "Multi-builder Summerlin West village with new construction from $450K."
+      },
+      {
+        "name": "Centennial Hills",
+        "href": "/centennial-hills/",
+        "price": "From $400K",
+        "compare": "Established northwest Las Vegas community with parks, trails, and top schools."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Christopher Homes builds a better home than the national builders, and the price at The Loughton was more accessible than the guard-gated options. Nevada Real Estate Group helped us see the value.",
+        "name": "Ryan & Alexis B.",
+        "detail": "Bought at The Loughton, Summerlin · 2025"
+      },
+      {
+        "quote": "We wanted Summerlin new construction without paying a guard-gated premium. The Loughton by Christopher Homes delivered luxury finishes and a boutique feel. Nevada Real Estate Group knew the community inside out.",
+        "name": "Nicole P.",
+        "detail": "Bought at The Loughton, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Loughton Summerlin",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "madeira-canyon",
+    "name": "Madeira Canyon",
+    "parentCommunity": null,
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Master-Planned · Guard-Gated",
+    "zipCodes": [
+      "89052",
+      "89044"
+    ],
+    "center": [
+      -115.075,
+      35.975
+    ],
+    "heroEyebrow": "Henderson, Nevada",
+    "priceRange": "$400K–$1.5M+",
+    "established": "2004",
+    "developer": "Toll Brothers / Focus Property Group",
+    "acreage": "~800 acres",
+    "homeCount": "1,200+",
+    "guardGated": true,
+    "hoaRange": "$150–$400/mo",
+    "overview": [
+      "Madeira Canyon is a guard-gated master-planned community in the southern foothills of Henderson, set against the McCullough Range with dramatic desert mountain views and a strong sense of seclusion. Originally developed by Toll Brothers and Focus Property Group beginning in 2004, Madeira Canyon offers a wide range of home styles from family-friendly single-family residences to luxury custom estates, all within a secure, gated environment.",
+      "The community features a private recreation center with a resort-style pool and spa, fitness center, tennis courts, basketball courts, and a community room for events and gatherings. An extensive trail system winds through the community's natural desert terrain, connecting neighborhoods and providing access to the surrounding foothills for hiking and outdoor recreation.",
+      "Homes in Madeira Canyon range from approximately $400,000 for established single-family homes to over $1.5 million for larger custom and semi-custom estates on premium lots with mountain views. The community also includes Club M (The Club at Madeira Canyon), a 55+ guard-gated neighborhood within the broader Madeira Canyon community that provides age-restricted living with its own amenities.",
+      "Madeira Canyon's location in far southeast Henderson provides a distinctly quieter, more rural feel than many Las Vegas master-planned communities while still maintaining convenient access to I-215, shopping centers, and Henderson's infrastructure. The combination of guard-gated security, mountain setting, and diverse price range makes Madeira Canyon a compelling option for buyers seeking privacy and natural beauty."
+    ],
+    "highlights": [
+      {
+        "title": "Guard-Gated Security",
+        "body": "24-hour staffed guard gate with controlled access providing security and privacy for the entire Madeira Canyon community.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Mountain Setting",
+        "body": "Set against the McCullough Range foothills with dramatic desert mountain views and a sense of seclusion not found in valley-floor communities.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Recreation Center",
+        "body": "Private community recreation center with resort pool, spa, fitness center, tennis courts, basketball courts, and event space.",
+        "iconType": "building"
+      },
+      {
+        "title": "Trail System",
+        "body": "Extensive walking and hiking trails wind through Madeira Canyon's natural desert terrain, connecting neighborhoods to the surrounding foothills.",
+        "iconType": "park"
+      },
+      {
+        "title": "Wide Price Range",
+        "body": "Homes from $400K for established single-family to $1.5M+ for custom mountain-view estates. Options for first-time buyers and luxury buyers alike.",
+        "iconType": "home"
+      },
+      {
+        "title": "Henderson Safety",
+        "body": "Henderson consistently ranks among the safest large cities in America. Madeira Canyon adds guard-gated security on top of the city's strong safety record.",
+        "iconType": "shield"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Custom Estates",
+        "type": "Guard-Gated · Luxury",
+        "desc": "Custom and semi-custom estate homes on the largest lots with mountain views and premium outdoor living spaces. The highest price tier in Madeira Canyon.",
+        "price": "From $1M+"
+      },
+      {
+        "name": "Toll Brothers Collection",
+        "type": "Guard-Gated · Semi-Custom",
+        "desc": "Original Toll Brothers homes from the community's initial development phases. Well-established with mature landscaping and premium construction quality.",
+        "price": "From $700K"
+      },
+      {
+        "name": "Family Neighborhoods",
+        "type": "Guard-Gated · Single-Family",
+        "desc": "Mid-range single-family homes popular with families. Three-to-five-bedroom floor plans with two-car garages and private backyards.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Entry-Level Collection",
+        "type": "Guard-Gated · Established",
+        "desc": "The most accessible homes in Madeira Canyon. Smaller floor plans in established sections with guard-gated security at an attainable price.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Club M (55+)",
+        "type": "55+ · Guard-Gated",
+        "desc": "A dedicated 55+ neighborhood within Madeira Canyon with its own clubhouse, pool, and age-restricted living within the broader guard-gated community.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Ridgeline Homes",
+        "type": "Guard-Gated · Views",
+        "desc": "Homes along the community's upper elevation with the best mountain and valley views. Premium positions commanding higher per-square-foot prices.",
+        "price": "From $800K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Madeira Canyon Recreation Center",
+        "address": "Madeira Canyon, Henderson, NV 89044",
+        "acreage": "~5 acres",
+        "amenities": [
+          "Resort pool and spa",
+          "Fitness center",
+          "Tennis courts",
+          "Basketball courts",
+          "Community room"
+        ]
+      },
+      {
+        "name": "Madeira Canyon Trail System",
+        "address": "Madeira Canyon, Henderson, NV 89044",
+        "acreage": "~100 acres",
+        "amenities": [
+          "Desert hiking trails",
+          "Walking paths",
+          "Mountain viewpoints",
+          "Wildlife areas"
+        ]
+      },
+      {
+        "name": "McCullough Hills Trail",
+        "address": "McCullough Hills Trailhead, Henderson, NV 89012",
+        "acreage": "~1,500 acres",
+        "amenities": [
+          "Desert hiking",
+          "Mountain biking",
+          "Wildlife viewing",
+          "Panoramic overlooks"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John C. Vanderburg Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Del E. Webb Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Coronado High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~3,500",
+      "medianAge": "45",
+      "avgIncome": "$130,000+",
+      "households": "~1,200",
+      "homeownership": "88%"
+    },
+    "driveTimes": [
+      {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Henderson Executive Airport",
+        "route": "via Bicentennial Pkwy"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to The District at GVR",
+        "route": "via St. Rose Pkwy"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Madeira Canyon?",
+        "a": "Homes in Madeira Canyon range from approximately $400,000 for established single-family homes to over $1.5 million for custom estate homes on premium mountain-view lots."
+      },
+      {
+        "q": "Is Madeira Canyon guard-gated?",
+        "a": "Yes. Madeira Canyon is a guard-gated community with a 24-hour staffed gate and controlled access for the entire community."
+      },
+      {
+        "q": "Does Madeira Canyon have a 55+ section?",
+        "a": "Yes. Club M (The Club at Madeira Canyon) is a dedicated 55+ neighborhood within Madeira Canyon with its own clubhouse, pool, and age-restricted living within the broader guard-gated community."
+      },
+      {
+        "q": "What ZIP codes is Madeira Canyon in?",
+        "a": "Madeira Canyon spans ZIP codes 89052 and 89044 in the southern Henderson area."
+      },
+      {
+        "q": "What amenities does Madeira Canyon have?",
+        "a": "The community features a recreation center with resort pool, spa, fitness center, tennis courts, basketball courts, and a community room. An extensive trail system connects to the surrounding McCullough Range foothills."
+      },
+      {
+        "q": "What are HOA fees in Madeira Canyon?",
+        "a": "HOA fees typically range from $150 to $400 per month depending on the specific neighborhood, covering guard gate staffing, recreation center operations, pool maintenance, trail system upkeep, and common area maintenance."
+      },
+      {
+        "q": "Who built homes in Madeira Canyon?",
+        "a": "Madeira Canyon was primarily developed by Toll Brothers and Focus Property Group. Multiple builders contributed homes across the community's various phases and neighborhoods."
+      },
+      {
+        "q": "What schools serve Madeira Canyon?",
+        "a": "Madeira Canyon is served by CCSD schools including Vanderburg Elementary (8/10), Del E. Webb Middle School (7/10), and Coronado High School (6/10). Private options include Henderson International School (A) and Bishop Gorman High School (A+)."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Anthem",
+        "href": "/anthem/",
+        "price": "From $400K",
+        "compare": "Henderson's premier master-planned community with guard-gated and non-gated neighborhoods."
+      },
+      {
+        "name": "Inspirada",
+        "href": "/inspirada/",
+        "price": "From $420K",
+        "compare": "Newer Henderson master-planned community with parks, trails, and new construction."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community with Rio Secco golf course and Strip views."
+      },
+      {
+        "name": "MacDonald Highlands",
+        "href": "/macdonald-highlands/",
+        "price": "From $800K",
+        "compare": "Henderson's ultra-luxury community with DragonRidge Country Club."
+      },
+      {
+        "name": "Ascaya",
+        "href": "/ascaya/",
+        "price": "From $3M",
+        "compare": "Ultra-luxury custom lot community in Henderson's McCullough Range."
+      },
+      {
+        "name": "Calico Ridge",
+        "href": "/calico-ridge/",
+        "price": "From $500K",
+        "compare": "Nearby Henderson foothill community with elevated lots and valley views."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Madeira Canyon offered the guard-gated security and mountain setting we wanted at a price that made sense. Nevada Real Estate Group knew every section of the community and found us the right home.",
+        "name": "Chris & Angela M.",
+        "detail": "Bought in Madeira Canyon, Henderson · 2024"
+      },
+      {
+        "quote": "The trail system and mountain views at Madeira Canyon can't be beat. Nevada Real Estate Group showed us homes in our price range and helped us close quickly in a competitive market.",
+        "name": "Jeff T.",
+        "detail": "Bought in Madeira Canyon, Henderson · 2025"
+      }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Madeira Canyon Henderson",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "roma-hills",
+    "name": "Roma Hills",
+    "parentCommunity": null,
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury",
+    "zipCodes": [
+      "89052"
+    ],
+    "center": [
+      -115.065,
+      36.002
+    ],
+    "heroEyebrow": "Henderson, Nevada",
+    "priceRange": "$600K–$15M+",
+    "established": "2001",
+    "developer": "Various luxury builders",
+    "acreage": "~250 acres",
+    "homeCount": "400+",
+    "guardGated": true,
+    "hoaRange": "$200–$800/mo",
+    "overview": [
+      "Roma Hills is a guard-gated luxury community in the Henderson foothills that has quietly established itself as one of the most desirable addresses in the southeastern Las Vegas Valley. Located along the foothills east of Anthem, Roma Hills offers estate-style living with panoramic views of the Las Vegas Strip, the entire valley, and the surrounding mountain ranges — all within a secure, guard-gated environment.",
+      "The community's elevated position is its defining feature. Homes in Roma Hills sit on hillside lots ranging from a quarter-acre to over an acre, with many offering unobstructed 180-degree views that stretch from the Strip skyline to the mountains. The terrain creates a terraced effect where even interior lots enjoy elevated sightlines that valley-floor communities cannot match.",
+      "Homes in Roma Hills range dramatically — from approximately $600,000 for established homes in the lower sections to over $15 million for ultra-luxury custom estates in the most exclusive enclaves, including the double guard-gated Obsidian neighborhood. The community attracts a mix of luxury buyers: executives, professionals, and high-net-worth individuals seeking elevated views, privacy, and Henderson's renowned safety.",
+      "Roma Hills provides a distinctly different luxury experience from the west-side Summerlin communities. Where Summerlin offers Red Rock Canyon proximity and master-planned infrastructure, Roma Hills delivers unmatched valley and Strip views from an elevated hillside setting in Henderson. The guard-gated security, panoramic views, and diverse price range make Roma Hills one of the most compelling luxury communities in the Las Vegas Valley."
+    ],
+    "highlights": [
+      {
+        "title": "Panoramic Strip Views",
+        "body": "Elevated hillside positioning provides panoramic views of the Las Vegas Strip, the entire valley, and surrounding mountain ranges from most homesites in the community.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Guard-Gated Security",
+        "body": "24-hour staffed guard gate with controlled access. Roma Hills' guard-gated perimeter ensures privacy and security for all residents.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Estate-Size Lots",
+        "body": "Lots range from a quarter-acre to over an acre, providing the space and privacy for estate-scale living with pools, outdoor kitchens, and expansive gardens.",
+        "iconType": "home"
+      },
+      {
+        "title": "Obsidian Ultra-Luxury",
+        "body": "The double guard-gated Obsidian enclave within Roma Hills offers ultra-luxury custom estates from $5M to $15M+ for the most discerning buyers.",
+        "iconType": "building"
+      },
+      {
+        "title": "Henderson Safety",
+        "body": "Henderson consistently ranks among the safest large cities in America. Roma Hills adds guard-gated security on top of Henderson's excellent safety record.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Diverse Price Range",
+        "body": "From $600K established homes to $15M+ ultra-luxury estates, Roma Hills offers guard-gated luxury across a wider price spectrum than most exclusive communities.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Obsidian",
+        "type": "Double Guard-Gated · Ultra-Luxury",
+        "desc": "The most exclusive enclave in Roma Hills with double guard-gated access. Custom estates from $5M to $15M+ with panoramic Strip and valley views.",
+        "price": "From $5M+"
+      },
+      {
+        "name": "Upper Ridge Estates",
+        "type": "Guard-Gated · Custom",
+        "desc": "Custom and semi-custom estate homes on the highest lots in Roma Hills with 360-degree panoramic views of the Strip, valley, and mountains.",
+        "price": "From $2M+"
+      },
+      {
+        "name": "Hillside Estates",
+        "type": "Guard-Gated · Premium",
+        "desc": "Premium hillside lots with terraced views and larger home footprints. Popular with buyers seeking expansive outdoor living with views.",
+        "price": "From $1.2M+"
+      },
+      {
+        "name": "View Homes",
+        "type": "Guard-Gated · Mid-Luxury",
+        "desc": "Mid-range luxury homes with Strip and valley views from the community's mid-elevation positions. Strong value for guard-gated view homes.",
+        "price": "From $800K"
+      },
+      {
+        "name": "Garden Estates",
+        "type": "Guard-Gated · Established",
+        "desc": "Established homes in the lower sections of Roma Hills with mature landscaping and the community's most accessible pricing.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Custom Lots",
+        "type": "Guard-Gated · Build",
+        "desc": "Vacant and semi-improved custom lots for buyers seeking to build a new estate home within Roma Hills' guard-gated perimeter.",
+        "price": "From $500K (lot only)"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Roma Hills Community Area",
+        "address": "Roma Hills, Henderson, NV 89052",
+        "acreage": "~3 acres",
+        "amenities": [
+          "Walking paths",
+          "Desert landscaping",
+          "Viewpoint areas",
+          "Seating areas"
+        ]
+      },
+      {
+        "name": "Anthem Hills Park",
+        "address": "2811 Reunion Dr, Henderson, NV 89052",
+        "acreage": "~8 acres",
+        "amenities": [
+          "Walking paths",
+          "Playground",
+          "Basketball courts",
+          "Picnic shelters",
+          "Open turf"
+        ]
+      },
+      {
+        "name": "McCullough Hills Trail",
+        "address": "McCullough Hills Trailhead, Henderson, NV 89012",
+        "acreage": "~1,500 acres",
+        "amenities": [
+          "Desert hiking",
+          "Mountain biking",
+          "Wildlife viewing",
+          "Panoramic overlooks"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John C. Vanderburg Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Del E. Webb Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Coronado High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~1,200",
+      "medianAge": "48",
+      "avgIncome": "$250,000+",
+      "households": "~400",
+      "homeownership": "90%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Henderson Executive Airport",
+        "route": "via Bicentennial Pkwy"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to The District at GVR",
+        "route": "via Anthem Pkwy"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Roma Hills?",
+        "a": "Homes in Roma Hills range from approximately $600,000 for established homes in the lower sections to over $15 million for ultra-luxury custom estates in the Obsidian enclave."
+      },
+      {
+        "q": "Is Roma Hills guard-gated?",
+        "a": "Yes. Roma Hills is a guard-gated community with a 24-hour staffed gate. The Obsidian neighborhood within Roma Hills has an additional guard gate (double guard-gated)."
+      },
+      {
+        "q": "What is Obsidian at Roma Hills?",
+        "a": "Obsidian is an ultra-luxury enclave within Roma Hills featuring double guard-gated access and custom estates ranging from $5 million to over $15 million. It is the most exclusive neighborhood within Roma Hills."
+      },
+      {
+        "q": "What ZIP code is Roma Hills in?",
+        "a": "Roma Hills is located in ZIP code 89052 in Henderson, Nevada."
+      },
+      {
+        "q": "What views do Roma Hills homes have?",
+        "a": "Roma Hills' elevated hillside position provides panoramic views of the Las Vegas Strip, the entire Las Vegas Valley, and surrounding mountain ranges. Many homes have 180-degree or wider views."
+      },
+      {
+        "q": "What are HOA fees in Roma Hills?",
+        "a": "HOA fees range from approximately $200 to $800 per month depending on the specific neighborhood. Obsidian residents pay additional fees for the double guard-gated amenity."
+      },
+      {
+        "q": "How does Roma Hills compare to MacDonald Highlands?",
+        "a": "Both are guard-gated luxury communities in Henderson's foothills with panoramic views. MacDonald Highlands offers DragonRidge Country Club golf and newer ultra-luxury construction ($800K–$28M+), while Roma Hills provides a wider price range ($600K–$15M+) without a golf course."
+      },
+      {
+        "q": "What schools serve Roma Hills?",
+        "a": "Roma Hills is served by CCSD schools including Vanderburg Elementary (8/10), Del E. Webb Middle School (7/10), and Coronado High School (6/10). Private options include Henderson International School (A) and Bishop Gorman High School (A+)."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Ascaya",
+        "href": "/ascaya/",
+        "price": "From $3M",
+        "compare": "Ultra-luxury custom lot community on the McCullough Range ridgeline."
+      },
+      {
+        "name": "MacDonald Highlands",
+        "href": "/macdonald-highlands/",
+        "price": "From $800K",
+        "compare": "Henderson's premier luxury community with DragonRidge Country Club golf."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community with Rio Secco golf and Strip views."
+      },
+      {
+        "name": "Anthem",
+        "href": "/anthem/",
+        "price": "From $400K",
+        "compare": "Henderson's premier master-planned community with guard-gated and non-gated options."
+      },
+      {
+        "name": "Madeira Canyon",
+        "href": "/madeira-canyon/",
+        "price": "From $400K",
+        "compare": "Guard-gated Henderson community with mountain setting and diverse price range."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave for buyers who prefer the west side."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "The views from Roma Hills are unlike anything else in Henderson. Nevada Real Estate Group showed us homes across multiple price points and helped us find a view lot that was perfect for our family.",
+        "name": "Steven & Rachel A.",
+        "detail": "Bought in Roma Hills, Henderson · 2024"
+      },
+      {
+        "quote": "We wanted guard-gated luxury with Strip views, and Roma Hills delivered. Nevada Real Estate Group knew which lots had the best panoramas and negotiated a great price on our dream home.",
+        "name": "Michael J.",
+        "detail": "Bought in Roma Hills, Henderson · 2025"
+      }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Roma Hills Henderson",
+    "ylopoMinPrice": 600000
+  },
+  {
+    "slug": "coronado-ranch",
+    "name": "Coronado Ranch",
+    "parentCommunity": null,
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Established Community",
+    "zipCodes": [
+      "89052"
+    ],
+    "center": [
+      -115.100,
+      36.010
+    ],
+    "heroEyebrow": "Henderson, Nevada",
+    "priceRange": "$400K–$650K",
+    "established": "2000",
+    "developer": "Various builders",
+    "acreage": "~300 acres",
+    "homeCount": "1,800+",
+    "guardGated": false,
+    "hoaRange": "$50–$150/mo",
+    "overview": [
+      "Coronado Ranch is an established residential community in southeast Henderson that offers well-built single-family homes at one of the most accessible price points in the city. Developed in the early 2000s during Henderson's growth boom, Coronado Ranch features a mix of one-story and two-story homes on quiet residential streets, with community parks, walking paths, and easy access to Henderson's infrastructure.",
+      "The community's appeal lies in its combination of Henderson location, solid construction quality, and attainable pricing. Homes in Coronado Ranch typically range from approximately $400,000 to $650,000, offering three-to-five-bedroom floor plans from 1,400 to 3,000+ square feet. The neighborhood has matured nicely with established landscaping, and many homeowners have invested in pool installations, outdoor kitchens, and backyard improvements.",
+      "Coronado Ranch sits in a convenient location near the intersection of Coronado Center Drive and major Henderson corridors, providing easy access to shopping, dining, and daily conveniences. The community is within a short drive of Henderson's recreation amenities including Cornerstone Park, the Henderson Pavilion amphitheater, and the city's extensive trail network.",
+      "For buyers seeking an affordable Henderson address with good schools, low HOA fees, and the safety and quality of life that Henderson is known for, Coronado Ranch represents strong value. The community attracts families, first-time buyers, and investors who recognize that Henderson's real estate fundamentals — safety, growth, and demand — apply at every price point."
+    ],
+    "highlights": [
+      {
+        "title": "Henderson Value",
+        "body": "One of the most affordable ways to live in Henderson — homes from $400K to $650K in a city consistently ranked among the safest in America.",
+        "iconType": "home"
+      },
+      {
+        "title": "Established Neighborhood",
+        "body": "Mature landscaping, well-maintained streets, and a stable community with over 20 years of established neighborhood character.",
+        "iconType": "building"
+      },
+      {
+        "title": "Low HOA Fees",
+        "body": "Monthly HOA fees from $50 to $150 — among the lowest in Henderson. More of your budget goes toward the home itself, not community dues.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Henderson Safety",
+        "body": "Henderson consistently ranks among the top 10 safest large cities in the United States. Coronado Ranch benefits from excellent public safety services.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Community Parks",
+        "body": "Neighborhood parks with playgrounds, walking paths, and open spaces for families. Cornerstone Park is nearby with additional recreation options.",
+        "iconType": "park"
+      },
+      {
+        "title": "Convenient Location",
+        "body": "Easy access to Henderson shopping, dining, I-215, and the Galleria at Sunset mall. Close to Cornerstone Park and Henderson Pavilion.",
+        "iconType": "building"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Coronado Ranch Estates",
+        "type": "Established · Larger Homes",
+        "desc": "The larger homes in Coronado Ranch with four-to-five bedrooms and 2,500 to 3,000+ square feet. Mature landscaping and established street character.",
+        "price": "From $550K"
+      },
+      {
+        "name": "Single-Story Homes",
+        "type": "Established · Ranch",
+        "desc": "Single-story floor plans popular with downsizing buyers and those seeking main-floor living. Open layouts from 1,400 to 2,200 square feet.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Family Neighborhoods",
+        "type": "Established · Two-Story",
+        "desc": "Two-story family homes with three-to-four bedrooms, two-car garages, and private backyards. The core of Coronado Ranch's inventory.",
+        "price": "From $425K"
+      },
+      {
+        "name": "Courtyard Homes",
+        "type": "Established · Compact",
+        "desc": "Smaller courtyard-entry homes on more compact lots. Lower maintenance with private outdoor spaces.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Pool Homes",
+        "type": "Established · Upgraded",
+        "desc": "Homeowner-upgraded properties with installed pools, outdoor kitchens, and enhanced backyards. Premium pricing for turnkey outdoor living.",
+        "price": "From $475K"
+      },
+      {
+        "name": "Corner & Premium Lots",
+        "type": "Established · Larger Lots",
+        "desc": "Corner lots and premium positions with additional side yard space, enhanced privacy, and greater curb appeal.",
+        "price": "From $450K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Coronado Ranch Park",
+        "address": "Coronado Ranch, Henderson, NV 89052",
+        "acreage": "~5 acres",
+        "amenities": [
+          "Playground",
+          "Walking paths",
+          "Open turf",
+          "Basketball court",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Cornerstone Park",
+        "address": "1600 Wigwam Pkwy, Henderson, NV 89074",
+        "acreage": "~100 acres",
+        "amenities": [
+          "Lake with fishing",
+          "Walking trails",
+          "Playground",
+          "Sports fields",
+          "Amphitheater"
+        ]
+      },
+      {
+        "name": "Henderson Pavilion",
+        "address": "200 S Green Valley Pkwy, Henderson, NV 89012",
+        "acreage": "~5 acres",
+        "amenities": [
+          "Outdoor amphitheater",
+          "Concert venue",
+          "Event space",
+          "Lawn seating"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John C. Vanderburg Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Del E. Webb Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Coronado High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~5,500",
+      "medianAge": "38",
+      "avgIncome": "$85,000+",
+      "households": "~1,800",
+      "homeownership": "72%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Galleria at Sunset",
+        "route": "via Sunset Rd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Cornerstone Park",
+        "route": "via Wigwam Pkwy"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Coronado Ranch?",
+        "a": "Homes in Coronado Ranch typically range from approximately $400,000 for smaller single-story homes to $650,000 for larger estate-style homes with upgrades. The median sale price hovers around $475,000."
+      },
+      {
+        "q": "Is Coronado Ranch guard-gated?",
+        "a": "No. Coronado Ranch is an open-access community without a guard gate. The community relies on Henderson's excellent public safety services and low neighborhood crime rates."
+      },
+      {
+        "q": "What ZIP code is Coronado Ranch in?",
+        "a": "Coronado Ranch is located in ZIP code 89052 in Henderson, Nevada."
+      },
+      {
+        "q": "What are HOA fees in Coronado Ranch?",
+        "a": "HOA fees in Coronado Ranch are among the lowest in Henderson, typically ranging from $50 to $150 per month. Fees cover common area maintenance and community park upkeep."
+      },
+      {
+        "q": "What schools serve Coronado Ranch?",
+        "a": "Coronado Ranch is served by CCSD schools including Vanderburg Elementary (8/10), Del E. Webb Middle School (7/10), and Coronado High School (6/10). Charter options include Doral Academy (9/10) and Somerset Academy (8/10)."
+      },
+      {
+        "q": "Is Coronado Ranch a good investment?",
+        "a": "Coronado Ranch offers strong investment fundamentals: Henderson location, low HOA fees, consistent rental demand, and price points that attract a broad pool of buyers. Henderson's growth and safety reputation support long-term value."
+      },
+      {
+        "q": "How old are homes in Coronado Ranch?",
+        "a": "Most homes in Coronado Ranch were built between 2000 and 2006 during Henderson's primary growth period. The construction quality is solid, and many homes have been updated by their owners."
+      },
+      {
+        "q": "What is near Coronado Ranch?",
+        "a": "Coronado Ranch is near Cornerstone Park, the Henderson Pavilion, Galleria at Sunset mall, and the I-215 Beltway for easy access to the Strip, airport, and the broader valley."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Anthem",
+        "href": "/anthem/",
+        "price": "From $400K",
+        "compare": "Henderson's premier master-planned community with guard-gated and non-gated neighborhoods."
+      },
+      {
+        "name": "Inspirada",
+        "href": "/inspirada/",
+        "price": "From $420K",
+        "compare": "Newer Henderson master-planned community with parks, trails, and new construction."
+      },
+      {
+        "name": "Silverado Ranch",
+        "href": "/silverado-ranch/",
+        "price": "From $350K",
+        "compare": "Affordable established community near the Henderson/Las Vegas border."
+      },
+      {
+        "name": "Whitney Ranch",
+        "href": "/whitney-ranch/",
+        "price": "From $350K",
+        "compare": "Established Henderson community with parks and an accessible price point."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community for buyers with a larger budget."
+      },
+      {
+        "name": "Madeira Canyon",
+        "href": "/madeira-canyon/",
+        "price": "From $400K",
+        "compare": "Guard-gated community in Henderson's foothills with mountain views."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Coronado Ranch gave us the Henderson address and school district we wanted at a price we could afford. Nevada Real Estate Group found us a well-maintained home with a pool in our budget.",
+        "name": "David & Maria G.",
+        "detail": "Bought in Coronado Ranch, Henderson · 2024"
+      },
+      {
+        "quote": "As a first-time buyer, Henderson felt out of reach until Nevada Real Estate Group showed us Coronado Ranch. The low HOA fees and solid construction made it the smart choice.",
+        "name": "Rachel S.",
+        "detail": "Bought in Coronado Ranch, Henderson · 2025"
+      }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Coronado Ranch Henderson",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "calico-ridge",
+    "name": "Calico Ridge",
+    "parentCommunity": null,
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Foothill Community",
+    "zipCodes": [
+      "89012",
+      "89052"
+    ],
+    "center": [
+      -115.050,
+      36.020
+    ],
+    "heroEyebrow": "Henderson, Nevada",
+    "priceRange": "$500K–$1.2M",
+    "established": "2003",
+    "developer": "Various builders",
+    "acreage": "~250 acres",
+    "homeCount": "800+",
+    "guardGated": false,
+    "hoaRange": "$75–$200/mo",
+    "overview": [
+      "Calico Ridge is a residential community perched in the Henderson foothills east of Anthem, offering elevated desert views and a quiet, semi-rural atmosphere that sets it apart from the valley-floor neighborhoods below. Built by multiple builders beginning in the early 2000s, Calico Ridge features single-family homes on generous lots with views of the Las Vegas Strip, the Henderson Valley, and the surrounding mountain ranges.",
+      "The community's elevated terrain is its primary asset. Homes in Calico Ridge sit at higher elevations than most Henderson neighborhoods, providing sunrise views over the valley and dramatic nighttime Strip panoramas from many backyards and living spaces. The lots are generally larger than those in newer communities, giving homeowners more outdoor space for pools, outdoor kitchens, and desert landscaping.",
+      "Homes range from approximately $500,000 for established homes in the lower sections to $1.2 million or more for larger custom and semi-custom properties on premium elevated lots. The architecture is a mix of Mediterranean, Tuscan, and desert-contemporary styles, reflecting the era in which the community was built. Many homes have been tastefully updated with modern kitchens, flooring, and outdoor improvements.",
+      "Calico Ridge's location provides a balance of seclusion and convenience. The community is approximately 10 minutes from the shops and restaurants of St. Rose Parkway, 15 minutes from The District at Green Valley Ranch, and 20–25 minutes from the Strip via I-215. For buyers seeking elevated views, larger lots, and a foothill setting in Henderson without guard-gated pricing premiums, Calico Ridge is an excellent option."
+    ],
+    "highlights": [
+      {
+        "title": "Elevated Views",
+        "body": "Foothill positioning provides panoramic views of the Las Vegas Strip, Henderson Valley, and surrounding mountain ranges from many homesites and backyards.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Generous Lot Sizes",
+        "body": "Lots are generally larger than those in newer Henderson communities, providing extra space for pools, outdoor kitchens, and desert landscaping.",
+        "iconType": "home"
+      },
+      {
+        "title": "No Guard Gate Premium",
+        "body": "Foothill views and larger lots without guard-gated HOA fees. Calico Ridge delivers elevated living at a more accessible price point than gated alternatives.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Henderson Safety",
+        "body": "Henderson ranks among the safest large cities in the United States. Calico Ridge benefits from excellent public safety services and a quiet residential setting.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Quiet Semi-Rural Feel",
+        "body": "The elevated foothill setting creates a distinctly quieter, more private atmosphere than valley-floor communities while remaining close to Henderson's amenities.",
+        "iconType": "park"
+      },
+      {
+        "title": "Upgrade Potential",
+        "body": "Many homes built in the early 2000s offer strong renovation potential. Buyers can purchase below replacement cost and update to modern standards.",
+        "iconType": "building"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Upper Calico Ridge",
+        "type": "Elevated · Premium Views",
+        "desc": "The highest-elevation homes with the best panoramic views of the Strip, valley, and mountains. Larger lots and the community's highest pricing.",
+        "price": "From $800K+"
+      },
+      {
+        "name": "Custom Home Section",
+        "type": "Custom · Large Lots",
+        "desc": "Semi-custom and custom-built homes on half-acre+ lots with unique architectural designs and premium outdoor living spaces.",
+        "price": "From $900K"
+      },
+      {
+        "name": "Mid-Ridge Homes",
+        "type": "Established · Valley Views",
+        "desc": "Mid-elevation homes with valley and partial Strip views. Good balance of views and accessibility at moderate pricing.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Entry Collection",
+        "type": "Established · Accessible",
+        "desc": "Homes in the lower sections of Calico Ridge offering the most accessible entry point to the community's foothill location.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Pool Homes",
+        "type": "Established · Upgraded",
+        "desc": "Properties with installed pools, spas, and upgraded outdoor living. Popular with buyers seeking turnkey foothill lifestyle properties.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Cul-de-Sac Properties",
+        "type": "Established · Private",
+        "desc": "Homes on cul-de-sac streets with reduced traffic and enhanced privacy. Desirable for families seeking a quiet residential setting.",
+        "price": "From $550K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Calico Ridge Community Park",
+        "address": "Calico Ridge, Henderson, NV 89012",
+        "acreage": "~3 acres",
+        "amenities": [
+          "Walking paths",
+          "Open space",
+          "Desert landscaping",
+          "Viewpoint areas"
+        ]
+      },
+      {
+        "name": "Anthem Hills Park",
+        "address": "2811 Reunion Dr, Henderson, NV 89052",
+        "acreage": "~8 acres",
+        "amenities": [
+          "Walking paths",
+          "Playground",
+          "Basketball courts",
+          "Picnic shelters",
+          "Open turf"
+        ]
+      },
+      {
+        "name": "McCullough Hills Trail",
+        "address": "McCullough Hills Trailhead, Henderson, NV 89012",
+        "acreage": "~1,500 acres",
+        "amenities": [
+          "Desert hiking",
+          "Mountain biking",
+          "Wildlife viewing",
+          "Panoramic overlooks"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John C. Vanderburg Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Del E. Webb Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Coronado High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~2,500",
+      "medianAge": "44",
+      "avgIncome": "$120,000+",
+      "households": "~800",
+      "homeownership": "82%"
+    },
+    "driveTimes": [
+      {
+        "time": "~22 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to The District at GVR",
+        "route": "via Anthem Pkwy"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to St. Rose Pkwy Shopping",
+        "route": "via St. Rose Pkwy"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Calico Ridge?",
+        "a": "Homes in Calico Ridge range from approximately $500,000 for established homes in the lower sections to $1.2 million or more for larger custom homes on premium elevated view lots."
+      },
+      {
+        "q": "Is Calico Ridge guard-gated?",
+        "a": "No. Calico Ridge is not guard-gated. The community offers foothill views and larger lots at a price point below guard-gated alternatives, with Henderson's excellent public safety services."
+      },
+      {
+        "q": "What ZIP codes is Calico Ridge in?",
+        "a": "Calico Ridge spans ZIP codes 89012 and 89052 in Henderson, Nevada."
+      },
+      {
+        "q": "What views do Calico Ridge homes have?",
+        "a": "Many homes in Calico Ridge have panoramic views of the Las Vegas Strip, the Henderson Valley, and the surrounding mountain ranges. Upper-elevation lots offer the most dramatic viewsheds."
+      },
+      {
+        "q": "What are HOA fees in Calico Ridge?",
+        "a": "HOA fees in Calico Ridge are relatively low, typically ranging from $75 to $200 per month. Fees cover common area maintenance, desert landscaping, and community park upkeep."
+      },
+      {
+        "q": "What schools serve Calico Ridge?",
+        "a": "Calico Ridge is served by CCSD schools including Vanderburg Elementary (8/10), Del E. Webb Middle School (7/10), and Coronado High School (6/10). Charter options include Doral Academy (9/10) and Somerset Academy (8/10)."
+      },
+      {
+        "q": "How do Calico Ridge lots compare to newer communities?",
+        "a": "Calico Ridge lots are generally larger than those in newer Henderson master-planned communities. Buyers get more outdoor space for pools, landscaping, and outdoor kitchens without the premium lot prices of new construction."
+      },
+      {
+        "q": "Is Calico Ridge a good value compared to guard-gated communities?",
+        "a": "Calico Ridge offers foothill views and larger lots similar to guard-gated communities like Roma Hills and Madeira Canyon, but without the guard-gated HOA premium. It is an excellent value for buyers who prioritize views and lot size over gated access."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Anthem",
+        "href": "/anthem/",
+        "price": "From $400K",
+        "compare": "Henderson's premier master-planned community adjacent to Calico Ridge."
+      },
+      {
+        "name": "Roma Hills",
+        "href": "/roma-hills/",
+        "price": "From $600K",
+        "compare": "Guard-gated luxury community with similar foothill views and higher pricing."
+      },
+      {
+        "name": "Madeira Canyon",
+        "href": "/madeira-canyon/",
+        "price": "From $400K",
+        "compare": "Guard-gated community in Henderson's foothills with recreation center and trails."
+      },
+      {
+        "name": "MacDonald Highlands",
+        "href": "/macdonald-highlands/",
+        "price": "From $800K",
+        "compare": "Henderson's premier luxury community for buyers seeking guard-gated estate living."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community with Rio Secco golf and Strip views."
+      },
+      {
+        "name": "Coronado Ranch",
+        "href": "/coronado-ranch/",
+        "price": "From $400K",
+        "compare": "More affordable Henderson community on the valley floor, without foothill views."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "The views from Calico Ridge are incredible — we can see the Strip from our backyard every night. Nevada Real Estate Group found us a home with panoramic views at a fraction of what we'd pay in a guard-gated community.",
+        "name": "Patrick & Susan D.",
+        "detail": "Bought in Calico Ridge, Henderson · 2024"
+      },
+      {
+        "quote": "We wanted a larger lot in Henderson's foothills without the guard-gated premium. Nevada Real Estate Group showed us Calico Ridge and it was exactly what we were looking for.",
+        "name": "Kevin R.",
+        "detail": "Bought in Calico Ridge, Henderson · 2025"
+      }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Calico Ridge Henderson",
+    "ylopoMinPrice": 500000
+  }
+]

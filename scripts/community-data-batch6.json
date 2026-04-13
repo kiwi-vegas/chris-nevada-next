@@ -1,0 +1,1457 @@
+[
+  {
+    "slug": "anthem-coventry",
+    "name": "Anthem Coventry",
+    "parentCommunity": "Anthem",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": ["89052"],
+    "center": [-115.065, 36.003],
+    "heroEyebrow": "Anthem, Henderson",
+    "priceRange": "$500K–$900K",
+    "established": "1998",
+    "developer": "Del Webb / Pulte Group",
+    "acreage": "350 acres",
+    "homeCount": "1,200+",
+    "guardGated": false,
+    "hoaRange": "$80–$180/mo",
+    "overview": [
+      "Anthem Coventry is a well-established residential neighborhood within the Anthem master-planned community in Henderson. Developed in the late 1990s and early 2000s as one of the original villages of Anthem, Coventry offers a mix of single-family homes ranging from approximately 1,500 to 3,500 square feet. The neighborhood appeals to families, professionals, and move-up buyers who want Anthem's amenities and top-rated schools at price points below the guard-gated Anthem Country Club enclave.",
+      "Homes in Anthem Coventry range from approximately $500,000 for well-maintained resales to $900,000 for larger updated homes on premium lots with mountain or park views. The architectural style is predominantly Southwest and Mediterranean, with stucco exteriors, tile roofs, and desert-adapted landscaping. Many homes have been extensively updated with modern kitchens, pools, and outdoor living spaces that take advantage of Henderson's 300+ days of sunshine.",
+      "The neighborhood benefits from all of Anthem's master-plan amenities — the Anthem Center community hub with pools, fitness facilities, and sports courts; miles of connected walking and biking trails; and multiple neighborhood parks. Coventry residents are within the attendance boundaries of some of Henderson's highest-rated CCSD schools, including Del E. Webb Middle School and Coronado High School, which consistently rank among the top public schools in Clark County.",
+      "Location is a significant advantage. Anthem Coventry is just minutes from the shops and dining along St. Rose Parkway and Eastern Avenue, with easy access to I-215 and I-15 for commutes to the Strip, Henderson's business districts, and Harry Reid International Airport. For buyers who want a proven Anthem address without the guard-gated premium, Coventry delivers exceptional value with a strong track record of appreciation."
+    ],
+    "highlights": [
+      { "title": "Anthem Master-Plan Amenities", "body": "Full access to the Anthem Center, which features resort-style pools, a fitness center, tennis and basketball courts, a splash pad, and community gathering spaces.", "iconType": "building" },
+      { "title": "Top-Rated Schools", "body": "Zoned for some of Henderson's best CCSD schools, including Del E. Webb Middle School and Coronado High School — both consistently ranked among the top public schools in Clark County.", "iconType": "school" },
+      { "title": "Connected Trail System", "body": "Miles of walking and biking trails wind through Anthem Coventry and connect to the broader Anthem trail network and surrounding desert open space.", "iconType": "park" },
+      { "title": "Strong Resale Value", "body": "Anthem Coventry has demonstrated consistent appreciation over two decades. The combination of Anthem schools, amenities, and Henderson location drives steady demand.", "iconType": "trend" },
+      { "title": "Mountain Views", "body": "Many homes enjoy views of the McCullough Range and Black Mountain, particularly lots on elevated positions along the neighborhood's southern and western edges.", "iconType": "mountain" },
+      { "title": "Convenient Location", "body": "Minutes from St. Rose Parkway shopping, dining, and medical facilities. Easy freeway access to the Strip (20 min), Henderson business corridor, and Harry Reid Airport (20 min).", "iconType": "building" }
+    ],
+    "neighborhoods": [
+      { "name": "Coventry at Anthem", "type": "Single-Family · Established", "desc": "The core of Anthem Coventry with homes from 1,800 to 3,000 square feet. Mature landscaping, established HOA, and proximity to Anthem Center.", "price": "From $500K" },
+      { "name": "Coventry Heights", "type": "Single-Family · Views", "desc": "Elevated lots on the upper reaches of the neighborhood with mountain and valley views. Larger lots and premium positioning.", "price": "From $650K" },
+      { "name": "Coventry Estates", "type": "Single-Family · Premium", "desc": "Larger homes in the 2,800–3,500 sq ft range with 3-car garages, updated interiors, and resort-style backyards.", "price": "From $750K" }
+    ],
+    "parks": [
+      { "name": "Anthem Center", "address": "2450 Hampton Rd, Henderson, NV 89052", "acreage": "~10 acres", "amenities": ["Resort-style pools", "Fitness center", "Tennis courts", "Basketball courts", "Splash pad", "Community rooms"] },
+      { "name": "Anthem Hills Park", "address": "2610 Serenity Hill Dr, Henderson, NV 89052", "acreage": "~15 acres", "amenities": ["Playground", "Walking trails", "Sports fields", "Picnic areas", "Open space"] },
+      { "name": "Coventry Park", "address": "2370 Coventry Green Ave, Henderson, NV 89052", "acreage": "~5 acres", "amenities": ["Playground", "Walking paths", "Shade structures", "Open grass"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["John C. Vanderburg Elementary", "K–5", "9/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Pinecrest Academy of Nevada", "K–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy", "K–8", "8/10"],
+        ["Pinecrest Academy Inspirada", "K–12", "9/10"]
+      ]
+    },
+    "demographics": {
+      "population": "3,800+",
+      "medianAge": "42",
+      "avgIncome": "$125,000+",
+      "households": "1,200+",
+      "homeownership": "82%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 W → I-15 N" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Eastern Ave" },
+      { "time": "~30 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Anthem Coventry?", "a": "Homes in Anthem Coventry range from approximately $500,000 for well-maintained resale homes to $900,000 for larger updated properties on premium lots with mountain views." },
+      { "q": "Is Anthem Coventry guard-gated?", "a": "No. Anthem Coventry is not guard-gated, though it benefits from the managed access points and security patrols of the broader Anthem master-planned community. For guard-gated living within Anthem, see Anthem Country Club." },
+      { "q": "What ZIP code is Anthem Coventry in?", "a": "Anthem Coventry is located in ZIP code 89052 in Henderson, Nevada." },
+      { "q": "What schools serve Anthem Coventry?", "a": "Anthem Coventry is zoned for top-rated CCSD schools including John C. Vanderburg Elementary (9/10), Del E. Webb Middle School (8/10), and Coronado High School (8/10). Private options include Henderson International School and Bishop Gorman High School." },
+      { "q": "What amenities does Anthem Coventry have?", "a": "Anthem Coventry residents have full access to the Anthem Center, which includes resort-style pools, a fitness center, tennis and basketball courts, a splash pad, and community gathering spaces. The neighborhood also features parks and connected walking trails." },
+      { "q": "How does Anthem Coventry compare to Anthem Highlands?", "a": "Both are family-oriented neighborhoods within the Anthem master plan. Coventry was built slightly earlier and has more mature landscaping. Highlands tends to have slightly newer construction. Both share access to Anthem Center amenities and top-rated schools." },
+      { "q": "What are HOA fees in Anthem Coventry?", "a": "HOA fees in Anthem Coventry typically range from $80 to $180 per month, covering the Anthem master association fee. Fees fund community amenities including the Anthem Center, trail maintenance, common area landscaping, and security patrols." },
+      { "q": "Is Anthem Coventry a good investment?", "a": "Anthem Coventry has a strong track record of appreciation thanks to its Anthem address, top-rated schools, and Henderson location. The neighborhood attracts consistent buyer demand from families and professionals, supporting stable long-term values." }
+    ],
+    "nearby": [
+      { "name": "Anthem", "href": "/anthem/", "price": "From $400K", "compare": "The broader master-planned community that Coventry calls home. Multiple villages, top schools, resort-style amenities." },
+      { "name": "Anthem Country Club", "href": "/anthem-country-club/", "price": "From $1.2M", "compare": "Guard-gated luxury golf community within Anthem with Hale Irwin-designed course." },
+      { "name": "Anthem Highlands", "href": "/anthem-highlands/", "price": "From $500K", "compare": "Neighboring Anthem village with similar pricing and shared amenities." },
+      { "name": "Sun City Anthem", "href": "/sun-city-anthem/", "price": "From $350K", "compare": "55+ active adult community within Anthem with its own golf course and clubhouse." },
+      { "name": "Inspirada", "href": "/inspirada/", "price": "From $400K", "compare": "Newer Henderson master plan just south of Anthem with parks and modern architecture." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf and 25 distinct neighborhoods." }
+    ],
+    "testimonials": [
+      { "quote": "We chose Anthem Coventry for the schools and the community feel. Nevada Real Estate Group found us a home with mountain views, a pool, and a short walk to the Anthem Center. Three years in and we couldn't be happier.", "name": "Jason & Maria K.", "detail": "Bought in Anthem Coventry · 2023" },
+      { "quote": "Selling in Anthem Coventry was smooth — the Nevada Real Estate Group priced our home perfectly and we had multiple offers in the first week. The schools and amenities sell themselves, but the marketing they did was exceptional.", "name": "Sarah T.", "detail": "Sold in Anthem Coventry · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Anthem Coventry",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "anthem-highlands",
+    "name": "Anthem Highlands",
+    "parentCommunity": "Anthem",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": ["89052"],
+    "center": [-115.058, 36.008],
+    "heroEyebrow": "Anthem, Henderson",
+    "priceRange": "$500K–$800K",
+    "established": "2000",
+    "developer": "Del Webb / Pulte Group",
+    "acreage": "300 acres",
+    "homeCount": "1,000+",
+    "guardGated": false,
+    "hoaRange": "$80–$180/mo",
+    "overview": [
+      "Anthem Highlands is one of the most popular residential villages within the Anthem master-planned community in Henderson. Built primarily between 2000 and 2006 by national builders including Pulte, KB Home, and Richmond American, the neighborhood features a wide range of single-family homes from approximately 1,400 to 3,200 square feet. The community sits on elevated terrain along the eastern slopes of Anthem, offering many homes panoramic views of the Las Vegas Valley and the surrounding mountain ranges.",
+      "Homes in Anthem Highlands range from approximately $500,000 for smaller, well-maintained resales to $800,000 for larger homes on premium view lots that have been fully updated. The architectural style follows the Southwest and Mediterranean palette that characterizes much of Anthem — stucco exteriors, tile roofs, and earth-tone color schemes. Many homeowners have invested significantly in renovations, adding modern kitchens, outdoor living spaces, and energy-efficient upgrades.",
+      "Like all Anthem villages, Highlands residents enjoy full access to the Anthem Center with resort-style pools, fitness facilities, tennis courts, and community gathering spaces. The neighborhood also has its own parks, pocket greenbelts, and connections to Anthem's extensive trail network that winds through the community's natural desert washes and up into the surrounding foothills.",
+      "Anthem Highlands is a proven family neighborhood with reliable resale performance. The school zoning — including Vanderburg Elementary, Webb Middle, and Coronado High — is among the most desirable in Henderson. The combination of Anthem's brand-name recognition, top-tier schools, family-friendly amenities, and easy access to Henderson's retail and employment corridors makes Highlands one of the steadiest performers in the Henderson resale market."
+    ],
+    "highlights": [
+      { "title": "Elevated Valley Views", "body": "Anthem Highlands sits on higher terrain within the Anthem master plan, offering many homes sweeping views of the Las Vegas Valley, the Strip skyline, and the surrounding McCullough Range.", "iconType": "mountain" },
+      { "title": "Top Henderson Schools", "body": "Zoned for Vanderburg Elementary (9/10), Del E. Webb Middle (8/10), and Coronado High School (8/10) — one of the strongest school trifectas in Clark County.", "iconType": "school" },
+      { "title": "Anthem Center Access", "body": "Full access to the Anthem Center, which includes resort-style pools, a fitness center, tennis and basketball courts, and community gathering spaces for residents.", "iconType": "building" },
+      { "title": "Connected Trail System", "body": "Walking and biking trails throughout Anthem Highlands connect to the broader Anthem trail network, desert washes, and surrounding open space and foothills.", "iconType": "park" },
+      { "title": "Consistent Appreciation", "body": "Anthem Highlands has demonstrated reliable appreciation across market cycles, supported by strong school zoning, master-plan amenities, and the Henderson address.", "iconType": "trend" },
+      { "title": "Family-Friendly Design", "body": "Wide streets, cul-de-sacs, neighborhood parks, and a low-traffic layout create a safe, walkable environment for families with children.", "iconType": "home" }
+    ],
+    "neighborhoods": [
+      { "name": "Highlands Core", "type": "Single-Family · Established", "desc": "The central neighborhood of Anthem Highlands with 1,600–2,500 sq ft homes on standard lots. Close to parks and trail connections.", "price": "From $500K" },
+      { "name": "Highlands View Estates", "type": "Single-Family · Views", "desc": "Elevated homes on the upper tier of the neighborhood with unobstructed Las Vegas Valley views. Premium lot positions.", "price": "From $650K" },
+      { "name": "Highlands Ridge", "type": "Single-Family · Premium", "desc": "Larger homes from 2,500–3,200 sq ft with 3-car garages and upgraded lots near the neighborhood perimeter.", "price": "From $700K" }
+    ],
+    "parks": [
+      { "name": "Anthem Center", "address": "2450 Hampton Rd, Henderson, NV 89052", "acreage": "~10 acres", "amenities": ["Resort-style pools", "Fitness center", "Tennis courts", "Basketball courts", "Splash pad", "Community rooms"] },
+      { "name": "Anthem Highlands Park", "address": "Anthem Highlands Dr, Henderson, NV 89052", "acreage": "~8 acres", "amenities": ["Playground", "Sports fields", "Walking trails", "Picnic areas", "Open space"] },
+      { "name": "Desert Bloom Park", "address": "2500 Desert Bloom Dr, Henderson, NV 89052", "acreage": "~4 acres", "amenities": ["Playground", "Walking paths", "Shade structures", "Dog run"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["John C. Vanderburg Elementary", "K–5", "9/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Pinecrest Academy of Nevada", "K–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy", "K–8", "8/10"],
+        ["Pinecrest Academy Inspirada", "K–12", "9/10"]
+      ]
+    },
+    "demographics": {
+      "population": "3,200+",
+      "medianAge": "40",
+      "avgIncome": "$115,000+",
+      "households": "1,000+",
+      "homeownership": "80%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 W → I-15 N" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Eastern Ave" },
+      { "time": "~30 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Anthem Highlands?", "a": "Homes in Anthem Highlands range from approximately $500,000 for smaller resale homes to $800,000 for larger updated properties on premium view lots with mountain and valley views." },
+      { "q": "Is Anthem Highlands guard-gated?", "a": "No. Anthem Highlands is not guard-gated, though it benefits from the managed access and security patrols of the broader Anthem master-planned community. For guard-gated living within Anthem, see Anthem Country Club." },
+      { "q": "What ZIP code is Anthem Highlands in?", "a": "Anthem Highlands is located in ZIP code 89052 in Henderson, Nevada." },
+      { "q": "What schools serve Anthem Highlands?", "a": "Anthem Highlands is zoned for Vanderburg Elementary (9/10 GreatSchools), Del E. Webb Middle School (8/10), and Coronado High School (8/10) — one of the top school trifectas in Clark County." },
+      { "q": "How does Anthem Highlands compare to Anthem Coventry?", "a": "Both are family-oriented villages within Anthem sharing the same amenities and school zoning. Highlands tends to have slightly newer construction and more elevated terrain with valley views. Coventry has more mature landscaping. Pricing is very similar between the two." },
+      { "q": "What amenities does Anthem Highlands have?", "a": "Residents have full access to the Anthem Center with resort-style pools, fitness center, tennis courts, and community gathering spaces. The neighborhood also features its own parks, trails, and greenbelts." },
+      { "q": "What are HOA fees in Anthem Highlands?", "a": "HOA fees in Anthem Highlands typically range from $80 to $180 per month, covering the Anthem master association fee. Fees fund the Anthem Center, trail maintenance, common area landscaping, and security patrols." },
+      { "q": "Is Anthem Highlands a good area for families?", "a": "Yes. Anthem Highlands is one of the most popular family neighborhoods in Henderson, with top-rated schools, safe cul-de-sac street design, multiple parks, and a community center that serves as a social hub for families." }
+    ],
+    "nearby": [
+      { "name": "Anthem", "href": "/anthem/", "price": "From $400K", "compare": "The broader master-planned community. Multiple villages, top schools, resort amenities." },
+      { "name": "Anthem Coventry", "href": "/anthem-coventry/", "price": "From $500K", "compare": "Neighboring Anthem village with similar pricing and shared amenities." },
+      { "name": "Anthem Country Club", "href": "/anthem-country-club/", "price": "From $1.2M", "compare": "Guard-gated luxury golf community within Anthem with Hale Irwin course." },
+      { "name": "Sun City Anthem", "href": "/sun-city-anthem/", "price": "From $350K", "compare": "55+ active adult community within Anthem with its own golf course." },
+      { "name": "Inspirada", "href": "/inspirada/", "price": "From $400K", "compare": "Newer Henderson master plan just south of Anthem with parks and modern homes." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf and 25 neighborhoods." }
+    ],
+    "testimonials": [
+      { "quote": "Anthem Highlands checked every box for our family — great schools, views, and the kids love the Anthem Center pools. Nevada Real Estate Group found us a home with valley views that we never would have known about without their local expertise.", "name": "David & Lauren M.", "detail": "Bought in Anthem Highlands · 2024" },
+      { "quote": "Our Anthem Highlands home sold in 9 days with three offers. The team's pricing strategy was spot on — they knew exactly where the market was and positioned us perfectly.", "name": "Karen R.", "detail": "Sold in Anthem Highlands · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Anthem Highlands",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "solera-at-anthem",
+    "name": "Solera at Anthem",
+    "parentCommunity": "Anthem",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "55+ · Guard-Gated · Active Adult",
+    "zipCodes": ["89044"],
+    "center": [-115.055, 35.988],
+    "heroEyebrow": "Anthem, Henderson",
+    "priceRange": "$350K–$650K",
+    "established": "2001",
+    "developer": "Del Webb",
+    "acreage": "200 acres",
+    "homeCount": "900+",
+    "guardGated": true,
+    "hoaRange": "$150–$280/mo",
+    "overview": [
+      "Solera at Anthem is a guard-gated 55+ active adult community located within the Anthem master plan in Henderson. Developed by Del Webb beginning in 2001, Solera offers single-story homes ranging from approximately 1,200 to 2,400 square feet, designed specifically for active adults who want low-maintenance living with resort-style amenities in one of Henderson's most desirable locations.",
+      "Homes in Solera at Anthem range from approximately $350,000 for smaller floor plans to $650,000 for premium end-unit or detached homes on oversized lots with mountain views. The community features a mix of attached patio homes and detached single-family homes, all single-story for accessibility. Architecture is Southwest-inspired with stucco exteriors, tile roofs, and desert landscaping maintained by the HOA, minimizing homeowner yard work.",
+      "The heart of Solera is its private clubhouse, which serves as the community's social center. Facilities include a resort-style swimming pool, spa, fitness center, tennis courts, bocce ball courts, a multi-purpose activity room, and a billiards lounge. The community hosts regular social events, fitness classes, card groups, and clubs that keep residents connected and active. It's a smaller, more intimate alternative to the much larger Sun City Anthem 55+ community nearby.",
+      "Solera's guard-gated entry provides 24-hour controlled access, adding a layer of security and privacy that distinguishes it from non-gated 55+ communities. The location within Anthem means residents benefit from Henderson's top-tier medical facilities, dining along St. Rose Parkway, and easy access to I-215 and US-95 for day trips to Lake Mead, Red Rock Canyon, and the Las Vegas Strip."
+    ],
+    "highlights": [
+      { "title": "Guard-Gated 55+ Community", "body": "24-hour staffed guard gate provides controlled access and security. One of the few guard-gated 55+ communities in Henderson, offering privacy that open communities cannot match.", "iconType": "shield" },
+      { "title": "Private Clubhouse & Pool", "body": "Resort-style clubhouse with swimming pool, spa, fitness center, tennis courts, bocce ball, billiards, and multi-purpose rooms for activities and social events.", "iconType": "building" },
+      { "title": "Single-Story Living", "body": "All homes are single-story for accessibility, ranging from 1,200 to 2,400 sq ft. Both attached patio homes and detached single-family homes available.", "iconType": "home" },
+      { "title": "Low-Maintenance Lifestyle", "body": "HOA covers front yard landscaping, common area maintenance, and exterior upkeep, allowing residents to focus on enjoying an active retirement lifestyle.", "iconType": "park" },
+      { "title": "Active Social Community", "body": "Regular social events, fitness classes, card groups, book clubs, and community gatherings keep residents engaged. A smaller, more intimate alternative to larger 55+ communities.", "iconType": "building" },
+      { "title": "Henderson Medical Access", "body": "Minutes from Henderson Hospital, St. Rose Dominican, and multiple medical facilities along St. Rose Parkway — an important consideration for 55+ buyers.", "iconType": "building" }
+    ],
+    "neighborhoods": [
+      { "name": "Solera Patio Homes", "type": "Attached · Low-Maintenance", "desc": "Attached patio-style homes from 1,200 to 1,600 sq ft. The most affordable entry point into guard-gated 55+ living in Anthem.", "price": "From $350K" },
+      { "name": "Solera Detached Homes", "type": "Detached · Single-Story", "desc": "Detached single-family homes from 1,600 to 2,000 sq ft with private yards and 2-car garages. The most popular home type in the community.", "price": "From $425K" },
+      { "name": "Solera Premium Lots", "type": "Detached · Views", "desc": "Larger detached homes on oversized lots with mountain views or backing to open desert space. The most desirable positions in Solera.", "price": "From $525K" }
+    ],
+    "parks": [
+      { "name": "Solera Community Clubhouse", "address": "2401 Solera Sky Dr, Henderson, NV 89044", "acreage": "~5 acres", "amenities": ["Resort-style pool", "Spa", "Fitness center", "Tennis courts", "Bocce ball", "Billiards", "Activity rooms"] },
+      { "name": "Anthem Hills Park", "address": "2610 Serenity Hill Dr, Henderson, NV 89052", "acreage": "~15 acres", "amenities": ["Walking trails", "Picnic areas", "Open desert space", "Mountain views"] },
+      { "name": "Sloan Canyon National Conservation Area", "address": "South of Henderson, NV", "acreage": "48,438 acres", "amenities": ["Hiking trails", "Petroglyphs", "Desert wildlife viewing", "Photography"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["John C. Vanderburg Elementary", "K–5", "9/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "1,600+",
+      "medianAge": "67",
+      "avgIncome": "$80,000+",
+      "households": "900+",
+      "homeownership": "90%"
+    },
+    "driveTimes": [
+      { "time": "~25 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 W → I-15 N" },
+      { "time": "~15 min", "destination": "to Henderson Downtown", "route": "via Eastern Ave" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~30 min", "destination": "to Lake Mead", "route": "via US-93 / I-11" }
+    ],
+    "faqs": [
+      { "q": "What is the age requirement for Solera at Anthem?", "a": "Solera at Anthem is a 55+ community. At least one resident in each household must be 55 years of age or older. Some homes may allow a younger spouse, but all residents must comply with the community's age-restriction rules." },
+      { "q": "Is Solera at Anthem guard-gated?", "a": "Yes. Solera at Anthem has a 24-hour staffed guard gate with controlled access. It is one of the few guard-gated 55+ communities in Henderson." },
+      { "q": "What is the price range for homes in Solera at Anthem?", "a": "Homes in Solera at Anthem range from approximately $350,000 for attached patio homes to $650,000 for larger detached homes on premium lots with mountain views." },
+      { "q": "How does Solera compare to Sun City Anthem?", "a": "Both are 55+ communities within Anthem. Sun City Anthem is much larger (7,000+ homes vs 900+), has its own golf course, and a bigger clubhouse. Solera is smaller, more intimate, and guard-gated — offering a tighter-knit community feel with controlled access that Sun City Anthem does not have." },
+      { "q": "What are HOA fees in Solera at Anthem?", "a": "HOA fees typically range from $150 to $280 per month. Fees cover guard gate staffing, front yard landscaping, common area maintenance, clubhouse facilities, pool, and fitness center." },
+      { "q": "Are homes in Solera single-story?", "a": "Yes. All homes in Solera at Anthem are single-story for accessibility, which is standard for 55+ communities. Homes range from approximately 1,200 to 2,400 square feet." },
+      { "q": "What ZIP code is Solera at Anthem in?", "a": "Solera at Anthem is located in ZIP code 89044 in Henderson, Nevada." },
+      { "q": "Does Solera at Anthem have a golf course?", "a": "No, Solera does not have its own golf course. However, the nearby Anthem Country Club (Hale Irwin-designed) and Sun City Anthem (two courses) are within a short drive. Several Henderson golf courses are easily accessible." }
+    ],
+    "nearby": [
+      { "name": "Anthem", "href": "/anthem/", "price": "From $400K", "compare": "The broader master-planned community surrounding Solera. Family-oriented with top schools." },
+      { "name": "Sun City Anthem", "href": "/sun-city-anthem/", "price": "From $350K", "compare": "Much larger 55+ community with its own golf course, but not guard-gated." },
+      { "name": "Anthem Country Club", "href": "/anthem-country-club/", "price": "From $1.2M", "compare": "Guard-gated luxury golf community within Anthem. Premium price point." },
+      { "name": "Sun City MacDonald Ranch", "href": "/sun-city-macdonald-ranch/", "price": "From $300K", "compare": "Another Del Webb 55+ community nearby with golf course and larger clubhouse." },
+      { "name": "Inspirada", "href": "/inspirada/", "price": "From $400K", "compare": "Newer Henderson master plan. Not age-restricted; multi-generational." },
+      { "name": "Terra Bella", "href": "/terra-bella/", "price": "From $300K", "compare": "55+ community in Henderson. Not guard-gated, but attractive pricing." }
+    ],
+    "testimonials": [
+      { "quote": "After retiring, we wanted a guard-gated community where we could walk to the pool and meet our neighbors at social events. Solera is exactly that. Nevada Real Estate Group helped us find a home backing to open desert with mountain views — we pinch ourselves every morning.", "name": "Robert & Nancy H.", "detail": "Bought in Solera at Anthem · 2024" },
+      { "quote": "We downsized from a large home in Summerlin and moved to Solera for the low-maintenance lifestyle. The team handled every detail of selling our old home and buying in Solera simultaneously. Seamless transition.", "name": "Thomas K.", "detail": "Bought in Solera at Anthem · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Solera at Anthem",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "terra-bella",
+    "name": "Terra Bella",
+    "parentCommunity": "Anthem",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "55+ · Active Adult",
+    "zipCodes": ["89044"],
+    "center": [-115.050, 35.995],
+    "heroEyebrow": "Anthem, Henderson",
+    "priceRange": "$300K–$600K+",
+    "established": "2004",
+    "developer": "Shea Homes",
+    "acreage": "120 acres",
+    "homeCount": "550+",
+    "guardGated": false,
+    "hoaRange": "$120–$220/mo",
+    "overview": [
+      "Terra Bella is a 55+ active adult community located within the Anthem master plan in Henderson. Developed by Shea Homes beginning in 2004, Terra Bella offers single-story homes ranging from approximately 1,100 to 2,200 square feet, with a focus on open floor plans, energy efficiency, and low-maintenance desert living. The community provides a comfortable, social retirement lifestyle at price points that are among the most accessible in the Anthem area.",
+      "Homes in Terra Bella range from approximately $300,000 for smaller floor plans to over $600,000 for larger detached homes on premium lots. The community features a variety of floor plans including attached garden homes and detached single-family residences. Shea Homes' Trilogy brand is known for quality construction, thoughtful floor plans, and attention to indoor-outdoor flow — many Terra Bella homes feature covered patios, courtyards, and low-water landscaping.",
+      "The Terra Bella community center serves as the neighborhood's social hub, featuring a swimming pool, spa, fitness room, and multi-purpose activity space. While smaller than the clubhouses at Sun City Anthem or the larger Del Webb communities, Terra Bella's amenity center has a friendly, intimate character that residents appreciate. The community hosts regular social events, potlucks, fitness classes, and hobby groups.",
+      "Terra Bella's location within Anthem means residents enjoy convenient access to Henderson's medical facilities, shopping, and dining along St. Rose Parkway and Eastern Avenue. The community is also close to outdoor recreation — Sloan Canyon National Conservation Area and Lake Mead are both within a 30-minute drive. For 55+ buyers who want an active lifestyle in a well-located Henderson community without the higher price tags of guard-gated alternatives, Terra Bella delivers genuine value."
+    ],
+    "highlights": [
+      { "title": "Affordable 55+ Living", "body": "One of the most accessibly priced 55+ communities in the Anthem area, with homes starting around $300,000. Strong value for the Anthem address and Henderson location.", "iconType": "trend" },
+      { "title": "Single-Story Shea Homes", "body": "All single-story construction by Shea Homes, known for quality floor plans with open layouts, indoor-outdoor flow, and energy-efficient design.", "iconType": "home" },
+      { "title": "Community Center & Pool", "body": "Private community center with swimming pool, spa, fitness room, and activity space. An intimate social hub with regular events and gatherings.", "iconType": "building" },
+      { "title": "Low-Maintenance Lifestyle", "body": "HOA handles front yard landscaping and common area upkeep, freeing residents to enjoy retirement activities without extensive home maintenance.", "iconType": "park" },
+      { "title": "Henderson Medical Access", "body": "Close proximity to Henderson Hospital, St. Rose Dominican, and multiple medical facilities — a critical consideration for active adult buyers.", "iconType": "building" },
+      { "title": "Desert Recreation Access", "body": "Sloan Canyon National Conservation Area and Lake Mead are both within a 30-minute drive, offering hiking, boating, and outdoor recreation year-round.", "iconType": "mountain" }
+    ],
+    "neighborhoods": [
+      { "name": "Terra Bella Garden Homes", "type": "Attached · Low-Maintenance", "desc": "Attached garden-style homes from 1,100 to 1,500 sq ft. The most affordable option in Terra Bella with minimal yard upkeep.", "price": "From $300K" },
+      { "name": "Terra Bella Detached", "type": "Detached · Single-Story", "desc": "Detached single-family homes from 1,500 to 1,900 sq ft with private yards and 2-car garages.", "price": "From $400K" },
+      { "name": "Terra Bella Premium", "type": "Detached · Larger", "desc": "The largest floor plans in Terra Bella at 1,900–2,200 sq ft, with upgraded lots, extended patios, and mountain or open-space views.", "price": "From $500K" }
+    ],
+    "parks": [
+      { "name": "Terra Bella Community Center", "address": "Terra Bella Dr, Henderson, NV 89044", "acreage": "~3 acres", "amenities": ["Swimming pool", "Spa", "Fitness room", "Activity center", "Outdoor gathering areas"] },
+      { "name": "Anthem Hills Park", "address": "2610 Serenity Hill Dr, Henderson, NV 89052", "acreage": "~15 acres", "amenities": ["Walking trails", "Picnic areas", "Open space", "Mountain views"] },
+      { "name": "Sloan Canyon National Conservation Area", "address": "South of Henderson, NV", "acreage": "48,438 acres", "amenities": ["Hiking trails", "Petroglyphs", "Desert wildlife", "Photography"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["John C. Vanderburg Elementary", "K–5", "9/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "900+",
+      "medianAge": "68",
+      "avgIncome": "$70,000+",
+      "households": "550+",
+      "homeownership": "88%"
+    },
+    "driveTimes": [
+      { "time": "~25 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 W → I-15 N" },
+      { "time": "~15 min", "destination": "to Henderson Downtown", "route": "via Eastern Ave" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~30 min", "destination": "to Lake Mead", "route": "via US-93 / I-11" }
+    ],
+    "faqs": [
+      { "q": "What is the age requirement for Terra Bella?", "a": "Terra Bella is a 55+ community. At least one resident in each household must be 55 years of age or older, in accordance with federal housing age-restriction guidelines." },
+      { "q": "Is Terra Bella guard-gated?", "a": "No. Terra Bella is not guard-gated. For guard-gated 55+ living in the Anthem area, see Solera at Anthem. Terra Bella does have managed access points and is within the broader Anthem master plan." },
+      { "q": "What is the price range for homes in Terra Bella?", "a": "Homes in Terra Bella range from approximately $300,000 for smaller attached garden homes to over $600,000 for larger detached homes on premium lots with views." },
+      { "q": "Who built Terra Bella?", "a": "Terra Bella was built by Shea Homes, a national builder known for its Trilogy brand of active adult communities. Shea Homes is recognized for quality construction, energy-efficient design, and thoughtful floor plans." },
+      { "q": "How does Terra Bella compare to Sun City Anthem?", "a": "Sun City Anthem is much larger (7,000+ homes) with two golf courses and an expansive clubhouse. Terra Bella is smaller (550+ homes) with a more intimate community center. Terra Bella typically has lower price points and lower HOA fees, while Sun City Anthem offers more amenities." },
+      { "q": "What are HOA fees in Terra Bella?", "a": "HOA fees in Terra Bella typically range from $120 to $220 per month, covering front yard landscaping, common area maintenance, the community center, pool, and fitness room." },
+      { "q": "What ZIP code is Terra Bella in?", "a": "Terra Bella is located in ZIP code 89044 in Henderson, Nevada." },
+      { "q": "Does Terra Bella have a golf course?", "a": "No. Terra Bella does not have its own golf course. Nearby options include Sun City Anthem's two courses, Anthem Country Club (Hale Irwin-designed), and several Henderson-area public courses." }
+    ],
+    "nearby": [
+      { "name": "Anthem", "href": "/anthem/", "price": "From $400K", "compare": "The broader master-planned community. Not age-restricted; all ages and price points." },
+      { "name": "Solera at Anthem", "href": "/solera-at-anthem/", "price": "From $350K", "compare": "Guard-gated 55+ community within Anthem. More security, slightly higher pricing." },
+      { "name": "Sun City Anthem", "href": "/sun-city-anthem/", "price": "From $350K", "compare": "Much larger 55+ community with two golf courses and extensive amenities." },
+      { "name": "Sun City MacDonald Ranch", "href": "/sun-city-macdonald-ranch/", "price": "From $300K", "compare": "Another Del Webb 55+ community in Henderson with golf course access." },
+      { "name": "Inspirada", "href": "/inspirada/", "price": "From $400K", "compare": "Newer Henderson master plan. Not age-restricted; multi-generational." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf. Not age-restricted." }
+    ],
+    "testimonials": [
+      { "quote": "Terra Bella was the perfect fit for us — a cozy community, friendly neighbors, and a great pool where we spend most evenings in summer. Nevada Real Estate Group helped us find a home with mountain views at a price that left us room to enjoy retirement.", "name": "Linda & George P.", "detail": "Bought in Terra Bella · 2024" },
+      { "quote": "We moved from California and were amazed at how much home we could get in Terra Bella. The team helped us sell remotely and coordinated everything so we could move in the same week we closed.", "name": "Diane M.", "detail": "Bought in Terra Bella · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Terra Bella",
+    "ylopoMinPrice": 300000
+  },
+  {
+    "slug": "green-valley-north",
+    "name": "Green Valley North",
+    "parentCommunity": "Green Valley",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Master-Planned · Golf · Established",
+    "zipCodes": ["89014", "89074"],
+    "center": [-115.075, 36.060],
+    "heroEyebrow": "Green Valley, Henderson",
+    "priceRange": "$400K–$1.5M",
+    "established": "1978",
+    "developer": "American Nevada Corporation",
+    "acreage": "2,500 acres",
+    "homeCount": "8,000+",
+    "guardGated": false,
+    "hoaRange": "$50–$200/mo",
+    "overview": [
+      "Green Valley North represents the original heart of Henderson's first master-planned community. Developed by American Nevada Corporation beginning in the late 1970s, this is where the Green Valley story began — a pioneering master-planned development that transformed Henderson from a small industrial town into one of America's most desirable cities. Today, Green Valley North is a mature, tree-lined community with a broad mix of housing types, from charming single-story starter homes to expansive custom estates along the Legacy Golf Course.",
+      "Homes in Green Valley North range from approximately $400,000 for smaller condominiums and townhomes to $1.5 million for custom homes on the golf course or in the community's most established luxury pockets. The breadth of inventory is one of Green Valley North's defining characteristics — buyers at nearly every price point can find a home here, from first-time buyers to empty nesters to luxury buyers seeking a Legacy Golf Course address.",
+      "The neighborhood is anchored by legacy amenities that have matured beautifully over four decades. The Green Valley Athletic Club, one of Henderson's premier fitness facilities, serves as a social and fitness hub. The Legacy Golf Course winds through the community, providing green fairway views and a recreational anchor. Mature trees, established parks, and wide boulevards create a neighborhood character that newer Henderson developments simply cannot replicate.",
+      "Location is arguably Green Valley North's greatest asset. The community sits at the geographic center of Henderson, with direct access to Green Valley Parkway, Sunset Road, and Warm Springs Road. The District at Green Valley Ranch — Henderson's premier outdoor shopping, dining, and entertainment destination — is minutes away. Downtown Henderson, Harry Reid International Airport, and the Las Vegas Strip are all within a 15-to-20-minute drive. For buyers who value established character, central location, and a diverse housing stock, Green Valley North remains one of Henderson's most compelling addresses."
+    ],
+    "highlights": [
+      { "title": "Legacy Golf Course", "body": "The Legacy Golf Course winds through Green Valley North, offering residents golf course views and proximity to one of Henderson's most established courses. Public play with membership options available.", "iconType": "golf" },
+      { "title": "Mature, Tree-Lined Streets", "body": "Four decades of growth have given Green Valley North a canopy of mature trees, established landscaping, and a neighborhood character that newer communities cannot replicate.", "iconType": "park" },
+      { "title": "Central Henderson Location", "body": "Positioned at the geographic center of Henderson with direct access to Green Valley Parkway, Sunset Road, and Warm Springs Road. Everything in Henderson is close.", "iconType": "building" },
+      { "title": "The District at Green Valley Ranch", "body": "Henderson's premier outdoor shopping, dining, and entertainment center is minutes from Green Valley North. Over 50 shops, restaurants, and entertainment venues.", "iconType": "building" },
+      { "title": "Green Valley Athletic Club", "body": "One of Henderson's premier fitness and social clubs, offering indoor and outdoor pools, tennis, group fitness, spa services, and youth programs.", "iconType": "building" },
+      { "title": "Broad Price Range", "body": "From $400K condos to $1.5M golf course estates, Green Valley North serves first-time buyers, families, empty nesters, and luxury buyers — one of the widest ranges in Henderson.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Legacy Estates", "type": "Custom · Golf Course", "desc": "Custom homes along the Legacy Golf Course fairways. The most prestigious addresses in Green Valley North with mature landscaping and fairway views.", "price": "From $800K" },
+      { "name": "Green Valley Highlands", "type": "Single-Family · Established", "desc": "Established single-family homes from 1,800 to 3,000 sq ft on generous lots with mature trees. Classic Henderson neighborhood character.", "price": "From $550K" },
+      { "name": "Green Valley Townhomes", "type": "Attached · Affordable", "desc": "Townhomes and patio homes offering an accessible entry point into Green Valley. Well-maintained communities with pools and common areas.", "price": "From $400K" },
+      { "name": "Valle Verde", "type": "Single-Family · Family", "desc": "A popular family section with homes from 1,500 to 2,500 sq ft. Close to parks, schools, and Green Valley Parkway shopping.", "price": "From $500K" }
+    ],
+    "parks": [
+      { "name": "Paseo Verde Park", "address": "Paseo Verde Pkwy, Henderson, NV 89012", "acreage": "~26 acres", "amenities": ["Walking trails", "Sports fields", "Playground", "Picnic shelters", "Dog park", "Skate park"] },
+      { "name": "Silver Springs Park", "address": "1951 Silver Springs Pkwy, Henderson, NV 89074", "acreage": "~15 acres", "amenities": ["Swimming pool", "Playground", "Tennis courts", "Walking trails", "Picnic areas"] },
+      { "name": "Discovery Park", "address": "2011 Paseo Verde Pkwy, Henderson, NV 89012", "acreage": "~10 acres", "amenities": ["Playground", "Sports fields", "Walking paths", "Open space"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Green Valley High School", "9–12", "8/10"],
+        ["Greenspun Junior High School", "6–8", "7/10"],
+        ["C.T. Sewell Elementary", "K–5", "8/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["St. Peter the Apostle School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "22,000+",
+      "medianAge": "44",
+      "avgIncome": "$95,000+",
+      "households": "8,000+",
+      "homeownership": "72%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-215 W → Airport Connector" },
+      { "time": "~5 min", "destination": "to Henderson Downtown", "route": "via Lake Mead Pkwy" },
+      { "time": "~30 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Green Valley North?", "a": "Homes in Green Valley North range from approximately $400,000 for condos and townhomes to $1.5 million for custom homes along the Legacy Golf Course." },
+      { "q": "Is Green Valley North guard-gated?", "a": "No. Green Valley North is an open community, though some individual neighborhoods within it may have gated entries. For guard-gated living in Green Valley, see Legacy at Green Valley or The Fountains." },
+      { "q": "What ZIP codes cover Green Valley North?", "a": "Green Valley North spans ZIP codes 89014 and 89074 in Henderson, Nevada." },
+      { "q": "What golf course is in Green Valley North?", "a": "The Legacy Golf Course is the primary course in Green Valley North, winding through the community with many homes enjoying direct fairway frontage. It is a public course with membership options." },
+      { "q": "What schools serve Green Valley North?", "a": "Green Valley North is served by CCSD schools including Green Valley High School (8/10), Greenspun Junior High (7/10), and C.T. Sewell Elementary (8/10). Private options include Henderson International School and Bishop Gorman." },
+      { "q": "How does Green Valley North compare to Green Valley South?", "a": "Green Valley North is the original community with more mature trees, established character, and generally lower prices. Green Valley South includes newer construction, more guard-gated enclaves, and a wider luxury range reaching $3M+." },
+      { "q": "What are HOA fees in Green Valley North?", "a": "HOA fees vary widely by sub-community, from approximately $50 per month in single-family neighborhoods to $200 per month in condo and townhome communities with pools and fitness centers." },
+      { "q": "Is Green Valley North a good investment?", "a": "Green Valley North benefits from its central Henderson location, mature character, and broad buyer appeal. The community has shown steady appreciation and consistently strong rental demand thanks to its proximity to employment, schools, and amenities." }
+    ],
+    "nearby": [
+      { "name": "Green Valley South", "href": "/green-valley-south/", "price": "From $350K", "compare": "The newer, southern expansion of Green Valley with more luxury options and guard-gated enclaves." },
+      { "name": "Green Valley Ranch", "href": "/green-valley-ranch/", "price": "From $400K", "compare": "Adjacent community with resort casino, The District shopping, and established family neighborhoods." },
+      { "name": "Legacy at Green Valley", "href": "/legacy-green-valley/", "price": "From $700K", "compare": "Guard-gated luxury golf community with custom homes along the Legacy Golf Course." },
+      { "name": "Henderson", "href": "/henderson/", "price": "From $300K", "compare": "The broader city of Henderson — Nevada's second-largest city and one of America's safest." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf and 25 distinct neighborhoods." },
+      { "name": "The Fountains", "href": "/the-fountains/", "price": "From $800K", "compare": "Guard-gated luxury enclave in the Green Valley area with custom estate homes." }
+    ],
+    "testimonials": [
+      { "quote": "We love the mature trees, the walkability, and being five minutes from everything in Henderson. Nevada Real Estate Group found us a remodeled home near the Legacy course at a price we didn't think was possible.", "name": "Steven & Julie R.", "detail": "Bought in Green Valley North · 2024" },
+      { "quote": "Our Green Valley North home sold fast. The location sells itself, but the marketing and pricing strategy from Nevada Real Estate Group brought in competitive offers in the first weekend.", "name": "Mark T.", "detail": "Sold in Green Valley North · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Green Valley North",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "green-valley-south",
+    "name": "Green Valley South",
+    "parentCommunity": "Green Valley",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Master-Planned · Luxury · Established",
+    "zipCodes": ["89012", "89052"],
+    "center": [-115.075, 36.035],
+    "heroEyebrow": "Green Valley, Henderson",
+    "priceRange": "$350K–$3M+",
+    "established": "1990",
+    "developer": "American Nevada Corporation",
+    "acreage": "3,000+ acres",
+    "homeCount": "10,000+",
+    "guardGated": false,
+    "hoaRange": "$50–$350/mo",
+    "overview": [
+      "Green Valley South encompasses the newer, southern expansion of Henderson's pioneering Green Valley master-planned community. Developed from the early 1990s through the 2000s, this area extends south from Warm Springs Road through the Paseo Verde corridor and into the foothills approaching Anthem. The result is a diverse residential landscape ranging from accessible condominiums and townhomes to guard-gated luxury enclaves with homes exceeding $3 million.",
+      "The housing stock in Green Valley South is generally newer and more varied than the original Green Valley North. Single-family homes range from approximately 1,400-square-foot production homes starting around $350,000 to custom estates exceeding 5,000 square feet in guard-gated communities like The Fountains, Legacy at Green Valley, and Quail Ridge Estates. This diversity makes Green Valley South one of Henderson's most versatile real estate markets — virtually any buyer can find a home here.",
+      "Green Valley South is anchored by some of Henderson's most important commercial and civic landmarks. The Henderson Pavilion, an outdoor amphitheater hosting concerts and events; the Henderson Convention Center; Paseo Verde Park with its extensive trail network; and the Paseo Verde Library all sit within the community's footprint. The Green Valley Ranch Resort and Spa — a Station Casinos property with dining, entertainment, and a movie theater — is a landmark destination for residents and visitors alike.",
+      "The geographic position of Green Valley South provides excellent access to multiple employment and recreation corridors. I-215 connects directly to Harry Reid Airport and the Strip to the west, while Eastern Avenue and Green Valley Parkway link to Anthem, Inspirada, and the rapidly growing southeastern Henderson corridor. For buyers seeking a well-located Henderson community with options at every price point, from starter homes to guard-gated luxury, Green Valley South offers unmatched breadth."
+    ],
+    "highlights": [
+      { "title": "Widest Price Range in Henderson", "body": "From $350K townhomes to $3M+ guard-gated estates, Green Valley South serves first-time buyers, families, and ultra-luxury buyers — the broadest range in any Henderson community.", "iconType": "trend" },
+      { "title": "Green Valley Ranch Resort", "body": "The Green Valley Ranch Resort and Spa is a landmark Station Casinos property with fine dining, entertainment, a movie theater, and the Henderson Pavilion outdoor amphitheater.", "iconType": "building" },
+      { "title": "Guard-Gated Enclaves", "body": "Multiple guard-gated luxury communities within Green Valley South, including The Fountains, Legacy at Green Valley, Quail Ridge Estates, and Southfork.", "iconType": "shield" },
+      { "title": "Paseo Verde Trail Corridor", "body": "The Paseo Verde linear park and trail system connects neighborhoods, parks, schools, and commercial areas with miles of walking and biking paths.", "iconType": "park" },
+      { "title": "Excellent Freeway Access", "body": "Direct access to I-215 for rapid connections to Harry Reid Airport (15 min), the Strip (15 min), and the I-15 corridor for commuters.", "iconType": "building" },
+      { "title": "Henderson Civic Center", "body": "Home to the Henderson Convention Center, Henderson Pavilion amphitheater, Henderson Libraries, and civic offices — the cultural core of Henderson.", "iconType": "building" }
+    ],
+    "neighborhoods": [
+      { "name": "Paseo Verde", "type": "Single-Family · Family", "desc": "A popular family section with homes from 1,600 to 2,800 sq ft near the Paseo Verde trail corridor and park system.", "price": "From $475K" },
+      { "name": "Green Valley South Estates", "type": "Single-Family · Premium", "desc": "Larger homes from 2,500 to 4,000 sq ft on generous lots. Many with pool-sized yards and mature landscaping.", "price": "From $600K" },
+      { "name": "Guard-Gated Enclaves", "type": "Luxury · Gated", "desc": "Guard-gated communities including The Fountains, Legacy at Green Valley, Quail Ridge Estates, and Southfork.", "price": "From $450K" },
+      { "name": "Green Valley Condos & Townhomes", "type": "Attached · Accessible", "desc": "Condominiums and townhomes offering an accessible entry point with community pools and low maintenance.", "price": "From $350K" }
+    ],
+    "parks": [
+      { "name": "Paseo Verde Park", "address": "Paseo Verde Pkwy, Henderson, NV 89012", "acreage": "~26 acres", "amenities": ["Walking trails", "Sports fields", "Playground", "Picnic shelters", "Dog park", "Skate park"] },
+      { "name": "Arroyo Grande Sports Complex", "address": "298 Arroyo Grande Blvd, Henderson, NV 89012", "acreage": "~50 acres", "amenities": ["Baseball fields", "Soccer fields", "Walking trails", "Playground", "Community center"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["John C. Vanderburg Elementary", "K–5", "9/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Pinecrest Academy of Nevada", "K–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy", "K–8", "8/10"],
+        ["Pinecrest Academy Inspirada", "K–12", "9/10"]
+      ]
+    },
+    "demographics": {
+      "population": "30,000+",
+      "medianAge": "42",
+      "avgIncome": "$100,000+",
+      "households": "10,000+",
+      "homeownership": "70%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Green Valley Pkwy" },
+      { "time": "~30 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Green Valley South?", "a": "Green Valley South offers one of the widest price ranges in Henderson, from approximately $350,000 for condos and townhomes to over $3 million in guard-gated luxury enclaves like The Fountains and Legacy at Green Valley." },
+      { "q": "Is Green Valley South guard-gated?", "a": "Green Valley South as a whole is not guard-gated, but it contains several guard-gated luxury enclaves including The Fountains, Legacy at Green Valley, Quail Ridge Estates, and Southfork." },
+      { "q": "What ZIP codes cover Green Valley South?", "a": "Green Valley South spans ZIP codes 89012 and 89052 in Henderson, Nevada." },
+      { "q": "How does Green Valley South compare to Green Valley North?", "a": "Green Valley South has newer construction, more luxury options, and a wider price range. Green Valley North is the original community with more mature trees and a more established character. Both share the Green Valley brand and Henderson location." },
+      { "q": "What is the Green Valley Ranch Resort?", "a": "Green Valley Ranch Resort and Spa is a Station Casinos property within the community featuring fine dining, entertainment, a movie theater, a spa, and the Henderson Pavilion outdoor amphitheater. It's both a destination and a community landmark." },
+      { "q": "What schools serve Green Valley South?", "a": "Green Valley South is served by multiple CCSD school zones. Key schools include Coronado High School (8/10), Del E. Webb Middle School (8/10), and Vanderburg Elementary (9/10). Private and charter options are also plentiful." },
+      { "q": "What are HOA fees in Green Valley South?", "a": "HOA fees vary dramatically by community — from approximately $50/month in single-family neighborhoods to $350/month in guard-gated communities with extensive amenities." },
+      { "q": "Is Green Valley South a good area for families?", "a": "Yes. Green Valley South is one of Henderson's most popular family areas, with highly rated schools, multiple parks, connected trails, and safe neighborhoods. The community amenities and central location make it practical for daily family life." }
+    ],
+    "nearby": [
+      { "name": "Green Valley North", "href": "/green-valley-north/", "price": "From $400K", "compare": "The original Green Valley with mature trees, Legacy Golf Course, and more established character." },
+      { "name": "Green Valley Ranch", "href": "/green-valley-ranch/", "price": "From $400K", "compare": "Adjacent community centered around the Green Valley Ranch Resort and The District shopping." },
+      { "name": "The Fountains", "href": "/the-fountains/", "price": "From $800K", "compare": "Guard-gated luxury enclave within Green Valley South. Custom homes and estate lots." },
+      { "name": "Legacy at Green Valley", "href": "/legacy-green-valley/", "price": "From $700K", "compare": "Guard-gated golf community within Green Valley South centered on the Legacy course." },
+      { "name": "Anthem", "href": "/anthem/", "price": "From $400K", "compare": "Henderson master plan just south of Green Valley South with top-rated schools and amenities." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Nearby Henderson community with Rio Secco golf and 25 distinct neighborhoods." }
+    ],
+    "testimonials": [
+      { "quote": "Green Valley South gave us exactly what we needed — a guard-gated home near great schools and 15 minutes from my office on the Strip. Nevada Real Estate Group knew every pocket neighborhood and helped us find the right one.", "name": "Andrew & Lisa J.", "detail": "Bought in Green Valley South · 2024" },
+      { "quote": "We sold our Green Valley South home and moved up to Legacy at Green Valley — all with Nevada Real Estate Group handling both transactions. They made a complicated buy-sell seamless.", "name": "Michelle W.", "detail": "Sold in Green Valley South · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Green Valley South",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "legacy-green-valley",
+    "name": "Legacy at Green Valley",
+    "parentCommunity": "Green Valley",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Guard-Gated · Golf · Luxury",
+    "zipCodes": ["89014", "89074"],
+    "center": [-115.080, 36.055],
+    "heroEyebrow": "Green Valley, Henderson",
+    "priceRange": "$700K–$2.5M",
+    "established": "1989",
+    "developer": "American Nevada Corporation",
+    "acreage": "400 acres",
+    "homeCount": "600+",
+    "guardGated": true,
+    "hoaRange": "$200–$500/mo",
+    "overview": [
+      "Legacy at Green Valley is a guard-gated luxury community centered around the Legacy Golf Course in the heart of Henderson's Green Valley. One of Henderson's original premium addresses, the community combines mature landscaping, custom estate lots, and direct golf course frontage with 24-hour guard-gated security — a combination that has kept Legacy at Green Valley among the most sought-after addresses in the Green Valley area for over three decades.",
+      "Homes in Legacy at Green Valley range from approximately $700,000 for smaller resale homes within the gates to $2.5 million for custom estates on premium golf course lots. The housing stock includes semi-custom homes from the original development period as well as custom-built estates that occupy the largest lots along the fairways. Homes typically range from 2,500 to 6,000+ square feet, with many featuring resort-style pools, outdoor kitchens, and views of the golf course and surrounding mountains.",
+      "The Legacy Golf Course itself is a public championship course that has been a Henderson landmark since 1989. The course winds through the community, creating lush green corridors between neighborhoods. While the course is open to public play, residents of Legacy at Green Valley enjoy the unique benefit of living on the course without the mandatory membership fees that private club communities require.",
+      "Location elevates Legacy at Green Valley above many Henderson luxury alternatives. The community sits near the intersection of Green Valley Parkway and Warm Springs Road, placing residents within 10 minutes of Downtown Henderson, 15 minutes of Harry Reid International Airport, and 15 minutes of the Las Vegas Strip. The District at Green Valley Ranch, Henderson's premier shopping and dining destination, is minutes away. For luxury buyers who want guard-gated golf living with genuine convenience, Legacy at Green Valley delivers a combination that few Henderson communities can match."
+    ],
+    "highlights": [
+      { "title": "Guard-Gated Golf Community", "body": "24-hour staffed guard gate with direct access to the Legacy Golf Course — one of Henderson's premier championship courses winding through the community.", "iconType": "golf" },
+      { "title": "24-Hour Security", "body": "Staffed guard gate with comprehensive security presence. One of the most established guard-gated communities in Henderson with over three decades of secure residential living.", "iconType": "shield" },
+      { "title": "Custom Estate Lots", "body": "Spacious lots supporting homes from 2,500 to 6,000+ sq ft. Many feature resort-style pools, outdoor kitchens, and direct golf course frontage.", "iconType": "home" },
+      { "title": "Mature, Established Character", "body": "Over 30 years of growth have created mature tree-lined streets, established landscaping, and a community character that newer developments cannot replicate.", "iconType": "park" },
+      { "title": "Central Henderson Location", "body": "10 minutes to Downtown Henderson, 15 minutes to the Strip and airport. The District at Green Valley Ranch shopping and dining is minutes away.", "iconType": "building" },
+      { "title": "No Mandatory Golf Membership", "body": "The Legacy Golf Course is a public course — residents enjoy golf course living and views without mandatory membership fees, keeping ongoing costs lower than private club communities.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Legacy Fairway Estates", "type": "Custom · Golf Frontage", "desc": "The most prized positions — custom homes directly along the Legacy Golf Course fairways with unobstructed course and mountain views.", "price": "From $1.2M" },
+      { "name": "Legacy Crest", "type": "Semi-Custom · Premium", "desc": "Elevated homes with views of the golf course and the surrounding Henderson hills. Homes from 3,000 to 5,000 sq ft with premium finishes.", "price": "From $900K" },
+      { "name": "Legacy Reserve", "type": "Semi-Custom · Established", "desc": "The core residential area of Legacy at Green Valley with mature landscaping, cul-de-sac streets, and homes from 2,500 to 4,000 sq ft.", "price": "From $700K" },
+      { "name": "Legacy Point", "type": "Semi-Custom · Views", "desc": "Corner and end lots with enhanced privacy and views. Popular with buyers seeking space and seclusion within the gates.", "price": "From $850K" }
+    ],
+    "parks": [
+      { "name": "Legacy Golf Course", "address": "130 Par Excellence Dr, Henderson, NV 89074", "acreage": "200+ acres", "amenities": ["Championship 18-hole course", "Pro shop", "Practice range", "Clubhouse dining", "Cart service"] },
+      { "name": "Paseo Verde Park", "address": "Paseo Verde Pkwy, Henderson, NV 89012", "acreage": "~26 acres", "amenities": ["Walking trails", "Sports fields", "Playground", "Dog park", "Skate park"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Green Valley High School", "9–12", "8/10"],
+        ["Greenspun Junior High School", "6–8", "7/10"],
+        ["C.T. Sewell Elementary", "K–5", "8/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["St. Peter the Apostle School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "1,800+",
+      "medianAge": "50",
+      "avgIncome": "$175,000+",
+      "households": "600+",
+      "homeownership": "88%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Green Valley Pkwy" },
+      { "time": "~30 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Legacy at Green Valley?", "a": "Homes in Legacy at Green Valley range from approximately $700,000 for smaller resale homes within the gates to $2.5 million for custom estates on premium golf course lots with mountain views." },
+      { "q": "Is Legacy at Green Valley guard-gated?", "a": "Yes. Legacy at Green Valley is a fully guard-gated community with a 24-hour staffed guard gate. It is one of the most established guard-gated communities in Henderson." },
+      { "q": "What golf course is in Legacy at Green Valley?", "a": "The Legacy Golf Course is a public championship 18-hole course that winds through the community. Residents enjoy golf course views and proximity without mandatory membership fees." },
+      { "q": "What ZIP codes cover Legacy at Green Valley?", "a": "Legacy at Green Valley spans ZIP codes 89014 and 89074 in Henderson, Nevada." },
+      { "q": "Do I need a golf membership to live in Legacy at Green Valley?", "a": "No. The Legacy Golf Course is a public course, not a private club. Residents enjoy golf course views and easy access without mandatory membership fees — a significant cost advantage over private club communities." },
+      { "q": "What are HOA fees in Legacy at Green Valley?", "a": "HOA fees typically range from $200 to $500 per month, covering 24-hour guard gate staffing, security patrols, common area maintenance, and community landscaping." },
+      { "q": "How does Legacy at Green Valley compare to Anthem Country Club?", "a": "Both are guard-gated golf communities in Henderson. Anthem Country Club is newer with a private Hale Irwin course and higher price points ($1.2M+). Legacy at Green Valley is more established with a public course and more accessible pricing starting at $700K." },
+      { "q": "Is Legacy at Green Valley a good investment?", "a": "Legacy at Green Valley has been one of Henderson's most stable luxury addresses for over 30 years. The guard gate, golf course, central location, and limited inventory support consistent appreciation and strong resale values." }
+    ],
+    "nearby": [
+      { "name": "Green Valley North", "href": "/green-valley-north/", "price": "From $400K", "compare": "The original Green Valley neighborhood surrounding the Legacy Golf Course. More accessible pricing." },
+      { "name": "Green Valley South", "href": "/green-valley-south/", "price": "From $350K", "compare": "The broader southern Green Valley area with diverse housing from townhomes to luxury estates." },
+      { "name": "The Fountains", "href": "/the-fountains/", "price": "From $800K", "compare": "Guard-gated luxury enclave nearby with custom estate homes and higher price ceiling." },
+      { "name": "Quail Ridge Estates", "href": "/quail-ridge-estates/", "price": "From $1M", "compare": "Guard-gated luxury community with custom homes on larger lots. Higher price points." },
+      { "name": "Anthem Country Club", "href": "/anthem-country-club/", "price": "From $1.2M", "compare": "Guard-gated private golf community in Anthem. Newer with private Hale Irwin course." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf and 25 distinct neighborhoods." }
+    ],
+    "testimonials": [
+      { "quote": "We'd been watching Legacy at Green Valley for two years, waiting for the right golf course lot. Nevada Real Estate Group called us the day it hit — we were under contract in 48 hours. That's the kind of local knowledge you can't get from an app.", "name": "William & Barbara L.", "detail": "Bought in Legacy at Green Valley · 2024" },
+      { "quote": "Sold our Legacy home in 21 days at full asking. The marketing was first-class — drone photography showing the golf course frontage made all the difference. Highly recommend this team for luxury Henderson sales.", "name": "Daniel F.", "detail": "Sold in Legacy at Green Valley · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Legacy Green Valley",
+    "ylopoMinPrice": 700000
+  },
+  {
+    "slug": "the-fountains",
+    "name": "The Fountains",
+    "parentCommunity": "Green Valley",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury",
+    "zipCodes": ["89074"],
+    "center": [-115.072, 36.050],
+    "heroEyebrow": "Green Valley, Henderson",
+    "priceRange": "$800K–$3M",
+    "established": "1995",
+    "developer": "American Nevada Corporation",
+    "acreage": "250 acres",
+    "homeCount": "400+",
+    "guardGated": true,
+    "hoaRange": "$250–$600/mo",
+    "overview": [
+      "The Fountains is a guard-gated luxury community in Henderson's Green Valley, known for its spacious custom and semi-custom homes, mature landscaping, and one of the most prestigious residential addresses in the Green Valley corridor. Developed in the mid-1990s, The Fountains was conceived as a premier residential enclave for affluent families, executives, and professionals seeking guard-gated privacy and large-lot estate living within a convenient Henderson location.",
+      "Homes in The Fountains range from approximately $800,000 for smaller semi-custom resales to $3 million for expansive custom estates on premium corner or cul-de-sac lots. The community's lot sizes are among the most generous in Henderson's guard-gated communities — many homes sit on quarter-acre to half-acre parcels, allowing for resort-style pools, outdoor living rooms, motor courts, and guest casitas. Homes typically range from 3,000 to 7,000+ square feet.",
+      "The architectural character of The Fountains blends Mediterranean, Tuscan, and desert contemporary styles, with the newer custom builds trending toward modern clean-line design with floor-to-ceiling glass and indoor-outdoor living. The community's namesake fountains, manicured entrance boulevard, and mature landscape create a resort-like atmosphere that begins the moment you pass through the guard gate.",
+      "The Fountains benefits from a central Henderson location near the intersection of Eastern Avenue and Paseo Verde Parkway. The District at Green Valley Ranch, Paseo Verde Park, Henderson Hospital, and multiple dining and retail options are all within a short drive. Harry Reid International Airport and the Las Vegas Strip are approximately 15 minutes away. For luxury buyers who want large-lot estate living with guard-gated security in a proven, established Henderson location, The Fountains is one of the Green Valley area's premier choices."
+    ],
+    "highlights": [
+      { "title": "Guard-Gated Estate Living", "body": "24-hour staffed guard gate with security patrols. One of Henderson's premier guard-gated addresses with over 25 years of established luxury residential history.", "iconType": "shield" },
+      { "title": "Large Custom Lots", "body": "Among the most generous lot sizes in Henderson's guard-gated communities — quarter-acre to half-acre parcels supporting resort-style pools, motor courts, and guest casitas.", "iconType": "home" },
+      { "title": "Mature Resort Landscaping", "body": "Over 25 years of growth have created a lush, resort-like environment with mature trees, manicured common areas, and the community's signature fountain boulevard.", "iconType": "park" },
+      { "title": "Central Henderson Location", "body": "Near Eastern Avenue and Paseo Verde Parkway with direct access to The District at Green Valley Ranch, Henderson Hospital, and major dining and retail.", "iconType": "building" },
+      { "title": "Diverse Architecture", "body": "Mediterranean, Tuscan, and modern desert contemporary homes create an architecturally diverse streetscape. Newer custom builds feature floor-to-ceiling glass and indoor-outdoor living.", "iconType": "home" },
+      { "title": "Strong Appreciation", "body": "The Fountains has demonstrated consistent appreciation thanks to limited inventory, large lots, guard-gated prestige, and strong demand from executives and high-net-worth families.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Fountain Estates", "type": "Custom · Ultra-Premium", "desc": "The largest custom homes in The Fountains on half-acre+ lots. Homes from 5,000 to 7,000+ sq ft with resort-style outdoor living.", "price": "From $1.5M" },
+      { "name": "Fountain Ridge", "type": "Semi-Custom · Premium", "desc": "Semi-custom homes from 3,500 to 5,000 sq ft on generous lots. Many with pools, updated interiors, and cul-de-sac privacy.", "price": "From $1M" },
+      { "name": "Fountain View", "type": "Semi-Custom · Established", "desc": "The original homes of The Fountains with mature landscaping and classic Mediterranean architecture. The most accessible entry point.", "price": "From $800K" },
+      { "name": "Modern Custom Builds", "type": "Custom · Contemporary", "desc": "Newer custom homes on teardown/rebuild lots featuring modern desert contemporary architecture with clean lines and premium finishes.", "price": "From $2M+" }
+    ],
+    "parks": [
+      { "name": "Paseo Verde Park", "address": "Paseo Verde Pkwy, Henderson, NV 89012", "acreage": "~26 acres", "amenities": ["Walking trails", "Sports fields", "Playground", "Dog park", "Skate park", "Picnic shelters"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] },
+      { "name": "Arroyo Grande Sports Complex", "address": "298 Arroyo Grande Blvd, Henderson, NV 89012", "acreage": "~50 acres", "amenities": ["Baseball fields", "Soccer fields", "Walking trails", "Playground", "Community center"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["John C. Vanderburg Elementary", "K–5", "9/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Pinecrest Academy of Nevada", "K–12", "A"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "1,200+",
+      "medianAge": "48",
+      "avgIncome": "$225,000+",
+      "households": "400+",
+      "homeownership": "90%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Eastern Ave" },
+      { "time": "~30 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in The Fountains?", "a": "Homes in The Fountains range from approximately $800,000 for smaller semi-custom resales to $3 million for expansive custom estates on premium lots with resort-style outdoor living." },
+      { "q": "Is The Fountains guard-gated?", "a": "Yes. The Fountains is a fully guard-gated community with a 24-hour staffed guard gate and security patrols. It has been one of Henderson's most prestigious guard-gated addresses for over 25 years." },
+      { "q": "What ZIP code is The Fountains in?", "a": "The Fountains is located in ZIP code 89074 in Henderson, Nevada, within the Green Valley corridor." },
+      { "q": "How large are lots in The Fountains?", "a": "The Fountains has some of the most generous lot sizes in Henderson's guard-gated communities, ranging from quarter-acre to half-acre parcels. This allows for resort-style pools, motor courts, guest casitas, and expansive outdoor living spaces." },
+      { "q": "What are HOA fees in The Fountains?", "a": "HOA fees in The Fountains typically range from $250 to $600 per month, covering 24-hour guard gate staffing, security patrols, common area maintenance, and the community's signature landscaped entrance." },
+      { "q": "How does The Fountains compare to Legacy at Green Valley?", "a": "Both are guard-gated luxury communities in Green Valley. Legacy at Green Valley is centered on the Legacy Golf Course and has a slightly lower price floor ($700K). The Fountains has larger lots, no golf course but more estate-style living, and a higher price ceiling reaching $3M." },
+      { "q": "What schools serve The Fountains?", "a": "The Fountains is served by CCSD schools including Coronado High School (8/10), Del E. Webb Middle School (8/10), and Vanderburg Elementary (9/10). Private options include Henderson International School and Bishop Gorman." },
+      { "q": "Is The Fountains a good investment?", "a": "The Fountains has been one of Henderson's most stable luxury addresses for over 25 years. Limited inventory (400+ homes), large lots, guard-gated prestige, and consistent executive-buyer demand support strong appreciation and resale values." }
+    ],
+    "nearby": [
+      { "name": "Green Valley South", "href": "/green-valley-south/", "price": "From $350K", "compare": "The broader Green Valley area surrounding The Fountains with options at every price point." },
+      { "name": "Legacy at Green Valley", "href": "/legacy-green-valley/", "price": "From $700K", "compare": "Guard-gated golf community nearby with Legacy Golf Course frontage at slightly lower entry." },
+      { "name": "Quail Ridge Estates", "href": "/quail-ridge-estates/", "price": "From $1M", "compare": "Nearby guard-gated luxury community with even higher price points and custom estate lots." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf and 25 distinct neighborhoods." },
+      { "name": "Anthem Country Club", "href": "/anthem-country-club/", "price": "From $1.2M", "compare": "Guard-gated private golf community in Anthem. Newer with private Hale Irwin course." },
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "Henderson's premier elevated luxury community with DragonRidge Country Club and panoramic views." }
+    ],
+    "testimonials": [
+      { "quote": "We looked at every guard-gated community in Henderson before choosing The Fountains. The lot sizes sealed the deal — our half-acre lot gives us a pool, outdoor kitchen, and putting green. Nevada Real Estate Group found this lot before it even hit the MLS.", "name": "Christopher & Amanda S.", "detail": "Bought in The Fountains · 2024" },
+      { "quote": "Selling a luxury home in The Fountains requires a team that understands the buyer profile. Nevada Real Estate Group marketed our estate to the right audience and we closed at 98% of asking in 30 days.", "name": "Gregory N.", "detail": "Sold in The Fountains · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "The Fountains Henderson",
+    "ylopoMinPrice": 800000
+  },
+  {
+    "slug": "southfork-henderson",
+    "name": "Southfork",
+    "parentCommunity": "Green Valley",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Guard-Gated · Family",
+    "zipCodes": ["89074"],
+    "center": [-115.065, 36.045],
+    "heroEyebrow": "Green Valley, Henderson",
+    "priceRange": "$450K–$750K",
+    "established": "1993",
+    "developer": "American Nevada Corporation",
+    "acreage": "120 acres",
+    "homeCount": "450+",
+    "guardGated": true,
+    "hoaRange": "$150–$300/mo",
+    "overview": [
+      "Southfork is a guard-gated residential community in Henderson's Green Valley corridor, offering the security and prestige of a gated address at price points significantly below Henderson's luxury guard-gated enclaves. Developed in the early-to-mid 1990s, Southfork features well-built single-family homes ranging from approximately 1,800 to 3,200 square feet, making it one of the most accessible guard-gated communities in the entire Las Vegas Valley.",
+      "Homes in Southfork range from approximately $450,000 for smaller homes in the community's interior to $750,000 for larger corner lots and premium positions. The architectural style is classic Southwest — stucco exteriors, tile roofs, and desert-adapted landscaping. Many homeowners have invested in significant renovations over the years, updating kitchens, bathrooms, and outdoor living spaces while maintaining the community's cohesive appearance.",
+      "The community's guard gate, staffed 24 hours a day, provides a level of security that sets Southfork apart from non-gated neighborhoods in the same price range. For families, the peace of mind of knowing that traffic within the community is exclusively residential creates a safer environment for children. Southfork's streets are quiet, with low traffic volume and a neighborhood feel that many larger communities lack.",
+      "Location is a key advantage. Southfork sits near Eastern Avenue and Paseo Verde Parkway, minutes from Green Valley Ranch Resort, The District at Green Valley Ranch, Henderson Hospital, and major retail corridors. Freeway access via I-215 puts the Strip and Harry Reid Airport within 15 minutes. For buyers who want guard-gated living without the $1 million+ price tags of Henderson's luxury communities, Southfork is one of the best value propositions in the valley."
+    ],
+    "highlights": [
+      { "title": "Affordable Guard-Gated Living", "body": "One of the most accessibly priced guard-gated communities in the Las Vegas Valley, with homes starting around $450K — well below Henderson's luxury gated enclaves.", "iconType": "shield" },
+      { "title": "24-Hour Guard Gate", "body": "Staffed guard gate with controlled access around the clock. Provides security and low-traffic streets that make Southfork ideal for families.", "iconType": "shield" },
+      { "title": "Family-Friendly Layout", "body": "Quiet streets, cul-de-sacs, and controlled access create a safe, walkable environment. Popular with families who prioritize security for children.", "iconType": "home" },
+      { "title": "Central Henderson Location", "body": "Minutes from Green Valley Ranch Resort, The District, Henderson Hospital, and Eastern Avenue retail. Freeway access via I-215 in minutes.", "iconType": "building" },
+      { "title": "Established Community", "body": "Over 30 years of history with mature landscaping, established HOA, and a strong sense of community among long-term residents.", "iconType": "park" },
+      { "title": "Strong Value", "body": "Guard-gated prestige at non-luxury prices. Southfork consistently outperforms non-gated neighborhoods in appreciation and resale speed.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Southfork Core", "type": "Single-Family · Established", "desc": "The main residential area with 1,800–2,500 sq ft homes on standard lots. Mature landscaping and close proximity to the guard gate.", "price": "From $450K" },
+      { "name": "Southfork Estates", "type": "Single-Family · Premium", "desc": "Larger homes from 2,500–3,200 sq ft on corner and cul-de-sac lots. The most spacious and private homes in the community.", "price": "From $600K" },
+      { "name": "Southfork Views", "type": "Single-Family · Upgraded", "desc": "Homes that have been extensively renovated with modern kitchens, open floor plans, and upgraded outdoor living spaces.", "price": "From $550K" }
+    ],
+    "parks": [
+      { "name": "Paseo Verde Park", "address": "Paseo Verde Pkwy, Henderson, NV 89012", "acreage": "~26 acres", "amenities": ["Walking trails", "Sports fields", "Playground", "Dog park", "Picnic shelters"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] },
+      { "name": "Arroyo Grande Sports Complex", "address": "298 Arroyo Grande Blvd, Henderson, NV 89012", "acreage": "~50 acres", "amenities": ["Baseball fields", "Soccer fields", "Walking trails", "Community center"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["John C. Vanderburg Elementary", "K–5", "9/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "1,400+",
+      "medianAge": "44",
+      "avgIncome": "$105,000+",
+      "households": "450+",
+      "homeownership": "82%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Eastern Ave" },
+      { "time": "~30 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Southfork?", "a": "Homes in Southfork range from approximately $450,000 for smaller homes to $750,000 for larger homes on premium lots. It is one of the most affordable guard-gated communities in the Las Vegas Valley." },
+      { "q": "Is Southfork guard-gated?", "a": "Yes. Southfork has a 24-hour staffed guard gate with controlled access. Despite its accessible pricing, residents enjoy the same guard-gated security as Henderson's luxury communities." },
+      { "q": "What ZIP code is Southfork in?", "a": "Southfork is located in ZIP code 89074 in Henderson, Nevada, within the Green Valley corridor." },
+      { "q": "What schools serve Southfork?", "a": "Southfork is served by top CCSD schools including Vanderburg Elementary (9/10), Del E. Webb Middle School (8/10), and Coronado High School (8/10). Private and charter school options are also nearby." },
+      { "q": "How does Southfork compare to The Fountains?", "a": "Both are guard-gated communities in Green Valley. The Fountains is a luxury community with homes from $800K to $3M on large estate lots. Southfork is more accessible ($450K–$750K) with smaller but well-built homes. Both offer 24-hour guard gate security." },
+      { "q": "What are HOA fees in Southfork?", "a": "HOA fees in Southfork typically range from $150 to $300 per month, covering guard gate staffing, security patrols, common area maintenance, and community landscaping." },
+      { "q": "Is Southfork good for families?", "a": "Yes. Southfork is one of Henderson's most popular family-oriented guard-gated communities. The controlled access, quiet streets, and top-rated school zoning make it ideal for families with children." },
+      { "q": "Is Southfork a good investment?", "a": "Southfork punches above its weight in appreciation because guard-gated communities consistently outperform non-gated alternatives. The combination of security, schools, and Henderson location supports strong long-term value." }
+    ],
+    "nearby": [
+      { "name": "Green Valley South", "href": "/green-valley-south/", "price": "From $350K", "compare": "The broader Green Valley area. More options at every price point but without guard-gated security." },
+      { "name": "The Fountains", "href": "/the-fountains/", "price": "From $800K", "compare": "Guard-gated luxury enclave nearby with larger lots and custom estate homes." },
+      { "name": "Legacy at Green Valley", "href": "/legacy-green-valley/", "price": "From $700K", "compare": "Guard-gated golf community in Green Valley with Legacy Golf Course frontage." },
+      { "name": "Quail Ridge Estates", "href": "/quail-ridge-estates/", "price": "From $1M", "compare": "Guard-gated luxury community with custom homes. Higher price tier." },
+      { "name": "Green Valley Ranch", "href": "/green-valley-ranch/", "price": "From $400K", "compare": "Adjacent community with resort casino, The District shopping, and family neighborhoods." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf. Not guard-gated." }
+    ],
+    "testimonials": [
+      { "quote": "We wanted a guard-gated community but didn't have a million-dollar budget. Southfork gave us security, great schools, and a beautiful home — all under $600K. Nevada Real Estate Group helped us see the value immediately.", "name": "Ryan & Jennifer C.", "detail": "Bought in Southfork · 2024" },
+      { "quote": "Our Southfork home appreciated 40% in six years. The guard gate makes a real difference in resale — buyers are willing to pay more for that security. The team priced us perfectly and we sold fast.", "name": "Patricia M.", "detail": "Sold in Southfork · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Southfork Henderson",
+    "ylopoMinPrice": 450000
+  },
+  {
+    "slug": "quail-ridge-estates",
+    "name": "Quail Ridge Estates",
+    "parentCommunity": "Green Valley",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury",
+    "zipCodes": ["89014"],
+    "center": [-115.085, 36.060],
+    "heroEyebrow": "Green Valley, Henderson",
+    "priceRange": "$1M–$3M+",
+    "established": "1997",
+    "developer": "American Nevada Corporation",
+    "acreage": "150 acres",
+    "homeCount": "200+",
+    "guardGated": true,
+    "hoaRange": "$300–$700/mo",
+    "overview": [
+      "Quail Ridge Estates is one of Henderson's most prestigious guard-gated luxury communities, located within the Green Valley corridor. Developed in the late 1990s, the community features spacious custom and semi-custom homes on large lots with a level of exclusivity that rivals Henderson's more well-known luxury addresses. With fewer than 200 homes behind the guard gate, Quail Ridge offers an intimate, private residential experience that larger communities cannot provide.",
+      "Homes in Quail Ridge Estates range from approximately $1 million for semi-custom resales to over $3 million for custom estates on premium lots. The housing stock features homes from 3,000 to 7,000+ square feet, with many featuring resort-style pools, motor courts, wine rooms, home theaters, and expansive outdoor living areas. Lot sizes are generous, with many parcels exceeding a quarter acre — ample space for the resort-style living that Henderson's luxury buyers demand.",
+      "The architectural character of Quail Ridge leans Mediterranean and Tuscan, though newer custom builds and renovations have introduced contemporary desert and transitional styles. The community's streets are wide and quiet, with mature trees and lush common areas creating a parklike atmosphere. The guard gate is staffed 24 hours a day, and the limited number of homes means traffic within the community is minimal.",
+      "Quail Ridge Estates' location within the established Green Valley corridor provides immediate access to Henderson's best amenities. The District at Green Valley Ranch, Green Valley Ranch Resort, Henderson Hospital, and multiple dining and retail destinations are all within minutes. Harry Reid Airport and the Strip are approximately 15 minutes away. For luxury buyers seeking an intimate, guard-gated community with large lots and custom-quality homes in a proven Henderson location, Quail Ridge Estates is a compelling choice."
+    ],
+    "highlights": [
+      { "title": "Intimate Guard-Gated Luxury", "body": "Fewer than 200 homes behind a 24-hour staffed guard gate. One of Henderson's most exclusive and intimate luxury communities with minimal traffic and maximum privacy.", "iconType": "shield" },
+      { "title": "Custom Estate Homes", "body": "Homes from 3,000 to 7,000+ sq ft with resort-style pools, motor courts, wine rooms, and home theaters. Both semi-custom originals and full custom builds.", "iconType": "home" },
+      { "title": "Generous Lot Sizes", "body": "Many lots exceed a quarter acre — among the most spacious in Henderson's guard-gated communities. Room for resort-style outdoor living, guest casitas, and motor courts.", "iconType": "home" },
+      { "title": "Mature Parklike Setting", "body": "Over 25 years of growth have created mature tree-lined streets, lush common areas, and a parklike atmosphere throughout the community.", "iconType": "park" },
+      { "title": "Central Green Valley Location", "body": "Minutes from The District, Green Valley Ranch Resort, Henderson Hospital, and major retail. Easy freeway access to the Strip and airport.", "iconType": "building" },
+      { "title": "Scarcity Premium", "body": "With fewer than 200 homes, listings in Quail Ridge are rare. This scarcity supports strong pricing and consistent appreciation.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Quail Ridge Custom Estates", "type": "Custom · Ultra-Premium", "desc": "The largest and most prestigious homes in the community on half-acre+ lots. Full custom construction with resort-style amenities.", "price": "From $2M+" },
+      { "name": "Quail Ridge Premier", "type": "Semi-Custom · Premium", "desc": "Semi-custom homes from 4,000 to 5,500 sq ft with premium finishes, updated interiors, and generous outdoor spaces.", "price": "From $1.3M" },
+      { "name": "Quail Ridge Classic", "type": "Semi-Custom · Established", "desc": "The original homes of Quail Ridge Estates with mature landscaping and classic Mediterranean architecture. The entry point into the community.", "price": "From $1M" }
+    ],
+    "parks": [
+      { "name": "Paseo Verde Park", "address": "Paseo Verde Pkwy, Henderson, NV 89012", "acreage": "~26 acres", "amenities": ["Walking trails", "Sports fields", "Playground", "Dog park", "Skate park"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] },
+      { "name": "Discovery Park", "address": "2011 Paseo Verde Pkwy, Henderson, NV 89012", "acreage": "~10 acres", "amenities": ["Playground", "Sports fields", "Walking paths", "Open space"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Green Valley High School", "9–12", "8/10"],
+        ["Greenspun Junior High School", "6–8", "7/10"],
+        ["C.T. Sewell Elementary", "K–5", "8/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["St. Peter the Apostle School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "600+",
+      "medianAge": "50",
+      "avgIncome": "$250,000+",
+      "households": "200+",
+      "homeownership": "92%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Green Valley Pkwy" },
+      { "time": "~30 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Quail Ridge Estates?", "a": "Homes in Quail Ridge Estates range from approximately $1 million for semi-custom resales to over $3 million for custom estates on premium lots." },
+      { "q": "Is Quail Ridge Estates guard-gated?", "a": "Yes. Quail Ridge Estates has a 24-hour staffed guard gate with security patrols. With fewer than 200 homes, it is one of the most intimate and exclusive guard-gated communities in Henderson." },
+      { "q": "What ZIP code is Quail Ridge Estates in?", "a": "Quail Ridge Estates is located in ZIP code 89014 in Henderson, Nevada, within the Green Valley corridor." },
+      { "q": "How many homes are in Quail Ridge Estates?", "a": "Quail Ridge Estates has approximately 200 homes, making it one of the smallest and most exclusive guard-gated communities in Henderson. Listings are rare and often sell quickly." },
+      { "q": "What are HOA fees in Quail Ridge Estates?", "a": "HOA fees typically range from $300 to $700 per month, covering 24-hour guard gate staffing, security patrols, common area maintenance, and the community's mature landscaping." },
+      { "q": "How does Quail Ridge compare to The Fountains?", "a": "Both are guard-gated luxury communities in Green Valley. The Fountains has more homes (400+) and a wider price range ($800K–$3M). Quail Ridge is smaller (200 homes) and more exclusive, with a higher entry point ($1M) and more of a private, intimate feel." },
+      { "q": "What schools serve Quail Ridge Estates?", "a": "Quail Ridge Estates is served by Green Valley High School (8/10), Greenspun Junior High (7/10), and C.T. Sewell Elementary (8/10). Private options include Henderson International School and Bishop Gorman." },
+      { "q": "Is Quail Ridge Estates a good investment?", "a": "Quail Ridge Estates benefits from extreme scarcity — fewer than 200 homes means listings are rare. The combination of guard-gated prestige, large lots, and a proven location supports strong appreciation and resale values." }
+    ],
+    "nearby": [
+      { "name": "The Fountains", "href": "/the-fountains/", "price": "From $800K", "compare": "Larger guard-gated community nearby with more inventory and a slightly lower entry point." },
+      { "name": "Legacy at Green Valley", "href": "/legacy-green-valley/", "price": "From $700K", "compare": "Guard-gated golf community with Legacy Golf Course frontage. More accessible pricing." },
+      { "name": "Green Valley South", "href": "/green-valley-south/", "price": "From $350K", "compare": "The broader Green Valley area with options at every price point from condos to luxury." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf and 25 distinct neighborhoods." },
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "Henderson's premier elevated luxury community with DragonRidge Country Club." },
+      { "name": "Anthem Country Club", "href": "/anthem-country-club/", "price": "From $1.2M", "compare": "Guard-gated private golf community in Anthem with Hale Irwin-designed course." }
+    ],
+    "testimonials": [
+      { "quote": "Quail Ridge Estates is the Henderson address we always wanted. The privacy, the lot size, the mature trees — it feels like a private resort. Nevada Real Estate Group connected us with a pocket listing that never hit the MLS.", "name": "Richard & Carolyn D.", "detail": "Bought in Quail Ridge Estates · 2024" },
+      { "quote": "Selling in Quail Ridge requires reaching the right buyer. Nevada Real Estate Group's network and luxury marketing brought us a qualified buyer from California who paid above asking. Exceptional representation.", "name": "Michael B.", "detail": "Sold in Quail Ridge Estates · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Quail Ridge Estates",
+    "ylopoMinPrice": 1000000
+  },
+  {
+    "slug": "sun-city-macdonald-ranch",
+    "name": "Sun City MacDonald Ranch",
+    "parentCommunity": "MacDonald Ranch",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "55+ · Golf · Active Adult",
+    "zipCodes": ["89012"],
+    "center": [-114.990, 36.030],
+    "heroEyebrow": "MacDonald Ranch, Henderson",
+    "priceRange": "$300K–$600K",
+    "established": "1996",
+    "developer": "Del Webb",
+    "acreage": "1,100 acres",
+    "homeCount": "2,900+",
+    "guardGated": false,
+    "hoaRange": "$150–$280/mo",
+    "overview": [
+      "Sun City MacDonald Ranch is a 55+ active adult community developed by Del Webb in the foothills of Henderson's MacDonald Ranch area. One of the earliest 55+ communities in the Las Vegas Valley, Sun City MacDonald Ranch has been home to active retirees since 1996, offering a resort-style lifestyle with its own golf course, expansive clubhouse, and a comprehensive activities program that keeps residents engaged year-round.",
+      "Homes in Sun City MacDonald Ranch range from approximately $300,000 for smaller floor plans to $600,000 for premium single-story homes on golf course or mountain-view lots. The community features over a dozen distinct floor plans, all single-story, ranging from approximately 1,200 to 2,600 square feet. Del Webb's signature attention to open floor plans, low-maintenance exteriors, and indoor-outdoor living is evident throughout the community.",
+      "The heart of Sun City MacDonald Ranch is its 35,000-square-foot clubhouse, one of the most impressive 55+ community centers in the Las Vegas Valley. The facility includes an 18-hole championship golf course, swimming pool, spa, fitness center, tennis and pickleball courts, bocce ball, a woodworking shop, arts and crafts studio, billiards room, and a grand ballroom for events and performances. The activities calendar rivals any resort — daily fitness classes, social clubs, hobby groups, cultural events, and organized travel keep residents active and connected.",
+      "The community's location in the MacDonald Ranch foothills provides many homes with elevated mountain and valley views that flat-terrain 55+ communities cannot offer. Henderson's medical corridor, dining, and retail are minutes away, while the natural beauty of Lake Mead and Sloan Canyon are within a 30-minute drive. For 55+ buyers seeking a proven Del Webb community with golf, resort amenities, and an established social culture, Sun City MacDonald Ranch remains one of Henderson's strongest options."
+    ],
+    "highlights": [
+      { "title": "18-Hole Golf Course", "body": "A private championship golf course exclusively for Sun City MacDonald Ranch residents. Walking distance from most homes with mountain views from nearly every hole.", "iconType": "golf" },
+      { "title": "35,000 SF Clubhouse", "body": "One of the most impressive 55+ clubhouses in the Las Vegas Valley with fitness center, pool, spa, tennis, pickleball, bocce, woodworking, arts studio, billiards, and grand ballroom.", "iconType": "building" },
+      { "title": "Del Webb Quality", "body": "All single-story homes built by Del Webb with open floor plans, low-maintenance exteriors, and thoughtful design for active adult living. Over a dozen floor plan options.", "iconType": "home" },
+      { "title": "Mountain & Valley Views", "body": "Elevated MacDonald Ranch foothills location provides many homes with panoramic views of the Las Vegas Valley and the surrounding mountain ranges.", "iconType": "mountain" },
+      { "title": "Active Social Culture", "body": "Daily fitness classes, 100+ social clubs and hobby groups, cultural events, and organized travel. A resort-style social calendar with something for every interest.", "iconType": "building" },
+      { "title": "Proven 25+ Year Track Record", "body": "Established since 1996 with a mature community culture, well-funded HOA, and consistent resale performance. One of the original Del Webb communities in Nevada.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Golf Course Homes", "type": "Single-Story · Golf Views", "desc": "Homes along the community golf course fairways with direct course and mountain views. The most premium positions in the community.", "price": "From $450K" },
+      { "name": "Mountain View Homes", "type": "Single-Story · Elevated", "desc": "Homes on the community's higher terrain with sweeping views of the Las Vegas Valley and Henderson hills.", "price": "From $400K" },
+      { "name": "Interior Homes", "type": "Single-Story · Standard", "desc": "Well-maintained homes in the community's interior with easy access to the clubhouse and golf course. The most accessible pricing.", "price": "From $300K" },
+      { "name": "Premium Resales", "type": "Single-Story · Updated", "desc": "Renovated homes with modern kitchens, flooring, and outdoor living upgrades. Turnkey ready for immediate occupancy.", "price": "From $425K" }
+    ],
+    "parks": [
+      { "name": "Sun City MacDonald Ranch Clubhouse", "address": "2020 W Horizon Ridge Pkwy, Henderson, NV 89012", "acreage": "~20 acres", "amenities": ["18-hole golf course", "Swimming pool", "Spa", "Fitness center", "Tennis courts", "Pickleball", "Bocce ball", "Arts & crafts studio", "Woodworking shop", "Grand ballroom"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] },
+      { "name": "Sloan Canyon National Conservation Area", "address": "South of Henderson, NV", "acreage": "48,438 acres", "amenities": ["Hiking trails", "Petroglyphs", "Desert wildlife", "Photography"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Bob Miller Middle School", "6–8", "7/10"],
+        ["Fay Herron Elementary", "K–5", "7/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "5,000+",
+      "medianAge": "70",
+      "avgIncome": "$75,000+",
+      "households": "2,900+",
+      "homeownership": "91%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Horizon Ridge Pkwy" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~25 min", "destination": "to Lake Mead", "route": "via US-93 / I-11" }
+    ],
+    "faqs": [
+      { "q": "What is the age requirement for Sun City MacDonald Ranch?", "a": "Sun City MacDonald Ranch is a 55+ community. At least one resident in each household must be 55 years of age or older." },
+      { "q": "Does Sun City MacDonald Ranch have a golf course?", "a": "Yes. The community has its own private 18-hole championship golf course exclusively for residents. The course features mountain views and is walking distance from most homes." },
+      { "q": "What is the price range for homes in Sun City MacDonald Ranch?", "a": "Homes range from approximately $300,000 for smaller floor plans to $600,000 for premium golf course or mountain-view lots." },
+      { "q": "Is Sun City MacDonald Ranch guard-gated?", "a": "No. Sun City MacDonald Ranch is not guard-gated. The community has managed access points and an active HOA but no staffed guard gate." },
+      { "q": "What are HOA fees in Sun City MacDonald Ranch?", "a": "HOA fees typically range from $150 to $280 per month, covering the clubhouse, golf course, pool, fitness center, common area maintenance, and the community's extensive activities program." },
+      { "q": "How does Sun City MacDonald Ranch compare to Sun City Anthem?", "a": "Both are Del Webb 55+ communities in Henderson. Sun City Anthem is larger (7,000+ homes) with two courses and a bigger clubhouse. Sun City MacDonald Ranch is more intimate (2,900+ homes) with a foothills location that provides better views. Pricing is similar." },
+      { "q": "What ZIP code is Sun City MacDonald Ranch in?", "a": "Sun City MacDonald Ranch is located in ZIP code 89012 in Henderson, Nevada." },
+      { "q": "Who built Sun City MacDonald Ranch?", "a": "Sun City MacDonald Ranch was built by Del Webb, America's most recognized builder of 55+ active adult communities. Del Webb is known for quality construction, open floor plans, and resort-style community amenities." }
+    ],
+    "nearby": [
+      { "name": "MacDonald Ranch", "href": "/macdonald-ranch/", "price": "From $400K", "compare": "The broader MacDonald Ranch area including non-age-restricted neighborhoods." },
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "Henderson's premier luxury community just above Sun City with DragonRidge Country Club." },
+      { "name": "Sun City Anthem", "href": "/sun-city-anthem/", "price": "From $350K", "compare": "Larger Del Webb 55+ community in Anthem with two golf courses." },
+      { "name": "Solera at Anthem", "href": "/solera-at-anthem/", "price": "From $350K", "compare": "Guard-gated 55+ community in Anthem. Smaller and more intimate." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Nearby Henderson community with Rio Secco golf. Not age-restricted." },
+      { "name": "Foothills at MacDonald Ranch", "href": "/foothills-at-macdonald-ranch/", "price": "From $1M", "compare": "Guard-gated luxury community adjacent with golf and elevated views." }
+    ],
+    "testimonials": [
+      { "quote": "We visited five 55+ communities before choosing Sun City MacDonald Ranch. The views from our back patio sealed it — you can see the entire valley. The clubhouse, the golf course, the social events — we've never been more active in our lives.", "name": "Frank & Carol S.", "detail": "Bought in Sun City MacDonald Ranch · 2024" },
+      { "quote": "Sold our Sun City MacDonald Ranch home and moved closer to family. Nevada Real Estate Group priced it right, staged it beautifully, and we had an offer in the first week. Professional from start to finish.", "name": "Eleanor P.", "detail": "Sold in Sun City MacDonald Ranch · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Sun City MacDonald Ranch",
+    "ylopoMinPrice": 300000
+  },
+  {
+    "slug": "foothills-at-macdonald-ranch",
+    "name": "Foothills at MacDonald Ranch",
+    "parentCommunity": "MacDonald Ranch",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Guard-Gated · Golf · Luxury",
+    "zipCodes": ["89012"],
+    "center": [-114.985, 36.025],
+    "heroEyebrow": "MacDonald Ranch, Henderson",
+    "priceRange": "$1M–$4M+",
+    "established": "2000",
+    "developer": "MacDonald Development Company",
+    "acreage": "400 acres",
+    "homeCount": "350+",
+    "guardGated": true,
+    "hoaRange": "$300–$800/mo",
+    "overview": [
+      "The Foothills at MacDonald Ranch is a guard-gated luxury community located in the elevated terrain above Henderson, adjacent to the MacDonald Highlands and DragonRidge Country Club. The community occupies a commanding position in the foothills of the McCullough Range, providing panoramic views of the Las Vegas Valley, the Strip skyline, and the surrounding desert mountains from virtually every home site.",
+      "Homes in The Foothills range from approximately $1 million for semi-custom resales to over $4 million for custom estates on premium view lots. The housing stock includes semi-custom homes from the community's original development phase as well as full custom estates built by some of Henderson's most prominent luxury builders. Homes typically range from 3,000 to 8,000+ square feet, with many featuring contemporary desert architecture, floor-to-ceiling glass walls, infinity pools, and expansive outdoor terraces designed to frame the panoramic views.",
+      "The community benefits from its proximity to DragonRidge Country Club, Henderson's premier private golf facility. While DragonRidge is technically within the adjacent MacDonald Highlands, Foothills residents can apply for membership, providing access to the championship Jay Morrish-designed course, fine dining, fitness facilities, and the country club social calendar. This golf-adjacent positioning gives Foothills residents the benefits of a golf community without mandatory membership fees.",
+      "The guard-gated entry, elevated terrain, and sweeping views position The Foothills as a direct competitor to MacDonald Highlands itself — but at price points that are often more accessible than the custom lots higher up the mountain in Dragon Rock or The Ridges at MacDonald Highlands. For luxury buyers who want panoramic Henderson views, guard-gated security, and proximity to a premier country club, The Foothills at MacDonald Ranch is one of Henderson's most compelling luxury addresses."
+    ],
+    "highlights": [
+      { "title": "Panoramic Valley Views", "body": "Elevated foothills position provides virtually every home with panoramic views of the Las Vegas Valley, the Strip skyline, and the surrounding McCullough Range mountains.", "iconType": "mountain" },
+      { "title": "Guard-Gated Security", "body": "24-hour staffed guard gate with comprehensive security. One of Henderson's most secure luxury residential communities with controlled access and low traffic.", "iconType": "shield" },
+      { "title": "DragonRidge Golf Access", "body": "Adjacent to DragonRidge Country Club, Henderson's premier private golf facility. Membership is available (not mandatory) — a Jay Morrish championship course with dining and fitness.", "iconType": "golf" },
+      { "title": "Custom Estate Homes", "body": "Homes from 3,000 to 8,000+ sq ft featuring contemporary desert architecture, floor-to-ceiling glass, infinity pools, and outdoor terraces designed for the views.", "iconType": "home" },
+      { "title": "Value vs. MacDonald Highlands", "body": "Similar views and proximity to DragonRidge at price points often 30–50% below comparable homes higher up the mountain in Dragon Rock or MacDonald Highlands custom lots.", "iconType": "trend" },
+      { "title": "Henderson Executive Location", "body": "20 minutes to the Strip and airport, 10 minutes to Henderson's dining and retail corridor, with easy I-215 freeway access for commuters.", "iconType": "building" }
+    ],
+    "neighborhoods": [
+      { "name": "Foothills Custom Estates", "type": "Custom · Panoramic Views", "desc": "The highest-positioned custom homes with the most dramatic panoramic views. Full custom builds from 5,000 to 8,000+ sq ft.", "price": "From $2.5M" },
+      { "name": "Foothills View Estates", "type": "Semi-Custom · Premium", "desc": "Semi-custom homes from 3,500 to 5,500 sq ft on elevated lots with Strip skyline and valley views.", "price": "From $1.5M" },
+      { "name": "Foothills Ridge", "type": "Semi-Custom · Established", "desc": "The original Foothills homes with mature landscaping, established HOA, and mountain backdrop. The entry point into the community.", "price": "From $1M" },
+      { "name": "Foothills Modern", "type": "Custom · Contemporary", "desc": "Newer custom builds featuring desert contemporary architecture with clean lines, floor-to-ceiling glass, and infinity pools.", "price": "From $2M+" }
+    ],
+    "parks": [
+      { "name": "DragonRidge Country Club", "address": "552 S Stephanie St, Henderson, NV 89012", "acreage": "200+ acres", "amenities": ["Championship golf course", "Clubhouse dining", "Fitness center", "Swimming pool", "Tennis courts", "Social events"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] },
+      { "name": "Sloan Canyon National Conservation Area", "address": "South of Henderson, NV", "acreage": "48,438 acres", "amenities": ["Hiking trails", "Petroglyphs", "Desert wildlife", "Photography"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Bob Miller Middle School", "6–8", "7/10"],
+        ["Fay Herron Elementary", "K–5", "7/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Pinecrest Academy of Nevada", "K–12", "A"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "1,000+",
+      "medianAge": "52",
+      "avgIncome": "$250,000+",
+      "households": "350+",
+      "homeownership": "90%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Horizon Ridge Pkwy" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~25 min", "destination": "to Lake Mead", "route": "via US-93 / I-11" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in The Foothills at MacDonald Ranch?", "a": "Homes range from approximately $1 million for semi-custom resales to over $4 million for custom estates on premium view lots with panoramic Strip and valley views." },
+      { "q": "Is The Foothills at MacDonald Ranch guard-gated?", "a": "Yes. The Foothills is a fully guard-gated community with a 24-hour staffed guard gate and comprehensive security presence." },
+      { "q": "What golf course is near The Foothills?", "a": "DragonRidge Country Club, Henderson's premier private golf facility, is adjacent to The Foothills. It features a Jay Morrish-designed championship course. Membership is available by application — it is not mandatory for Foothills homeowners." },
+      { "q": "What ZIP code is The Foothills at MacDonald Ranch in?", "a": "The Foothills at MacDonald Ranch is located in ZIP code 89012 in Henderson, Nevada." },
+      { "q": "How does The Foothills compare to MacDonald Highlands?", "a": "MacDonald Highlands is higher up the mountain with more dramatic views and higher prices ($2M–$15M+). The Foothills offers similar views and DragonRidge access at a more accessible price range ($1M–$4M), making it an excellent value play for Henderson luxury." },
+      { "q": "What are HOA fees in The Foothills?", "a": "HOA fees typically range from $300 to $800 per month, covering 24-hour guard gate staffing, security patrols, common area maintenance, and the community's roads and infrastructure." },
+      { "q": "What are the views like from The Foothills?", "a": "The Foothills' elevated position in the McCullough Range provides panoramic views of the Las Vegas Valley, the Strip skyline, and surrounding desert mountains. Virtually every home enjoys some form of elevated view." },
+      { "q": "Is The Foothills at MacDonald Ranch a good investment?", "a": "The Foothills benefits from its guard-gated prestige, elevated views, DragonRidge proximity, and limited inventory. The community has shown strong appreciation and is increasingly recognized as a value alternative to the higher-priced MacDonald Highlands." }
+    ],
+    "nearby": [
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "Henderson's premier luxury community higher up the mountain with DragonRidge Country Club." },
+      { "name": "Sun City MacDonald Ranch", "href": "/sun-city-macdonald-ranch/", "price": "From $300K", "compare": "Adjacent Del Webb 55+ community with its own golf course. More accessible pricing." },
+      { "name": "Sunridge at MacDonald Ranch", "href": "/sunridge-at-macdonald-ranch/", "price": "From $600K", "compare": "Golf community in MacDonald Ranch with more accessible pricing and family orientation." },
+      { "name": "Ascaya", "href": "/ascaya/", "price": "From $3M", "compare": "Ultra-luxury custom lot community on the adjacent ridgeline. The highest tier of Henderson luxury." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf and 25 distinct neighborhoods." },
+      { "name": "Anthem Country Club", "href": "/anthem-country-club/", "price": "From $1.2M", "compare": "Guard-gated private golf community in Anthem with Hale Irwin course." }
+    ],
+    "testimonials": [
+      { "quote": "The views from The Foothills are as good as anything in MacDonald Highlands — at a fraction of the price. Nevada Real Estate Group showed us both communities and helped us see the value. We got our dream home with Strip views for under $2M.", "name": "James & Sandra W.", "detail": "Bought in Foothills at MacDonald Ranch · 2024" },
+      { "quote": "Our custom estate in The Foothills attracted interest from luxury buyers in both Henderson and Summerlin. The team's marketing — drone footage, 3D tours, targeted digital — brought the right buyer in 45 days.", "name": "Robert E.", "detail": "Sold in Foothills at MacDonald Ranch · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Foothills MacDonald Ranch",
+    "ylopoMinPrice": 1000000
+  },
+  {
+    "slug": "sunridge-at-macdonald-ranch",
+    "name": "Sunridge at MacDonald Ranch",
+    "parentCommunity": "MacDonald Ranch",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Golf · Family · Established",
+    "zipCodes": ["89012"],
+    "center": [-114.995, 36.035],
+    "heroEyebrow": "MacDonald Ranch, Henderson",
+    "priceRange": "$600K–$1.5M",
+    "established": "1999",
+    "developer": "MacDonald Development Company",
+    "acreage": "300 acres",
+    "homeCount": "800+",
+    "guardGated": false,
+    "hoaRange": "$100–$250/mo",
+    "overview": [
+      "Sunridge at MacDonald Ranch is a golf-oriented residential community in the foothills of Henderson, positioned along the periphery of the MacDonald Ranch master plan. The community offers a blend of golf course living, mountain views, and family-friendly neighborhoods at price points below the guard-gated luxury enclaves higher up the mountain. For buyers who want the MacDonald Ranch address and proximity to DragonRidge Country Club without the ultra-luxury price tags, Sunridge represents one of Henderson's best values.",
+      "Homes in Sunridge range from approximately $600,000 for updated resales to $1.5 million for larger homes on golf course or premium view lots. The housing stock primarily consists of single-family homes ranging from 2,000 to 4,500 square feet, built by quality national and regional builders during the late 1990s and early 2000s. Architectural styles include Southwest, Mediterranean, and transitional, with many homeowners having invested in significant interior and exterior upgrades over the years.",
+      "The community's defining feature is its relationship to golf. Several Sunridge neighborhoods border the Revere Golf Club (formerly the DragonRidge public courses), providing residents with golf course frontage and views. The Revere features two 18-hole championship courses — the Lexington and the Concord — with panoramic views of the Las Vegas Valley. While membership is not required, the courses offer convenient daily-fee play for residents.",
+      "Sunridge at MacDonald Ranch appeals to families, professionals, and semi-retirees who want an elevated Henderson location with golf course views and mountain backdrop without the guard-gated premium. The community is within the Henderson school district and close to shopping, dining, and medical facilities along Eastern Avenue and Horizon Ridge Parkway. For the MacDonald Ranch lifestyle at an accessible price point, Sunridge delivers genuine value."
+    ],
+    "highlights": [
+      { "title": "Golf Course Living", "body": "Multiple neighborhoods border the Revere Golf Club (Lexington and Concord courses), providing golf course frontage, fairway views, and convenient public play without mandatory membership.", "iconType": "golf" },
+      { "title": "Mountain & Valley Views", "body": "Elevated foothills position provides many homes with views of the Las Vegas Valley, the Strip skyline, and the McCullough Range. Views improve with elevation.", "iconType": "mountain" },
+      { "title": "MacDonald Ranch Address", "body": "The prestige of the MacDonald Ranch location at price points significantly below the guard-gated luxury communities higher on the mountain.", "iconType": "home" },
+      { "title": "Family-Friendly Neighborhoods", "body": "Wide streets, parks, and safe neighborhoods make Sunridge popular with families. Close to Henderson schools, medical facilities, and youth recreation.", "iconType": "home" },
+      { "title": "Value Proposition", "body": "Golf course living with mountain views in the MacDonald Ranch area starting at $600K — a fraction of the $1M+ required for guard-gated alternatives nearby.", "iconType": "trend" },
+      { "title": "Revere Golf Club", "body": "Two championship 18-hole courses with panoramic Las Vegas Valley views. Public play available — among the most scenic courses in Henderson.", "iconType": "golf" }
+    ],
+    "neighborhoods": [
+      { "name": "Sunridge Golf Estates", "type": "Single-Family · Golf Course", "desc": "Homes directly along the Revere Golf Club fairways with course and mountain views. The most premium Sunridge positions.", "price": "From $900K" },
+      { "name": "Sunridge Heights", "type": "Single-Family · Views", "desc": "Elevated homes on the upper tier of the community with panoramic Las Vegas Valley views. Homes from 2,500 to 4,000 sq ft.", "price": "From $750K" },
+      { "name": "Sunridge Core", "type": "Single-Family · Family", "desc": "The main residential area with homes from 2,000 to 3,000 sq ft. Close to parks and the community's central amenities.", "price": "From $600K" },
+      { "name": "Sunridge Summit", "type": "Single-Family · Premium", "desc": "Larger homes from 3,500 to 4,500 sq ft on generous lots with mountain backdrop and upgraded finishes.", "price": "From $1M" }
+    ],
+    "parks": [
+      { "name": "Revere Golf Club", "address": "2600 Hampton Rd, Henderson, NV 89052", "acreage": "300+ acres", "amenities": ["Two championship golf courses", "Pro shop", "Practice range", "Clubhouse dining", "Banquet facilities"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] },
+      { "name": "Paseo Verde Park", "address": "Paseo Verde Pkwy, Henderson, NV 89012", "acreage": "~26 acres", "amenities": ["Walking trails", "Sports fields", "Dog park", "Playground", "Skate park"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Bob Miller Middle School", "6–8", "7/10"],
+        ["Fay Herron Elementary", "K–5", "7/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "2,400+",
+      "medianAge": "46",
+      "avgIncome": "$130,000+",
+      "households": "800+",
+      "homeownership": "83%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Horizon Ridge Pkwy" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~25 min", "destination": "to Lake Mead", "route": "via US-93 / I-11" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Sunridge at MacDonald Ranch?", "a": "Homes in Sunridge range from approximately $600,000 for updated resales to $1.5 million for larger homes on golf course or premium view lots." },
+      { "q": "Is Sunridge at MacDonald Ranch guard-gated?", "a": "No. Sunridge is not guard-gated. For guard-gated living in the MacDonald Ranch area, see Foothills at MacDonald Ranch or MacDonald Highlands." },
+      { "q": "What golf courses are near Sunridge?", "a": "The Revere Golf Club borders several Sunridge neighborhoods, featuring two championship 18-hole courses — the Lexington and the Concord. DragonRidge Country Club (private) is also nearby in MacDonald Highlands." },
+      { "q": "What ZIP code is Sunridge in?", "a": "Sunridge at MacDonald Ranch is located in ZIP code 89012 in Henderson, Nevada." },
+      { "q": "How does Sunridge compare to Foothills at MacDonald Ranch?", "a": "The Foothills is guard-gated with higher prices ($1M–$4M) and more dramatic elevated views. Sunridge offers similar golf and mountain views at more accessible prices ($600K–$1.5M) without a guard gate." },
+      { "q": "What are HOA fees in Sunridge?", "a": "HOA fees in Sunridge typically range from $100 to $250 per month, covering common area maintenance, landscaping of shared spaces, and community infrastructure." },
+      { "q": "What schools serve Sunridge?", "a": "Sunridge is served by CCSD schools including Coronado High School (8/10), Bob Miller Middle School (7/10), and Fay Herron Elementary (7/10). Private and charter options are nearby." },
+      { "q": "Is Sunridge a good area for families?", "a": "Yes. Sunridge attracts families with its safe neighborhoods, parks, Henderson school zoning, and proximity to community amenities. The golf course setting and mountain views add a lifestyle dimension that most family-priced communities lack." }
+    ],
+    "nearby": [
+      { "name": "Foothills at MacDonald Ranch", "href": "/foothills-at-macdonald-ranch/", "price": "From $1M", "compare": "Guard-gated luxury community adjacent with higher elevation, better views, and premium pricing." },
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "Henderson's premier luxury community with DragonRidge Country Club and panoramic views." },
+      { "name": "Sun City MacDonald Ranch", "href": "/sun-city-macdonald-ranch/", "price": "From $300K", "compare": "55+ Del Webb community in MacDonald Ranch with its own golf course." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf and 25 neighborhoods." },
+      { "name": "Green Valley Ranch", "href": "/green-valley-ranch/", "price": "From $400K", "compare": "Adjacent community with resort casino and The District shopping center." },
+      { "name": "Anthem", "href": "/anthem/", "price": "From $400K", "compare": "Henderson master plan with top-rated schools and resort-style amenities." }
+    ],
+    "testimonials": [
+      { "quote": "We wanted the MacDonald Ranch lifestyle without the million-dollar entry fee. Sunridge gave us a golf course lot with mountain views at a price that let us invest in a full backyard remodel. Nevada Real Estate Group knew exactly which lot positions to target.", "name": "Kevin & Michelle T.", "detail": "Bought in Sunridge at MacDonald Ranch · 2024" },
+      { "quote": "Our Sunridge home sold in two weeks. The golf course views and the MacDonald Ranch address attracted multiple offers. The team's pricing strategy was perfect.", "name": "Brian K.", "detail": "Sold in Sunridge at MacDonald Ranch · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Sunridge MacDonald Ranch",
+    "ylopoMinPrice": 600000
+  },
+  {
+    "slug": "skyvu",
+    "name": "SkyVu",
+    "parentCommunity": "MacDonald Highlands",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Luxury · Contemporary · Views",
+    "zipCodes": ["89012"],
+    "center": [-114.975, 36.015],
+    "heroEyebrow": "MacDonald Highlands, Henderson",
+    "priceRange": "$800K–$2M+",
+    "established": "2016",
+    "developer": "William Lyon Homes / Taylor Morrison",
+    "acreage": "80 acres",
+    "homeCount": "200+",
+    "guardGated": false,
+    "hoaRange": "$200–$400/mo",
+    "overview": [
+      "SkyVu is a luxury residential community within MacDonald Highlands in Henderson, known for its modern desert contemporary architecture and panoramic views of the Las Vegas Valley. Developed by William Lyon Homes (now Taylor Morrison) beginning in 2016, SkyVu introduced a new generation of production luxury homes to MacDonald Highlands — offering the elevated views and prestige of the MacDonald Highlands address at price points significantly below the custom estates in Dragon Rock and the community's other ultra-luxury enclaves.",
+      "Homes in SkyVu range from approximately $800,000 for smaller floor plans to over $2 million for premium view lots with upgrades. The community features several distinct floor plans ranging from approximately 2,500 to 5,000 square feet, all designed with contemporary desert aesthetics — clean lines, flat rooflines, floor-to-ceiling windows, and expansive great rooms that open to covered outdoor living spaces framing the valley and Strip views.",
+      "SkyVu's architectural character is decisively modern, distinguishing it from the more traditional Mediterranean and Tuscan styles found in older Henderson luxury communities. The homes were designed to maximize natural light and capitalize on the dramatic views that MacDonald Highlands' elevated terrain provides. Many homes feature rooftop decks, a relatively rare amenity in Las Vegas that SkyVu helped popularize, offering 360-degree views for entertaining.",
+      "As a community within MacDonald Highlands, SkyVu residents benefit from the broader community's guard-gated security perimeter and can apply for membership at DragonRidge Country Club. The community offers a more accessible entry point into MacDonald Highlands than custom-lot communities like Dragon Rock, Cresta Rosa, or the Vu Residences, making it attractive to executives, young professionals, and luxury-minded families who want the MacDonald Highlands lifestyle without a multi-million-dollar commitment."
+    ],
+    "highlights": [
+      { "title": "Modern Desert Architecture", "body": "Contemporary design throughout — clean lines, flat rooflines, floor-to-ceiling glass, and open great rooms. One of the most architecturally modern communities in Henderson.", "iconType": "home" },
+      { "title": "Panoramic Strip & Valley Views", "body": "MacDonald Highlands' elevated terrain provides panoramic views of the Las Vegas Valley and Strip skyline from most homesites. Views are the defining feature.", "iconType": "mountain" },
+      { "title": "MacDonald Highlands Address", "body": "Located within the MacDonald Highlands guard-gated community, benefiting from the broader community's security infrastructure and prestige.", "iconType": "shield" },
+      { "title": "Rooftop Decks", "body": "Many SkyVu homes feature rooftop decks — a distinctive amenity offering 360-degree panoramic views for entertaining. Relatively rare in Las Vegas.", "iconType": "home" },
+      { "title": "DragonRidge Club Access", "body": "MacDonald Highlands residents can apply for membership at DragonRidge Country Club — championship golf, fine dining, fitness, and an active social calendar.", "iconType": "golf" },
+      { "title": "Accessible Luxury Entry Point", "body": "Starting from $800K, SkyVu offers the most accessible entry point into MacDonald Highlands — well below the $2M+ required for custom-lot communities.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "SkyVu Premium Views", "type": "Contemporary · Strip Views", "desc": "The highest-positioned lots in SkyVu with the most direct and unobstructed views of the Las Vegas Strip and valley. The most coveted positions.", "price": "From $1.5M" },
+      { "name": "SkyVu Grand", "type": "Contemporary · Large Floor Plans", "desc": "The largest SkyVu floor plans at 4,000–5,000 sq ft with upgraded finishes, rooftop decks, and extended outdoor living.", "price": "From $1.2M" },
+      { "name": "SkyVu Core", "type": "Contemporary · Entry Luxury", "desc": "The primary SkyVu floor plans from 2,500 to 3,500 sq ft. Modern design, great rooms with valley views, and covered outdoor patios.", "price": "From $800K" }
+    ],
+    "parks": [
+      { "name": "DragonRidge Country Club", "address": "552 S Stephanie St, Henderson, NV 89012", "acreage": "200+ acres", "amenities": ["Championship golf course", "Clubhouse dining", "Fitness center", "Swimming pool", "Tennis courts", "Social events"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] },
+      { "name": "Sloan Canyon National Conservation Area", "address": "South of Henderson, NV", "acreage": "48,438 acres", "amenities": ["Hiking trails", "Petroglyphs", "Desert wildlife", "Photography"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Bob Miller Middle School", "6–8", "7/10"],
+        ["Fay Herron Elementary", "K–5", "7/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "600+",
+      "medianAge": "45",
+      "avgIncome": "$200,000+",
+      "households": "200+",
+      "homeownership": "85%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Horizon Ridge Pkwy" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~25 min", "destination": "to Lake Mead", "route": "via US-93 / I-11" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in SkyVu?", "a": "Homes in SkyVu range from approximately $800,000 for smaller floor plans to over $2 million for premium view lots with extensive upgrades and rooftop decks." },
+      { "q": "Is SkyVu guard-gated?", "a": "SkyVu is located within the MacDonald Highlands community, which has guard-gated access. SkyVu itself does not have a separate gate — it benefits from MacDonald Highlands' broader security infrastructure." },
+      { "q": "What makes SkyVu different from other MacDonald Highlands communities?", "a": "SkyVu is the most accessible entry point into MacDonald Highlands, with production luxury homes starting at $800K versus the $2M–$15M+ required for custom communities like Dragon Rock. SkyVu is also architecturally distinct with its modern desert contemporary design and rooftop decks." },
+      { "q": "What ZIP code is SkyVu in?", "a": "SkyVu is located in ZIP code 89012 in Henderson, Nevada, within the MacDonald Highlands community." },
+      { "q": "Can SkyVu residents join DragonRidge Country Club?", "a": "Yes. As MacDonald Highlands residents, SkyVu homeowners can apply for membership at DragonRidge Country Club, which offers championship golf, dining, fitness, and social programming. Membership is not mandatory." },
+      { "q": "What are HOA fees in SkyVu?", "a": "HOA fees in SkyVu typically range from $200 to $400 per month, covering the MacDonald Highlands master community association fees, common area maintenance, and community infrastructure." },
+      { "q": "Do SkyVu homes have rooftop decks?", "a": "Many SkyVu homes feature rooftop decks as an optional or included amenity, offering 360-degree panoramic views of the Las Vegas Valley, the Strip, and the surrounding mountains. It's one of the community's signature features." },
+      { "q": "Is SkyVu a good investment?", "a": "SkyVu benefits from the MacDonald Highlands address, modern architecture that appeals to today's luxury buyers, and an accessible price point relative to the broader community. The combination of views, design, and location has driven strong appreciation since the community's 2016 debut." }
+    ],
+    "nearby": [
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "The broader luxury community surrounding SkyVu with DragonRidge Country Club." },
+      { "name": "Vu Residences", "href": "/vu-residences/", "price": "From $1M", "compare": "Another MacDonald Highlands community with larger homes and higher price points." },
+      { "name": "Dragon Rock", "href": "/dragon-rock/", "price": "From $5M", "compare": "MacDonald Highlands' ultra-luxury custom enclave. The highest tier of Henderson luxury." },
+      { "name": "Foothills at MacDonald Ranch", "href": "/foothills-at-macdonald-ranch/", "price": "From $1M", "compare": "Guard-gated luxury community adjacent with golf views and larger lots." },
+      { "name": "Ascaya", "href": "/ascaya/", "price": "From $3M", "compare": "Ultra-luxury custom lot community on the adjacent ridgeline." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Established Henderson community with Rio Secco golf and 25 neighborhoods." }
+    ],
+    "testimonials": [
+      { "quote": "SkyVu was exactly what we wanted — modern architecture, Strip views, and the MacDonald Highlands address — all without the $3M+ commitment of going custom. Nevada Real Estate Group helped us choose the right lot position for the best sunset views.", "name": "Derek & Samantha L.", "detail": "Bought in SkyVu · 2024" },
+      { "quote": "Our SkyVu home attracted enormous interest from California buyers. The rooftop deck with 360-degree views was the selling point. Closed in 28 days at asking price thanks to the team's targeted marketing.", "name": "Alex M.", "detail": "Sold in SkyVu · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "SkyVu MacDonald Highlands",
+    "ylopoMinPrice": 800000
+  },
+  {
+    "slug": "vu-residences",
+    "name": "Vu Residences",
+    "parentCommunity": "MacDonald Highlands",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Luxury · Contemporary · Views",
+    "zipCodes": ["89012"],
+    "center": [-114.970, 36.012],
+    "heroEyebrow": "MacDonald Highlands, Henderson",
+    "priceRange": "$1M–$3M+",
+    "established": "2018",
+    "developer": "William Lyon Homes / Taylor Morrison",
+    "acreage": "60 acres",
+    "homeCount": "120+",
+    "guardGated": false,
+    "hoaRange": "$250–$500/mo",
+    "overview": [
+      "Vu Residences is a luxury community within MacDonald Highlands in Henderson, positioned as the premium tier above SkyVu with larger floor plans, more elevated lot positions, and higher-end standard finishes. Developed by William Lyon Homes (now Taylor Morrison) beginning in 2018, Vu Residences was designed to bridge the gap between the production-luxury SkyVu homes and the fully custom estates in Dragon Rock — offering semi-custom quality and scale with panoramic views that rival the most expensive addresses in MacDonald Highlands.",
+      "Homes in Vu Residences range from approximately $1 million for the more compact floor plans to over $3 million for premium view lots with extensive upgrades and custom finishing. Floor plans span approximately 3,000 to 6,000 square feet, all designed with the modern desert contemporary aesthetic that defines MacDonald Highlands' newer communities — flat rooflines, floor-to-ceiling glass, disappearing walls, and multi-slide doors that open living spaces to the panoramic views.",
+      "Vu Residences occupies higher terrain within MacDonald Highlands than SkyVu, resulting in even more dramatic views. Many homesites offer unobstructed panoramas of the Las Vegas Strip, the entire valley floor, and the Spring Mountains to the west. The architectural standards are more refined than SkyVu, with upgraded material palettes, more sophisticated outdoor living designs, and options for customization that approach the level of a semi-custom build.",
+      "As a MacDonald Highlands community, Vu Residences residents benefit from the community's guard-gated security perimeter and eligibility for DragonRidge Country Club membership. The community appeals to luxury buyers who want the MacDonald Highlands views and address with modern, move-in-ready construction — without the 12-to-24-month timeline and complexity of building a full custom home in Dragon Rock or other custom-lot communities. For design-forward buyers seeking panoramic Henderson views in a polished, contemporary package, Vu Residences delivers."
+    ],
+    "highlights": [
+      { "title": "Premier MacDonald Highlands Views", "body": "Higher elevation than SkyVu provides even more dramatic panoramic views of the Las Vegas Strip, the valley floor, and the Spring Mountains. Some of the best production-home views in Henderson.", "iconType": "mountain" },
+      { "title": "Modern Desert Contemporary Design", "body": "Flat rooflines, floor-to-ceiling glass, disappearing walls, and multi-slide doors create seamless indoor-outdoor living. The most architecturally refined production homes in MacDonald Highlands.", "iconType": "home" },
+      { "title": "Semi-Custom Quality", "body": "Upgraded material palettes, sophisticated outdoor living designs, and customization options that approach semi-custom build quality. Homes from 3,000 to 6,000 sq ft.", "iconType": "home" },
+      { "title": "MacDonald Highlands Guard Gate", "body": "Protected by MacDonald Highlands' guard-gated security infrastructure. DragonRidge Country Club membership available by application.", "iconType": "shield" },
+      { "title": "Move-In Ready Luxury", "body": "Modern, finished homes ready for immediate occupancy — no 12–24 month custom build timeline. Ideal for buyers who want luxury without the construction process.", "iconType": "building" },
+      { "title": "Strong Appreciation Trajectory", "body": "Vu Residences has shown robust appreciation since its 2018 debut, benefiting from MacDonald Highlands' prestige and the growing demand for modern luxury in Henderson.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Vu Summit", "type": "Contemporary · Ultra-Premium Views", "desc": "The highest lot positions in Vu Residences with the most commanding panoramic views. The largest floor plans with rooftop terraces.", "price": "From $2M+" },
+      { "name": "Vu Panorama", "type": "Contemporary · Strip Views", "desc": "Mid-elevation lots with direct Strip skyline views. Homes from 3,500 to 5,000 sq ft with premium finishes throughout.", "price": "From $1.5M" },
+      { "name": "Vu Terrace", "type": "Contemporary · Entry Premium", "desc": "The most accessible Vu Residences with 3,000–4,000 sq ft floor plans. Modern design with valley views and covered outdoor terraces.", "price": "From $1M" }
+    ],
+    "parks": [
+      { "name": "DragonRidge Country Club", "address": "552 S Stephanie St, Henderson, NV 89012", "acreage": "200+ acres", "amenities": ["Championship golf course", "Clubhouse dining", "Fitness center", "Swimming pool", "Tennis courts", "Social events"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~25 acres", "amenities": ["Lake with fishing", "Walking trails", "Picnic areas", "Playground", "Amphitheater"] },
+      { "name": "Sloan Canyon National Conservation Area", "address": "South of Henderson, NV", "acreage": "48,438 acres", "amenities": ["Hiking trails", "Petroglyphs", "Desert wildlife", "Photography"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Coronado High School", "9–12", "8/10"],
+        ["Bob Miller Middle School", "6–8", "7/10"],
+        ["Fay Herron Elementary", "K–5", "7/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "350+",
+      "medianAge": "46",
+      "avgIncome": "$225,000+",
+      "households": "120+",
+      "homeownership": "87%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-215 W → I-15 N" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 W" },
+      { "time": "~10 min", "destination": "to Henderson Downtown", "route": "via Horizon Ridge Pkwy" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~25 min", "destination": "to Lake Mead", "route": "via US-93 / I-11" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Vu Residences?", "a": "Homes in Vu Residences range from approximately $1 million for smaller floor plans to over $3 million for premium view lots with extensive upgrades and custom finishing." },
+      { "q": "How does Vu Residences compare to SkyVu?", "a": "Vu Residences is positioned above SkyVu in MacDonald Highlands' hierarchy — higher elevation, larger floor plans (3,000–6,000 vs 2,500–5,000 sq ft), more refined finishes, and higher pricing ($1M–$3M+ vs $800K–$2M+). Both feature modern desert contemporary architecture." },
+      { "q": "Is Vu Residences guard-gated?", "a": "Vu Residences is within the MacDonald Highlands community, which has guard-gated access. Residents benefit from MacDonald Highlands' broader 24-hour security infrastructure." },
+      { "q": "What ZIP code is Vu Residences in?", "a": "Vu Residences is located in ZIP code 89012 in Henderson, Nevada, within MacDonald Highlands." },
+      { "q": "Can Vu Residences homeowners join DragonRidge Country Club?", "a": "Yes. As MacDonald Highlands residents, Vu Residences homeowners can apply for membership at DragonRidge Country Club. Membership includes championship golf, dining, fitness, pool, and social programming." },
+      { "q": "What are HOA fees in Vu Residences?", "a": "HOA fees typically range from $250 to $500 per month, covering MacDonald Highlands master association fees, common area maintenance, and community infrastructure and security." },
+      { "q": "Are Vu Residences homes custom built?", "a": "Vu Residences homes are semi-custom — built by Taylor Morrison (formerly William Lyon Homes) with multiple floor plan options and extensive customization packages. They are not fully custom like Dragon Rock estates, but offer more customization than typical production luxury." },
+      { "q": "Is Vu Residences a good investment?", "a": "Vu Residences has appreciated strongly since its 2018 debut, benefiting from MacDonald Highlands' prestige, modern design that appeals to today's luxury buyers, and the scarcity of contemporary production luxury at this elevation in Henderson." }
+    ],
+    "nearby": [
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "The broader luxury community with DragonRidge Country Club and multiple luxury enclaves." },
+      { "name": "SkyVu", "href": "/skyvu/", "price": "From $800K", "compare": "MacDonald Highlands' more accessible luxury community with modern architecture at a lower price point." },
+      { "name": "Dragon Rock", "href": "/dragon-rock/", "price": "From $5M", "compare": "MacDonald Highlands' ultra-luxury custom enclave with the most dramatic views and largest estates." },
+      { "name": "Foothills at MacDonald Ranch", "href": "/foothills-at-macdonald-ranch/", "price": "From $1M", "compare": "Guard-gated luxury community with golf views and a mix of semi-custom and custom homes." },
+      { "name": "Ascaya", "href": "/ascaya/", "price": "From $3M", "compare": "Ultra-luxury custom lot community on the adjacent ridgeline with 313 engineered view lots." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated community. The west-side equivalent of MacDonald Highlands' prestige." }
+    ],
+    "testimonials": [
+      { "quote": "Vu Residences gave us everything we wanted — modern architecture, incredible Strip views, and the MacDonald Highlands address — without the 18-month custom build process. Nevada Real Estate Group helped us select the lot with the best view corridor and negotiate upgrades.", "name": "Paul & Elizabeth H.", "detail": "Bought in Vu Residences · 2024" },
+      { "quote": "We upgraded from SkyVu to Vu Residences for the elevation and the larger floor plan. The team handled the sale of our SkyVu home and the purchase simultaneously. Flawless coordination.", "name": "Nathan R.", "detail": "Bought in Vu Residences · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Vu Residences MacDonald Highlands",
+    "ylopoMinPrice": 1000000
+  }
+]
