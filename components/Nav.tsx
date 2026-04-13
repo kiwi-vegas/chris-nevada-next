@@ -38,10 +38,10 @@ export default function Nav() {
           {/* RIGHT LINKS */}
           <div className="nav-right">
             <div className="nav-item communities-trigger">
-              <a href="/communities/" className="nav-trigger">
-                Communities
+              <div className="nav-trigger">
+                <a href="/communities/" className="nav-link" style={{ padding: 0 }}>Communities</a>
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M6 9l6 6 6-6"/></svg>
-              </a>
+              </div>
               <div className="communities-panel-nav">
                 <div>
                   <div className="comm-col-label">Las Vegas</div>
