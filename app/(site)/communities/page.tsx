@@ -142,6 +142,24 @@ export default function CommunitiesPage() {
           url: `https://www.lasvegashomesearchexperts.com/${c.slug}/`,
         })),
       }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/communities' },
+        ],
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name: 'Las Vegas Communities & Neighborhoods',
+        description: `Explore ${communities.length} communities across Las Vegas, Henderson, Summerlin, and North Las Vegas. From luxury guard-gated estates to family-friendly master plans.`,
+        url: 'https://www.lasvegashomesearchexperts.com/communities',
+        isPartOf: { '@type': 'WebSite', name: 'Las Vegas Home Search Experts', url: 'https://www.lasvegashomesearchexperts.com' },
+        about: { '@type': 'City', name: 'Las Vegas', sameAs: 'https://en.wikipedia.org/wiki/Las_Vegas' },
+        publisher: { '@type': 'RealEstateAgent', name: 'Nevada Real Estate Group', telephone: '+17252399950', email: 'info@nevadagroup.com' },
+      }) }} />
     </main>
   )
 }
