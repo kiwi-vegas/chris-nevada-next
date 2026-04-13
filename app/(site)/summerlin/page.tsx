@@ -637,9 +637,12 @@ export default async function SummerlinPage() {
             <div className="cta-v2-form">
               <h3>Or Send Us a Message</h3>
               <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
-                <input type="text" placeholder="Your Name" className="cta-v2-input" />
-                <input type="email" placeholder="Email Address" className="cta-v2-input" />
-                <input type="tel" placeholder="Phone Number" className="cta-v2-input" />
+                <input type="hidden" name="_subject" value="Summerlin Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you're looking for (e.g., neighborhood, budget, timeline)" rows={3} className="cta-v2-input cta-v2-textarea" />
                 <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
               </form>
             </div>

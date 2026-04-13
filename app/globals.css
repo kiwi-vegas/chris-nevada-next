@@ -451,6 +451,7 @@ footer { background: var(--navy-deep); border-top: 1px solid rgba(255,255,255,0.
 .cta-v2-input { width: 100%; padding: 14px 18px; font-family: var(--font-sans); font-size: var(--text-sm); color: var(--white); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-md); outline: none; transition: background var(--transition), border-color var(--transition); }
 .cta-v2-input::placeholder { color: rgba(255,255,255,0.4); }
 .cta-v2-input:focus { background: rgba(255,255,255,0.12); border-color: var(--gold); }
+.cta-v2-textarea { resize: vertical; min-height: 80px; }
 .cta-v2-submit { width: 100%; justify-content: center; }
 .cta-v2-legal { font-size: 10px; color: rgba(255,255,255,0.25); margin-top: 16px; text-align: center; }
 @media (max-width: 768px) {
