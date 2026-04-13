@@ -90,7 +90,7 @@ export default function LifestyleCollectionPage({ title, description, editorial,
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
           <span className="breadcrumb-sep">&rsaquo;</span>
-          <Link href="/communities/">Communities</Link>
+          <Link href="/communities">Communities</Link>
           <span className="breadcrumb-sep">&rsaquo;</span>
           <span>{seoLabel}</span>
         </div>

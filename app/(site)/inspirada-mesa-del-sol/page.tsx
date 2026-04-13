@@ -140,7 +140,7 @@ export default async function InspiradaMesaDelSolPage() {
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
           <span className="breadcrumb-sep">&rsaquo;</span>
-          <a href="/communities/">Communities</a>
+          <a href="/communities">Communities</a>
           <span className="breadcrumb-sep">&rsaquo;</span>
           <span>Mesa del Sol</span>
         </div>
@@ -262,7 +262,7 @@ export default async function InspiradaMesaDelSolPage() {
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
             <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Mesa%20del%20Sol%20Inspirada" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Mesa del Sol Listings &rarr;</a>
-            <Link href="/communities/" className="btn-outline">&larr; Back to All Communities</Link>
+            <Link href="/communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
