@@ -332,6 +332,24 @@ export default async function SouthernHighlandsPortofinoPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Portofino at Southern Highlands</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Portofino at Southern Highlands spans ~120 acres in Las Vegas, Nevada (ZIP 89141).</li>
+            <li key={1}>Portofino at Southern Highlands was established in 2002 by Olympia Group.</li>
+            <li key={2}>Portofino at Southern Highlands contains 400+ homes with prices ranging from $600K–$1.5M.</li>
+            <li key={3}>Portofino at Southern Highlands is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Portofino at Southern Highlands range from $250–$550/mo per month.</li>
+            <li key={5}>Top-rated schools serving Portofino at Southern Highlands include John R. Hummel Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Portofino at Southern Highlands is located ~15 min to the Strip via I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

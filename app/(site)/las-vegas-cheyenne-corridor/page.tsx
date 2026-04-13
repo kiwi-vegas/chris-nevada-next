@@ -320,6 +320,24 @@ export default async function LasVegasCheyenneCorridorPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Cheyenne Corridor</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Cheyenne Corridor spans ~8 sq mi in Las Vegas, Nevada (ZIP 89129, 89131).</li>
+            <li key={1}>Cheyenne Corridor was established in 1990s.</li>
+            <li key={2}>Cheyenne Corridor contains 12,000+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Cheyenne Corridor is a suburban · mixed community.</li>
+            <li key={4}>HOA fees in Cheyenne Corridor range from $25–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Cheyenne Corridor include Crestwood Elementary (7/10) and Thurman White Middle School (6/10).</li>
+            <li key={6}>Cheyenne Corridor is located ~20 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

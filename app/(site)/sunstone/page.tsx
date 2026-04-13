@@ -320,6 +320,24 @@ export default async function SunstonePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sunstone</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sunstone spans ~1,200 acres in North Las Vegas, Nevada (ZIP 89081, 89086).</li>
+            <li key={1}>Sunstone was established in 2019 by Lennar / KB Home / Century Communities.</li>
+            <li key={2}>Sunstone contains 3,650 homes with prices ranging from $380K–$650K.</li>
+            <li key={3}>Sunstone is a master-planned community.</li>
+            <li key={4}>HOA fees in Sunstone range from $80–$180/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sunstone include Sandra L. Thompson Elementary (6/10) and Elknor Elementary (5/10).</li>
+            <li key={6}>Sunstone is located ~25 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

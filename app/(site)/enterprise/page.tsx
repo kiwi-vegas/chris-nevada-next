@@ -320,6 +320,24 @@ export default async function EnterprisePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Enterprise</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Enterprise spans ~42 sq mi in Las Vegas, Nevada (ZIP 89113, 89139).</li>
+            <li key={1}>Enterprise was established in 2003.</li>
+            <li key={2}>Enterprise contains 50,000+ homes with prices ranging from $350K–$700K.</li>
+            <li key={3}>Enterprise is a unincorporated · growing suburban community.</li>
+            <li key={4}>HOA fees in Enterprise range from $25–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Enterprise include Carolyn S. Reedom Elementary (8/10) and Lawrence & Heidi Canarelli Middle (7/10).</li>
+            <li key={6}>Enterprise is located ~15 min to the Strip via I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

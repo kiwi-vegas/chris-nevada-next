@@ -337,6 +337,24 @@ export default async function TuscanCliffsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Tuscan Cliffs</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Tuscan Cliffs spans 160 acres in Las Vegas, Nevada (ZIP 89141).</li>
+            <li key={1}>Tuscan Cliffs was established in 2005 by Olympia Group.</li>
+            <li key={2}>Tuscan Cliffs contains 400+ homes with prices ranging from $800K–$3M.</li>
+            <li key={3}>Tuscan Cliffs is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Tuscan Cliffs range from $250–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Tuscan Cliffs include Liberty High School (7/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Tuscan Cliffs is located ~20 min to the Strip via I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

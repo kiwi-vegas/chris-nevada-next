@@ -320,6 +320,24 @@ export default async function HendersonOldTownPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Old Town Henderson</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Old Town Henderson spans ~500 acres in Henderson, Nevada (ZIP 89015).</li>
+            <li key={1}>Old Town Henderson was established in 1940s–1950s by City of Henderson / Various.</li>
+            <li key={2}>Old Town Henderson contains 2,000+ homes with prices ranging from $300K–$600K.</li>
+            <li key={3}>Old Town Henderson is a historic · walkable urban community.</li>
+            <li key={4}>HOA fees in Old Town Henderson range from None–$50/mo per month.</li>
+            <li key={5}>Top-rated schools serving Old Town Henderson include C.T. Sewell Elementary (6/10) and Burkholder Middle School (5/10).</li>
+            <li key={6}>Old Town Henderson is located ~20 min to the Strip via Boulder Hwy → I-515.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

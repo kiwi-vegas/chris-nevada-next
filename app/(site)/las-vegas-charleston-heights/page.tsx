@@ -320,6 +320,24 @@ export default async function LasVegasCharlestonHeightsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Charleston Heights</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Charleston Heights spans ~6 sq mi in Las Vegas, Nevada (ZIP 89107, 89106).</li>
+            <li key={1}>Charleston Heights was established in 1950s.</li>
+            <li key={2}>Charleston Heights contains 15,000+ homes with prices ranging from $250K–$500K.</li>
+            <li key={3}>Charleston Heights is a established · urban residential community.</li>
+            <li key={4}>HOA fees in Charleston Heights range from $0–$50/mo per month.</li>
+            <li key={5}>Top-rated schools serving Charleston Heights include Matt Kelly Elementary (4/10) and Jim Bridger Middle School (3/10).</li>
+            <li key={6}>Charleston Heights is located ~10 min to Downtown Las Vegas via Charleston Blvd / Rancho Dr.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

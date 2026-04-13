@@ -324,6 +324,24 @@ export default async function LasVegasCountryClubPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Las Vegas Country Club</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Las Vegas Country Club spans ~800 acres in Las Vegas, Nevada (ZIP 89109, 89169).</li>
+            <li key={1}>Las Vegas Country Club was established in 1967 by Irwin Molasky / Pardee Homes.</li>
+            <li key={2}>Las Vegas Country Club contains 1,400+ homes with prices ranging from $400K–$3M+.</li>
+            <li key={3}>Las Vegas Country Club is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Las Vegas Country Club range from $300–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Las Vegas Country Club include Las Vegas Academy of the Arts (9/10) and Mabel W. Hoggard Elementary (7/10).</li>
+            <li key={6}>Las Vegas Country Club is located ~5 min to the Strip via Desert Inn Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

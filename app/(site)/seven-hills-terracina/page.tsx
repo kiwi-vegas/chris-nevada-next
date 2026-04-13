@@ -332,6 +332,24 @@ export default async function SevenHillsTerracinaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Terracina</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Terracina spans ~100 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Terracina was established in 2001 by Pacific Rim / Various Custom.</li>
+            <li key={2}>Terracina contains ~180 homes with prices ranging from $1M–$3M+.</li>
+            <li key={3}>Terracina is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Terracina range from $300–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Terracina include Jim Thorpe Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Terracina is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

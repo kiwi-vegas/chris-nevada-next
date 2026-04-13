@@ -332,6 +332,24 @@ export default async function AscensionAtThePeaksPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Ascension at The Peaks</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Ascension at The Peaks spans ~300 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>Ascension at The Peaks was established in 2023 by Howard Hughes Corporation / Multiple Builders.</li>
+            <li key={2}>Ascension at The Peaks contains 561 homes with prices ranging from $1M–$4M+.</li>
+            <li key={3}>Ascension at The Peaks is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Ascension at The Peaks range from $300–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Ascension at The Peaks include Bonner Elementary School (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Ascension at The Peaks is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

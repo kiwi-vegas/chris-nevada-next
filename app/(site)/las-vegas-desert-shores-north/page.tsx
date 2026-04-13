@@ -320,6 +320,24 @@ export default async function LasVegasDesertShoresNorthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Desert Shores North</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Desert Shores North spans ~350 acres in Las Vegas, Nevada (ZIP 89128, 89117).</li>
+            <li key={1}>Desert Shores North was established in 1988 by Desert Shores Development.</li>
+            <li key={2}>Desert Shores North contains 2,000+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Desert Shores North is a waterfront · established community within Desert Shores.</li>
+            <li key={4}>HOA fees in Desert Shores North range from $100–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving Desert Shores North include Dean Allen Elementary (6/10) and Brinley Middle School (5/10).</li>
+            <li key={6}>Desert Shores North is located ~15 min to the Strip via Sahara Ave / US-95.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

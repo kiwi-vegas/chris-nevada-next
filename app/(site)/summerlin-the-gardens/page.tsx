@@ -320,6 +320,24 @@ export default async function SummerlinTheGardensPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Gardens</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Gardens spans 420 acres in Las Vegas, Nevada (ZIP 89135, 89134).</li>
+            <li key={1}>The Gardens was established in 1999 by Howard Hughes Corporation.</li>
+            <li key={2}>The Gardens contains 2,600+ homes with prices ranging from $450K–$750K.</li>
+            <li key={3}>The Gardens is a master-planned · family community within Summerlin.</li>
+            <li key={4}>HOA fees in The Gardens range from $75–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Gardens include Zel & Mary Lowman Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>The Gardens is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

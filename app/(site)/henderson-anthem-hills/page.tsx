@@ -320,6 +320,24 @@ export default async function HendersonAnthemHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Anthem Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Anthem Hills spans ~350 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Anthem Hills was established in 2000 by Del Webb / Pulte Group.</li>
+            <li key={2}>Anthem Hills contains 1,800+ homes with prices ranging from $600K–$1M.</li>
+            <li key={3}>Anthem Hills is a master-planned · elevated · premium community within Anthem.</li>
+            <li key={4}>HOA fees in Anthem Hills range from $125–$275/mo per month.</li>
+            <li key={5}>Top-rated schools serving Anthem Hills include Elise L. Wolff Elementary (9/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Anthem Hills is located ~22 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

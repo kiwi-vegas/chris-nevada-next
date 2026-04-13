@@ -320,6 +320,24 @@ export default async function LasVegasSunriseManorPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sunrise Manor</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sunrise Manor spans ~33 sq mi in Las Vegas, Nevada (ZIP 89110, 89115).</li>
+            <li key={1}>Sunrise Manor was established in 1950s.</li>
+            <li key={2}>Sunrise Manor contains 50,000+ homes with prices ranging from $200K–$400K.</li>
+            <li key={3}>Sunrise Manor is a established · unincorporated community.</li>
+            <li key={4}>HOA fees in Sunrise Manor range from $0–$50/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sunrise Manor include Elise L. Wolff Elementary (5/10) and Brinley Middle School (4/10).</li>
+            <li key={6}>Sunrise Manor is located ~15 min to the Strip via Lake Mead Blvd → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

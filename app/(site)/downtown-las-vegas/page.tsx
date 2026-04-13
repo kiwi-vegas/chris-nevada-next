@@ -332,6 +332,24 @@ export default async function DowntownLasVegasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Downtown Las Vegas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Downtown Las Vegas spans ~3,500 acres in Las Vegas, Nevada (ZIP 89101, 89104).</li>
+            <li key={1}>Downtown Las Vegas was established in 1905.</li>
+            <li key={2}>Downtown Las Vegas contains 12,000+ homes with prices ranging from $200K–$5M+.</li>
+            <li key={3}>Downtown Las Vegas is a urban hub · arts & entertainment community.</li>
+            <li key={4}>HOA fees in Downtown Las Vegas range from $100–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Downtown Las Vegas include Las Vegas Academy of the Arts (9/10) and Roy W. Martin Middle School (5/10).</li>
+            <li key={6}>Downtown Las Vegas is located ~5 min to the Strip via Las Vegas Blvd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

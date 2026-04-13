@@ -324,6 +324,24 @@ export default async function SummerlinTheVistasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Vistas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Vistas spans 600 acres in Las Vegas, Nevada (ZIP 89134, 89144).</li>
+            <li key={1}>The Vistas was established in 1996 by Howard Hughes Corporation.</li>
+            <li key={2}>The Vistas contains 3,000+ homes with prices ranging from $450K–$1.5M+.</li>
+            <li key={3}>The Vistas is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Vistas range from $100–$500/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Vistas include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>The Vistas is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

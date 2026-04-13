@@ -312,6 +312,24 @@ export default async function CadenceVillageParkPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Village Park</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Village Park spans ~80 acres in Henderson, Nevada (ZIP 89011).</li>
+            <li key={1}>Village Park was established in 2017 by Lennar / Richmond American.</li>
+            <li key={2}>Village Park contains ~500 homes with prices ranging from $400K–$600K.</li>
+            <li key={3}>Village Park is a master-planned · family community within Cadence.</li>
+            <li key={4}>HOA fees in Village Park range from $100–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Village Park include John C. Vanderburg Elementary (8/10) and Jack Lund Schofield Middle School (7/10).</li>
+            <li key={6}>Village Park is located ~25 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -320,6 +320,24 @@ export default async function TropicalParkwayPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Tropical Parkway Corridor</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Tropical Parkway Corridor spans ~800 acres in North Las Vegas, Nevada (ZIP 89084, 89085).</li>
+            <li key={1}>Tropical Parkway Corridor was established in 2000s by Various Builders.</li>
+            <li key={2}>Tropical Parkway Corridor contains 3,500+ homes with prices ranging from $300K–$500K.</li>
+            <li key={3}>Tropical Parkway Corridor is a emerging · mixed residential community.</li>
+            <li key={4}>HOA fees in Tropical Parkway Corridor range from $40–$120/mo per month.</li>
+            <li key={5}>Top-rated schools serving Tropical Parkway Corridor include John C. Bass Elementary (7/10) and Kathleen & Tim Harney Middle (6/10).</li>
+            <li key={6}>Tropical Parkway Corridor is located ~20 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

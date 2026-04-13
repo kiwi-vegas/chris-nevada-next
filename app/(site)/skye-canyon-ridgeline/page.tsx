@@ -312,6 +312,24 @@ export default async function SkyeCanyonRidgelinePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Ridgeline at Skye Canyon</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Ridgeline at Skye Canyon spans ~200 acres in North Las Vegas, Nevada (ZIP 89166).</li>
+            <li key={1}>Ridgeline at Skye Canyon was established in 2019 by Toll Brothers / Taylor Morrison.</li>
+            <li key={2}>Ridgeline at Skye Canyon contains ~800 homes with prices ranging from $500K–$800K.</li>
+            <li key={3}>Ridgeline at Skye Canyon is a new construction · premium community within Skye Canyon.</li>
+            <li key={4}>HOA fees in Ridgeline at Skye Canyon range from $100–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Ridgeline at Skye Canyon include Jydstrup Elementary (7/10) and Edmundo "Eddie" Escobedo Sr. Middle School (6/10).</li>
+            <li key={6}>Ridgeline at Skye Canyon is located ~25 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

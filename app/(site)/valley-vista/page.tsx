@@ -320,6 +320,24 @@ export default async function ValleyVistaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Valley Vista</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Valley Vista spans ~600 acres in North Las Vegas, Nevada (ZIP 89086).</li>
+            <li key={1}>Valley Vista was established in 2018 by Lennar / KB Home / Various.</li>
+            <li key={2}>Valley Vista contains 2,000+ homes with prices ranging from $350K–$550K.</li>
+            <li key={3}>Valley Vista is a new construction · emerging community.</li>
+            <li key={4}>HOA fees in Valley Vista range from $50–$130/mo per month.</li>
+            <li key={5}>Top-rated schools serving Valley Vista include Reedom Elementary (6/10) and Kathleen & Tim Harney Middle (6/10).</li>
+            <li key={6}>Valley Vista is located ~25 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

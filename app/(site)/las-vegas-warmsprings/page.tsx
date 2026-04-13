@@ -320,6 +320,24 @@ export default async function LasVegasWarmspringsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Warm Springs</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Warm Springs spans ~900 acres in Las Vegas, Nevada (ZIP 89148, 89113).</li>
+            <li key={1}>Warm Springs was established in 1996 by Various Builders.</li>
+            <li key={2}>Warm Springs contains 6,000+ homes with prices ranging from $350K–$650K.</li>
+            <li key={3}>Warm Springs is a established · mixed residential · southwest community.</li>
+            <li key={4}>HOA fees in Warm Springs range from $50–$175/mo per month.</li>
+            <li key={5}>Top-rated schools serving Warm Springs include Mabel W. Hoggard Elementary (7/10) and Lawrence & Heidi Canarelli Middle School (6/10).</li>
+            <li key={6}>Warm Springs is located ~15 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

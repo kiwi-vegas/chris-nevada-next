@@ -320,6 +320,24 @@ export default async function ThePaseosPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Paseos</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Paseos spans ~500 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>The Paseos was established in 2004 by Howard Hughes Corporation.</li>
+            <li key={2}>The Paseos contains 2,800+ homes with prices ranging from $550K–$1.2M.</li>
+            <li key={3}>The Paseos is a master-planned · family village community within Summerlin.</li>
+            <li key={4}>HOA fees in The Paseos range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Paseos include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>The Paseos is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

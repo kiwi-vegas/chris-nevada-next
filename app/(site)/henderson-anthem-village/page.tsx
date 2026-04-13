@@ -320,6 +320,24 @@ export default async function HendersonAnthemVillagePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Anthem Village</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Anthem Village spans ~800 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Anthem Village was established in 1998 by Del Webb / Pulte Homes.</li>
+            <li key={2}>Anthem Village contains 3,500+ homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Anthem Village is a master-planned · family community within Anthem.</li>
+            <li key={4}>HOA fees in Anthem Village range from $80–$180/mo per month.</li>
+            <li key={5}>Top-rated schools serving Anthem Village include John C. Vanderburg Elementary (9/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Anthem Village is located ~25 min to the Strip via I-215 → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

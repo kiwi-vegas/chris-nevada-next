@@ -312,6 +312,24 @@ export default async function SohoLoftsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Soho Lofts</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Soho Lofts spans ~1.5 acres in Las Vegas, Nevada (ZIP 89101).</li>
+            <li key={1}>Soho Lofts was established in 2007 by Molasky Group of Companies.</li>
+            <li key={2}>Soho Lofts contains 178 homes with prices ranging from $200K–$600K.</li>
+            <li key={3}>Soho Lofts is a loft conversion · urban · downtown community.</li>
+            <li key={4}>HOA fees in Soho Lofts range from $250–$750/mo per month.</li>
+            <li key={5}>Top-rated schools serving Soho Lofts include Las Vegas Academy of the Arts (9/10) and Rancho High School (5/10).</li>
+            <li key={6}>Soho Lofts is located ~5 min to the Strip via Las Vegas Blvd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

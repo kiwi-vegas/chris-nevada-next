@@ -332,6 +332,24 @@ export default async function EagleHillsSummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Eagle Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Eagle Hills spans 80 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Eagle Hills was established in 2000 by Howard Hughes Corporation.</li>
+            <li key={2}>Eagle Hills contains 225+ homes with prices ranging from $800K–$2.5M.</li>
+            <li key={3}>Eagle Hills is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Eagle Hills range from $350–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Eagle Hills include Red Rock Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Eagle Hills is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

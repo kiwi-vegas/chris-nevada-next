@@ -332,6 +332,24 @@ export default async function AnthemCountryClubPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Anthem Country Club</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Anthem Country Club spans ~800 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Anthem Country Club was established in 1999 by Del Webb / Pulte Homes.</li>
+            <li key={2}>Anthem Country Club contains 1,200+ homes with prices ranging from $1.2M–$8M+.</li>
+            <li key={3}>Anthem Country Club is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Anthem Country Club range from $350–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Anthem Country Club include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Anthem Country Club is located ~25 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -332,6 +332,24 @@ export default async function WaldorfAstoriaLasVegasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Waldorf Astoria Las Vegas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Waldorf Astoria Las Vegas spans ~1.5 acres in Las Vegas, Nevada (ZIP 89158).</li>
+            <li key={1}>Waldorf Astoria Las Vegas was established in 2010 by MGM Resorts International / Infinity World Development.</li>
+            <li key={2}>Waldorf Astoria Las Vegas contains ~225 homes with prices ranging from $500K–$10M+.</li>
+            <li key={3}>Waldorf Astoria Las Vegas is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Waldorf Astoria Las Vegas range from $800–$5,000/mo per month.</li>
+            <li key={5}>Top-rated schools serving Waldorf Astoria Las Vegas include Las Vegas Academy of the Arts (9/10) and Walter Bracken STEAM Academy (8/10).</li>
+            <li key={6}>Waldorf Astoria Las Vegas is located ~0 min to the Strip on-site at CityCenter.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

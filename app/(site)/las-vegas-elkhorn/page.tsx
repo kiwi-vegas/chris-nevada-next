@@ -320,6 +320,24 @@ export default async function LasVegasElkhornPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Elkhorn</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Elkhorn spans ~5 sq mi in Las Vegas, Nevada (ZIP 89129, 89131).</li>
+            <li key={1}>Elkhorn was established in 1990s.</li>
+            <li key={2}>Elkhorn contains 8,000+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Elkhorn is a suburban · established community.</li>
+            <li key={4}>HOA fees in Elkhorn range from $25–$125/mo per month.</li>
+            <li key={5}>Top-rated schools serving Elkhorn include Crestwood Elementary (7/10) and Thurman White Middle School (6/10).</li>
+            <li key={6}>Elkhorn is located ~20 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

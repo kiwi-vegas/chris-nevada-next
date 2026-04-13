@@ -332,6 +332,24 @@ export default async function TheVineyardsSummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Vineyards</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Vineyards spans 100 acres in Las Vegas, Nevada (ZIP 89134).</li>
+            <li key={1}>The Vineyards was established in 1998 by Howard Hughes Corporation.</li>
+            <li key={2}>The Vineyards contains 200+ homes with prices ranging from $900K–$3M+.</li>
+            <li key={3}>The Vineyards is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Vineyards range from $350–$850/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Vineyards include Red Rock Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>The Vineyards is located ~18 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

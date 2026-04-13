@@ -328,6 +328,24 @@ export default async function AnthemSunCityAnthemCenterPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sun City Anthem Center</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sun City Anthem Center spans ~400 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Sun City Anthem Center was established in 1999 by Del Webb / Pulte Homes.</li>
+            <li key={2}>Sun City Anthem Center contains 1,800+ homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Sun City Anthem Center is a 55+ active adult · community center community within Sun City Anthem.</li>
+            <li key={4}>HOA fees in Sun City Anthem Center range from $200–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sun City Anthem Center include Henderson International School (A) and Pinecrest Academy of Nevada (A).</li>
+            <li key={6}>Sun City Anthem Center is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

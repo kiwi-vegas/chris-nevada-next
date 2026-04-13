@@ -320,6 +320,24 @@ export default async function MountainsEdgePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Mountains Edge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Mountains Edge spans 3,500 acres in Las Vegas, Nevada (ZIP 89178, 89141).</li>
+            <li key={1}>Mountains Edge was established in 2004 by Focus Property Group.</li>
+            <li key={2}>Mountains Edge contains 12,000+ homes with prices ranging from $350K–$650K.</li>
+            <li key={3}>Mountains Edge is a master-planned community community.</li>
+            <li key={4}>HOA fees in Mountains Edge range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Mountains Edge include Carolyn S. Reedom Elementary (8/10) and Lawrence & Heidi Canarelli Middle (7/10).</li>
+            <li key={6}>Mountains Edge is located ~10 min to Red Rock Canyon via Blue Diamond Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

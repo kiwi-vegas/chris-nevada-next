@@ -332,6 +332,24 @@ export default async function ThePointeSummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Pointe</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Pointe spans 60 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>The Pointe was established in 2008 by Howard Hughes Corporation.</li>
+            <li key={2}>The Pointe contains 75+ homes with prices ranging from $1.5M–$5M+.</li>
+            <li key={3}>The Pointe is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Pointe range from $600–$1,200/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Pointe include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>The Pointe is located ~22 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -324,6 +324,24 @@ export default async function PaintedDesertPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Painted Desert</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Painted Desert spans ~320 acres in Las Vegas, Nevada (ZIP 89149).</li>
+            <li key={1}>Painted Desert was established in 1988 by Painted Desert Development.</li>
+            <li key={2}>Painted Desert contains ~1,200 homes with prices ranging from $400K–$800K.</li>
+            <li key={3}>Painted Desert is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Painted Desert range from $200–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Painted Desert include Zel & Mary Lowman Elementary (6/10) and Lied Middle School (5/10).</li>
+            <li key={6}>Painted Desert is located ~25 min to the Strip via US-95 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

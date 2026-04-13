@@ -332,6 +332,24 @@ export default async function PanoramaTowersPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Panorama Towers</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Panorama Towers spans ~6 acres in Las Vegas, Nevada (ZIP 89158).</li>
+            <li key={1}>Panorama Towers was established in 2006 by Panorama Group / Laurence Hallier.</li>
+            <li key={2}>Panorama Towers contains ~650 homes with prices ranging from $300K–$2M+.</li>
+            <li key={3}>Panorama Towers is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Panorama Towers range from $350–$1,500/mo per month.</li>
+            <li key={5}>Top-rated schools serving Panorama Towers include Las Vegas Academy of the Arts (9/10) and Walter Bracken STEAM Academy (8/10).</li>
+            <li key={6}>Panorama Towers is located ~3 min to the Strip via Dean Martin Dr.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

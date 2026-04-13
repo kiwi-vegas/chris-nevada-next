@@ -320,6 +320,24 @@ export default async function LasVegasDesertInnCorridorPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Desert Inn Corridor</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Desert Inn Corridor spans ~8 sq mi in Las Vegas, Nevada (ZIP 89109, 89169).</li>
+            <li key={1}>Desert Inn Corridor was established in 1950s.</li>
+            <li key={2}>Desert Inn Corridor contains 12,000+ homes with prices ranging from $300K–$1M+.</li>
+            <li key={3}>Desert Inn Corridor is a urban · mixed-use corridor community.</li>
+            <li key={4}>HOA fees in Desert Inn Corridor range from $0–$500/mo per month.</li>
+            <li key={5}>Top-rated schools serving Desert Inn Corridor include Lois Craig Elementary (5/10) and Roy Martin Middle School (5/10).</li>
+            <li key={6}>Desert Inn Corridor is located ~5 min to the Strip via Desert Inn Rd east.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

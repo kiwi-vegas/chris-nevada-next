@@ -320,6 +320,24 @@ export default async function HeartlandTuleSpringsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Heartland at Tule Springs</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Heartland at Tule Springs spans ~1,200 acres in North Las Vegas, Nevada (ZIP 89166, 89084).</li>
+            <li key={1}>Heartland at Tule Springs was established in 2021 by Multiple National Builders.</li>
+            <li key={2}>Heartland at Tule Springs contains 3,000+ at build-out homes with prices ranging from $350K–$550K.</li>
+            <li key={3}>Heartland at Tule Springs is a master-planned · new construction community.</li>
+            <li key={4}>HOA fees in Heartland at Tule Springs range from $80–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Heartland at Tule Springs include Tule Springs Elementary (6/10) and Elise L. Wolff Elementary (6/10).</li>
+            <li key={6}>Heartland at Tule Springs is located ~30 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

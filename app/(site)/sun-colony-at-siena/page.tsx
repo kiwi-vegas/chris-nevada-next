@@ -332,6 +332,24 @@ export default async function SunColonyAtSienaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sun Colony at Siena</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sun Colony at Siena spans ~100 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Sun Colony at Siena was established in 2004 by William Lyon Homes / Taylor Morrison.</li>
+            <li key={2}>Sun Colony at Siena contains 275+ homes with prices ranging from $700K–$1.3M+.</li>
+            <li key={3}>Sun Colony at Siena is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Sun Colony at Siena range from $300–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sun Colony at Siena include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Sun Colony at Siena is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

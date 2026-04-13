@@ -312,6 +312,24 @@ export default async function CrestaRosaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Cresta Rosa</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Cresta Rosa spans 30 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>Cresta Rosa was established in 2024 by Taylor Morrison.</li>
+            <li key={2}>Cresta Rosa contains 50+ homes with prices ranging from $2.83M–$3.95M.</li>
+            <li key={3}>Cresta Rosa is a luxury · new construction community within MacDonald Highlands.</li>
+            <li key={4}>HOA fees in Cresta Rosa range from $400–$900/mo per month.</li>
+            <li key={5}>Top-rated schools serving Cresta Rosa include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Cresta Rosa is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

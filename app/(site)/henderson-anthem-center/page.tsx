@@ -320,6 +320,24 @@ export default async function HendersonAnthemCenterPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Anthem Center</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Anthem Center spans ~600 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Anthem Center was established in 1998 by Del Webb / Pulte Group.</li>
+            <li key={2}>Anthem Center contains 3,000+ homes with prices ranging from $500K–$800K.</li>
+            <li key={3}>Anthem Center is a master-planned · family community within Anthem.</li>
+            <li key={4}>HOA fees in Anthem Center range from $100–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving Anthem Center include Elise L. Wolff Elementary (9/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Anthem Center is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

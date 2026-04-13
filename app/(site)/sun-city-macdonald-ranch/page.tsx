@@ -333,6 +333,24 @@ export default async function SunCityMacdonaldRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sun City MacDonald Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sun City MacDonald Ranch spans 1,100 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>Sun City MacDonald Ranch was established in 1996 by Del Webb.</li>
+            <li key={2}>Sun City MacDonald Ranch contains 2,900+ homes with prices ranging from $300K–$600K.</li>
+            <li key={3}>Sun City MacDonald Ranch is a 55+ · golf · active adult community within MacDonald Ranch.</li>
+            <li key={4}>HOA fees in Sun City MacDonald Ranch range from $150–$280/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sun City MacDonald Ranch include Coronado High School (8/10) and Bob Miller Middle School (7/10).</li>
+            <li key={6}>Sun City MacDonald Ranch is located ~20 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -312,6 +312,24 @@ export default async function NewportLoftsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Newport Lofts</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Newport Lofts spans ~1 acre in Las Vegas, Nevada (ZIP 89101).</li>
+            <li key={1}>Newport Lofts was established in 2008 by Christopher Homes.</li>
+            <li key={2}>Newport Lofts contains 168 homes with prices ranging from $200K–$500K.</li>
+            <li key={3}>Newport Lofts is a loft conversion · urban · downtown community.</li>
+            <li key={4}>HOA fees in Newport Lofts range from $200–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Newport Lofts include Las Vegas Academy of the Arts (9/10) and Rancho High School (5/10).</li>
+            <li key={6}>Newport Lofts is located ~5 min to the Strip via Las Vegas Blvd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

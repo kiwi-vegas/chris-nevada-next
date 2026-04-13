@@ -325,6 +325,24 @@ export default async function GreenValleySouthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Green Valley South</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Green Valley South spans 3,000+ acres in Henderson, Nevada (ZIP 89012, 89052).</li>
+            <li key={1}>Green Valley South was established in 1990 by American Nevada Corporation.</li>
+            <li key={2}>Green Valley South contains 10,000+ homes with prices ranging from $350K–$3M+.</li>
+            <li key={3}>Green Valley South is a master-planned · luxury · established community within Green Valley.</li>
+            <li key={4}>HOA fees in Green Valley South range from $50–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Green Valley South include Coronado High School (8/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Green Valley South is located ~15 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

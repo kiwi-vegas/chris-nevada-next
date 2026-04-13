@@ -320,6 +320,24 @@ export default async function MacdonaldRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About MacDonald Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>MacDonald Ranch spans ~3,200 acres in Henderson, Nevada (ZIP 89012, 89052).</li>
+            <li key={1}>MacDonald Ranch was established in 1994 by MacDonald Properties.</li>
+            <li key={2}>MacDonald Ranch contains 8,000+ homes with prices ranging from $300K–$15M+.</li>
+            <li key={3}>MacDonald Ranch is a master-planned · golf community.</li>
+            <li key={4}>HOA fees in MacDonald Ranch range from $50–$500/mo per month.</li>
+            <li key={5}>Top-rated schools serving MacDonald Ranch include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>MacDonald Ranch is located ~20 min to the Strip via I-215 West → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

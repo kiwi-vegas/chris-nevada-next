@@ -312,6 +312,24 @@ export default async function SummerlinReverencePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Reverence</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Reverence spans 300+ acres in Las Vegas, Nevada (ZIP 89166).</li>
+            <li key={1}>Reverence was established in 2019 by Howard Hughes Corporation / Pulte Homes.</li>
+            <li key={2}>Reverence contains 900+ at buildout homes with prices ranging from $600K–$1.5M.</li>
+            <li key={3}>Reverence is a master-planned · new construction community within Summerlin.</li>
+            <li key={4}>HOA fees in Reverence range from $180–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Reverence include Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Reverence is located ~25 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

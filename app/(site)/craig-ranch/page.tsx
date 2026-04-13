@@ -320,6 +320,24 @@ export default async function CraigRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Craig Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Craig Ranch spans ~400 acres in North Las Vegas, Nevada (ZIP 89032, 89081).</li>
+            <li key={1}>Craig Ranch was established in 2005 by Various Builders.</li>
+            <li key={2}>Craig Ranch contains 2,000+ homes with prices ranging from $300K–$500K.</li>
+            <li key={3}>Craig Ranch is a master-planned · family community.</li>
+            <li key={4}>HOA fees in Craig Ranch range from $40–$120/mo per month.</li>
+            <li key={5}>Top-rated schools serving Craig Ranch include Elbert Edwards Elementary (5/10) and Lois Craig Elementary (5/10).</li>
+            <li key={6}>Craig Ranch is located ~20 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -320,6 +320,24 @@ export default async function LasVegasTheLakesSouthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Lakes South</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Lakes South spans ~400 acres in Las Vegas, Nevada (ZIP 89117, 89147).</li>
+            <li key={1}>The Lakes South was established in 1990 by Lakes Development Company.</li>
+            <li key={2}>The Lakes South contains 2,500+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>The Lakes South is a waterfront · established community within The Lakes.</li>
+            <li key={4}>HOA fees in The Lakes South range from $75–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Lakes South include Red Rock Elementary (7/10) and Becker Middle School (6/10).</li>
+            <li key={6}>The Lakes South is located ~12 min to the Strip via Sahara Ave east.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

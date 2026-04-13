@@ -332,6 +332,24 @@ export default async function MiraVillaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Mira Villa</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Mira Villa spans ~60 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Mira Villa was established in 2023 by William Lyon Homes / Taylor Morrison.</li>
+            <li key={2}>Mira Villa contains 200+ at buildout homes with prices ranging from $1M–$2.2M.</li>
+            <li key={3}>Mira Villa is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Mira Villa range from $350–$650/mo per month.</li>
+            <li key={5}>Top-rated schools serving Mira Villa include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Mira Villa is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

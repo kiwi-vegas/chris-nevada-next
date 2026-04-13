@@ -312,6 +312,24 @@ export default async function LakeLasVegasVistanaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Vistana</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Vistana spans ~80 acres in Henderson, Nevada (ZIP 89011).</li>
+            <li key={1}>Vistana was established in 2019 by Toll Brothers / William Lyon.</li>
+            <li key={2}>Vistana contains ~300 homes with prices ranging from $500K–$1.2M.</li>
+            <li key={3}>Vistana is a new construction · lake community community within Lake Las Vegas.</li>
+            <li key={4}>HOA fees in Vistana range from $200–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Vistana include Elise L. Wolff Elementary (8/10) and Jack Lund Schofield Middle School (7/10).</li>
+            <li key={6}>Vistana is located ~30 min to the Strip via Lake Mead Pkwy → I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

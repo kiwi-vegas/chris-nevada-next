@@ -312,6 +312,24 @@ export default async function MountainsEdgeTuscanoPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Tuscano at Mountains Edge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Tuscano at Mountains Edge spans ~150 acres in Las Vegas, Nevada (ZIP 89178).</li>
+            <li key={1}>Tuscano at Mountains Edge was established in 2006 by Focus Property Group / Pardee Homes.</li>
+            <li key={2}>Tuscano at Mountains Edge contains 800+ homes with prices ranging from $400K–$600K.</li>
+            <li key={3}>Tuscano at Mountains Edge is a master-planned · family community within Mountains Edge.</li>
+            <li key={4}>HOA fees in Tuscano at Mountains Edge range from $60–$140/mo per month.</li>
+            <li key={5}>Top-rated schools serving Tuscano at Mountains Edge include Carolyn S. Reedom Elementary (8/10) and Lawrence & Heidi Canarelli Middle (7/10).</li>
+            <li key={6}>Tuscano at Mountains Edge is located ~10 min to Red Rock Canyon via Blue Diamond Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

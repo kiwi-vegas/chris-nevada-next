@@ -320,6 +320,24 @@ export default async function HendersonGreenValleyPlazaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Green Valley Plaza Area</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Green Valley Plaza Area spans ~600 acres in Henderson, Nevada (ZIP 89014, 89074).</li>
+            <li key={1}>Green Valley Plaza Area was established in 1988 by American Nevada Corporation / Various.</li>
+            <li key={2}>Green Valley Plaza Area contains 4,000+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Green Valley Plaza Area is a established · commercial · mixed community within Green Valley.</li>
+            <li key={4}>HOA fees in Green Valley Plaza Area range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Green Valley Plaza Area include Fay Herron Elementary (7/10) and Bob Miller Middle School (7/10).</li>
+            <li key={6}>Green Valley Plaza Area is located ~18 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

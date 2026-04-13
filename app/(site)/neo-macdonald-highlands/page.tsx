@@ -332,6 +332,24 @@ export default async function NeoMacdonaldHighlandsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Neo</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Neo spans ~40 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>Neo was established in 2023 by William Lyon Homes / Taylor Morrison.</li>
+            <li key={2}>Neo contains ~80 homes with prices ranging from $2.34M–$4.97M.</li>
+            <li key={3}>Neo is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Neo range from $400–$900/mo per month.</li>
+            <li key={5}>Top-rated schools serving Neo include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Neo is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

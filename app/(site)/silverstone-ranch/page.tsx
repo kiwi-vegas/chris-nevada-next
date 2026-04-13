@@ -324,6 +324,24 @@ export default async function SilverstoneRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Silverstone Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Silverstone Ranch spans ~800 acres in Las Vegas, Nevada (ZIP 89131).</li>
+            <li key={1}>Silverstone Ranch was established in 2001 by Olympia Group.</li>
+            <li key={2}>Silverstone Ranch contains 2,500+ homes with prices ranging from $400K–$800K.</li>
+            <li key={3}>Silverstone Ranch is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Silverstone Ranch range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Silverstone Ranch include Marc & Eva Stern STEM Academy (8/10) and Robert O. Gibson Middle School (6/10).</li>
+            <li key={6}>Silverstone Ranch is located ~20 min to the Strip via US-95 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

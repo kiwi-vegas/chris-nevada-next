@@ -320,6 +320,24 @@ export default async function MissionHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Mission Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Mission Hills spans ~500 acres in Henderson, Nevada (ZIP 89002, 89074).</li>
+            <li key={1}>Mission Hills was established in 1996 by Various National Builders.</li>
+            <li key={2}>Mission Hills contains 2,800+ homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Mission Hills is a established · family community community.</li>
+            <li key={4}>HOA fees in Mission Hills range from $50–$130/mo per month.</li>
+            <li key={5}>Top-rated schools serving Mission Hills include Elise L. Wolff Elementary (9/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Mission Hills is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

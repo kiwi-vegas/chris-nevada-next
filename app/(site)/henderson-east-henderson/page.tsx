@@ -320,6 +320,24 @@ export default async function HendersonEastHendersonPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About East Henderson</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>East Henderson spans ~15 sq mi in Henderson, Nevada (ZIP 89011, 89015).</li>
+            <li key={1}>East Henderson was established in 2000s.</li>
+            <li key={2}>East Henderson contains 12,000+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>East Henderson is a suburban · growing community.</li>
+            <li key={4}>HOA fees in East Henderson range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving East Henderson include McCaw Elementary (7/10) and Brown Junior High School (6/10).</li>
+            <li key={6}>East Henderson is located ~25 min to the Strip via I-515 → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

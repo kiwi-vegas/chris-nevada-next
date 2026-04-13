@@ -320,6 +320,24 @@ export default async function SpringValleyPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Spring Valley</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Spring Valley spans ~33 sq mi in Las Vegas, Nevada (ZIP 89117, 89147).</li>
+            <li key={1}>Spring Valley was established in 1981.</li>
+            <li key={2}>Spring Valley contains 60,000+ homes with prices ranging from $300K–$700K.</li>
+            <li key={3}>Spring Valley is a established suburban · unincorporated community.</li>
+            <li key={4}>HOA fees in Spring Valley range from $25–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Spring Valley include Bonner Elementary (7/10) and Becker Middle School (6/10).</li>
+            <li key={6}>Spring Valley is located ~10 min to the Strip via Flamingo Rd / Spring Mountain Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

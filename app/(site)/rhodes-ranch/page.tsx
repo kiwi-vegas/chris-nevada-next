@@ -324,6 +324,24 @@ export default async function RhodesRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Rhodes Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Rhodes Ranch spans 1,350 acres in Las Vegas, Nevada (ZIP 89148, 89113).</li>
+            <li key={1}>Rhodes Ranch was established in 1997 by Rhodes Homes.</li>
+            <li key={2}>Rhodes Ranch contains 4,000+ homes with prices ranging from $350K–$700K.</li>
+            <li key={3}>Rhodes Ranch is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Rhodes Ranch range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Rhodes Ranch include Sandra L. Thompson Elementary (7/10) and Lawrence & Heidi Canarelli Middle (7/10).</li>
+            <li key={6}>Rhodes Ranch is located ~20 min to the Strip via I-215 → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

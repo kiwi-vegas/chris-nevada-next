@@ -324,6 +324,24 @@ export default async function HeritageAtStonebridgePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Heritage at Stonebridge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Heritage at Stonebridge spans ~80 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Heritage at Stonebridge was established in 2022 by Taylor Morrison.</li>
+            <li key={2}>Heritage at Stonebridge contains 300+ at buildout homes with prices ranging from $500K–$700K.</li>
+            <li key={3}>Heritage at Stonebridge is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Heritage at Stonebridge range from $200–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Heritage at Stonebridge include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Heritage at Stonebridge is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

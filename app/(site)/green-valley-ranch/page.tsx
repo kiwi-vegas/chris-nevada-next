@@ -320,6 +320,24 @@ export default async function GreenValleyRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Green Valley Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Green Valley Ranch spans ~1,600 acres in Henderson, Nevada (ZIP 89012, 89052).</li>
+            <li key={1}>Green Valley Ranch was established in 1994 by American Nevada Corporation.</li>
+            <li key={2}>Green Valley Ranch contains 6,000+ homes with prices ranging from $400K–$900K.</li>
+            <li key={3}>Green Valley Ranch is a master-planned · established community.</li>
+            <li key={4}>HOA fees in Green Valley Ranch range from $60–$180/mo per month.</li>
+            <li key={5}>Top-rated schools serving Green Valley Ranch include Nate Mack Elementary (8/10) and Bob Miller Middle School (7/10).</li>
+            <li key={6}>Green Valley Ranch is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

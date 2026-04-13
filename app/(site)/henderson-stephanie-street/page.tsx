@@ -320,6 +320,24 @@ export default async function HendersonStephanieStreetPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Stephanie Street Corridor</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Stephanie Street Corridor spans ~1,200 acres in Henderson, Nevada (ZIP 89014, 89074).</li>
+            <li key={1}>Stephanie Street Corridor was established in 1990 by Various Builders.</li>
+            <li key={2}>Stephanie Street Corridor contains 8,000+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Stephanie Street Corridor is a established · mixed residential community.</li>
+            <li key={4}>HOA fees in Stephanie Street Corridor range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Stephanie Street Corridor include Fay Herron Elementary (7/10) and Jack Lund Schofield Middle School (6/10).</li>
+            <li key={6}>Stephanie Street Corridor is located ~15 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

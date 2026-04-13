@@ -332,6 +332,24 @@ export default async function VeerTowersPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Veer Towers</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Veer Towers spans ~2 acres in Las Vegas, Nevada (ZIP 89158).</li>
+            <li key={1}>Veer Towers was established in 2010 by MGM Resorts International / Infinity World Development.</li>
+            <li key={2}>Veer Towers contains 670 homes with prices ranging from $400K–$5M+.</li>
+            <li key={3}>Veer Towers is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Veer Towers range from $400–$2,000/mo per month.</li>
+            <li key={5}>Top-rated schools serving Veer Towers include Las Vegas Academy of the Arts (9/10) and Walter Bracken STEAM Academy (8/10).</li>
+            <li key={6}>Veer Towers is located ~0 min to the Strip on-site at CityCenter.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

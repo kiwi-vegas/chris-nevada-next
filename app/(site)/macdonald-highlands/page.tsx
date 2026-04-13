@@ -332,6 +332,24 @@ export default async function MacdonaldHighlandsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About MacDonald Highlands</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>MacDonald Highlands spans 1,200 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>MacDonald Highlands was established in 2000 by MacDonald Properties.</li>
+            <li key={2}>MacDonald Highlands contains 1,500+ homes with prices ranging from $800K–$28.95M+.</li>
+            <li key={3}>MacDonald Highlands is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in MacDonald Highlands range from $350–$1,200/mo per month.</li>
+            <li key={5}>Top-rated schools serving MacDonald Highlands include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>MacDonald Highlands is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

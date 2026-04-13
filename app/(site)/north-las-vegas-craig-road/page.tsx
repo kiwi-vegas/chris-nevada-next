@@ -320,6 +320,24 @@ export default async function NorthLasVegasCraigRoadPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Craig Road Corridor</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Craig Road Corridor spans ~700 acres in North Las Vegas, Nevada (ZIP 89032, 89081).</li>
+            <li key={1}>Craig Road Corridor was established in 1998 by Various Builders.</li>
+            <li key={2}>Craig Road Corridor contains 5,000+ homes with prices ranging from $300K–$500K.</li>
+            <li key={3}>Craig Road Corridor is a growth corridor · affordable · family community.</li>
+            <li key={4}>HOA fees in Craig Road Corridor range from $40–$125/mo per month.</li>
+            <li key={5}>Top-rated schools serving Craig Road Corridor include Myrtle Tate Elementary (5/10) and Jim Bridger Middle School (4/10).</li>
+            <li key={6}>Craig Road Corridor is located ~18 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

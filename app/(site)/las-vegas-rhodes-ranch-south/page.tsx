@@ -324,6 +324,24 @@ export default async function LasVegasRhodesRanchSouthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Rhodes Ranch South</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Rhodes Ranch South spans ~350 acres in Las Vegas, Nevada (ZIP 89148).</li>
+            <li key={1}>Rhodes Ranch South was established in 2001 by Rhodes Homes / Rhodes Design & Development.</li>
+            <li key={2}>Rhodes Ranch South contains 2,500+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Rhodes Ranch South is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Rhodes Ranch South range from $125–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving Rhodes Ranch South include Elbert Edwards Elementary (6/10) and Lawrence & Heidi Canarelli Middle School (6/10).</li>
+            <li key={6}>Rhodes Ranch South is located ~15 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

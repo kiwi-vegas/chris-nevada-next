@@ -332,6 +332,24 @@ export default async function MesaRidgePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Mesa Ridge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Mesa Ridge spans ~200 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Mesa Ridge was established in 2016 by Toll Brothers.</li>
+            <li key={2}>Mesa Ridge contains 350+ homes with prices ranging from $1M–$3M+.</li>
+            <li key={3}>Mesa Ridge is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Mesa Ridge range from $350–$700/mo per month.</li>
+            <li key={5}>Top-rated schools serving Mesa Ridge include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Mesa Ridge is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

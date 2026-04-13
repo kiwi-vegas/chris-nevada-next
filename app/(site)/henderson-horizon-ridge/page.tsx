@@ -320,6 +320,24 @@ export default async function HendersonHorizonRidgePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Horizon Ridge Corridor</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Horizon Ridge Corridor spans ~1,000 acres in Henderson, Nevada (ZIP 89012, 89052).</li>
+            <li key={1}>Horizon Ridge Corridor was established in 1998 by Various Builders.</li>
+            <li key={2}>Horizon Ridge Corridor contains 6,000+ homes with prices ranging from $400K–$800K.</li>
+            <li key={3}>Horizon Ridge Corridor is a established · family · corridor community.</li>
+            <li key={4}>HOA fees in Horizon Ridge Corridor range from $75–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Horizon Ridge Corridor include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Horizon Ridge Corridor is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -320,6 +320,24 @@ export default async function SpringMountainRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Spring Mountain Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Spring Mountain Ranch spans ~600 acres in Las Vegas, Nevada (ZIP 89148, 89113).</li>
+            <li key={1}>Spring Mountain Ranch was established in 2003 by Various Builders.</li>
+            <li key={2}>Spring Mountain Ranch contains 2,000+ homes with prices ranging from $500K–$1.2M.</li>
+            <li key={3}>Spring Mountain Ranch is a suburban · family community.</li>
+            <li key={4}>HOA fees in Spring Mountain Ranch range from $75–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Spring Mountain Ranch include Gene Ward Elementary (7/10) and Walter Johnson Jr. Middle (6/10).</li>
+            <li key={6}>Spring Mountain Ranch is located ~20 min to the Strip via I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -320,6 +320,24 @@ export default async function SummerlinWestStonebridgeAreaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Stonebridge Area</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Stonebridge Area spans ~400 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>Stonebridge Area was established in 2018 by Howard Hughes Corporation.</li>
+            <li key={2}>Stonebridge Area contains 1,500+ homes with prices ranging from $600K–$1M.</li>
+            <li key={3}>Stonebridge Area is a master-planned · new construction community within Summerlin West.</li>
+            <li key={4}>HOA fees in Stonebridge Area range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Stonebridge Area include Lorna J. Kesterson Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Stonebridge Area is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

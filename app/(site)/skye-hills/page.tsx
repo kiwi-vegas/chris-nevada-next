@@ -320,6 +320,24 @@ export default async function SkyeHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Skye Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Skye Hills spans ~600 acres in North Las Vegas, Nevada (ZIP 89166).</li>
+            <li key={1}>Skye Hills was established in 2019 by Various Builders.</li>
+            <li key={2}>Skye Hills contains ~2,000 homes with prices ranging from $450K–$750K.</li>
+            <li key={3}>Skye Hills is a master-planned · new construction community.</li>
+            <li key={4}>HOA fees in Skye Hills range from $100–$220/mo per month.</li>
+            <li key={5}>Top-rated schools serving Skye Hills include Scherkenbach Elementary (7/10) and Edmundo "Eddie" Escobedo Sr. Middle School (6/10).</li>
+            <li key={6}>Skye Hills is located ~30 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

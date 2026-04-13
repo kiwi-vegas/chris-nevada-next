@@ -320,6 +320,24 @@ export default async function SummerlinRidgebrookPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Ridgebrook</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Ridgebrook spans 280 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Ridgebrook was established in 2019 by Howard Hughes Corporation.</li>
+            <li key={2}>Ridgebrook contains 1,000+ homes with prices ranging from $600K–$900K.</li>
+            <li key={3}>Ridgebrook is a master-planned · new construction community within Summerlin.</li>
+            <li key={4}>HOA fees in Ridgebrook range from $150–$300/mo per month.</li>
+            <li key={5}>Top-rated schools serving Ridgebrook include Zel & Mary Lowman Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Ridgebrook is located ~22 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

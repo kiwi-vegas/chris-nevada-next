@@ -312,6 +312,24 @@ export default async function CalicoRidgePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Calico Ridge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Calico Ridge spans ~250 acres in Henderson, Nevada (ZIP 89012, 89052).</li>
+            <li key={1}>Calico Ridge was established in 2003 by Various builders.</li>
+            <li key={2}>Calico Ridge contains 800+ homes with prices ranging from $500K–$1.2M.</li>
+            <li key={3}>Calico Ridge is a foothill community community.</li>
+            <li key={4}>HOA fees in Calico Ridge range from $75–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Calico Ridge include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Calico Ridge is located ~22 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

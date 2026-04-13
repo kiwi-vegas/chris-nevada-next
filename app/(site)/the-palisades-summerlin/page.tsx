@@ -332,6 +332,24 @@ export default async function ThePalisadesSummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Palisades</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Palisades spans 90 acres in Las Vegas, Nevada (ZIP 89144).</li>
+            <li key={1}>The Palisades was established in 2002 by Howard Hughes Corporation.</li>
+            <li key={2}>The Palisades contains 160+ homes with prices ranging from $1M–$4M.</li>
+            <li key={3}>The Palisades is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Palisades range from $400–$900/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Palisades include John C. Hummel Elementary (7/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>The Palisades is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -332,6 +332,24 @@ export default async function DragonRockPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Dragon Rock</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Dragon Rock spans ~45 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>Dragon Rock was established in 2016 by Blue Heron.</li>
+            <li key={2}>Dragon Rock contains 30 homesites homes with prices ranging from $5M–$15M+.</li>
+            <li key={3}>Dragon Rock is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Dragon Rock range from $800–$2,000/mo per month.</li>
+            <li key={5}>Top-rated schools serving Dragon Rock include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Dragon Rock is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

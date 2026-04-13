@@ -320,6 +320,24 @@ export default async function LasVegasArtsDistrictPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Arts District / 18b</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Arts District / 18b spans ~18 blocks in Las Vegas, Nevada (ZIP 89101, 89102).</li>
+            <li key={1}>Arts District / 18b was established in 1998 by Various Developers / City of Las Vegas.</li>
+            <li key={2}>Arts District / 18b contains 1,500+ homes with prices ranging from $200K–$800K.</li>
+            <li key={3}>Arts District / 18b is a urban · creative · mixed-use community.</li>
+            <li key={4}>HOA fees in Arts District / 18b range from $100–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Arts District / 18b include 9th Bridge School (7/10) and Fremont Middle School (4/10).</li>
+            <li key={6}>Arts District / 18b is located ~5 min to Downtown Las Vegas via Las Vegas Blvd North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

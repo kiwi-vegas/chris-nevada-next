@@ -337,6 +337,24 @@ export default async function QuailRidgeEstatesPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Quail Ridge Estates</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Quail Ridge Estates spans 150 acres in Henderson, Nevada (ZIP 89014).</li>
+            <li key={1}>Quail Ridge Estates was established in 1997 by American Nevada Corporation.</li>
+            <li key={2}>Quail Ridge Estates contains 200+ homes with prices ranging from $1M–$3M+.</li>
+            <li key={3}>Quail Ridge Estates is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Quail Ridge Estates range from $300–$700/mo per month.</li>
+            <li key={5}>Top-rated schools serving Quail Ridge Estates include Green Valley High School (8/10) and Greenspun Junior High School (7/10).</li>
+            <li key={6}>Quail Ridge Estates is located ~15 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

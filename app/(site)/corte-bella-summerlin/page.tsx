@@ -332,6 +332,24 @@ export default async function CorteBellaSummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Corte Bella</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Corte Bella spans 70 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Corte Bella was established in 2000 by Howard Hughes Corporation.</li>
+            <li key={2}>Corte Bella contains 350+ homes with prices ranging from $600K–$1.5M.</li>
+            <li key={3}>Corte Bella is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Corte Bella range from $250–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Corte Bella include Red Rock Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Corte Bella is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

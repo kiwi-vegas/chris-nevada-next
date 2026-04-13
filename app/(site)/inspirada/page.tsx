@@ -320,6 +320,24 @@ export default async function InspiradaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Inspirada</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Inspirada spans 1,700 acres in Henderson, Nevada (ZIP 89044).</li>
+            <li key={1}>Inspirada was established in 2007 by Focus Property Group / Multiple builders.</li>
+            <li key={2}>Inspirada contains 5,000+ homes with prices ranging from $420K–$1.1M+.</li>
+            <li key={3}>Inspirada is a master-planned · new construction community.</li>
+            <li key={4}>HOA fees in Inspirada range from $100–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving Inspirada include Elise L. Wolff Elementary (6/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Inspirada is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

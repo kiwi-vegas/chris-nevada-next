@@ -320,6 +320,24 @@ export default async function SkyeCanyonBoulderHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Boulder Hills at Skye Canyon</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Boulder Hills at Skye Canyon spans ~250 acres in North Las Vegas, Nevada (ZIP 89166).</li>
+            <li key={1}>Boulder Hills at Skye Canyon was established in 2018 by Lennar / KB Home.</li>
+            <li key={2}>Boulder Hills at Skye Canyon contains ~1,200 homes with prices ranging from $450K–$700K.</li>
+            <li key={3}>Boulder Hills at Skye Canyon is a new construction · family community within Skye Canyon.</li>
+            <li key={4}>HOA fees in Boulder Hills at Skye Canyon range from $90–$180/mo per month.</li>
+            <li key={5}>Top-rated schools serving Boulder Hills at Skye Canyon include Jydstrup Elementary (7/10) and Edmundo "Eddie" Escobedo Sr. Middle School (6/10).</li>
+            <li key={6}>Boulder Hills at Skye Canyon is located ~25 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

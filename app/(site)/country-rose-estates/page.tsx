@@ -324,6 +324,24 @@ export default async function CountryRoseEstatesPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Country Rose Estates</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Country Rose Estates spans 60 acres in Las Vegas, Nevada (ZIP 89134).</li>
+            <li key={1}>Country Rose Estates was established in 1997 by Howard Hughes Corporation.</li>
+            <li key={2}>Country Rose Estates contains 100+ homes with prices ranging from $800K+.</li>
+            <li key={3}>Country Rose Estates is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Country Rose Estates range from $300–$700/mo per month.</li>
+            <li key={5}>Top-rated schools serving Country Rose Estates include Red Rock Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Country Rose Estates is located ~18 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -333,6 +333,24 @@ export default async function TerraBellaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Terra Bella</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Terra Bella spans 120 acres in Henderson, Nevada (ZIP 89044).</li>
+            <li key={1}>Terra Bella was established in 2004 by Shea Homes.</li>
+            <li key={2}>Terra Bella contains 550+ homes with prices ranging from $300K–$600K+.</li>
+            <li key={3}>Terra Bella is a 55+ · active adult community within Anthem.</li>
+            <li key={4}>HOA fees in Terra Bella range from $120–$220/mo per month.</li>
+            <li key={5}>Top-rated schools serving Terra Bella include Coronado High School (8/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Terra Bella is located ~25 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

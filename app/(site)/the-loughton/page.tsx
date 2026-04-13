@@ -312,6 +312,24 @@ export default async function TheLoughtonPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Loughton</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Loughton spans ~40 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>The Loughton was established in 2024 by Christopher Homes.</li>
+            <li key={2}>The Loughton contains 150+ at buildout homes with prices ranging from $500K+.</li>
+            <li key={3}>The Loughton is a luxury · new construction community within Summerlin.</li>
+            <li key={4}>HOA fees in The Loughton range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Loughton include Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>The Loughton is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

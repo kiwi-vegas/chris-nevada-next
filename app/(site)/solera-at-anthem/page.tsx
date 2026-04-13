@@ -329,6 +329,24 @@ export default async function SoleraAtAnthemPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Solera at Anthem</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Solera at Anthem spans 200 acres in Henderson, Nevada (ZIP 89044).</li>
+            <li key={1}>Solera at Anthem was established in 2001 by Del Webb.</li>
+            <li key={2}>Solera at Anthem contains 900+ homes with prices ranging from $350K–$650K.</li>
+            <li key={3}>Solera at Anthem is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Solera at Anthem range from $150–$280/mo per month.</li>
+            <li key={5}>Top-rated schools serving Solera at Anthem include Coronado High School (8/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Solera at Anthem is located ~25 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

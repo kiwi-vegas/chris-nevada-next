@@ -324,6 +324,24 @@ export default async function SkyLasVegasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sky Las Vegas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sky Las Vegas spans ~2 acres in Las Vegas, Nevada (ZIP 89109).</li>
+            <li key={1}>Sky Las Vegas was established in 2007 by Molasky Group of Companies.</li>
+            <li key={2}>Sky Las Vegas contains 409 homes with prices ranging from $300K–$2M+.</li>
+            <li key={3}>Sky Las Vegas is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Sky Las Vegas range from $350–$1,500/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sky Las Vegas include Las Vegas Academy of the Arts (9/10) and John C. Fremont Middle School (5/10).</li>
+            <li key={6}>Sky Las Vegas is located ~0 min to the Strip on Las Vegas Boulevard.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

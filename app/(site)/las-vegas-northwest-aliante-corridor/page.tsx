@@ -320,6 +320,24 @@ export default async function LasVegasNorthwestAlianteCorridorPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Aliante Corridor</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Aliante Corridor spans ~800 acres in North Las Vegas, Nevada (ZIP 89084, 89085).</li>
+            <li key={1}>Aliante Corridor was established in 2000 by Various Builders.</li>
+            <li key={2}>Aliante Corridor contains 5,000+ homes with prices ranging from $300K–$500K.</li>
+            <li key={3}>Aliante Corridor is a growth corridor · mixed residential community.</li>
+            <li key={4}>HOA fees in Aliante Corridor range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Aliante Corridor include Sandra L. Thompson Elementary (6/10) and William E. Orr Middle School (5/10).</li>
+            <li key={6}>Aliante Corridor is located ~20 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

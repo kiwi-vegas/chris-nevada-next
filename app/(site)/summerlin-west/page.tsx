@@ -320,6 +320,24 @@ export default async function SummerlinWestPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Summerlin West</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Summerlin West spans 5,600+ acres in Las Vegas, Nevada (ZIP 89138, 89166).</li>
+            <li key={1}>Summerlin West was established in 2014 by Howard Hughes Corporation.</li>
+            <li key={2}>Summerlin West contains 10,000+ homes with prices ranging from $400K–$1M+.</li>
+            <li key={3}>Summerlin West is a master-planned · new construction community within Summerlin.</li>
+            <li key={4}>HOA fees in Summerlin West range from $150–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Summerlin West include Staton Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Summerlin West is located ~25 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

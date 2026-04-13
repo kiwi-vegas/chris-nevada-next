@@ -320,6 +320,24 @@ export default async function CentennialHillsGardenPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Garden at Centennial Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Garden at Centennial Hills spans ~300 acres in Las Vegas, Nevada (ZIP 89131, 89149).</li>
+            <li key={1}>Garden at Centennial Hills was established in 2003 by Various Builders.</li>
+            <li key={2}>Garden at Centennial Hills contains ~2,500 homes with prices ranging from $400K–$650K.</li>
+            <li key={3}>Garden at Centennial Hills is a suburban · established community within Centennial Hills.</li>
+            <li key={4}>HOA fees in Garden at Centennial Hills range from $50–$140/mo per month.</li>
+            <li key={5}>Top-rated schools serving Garden at Centennial Hills include Myrtle Tate Elementary (7/10) and Rogich Middle School (7/10).</li>
+            <li key={6}>Garden at Centennial Hills is located ~20 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

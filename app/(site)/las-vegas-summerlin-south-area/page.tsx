@@ -320,6 +320,24 @@ export default async function LasVegasSummerlinSouthAreaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Summerlin South Area</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Summerlin South Area spans ~4,000 acres in Las Vegas, Nevada (ZIP 89135, 89138).</li>
+            <li key={1}>Summerlin South Area was established in 1998 by Howard Hughes Corporation.</li>
+            <li key={2}>Summerlin South Area contains 12,000+ homes with prices ranging from $500K–$3M+.</li>
+            <li key={3}>Summerlin South Area is a master-planned · luxury hub community within Summerlin.</li>
+            <li key={4}>HOA fees in Summerlin South Area range from $100–$1,200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Summerlin South Area include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (7/10).</li>
+            <li key={6}>Summerlin South Area is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

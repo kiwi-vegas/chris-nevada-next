@@ -312,6 +312,24 @@ export default async function HendersonCadenceParkPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Cadence Park</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Cadence Park spans ~100 acres in Henderson, Nevada (ZIP 89011).</li>
+            <li key={1}>Cadence Park was established in 2018 by LandWell Company / Multiple Builders.</li>
+            <li key={2}>Cadence Park contains 500+ homes with prices ranging from $400K–$650K.</li>
+            <li key={3}>Cadence Park is a master-planned · new construction community within Cadence.</li>
+            <li key={4}>HOA fees in Cadence Park range from $80–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Cadence Park include Elise L. Wolff Elementary (8/10) and Jack Lund Schofield Middle School (7/10).</li>
+            <li key={6}>Cadence Park is located ~20 min to the Strip via Lake Mead Pkwy → I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

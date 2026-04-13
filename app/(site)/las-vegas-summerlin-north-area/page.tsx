@@ -320,6 +320,24 @@ export default async function LasVegasSummerlinNorthAreaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Summerlin North Area</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Summerlin North Area spans ~3,500 acres in Las Vegas, Nevada (ZIP 89134, 89144).</li>
+            <li key={1}>Summerlin North Area was established in 1990 by Howard Hughes Corporation.</li>
+            <li key={2}>Summerlin North Area contains 12,000+ homes with prices ranging from $400K–$1.5M.</li>
+            <li key={3}>Summerlin North Area is a master-planned · established · hub community within Summerlin.</li>
+            <li key={4}>HOA fees in Summerlin North Area range from $75–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Summerlin North Area include Carolyn S. Reedom Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Summerlin North Area is located ~18 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

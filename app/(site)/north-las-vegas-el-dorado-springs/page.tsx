@@ -320,6 +320,24 @@ export default async function NorthLasVegasElDoradoSpringsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About El Dorado Springs</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>El Dorado Springs spans ~600 acres in North Las Vegas, Nevada (ZIP 89031, 89032).</li>
+            <li key={1}>El Dorado Springs was established in 1995 by Various Builders.</li>
+            <li key={2}>El Dorado Springs contains 4,000+ homes with prices ranging from $300K–$500K.</li>
+            <li key={3}>El Dorado Springs is a established · affordable · family community.</li>
+            <li key={4}>HOA fees in El Dorado Springs range from $40–$120/mo per month.</li>
+            <li key={5}>Top-rated schools serving El Dorado Springs include Zel & Mary Lowman Elementary (5/10) and Jim Bridger Middle School (4/10).</li>
+            <li key={6}>El Dorado Springs is located ~20 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

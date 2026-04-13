@@ -325,6 +325,24 @@ export default async function GreenValleyNorthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Green Valley North</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Green Valley North spans 2,500 acres in Henderson, Nevada (ZIP 89014, 89074).</li>
+            <li key={1}>Green Valley North was established in 1978 by American Nevada Corporation.</li>
+            <li key={2}>Green Valley North contains 8,000+ homes with prices ranging from $400K–$1.5M.</li>
+            <li key={3}>Green Valley North is a master-planned · golf · established community within Green Valley.</li>
+            <li key={4}>HOA fees in Green Valley North range from $50–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Green Valley North include Green Valley High School (8/10) and Greenspun Junior High School (7/10).</li>
+            <li key={6}>Green Valley North is located ~15 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

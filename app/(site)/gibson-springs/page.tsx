@@ -320,6 +320,24 @@ export default async function GibsonSpringsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Gibson Springs</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Gibson Springs spans ~400 acres in Henderson, Nevada (ZIP 89074, 89014).</li>
+            <li key={1}>Gibson Springs was established in 1993 by Lewis Homes / Various Builders.</li>
+            <li key={2}>Gibson Springs contains 2,200+ homes with prices ranging from $350K–$550K.</li>
+            <li key={3}>Gibson Springs is a established · family-friendly community.</li>
+            <li key={4}>HOA fees in Gibson Springs range from $40–$100/mo per month.</li>
+            <li key={5}>Top-rated schools serving Gibson Springs include Fay Herron Elementary (7/10) and Jack Lund Schofield Middle School (6/10).</li>
+            <li key={6}>Gibson Springs is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

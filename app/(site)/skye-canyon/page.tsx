@@ -320,6 +320,24 @@ export default async function SkyeCanyonPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Skye Canyon</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Skye Canyon spans 1,700 acres in North Las Vegas, Nevada (ZIP 89166).</li>
+            <li key={1}>Skye Canyon was established in 2015 by Olympia Companies.</li>
+            <li key={2}>Skye Canyon contains 5,000+ homes with prices ranging from $400K–$800K.</li>
+            <li key={3}>Skye Canyon is a master-planned · new construction community.</li>
+            <li key={4}>HOA fees in Skye Canyon range from $75–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Skye Canyon include Scherkenbach STEAM Academy (7/10) and Hal Smith Elementary (7/10).</li>
+            <li key={6}>Skye Canyon is located ~15 min to Lee Canyon / Mount Charleston via US-95 → Kyle Canyon Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

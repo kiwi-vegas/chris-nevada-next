@@ -320,6 +320,24 @@ export default async function LasVegasChinatownPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Chinatown</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Chinatown spans ~2 miles corridor in Las Vegas, Nevada (ZIP 89102, 89103).</li>
+            <li key={1}>Chinatown was established in 1995 by Various Developers.</li>
+            <li key={2}>Chinatown contains 5,000+ homes with prices ranging from $250K–$600K.</li>
+            <li key={3}>Chinatown is a urban · cultural district · mixed-use community.</li>
+            <li key={4}>HOA fees in Chinatown range from $50–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving Chinatown include Walter Bracken STEAM Academy (8/10) and Hyde Park Middle School (5/10).</li>
+            <li key={6}>Chinatown is located ~8 min to the Strip via Spring Mountain Rd East.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

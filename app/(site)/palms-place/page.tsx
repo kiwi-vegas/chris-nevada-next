@@ -324,6 +324,24 @@ export default async function PalmsPlacePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Palms Place Hotel and Spa</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Palms Place Hotel and Spa spans ~2 acres in Las Vegas, Nevada (ZIP 89103).</li>
+            <li key={1}>Palms Place Hotel and Spa was established in 2008 by Palms Casino Resort / Maloof Family.</li>
+            <li key={2}>Palms Place Hotel and Spa contains ~599 units homes with prices ranging from $200K–$1.5M+.</li>
+            <li key={3}>Palms Place Hotel and Spa is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Palms Place Hotel and Spa range from $500–$1,800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Palms Place Hotel and Spa include Las Vegas Academy of the Arts (9/10) and Clark High School (6/10).</li>
+            <li key={6}>Palms Place Hotel and Spa is located ~5 min to the Strip via W Flamingo Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

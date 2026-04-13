@@ -320,6 +320,24 @@ export default async function GreenValleyHighlandsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Green Valley Highlands</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Green Valley Highlands spans ~400 acres in Henderson, Nevada (ZIP 89052, 89012).</li>
+            <li key={1}>Green Valley Highlands was established in 1998 by American Nevada Corporation / Various.</li>
+            <li key={2}>Green Valley Highlands contains 2,000+ homes with prices ranging from $500K–$1M.</li>
+            <li key={3}>Green Valley Highlands is a established · premium subdivision community within Green Valley.</li>
+            <li key={4}>HOA fees in Green Valley Highlands range from $75–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Green Valley Highlands include Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Green Valley Highlands is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

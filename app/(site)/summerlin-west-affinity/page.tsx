@@ -312,6 +312,24 @@ export default async function SummerlinWestAffinityPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Affinity by Taylor Morrison</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Affinity by Taylor Morrison spans ~60 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>Affinity by Taylor Morrison was established in 2019 by Taylor Morrison.</li>
+            <li key={2}>Affinity by Taylor Morrison contains 300+ homes with prices ranging from $500K–$800K.</li>
+            <li key={3}>Affinity by Taylor Morrison is a new construction · master-planned community within Summerlin West.</li>
+            <li key={4}>HOA fees in Affinity by Taylor Morrison range from $175–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Affinity by Taylor Morrison include Staton Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Affinity by Taylor Morrison is located ~10 min to Red Rock Canyon via W Charleston Blvd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

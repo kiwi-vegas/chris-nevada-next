@@ -320,6 +320,24 @@ export default async function LasVegasSouthwestRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Southwest Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Southwest Ranch spans ~800 acres in Las Vegas, Nevada (ZIP 89178, 89139).</li>
+            <li key={1}>Southwest Ranch was established in 2000 by Various Builders.</li>
+            <li key={2}>Southwest Ranch contains 1,200+ homes with prices ranging from $600K–$1.5M.</li>
+            <li key={3}>Southwest Ranch is a estate · semi-rural · luxury community.</li>
+            <li key={4}>HOA fees in Southwest Ranch range from $100–$300/mo per month.</li>
+            <li key={5}>Top-rated schools serving Southwest Ranch include Estes M. McDoniel Elementary (7/10) and Lawrence & Heidi Canarelli Middle School (6/10).</li>
+            <li key={6}>Southwest Ranch is located ~18 min to the Strip via I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

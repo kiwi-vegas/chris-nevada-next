@@ -332,6 +332,24 @@ export default async function CountryClubHillsSummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Country Club Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Country Club Hills spans 130 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Country Club Hills was established in 1999 by Howard Hughes Corporation.</li>
+            <li key={2}>Country Club Hills contains 300+ homes with prices ranging from $900K–$3M+.</li>
+            <li key={3}>Country Club Hills is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Country Club Hills range from $400–$950/mo per month.</li>
+            <li key={5}>Top-rated schools serving Country Club Hills include Red Rock Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Country Club Hills is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

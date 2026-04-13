@@ -332,6 +332,24 @@ export default async function RanchoCirclePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Rancho Circle</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Rancho Circle spans ~400 acres in Las Vegas, Nevada (ZIP 89107).</li>
+            <li key={1}>Rancho Circle was established in 1950s by Various Private Developers.</li>
+            <li key={2}>Rancho Circle contains ~200 homes with prices ranging from $1M–$8M+.</li>
+            <li key={3}>Rancho Circle is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Rancho Circle range from $250–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Rancho Circle include John S. Park Elementary (6/10) and Brinley Middle School (5/10).</li>
+            <li key={6}>Rancho Circle is located ~10 min to the Strip via Rancho Dr → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

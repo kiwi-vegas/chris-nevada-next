@@ -332,6 +332,24 @@ export default async function EagleRockSummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Eagle Rock</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Eagle Rock spans 95 acres in Las Vegas, Nevada (ZIP 89144).</li>
+            <li key={1}>Eagle Rock was established in 2001 by Howard Hughes Corporation.</li>
+            <li key={2}>Eagle Rock contains 180+ homes with prices ranging from $1M–$4M+.</li>
+            <li key={3}>Eagle Rock is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Eagle Rock range from $400–$900/mo per month.</li>
+            <li key={5}>Top-rated schools serving Eagle Rock include John C. Hummel Elementary (7/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Eagle Rock is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

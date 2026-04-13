@@ -320,6 +320,24 @@ export default async function CoronadoRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Coronado Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Coronado Ranch spans ~300 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Coronado Ranch was established in 2000 by Various builders.</li>
+            <li key={2}>Coronado Ranch contains 1,800+ homes with prices ranging from $400K–$650K.</li>
+            <li key={3}>Coronado Ranch is a established community community.</li>
+            <li key={4}>HOA fees in Coronado Ranch range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Coronado Ranch include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Coronado Ranch is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -332,6 +332,24 @@ export default async function TournamentHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Tournament Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Tournament Hills spans 100 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Tournament Hills was established in 1999 by Howard Hughes Corporation.</li>
+            <li key={2}>Tournament Hills contains 275+ homes with prices ranging from $800K–$2M+.</li>
+            <li key={3}>Tournament Hills is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Tournament Hills range from $350–$850/mo per month.</li>
+            <li key={5}>Top-rated schools serving Tournament Hills include Red Rock Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Tournament Hills is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

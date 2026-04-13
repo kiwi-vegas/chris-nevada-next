@@ -328,6 +328,24 @@ export default async function SunCityAliantePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sun City Aliante</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sun City Aliante spans ~500 acres in North Las Vegas, Nevada (ZIP 89084).</li>
+            <li key={1}>Sun City Aliante was established in 2004 by Del Webb / Pulte Group.</li>
+            <li key={2}>Sun City Aliante contains 2,700+ homes with prices ranging from $300K–$500K.</li>
+            <li key={3}>Sun City Aliante is a 55+ · active adult community within Aliante.</li>
+            <li key={4}>HOA fees in Sun City Aliante range from $100–$200/mo per month.</li>
+            <li key={5}>Sun City Aliante is served by 3 schools including public, private, and charter options.</li>
+            <li key={6}>Sun City Aliante is located ~20 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

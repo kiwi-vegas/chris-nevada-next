@@ -320,6 +320,24 @@ export default async function SummerlinGrandParkPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Grand Park</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Grand Park spans ~2,000 acres in Las Vegas, Nevada (ZIP 89166, 89138).</li>
+            <li key={1}>Grand Park was established in 2022 by Howard Hughes Corporation.</li>
+            <li key={2}>Grand Park contains 5,000+ at build-out homes with prices ranging from $400K–$3M+.</li>
+            <li key={3}>Grand Park is a master-planned village · new construction community within Summerlin.</li>
+            <li key={4}>HOA fees in Grand Park range from $150–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Grand Park include Bonner Elementary School (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Grand Park is located ~25 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

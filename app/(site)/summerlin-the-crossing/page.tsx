@@ -320,6 +320,24 @@ export default async function SummerlinTheCrossingPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Crossing</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Crossing spans 450 acres in Las Vegas, Nevada (ZIP 89134).</li>
+            <li key={1}>The Crossing was established in 1997 by Howard Hughes Corporation.</li>
+            <li key={2}>The Crossing contains 2,800+ homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>The Crossing is a master-planned · family community within Summerlin.</li>
+            <li key={4}>HOA fees in The Crossing range from $75–$175/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Crossing include Marion B. Earl Elementary (7/10) and Jack & Terry Mannion Middle (7/10).</li>
+            <li key={6}>The Crossing is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -317,6 +317,24 @@ export default async function SunridgeAtMacdonaldRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sunridge at MacDonald Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sunridge at MacDonald Ranch spans 300 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>Sunridge at MacDonald Ranch was established in 1999 by MacDonald Development Company.</li>
+            <li key={2}>Sunridge at MacDonald Ranch contains 800+ homes with prices ranging from $600K–$1.5M.</li>
+            <li key={3}>Sunridge at MacDonald Ranch is a golf · family · established community within MacDonald Ranch.</li>
+            <li key={4}>HOA fees in Sunridge at MacDonald Ranch range from $100–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sunridge at MacDonald Ranch include Coronado High School (8/10) and Bob Miller Middle School (7/10).</li>
+            <li key={6}>Sunridge at MacDonald Ranch is located ~20 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

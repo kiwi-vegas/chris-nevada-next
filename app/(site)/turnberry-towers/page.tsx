@@ -332,6 +332,24 @@ export default async function TurnberryTowersPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Turnberry Towers</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Turnberry Towers spans ~8 acres in Las Vegas, Nevada (ZIP 89109).</li>
+            <li key={1}>Turnberry Towers was established in 2007 by Turnberry Associates / Jeffrey Soffer.</li>
+            <li key={2}>Turnberry Towers contains ~636 homes with prices ranging from $400K–$2.5M+.</li>
+            <li key={3}>Turnberry Towers is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Turnberry Towers range from $400–$1,800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Turnberry Towers include Las Vegas Academy of the Arts (9/10) and John C. Fremont Middle School (5/10).</li>
+            <li key={6}>Turnberry Towers is located ~5 min to the Strip via Karen Ave.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

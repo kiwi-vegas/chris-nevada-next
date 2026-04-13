@@ -320,6 +320,24 @@ export default async function SilveradoRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Silverado Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Silverado Ranch spans ~2,000 acres in Henderson, Nevada (ZIP 89123, 89183).</li>
+            <li key={1}>Silverado Ranch was established in 1996 by Various builders.</li>
+            <li key={2}>Silverado Ranch contains 8,000+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Silverado Ranch is a master-planned · established community.</li>
+            <li key={4}>HOA fees in Silverado Ranch range from $40–$120/mo per month.</li>
+            <li key={5}>Top-rated schools serving Silverado Ranch include Elise L. Wolff Elementary (6/10) and Silvestri Junior High School (5/10).</li>
+            <li key={6}>Silverado Ranch is located ~15 min to the Strip via I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

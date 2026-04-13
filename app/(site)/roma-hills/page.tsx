@@ -332,6 +332,24 @@ export default async function RomaHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Roma Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Roma Hills spans ~250 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Roma Hills was established in 2001 by Various luxury builders.</li>
+            <li key={2}>Roma Hills contains 400+ homes with prices ranging from $600K–$15M+.</li>
+            <li key={3}>Roma Hills is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Roma Hills range from $200–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Roma Hills include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Roma Hills is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

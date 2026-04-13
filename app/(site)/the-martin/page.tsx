@@ -332,6 +332,24 @@ export default async function TheMartinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Martin</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Martin spans ~2 acres in Las Vegas, Nevada (ZIP 89103).</li>
+            <li key={1}>The Martin was established in 2009 by Focus Property Group.</li>
+            <li key={2}>The Martin contains 372 homes with prices ranging from $400K–$3M+.</li>
+            <li key={3}>The Martin is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Martin range from $400–$2,000/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Martin include Las Vegas Academy of the Arts (9/10) and Walter Bracken STEAM Academy (8/10).</li>
+            <li key={6}>The Martin is located ~3 min to the Strip via Dean Martin Dr.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

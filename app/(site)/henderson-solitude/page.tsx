@@ -324,6 +324,24 @@ export default async function HendersonSolitudePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Solitude at Seven Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Solitude at Seven Hills spans ~120 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Solitude at Seven Hills was established in 2003 by American West Homes.</li>
+            <li key={2}>Solitude at Seven Hills contains ~350 homes with prices ranging from $500K–$900K.</li>
+            <li key={3}>Solitude at Seven Hills is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Solitude at Seven Hills range from $150–$300/mo per month.</li>
+            <li key={5}>Top-rated schools serving Solitude at Seven Hills include John C. Vanderburg Elementary (8/10) and Brown Junior High School (6/10).</li>
+            <li key={6}>Solitude at Seven Hills is located ~20 min to the Strip via I-215 West → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

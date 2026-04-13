@@ -320,6 +320,24 @@ export default async function AlianteNatureDiscoveryPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Nature Discovery at Aliante</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Nature Discovery at Aliante spans ~180 acres in North Las Vegas, Nevada (ZIP 89084).</li>
+            <li key={1}>Nature Discovery at Aliante was established in 2004 by Various Builders.</li>
+            <li key={2}>Nature Discovery at Aliante contains ~1,800 homes with prices ranging from $350K–$500K.</li>
+            <li key={3}>Nature Discovery at Aliante is a master-planned · family community within Aliante.</li>
+            <li key={4}>HOA fees in Nature Discovery at Aliante range from $60–$130/mo per month.</li>
+            <li key={5}>Top-rated schools serving Nature Discovery at Aliante include Dorothy Eisenberg Elementary (7/10) and Lawrence & Heidi Canarelli Middle School (6/10).</li>
+            <li key={6}>Nature Discovery at Aliante is located ~25 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

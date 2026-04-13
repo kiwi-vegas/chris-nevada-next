@@ -324,6 +324,24 @@ export default async function SummerlinSienaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Siena</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Siena spans 270 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Siena was established in 2000 by Shea Homes.</li>
+            <li key={2}>Siena contains 1,200+ homes with prices ranging from $400K–$900K.</li>
+            <li key={3}>Siena is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Siena range from $200–$450/mo per month.</li>
+            <li key={5}>Top-rated schools serving Siena include The Meadows School (nearby) (A+) and Bishop Gorman High School (nearby) (A+).</li>
+            <li key={6}>Siena is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

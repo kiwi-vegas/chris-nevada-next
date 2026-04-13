@@ -332,6 +332,24 @@ export default async function HendersonLakeAtLasVegasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Lake at Las Vegas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Lake at Las Vegas spans ~3,592 acres in Henderson, Nevada (ZIP 89011).</li>
+            <li key={1}>The Lake at Las Vegas was established in 2000 by Lake Las Vegas Resort / Raintree Investment Corp.</li>
+            <li key={2}>The Lake at Las Vegas contains 3,000+ homes with prices ranging from $500K–$2M+.</li>
+            <li key={3}>The Lake at Las Vegas is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Lake at Las Vegas range from $200–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Lake at Las Vegas include Elise L. Wolff Elementary (7/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>The Lake at Las Vegas is located ~30 min to the Strip via Lake Mead Pkwy → I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

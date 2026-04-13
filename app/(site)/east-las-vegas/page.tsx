@@ -332,6 +332,24 @@ export default async function EastLasVegasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About East Las Vegas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>East Las Vegas spans ~50 sq mi in Las Vegas, Nevada (ZIP 89101, 89104).</li>
+            <li key={1}>East Las Vegas was established in 1960.</li>
+            <li key={2}>East Las Vegas contains 80,000+ homes with prices ranging from $200K–$500K.</li>
+            <li key={3}>East Las Vegas is a urban · area hub community.</li>
+            <li key={4}>HOA fees in East Las Vegas range from $0–$100/mo per month.</li>
+            <li key={5}>Top-rated schools serving East Las Vegas include Southeast Career Technical Academy (8/10) and Rancho High School (4/10).</li>
+            <li key={6}>East Las Vegas is located ~15 min to the Strip via Flamingo Rd / Boulder Hwy.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

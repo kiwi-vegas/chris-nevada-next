@@ -328,6 +328,24 @@ export default async function EagleCrestPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Eagle Crest</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Eagle Crest spans ~120 acres (golf course) in Las Vegas, Nevada (ZIP 89134).</li>
+            <li key={1}>Eagle Crest was established in 1996 by Del Webb.</li>
+            <li key={2}>Eagle Crest contains ~500 (course-adjacent) homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Eagle Crest is a 55+ · golf community community within Sun City Summerlin.</li>
+            <li key={4}>HOA fees in Eagle Crest range from $180–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Eagle Crest include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Eagle Crest is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

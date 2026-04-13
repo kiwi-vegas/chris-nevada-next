@@ -324,6 +324,24 @@ export default async function SpanishGatePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Spanish Gate</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Spanish Gate spans ~120 acres in Las Vegas, Nevada (ZIP 89113).</li>
+            <li key={1}>Spanish Gate was established in 1997 by Various builders.</li>
+            <li key={2}>Spanish Gate contains ~400 homes with prices ranging from $500K–$900K.</li>
+            <li key={3}>Spanish Gate is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Spanish Gate range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Spanish Gate include Helen Jydstrup Elementary (7/10) and Walter Johnson Middle School (6/10).</li>
+            <li key={6}>Spanish Gate is located ~15 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

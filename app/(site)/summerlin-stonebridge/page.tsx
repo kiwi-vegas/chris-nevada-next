@@ -328,6 +328,24 @@ export default async function SummerlinStonebridgePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Stonebridge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Stonebridge spans 500 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>Stonebridge was established in 2017 by Howard Hughes Corporation.</li>
+            <li key={2}>Stonebridge contains 3,000+ homes with prices ranging from $550K–$1M.</li>
+            <li key={3}>Stonebridge is a master-planned · new construction · 55+ community within Summerlin.</li>
+            <li key={4}>HOA fees in Stonebridge range from $100–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Stonebridge include Bonner Elementary School (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Stonebridge is located ~25 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

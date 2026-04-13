@@ -320,6 +320,24 @@ export default async function SummerlinRedpointPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Redpoint</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Redpoint spans 400 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>Redpoint was established in 2020 by Howard Hughes Corporation.</li>
+            <li key={2}>Redpoint contains 1,400+ homes with prices ranging from $650K–$2M+.</li>
+            <li key={3}>Redpoint is a master-planned · new construction · premium community within Summerlin.</li>
+            <li key={4}>HOA fees in Redpoint range from $175–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Redpoint include Lorna J. Kesterson Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Redpoint is located ~25 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

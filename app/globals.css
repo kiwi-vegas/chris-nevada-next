@@ -558,6 +558,13 @@ footer { background: var(--navy-deep); border-top: 1px solid rgba(255,255,255,0.
 /* ═══════════════════════════════════════════════════════════════
    COMMUNITIES HUB
 ═══════════════════════════════════════════════════════════════ */
+/* Top Facts */
+.top-facts-section { padding: 80px 0; background: var(--cream-warm); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
+.top-facts-list { max-width: 720px; margin: 48px auto 0; counter-reset: fact; list-style: none; display: flex; flex-direction: column; gap: 0; }
+.top-facts-list li { counter-increment: fact; position: relative; padding: 18px 24px 18px 72px; font-size: var(--text-base); color: var(--text-secondary); line-height: 1.7; border-bottom: 1px solid var(--border-light); }
+.top-facts-list li:last-child { border-bottom: none; }
+.top-facts-list li::before { content: counter(fact); position: absolute; left: 16px; top: 16px; width: 36px; height: 36px; border-radius: 50%; background: var(--navy); color: var(--gold-light); font-family: var(--font-serif); font-size: 18px; font-weight: 400; display: flex; align-items: center; justify-content: center; }
+
 .communities-hub { padding: 64px 0 96px; background: var(--cream); }
 .comm-hub-nav { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 56px; }
 .comm-hub-nav-item { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; background: var(--navy); border: 1px solid var(--navy); border-radius: 24px; font-size: 14px; font-weight: 700; color: var(--white); text-decoration: none; transition: background var(--transition), border-color var(--transition); }

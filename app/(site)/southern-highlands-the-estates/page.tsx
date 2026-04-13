@@ -337,6 +337,24 @@ export default async function SouthernHighlandsTheEstatesPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Estates at Southern Highlands</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Estates at Southern Highlands spans 220 acres in Las Vegas, Nevada (ZIP 89141).</li>
+            <li key={1}>The Estates at Southern Highlands was established in 2001 by Olympia Group.</li>
+            <li key={2}>The Estates at Southern Highlands contains 200+ homes with prices ranging from $2M–$10M+.</li>
+            <li key={3}>The Estates at Southern Highlands is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Estates at Southern Highlands range from $350–$900/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Estates at Southern Highlands include Liberty High School (7/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>The Estates at Southern Highlands is located ~20 min to the Strip via I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

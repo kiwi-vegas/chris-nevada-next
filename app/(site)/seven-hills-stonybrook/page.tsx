@@ -312,6 +312,24 @@ export default async function SevenHillsStonybrookPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Stonybrook</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Stonybrook spans ~120 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Stonybrook was established in 2000 by American West Homes.</li>
+            <li key={2}>Stonybrook contains ~500 homes with prices ranging from $600K–$1.2M.</li>
+            <li key={3}>Stonybrook is a master-planned · family community within Seven Hills.</li>
+            <li key={4}>HOA fees in Stonybrook range from $120–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving Stonybrook include Jim Thorpe Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Stonybrook is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

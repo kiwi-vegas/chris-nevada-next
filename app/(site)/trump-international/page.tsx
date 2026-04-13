@@ -324,6 +324,24 @@ export default async function TrumpInternationalPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Trump International Hotel & Tower</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Trump International Hotel & Tower spans ~3.4 acres in Las Vegas, Nevada (ZIP 89109).</li>
+            <li key={1}>Trump International Hotel & Tower was established in 2008 by Trump Organization / Phil Ruffin.</li>
+            <li key={2}>Trump International Hotel & Tower contains ~1,200 units homes with prices ranging from $200K–$3M+.</li>
+            <li key={3}>Trump International Hotel & Tower is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Trump International Hotel & Tower range from $600–$3,000/mo per month.</li>
+            <li key={5}>Top-rated schools serving Trump International Hotel & Tower include Las Vegas Academy of the Arts (9/10) and Clark High School (6/10).</li>
+            <li key={6}>Trump International Hotel & Tower is located ~0 min to the Strip On-site — direct Strip frontage.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

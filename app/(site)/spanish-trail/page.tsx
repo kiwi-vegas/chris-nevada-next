@@ -324,6 +324,24 @@ export default async function SpanishTrailPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Spanish Trail</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Spanish Trail spans 640 acres in Las Vegas, Nevada (ZIP 89113, 89148).</li>
+            <li key={1}>Spanish Trail was established in 1984 by Spanish Trail Development.</li>
+            <li key={2}>Spanish Trail contains ~1,500 homes with prices ranging from $600K–$3M+.</li>
+            <li key={3}>Spanish Trail is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Spanish Trail range from $350–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Spanish Trail include Helen Jydstrup Elementary (7/10) and Walter Johnson Middle School (6/10).</li>
+            <li key={6}>Spanish Trail is located ~15 min to the Strip via W Tropicana Ave / I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

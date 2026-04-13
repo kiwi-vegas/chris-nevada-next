@@ -320,6 +320,24 @@ export default async function HendersonHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Henderson Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Henderson Hills spans ~600 acres in Henderson, Nevada (ZIP 89015, 89002).</li>
+            <li key={1}>Henderson Hills was established in 1990s by Various Builders.</li>
+            <li key={2}>Henderson Hills contains 2,500+ homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Henderson Hills is a established · hillside community.</li>
+            <li key={4}>HOA fees in Henderson Hills range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Henderson Hills include C.T. Sewell Elementary (6/10) and Burkholder Middle School (5/10).</li>
+            <li key={6}>Henderson Hills is located ~25 min to the Strip via Boulder Hwy → I-515.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

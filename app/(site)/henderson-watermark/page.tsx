@@ -320,6 +320,24 @@ export default async function HendersonWatermarkPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Watermark</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Watermark spans ~350 acres in Henderson, Nevada (ZIP 89011).</li>
+            <li key={1}>Watermark was established in 2005 by Pulte Homes / Various.</li>
+            <li key={2}>Watermark contains ~2,500 homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Watermark is a master-planned · family community within Henderson.</li>
+            <li key={4}>HOA fees in Watermark range from $60–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Watermark include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Watermark is located ~20 min to the Strip via I-215 West → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

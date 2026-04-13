@@ -320,6 +320,24 @@ export default async function SummerlinKestrelCommonsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Kestrel Commons</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Kestrel Commons spans 350 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>Kestrel Commons was established in 2021 by Howard Hughes Corporation.</li>
+            <li key={2}>Kestrel Commons contains 1,500+ homes with prices ranging from $450K–$900K.</li>
+            <li key={3}>Kestrel Commons is a master-planned · new construction · mixed community within Summerlin.</li>
+            <li key={4}>HOA fees in Kestrel Commons range from $150–$325/mo per month.</li>
+            <li key={5}>Top-rated schools serving Kestrel Commons include Lorna J. Kesterson Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Kestrel Commons is located ~25 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

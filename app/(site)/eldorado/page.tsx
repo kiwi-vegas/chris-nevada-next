@@ -320,6 +320,24 @@ export default async function EldoradoPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Eldorado</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Eldorado spans ~700 acres in North Las Vegas, Nevada (ZIP 89032, 89031).</li>
+            <li key={1}>Eldorado was established in 1998 by Various Builders.</li>
+            <li key={2}>Eldorado contains ~4,000 homes with prices ranging from $300K–$500K.</li>
+            <li key={3}>Eldorado is a established · family community.</li>
+            <li key={4}>HOA fees in Eldorado range from $40–$120/mo per month.</li>
+            <li key={5}>Top-rated schools serving Eldorado include Myrtle Tate Elementary (5/10) and Lois & Jerry Tarkanian Middle School (6/10).</li>
+            <li key={6}>Eldorado is located ~20 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

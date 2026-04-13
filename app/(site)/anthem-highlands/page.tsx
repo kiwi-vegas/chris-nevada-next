@@ -325,6 +325,24 @@ export default async function AnthemHighlandsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Anthem Highlands</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Anthem Highlands spans 300 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Anthem Highlands was established in 2000 by Del Webb / Pulte Group.</li>
+            <li key={2}>Anthem Highlands contains 1,000+ homes with prices ranging from $500K–$800K.</li>
+            <li key={3}>Anthem Highlands is a master-planned · family community within Anthem.</li>
+            <li key={4}>HOA fees in Anthem Highlands range from $80–$180/mo per month.</li>
+            <li key={5}>Top-rated schools serving Anthem Highlands include Coronado High School (8/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Anthem Highlands is located ~20 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -312,6 +312,24 @@ export default async function InspiradaMesaDelSolPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Mesa del Sol</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Mesa del Sol spans ~100 acres in Henderson, Nevada (ZIP 89044).</li>
+            <li key={1}>Mesa del Sol was established in 2019 by Lennar / Toll Brothers.</li>
+            <li key={2}>Mesa del Sol contains ~400 homes with prices ranging from $500K–$800K.</li>
+            <li key={3}>Mesa del Sol is a new construction · family community within Inspirada.</li>
+            <li key={4}>HOA fees in Mesa del Sol range from $130–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving Mesa del Sol include Elise L. Wolff Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Mesa del Sol is located ~25 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

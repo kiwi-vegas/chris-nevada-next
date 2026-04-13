@@ -332,6 +332,24 @@ export default async function LakeLasVegasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Lake Las Vegas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Lake Las Vegas spans 3,592 acres in Henderson, Nevada (ZIP 89011).</li>
+            <li key={1}>Lake Las Vegas was established in 1991 by Lake Las Vegas Resort / Raintree Investment Corp.</li>
+            <li key={2}>Lake Las Vegas contains 3,000+ homes with prices ranging from $400K–$5M+.</li>
+            <li key={3}>Lake Las Vegas is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Lake Las Vegas range from $200–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Lake Las Vegas include Elise L. Wolff Elementary (6/10) and Burkholder Middle School (5/10).</li>
+            <li key={6}>Lake Las Vegas is located ~30 min to the Strip via Lake Mead Pkwy → I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

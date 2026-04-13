@@ -332,6 +332,24 @@ export default async function LakeLasVegasSouthShorePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About South Shore</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>South Shore spans ~350 acres in Henderson, Nevada (ZIP 89011).</li>
+            <li key={1}>South Shore was established in 2003 by Lake Las Vegas Resort.</li>
+            <li key={2}>South Shore contains ~400 homes with prices ranging from $800K–$5M+.</li>
+            <li key={3}>South Shore is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in South Shore range from $400–$1,000/mo per month.</li>
+            <li key={5}>Top-rated schools serving South Shore include Elise L. Wolff Elementary (8/10) and Jack Lund Schofield Middle School (7/10).</li>
+            <li key={6}>South Shore is located ~30 min to the Strip via Lake Mead Pkwy → I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -320,6 +320,24 @@ export default async function SummerlinThePuebloPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Pueblo</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Pueblo spans 380 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>The Pueblo was established in 2000 by Howard Hughes Corporation.</li>
+            <li key={2}>The Pueblo contains 2,400+ homes with prices ranging from $400K–$650K.</li>
+            <li key={3}>The Pueblo is a master-planned · value community within Summerlin.</li>
+            <li key={4}>HOA fees in The Pueblo range from $75–$175/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Pueblo include Zel & Mary Lowman Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>The Pueblo is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

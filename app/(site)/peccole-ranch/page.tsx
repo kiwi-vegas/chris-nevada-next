@@ -320,6 +320,24 @@ export default async function PeccoleRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Peccole Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Peccole Ranch spans 640 acres in Las Vegas, Nevada (ZIP 89117, 89145).</li>
+            <li key={1}>Peccole Ranch was established in 1989 by Peccole Family / William Peccole.</li>
+            <li key={2}>Peccole Ranch contains 4,200+ homes with prices ranging from $400K–$3M+.</li>
+            <li key={3}>Peccole Ranch is a master-planned · established community.</li>
+            <li key={4}>HOA fees in Peccole Ranch range from $50–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Peccole Ranch include William & Mary Scherkenbach Elementary (7/10) and Lawrence & Heidi Canarelli Middle School (7/10).</li>
+            <li key={6}>Peccole Ranch is located ~15 min to the Strip via W Flamingo Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

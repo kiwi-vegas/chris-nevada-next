@@ -320,6 +320,24 @@ export default async function HendersonTuscanaPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Tuscana</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Tuscana spans ~250 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Tuscana was established in 2003 by Various Builders.</li>
+            <li key={2}>Tuscana contains ~2,000 homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Tuscana is a master-planned · suburban community within Henderson.</li>
+            <li key={4}>HOA fees in Tuscana range from $50–$130/mo per month.</li>
+            <li key={5}>Top-rated schools serving Tuscana include Elise L. Wolff Elementary (7/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Tuscana is located ~20 min to the Strip via I-215 West → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

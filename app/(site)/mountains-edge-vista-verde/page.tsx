@@ -312,6 +312,24 @@ export default async function MountainsEdgeVistaVerdePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Vista Verde at Mountains Edge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Vista Verde at Mountains Edge spans ~120 acres in Las Vegas, Nevada (ZIP 89178).</li>
+            <li key={1}>Vista Verde at Mountains Edge was established in 2005 by Focus Property Group / KB Home.</li>
+            <li key={2}>Vista Verde at Mountains Edge contains 700+ homes with prices ranging from $350K–$550K.</li>
+            <li key={3}>Vista Verde at Mountains Edge is a master-planned · family community within Mountains Edge.</li>
+            <li key={4}>HOA fees in Vista Verde at Mountains Edge range from $55–$130/mo per month.</li>
+            <li key={5}>Top-rated schools serving Vista Verde at Mountains Edge include Carolyn S. Reedom Elementary (8/10) and Lawrence & Heidi Canarelli Middle (7/10).</li>
+            <li key={6}>Vista Verde at Mountains Edge is located ~10 min to Red Rock Canyon via Blue Diamond Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -320,6 +320,24 @@ export default async function AnthemWestPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Anthem West</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Anthem West spans ~600 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Anthem West was established in 2000 by Del Webb / Various.</li>
+            <li key={2}>Anthem West contains ~4,000 homes with prices ranging from $450K–$800K.</li>
+            <li key={3}>Anthem West is a master-planned · family community within Anthem.</li>
+            <li key={4}>HOA fees in Anthem West range from $70–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Anthem West include John C. Fremont Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Anthem West is located ~20 min to the Strip via I-215 West → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

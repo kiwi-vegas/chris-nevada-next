@@ -328,6 +328,24 @@ export default async function SummerlinSouthSquarePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About South Square</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>South Square spans 250 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>South Square was established in 2005 by Howard Hughes Corporation.</li>
+            <li key={2}>South Square contains 1,400+ homes with prices ranging from $400K–$750K.</li>
+            <li key={3}>South Square is a master-planned · 55+ · active adult community within Summerlin.</li>
+            <li key={4}>HOA fees in South Square range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving South Square include Zel & Mary Lowman Elementary (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>South Square is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

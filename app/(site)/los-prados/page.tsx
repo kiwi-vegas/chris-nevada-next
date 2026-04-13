@@ -324,6 +324,24 @@ export default async function LosPradosPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Los Prados</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Los Prados spans ~260 acres in Las Vegas, Nevada (ZIP 89130).</li>
+            <li key={1}>Los Prados was established in 1983 by Los Prados Development.</li>
+            <li key={2}>Los Prados contains ~1,100 homes with prices ranging from $300K–$600K.</li>
+            <li key={3}>Los Prados is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Los Prados range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Los Prados include Zel & Mary Lowman Elementary (6/10) and Lied Middle School (5/10).</li>
+            <li key={6}>Los Prados is located ~25 min to the Strip via US-95 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

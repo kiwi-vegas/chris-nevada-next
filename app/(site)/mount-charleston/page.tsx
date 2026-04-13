@@ -312,6 +312,24 @@ export default async function MountCharlestonPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Mount Charleston</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Mount Charleston spans ~5 sq mi residential in Mount Charleston, Nevada (ZIP 89124).</li>
+            <li key={1}>Mount Charleston was established in 1950 by Various / Private Owners.</li>
+            <li key={2}>Mount Charleston contains ~500 homes with prices ranging from $400K–$1.5M+.</li>
+            <li key={3}>Mount Charleston is a mountain · resort community.</li>
+            <li key={4}>HOA fees in Mount Charleston range from $0–$50/mo per month.</li>
+            <li key={5}>Top-rated schools serving Mount Charleston include John C. Vanderburg Elementary (zoned) (7/10) and Sig Rogich Middle School (zoned) (10/10).</li>
+            <li key={6}>Mount Charleston is located ~35 min to the Strip via Kyle Canyon Rd (SR-157) → US-95.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

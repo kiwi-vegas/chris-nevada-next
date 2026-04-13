@@ -328,6 +328,24 @@ export default async function SunCitySummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sun City Summerlin</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sun City Summerlin spans 2,400 acres in Las Vegas, Nevada (ZIP 89134, 89144).</li>
+            <li key={1}>Sun City Summerlin was established in 1989 by Del Webb.</li>
+            <li key={2}>Sun City Summerlin contains 7,779 homes with prices ranging from $300K–$700K.</li>
+            <li key={3}>Sun City Summerlin is a 55+ active adult community within Summerlin.</li>
+            <li key={4}>HOA fees in Sun City Summerlin range from $150–$300/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sun City Summerlin include Walter Johnson Middle School (6/10) and Palo Verde High School (8/10).</li>
+            <li key={6}>Sun City Summerlin is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

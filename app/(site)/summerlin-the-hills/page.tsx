@@ -324,6 +324,24 @@ export default async function SummerlinTheHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Hills spans 550 acres in Las Vegas, Nevada (ZIP 89134).</li>
+            <li key={1}>The Hills was established in 1996 by Howard Hughes Corporation.</li>
+            <li key={2}>The Hills contains 2,800+ homes with prices ranging from $500K–$900K.</li>
+            <li key={3}>The Hills is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Hills range from $100–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Hills include Palo Verde High School (8/10) and Jack & Terry Mannion Middle (7/10).</li>
+            <li key={6}>The Hills is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

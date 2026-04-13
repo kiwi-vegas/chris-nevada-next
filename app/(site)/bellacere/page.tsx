@@ -332,6 +332,24 @@ export default async function BellacerePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Bellacere</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Bellacere spans 85 acres in Las Vegas, Nevada (ZIP 89144).</li>
+            <li key={1}>Bellacere was established in 2003 by Howard Hughes Corporation.</li>
+            <li key={2}>Bellacere contains 120+ homes with prices ranging from $1.5M–$5M+.</li>
+            <li key={3}>Bellacere is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Bellacere range from $500–$1,000/mo per month.</li>
+            <li key={5}>Top-rated schools serving Bellacere include John C. Hummel Elementary (7/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Bellacere is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

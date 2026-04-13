@@ -332,6 +332,24 @@ export default async function SummerlinTheRidgesPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Ridges</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Ridges spans 793 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>The Ridges was established in 2006 by Howard Hughes Corporation.</li>
+            <li key={2}>The Ridges contains 800+ homes with prices ranging from $2M–$20M+.</li>
+            <li key={3}>The Ridges is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Ridges range from $500–$1,200/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Ridges include Sig Rogich Middle School (10/10) and Palo Verde High School (8/10).</li>
+            <li key={6}>The Ridges is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

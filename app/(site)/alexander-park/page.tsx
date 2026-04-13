@@ -320,6 +320,24 @@ export default async function AlexanderParkPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Alexander Park</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Alexander Park spans ~300 acres in North Las Vegas, Nevada (ZIP 89032, 89086).</li>
+            <li key={1}>Alexander Park was established in 2020 by Various Builders.</li>
+            <li key={2}>Alexander Park contains 1,500+ homes with prices ranging from $350K–$550K.</li>
+            <li key={3}>Alexander Park is a new construction · master-planned community.</li>
+            <li key={4}>HOA fees in Alexander Park range from $60–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Alexander Park include Elbert Edwards Elementary (5/10) and Kathleen & Tim Harney Middle (6/10).</li>
+            <li key={6}>Alexander Park is located ~20 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

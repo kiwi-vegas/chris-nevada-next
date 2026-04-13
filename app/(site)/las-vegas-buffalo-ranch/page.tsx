@@ -320,6 +320,24 @@ export default async function LasVegasBuffaloRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Buffalo Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Buffalo Ranch spans ~500 acres in Las Vegas, Nevada (ZIP 89149, 89129).</li>
+            <li key={1}>Buffalo Ranch was established in 1998 by Various Builders.</li>
+            <li key={2}>Buffalo Ranch contains 3,500+ homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Buffalo Ranch is a established · family · northwest community.</li>
+            <li key={4}>HOA fees in Buffalo Ranch range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Buffalo Ranch include Oran K. Gragson Elementary (6/10) and Ernest Becker Middle School (6/10).</li>
+            <li key={6}>Buffalo Ranch is located ~18 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

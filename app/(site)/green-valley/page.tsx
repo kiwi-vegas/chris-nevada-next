@@ -320,6 +320,24 @@ export default async function GreenValleyPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Green Valley</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Green Valley spans 8,400 acres in Henderson, Nevada (ZIP 89014, 89074).</li>
+            <li key={1}>Green Valley was established in 1978 by American Nevada Corporation.</li>
+            <li key={2}>Green Valley contains 35,000+ homes with prices ranging from $350K–$3M+.</li>
+            <li key={3}>Green Valley is a master-planned community.</li>
+            <li key={4}>HOA fees in Green Valley range from $30–$300/mo per month.</li>
+            <li key={5}>Top-rated schools serving Green Valley include Bob Miller Middle School (8/10) and Green Valley High School (7/10).</li>
+            <li key={6}>Green Valley is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

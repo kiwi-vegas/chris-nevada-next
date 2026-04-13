@@ -320,6 +320,24 @@ export default async function DesertShoresPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Desert Shores</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Desert Shores spans ~600 acres in Las Vegas, Nevada (ZIP 89128, 89145).</li>
+            <li key={1}>Desert Shores was established in 1988.</li>
+            <li key={2}>Desert Shores contains 3,000+ homes with prices ranging from $350K–$800K.</li>
+            <li key={3}>Desert Shores is a lakefront · master-planned community.</li>
+            <li key={4}>HOA fees in Desert Shores range from $75–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Desert Shores include Thomas O\'Roarke Elementary (6/10) and Rogich Middle School (7/10).</li>
+            <li key={6}>Desert Shores is located ~10 min to Downtown Summerlin via W Sahara Ave.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

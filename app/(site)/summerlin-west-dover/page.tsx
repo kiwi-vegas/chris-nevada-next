@@ -320,6 +320,24 @@ export default async function SummerlinWestDoverPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Dover at Summerlin West</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Dover at Summerlin West spans ~250 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>Dover at Summerlin West was established in 2020 by Howard Hughes Corporation.</li>
+            <li key={2}>Dover at Summerlin West contains ~1,500 homes with prices ranging from $500K–$800K.</li>
+            <li key={3}>Dover at Summerlin West is a new construction · master-planned community within Summerlin.</li>
+            <li key={4}>HOA fees in Dover at Summerlin West range from $120–$220/mo per month.</li>
+            <li key={5}>Top-rated schools serving Dover at Summerlin West include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Dover at Summerlin West is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

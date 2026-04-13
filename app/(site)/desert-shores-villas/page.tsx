@@ -312,6 +312,24 @@ export default async function DesertShoresVillasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Desert Shores Villas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Desert Shores Villas spans ~40 acres in Las Vegas, Nevada (ZIP 89128).</li>
+            <li key={1}>Desert Shores Villas was established in 1988 by Greenspun Corporation.</li>
+            <li key={2}>Desert Shores Villas contains ~600 homes with prices ranging from $200K–$450K.</li>
+            <li key={3}>Desert Shores Villas is a lakefront · condos community within Desert Shores.</li>
+            <li key={4}>HOA fees in Desert Shores Villas range from $250–$450/mo per month.</li>
+            <li key={5}>Top-rated schools serving Desert Shores Villas include Bilbray Elementary (5/10) and Thurman White Middle School (6/10).</li>
+            <li key={6}>Desert Shores Villas is located ~20 min to the Strip via US-95 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

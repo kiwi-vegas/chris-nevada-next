@@ -332,6 +332,24 @@ export default async function RedRockCountryClubPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Red Rock Country Club</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Red Rock Country Club spans ~700 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Red Rock Country Club was established in 2002 by Howard Hughes Corporation.</li>
+            <li key={2}>Red Rock Country Club contains 1,200+ homes with prices ranging from $800K–$3M+.</li>
+            <li key={3}>Red Rock Country Club is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Red Rock Country Club range from $300–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Red Rock Country Club include Sig Rogich Middle School (10/10) and Palo Verde High School (8/10).</li>
+            <li key={6}>Red Rock Country Club is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

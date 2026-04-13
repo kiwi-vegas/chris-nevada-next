@@ -312,6 +312,24 @@ export default async function CadenceSierraSagePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sierra Sage</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sierra Sage spans ~90 acres in Henderson, Nevada (ZIP 89011).</li>
+            <li key={1}>Sierra Sage was established in 2018 by Toll Brothers / Woodside Homes.</li>
+            <li key={2}>Sierra Sage contains ~400 homes with prices ranging from $450K–$700K.</li>
+            <li key={3}>Sierra Sage is a new construction · move-up community within Cadence.</li>
+            <li key={4}>HOA fees in Sierra Sage range from $120–$220/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sierra Sage include John C. Vanderburg Elementary (8/10) and Jack Lund Schofield Middle School (7/10).</li>
+            <li key={6}>Sierra Sage is located ~25 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

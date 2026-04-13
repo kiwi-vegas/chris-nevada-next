@@ -332,6 +332,24 @@ export default async function AventuraSummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Aventura</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Aventura spans 120 acres in Las Vegas, Nevada (ZIP 89144).</li>
+            <li key={1}>Aventura was established in 2000 by Howard Hughes Corporation.</li>
+            <li key={2}>Aventura contains 350+ homes with prices ranging from $800K–$3M+.</li>
+            <li key={3}>Aventura is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Aventura range from $300–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Aventura include John C. Hummel Elementary (7/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Aventura is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -320,6 +320,24 @@ export default async function IronMountainRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Iron Mountain Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Iron Mountain Ranch spans ~500 acres in Las Vegas, Nevada (ZIP 89131).</li>
+            <li key={1}>Iron Mountain Ranch was established in 2004 by Richmond American / KB Home.</li>
+            <li key={2}>Iron Mountain Ranch contains 2,800+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Iron Mountain Ranch is a master-planned · family community.</li>
+            <li key={4}>HOA fees in Iron Mountain Ranch range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Iron Mountain Ranch include Neal Elementary (7/10) and Thurman White Middle School (6/10).</li>
+            <li key={6}>Iron Mountain Ranch is located ~25 min to the Strip via US-95 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

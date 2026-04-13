@@ -337,6 +337,24 @@ export default async function OlympiaRidgePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Olympia Ridge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Olympia Ridge spans 180 acres in Las Vegas, Nevada (ZIP 89141).</li>
+            <li key={1}>Olympia Ridge was established in 2003 by Olympia Group.</li>
+            <li key={2}>Olympia Ridge contains 250+ homes with prices ranging from $1.5M–$5M+.</li>
+            <li key={3}>Olympia Ridge is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Olympia Ridge range from $300–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Olympia Ridge include Liberty High School (7/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Olympia Ridge is located ~20 min to the Strip via I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

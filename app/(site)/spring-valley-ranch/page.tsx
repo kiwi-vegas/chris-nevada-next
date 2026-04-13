@@ -320,6 +320,24 @@ export default async function SpringValleyRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Spring Valley Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Spring Valley Ranch spans ~800 acres in Las Vegas, Nevada (ZIP 89147, 89148).</li>
+            <li key={1}>Spring Valley Ranch was established in 1992 by Various Builders.</li>
+            <li key={2}>Spring Valley Ranch contains ~5,000 homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Spring Valley Ranch is a suburban · family community within Spring Valley.</li>
+            <li key={4}>HOA fees in Spring Valley Ranch range from $40–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Spring Valley Ranch include William & Mary Scherkenbach Elementary (7/10) and Becker Middle School (6/10).</li>
+            <li key={6}>Spring Valley Ranch is located ~10 min to the Strip via Flamingo Rd / Spring Mountain Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

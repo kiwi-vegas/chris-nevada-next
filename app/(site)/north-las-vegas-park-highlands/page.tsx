@@ -320,6 +320,24 @@ export default async function NorthLasVegasParkHighlandsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Park Highlands</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Park Highlands spans ~2,000 acres in North Las Vegas, Nevada (ZIP 89085, 89086).</li>
+            <li key={1}>Park Highlands was established in 2014 by Shea Homes / Lennar / Various.</li>
+            <li key={2}>Park Highlands contains 4,000+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Park Highlands is a master-planned · new construction community.</li>
+            <li key={4}>HOA fees in Park Highlands range from $60–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Park Highlands include Reedom Elementary (6/10) and Kathleen & Tim Harney Middle (6/10).</li>
+            <li key={6}>Park Highlands is located ~25 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

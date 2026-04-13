@@ -329,6 +329,24 @@ export default async function SouthforkHendersonPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Southfork</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Southfork spans 120 acres in Henderson, Nevada (ZIP 89074).</li>
+            <li key={1}>Southfork was established in 1993 by American Nevada Corporation.</li>
+            <li key={2}>Southfork contains 450+ homes with prices ranging from $450K–$750K.</li>
+            <li key={3}>Southfork is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Southfork range from $150–$300/mo per month.</li>
+            <li key={5}>Top-rated schools serving Southfork include Coronado High School (8/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Southfork is located ~15 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

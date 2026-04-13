@@ -320,6 +320,24 @@ export default async function BoulderCityPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Boulder City</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Boulder City spans ~208 sq mi in Boulder City, Nevada (ZIP 89005).</li>
+            <li key={1}>Boulder City was established in 1931 by U.S. Bureau of Reclamation (original).</li>
+            <li key={2}>Boulder City contains 6,500+ homes with prices ranging from $400K–$1M+.</li>
+            <li key={3}>Boulder City is a independent city · historic community.</li>
+            <li key={4}>HOA fees in Boulder City range from $0–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Boulder City include Andrew J. Mitchell Elementary (7/10) and Garrett Middle School (7/10).</li>
+            <li key={6}>Boulder City is located ~10 min to Hoover Dam via US-93 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

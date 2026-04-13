@@ -324,6 +324,24 @@ export default async function MadeiraCanyonPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Madeira Canyon</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Madeira Canyon spans ~800 acres in Henderson, Nevada (ZIP 89052, 89044).</li>
+            <li key={1}>Madeira Canyon was established in 2004 by Toll Brothers / Focus Property Group.</li>
+            <li key={2}>Madeira Canyon contains 1,200+ homes with prices ranging from $400K–$1.5M+.</li>
+            <li key={3}>Madeira Canyon is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Madeira Canyon range from $150–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving Madeira Canyon include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Madeira Canyon is located ~25 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

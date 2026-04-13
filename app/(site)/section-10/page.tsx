@@ -312,6 +312,24 @@ export default async function Section10Page() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Section 10</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Section 10 spans ~640 acres in Las Vegas, Nevada (ZIP 89134, 89144).</li>
+            <li key={1}>Section 10 was established in 1990 by Howard Hughes Corporation / Custom.</li>
+            <li key={2}>Section 10 contains ~700 homes with prices ranging from $800K–$3M+.</li>
+            <li key={3}>Section 10 is a historic · custom homes community within Summerlin.</li>
+            <li key={4}>HOA fees in Section 10 range from $100–$300/mo per month.</li>
+            <li key={5}>Top-rated schools serving Section 10 include Ober Elementary School (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Section 10 is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -332,6 +332,24 @@ export default async function SpanishHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Spanish Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Spanish Hills spans ~640 acres in Las Vegas, Nevada (ZIP 89113, 89148).</li>
+            <li key={1}>Spanish Hills was established in 1998 by Various Custom Builders.</li>
+            <li key={2}>Spanish Hills contains ~300 homes with prices ranging from $1M–$10M+.</li>
+            <li key={3}>Spanish Hills is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Spanish Hills range from $200–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Spanish Hills include Walter Bracken STEAM Academy (8/10) and Thurman White Middle School (7/10).</li>
+            <li key={6}>Spanish Hills is located ~10 min to the Strip via Dean Martin Dr / I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

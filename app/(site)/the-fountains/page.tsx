@@ -337,6 +337,24 @@ export default async function TheFountainsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Fountains</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Fountains spans 250 acres in Henderson, Nevada (ZIP 89074).</li>
+            <li key={1}>The Fountains was established in 1995 by American Nevada Corporation.</li>
+            <li key={2}>The Fountains contains 400+ homes with prices ranging from $800K–$3M.</li>
+            <li key={3}>The Fountains is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Fountains range from $250–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Fountains include Coronado High School (8/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>The Fountains is located ~15 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

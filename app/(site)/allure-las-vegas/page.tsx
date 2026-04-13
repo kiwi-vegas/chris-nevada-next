@@ -324,6 +324,24 @@ export default async function AllureLasVegasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Allure Las Vegas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Allure Las Vegas spans ~2 acres in Las Vegas, Nevada (ZIP 89102).</li>
+            <li key={1}>Allure Las Vegas was established in 2007 by Mac Homes / Gary Carlin.</li>
+            <li key={2}>Allure Las Vegas contains 428 homes with prices ranging from $250K–$1M+.</li>
+            <li key={3}>Allure Las Vegas is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Allure Las Vegas range from $300–$1,200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Allure Las Vegas include Las Vegas Academy of the Arts (9/10) and John C. Fremont Middle School (5/10).</li>
+            <li key={6}>Allure Las Vegas is located ~5 min to the Strip via Sahara Ave / Las Vegas Blvd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

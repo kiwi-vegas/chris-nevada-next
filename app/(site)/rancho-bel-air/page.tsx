@@ -332,6 +332,24 @@ export default async function RanchoBelAirPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Rancho Bel Air</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Rancho Bel Air spans ~200 acres in Las Vegas, Nevada (ZIP 89107).</li>
+            <li key={1}>Rancho Bel Air was established in 1960s by Various Private Developers.</li>
+            <li key={2}>Rancho Bel Air contains ~300 homes with prices ranging from $1M–$5M+.</li>
+            <li key={3}>Rancho Bel Air is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Rancho Bel Air range from $200–$500/mo per month.</li>
+            <li key={5}>Top-rated schools serving Rancho Bel Air include John S. Park Elementary (6/10) and Brinley Middle School (5/10).</li>
+            <li key={6}>Rancho Bel Air is located ~10 min to the Strip via Rancho Dr → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

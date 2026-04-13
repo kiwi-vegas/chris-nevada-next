@@ -320,6 +320,24 @@ export default async function LasVegasMeadowsVillagePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Meadows Village</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Meadows Village spans ~4 sq mi in Las Vegas, Nevada (ZIP 89107, 89146).</li>
+            <li key={1}>Meadows Village was established in 1970s.</li>
+            <li key={2}>Meadows Village contains 8,000+ homes with prices ranging from $300K–$600K.</li>
+            <li key={3}>Meadows Village is a established suburban · family community.</li>
+            <li key={4}>HOA fees in Meadows Village range from $0–$100/mo per month.</li>
+            <li key={5}>Top-rated schools serving Meadows Village include Bracken Elementary (5/10) and Johnson Middle School (4/10).</li>
+            <li key={6}>Meadows Village is located ~10 min to the Strip via Flamingo Rd / Spring Mountain Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -324,6 +324,24 @@ export default async function SouthernHighlandsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Southern Highlands</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Southern Highlands spans 2,200 acres in Las Vegas, Nevada (ZIP 89141, 89139).</li>
+            <li key={1}>Southern Highlands was established in 1997 by Olympia Group.</li>
+            <li key={2}>Southern Highlands contains 6,500+ homes with prices ranging from $400K–$10M+.</li>
+            <li key={3}>Southern Highlands is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Southern Highlands range from $150–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Southern Highlands include John R. Hummel Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Southern Highlands is located ~15 min to the Strip via I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

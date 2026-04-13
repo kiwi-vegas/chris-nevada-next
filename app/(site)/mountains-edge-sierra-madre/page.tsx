@@ -312,6 +312,24 @@ export default async function MountainsEdgeSierraMadrePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sierra Madre at Mountains Edge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sierra Madre at Mountains Edge spans ~130 acres in Las Vegas, Nevada (ZIP 89178).</li>
+            <li key={1}>Sierra Madre at Mountains Edge was established in 2008 by Focus Property Group / Pulte Homes.</li>
+            <li key={2}>Sierra Madre at Mountains Edge contains 600+ homes with prices ranging from $450K–$700K.</li>
+            <li key={3}>Sierra Madre at Mountains Edge is a master-planned · family community within Mountains Edge.</li>
+            <li key={4}>HOA fees in Sierra Madre at Mountains Edge range from $65–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sierra Madre at Mountains Edge include Carolyn S. Reedom Elementary (8/10) and Lawrence & Heidi Canarelli Middle (7/10).</li>
+            <li key={6}>Sierra Madre at Mountains Edge is located ~8 min to Red Rock Canyon via Blue Diamond Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -328,6 +328,24 @@ export default async function TheOgdenPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Ogden</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Ogden spans ~1 acre in Las Vegas, Nevada (ZIP 89101).</li>
+            <li key={1}>The Ogden was established in 2008 by Loft Holdings / David Friedman.</li>
+            <li key={2}>The Ogden contains 275 homes with prices ranging from $200K–$700K.</li>
+            <li key={3}>The Ogden is a high-rise · urban · downtown community.</li>
+            <li key={4}>HOA fees in The Ogden range from $250–$900/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Ogden include Las Vegas Academy of the Arts (9/10) and Rancho High School (5/10).</li>
+            <li key={6}>The Ogden is located ~5 min to the Strip via Las Vegas Blvd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

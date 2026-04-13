@@ -320,6 +320,24 @@ export default async function CentennialHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Centennial Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Centennial Hills spans ~20 sq mi in Las Vegas, Nevada (ZIP 89131, 89149).</li>
+            <li key={1}>Centennial Hills was established in 1998.</li>
+            <li key={2}>Centennial Hills contains 30,000+ homes with prices ranging from $350K–$700K.</li>
+            <li key={3}>Centennial Hills is a suburban · growth corridor community.</li>
+            <li key={4}>HOA fees in Centennial Hills range from $25–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Centennial Hills include Zel & Mary Lowman Elementary (8/10) and Edmundo \'Eddie\' Escobedo Middle (7/10).</li>
+            <li key={6}>Centennial Hills is located ~20 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

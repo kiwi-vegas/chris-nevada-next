@@ -332,6 +332,24 @@ export default async function TheSummitClubPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Summit Club</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Summit Club spans 555 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>The Summit Club was established in 2017 by Discovery Land Company.</li>
+            <li key={2}>The Summit Club contains 146 homesites homes with prices ranging from $5M–$30M+.</li>
+            <li key={3}>The Summit Club is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Summit Club range from $2,000–$5,000/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Summit Club include Sig Rogich Middle School (10/10) and Palo Verde High School (8/10).</li>
+            <li key={6}>The Summit Club is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

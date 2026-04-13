@@ -320,6 +320,24 @@ export default async function LoneMountainPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Lone Mountain</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Lone Mountain spans ~5 sq mi in Las Vegas, Nevada (ZIP 89129, 89131).</li>
+            <li key={1}>Lone Mountain was established in 1990.</li>
+            <li key={2}>Lone Mountain contains 3,000+ homes with prices ranging from $400K–$900K.</li>
+            <li key={3}>Lone Mountain is a semi-rural · equestrian · luxury community.</li>
+            <li key={4}>HOA fees in Lone Mountain range from $0–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Lone Mountain include Zel & Mary Lowman Elementary (8/10) and Edmundo \'Eddie\' Escobedo Middle (7/10).</li>
+            <li key={6}>Lone Mountain is located ~20 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

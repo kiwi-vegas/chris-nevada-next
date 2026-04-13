@@ -320,6 +320,24 @@ export default async function LasVegasWhitneyPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Whitney</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Whitney spans ~12 sq mi in Las Vegas, Nevada (ZIP 89122, 89121).</li>
+            <li key={1}>Whitney was established in 1960s.</li>
+            <li key={2}>Whitney contains 25,000+ homes with prices ranging from $200K–$400K.</li>
+            <li key={3}>Whitney is a established · unincorporated community.</li>
+            <li key={4}>HOA fees in Whitney range from $0–$75/mo per month.</li>
+            <li key={5}>Top-rated schools serving Whitney include Elbert Edwards Elementary (5/10) and Schofield Middle School (4/10).</li>
+            <li key={6}>Whitney is located ~15 min to the Strip via Tropicana Ave / Flamingo Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

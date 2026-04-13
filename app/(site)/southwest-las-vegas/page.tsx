@@ -332,6 +332,24 @@ export default async function SouthwestLasVegasPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Southwest Las Vegas</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Southwest Las Vegas spans ~45 sq mi in Las Vegas, Nevada (ZIP 89113, 89139).</li>
+            <li key={1}>Southwest Las Vegas was established in 1996.</li>
+            <li key={2}>Southwest Las Vegas contains 75,000+ homes with prices ranging from $300K–$1M+.</li>
+            <li key={3}>Southwest Las Vegas is a suburban · area hub community.</li>
+            <li key={4}>HOA fees in Southwest Las Vegas range from $25–$300/mo per month.</li>
+            <li key={5}>Top-rated schools serving Southwest Las Vegas include Pinecrest Academy of Nevada — Inspirada (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Southwest Las Vegas is located ~15 min to the Strip via I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

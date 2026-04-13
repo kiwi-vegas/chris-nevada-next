@@ -320,6 +320,24 @@ export default async function LasVegasCentennialSpringsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Centennial Springs</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Centennial Springs spans ~800 acres in Las Vegas, Nevada (ZIP 89149, 89131).</li>
+            <li key={1}>Centennial Springs was established in 2010.</li>
+            <li key={2}>Centennial Springs contains 3,500+ homes with prices ranging from $400K–$650K.</li>
+            <li key={3}>Centennial Springs is a suburban · master-planned community.</li>
+            <li key={4}>HOA fees in Centennial Springs range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Centennial Springs include Lunt Elementary (7/10) and Fertitta Middle School (7/10).</li>
+            <li key={6}>Centennial Springs is located ~25 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

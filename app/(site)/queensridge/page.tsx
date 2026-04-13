@@ -332,6 +332,24 @@ export default async function QueensridgePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Queensridge</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Queensridge spans ~300 acres in Las Vegas, Nevada (ZIP 89117, 89145).</li>
+            <li key={1}>Queensridge was established in 1997 by Peccole Family / EHB Companies.</li>
+            <li key={2}>Queensridge contains 987 homes with prices ranging from $800K–$5M+.</li>
+            <li key={3}>Queensridge is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Queensridge range from $250–$700/mo per month.</li>
+            <li key={5}>Top-rated schools serving Queensridge include William & Mary Scherkenbach Elementary (7/10) and Lawrence & Heidi Canarelli Middle School (7/10).</li>
+            <li key={6}>Queensridge is located ~15 min to the Strip via W Flamingo Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

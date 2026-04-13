@@ -320,6 +320,24 @@ export default async function CentennialHillsNorthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Centennial Hills North</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Centennial Hills North spans ~500 acres in Las Vegas, Nevada (ZIP 89149, 89166).</li>
+            <li key={1}>Centennial Hills North was established in 2015 by Various Builders.</li>
+            <li key={2}>Centennial Hills North contains ~3,000 homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Centennial Hills North is a new construction · family community within Centennial Hills.</li>
+            <li key={4}>HOA fees in Centennial Hills North range from $80–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Centennial Hills North include Scherkenbach Elementary (7/10) and Edmundo "Eddie" Escobedo Sr. Middle School (6/10).</li>
+            <li key={6}>Centennial Hills North is located ~25 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

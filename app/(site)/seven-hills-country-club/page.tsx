@@ -332,6 +332,24 @@ export default async function SevenHillsCountryClubPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Seven Hills Country Club</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Seven Hills Country Club spans ~250 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Seven Hills Country Club was established in 1999 by Seven Hills Development.</li>
+            <li key={2}>Seven Hills Country Club contains ~350 homes with prices ranging from $1.2M–$7M+.</li>
+            <li key={3}>Seven Hills Country Club is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Seven Hills Country Club range from $400–$900/mo per month.</li>
+            <li key={5}>Top-rated schools serving Seven Hills Country Club include Jim Thorpe Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Seven Hills Country Club is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

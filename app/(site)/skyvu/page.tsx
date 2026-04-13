@@ -317,6 +317,24 @@ export default async function SkyvuPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About SkyVu</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>SkyVu spans 80 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>SkyVu was established in 2016 by William Lyon Homes / Taylor Morrison.</li>
+            <li key={2}>SkyVu contains 200+ homes with prices ranging from $800K–$2M+.</li>
+            <li key={3}>SkyVu is a luxury · contemporary · views community within MacDonald Highlands.</li>
+            <li key={4}>HOA fees in SkyVu range from $200–$400/mo per month.</li>
+            <li key={5}>Top-rated schools serving SkyVu include Coronado High School (8/10) and Bob Miller Middle School (7/10).</li>
+            <li key={6}>SkyVu is located ~20 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -332,6 +332,24 @@ export default async function TurnberryPlacePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Turnberry Place</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Turnberry Place spans ~16 acres in Las Vegas, Nevada (ZIP 89109).</li>
+            <li key={1}>Turnberry Place was established in 2001 by Turnberry Associates / Jeffrey Soffer.</li>
+            <li key={2}>Turnberry Place contains ~720 homes with prices ranging from $500K–$5M+.</li>
+            <li key={3}>Turnberry Place is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Turnberry Place range from $500–$2,500/mo per month.</li>
+            <li key={5}>Top-rated schools serving Turnberry Place include Las Vegas Academy of the Arts (9/10) and John C. Fremont Middle School (5/10).</li>
+            <li key={6}>Turnberry Place is located ~5 min to the Strip via Paradise Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

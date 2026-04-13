@@ -312,6 +312,24 @@ export default async function BlueDiamondPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Blue Diamond</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Blue Diamond spans ~2 sq mi in Blue Diamond, Nevada (ZIP 89004).</li>
+            <li key={1}>Blue Diamond was established in 1942 by Historic Mining Town.</li>
+            <li key={2}>Blue Diamond contains ~300 homes with prices ranging from $500K–$2M+.</li>
+            <li key={3}>Blue Diamond is a rural · equestrian community.</li>
+            <li key={4}>HOA fees in Blue Diamond range from $0/mo per month.</li>
+            <li key={5}>Top-rated schools serving Blue Diamond include Bonner Elementary (zoned) (9/10) and Palo Verde High School (zoned) (8/10).</li>
+            <li key={6}>Blue Diamond is located ~25 min to the Strip via Blue Diamond Rd (SR-159) → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

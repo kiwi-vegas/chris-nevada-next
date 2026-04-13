@@ -317,6 +317,24 @@ export default async function VuResidencesPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Vu Residences</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Vu Residences spans 60 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>Vu Residences was established in 2018 by William Lyon Homes / Taylor Morrison.</li>
+            <li key={2}>Vu Residences contains 120+ homes with prices ranging from $1M–$3M+.</li>
+            <li key={3}>Vu Residences is a luxury · contemporary · views community within MacDonald Highlands.</li>
+            <li key={4}>HOA fees in Vu Residences range from $250–$500/mo per month.</li>
+            <li key={5}>Top-rated schools serving Vu Residences include Coronado High School (8/10) and Bob Miller Middle School (7/10).</li>
+            <li key={6}>Vu Residences is located ~20 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

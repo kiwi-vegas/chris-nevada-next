@@ -324,6 +324,24 @@ export default async function RegencyAtSummerlinPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Regency at Summerlin</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Regency at Summerlin spans ~120 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>Regency at Summerlin was established in 2015 by Toll Brothers.</li>
+            <li key={2}>Regency at Summerlin contains 400+ homes with prices ranging from $500K–$800K+.</li>
+            <li key={3}>Regency at Summerlin is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Regency at Summerlin range from $250–$500/mo per month.</li>
+            <li key={5}>Top-rated schools serving Regency at Summerlin include John W. Bonner Elementary (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Regency at Summerlin is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

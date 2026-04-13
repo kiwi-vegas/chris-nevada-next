@@ -320,6 +320,24 @@ export default async function ParadisePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Paradise</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Paradise spans ~46 sq mi in Las Vegas, Nevada (ZIP 89109, 89119).</li>
+            <li key={1}>Paradise was established in 1950.</li>
+            <li key={2}>Paradise contains 80,000+ homes with prices ranging from $250K–$2M+.</li>
+            <li key={3}>Paradise is a unincorporated · urban/suburban community.</li>
+            <li key={4}>HOA fees in Paradise range from $50–$500/mo per month.</li>
+            <li key={5}>Top-rated schools serving Paradise include Paradise Elementary (5/10) and Fremont Middle School (4/10).</li>
+            <li key={6}>Paradise is located ~5 min to the Strip via Las Vegas Blvd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -332,6 +332,24 @@ export default async function SummerlinTheHillsSouthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Hills South</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Hills South spans 850 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>The Hills South was established in 1998 by Howard Hughes Corporation.</li>
+            <li key={2}>The Hills South contains 2,500+ homes with prices ranging from $600K–$3M+.</li>
+            <li key={3}>The Hills South is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in The Hills South range from $200–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Hills South include Palo Verde High School (8/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>The Hills South is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -332,6 +332,24 @@ export default async function SevenHillsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Seven Hills</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Seven Hills spans 1,300 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Seven Hills was established in 1996 by American Nevada Corporation.</li>
+            <li key={2}>Seven Hills contains 2,800+ homes with prices ranging from $500K–$7M+.</li>
+            <li key={3}>Seven Hills is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Seven Hills range from $200–$600/mo per month.</li>
+            <li key={5}>Top-rated schools serving Seven Hills include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Seven Hills is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

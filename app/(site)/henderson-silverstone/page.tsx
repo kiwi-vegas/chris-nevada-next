@@ -320,6 +320,24 @@ export default async function HendersonSilverstonePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Silverstone</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Silverstone spans ~700 acres in Henderson, Nevada (ZIP 89074, 89052).</li>
+            <li key={1}>Silverstone was established in 2000.</li>
+            <li key={2}>Silverstone contains 3,500+ homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Silverstone is a suburban · established community.</li>
+            <li key={4}>HOA fees in Silverstone range from $60–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Silverstone include Elise L. Wolff Elementary (8/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Silverstone is located ~20 min to the Strip via I-215 → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

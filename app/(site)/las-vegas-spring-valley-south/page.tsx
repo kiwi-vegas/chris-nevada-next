@@ -320,6 +320,24 @@ export default async function LasVegasSpringValleySouthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Spring Valley South</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Spring Valley South spans ~800 acres in Las Vegas, Nevada (ZIP 89147, 89148).</li>
+            <li key={1}>Spring Valley South was established in 1992 by Various Builders.</li>
+            <li key={2}>Spring Valley South contains 6,000+ homes with prices ranging from $350K–$700K.</li>
+            <li key={3}>Spring Valley South is a established · family · central community within Spring Valley.</li>
+            <li key={4}>HOA fees in Spring Valley South range from $50–$175/mo per month.</li>
+            <li key={5}>Top-rated schools serving Spring Valley South include Mabel W. Hoggard Elementary (7/10) and Walter Johnson Middle School (5/10).</li>
+            <li key={6}>Spring Valley South is located ~12 min to the Strip via Flamingo Rd East.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

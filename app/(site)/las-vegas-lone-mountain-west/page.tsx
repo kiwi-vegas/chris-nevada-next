@@ -320,6 +320,24 @@ export default async function LasVegasLoneMountainWestPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Lone Mountain West</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Lone Mountain West spans ~3,500 acres in Las Vegas, Nevada (ZIP 89166, 89149).</li>
+            <li key={1}>Lone Mountain West was established in 2015.</li>
+            <li key={2}>Lone Mountain West contains 5,000+ homes with prices ranging from $500K–$1M.</li>
+            <li key={3}>Lone Mountain West is a suburban · master-planned community.</li>
+            <li key={4}>HOA fees in Lone Mountain West range from $50–$200/mo per month.</li>
+            <li key={5}>Top-rated schools serving Lone Mountain West include Divich Elementary (7/10) and Rogich Middle School (7/10).</li>
+            <li key={6}>Lone Mountain West is located ~25 min to the Strip via US-95 South → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

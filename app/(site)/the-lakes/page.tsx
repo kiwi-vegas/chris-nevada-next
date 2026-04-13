@@ -320,6 +320,24 @@ export default async function TheLakesPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Lakes</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Lakes spans ~1,000 acres in Las Vegas, Nevada (ZIP 89117, 89128).</li>
+            <li key={1}>The Lakes was established in 1989 by The Collins Brothers.</li>
+            <li key={2}>The Lakes contains 3,500+ homes with prices ranging from $400K–$1.2M.</li>
+            <li key={3}>The Lakes is a waterfront · master-planned community.</li>
+            <li key={4}>HOA fees in The Lakes range from $75–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Lakes include Helen Jydstrup Elementary (7/10) and Walter Johnson Middle School (6/10).</li>
+            <li key={6}>The Lakes is located ~10 min to Downtown Summerlin via W Sahara Ave.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

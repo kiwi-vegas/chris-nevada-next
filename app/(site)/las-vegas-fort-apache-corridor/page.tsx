@@ -320,6 +320,24 @@ export default async function LasVegasFortApacheCorridorPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Fort Apache Corridor</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Fort Apache Corridor spans ~12 sq mi in Las Vegas, Nevada (ZIP 89148, 89135).</li>
+            <li key={1}>Fort Apache Corridor was established in 1990s.</li>
+            <li key={2}>Fort Apache Corridor contains 20,000+ homes with prices ranging from $400K–$800K.</li>
+            <li key={3}>Fort Apache Corridor is a suburban · upscale corridor community.</li>
+            <li key={4}>HOA fees in Fort Apache Corridor range from $50–$250/mo per month.</li>
+            <li key={5}>Top-rated schools serving Fort Apache Corridor include Bonner Elementary (7/10) and Sig Rogich Middle School (7/10).</li>
+            <li key={6}>Fort Apache Corridor is located ~15 min to the Strip via Flamingo Rd / Spring Mountain Rd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

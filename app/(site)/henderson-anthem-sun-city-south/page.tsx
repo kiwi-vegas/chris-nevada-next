@@ -328,6 +328,24 @@ export default async function HendersonAnthemSunCitySouthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Sun City Anthem South</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Sun City Anthem South spans ~800 acres in Henderson, Nevada (ZIP 89044, 89052).</li>
+            <li key={1}>Sun City Anthem South was established in 2001 by Del Webb / Pulte Homes.</li>
+            <li key={2}>Sun City Anthem South contains 2,800+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Sun City Anthem South is a 55+ active adult community within Sun City Anthem.</li>
+            <li key={4}>HOA fees in Sun City Anthem South range from $180–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Sun City Anthem South include Henderson International School (A).</li>
+            <li key={6}>Sun City Anthem South is located ~25 min to the Strip via I-215 → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

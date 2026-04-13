@@ -332,6 +332,24 @@ export default async function CelloTowerPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Cello Tower</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Cello Tower spans ~2 acres in Las Vegas, Nevada (ZIP 89101).</li>
+            <li key={1}>Cello Tower was established in 2025 by Cello Group.</li>
+            <li key={2}>Cello Tower contains 240 homes with prices ranging from $700K–$4.5M+.</li>
+            <li key={3}>Cello Tower is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Cello Tower range from $500–$2,500/mo per month.</li>
+            <li key={5}>Top-rated schools serving Cello Tower include Las Vegas Academy of the Arts (9/10) and Rancho High School (5/10).</li>
+            <li key={6}>Cello Tower is located ~5 min to the Strip via Las Vegas Blvd.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -320,6 +320,24 @@ export default async function NorthLasVegasAlianteNorthPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Aliante North</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Aliante North spans ~400 acres in North Las Vegas, Nevada (ZIP 89084).</li>
+            <li key={1}>Aliante North was established in 2003 by Del Webb / Pulte Group / American Nevada Corp.</li>
+            <li key={2}>Aliante North contains 2,500+ homes with prices ranging from $350K–$550K.</li>
+            <li key={3}>Aliante North is a master-planned · family community within Aliante.</li>
+            <li key={4}>HOA fees in Aliante North range from $75–$175/mo per month.</li>
+            <li key={5}>Top-rated schools serving Aliante North include Sandra L. Thompson Elementary (6/10) and Elise L. Wolff Elementary (7/10).</li>
+            <li key={6}>Aliante North is located ~22 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

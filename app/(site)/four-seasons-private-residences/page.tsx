@@ -332,6 +332,24 @@ export default async function FourSeasonsPrivateResidencesPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Four Seasons Private Residences</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Four Seasons Private Residences spans ~15 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>Four Seasons Private Residences was established in 2024 by Discovery Land Company / MacDonald Highlands.</li>
+            <li key={2}>Four Seasons Private Residences contains 171 homes with prices ranging from $3.67M–$28.95M+.</li>
+            <li key={3}>Four Seasons Private Residences is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Four Seasons Private Residences range from $2,000–$5,000+/mo per month.</li>
+            <li key={5}>Top-rated schools serving Four Seasons Private Residences include John C. Vanderburg Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Four Seasons Private Residences is located ~20 min to the Strip via I-215 West → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

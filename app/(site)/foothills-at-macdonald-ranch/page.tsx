@@ -337,6 +337,24 @@ export default async function FoothillsAtMacdonaldRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Foothills at MacDonald Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Foothills at MacDonald Ranch spans 400 acres in Henderson, Nevada (ZIP 89012).</li>
+            <li key={1}>Foothills at MacDonald Ranch was established in 2000 by MacDonald Development Company.</li>
+            <li key={2}>Foothills at MacDonald Ranch contains 350+ homes with prices ranging from $1M–$4M+.</li>
+            <li key={3}>Foothills at MacDonald Ranch is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Foothills at MacDonald Ranch range from $300–$800/mo per month.</li>
+            <li key={5}>Top-rated schools serving Foothills at MacDonald Ranch include Coronado High School (8/10) and Bob Miller Middle School (7/10).</li>
+            <li key={6}>Foothills at MacDonald Ranch is located ~20 min to the Strip via I-215 W → I-15 N.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

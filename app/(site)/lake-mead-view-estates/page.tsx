@@ -312,6 +312,24 @@ export default async function LakeMeadViewEstatesPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Lake Mead View Estates</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Lake Mead View Estates spans ~200 acres in Henderson, Nevada (ZIP 89011).</li>
+            <li key={1}>Lake Mead View Estates was established in 2004 by Various Builders.</li>
+            <li key={2}>Lake Mead View Estates contains ~300 homes with prices ranging from $600K–$2M+.</li>
+            <li key={3}>Lake Mead View Estates is a luxury · lake views community within Lake Las Vegas.</li>
+            <li key={4}>HOA fees in Lake Mead View Estates range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Lake Mead View Estates include Elise L. Wolff Elementary (8/10) and Jack Lund Schofield Middle School (7/10).</li>
+            <li key={6}>Lake Mead View Estates is located ~30 min to the Strip via Lake Mead Pkwy → I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

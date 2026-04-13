@@ -320,6 +320,24 @@ export default async function WhitneyRanchPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Whitney Ranch</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Whitney Ranch spans ~1,800 acres in Henderson, Nevada (ZIP 89014, 89074).</li>
+            <li key={1}>Whitney Ranch was established in 1992 by American Nevada Corporation.</li>
+            <li key={2}>Whitney Ranch contains 5,500+ homes with prices ranging from $350K–$600K.</li>
+            <li key={3}>Whitney Ranch is a master-planned · established community.</li>
+            <li key={4}>HOA fees in Whitney Ranch range from $50–$120/mo per month.</li>
+            <li key={5}>Top-rated schools serving Whitney Ranch include Nate Mack Elementary (8/10) and Jack Lund Schofield Middle School (6/10).</li>
+            <li key={6}>Whitney Ranch is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -324,6 +324,24 @@ export default async function TuscanyVillagePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Tuscany Village</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Tuscany Village spans ~450 acres in Henderson, Nevada (ZIP 89074).</li>
+            <li key={1}>Tuscany Village was established in 1997 by Tuscany Golf Management.</li>
+            <li key={2}>Tuscany Village contains 1,200+ homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Tuscany Village is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Tuscany Village range from $150–$350/mo per month.</li>
+            <li key={5}>Top-rated schools serving Tuscany Village include Nate Mack Elementary (8/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Tuscany Village is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

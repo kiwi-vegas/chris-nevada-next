@@ -320,6 +320,24 @@ export default async function SummerlinTheCliffsPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About The Cliffs</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>The Cliffs spans 380 acres in Las Vegas, Nevada (ZIP 89135).</li>
+            <li key={1}>The Cliffs was established in 2003 by Howard Hughes Corporation.</li>
+            <li key={2}>The Cliffs contains 1,800+ homes with prices ranging from $600K–$1.2M.</li>
+            <li key={3}>The Cliffs is a master-planned · elevated living community within Summerlin.</li>
+            <li key={4}>HOA fees in The Cliffs range from $125–$300/mo per month.</li>
+            <li key={5}>Top-rated schools serving The Cliffs include Sig Rogich Middle School (10/10) and Palo Verde High School (8/10).</li>
+            <li key={6}>The Cliffs is located ~20 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

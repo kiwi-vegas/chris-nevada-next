@@ -320,6 +320,24 @@ export default async function AnthemParkPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Anthem Park</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Anthem Park spans ~350 acres in Henderson, Nevada (ZIP 89052).</li>
+            <li key={1}>Anthem Park was established in 2000 by Del Webb / Pulte Group.</li>
+            <li key={2}>Anthem Park contains 1,800+ homes with prices ranging from $500K–$800K.</li>
+            <li key={3}>Anthem Park is a master-planned · park-oriented community within Anthem.</li>
+            <li key={4}>HOA fees in Anthem Park range from $75–$180/mo per month.</li>
+            <li key={5}>Top-rated schools serving Anthem Park include Elise L. Wolff Elementary (9/10) and Del E. Webb Middle School (7/10).</li>
+            <li key={6}>Anthem Park is located ~20 min to the Strip via I-215 → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

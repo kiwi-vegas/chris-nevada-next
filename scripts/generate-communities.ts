@@ -53,6 +53,7 @@ interface CommunityData {
   ylopoCity: string
   ylopoKeywords: string
   ylopoMinPrice: number
+  topFacts?: string[]
   pageType?: 'community' | 'hub' | 'lifestyle'
 }
 
@@ -381,6 +382,18 @@ export default async function ${componentName}() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top ${c.topFacts?.length || 7} Facts About ${c.name}</h2>
+          </div>
+          <ol className="top-facts-list">
+${(c.topFacts || []).map((f: string, i: number) => `            <li key={${i}}>${f.replace(/'/g, "\\'")}</li>`).join('\n')}
+          </ol>
         </div>
       </section>
 

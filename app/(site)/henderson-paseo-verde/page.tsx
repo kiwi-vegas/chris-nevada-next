@@ -320,6 +320,24 @@ export default async function HendersonPaseoVerdePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Paseo Verde</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Paseo Verde spans ~1,200 acres in Henderson, Nevada (ZIP 89012, 89052).</li>
+            <li key={1}>Paseo Verde was established in 1996.</li>
+            <li key={2}>Paseo Verde contains 4,500+ homes with prices ranging from $400K–$700K.</li>
+            <li key={3}>Paseo Verde is a suburban · established community.</li>
+            <li key={4}>HOA fees in Paseo Verde range from $50–$150/mo per month.</li>
+            <li key={5}>Top-rated schools serving Paseo Verde include Elise L. Wolff Elementary (8/10) and Del E. Webb Middle School (8/10).</li>
+            <li key={6}>Paseo Verde is located ~20 min to the Strip via I-215 → I-15 North.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

@@ -332,6 +332,24 @@ export default async function AstraAtLaMadrePeaksPage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Astra at La Madre Peaks</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Astra at La Madre Peaks spans ~250 acres in Las Vegas, Nevada (ZIP 89138).</li>
+            <li key={1}>Astra at La Madre Peaks was established in 2024 by Howard Hughes Corporation.</li>
+            <li key={2}>Astra at La Madre Peaks contains 167 homes with prices ranging from $2M+ (lots).</li>
+            <li key={3}>Astra at La Madre Peaks is a guard-gated community with 24-hour staffed entry and security patrols.</li>
+            <li key={4}>HOA fees in Astra at La Madre Peaks range from $400–$1,000/mo per month.</li>
+            <li key={5}>Top-rated schools serving Astra at La Madre Peaks include Bonner Elementary School (9/10) and Sig Rogich Middle School (10/10).</li>
+            <li key={6}>Astra at La Madre Peaks is located ~25 min to the Strip via Summerlin Pkwy → I-15.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">

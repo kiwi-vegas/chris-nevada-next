@@ -320,6 +320,24 @@ export default async function AliantePage() {
         </div>
       </section>
 
+      <section id="top-facts" className="top-facts-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Quick Facts</span>
+            <h2>Top 7 Facts About Aliante</h2>
+          </div>
+          <ol className="top-facts-list">
+            <li key={0}>Aliante spans 1,905 acres in North Las Vegas, Nevada (ZIP 89084, 89085).</li>
+            <li key={1}>Aliante was established in 2003 by American West Development / North Valley Enterprises.</li>
+            <li key={2}>Aliante contains 6,500+ homes with prices ranging from $300K–$650K.</li>
+            <li key={3}>Aliante is a master-planned community community.</li>
+            <li key={4}>HOA fees in Aliante range from $50–$175/mo per month.</li>
+            <li key={5}>Top-rated schools serving Aliante include John C. Bass Elementary (7/10) and Kathleen & Tim Harney Middle (6/10).</li>
+            <li key={6}>Aliante is located ~20 min to the Strip via I-15 South.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="highlights">
         <div className="container">
           <div className="section-header">
