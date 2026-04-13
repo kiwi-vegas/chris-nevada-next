@@ -413,6 +413,35 @@ ${c.parks.map(p => `              { name: '${p.name.replace(/'/g, "\\'")}', addr
         </div>
       </section>
 
+      <section id="hoa" className="hoa-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">HOA</span>
+            <h2>HOA Information for ${c.name}</h2>
+          </div>
+          <div className="hoa-grid">
+            <div className="hoa-fees-col">
+              <h3>Fees &amp; Management</h3>
+              <div className="hoa-fee-row"><span>Monthly HOA Range</span><strong>${c.hoaRange}</strong></div>
+              <div className="hoa-fee-row"><span>Guard-Gated</span><strong>${c.guardGated ? 'Yes — staffed gate' : 'No'}</strong></div>
+              <div className="hoa-fee-row"><span>Community Type</span><strong>${c.type}</strong></div>
+              <div className="hoa-management">
+                <p className="hoa-mgmt-label">Management</p>
+                <p className="hoa-mgmt-value">${c.parentCommunity ? c.parentCommunity + ' Master Association + Sub-HOA' : 'Community Association'}</p>
+              </div>
+              <p style={{ marginTop: '16px', fontSize: '11px', color: 'var(--text-faint)', fontStyle: 'italic' }}>HOA fees are subject to change. Verify current fees with the management company before purchase.</p>
+            </div>
+            <div className="hoa-amenities-col">
+              <h3>What HOA Typically Covers</h3>
+              <ul className="hoa-amenity-list">
+                {[${c.guardGated ? "'24-hour guard gate staffing and security patrols'," : ''}'Common area landscaping and maintenance','Community parks and trail maintenance','Neighborhood street maintenance',${c.guardGated ? "'Perimeter wall and gate maintenance'," : ''}'Exterior architectural standards enforcement','Reserve fund contributions'${c.type.toLowerCase().includes('golf') ? ",'Golf course common area adjacency'" : ''}${c.type.toLowerCase().includes('55+') ? ",'Recreation center and pool maintenance','Social programming and activities'" : ''}].map((a: string) => <li key={a}>{a}</li>)}
+              </ul>${c.guardGated ? `
+              <div className="hoa-gated-badge"><span>Guard-Gated Community</span></div>` : ''}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="schools" className="schools-v2">
         <div className="container">
           <div className="section-header">
@@ -684,9 +713,13 @@ export default function ${wrapperName}() {
 
 // ─── Main ────────────────────────────────────────────────────────────────────
 
+// Pages with custom hand-edits that should NOT be overwritten by the generator
+const SKIP_SLUGS = new Set(['summerlin', 'new-summerlin', 'henderson', 'north-las-vegas'])
+
 const args = process.argv.slice(2)
 const slugFilter = args.find(a => a.startsWith('--slug='))?.split('=')[1]
 const dryRun = args.includes('--dry-run')
+const forceAll = args.includes('--force')
 
 const dataPath = join(process.cwd(), 'scripts', 'community-data.json')
 if (!existsSync(dataPath)) {
@@ -702,6 +735,11 @@ console.log(`Generating ${filtered.length} community pages...`)
 for (const c of filtered) {
   if (c.pageType === 'hub' || c.pageType === 'lifestyle') {
     console.log(`  Skipping hub/lifestyle page: ${c.slug} (requires custom template)`)
+    continue
+  }
+
+  if (SKIP_SLUGS.has(c.slug) && !forceAll && !slugFilter) {
+    console.log(`  Skipping ${c.slug} (hand-edited — use --force to overwrite)`)
     continue
   }
 

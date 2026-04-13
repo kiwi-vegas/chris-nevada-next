@@ -398,6 +398,34 @@ export default async function CentennialHillsGardenPage() {
         </div>
       </section>
 
+      <section id="hoa" className="hoa-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">HOA</span>
+            <h2>HOA Information for Garden at Centennial Hills</h2>
+          </div>
+          <div className="hoa-grid">
+            <div className="hoa-fees-col">
+              <h3>Fees &amp; Management</h3>
+              <div className="hoa-fee-row"><span>Monthly HOA Range</span><strong>$50–$140/mo</strong></div>
+              <div className="hoa-fee-row"><span>Guard-Gated</span><strong>No</strong></div>
+              <div className="hoa-fee-row"><span>Community Type</span><strong>Suburban · Established</strong></div>
+              <div className="hoa-management">
+                <p className="hoa-mgmt-label">Management</p>
+                <p className="hoa-mgmt-value">Centennial Hills Master Association + Sub-HOA</p>
+              </div>
+              <p style={{ marginTop: '16px', fontSize: '11px', color: 'var(--text-faint)', fontStyle: 'italic' }}>HOA fees are subject to change. Verify current fees with the management company before purchase.</p>
+            </div>
+            <div className="hoa-amenities-col">
+              <h3>What HOA Typically Covers</h3>
+              <ul className="hoa-amenity-list">
+                {['Common area landscaping and maintenance','Community parks and trail maintenance','Neighborhood street maintenance','Exterior architectural standards enforcement','Reserve fund contributions'].map((a: string) => <li key={a}>{a}</li>)}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="schools" className="schools-v2">
         <div className="container">
           <div className="section-header">

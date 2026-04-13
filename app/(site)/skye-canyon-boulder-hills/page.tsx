@@ -398,6 +398,34 @@ export default async function SkyeCanyonBoulderHillsPage() {
         </div>
       </section>
 
+      <section id="hoa" className="hoa-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">HOA</span>
+            <h2>HOA Information for Boulder Hills at Skye Canyon</h2>
+          </div>
+          <div className="hoa-grid">
+            <div className="hoa-fees-col">
+              <h3>Fees &amp; Management</h3>
+              <div className="hoa-fee-row"><span>Monthly HOA Range</span><strong>$90–$180/mo</strong></div>
+              <div className="hoa-fee-row"><span>Guard-Gated</span><strong>No</strong></div>
+              <div className="hoa-fee-row"><span>Community Type</span><strong>New Construction · Family</strong></div>
+              <div className="hoa-management">
+                <p className="hoa-mgmt-label">Management</p>
+                <p className="hoa-mgmt-value">Skye Canyon Master Association + Sub-HOA</p>
+              </div>
+              <p style={{ marginTop: '16px', fontSize: '11px', color: 'var(--text-faint)', fontStyle: 'italic' }}>HOA fees are subject to change. Verify current fees with the management company before purchase.</p>
+            </div>
+            <div className="hoa-amenities-col">
+              <h3>What HOA Typically Covers</h3>
+              <ul className="hoa-amenity-list">
+                {['Common area landscaping and maintenance','Community parks and trail maintenance','Neighborhood street maintenance','Exterior architectural standards enforcement','Reserve fund contributions'].map((a: string) => <li key={a}>{a}</li>)}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="schools" className="schools-v2">
         <div className="container">
           <div className="section-header">
