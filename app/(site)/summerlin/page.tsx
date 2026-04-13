@@ -425,28 +425,51 @@ export default async function SummerlinPage() {
           <h2>SUMMERLIN NEIGHBORHOODS</h2>
         </div>
         <div className="container">
-          <div className="villages-grid">
+          <div className="comm-hub-grid">
             {[
-              { name: 'The Ridges', href: '/summerlin-the-ridges/', type: 'Guard-Gated \u00B7 Ultra-Luxury', desc: '793 acres of the most exclusive addresses in Las Vegas. Bear\u2019s Best golf course.', price: 'From $2M+' },
-              { name: 'The Paseos', href: '/the-paseos/', type: 'Family \u00B7 Master-Planned', desc: 'One of Summerlin\u2019s largest villages. Fox Hill Park, trails, and top-rated schools.', price: 'From $550K' },
-              { name: 'The Peaks', href: '/the-peaks/', type: 'Guard-Gated \u00B7 Luxury', desc: 'Guard-gated luxury village with active new construction. Includes Ascension.', price: 'From $1M+' },
-              { name: 'Grand Park', href: '/summerlin-grand-park/', type: 'New Construction \u00B7 Growing', desc: 'Summerlin\u2019s newest and largest village. 13 sub-communities from $400K to $3M+.', price: 'From $400K' },
-              { name: 'Stonebridge', href: '/summerlin-stonebridge/', type: 'Modern \u00B7 55+', desc: 'Newest major village. Contemporary architecture with Heritage 55+ section.', price: 'From $550K' },
-              { name: 'The Canyons', href: '/summerlin-the-canyons/', type: 'Established \u00B7 Guard-Gated', desc: 'Diverse village with guard-gated enclaves including Bellacere and Eagle Rock.', price: 'From $500K' },
-              { name: 'The Hills South', href: '/summerlin-the-hills-south/', type: 'Guard-Gated \u00B7 Golf', desc: 'Four guard-gated enclaves including Country Club Hills and Tournament Hills.', price: 'From $600K' },
-              { name: 'Siena', href: '/summerlin-siena/', type: 'Guard-Gated \u00B7 55+', desc: 'Guard-gated village with Siena Golf Club. Sun Colony 55+ enclave.', price: 'From $400K' },
-              { name: 'La Madre Peaks', href: '/summerlin-la-madre-peaks/', type: 'Luxury \u00B7 New Construction', desc: 'Summerlin West luxury. Includes Astra custom lots from $2M+.', price: 'From $800K' },
-              { name: 'Red Rock CC', href: '/red-rock-country-club/', type: 'Guard-Gated \u00B7 Golf', desc: 'Two Arnold Palmer courses. Guard-gated golf community living.', price: 'From $800K' },
-              { name: 'The Summit Club', href: '/the-summit-club/', type: 'Ultra-Private \u00B7 Golf', desc: 'Las Vegas\u2019 most exclusive community. Tom Fazio golf. By invitation.', price: 'From $5M+' },
-              { name: 'Sun City Summerlin', href: '/sun-city-summerlin/', type: '55+ Active Adult', desc: '7,779 homes. Multiple golf courses, fitness centers, and social clubs.', price: 'From $300K' },
+              {n:'The Ridges',h:'/summerlin-the-ridges/',t:'Guard-Gated · Ultra-Luxury',p:'$2M–$20M+'},
+              {n:'The Summit Club',h:'/the-summit-club/',t:'Ultra-Private · Golf',p:'$5M–$30M+'},
+              {n:'The Peaks',h:'/the-peaks/',t:'Guard-Gated · Luxury',p:'$1M–$4M+'},
+              {n:'The Paseos',h:'/the-paseos/',t:'Family · Master-Planned',p:'$550K–$1.2M'},
+              {n:'Grand Park',h:'/summerlin-grand-park/',t:'New Construction',p:'$400K–$3M+'},
+              {n:'The Canyons',h:'/summerlin-the-canyons/',t:'Guard-Gated Enclaves',p:'$500K–$4M+'},
+              {n:'The Hills South',h:'/summerlin-the-hills-south/',t:'Guard-Gated · Golf',p:'$600K–$3M+'},
+              {n:'Stonebridge',h:'/summerlin-stonebridge/',t:'Modern · 55+',p:'$550K–$1M'},
+              {n:'Siena',h:'/summerlin-siena/',t:'Guard-Gated · 55+',p:'$400K–$900K'},
+              {n:'La Madre Peaks',h:'/summerlin-la-madre-peaks/',t:'Luxury · New Construction',p:'$800K–$5M+'},
+              {n:'Red Rock CC',h:'/red-rock-country-club/',t:'Guard-Gated · Golf',p:'$800K–$3M+'},
+              {n:'Sun City Summerlin',h:'/sun-city-summerlin/',t:'55+ Active Adult',p:'$300K–$700K'},
+              {n:'The Arbors',h:'/summerlin-the-arbors/',t:'Summerlin North',p:'$450K–$800K'},
+              {n:'The Hills',h:'/summerlin-the-hills/',t:'Guard-Gated',p:'$500K–$900K'},
+              {n:'The Trails',h:'/summerlin-the-trails/',t:'Guard-Gated',p:'$500K–$2M+'},
+              {n:'The Vistas',h:'/summerlin-the-vistas/',t:'Guard-Gated',p:'$450K–$1.5M+'},
+              {n:'The Crossing',h:'/summerlin-the-crossing/',t:'Summerlin North',p:'$400K–$700K'},
+              {n:'The Willows',h:'/summerlin-the-willows/',t:'Summerlin North',p:'$450K–$750K'},
+              {n:'The Cliffs',h:'/summerlin-the-cliffs/',t:'Summerlin South',p:'$600K–$1.2M'},
+              {n:'The Gardens',h:'/summerlin-the-gardens/',t:'Summerlin South',p:'$450K–$750K'},
+              {n:'The Mesa',h:'/summerlin-the-mesa/',t:'New Construction',p:'$600K–$1M'},
+              {n:'The Pueblo',h:'/summerlin-the-pueblo/',t:'Summerlin South',p:'$400K–$650K'},
+              {n:'Summerlin Centre',h:'/summerlin-centre/',t:'Walkable · Central',p:'$450K–$800K'},
+              {n:'Discovery',h:'/summerlin-discovery/',t:'New Construction',p:'$450K–$750K'},
+              {n:'Kestrel',h:'/summerlin-kestrel/',t:'Summerlin West · New',p:'$500K–$800K'},
+              {n:'Redpoint',h:'/summerlin-redpoint/',t:'Summerlin West · New',p:'$650K–$2M+'},
+              {n:'Reverence',h:'/summerlin-reverence/',t:'Summerlin West · New',p:'$600K–$1.5M'},
+              {n:'Bellacere',h:'/bellacere/',t:'Guard-Gated · Ultra-Luxury',p:'$1.5M–$5M+'},
+              {n:'Mesa Ridge',h:'/mesa-ridge/',t:'Guard-Gated · Luxury',p:'$1M–$3M+'},
+              {n:'Ascension',h:'/ascension-at-the-peaks/',t:'Guard-Gated · New',p:'$1M–$4M+'},
+              {n:'Section 10',h:'/section-10/',t:'Historic · Custom',p:'$800K–$3M+'},
+              {n:'Trilogy',h:'/trilogy-at-summerlin/',t:'55+ Guard-Gated',p:'$500K–$800K'},
+              {n:'Regency',h:'/regency-at-summerlin/',t:'55+ Guard-Gated',p:'$500K–$800K+'},
+              {n:'Heritage',h:'/heritage-at-stonebridge/',t:'55+ New Construction',p:'$500K–$700K'},
             ].map(v => (
-              <a href={v.href} className="village-card" key={v.name} style={{ textDecoration: 'none' }}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
+              <a href={v.h} className="comm-hub-card" key={v.n} style={{ textDecoration: 'none' }}>
+                <div><span className="comm-hub-card-name">{v.n}</span><span style={{display:'block',fontSize:'11px',color:'var(--text-faint)',marginTop:'2px'}}>{v.t}</span></div>
+                <span className="comm-hub-card-price">{v.p}</span>
               </a>
             ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '24px' }}>
+            <a href="/communities/#summerlin" className="btn-outline" style={{ borderColor: 'var(--navy)', color: 'var(--navy)' }}>View All 65 Summerlin Communities &rarr;</a>
           </div>
         </div>
       </section>
