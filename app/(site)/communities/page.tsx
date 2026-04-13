@@ -101,7 +101,7 @@ export default function CommunitiesPage() {
               { label: 'Golf Communities', href: '/golf-communities/' },
               { label: 'Vintage & Historic', href: '/vintage-historic-neighborhoods/' },
             ].map(item => (
-              <a key={item.label} href={item.href} className="comm-hub-nav-item" style={{ background: 'var(--navy)', color: 'var(--white)', borderColor: 'var(--navy)' }}>
+              <a key={item.label} href={item.href} className="comm-hub-nav-item">
                 {item.label}
               </a>
             ))}
