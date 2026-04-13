@@ -25,7 +25,21 @@ export default function Nav() {
         <div className="nav-inner">
           {/* LEFT LINKS */}
           <div className="nav-left">
-            <Link href="/buyers/" className="nav-link">Buy a Home</Link>
+            <div className="nav-item">
+              <a href="/buyers/" className="nav-trigger">
+                Buy a Home
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M6 9l6 6 6-6"/></svg>
+              </a>
+              <div className="nav-dropdown">
+                <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer">Browse Homes for Sale</a>
+                <Link href="/buyers/personalized-home-search/">Get Listing Alerts</Link>
+                <Link href="/buyers/first-time-buyers/">First Time Buyers</Link>
+                <hr />
+                <Link href="/buyers/mortgage-calculator/">Mortgage Calculator</Link>
+                <Link href="/buyers/mortgage-pre-approval/">Get Pre-Approved</Link>
+                <Link href="/new-construction/">New Construction</Link>
+              </div>
+            </div>
             <Link href="/sellers/" className="nav-link">Sell a Home</Link>
             <a href="https://nevadarealestategroup.hifello.com/lp/63ef80d5109ae10018e62028" target="_blank" rel="noopener noreferrer" className="nav-link">Get a Cash Offer</a>
           </div>
