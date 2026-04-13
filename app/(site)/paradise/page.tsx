@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Paradise Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Paradise homes for sale in Las Vegas, NV. $250K–$2M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/paradise' },
   }
 }
 

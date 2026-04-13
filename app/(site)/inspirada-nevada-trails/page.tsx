@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Nevada Trails at Inspirada Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Nevada Trails at Inspirada homes for sale in Henderson, NV. $450K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/inspirada-nevada-trails' },
   }
 }
 

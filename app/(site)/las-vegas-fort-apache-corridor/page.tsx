@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Fort Apache Corridor Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Fort Apache Corridor homes for sale in Las Vegas, NV. $400K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/las-vegas-fort-apache-corridor' },
   }
 }
 

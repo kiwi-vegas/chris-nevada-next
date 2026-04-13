@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Southfork Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Southfork homes for sale in Henderson, NV. $450K–$750K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/southfork-henderson' },
   }
 }
 

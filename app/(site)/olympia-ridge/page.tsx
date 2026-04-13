@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Olympia Ridge Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Olympia Ridge homes for sale in Las Vegas, NV. $1.5M–$5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/olympia-ridge' },
   }
 }
 

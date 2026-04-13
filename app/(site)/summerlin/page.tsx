@@ -131,6 +131,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Summerlin Las Vegas Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Summerlin homes for sale in Las Vegas. $450K\u2013$10M+ \u2014 from condos to custom estates in 20+ villages. Schools, HOA info, builder options. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin' },
   }
 }
 

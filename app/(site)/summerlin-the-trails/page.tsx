@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'The Trails Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse The Trails homes for sale in Las Vegas, NV. $500K–$2M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-the-trails' },
   }
 }
 

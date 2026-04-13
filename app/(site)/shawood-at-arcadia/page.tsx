@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'SHAWOOD at Arcadia Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse SHAWOOD at Arcadia homes for sale in Las Vegas, NV. $1.56M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/shawood-at-arcadia' },
   }
 }
 

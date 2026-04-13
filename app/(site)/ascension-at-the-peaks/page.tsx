@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Ascension at The Peaks Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Ascension at The Peaks homes for sale in Las Vegas, NV. $1M–$4M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/ascension-at-the-peaks' },
   }
 }
 

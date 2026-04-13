@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Terracina Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Terracina homes for sale in Henderson, NV. $1M–$3M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/seven-hills-terracina' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Reverence Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Reverence homes for sale in Las Vegas, NV. $600K–$1.5M. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-reverence' },
   }
 }
 

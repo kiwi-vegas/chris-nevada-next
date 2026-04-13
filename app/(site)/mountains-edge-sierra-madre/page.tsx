@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Sierra Madre at Mountains Edge Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Sierra Madre at Mountains Edge homes for sale in Las Vegas, NV. $450K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/mountains-edge-sierra-madre' },
   }
 }
 

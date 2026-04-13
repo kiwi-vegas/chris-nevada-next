@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Blue Diamond Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Blue Diamond homes for sale in Blue Diamond, NV. $500K–$2M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/blue-diamond' },
   }
 }
 

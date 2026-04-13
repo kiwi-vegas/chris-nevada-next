@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'North Las Vegas Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse North Las Vegas homes for sale in North Las Vegas, NV. $250K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/north-las-vegas' },
   }
 }
 
@@ -311,14 +312,7 @@ export default async function NorthLasVegasPage() {
         </div>
       </section>
 
-      <section id="villages">
-        <div className="villages-header-bar"><h2>NORTH LAS VEGAS COMMUNITIES</h2></div>
-        <div className="container">
-          <div className="villages-grid">
-            {[{name:'Aliante',href:'/aliante/',type:'Master-Planned · Golf',price:'From $300K'},{name:'Skye Canyon',href:'/skye-canyon/',type:'New Construction',price:'From $400K'},{name:'Centennial Hills',href:'/centennial-hills/',type:'Master-Planned',price:'From $350K'},{name:'Providence',href:'/providence/',type:'Master-Planned',price:'From $350K'},{name:'Lone Mountain',href:'/lone-mountain/',type:'Semi-Rural',price:'From $400K'},{name:'Heartland at Tule Springs',href:'/heartland-tule-springs/',type:'New Construction',price:'From $350K'},{name:'Sunstone',href:'/sunstone/',type:'New Construction',price:'From $380K'},{name:'Sun City Aliante',href:'/sun-city-aliante/',type:'55+ Active Adult',price:'From $300K'},{name:'Park Highlands',href:'/north-las-vegas-park-highlands/',type:'Master-Planned',price:'From $350K'},{name:'Craig Ranch',href:'/craig-ranch/',type:'Family · Parks',price:'From $300K'},{name:'Eldorado',href:'/eldorado/',type:'Established',price:'From $300K'},{name:'Tule Springs',href:'/tule-springs/',type:'Established',price:'From $300K'}].map((v:any)=>(<a href={v.href} className="village-card" key={v.name} style={{textDecoration:'none'}}><div className="village-name">{v.name}</div><div className="village-type">{v.type}</div><div className="village-price">{v.price}</div></a>))}
-          </div>
-        </div>
-      </section>
+      <section id="villages"><div className="villages-header-bar"><h2>NORTH LAS VEGAS COMMUNITIES</h2></div><div className="container"><div className="villages-grid">{[{name:'Aliante',href:'/aliante/',type:'Master-Planned · Golf',price:'From $300K'},{name:'Skye Canyon',href:'/skye-canyon/',type:'New Construction',price:'From $400K'},{name:'Centennial Hills',href:'/centennial-hills/',type:'Master-Planned',price:'From $350K'},{name:'Providence',href:'/providence/',type:'Master-Planned',price:'From $350K'},{name:'Lone Mountain',href:'/lone-mountain/',type:'Semi-Rural',price:'From $400K'},{name:'Heartland at Tule Springs',href:'/heartland-tule-springs/',type:'New Construction',price:'From $350K'},{name:'Sunstone',href:'/sunstone/',type:'New Construction',price:'From $380K'},{name:'Sun City Aliante',href:'/sun-city-aliante/',type:'55+ Active Adult',price:'From $300K'},{name:'Park Highlands',href:'/north-las-vegas-park-highlands/',type:'Master-Planned',price:'From $350K'},{name:'Craig Ranch',href:'/craig-ranch/',type:'Family · Parks',price:'From $300K'},{name:'Eldorado',href:'/eldorado/',type:'Established',price:'From $300K'},{name:'Tule Springs',href:'/tule-springs/',type:'Established',price:'From $300K'}].map((v:any)=>(<a href={v.href} className="village-card" key={v.name} style={{textDecoration:'none'}}><div className="village-name">{v.name}</div><div className="village-type">{v.type}</div><div className="village-price">{v.price}</div></a>))}</div></div></section>
 
       <section id="highlights">
         <div className="container">

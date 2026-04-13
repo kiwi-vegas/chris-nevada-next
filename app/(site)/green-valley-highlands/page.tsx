@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Green Valley Highlands Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Green Valley Highlands homes for sale in Henderson, NV. $500K–$1M. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/green-valley-highlands' },
   }
 }
 

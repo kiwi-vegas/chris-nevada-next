@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Mission Hills Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Mission Hills homes for sale in Henderson, NV. $400K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/mission-hills' },
   }
 }
 

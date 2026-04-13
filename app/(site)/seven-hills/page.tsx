@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Seven Hills Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Seven Hills homes for sale in Henderson, NV. $500K–$7M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/seven-hills' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Rancho Bel Air Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Rancho Bel Air homes for sale in Las Vegas, NV. $1M–$5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/rancho-bel-air' },
   }
 }
 

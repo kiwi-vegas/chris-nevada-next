@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Sun City Anthem Center Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Sun City Anthem Center homes for sale in Henderson, NV. $400K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/anthem-sun-city-anthem-center' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'El Dorado Springs Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse El Dorado Springs homes for sale in North Las Vegas, NV. $300K–$500K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/north-las-vegas-el-dorado-springs' },
   }
 }
 

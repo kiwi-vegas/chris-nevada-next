@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'The Summit Club Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse The Summit Club homes for sale in Las Vegas, NV. $5M–$30M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/the-summit-club' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Four Seasons Private Residences Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Four Seasons Private Residences homes for sale in Henderson, NV. $3.67M–$28.95M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/four-seasons-private-residences' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Summerlin Centre Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Summerlin Centre homes for sale in Las Vegas, NV. $450K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-centre' },
   }
 }
 

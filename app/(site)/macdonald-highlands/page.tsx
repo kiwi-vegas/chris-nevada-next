@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'MacDonald Highlands Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse MacDonald Highlands homes for sale in Henderson, NV. $800K–$28.95M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/macdonald-highlands' },
   }
 }
 

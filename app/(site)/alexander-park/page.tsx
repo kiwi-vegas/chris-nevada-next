@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Alexander Park Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Alexander Park homes for sale in North Las Vegas, NV. $350K–$550K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/alexander-park' },
   }
 }
 

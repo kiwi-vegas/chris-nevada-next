@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Old Town Henderson Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Old Town Henderson homes for sale in Henderson, NV. $300K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/henderson-old-town' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Red Rock Country Club Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Red Rock Country Club homes for sale in Las Vegas, NV. $800K–$3M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/red-rock-country-club' },
   }
 }
 

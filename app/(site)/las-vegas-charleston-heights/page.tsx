@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Charleston Heights Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Charleston Heights homes for sale in Las Vegas, NV. $250K–$500K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/las-vegas-charleston-heights' },
   }
 }
 

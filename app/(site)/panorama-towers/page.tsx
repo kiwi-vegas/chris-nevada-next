@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Panorama Towers Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Panorama Towers homes for sale in Las Vegas, NV. $300K–$2M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/panorama-towers' },
   }
 }
 

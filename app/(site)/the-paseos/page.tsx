@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'The Paseos Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse The Paseos homes for sale in Las Vegas, NV. $550K–$1.2M. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/the-paseos' },
   }
 }
 

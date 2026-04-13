@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Cheyenne Corridor Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Cheyenne Corridor homes for sale in Las Vegas, NV. $350K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/las-vegas-cheyenne-corridor' },
   }
 }
 

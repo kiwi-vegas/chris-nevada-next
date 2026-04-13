@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'The Palisades Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse The Palisades homes for sale in Las Vegas, NV. $1M–$4M. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/the-palisades-summerlin' },
   }
 }
 

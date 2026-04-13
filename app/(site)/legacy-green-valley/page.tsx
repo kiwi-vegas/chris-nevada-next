@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Legacy at Green Valley Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Legacy at Green Valley homes for sale in Henderson, NV. $700K–$2.5M. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/legacy-green-valley' },
   }
 }
 

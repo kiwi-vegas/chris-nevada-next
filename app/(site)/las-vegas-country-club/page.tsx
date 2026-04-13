@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Las Vegas Country Club Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Las Vegas Country Club homes for sale in Las Vegas, NV. $400K–$3M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/las-vegas-country-club' },
   }
 }
 

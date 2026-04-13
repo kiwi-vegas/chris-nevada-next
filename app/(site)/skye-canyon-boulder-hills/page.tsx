@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Boulder Hills at Skye Canyon Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Boulder Hills at Skye Canyon homes for sale in Las Vegas, NV. $450K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/skye-canyon-boulder-hills' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'La Madre Peaks Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse La Madre Peaks homes for sale in Las Vegas, NV. $800K–$5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-la-madre-peaks' },
   }
 }
 

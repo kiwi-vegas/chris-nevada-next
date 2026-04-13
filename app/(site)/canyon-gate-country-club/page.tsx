@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Canyon Gate Country Club Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Canyon Gate Country Club homes for sale in Las Vegas, NV. $700K–$2M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/canyon-gate-country-club' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Sun Colony at Siena Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Sun Colony at Siena homes for sale in Las Vegas, NV. $700K–$1.3M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/sun-colony-at-siena' },
   }
 }
 

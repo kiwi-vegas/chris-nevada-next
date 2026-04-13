@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'North Valley Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse North Valley homes for sale in North Las Vegas, NV. $300K–$500K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/north-las-vegas-north-valley' },
   }
 }
 

@@ -137,6 +137,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? '${c.name} Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse ${c.name} homes for sale in ${c.city}, NV. ${c.priceRange}. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/${c.slug}' },
   }
 }
 

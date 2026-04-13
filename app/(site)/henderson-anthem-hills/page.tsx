@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Anthem Hills Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Anthem Hills homes for sale in Henderson, NV. $600K–$1M. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/henderson-anthem-hills' },
   }
 }
 

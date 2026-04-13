@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Seven Hills Country Club Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Seven Hills Country Club homes for sale in Henderson, NV. $1.2M–$7M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/seven-hills-country-club' },
   }
 }
 

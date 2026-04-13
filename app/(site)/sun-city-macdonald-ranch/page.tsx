@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Sun City MacDonald Ranch Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Sun City MacDonald Ranch homes for sale in Henderson, NV. $300K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/sun-city-macdonald-ranch' },
   }
 }
 

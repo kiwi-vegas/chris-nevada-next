@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Anthem Center Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Anthem Center homes for sale in Henderson, NV. $500K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/henderson-anthem-center' },
   }
 }
 

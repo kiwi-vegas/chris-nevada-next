@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Tournament Hills Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Tournament Hills homes for sale in Las Vegas, NV. $800K–$2M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/tournament-hills' },
   }
 }
 

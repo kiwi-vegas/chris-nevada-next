@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Kestrel Commons Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Kestrel Commons homes for sale in Las Vegas, NV. $450K–$900K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-kestrel-commons' },
   }
 }
 

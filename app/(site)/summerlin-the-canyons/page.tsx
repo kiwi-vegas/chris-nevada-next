@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'The Canyons Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse The Canyons homes for sale in Las Vegas, NV. $500K–$4M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-the-canyons' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'East Las Vegas Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse East Las Vegas homes for sale in Las Vegas, NV. $200K–$500K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/east-las-vegas' },
   }
 }
 

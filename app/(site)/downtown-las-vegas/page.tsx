@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Downtown Las Vegas Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Downtown Las Vegas homes for sale in Las Vegas, NV. $200K–$5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/downtown-las-vegas' },
   }
 }
 

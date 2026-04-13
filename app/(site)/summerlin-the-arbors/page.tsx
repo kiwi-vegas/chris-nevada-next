@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'The Arbors Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse The Arbors homes for sale in Las Vegas, NV. $450K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-the-arbors' },
   }
 }
 

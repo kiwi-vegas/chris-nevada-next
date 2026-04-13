@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Sunridge at MacDonald Ranch Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Sunridge at MacDonald Ranch homes for sale in Henderson, NV. $600K–$1.5M. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/sunridge-at-macdonald-ranch' },
   }
 }
 

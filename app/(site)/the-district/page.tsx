@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'The District at Green Valley Ranch Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse The District at Green Valley Ranch homes for sale in Henderson, NV. $300K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/the-district' },
   }
 }
 

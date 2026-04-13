@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Mountains Edge Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Mountains Edge homes for sale in Las Vegas, NV. $350K–$650K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/mountains-edge' },
   }
 }
 

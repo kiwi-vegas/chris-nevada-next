@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Skye Canyon Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Skye Canyon homes for sale in Las Vegas, NV. $400K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/skye-canyon' },
   }
 }
 

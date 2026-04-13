@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Lake Las Vegas Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Lake Las Vegas homes for sale in Henderson, NV. $400K–$5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/lake-las-vegas' },
   }
 }
 

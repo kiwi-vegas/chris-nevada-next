@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'South Shore Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse South Shore homes for sale in Henderson, NV. $800K–$5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/lake-las-vegas-south-shore' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Carlisle Peak Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Carlisle Peak homes for sale in Las Vegas, NV. $1.55M–$2M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/carlisle-peak' },
   }
 }
 

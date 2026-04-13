@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Cresta Rosa Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Cresta Rosa homes for sale in Henderson, NV. $2.83M–$3.95M. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/cresta-rosa' },
   }
 }
 

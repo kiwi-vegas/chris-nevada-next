@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Summerlin South Area Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Summerlin South Area homes for sale in Las Vegas, NV. $500K–$3M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/las-vegas-summerlin-south-area' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Redpoint Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Redpoint homes for sale in Las Vegas, NV. $650K–$2M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-redpoint' },
   }
 }
 

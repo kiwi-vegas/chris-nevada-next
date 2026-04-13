@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Lone Mountain Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Lone Mountain homes for sale in Las Vegas, NV. $400K–$900K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/lone-mountain' },
   }
 }
 

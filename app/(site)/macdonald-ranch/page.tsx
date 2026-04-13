@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'MacDonald Ranch Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse MacDonald Ranch homes for sale in Henderson, NV. $300K–$15M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/macdonald-ranch' },
   }
 }
 

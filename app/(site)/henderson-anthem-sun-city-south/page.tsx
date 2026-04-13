@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Sun City Anthem South Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Sun City Anthem South homes for sale in Henderson, NV. $350K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/henderson-anthem-sun-city-south' },
   }
 }
 

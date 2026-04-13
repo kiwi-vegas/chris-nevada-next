@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Aliante North Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Aliante North homes for sale in North Las Vegas, NV. $350K–$550K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/north-las-vegas-aliante-north' },
   }
 }
 

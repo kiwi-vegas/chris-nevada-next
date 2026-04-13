@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Turnberry Place Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Turnberry Place homes for sale in Las Vegas, NV. $500K–$5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/turnberry-place' },
   }
 }
 

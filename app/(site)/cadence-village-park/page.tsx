@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Village Park Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Village Park homes for sale in Henderson, NV. $400K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/cadence-village-park' },
   }
 }
 

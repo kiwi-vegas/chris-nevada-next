@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Desert Shores North Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Desert Shores North homes for sale in Las Vegas, NV. $350K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/las-vegas-desert-shores-north' },
   }
 }
 

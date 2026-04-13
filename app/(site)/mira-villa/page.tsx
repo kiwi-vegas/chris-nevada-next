@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Mira Villa Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Mira Villa homes for sale in Las Vegas, NV. $1M–$2.2M. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/mira-villa' },
   }
 }
 

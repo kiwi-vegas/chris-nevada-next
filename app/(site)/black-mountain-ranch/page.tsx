@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Black Mountain Ranch Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Black Mountain Ranch homes for sale in Henderson, NV. $400K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/black-mountain-ranch' },
   }
 }
 

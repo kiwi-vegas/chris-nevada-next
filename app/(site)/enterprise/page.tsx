@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Enterprise Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Enterprise homes for sale in Las Vegas, NV. $350K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/enterprise' },
   }
 }
 

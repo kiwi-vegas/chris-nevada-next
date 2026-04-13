@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Warm Springs Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Warm Springs homes for sale in Las Vegas, NV. $350K–$650K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/las-vegas-warmsprings' },
   }
 }
 

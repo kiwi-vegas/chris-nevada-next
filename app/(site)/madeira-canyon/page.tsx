@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Madeira Canyon Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Madeira Canyon homes for sale in Henderson, NV. $400K–$1.5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/madeira-canyon' },
   }
 }
 

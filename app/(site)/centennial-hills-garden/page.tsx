@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Garden at Centennial Hills Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Garden at Centennial Hills homes for sale in Las Vegas, NV. $400K–$650K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/centennial-hills-garden' },
   }
 }
 

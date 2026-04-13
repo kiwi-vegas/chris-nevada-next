@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'One Queensridge Place Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse One Queensridge Place homes for sale in Las Vegas, NV. $500K–$5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/one-queensridge-place' },
   }
 }
 

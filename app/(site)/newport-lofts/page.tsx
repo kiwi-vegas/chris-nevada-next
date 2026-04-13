@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Newport Lofts Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Newport Lofts homes for sale in Las Vegas, NV. $200K–$500K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/newport-lofts' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Meadows Village Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Meadows Village homes for sale in Las Vegas, NV. $300K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/las-vegas-meadows-village' },
   }
 }
 

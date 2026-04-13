@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Cello Tower Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Cello Tower homes for sale in Las Vegas, NV. $700K–$4.5M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/cello-tower' },
   }
 }
 

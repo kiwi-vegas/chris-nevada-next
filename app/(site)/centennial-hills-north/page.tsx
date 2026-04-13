@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Centennial Hills North Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Centennial Hills North homes for sale in Las Vegas, NV. $400K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/centennial-hills-north' },
   }
 }
 

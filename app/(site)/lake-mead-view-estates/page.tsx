@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Lake Mead View Estates Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Lake Mead View Estates homes for sale in Henderson, NV. $600K–$2M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/lake-mead-view-estates' },
   }
 }
 

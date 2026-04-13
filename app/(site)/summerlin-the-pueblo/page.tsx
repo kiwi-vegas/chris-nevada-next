@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'The Pueblo Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse The Pueblo homes for sale in Las Vegas, NV. $400K–$650K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-the-pueblo' },
   }
 }
 

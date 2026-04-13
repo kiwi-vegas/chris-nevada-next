@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Dover at Summerlin West Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Dover at Summerlin West homes for sale in Las Vegas, NV. $500K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/summerlin-west-dover' },
   }
 }
 

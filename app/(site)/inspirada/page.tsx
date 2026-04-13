@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Inspirada Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Inspirada homes for sale in Henderson, NV. $420K–$1.1M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/inspirada' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Solera at Anthem Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Solera at Anthem homes for sale in Henderson, NV. $350K–$650K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/solera-at-anthem' },
   }
 }
 

@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Golf Estates at Southern Highlands Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Golf Estates at Southern Highlands homes for sale in Las Vegas, NV. $800K–$3M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/southern-highlands-golf-estates' },
   }
 }
 

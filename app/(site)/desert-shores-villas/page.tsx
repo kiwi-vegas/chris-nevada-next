@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Desert Shores Villas Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Desert Shores Villas homes for sale in Las Vegas, NV. $200K–$450K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/desert-shores-villas' },
   }
 }
 

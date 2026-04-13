@@ -91,6 +91,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Dragon Rock Homes for Sale | Nevada Real Estate Group',
     description: cms?.metaDescription ?? 'Browse Dragon Rock homes for sale in Henderson, NV. $5M–$15M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/dragon-rock' },
   }
 }
 
