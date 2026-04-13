@@ -106,12 +106,12 @@ const PARKS = [
 ]
 
 const BUILDERS = [
-  { name: 'Toll Brothers', collections: ['Regency at Summerlin', 'Sterling Crest'], sqft: '2,400\u20135,200 sq ft', price: 'From $850K', note: 'Active in Stonebridge. Luxury and move-up product with premium finishes.' },
-  { name: 'Pulte Homes', collections: ['Willow Creek', 'Sterling Park'], sqft: '1,800\u20133,600 sq ft', price: 'From $650K', note: 'Family-focused floor plans in The Paseos with flex spaces.' },
-  { name: 'Taylor Morrison', collections: ['Meridian at Summerlin'], sqft: '2,100\u20134,100 sq ft', price: 'From $720K', note: 'Contemporary architecture in Stonebridge with mountain views.' },
-  { name: 'Tri Pointe Homes', collections: ['Altis Summerlin (55+)'], sqft: '1,600\u20132,800 sq ft', price: 'From $550K', note: 'Active-adult product line with resort-style amenity center.' },
-  { name: 'Richmond American', collections: ['Summerlin West Homes'], sqft: '2,000\u20133,800 sq ft', price: 'From $580K', note: 'Value-oriented product in Summerlin West with personalization.' },
-  { name: 'KB Home', collections: ['Painted Desert at Summerlin'], sqft: '1,600\u20132,900 sq ft', price: 'From $490K', note: 'Entry and move-up product with customizable floor plans.' },
+  { name: 'Toll Brothers', collections: ['Regency at Summerlin', 'Sterling Crest'], sqft: '2,400\u20135,200 sq ft', price: 'From $850K', note: 'Active in Stonebridge. Luxury and move-up product with premium finishes.', idxUrl: 'https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Toll%20Brothers%20Summerlin&s[yearMin]=2024' },
+  { name: 'Pulte Homes', collections: ['Willow Creek', 'Sterling Park'], sqft: '1,800\u20133,600 sq ft', price: 'From $650K', note: 'Family-focused floor plans in The Paseos with flex spaces.', idxUrl: 'https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Pulte%20Summerlin&s[yearMin]=2024' },
+  { name: 'Taylor Morrison', collections: ['Meridian at Summerlin'], sqft: '2,100\u20134,100 sq ft', price: 'From $720K', note: 'Contemporary architecture in Stonebridge with mountain views.', idxUrl: 'https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Taylor%20Morrison%20Summerlin&s[yearMin]=2024' },
+  { name: 'Tri Pointe Homes', collections: ['Altis Summerlin (55+)'], sqft: '1,600\u20132,800 sq ft', price: 'From $550K', note: 'Active-adult product line with resort-style amenity center.', idxUrl: 'https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Tri%20Pointe%20Summerlin&s[yearMin]=2024' },
+  { name: 'Richmond American', collections: ['Summerlin West Homes'], sqft: '2,000\u20133,800 sq ft', price: 'From $580K', note: 'Value-oriented product in Summerlin West with personalization.', idxUrl: 'https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Richmond%20American%20Summerlin&s[yearMin]=2024' },
+  { name: 'KB Home', collections: ['Painted Desert at Summerlin'], sqft: '1,600\u20132,900 sq ft', price: 'From $490K', note: 'Entry and move-up product with customizable floor plans.', idxUrl: 'https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=KB%20Home%20Summerlin&s[yearMin]=2024' },
 ]
 
 const NEARBY = [
@@ -542,7 +542,10 @@ export default async function SummerlinPage() {
               <div className="builders-v5-card" key={b.name}>
                 <h3 className="builders-v5-name">{b.name}</h3>
                 <div className="builders-v5-collections">{b.collections.join(' \u00B7 ')}</div>
+                <div className="builders-v5-specs">{b.sqft}</div>
                 <div className="builders-v5-price">{b.price}</div>
+                <p className="builders-v5-note">{b.note}</p>
+                <a href={b.idxUrl} target="_blank" rel="noopener noreferrer" className="builders-v5-link">View Listings &rarr;</a>
               </div>
             ))}
             <div className="builders-v5-contact">
