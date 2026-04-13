@@ -556,6 +556,42 @@ export default async function SummerlinPage() {
         </div>
       </section>
 
+      {/* HOA */}
+      <section id="hoa" className="hoa-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">HOA</span>
+            <h2>HOA Fees in Summerlin</h2>
+            <p>Summerlin uses a two-layer HOA structure: a master community association plus individual village sub-associations.</p>
+          </div>
+          <div className="hoa-grid">
+            <div className="hoa-fees-col">
+              <h3>Fees &amp; Management</h3>
+              <div className="hoa-fee-row"><span>Summerlin Community Association (Master HOA)</span><strong>~$60&ndash;$80/mo</strong></div>
+              <div className="hoa-fee-row"><span>Village Sub-HOA (non-gated typical)</span><strong>$100&ndash;$350/mo</strong></div>
+              <div className="hoa-fee-row"><span>Guard-Gated Villages (e.g., The Ridges, Siena)</span><strong>$300&ndash;$1,200/mo</strong></div>
+              <div className="hoa-fee-row"><span>The Summit Club</span><strong>$2,000&ndash;$5,000+/mo</strong></div>
+              <div className="hoa-management">
+                <p className="hoa-mgmt-label">Master Association</p>
+                <p className="hoa-mgmt-value">The Summerlin Council (Howard Hughes Corporation)</p>
+              </div>
+              <p style={{ marginTop: '16px', fontSize: '11px', color: 'var(--text-faint)', fontStyle: 'italic' }}>HOA fees are subject to change. Verify current fees with the management company before purchase. All Summerlin residents pay both the master and sub-association fees.</p>
+            </div>
+            <div className="hoa-amenities-col">
+              <h3>What Master HOA Covers</h3>
+              <ul className="hoa-amenity-list">
+                {['200+ miles of interconnected trail maintenance','250+ community parks and open spaces','4 resident-only recreation centers with Olympic pools','Common area landscaping and desert beautification','Community event programming','Architectural review and covenant enforcement','Reserve fund contributions for infrastructure'].map(a => <li key={a}>{a}</li>)}
+              </ul>
+              <h3 style={{ marginTop: '24px' }}>What Village Sub-HOA Adds</h3>
+              <ul className="hoa-amenity-list">
+                {['Village-specific park and amenity maintenance','Guard gate staffing (guard-gated villages only)','Village perimeter wall maintenance','Village-level landscaping and entry monuments','Additional security patrols (premium villages)'].map(a => <li key={a}>{a}</li>)}
+              </ul>
+              <div className="hoa-gated-badge"><span>Guard-Gated Villages Available</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* BUILDERS */}
       <section id="builders" className="builders-v5">
         <div className="container">
