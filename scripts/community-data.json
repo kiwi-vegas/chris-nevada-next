@@ -72750,5 +72750,1205 @@
     "ylopoCity": "Las Vegas",
     "ylopoKeywords": "Spring Valley South Las Vegas",
     "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "spanish-hills",
+    "name": "Spanish Hills",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury Estates",
+    "zipCodes": [
+      "89113",
+      "89148"
+    ],
+    "center": [
+      -115.263,
+      36.065
+    ],
+    "heroEyebrow": "Las Vegas, Nevada",
+    "priceRange": "$1M–$10M+",
+    "established": "1998",
+    "developer": "Various Custom Builders",
+    "acreage": "~640 acres",
+    "homeCount": "~300",
+    "guardGated": true,
+    "hoaRange": "$200–$600/mo",
+    "overview": [
+      "Spanish Hills is one of the most prestigious guard-gated luxury estate communities in Las Vegas, situated on elevated terrain just south of the Strip corridor with sweeping views of the Las Vegas Valley, the Strip skyline, and the surrounding mountain ranges. Encompassing approximately 640 acres with only around 300 homesites, Spanish Hills offers a level of privacy and exclusivity that few Las Vegas communities can match.",
+      "Developed beginning in the late 1990s, Spanish Hills was conceived as a custom-home enclave where buyers could purchase large lots and build estate-caliber homes with the architect and builder of their choosing. Lots in Spanish Hills range from approximately half an acre to well over an acre, and many feature dramatic elevated positions that provide unobstructed views of the Strip, the mountains, and the desert valley floor below.",
+      "Homes in Spanish Hills range from approximately $1 million for resale properties to over $10 million for newer custom-build estates on premium view lots. Architectural styles vary from Mediterranean and Tuscan to contemporary desert modern, reflecting the community's evolution over more than two decades. Many homes feature expansive motor courts, resort-style pools, home theaters, wine cellars, and multi-car garages designed for luxury car collections.",
+      "Spanish Hills' location along the south Strip corridor provides a rare combination of privacy and proximity. Residents are just minutes from the Strip's world-class dining, entertainment, and nightlife, as well as Harry Reid International Airport. The community's elevation, guard-gated security, large lots, and mature desert landscaping create a secluded estate atmosphere that continues to attract executives, entertainers, professional athletes, and high-net-worth buyers seeking a legacy property in Las Vegas."
+    ],
+    "highlights": [
+      {
+        "title": "Guard-Gated Privacy",
+        "body": "24-hour staffed guard gate with roving security patrols. One of the most private estate communities in the Las Vegas Valley with approximately 300 homes on 640 acres.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Custom Estate Lots",
+        "body": "Oversized lots ranging from half an acre to over an acre provide space for true estate living with motor courts, resort pools, guest houses, and expansive outdoor entertaining areas.",
+        "iconType": "home"
+      },
+      {
+        "title": "Panoramic Strip Views",
+        "body": "Elevated terrain provides many homes with dramatic panoramic views of the Las Vegas Strip, the entire valley, and the Spring Mountains to the west.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Minutes to the Strip",
+        "body": "Located along the south Strip corridor, Spanish Hills is just 10 minutes from the world-class dining, entertainment, and nightlife of the Las Vegas Strip.",
+        "iconType": "building"
+      },
+      {
+        "title": "Airport Proximity",
+        "body": "Approximately 15 minutes from Harry Reid International Airport, making Spanish Hills an ideal home base for frequent travelers and jet-setting professionals.",
+        "iconType": "park"
+      },
+      {
+        "title": "Legacy Investment",
+        "body": "With only ~300 homesites, irreplaceable views, and guard-gated security, Spanish Hills commands strong long-term value and appeals to buyers seeking a generational estate property.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Upper Spanish Hills",
+        "type": "Custom · Premium Views",
+        "desc": "The highest-elevation homesites in the community with 360-degree panoramic views of the Strip, the valley, and surrounding mountain ranges. The most coveted lots in Spanish Hills.",
+        "price": "From $5M+"
+      },
+      {
+        "name": "Spanish Hills Estates",
+        "type": "Custom · Established",
+        "desc": "The original phase of Spanish Hills with mature landscaping, established custom homes, and a sense of neighborhood permanence. Lot sizes often exceed one acre.",
+        "price": "From $2M+"
+      },
+      {
+        "name": "Lower Spanish Hills",
+        "type": "Custom · Valley Views",
+        "desc": "Homesites at the community's lower elevations with views toward the valley floor. Slightly more accessible price points with the same guard-gated security and privacy.",
+        "price": "From $1M+"
+      },
+      {
+        "name": "Spanish Hills Terrace",
+        "type": "Custom · Contemporary",
+        "desc": "Newer construction featuring modern desert contemporary architecture with clean lines, glass walls, and indoor-outdoor living designed for the Las Vegas climate.",
+        "price": "From $3M+"
+      },
+      {
+        "name": "Ridgeline Lots",
+        "type": "Custom · Strip Views",
+        "desc": "Premium ridgeline positions with direct, unobstructed views of the Las Vegas Strip. Among the most sought-after view lots in all of Southern Nevada.",
+        "price": "From $4M+"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Mountain Crest Park",
+        "address": "4701 N Durango Dr, Las Vegas, NV 89113",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Walking trails",
+          "Playground",
+          "Basketball courts",
+          "Open turf",
+          "Picnic shelters"
+        ]
+      },
+      {
+        "name": "Desert Breeze Park",
+        "address": "8275 Spring Mountain Rd, Las Vegas, NV 89147",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Soccer fields",
+          "Baseball diamonds",
+          "Playground",
+          "Skate park",
+          "Walking paths"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Walter Bracken STEAM Academy",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Thurman White Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Clark High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "American Heritage Academy",
+          "K–8",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~900",
+      "medianAge": "50",
+      "avgIncome": "$350,000+",
+      "households": "~300",
+      "homeownership": "93%"
+    },
+    "driveTimes": [
+      {
+        "time": "~10 min",
+        "destination": "to the Strip",
+        "route": "via Dean Martin Dr / I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 South / I-215"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via I-215 West"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Spanish Hills?",
+        "a": "Homes in Spanish Hills range from approximately $1 million for resale properties to over $10 million for newer custom-build estates on premium view lots. The community's limited inventory of ~300 homes supports strong values across all price tiers."
+      },
+      {
+        "q": "Is Spanish Hills guard-gated?",
+        "a": "Yes. Spanish Hills is a fully guard-gated community with a 24-hour staffed guard gate and roving security patrols. It is one of the most private estate communities in the Las Vegas Valley."
+      },
+      {
+        "q": "What ZIP code is Spanish Hills in?",
+        "a": "Spanish Hills spans ZIP codes 89113 and 89148, located in the south-central Las Vegas Valley near the south Strip corridor."
+      },
+      {
+        "q": "How close is Spanish Hills to the Las Vegas Strip?",
+        "a": "Spanish Hills is approximately 10 minutes from the Las Vegas Strip via Dean Martin Drive or I-15, making it one of the closest luxury estate communities to the Strip's world-class dining, entertainment, and nightlife."
+      },
+      {
+        "q": "What are HOA fees in Spanish Hills?",
+        "a": "HOA fees in Spanish Hills typically range from $200 to $600 per month, covering guard gate staffing, security patrols, common area maintenance, and community infrastructure. Fees are relatively modest compared to other guard-gated luxury communities due to the low density."
+      },
+      {
+        "q": "How large are lots in Spanish Hills?",
+        "a": "Lots in Spanish Hills range from approximately half an acre to well over an acre, providing space for true estate living with motor courts, resort-style pools, guest houses, and expansive outdoor entertaining areas."
+      },
+      {
+        "q": "What architectural styles are in Spanish Hills?",
+        "a": "Spanish Hills features a range of architectural styles including Mediterranean, Tuscan, and contemporary desert modern. The community has evolved over two decades, and newer construction tends toward clean-lined modern design with indoor-outdoor living spaces."
+      },
+      {
+        "q": "What celebrities have lived in Spanish Hills?",
+        "a": "Spanish Hills has attracted numerous high-profile residents over the years, including entertainment industry figures, professional athletes, and business executives. The community's guard-gated privacy is a primary draw for public figures seeking discretion."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $550K",
+        "compare": "Guard-gated golf community farther south with Jack Nicklaus course. More structured community feel."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave with Red Rock Canyon views and Bear's Best golf."
+      },
+      {
+        "name": "Ascaya",
+        "href": "/ascaya/",
+        "price": "From $3M",
+        "compare": "Ultra-luxury custom lot community in Henderson with dramatic elevated views."
+      },
+      {
+        "name": "MacDonald Highlands",
+        "href": "/macdonald-highlands/",
+        "price": "From $800K",
+        "compare": "Henderson's premier luxury community with DragonRidge Country Club and elevated views."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community with Rio Secco golf and Strip views at more accessible prices."
+      },
+      {
+        "name": "The Summit Club",
+        "href": "/the-summit-club/",
+        "price": "From $5M",
+        "compare": "Las Vegas' most exclusive private community with Tom Fazio golf. By invitation only."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Spanish Hills was exactly what we were looking for — privacy, space, and stunning Strip views without being far from everything. Nevada Real Estate Group knew every lot and helped us find an estate with the perfect sunset orientation.",
+        "name": "Anthony & Maria G.",
+        "detail": "Bought in Spanish Hills · 2024"
+      },
+      {
+        "quote": "Selling a luxury estate in Spanish Hills requires an agent who understands the high-net-worth buyer. Nevada Real Estate Group marketed our property to the right audience and negotiated a strong closing price.",
+        "name": "Steven K.",
+        "detail": "Sold in Spanish Hills · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Spanish Hills",
+    "ylopoMinPrice": 1000000
+  },
+  {
+    "slug": "section-10",
+    "name": "Section 10",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Historic · Custom Homes",
+    "zipCodes": [
+      "89134",
+      "89144"
+    ],
+    "center": [
+      -115.318,
+      36.195
+    ],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$800K–$3M+",
+    "established": "1990",
+    "developer": "Howard Hughes Corporation / Custom",
+    "acreage": "~640 acres",
+    "homeCount": "~700",
+    "guardGated": false,
+    "hoaRange": "$100–$300/mo",
+    "overview": [
+      "Section 10 is one of the original and most distinctive neighborhoods within the Summerlin master-planned community, widely regarded as the area where Summerlin's identity was first established in the early 1990s. Located in the heart of Summerlin along the western rim of the Las Vegas Valley, Section 10 occupies approximately 640 acres of gently rolling terrain with mature desert landscaping, towering trees, and a neighborhood character that is simply not replicable in newer construction.",
+      "Unlike the production-builder subdivisions that define much of modern Summerlin, Section 10 was developed with an emphasis on custom and semi-custom homes on oversized lots. Many homesites are a third of an acre to over half an acre, and the community's three-decade maturity has produced a tree-lined, established neighborhood feel that is rare in the Las Vegas Valley. Homes in Section 10 range from approximately $800,000 for older resale properties to over $3 million for renovated or newly constructed custom estates.",
+      "Section 10's location is one of its greatest assets. The neighborhood is adjacent to the Tournament Players Club (TPC) Summerlin, home of the PGA Tour's Shriners Children's Open. Residents enjoy proximity to the TPC golf course, the Summerlin Trail system, and the Red Rock Canyon National Conservation Area just minutes to the west. Downtown Summerlin, with its 125+ shops and restaurants, is a short drive away.",
+      "Section 10 attracts a sophisticated buyer who values established neighborhoods, mature landscaping, and the character that comes with time over the uniformity of new construction. Many homes have been extensively renovated and modernized while preserving the generous lot sizes and setbacks that define the area. For buyers seeking a Summerlin address with custom-home character, old-growth trees, and proximity to TPC Summerlin, Section 10 remains one of the most desirable neighborhoods in the entire master plan."
+    ],
+    "highlights": [
+      {
+        "title": "Original Summerlin Character",
+        "body": "One of the first neighborhoods developed in Summerlin in the early 1990s. Mature trees, established landscaping, and a neighborhood character that cannot be replicated in new construction.",
+        "iconType": "community"
+      },
+      {
+        "title": "Oversized Custom Lots",
+        "body": "Lots ranging from one-third to over half an acre — significantly larger than typical Summerlin lots. Space for pools, casitas, gardens, and true indoor-outdoor living.",
+        "iconType": "home"
+      },
+      {
+        "title": "TPC Summerlin Adjacent",
+        "body": "Adjacent to TPC Summerlin, home of the PGA Tour's Shriners Children's Open. Several homes back directly to the championship course with fairway and mountain views.",
+        "iconType": "golf"
+      },
+      {
+        "title": "Mature Tree Canopy",
+        "body": "Over 30 years of growth has created a lush, tree-lined neighborhood that is unique in the desert. Streets are shaded and properties feel established and private.",
+        "iconType": "park"
+      },
+      {
+        "title": "Premier Summerlin Location",
+        "body": "Minutes from Downtown Summerlin, Red Rock Canyon, the Summerlin Trail system, and top-rated CCSD schools. Central to everything Summerlin offers.",
+        "iconType": "building"
+      },
+      {
+        "title": "Strong Renovation Value",
+        "body": "Many buyers purchase existing homes and renovate to modern standards while preserving the oversized lots and mature landscaping. Strong appreciation on well-executed renovations.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "The Trails Village",
+        "type": "Custom · Established",
+        "desc": "Custom and semi-custom homes along the Summerlin Trail system with mature landscaping and generous lot sizes. Walkable access to parks and trails.",
+        "price": "From $1.2M+"
+      },
+      {
+        "name": "TPC Fairway Homes",
+        "type": "Golf Course · Custom",
+        "desc": "Homes backing directly to the TPC Summerlin golf course with fairway views. Among the most desirable positions in all of Summerlin.",
+        "price": "From $1.5M+"
+      },
+      {
+        "name": "Eagle Hills",
+        "type": "Semi-Custom · Views",
+        "desc": "Elevated homesites with Red Rock Canyon and mountain views. A mix of original and renovated homes on oversized lots.",
+        "price": "From $1M+"
+      },
+      {
+        "name": "Country Club Hills",
+        "type": "Custom · Established",
+        "desc": "Larger custom homes near TPC Summerlin with a country club neighborhood atmosphere. Mature trees and quiet cul-de-sac streets.",
+        "price": "From $1.2M+"
+      },
+      {
+        "name": "Garden Glen",
+        "type": "Semi-Custom · Family",
+        "desc": "Family-oriented pocket within Section 10 with slightly smaller lots but the same mature landscaping and established neighborhood character.",
+        "price": "From $800K+"
+      },
+      {
+        "name": "Hilltop Estates",
+        "type": "Custom · Panoramic",
+        "desc": "Premium elevated positions with panoramic views of the Red Rock escarpment and the Las Vegas Valley. Custom builds on the largest lots in Section 10.",
+        "price": "From $2M+"
+      }
+    ],
+    "parks": [
+      {
+        "name": "The Trails Park & Village Center",
+        "address": "1829 Village Center Cir, Las Vegas, NV 89134",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Community pool",
+          "Tennis courts",
+          "Walking trails",
+          "Playground",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "TPC Summerlin Golf Course",
+        "address": "1700 Village Center Cir, Las Vegas, NV 89134",
+        "acreage": "~200 acres",
+        "amenities": [
+          "Championship golf",
+          "PGA Tour venue",
+          "Pro shop",
+          "Dining",
+          "Practice facility"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Ober Elementary School",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Palo Verde High School",
+          "9–12",
+          "8/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Pinecrest Academy Inspirada",
+          "K–12",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~2,100",
+      "medianAge": "48",
+      "avgIncome": "$200,000+",
+      "households": "~700",
+      "homeownership": "88%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~5 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Village Center Cir"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South → I-15"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Section 10?",
+        "a": "Homes in Section 10 range from approximately $800,000 for older resale properties to over $3 million for renovated or newly constructed custom estates. The wide price range reflects the diversity of home styles and conditions across the neighborhood."
+      },
+      {
+        "q": "Is Section 10 guard-gated?",
+        "a": "No. Section 10 is not guard-gated, which is part of its neighborhood-oriented, accessible character. However, it is within the Summerlin master-planned community and benefits from the overall Summerlin HOA and security infrastructure."
+      },
+      {
+        "q": "What ZIP code is Section 10 in?",
+        "a": "Section 10 spans ZIP codes 89134 and 89144 in the heart of Summerlin, Las Vegas."
+      },
+      {
+        "q": "What is TPC Summerlin?",
+        "a": "TPC Summerlin is a championship golf course adjacent to Section 10, owned and operated by the PGA Tour. It hosts the annual Shriners Children's Open, a PGA Tour event. Several Section 10 homes back directly to the course."
+      },
+      {
+        "q": "What are HOA fees in Section 10?",
+        "a": "HOA fees in Section 10 typically range from $100 to $300 per month, which includes the Summerlin master association fee. Fees cover community maintenance, trail system upkeep, and access to Summerlin community amenities."
+      },
+      {
+        "q": "Why is Section 10 called 'Section 10'?",
+        "a": "The name refers to the original survey section number used by the Howard Hughes Corporation when planning the Summerlin master community. Section 10 was among the first sections developed in the early 1990s, and the name has stuck as a neighborhood identifier ever since."
+      },
+      {
+        "q": "How large are lots in Section 10?",
+        "a": "Lots in Section 10 range from approximately one-third of an acre to over half an acre, which is significantly larger than typical lots in newer Summerlin villages. The generous lot sizes contribute to the neighborhood's spacious, established character."
+      },
+      {
+        "q": "Are there new homes in Section 10?",
+        "a": "While Section 10 was originally developed in the early 1990s, some owners have demolished original homes and built new custom estates on the existing lots. Many other homes have been extensively renovated and modernized. The neighborhood offers both original charm and modern luxury."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The broader master-planned community that Section 10 calls home. 20+ villages across every price point."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave with Bear's Best golf and Red Rock Canyon views."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer championship courses."
+      },
+      {
+        "name": "The Summit Club",
+        "href": "/the-summit-club/",
+        "price": "From $5M",
+        "compare": "Las Vegas' most exclusive private community with Tom Fazio golf. By invitation only."
+      },
+      {
+        "name": "Queensridge",
+        "href": "/queensridge/",
+        "price": "From $500K",
+        "compare": "Established luxury community near Summerlin with Badlands golf course and One Queensridge Place towers."
+      },
+      {
+        "name": "Tournament Hills",
+        "href": "/tournament-hills/",
+        "price": "From $900K",
+        "compare": "Guard-gated Summerlin community directly adjacent to TPC Summerlin with golf course homes."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We wanted mature trees, a big lot, and the character that only comes with time. Nevada Real Estate Group found us a beautifully renovated home in Section 10 that checked every box. You simply cannot get this feel in new construction.",
+        "name": "Patrick & Laura B.",
+        "detail": "Bought in Section 10, Summerlin · 2024"
+      },
+      {
+        "quote": "Our Section 10 home backed up to TPC Summerlin and Nevada Real Estate Group knew exactly how to market that premium position. We received multiple offers and closed above asking price in under two weeks.",
+        "name": "Richard M.",
+        "detail": "Sold in Section 10, Summerlin · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Section 10 Summerlin",
+    "ylopoMinPrice": 800000
+  },
+  {
+    "slug": "trump-international",
+    "name": "Trump International Hotel & Tower",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Condo-Hotel",
+    "zipCodes": [
+      "89109"
+    ],
+    "center": [
+      -115.162,
+      36.128
+    ],
+    "heroEyebrow": "Las Vegas Strip",
+    "priceRange": "$200K–$3M+",
+    "established": "2008",
+    "developer": "Trump Organization / Phil Ruffin",
+    "acreage": "~3.4 acres",
+    "homeCount": "~1,200 units",
+    "guardGated": true,
+    "hoaRange": "$600–$3,000/mo",
+    "overview": [
+      "Trump International Hotel & Tower Las Vegas is a 64-story gold-glass high-rise located directly on Fashion Show Drive, adjacent to the Las Vegas Strip and across from the Fashion Show Mall. Completed in 2008, the tower contains approximately 1,200 condo-hotel units and stands as one of the tallest residential structures in Las Vegas at 620 feet. The building's distinctive gold-tinted glass facade has become an iconic element of the Strip skyline.",
+      "Unlike traditional hotel rooms, units at Trump International are individually owned condominiums that can be placed into the hotel's rental management program when the owner is not in residence. This condo-hotel model allows owners to generate rental income from Las Vegas tourism while retaining full ownership of a luxury Strip-front property. Units range from studios and one-bedrooms starting around $200,000 to premium multi-bedroom suites and penthouses exceeding $3 million.",
+      "The tower offers five-star amenities including a lobby-level restaurant, a resort-style rooftop pool deck with cabanas and Strip views, a full-service spa and fitness center, 24-hour concierge and valet services, and a business center. Every unit features floor-to-ceiling windows, fully equipped kitchens with premium appliances, marble bathrooms, and designer furnishings. The non-gaming, non-smoking environment distinguishes Trump International from casino-resort condos on the Strip.",
+      "Trump International's location is among the most coveted on the Las Vegas Strip. The building sits between the Wynn Las Vegas and the Fashion Show Mall, within walking distance of dozens of world-class restaurants, luxury retail, and entertainment venues. For investors seeking Strip-front rental income, part-time residents who want a turnkey Las Vegas pied-a-terre, or full-time residents who want to live in the heart of the action, Trump International remains one of the most liquid and actively traded condo-hotel properties in Las Vegas."
+    ],
+    "highlights": [
+      {
+        "title": "64-Story Strip Address",
+        "body": "One of the tallest residential towers in Las Vegas at 620 feet, with a gold-glass facade that is an iconic element of the Strip skyline. Direct Strip frontage adjacent to Fashion Show Mall.",
+        "iconType": "building"
+      },
+      {
+        "title": "Condo-Hotel Income",
+        "body": "Individually owned units can be placed in the hotel rental program when not in use, generating income from Las Vegas tourism while retaining full ownership of a luxury property.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Five-Star Amenities",
+        "body": "Rooftop pool deck with cabanas and Strip views, full-service spa, fitness center, 24-hour concierge, valet parking, lobby restaurant, and business center.",
+        "iconType": "pool"
+      },
+      {
+        "title": "Non-Gaming Environment",
+        "body": "A non-gaming, non-smoking residential tower — a rare distinction on the Las Vegas Strip. Provides a luxury residential atmosphere separate from casino-resort properties.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Turnkey Furnished Units",
+        "body": "Every unit comes fully furnished with designer interiors, premium kitchen appliances, marble bathrooms, and floor-to-ceiling windows showcasing Strip, mountain, or city views.",
+        "iconType": "home"
+      },
+      {
+        "title": "Walk-Everywhere Location",
+        "body": "Steps from Wynn, Encore, Palazzo, Venetian, and Fashion Show Mall. Walking distance to dozens of world-class restaurants, luxury retail, and entertainment venues.",
+        "iconType": "community"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Penthouse Collection",
+        "type": "Ultra-Luxury · Top Floors",
+        "desc": "The tower's most exclusive residences on the upper floors with panoramic 360-degree views, private elevator access, and premium layouts up to 3,000+ square feet.",
+        "price": "From $1.5M+"
+      },
+      {
+        "name": "Premium Suites",
+        "type": "Luxury · High Floor",
+        "desc": "One- and two-bedroom suites on upper floors with Strip-facing views, upgraded finishes, and larger floor plans. Popular with part-time residents.",
+        "price": "From $500K+"
+      },
+      {
+        "name": "One-Bedroom Suites",
+        "type": "Investment · Mid-Rise",
+        "desc": "The most popular unit type for investors. Fully furnished one-bedroom suites with kitchens, Strip or city views, and strong rental performance.",
+        "price": "From $300K+"
+      },
+      {
+        "name": "Studio Suites",
+        "type": "Entry-Level · Investment",
+        "desc": "Efficient studio units offering the lowest entry point to Strip condo-hotel ownership. Ideal for investors seeking rental income with minimal capital outlay.",
+        "price": "From $200K+"
+      },
+      {
+        "name": "Strip-View Units",
+        "type": "Premium · South-Facing",
+        "desc": "South- and east-facing units with direct Las Vegas Strip views. Command premium pricing and stronger rental rates due to the iconic view corridor.",
+        "price": "From $350K+"
+      },
+      {
+        "name": "Mountain-View Units",
+        "type": "Residential · West-Facing",
+        "desc": "West-facing units with views of the Spring Mountains and Red Rock Canyon. Preferred by full-time residents for sunset views and a more residential orientation.",
+        "price": "From $250K+"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Trump International Pool Deck",
+        "address": "2000 Fashion Show Dr, Las Vegas, NV 89109",
+        "acreage": "~1 acre",
+        "amenities": [
+          "Resort pool",
+          "Cabanas",
+          "Hot tubs",
+          "Strip views",
+          "Poolside service"
+        ]
+      },
+      {
+        "name": "Fashion Show Mall",
+        "address": "3200 Las Vegas Blvd S, Las Vegas, NV 89109",
+        "acreage": "~28 acres",
+        "amenities": [
+          "250+ stores",
+          "Dining",
+          "Entertainment",
+          "Fashion runway",
+          "Luxury retail"
+        ]
+      },
+      {
+        "name": "Wynn Golf Club",
+        "address": "3131 Las Vegas Blvd S, Las Vegas, NV 89109",
+        "acreage": "~130 acres",
+        "amenities": [
+          "Championship golf",
+          "Pro shop",
+          "Dining",
+          "Caddie service",
+          "Practice facility"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Las Vegas Academy of the Arts",
+          "9–12",
+          "9/10"
+        ],
+        [
+          "Clark High School",
+          "9–12",
+          "6/10"
+        ],
+        [
+          "Fremont Middle School",
+          "6–8",
+          "5/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Las Vegas Day School",
+          "PreK–8",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Explore Academy",
+          "6–12",
+          "7/10"
+        ],
+        [
+          "Coral Academy of Science",
+          "K–12",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~800 (full-time residents)",
+      "medianAge": "45",
+      "avgIncome": "$150,000+",
+      "households": "~1,200 units",
+      "homeownership": "70%"
+    },
+    "driveTimes": [
+      {
+        "time": "~0 min",
+        "destination": "to the Strip",
+        "route": "On-site — direct Strip frontage"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via Las Vegas Blvd / I-15"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Downtown / Fremont",
+        "route": "via Las Vegas Blvd North"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Summerlin",
+        "route": "via US-95 West"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for units at Trump International Las Vegas?",
+        "a": "Units at Trump International range from approximately $200,000 for studio suites to over $3 million for premium penthouses on the upper floors. One-bedroom suites, the most popular unit type, typically range from $300,000 to $600,000."
+      },
+      {
+        "q": "Is Trump International a hotel or condos?",
+        "a": "Trump International is a condo-hotel. Each unit is an individually owned condominium that can be placed into the hotel's rental management program when the owner is not in residence. Owners can use their unit as a primary or secondary residence, or generate rental income from Las Vegas tourism."
+      },
+      {
+        "q": "What are HOA fees at Trump International?",
+        "a": "HOA fees at Trump International typically range from $600 to $3,000 per month depending on unit size and floor level. Fees cover building amenities, common area maintenance, concierge services, valet, pool deck, and building infrastructure."
+      },
+      {
+        "q": "Can I live full-time at Trump International?",
+        "a": "Yes. While many owners use the hotel rental program, Trump International allows full-time residency. Full-time residents enjoy the same five-star amenities, concierge services, and housekeeping options available to hotel guests."
+      },
+      {
+        "q": "Is there a casino at Trump International?",
+        "a": "No. Trump International is a non-gaming, non-smoking property, which distinguishes it from most Strip-front towers. This creates a more residential atmosphere while still being steps from the Strip's casino resorts."
+      },
+      {
+        "q": "What views are available at Trump International?",
+        "a": "Units offer Strip views (south and east facing), mountain views of the Spring Mountains and Red Rock Canyon (west facing), and city views (north facing toward downtown). Strip-facing units command premium prices and stronger rental rates."
+      },
+      {
+        "q": "How tall is Trump International Las Vegas?",
+        "a": "Trump International stands 64 stories and 620 feet tall, making it one of the tallest residential towers in Las Vegas. The building's gold-tinted glass facade is an iconic element of the Strip skyline."
+      },
+      {
+        "q": "What is the rental income potential at Trump International?",
+        "a": "Rental income varies by unit size, floor level, view orientation, and season. Studio and one-bedroom units placed in the hotel rental program can generate meaningful income from Las Vegas tourism, particularly during conventions, holidays, and major events. Contact our team for current rental performance data."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Veer Towers",
+        "href": "/veer-towers/",
+        "price": "From $400K",
+        "compare": "CityCenter luxury high-rise condos with Strip location and resort amenities. Newer construction."
+      },
+      {
+        "name": "Waldorf Astoria",
+        "href": "/waldorf-astoria/",
+        "price": "From $500K",
+        "compare": "Ultra-luxury condo-hotel in CityCenter with Waldorf Astoria branding and services."
+      },
+      {
+        "name": "Panorama Towers",
+        "href": "/panorama-towers/",
+        "price": "From $300K",
+        "compare": "Luxury high-rise condos just off the Strip with resort amenities and Strip views."
+      },
+      {
+        "name": "Palms Place",
+        "href": "/palms-place/",
+        "price": "From $200K",
+        "compare": "Condo-hotel at the Palms Casino Resort with resort amenities and a more accessible price point."
+      },
+      {
+        "name": "Sky Las Vegas",
+        "href": "/sky-las-vegas/",
+        "price": "From $200K",
+        "compare": "Strip-adjacent residential high-rise with full kitchens and non-gaming environment."
+      },
+      {
+        "name": "The Martin",
+        "href": "/the-martin/",
+        "price": "From $300K",
+        "compare": "43-story luxury condo tower near CityCenter with spacious layouts and full kitchens."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We wanted a Strip-front pied-a-terre that could generate income when we're not in town. Nevada Real Estate Group walked us through the condo-hotel model, helped us select a high-floor Strip-view unit, and connected us with the rental program. It's been a great investment.",
+        "name": "Craig & Jennifer H.",
+        "detail": "Bought at Trump International · 2024"
+      },
+      {
+        "quote": "Nevada Real Estate Group sold our Trump International unit quickly and at a strong price. They understand the condo-hotel market and know how to position these properties for maximum buyer interest.",
+        "name": "Diane R.",
+        "detail": "Sold at Trump International · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Trump International Tower",
+    "ylopoMinPrice": 200000
+  },
+  {
+    "slug": "palms-place",
+    "name": "Palms Place Hotel and Spa",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Condo-Hotel",
+    "zipCodes": [
+      "89103"
+    ],
+    "center": [
+      -115.184,
+      36.116
+    ],
+    "heroEyebrow": "Las Vegas, Nevada",
+    "priceRange": "$200K–$1.5M+",
+    "established": "2008",
+    "developer": "Palms Casino Resort / Maloof Family",
+    "acreage": "~2 acres",
+    "homeCount": "~599 units",
+    "guardGated": true,
+    "hoaRange": "$500–$1,800/mo",
+    "overview": [
+      "Palms Place Hotel and Spa is a 47-story luxury condo-hotel tower connected to the Palms Casino Resort, one of the most iconic off-Strip resorts in Las Vegas. Completed in 2008, the tower contains approximately 599 individually owned residential units and offers a distinctive lifestyle that blends private high-rise living with full access to the Palms' world-class entertainment, dining, and nightlife venues.",
+      "The Palms Casino Resort underwent a $690 million renovation completed in 2019, transforming the property into one of the most visually striking resorts in Las Vegas with Damien Hirst artwork installations, a reimagined pool complex, and new restaurant and entertainment concepts. Palms Place owners benefit directly from this investment through access to the resort's upgraded amenities, including the KAOS dayclub and nightclub venue spaces, multiple celebrity-chef restaurants, and the resort's signature pool scene.",
+      "Units at Palms Place range from studios starting around $200,000 to premium one- and two-bedroom suites and penthouses exceeding $1.5 million. Every unit features floor-to-ceiling windows, modern kitchens with stainless steel appliances, marble bathrooms, and designer furnishings. The building offers its own dedicated amenities separate from the casino, including a private resort-style pool, a 15,000-square-foot spa and fitness center, 24-hour concierge, and valet parking.",
+      "Palms Place's location on Flamingo Road, just one block west of the Strip, provides the convenience of Strip proximity without the density of a Strip-front address. The property is minutes from CityCenter, the Bellagio, Caesars Palace, and the entire central Strip corridor. For buyers seeking an affordable entry into Las Vegas condo-hotel ownership with access to a fully renovated resort property, Palms Place remains one of the most compelling value propositions in the market."
+    ],
+    "highlights": [
+      {
+        "title": "Connected to Palms Resort",
+        "body": "Direct indoor access to the Palms Casino Resort, which underwent a $690 million renovation. World-class dining, entertainment, pool complex, and nightlife at your doorstep.",
+        "iconType": "building"
+      },
+      {
+        "title": "Condo-Hotel Income",
+        "body": "Individually owned units can be placed in the hotel rental program to generate income from Las Vegas tourism. Flexible use as a primary residence, vacation home, or investment property.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Private Spa & Pool",
+        "body": "Palms Place has its own dedicated 15,000-square-foot spa and fitness center plus a private resort-style pool separate from the casino hotel's pool complex.",
+        "iconType": "pool"
+      },
+      {
+        "title": "Floor-to-Ceiling Views",
+        "body": "Every unit features floor-to-ceiling windows with views of the Strip, the mountains, or the Las Vegas Valley. Higher floors offer panoramic vistas across the entire metro area.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Turnkey Furnished",
+        "body": "Units come fully furnished with modern designer interiors, stainless steel kitchen appliances, marble bathrooms, and premium finishes ready for immediate occupancy or rental.",
+        "iconType": "home"
+      },
+      {
+        "title": "Accessible Price Point",
+        "body": "One of the most affordable entry points into Las Vegas high-rise condo-hotel ownership, with studios starting around $200,000 and strong rental potential from the tourism market.",
+        "iconType": "community"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Penthouse Collection",
+        "type": "Ultra-Luxury · Top Floors",
+        "desc": "The tower's most exclusive residences on the highest floors with panoramic views, premium finishes, oversized layouts, and private elevator access.",
+        "price": "From $800K+"
+      },
+      {
+        "name": "Two-Bedroom Suites",
+        "type": "Luxury · Family / Investor",
+        "desc": "Spacious two-bedroom units ideal for part-time residents or investors seeking higher nightly rental rates. Strip and mountain views available.",
+        "price": "From $500K+"
+      },
+      {
+        "name": "One-Bedroom Suites",
+        "type": "Popular · Mid-Rise",
+        "desc": "The most popular unit type at Palms Place. Fully furnished one-bedroom suites with full kitchens, modern finishes, and solid rental performance.",
+        "price": "From $300K+"
+      },
+      {
+        "name": "Studio Suites",
+        "type": "Entry-Level · Investment",
+        "desc": "Efficient studio units offering the lowest entry point to Palms Place ownership. Popular with investors focused on rental income and capital appreciation.",
+        "price": "From $200K+"
+      },
+      {
+        "name": "Strip-View Units",
+        "type": "Premium · East-Facing",
+        "desc": "East-facing units with direct views of the Las Vegas Strip. Command premium pricing and higher rental rates due to the iconic view orientation.",
+        "price": "From $350K+"
+      },
+      {
+        "name": "Mountain-View Units",
+        "type": "Residential · West-Facing",
+        "desc": "West-facing units with views of the Spring Mountains and Red Rock Canyon. Preferred by full-time residents seeking sunset views and a quieter orientation.",
+        "price": "From $250K+"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Palms Place Private Pool",
+        "address": "4381 W Flamingo Rd, Las Vegas, NV 89103",
+        "acreage": "~1 acre",
+        "amenities": [
+          "Resort pool",
+          "Hot tub",
+          "Cabanas",
+          "Lounge chairs",
+          "Poolside service"
+        ]
+      },
+      {
+        "name": "Palms Resort Pool Complex",
+        "address": "4321 W Flamingo Rd, Las Vegas, NV 89103",
+        "acreage": "~3 acres",
+        "amenities": [
+          "Multiple pools",
+          "Dayclub venue",
+          "Cabanas",
+          "DJ entertainment",
+          "Food & beverage"
+        ]
+      },
+      {
+        "name": "Desert Breeze Park",
+        "address": "8275 Spring Mountain Rd, Las Vegas, NV 89147",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Soccer fields",
+          "Baseball diamonds",
+          "Playground",
+          "Skate park",
+          "Walking paths"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Las Vegas Academy of the Arts",
+          "9–12",
+          "9/10"
+        ],
+        [
+          "Clark High School",
+          "9–12",
+          "6/10"
+        ],
+        [
+          "Fremont Middle School",
+          "6–8",
+          "5/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Las Vegas Day School",
+          "PreK–8",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Explore Academy",
+          "6–12",
+          "7/10"
+        ],
+        [
+          "Coral Academy of Science",
+          "K–12",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~400 (full-time residents)",
+      "medianAge": "42",
+      "avgIncome": "$120,000+",
+      "households": "~599 units",
+      "homeownership": "65%"
+    },
+    "driveTimes": [
+      {
+        "time": "~5 min",
+        "destination": "to the Strip",
+        "route": "via W Flamingo Rd"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 South"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown / Fremont",
+        "route": "via I-15 North"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Summerlin",
+        "route": "via US-95 West"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for units at Palms Place?",
+        "a": "Units at Palms Place range from approximately $200,000 for studio suites to over $1.5 million for premium penthouses on the upper floors. One-bedroom suites, the most popular unit type, typically range from $300,000 to $500,000."
+      },
+      {
+        "q": "Is Palms Place a hotel or condos?",
+        "a": "Palms Place is a condo-hotel. Each unit is an individually owned condominium that can be placed into the hotel's rental management program. Owners can use their unit as a primary residence, vacation home, or rental investment property."
+      },
+      {
+        "q": "What are HOA fees at Palms Place?",
+        "a": "HOA fees at Palms Place typically range from $500 to $1,800 per month depending on unit size and floor level. Fees cover building amenities, common area maintenance, concierge services, valet parking, pool, spa, and building infrastructure."
+      },
+      {
+        "q": "Can I use the Palms Casino Resort amenities?",
+        "a": "Yes. Palms Place owners have direct indoor access to the Palms Casino Resort and all of its amenities, including restaurants, the pool complex, entertainment venues, the casino floor, and the spa. Palms Place also has its own private pool and spa separate from the resort."
+      },
+      {
+        "q": "Can I live full-time at Palms Place?",
+        "a": "Yes. While many owners use the hotel rental program, Palms Place allows full-time residency. Full-time residents enjoy the same amenities, concierge services, and resort access as other owners and hotel guests."
+      },
+      {
+        "q": "What happened with the Palms renovation?",
+        "a": "The Palms Casino Resort underwent a $690 million renovation completed in 2019, one of the most expensive resort renovations in Las Vegas history. The renovation included Damien Hirst artwork, new restaurants, a reimagined pool complex, and upgraded common areas that benefit all Palms Place owners."
+      },
+      {
+        "q": "How close is Palms Place to the Strip?",
+        "a": "Palms Place is located approximately one block west of the Las Vegas Strip on Flamingo Road. The central Strip corridor, including CityCenter, Bellagio, and Caesars Palace, is approximately a 5-minute drive or a short rideshare trip."
+      },
+      {
+        "q": "What is the rental income potential at Palms Place?",
+        "a": "Rental income varies by unit size, floor level, view, and season. The Palms brand recognition and resort amenities support solid nightly rates, particularly during conventions, holidays, and major Las Vegas events. Contact our team for current rental performance data."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Trump International",
+        "href": "/trump-international/",
+        "price": "From $200K",
+        "compare": "64-story Strip-front condo-hotel with non-gaming environment and five-star amenities."
+      },
+      {
+        "name": "Veer Towers",
+        "href": "/veer-towers/",
+        "price": "From $400K",
+        "compare": "CityCenter luxury high-rise condos with direct Strip frontage and modern architecture."
+      },
+      {
+        "name": "Panorama Towers",
+        "href": "/panorama-towers/",
+        "price": "From $300K",
+        "compare": "Twin luxury high-rise towers just off the Strip with resort amenities and Strip views."
+      },
+      {
+        "name": "Sky Las Vegas",
+        "href": "/sky-las-vegas/",
+        "price": "From $200K",
+        "compare": "Strip-adjacent residential high-rise with full kitchens and a non-gaming environment."
+      },
+      {
+        "name": "The Martin",
+        "href": "/the-martin/",
+        "price": "From $300K",
+        "compare": "43-story luxury condo tower near CityCenter with spacious layouts and premium finishes."
+      },
+      {
+        "name": "Waldorf Astoria",
+        "href": "/waldorf-astoria/",
+        "price": "From $500K",
+        "compare": "Ultra-luxury condo-hotel in CityCenter with Waldorf Astoria five-star branding and services."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We were looking for an affordable Las Vegas investment property with resort amenities and rental potential. Nevada Real Estate Group helped us evaluate the Palms Place rental numbers and we found a one-bedroom suite that's been performing well in the hotel program ever since.",
+        "name": "Brian & Stephanie T.",
+        "detail": "Bought at Palms Place · 2024"
+      },
+      {
+        "quote": "Nevada Real Estate Group sold our Palms Place unit fast. They understand the condo-hotel buyer and positioned our listing to highlight the rental income and resort lifestyle. Great experience from listing to close.",
+        "name": "Marcus L.",
+        "detail": "Sold at Palms Place · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Palms Place",
+    "ylopoMinPrice": 200000
   }
 ]
