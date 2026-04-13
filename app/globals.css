@@ -125,7 +125,7 @@ ul { list-style: none; }
   .hero-tagline-number { font-size: 90px; }
   .hero-tagline-text { font-size: 24px; letter-spacing: 0.1em; }
   .nav-logo img { height: 100px; filter: brightness(0) invert(1) !important; }
-  .nav-logo { margin-top: 10px; }
+  .nav-logo { margin-top: 40px; position: absolute; left: 50%; transform: translateX(-50%); }
   .nav-hamburger { display: flex; }
   .nav-hamburger span { background: var(--white) !important; }
 }
