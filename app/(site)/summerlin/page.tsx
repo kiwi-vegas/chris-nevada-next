@@ -7,6 +7,7 @@ import SummerlinMapWrapper from '@/components/SummerlinMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
 
@@ -110,8 +111,8 @@ const RELATED_POSTS = [
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('summerlin')
   return {
-    title: cms?.metaTitle ?? 'Summerlin Las Vegas Homes for Sale | 485+ Listings | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? '485+ homes for sale in Summerlin, Las Vegas. $450K\u2013$10M+ \u2014 from condos to custom estates in 20+ villages. Schools, HOA info, builder options. Nevada Real Estate Group.',
+    title: cms?.metaTitle ?? 'Summerlin Las Vegas Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Summerlin homes for sale in Las Vegas. $450K\u2013$10M+ \u2014 from condos to custom estates in 20+ villages. Schools, HOA info, builder options. Nevada Real Estate Group.',
   }
 }
 
@@ -119,6 +120,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function SummerlinPage() {
   const cms = await getCommunityPage('summerlin')
+  const market = getMarketStats('summerlin')
+  const ms = market?.stats
 
   const heroHeadline = cms?.heroHeadline ?? 'Summerlin'
   const heroSubtitle = 'Homes for Sale in Las Vegas, Nevada'
@@ -130,7 +133,7 @@ export default async function SummerlinPage() {
     ['Developer', 'Howard Hughes Corporation'],
     ['Total Acreage', '22,500 acres'],
     ['Population', '130,000+'],
-    ['Median Home Price', '$642,000'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$642,000'],
     ['Villages', '20+'],
     ['Schools', '26 public, private & charter'],
     ['Parks', '250+'],
@@ -177,16 +180,16 @@ export default async function SummerlinPage() {
             </h1>
             <div className="hero-v2-stats">
               <div className="hero-v2-stat">
-                <span className="hero-v2-stat-num">{qs('Active Listings', '485+')}</span>
-                <span className="hero-v2-stat-lbl">Active Listings</span>
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '485+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
               </div>
               <div className="hero-v2-stat">
-                <span className="hero-v2-stat-num">{qs('Median Home Price', '$642,000')}</span>
-                <span className="hero-v2-stat-lbl">Median Price</span>
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$642,000')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
               </div>
               <div className="hero-v2-stat">
-                <span className="hero-v2-stat-num">{qs('Avg Days on Market', '78')}</span>
-                <span className="hero-v2-stat-lbl">Avg Days on Market</span>
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '78')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
               </div>
             </div>
             <a href="#listings" className="hero-v2-cta">Search Homes in Summerlin</a>
@@ -342,12 +345,12 @@ export default async function SummerlinPage() {
               </div>
               <div className="mstat-table">
                 {[
-                  ['Median Sale Price', '$642,000', 'gold'],
-                  ['Avg Price Per Sq Ft', '$329'],
-                  ['Active Listings', '485+'],
-                  ['Avg Days on Market', '78'],
-                  ['Highest Active Listing', '$12,500,000'],
-                  ['Lowest Active Listing', '$389,000'],
+                  ['Median Sale Price', ms?.medianSalePrice ?? '$642,000', 'gold'],
+                  ['Home Value (ZHVI)', ms?.homeValue ?? '$660,000'],
+                  ['Median List Price', ms?.medianListPrice ?? '$700,000'],
+                  ['Avg Days to Close', ms?.avgDaysToClose ?? '78'],
+                  ['Sale-to-List Ratio', ms?.saleToListRatio ?? '98.5%'],
+                  ['Price Cut %', ms?.priceCutPercent ?? '25%'],
                 ].map(([label, value, cls]) => (
                   <div className="mstat-row" key={label}>
                     <span className="mstat-label">{label}</span>
@@ -355,7 +358,7 @@ export default async function SummerlinPage() {
                   </div>
                 ))}
               </div>
-              <p className="mstat-citation">Data sourced from NVAR MLS. Last updated: <strong>April 2026</strong>. Information deemed reliable but not guaranteed.</p>
+              <p className="mstat-citation">Data sourced from Zillow Research. Last updated: <strong>{market?.meta.latestDataDate ?? 'Feb 2026'}</strong>. Information deemed reliable but not guaranteed.</p>
             </div>
             <div className="mstat-cta-card">
               <h3>Get Your Free Summerlin Market Report</h3>
