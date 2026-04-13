@@ -17,7 +17,7 @@ export default function HighRisePage() {
         const slugs = ['veer-towers','waldorf-astoria-las-vegas','panorama-towers','turnberry-towers','turnberry-place','sky-las-vegas','allure-las-vegas','juhl','the-ogden','soho-lofts','newport-lofts','the-martin','one-queensridge-place','cello-tower','four-seasons-private-residences']
         return type.includes('high-rise') || type.includes('tower') || type.includes('loft') || slugs.includes(c.slug)
       }}
-      seoLabel="High-Rise Condos"
+      slug="high-rise-condos" seoLabel="High-Rise Condos"
     />
   )
 }

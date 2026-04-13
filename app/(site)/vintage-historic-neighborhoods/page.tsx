@@ -17,7 +17,7 @@ export default function VintagePage() {
         const type = c.type?.toLowerCase() || ''
         return slugs.includes(c.slug) || type.includes('vintage') || type.includes('historic')
       }}
-      seoLabel="Vintage & Historic Neighborhoods"
+      slug="vintage-historic-neighborhoods" seoLabel="Vintage & Historic Neighborhoods"
     />
   )
 }

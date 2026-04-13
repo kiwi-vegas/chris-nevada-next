@@ -29,9 +29,10 @@ interface Props {
   description: string
   filterFn: (c: CommunityEntry) => boolean
   seoLabel: string
+  slug: string
 }
 
-export default function LifestyleCollectionPage({ title, description, filterFn, seoLabel }: Props) {
+export default function LifestyleCollectionPage({ title, description, filterFn, seoLabel, slug }: Props) {
   const all = loadCommunities()
   const filtered = all.filter(filterFn).sort((a, b) => a.name.localeCompare(b.name))
 
@@ -44,6 +45,42 @@ export default function LifestyleCollectionPage({ title, description, filterFn, 
   })
 
   const sortedGroups = Object.entries(groups).sort((a, b) => b[1].length - a[1].length)
+
+  const BASE = 'https://www.lasvegashomesearchexperts.com'
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE}/` },
+      { '@type': 'ListItem', position: 2, name: 'Communities', item: `${BASE}/communities` },
+      { '@type': 'ListItem', position: 3, name: seoLabel, item: `${BASE}/${slug}` },
+    ],
+  }
+
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: title,
+    description: `${filtered.length} ${seoLabel.toLowerCase()} in Las Vegas, Henderson, Summerlin, and North Las Vegas.`,
+    numberOfItems: filtered.length,
+    itemListElement: filtered.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      url: `${BASE}/${c.slug}/`,
+    })),
+  }
+
+  const collectionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: title,
+    description: description,
+    url: `${BASE}/${slug}`,
+    isPartOf: { '@type': 'WebSite', name: 'Las Vegas Home Search Experts', url: BASE },
+    about: { '@type': 'Thing', name: seoLabel },
+  }
 
   return (
     <main>
@@ -90,6 +127,10 @@ export default function LifestyleCollectionPage({ title, description, filterFn, 
           </div>
         </div>
       </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
     </main>
   )
 }

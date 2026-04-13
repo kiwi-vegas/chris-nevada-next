@@ -16,7 +16,7 @@ export default function NewConstructionPage() {
         const type = c.type?.toLowerCase() || ''
         return type.includes('new construction') || type.includes('new-construction')
       }}
-      seoLabel="New Construction"
+      slug="new-construction" seoLabel="New Construction"
     />
   )
 }

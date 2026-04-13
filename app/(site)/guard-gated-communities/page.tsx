@@ -13,7 +13,7 @@ export default function GuardGatedPage() {
       title="Guard-Gated Communities in Las Vegas"
       description="Las Vegas offers more guard-gated communities than almost any metro in the country. From exclusive Summerlin enclaves to Henderson hillside estates, these communities provide 24-hour security, controlled access, and a level of privacy that open neighborhoods cannot match."
       filterFn={(c) => c.guardGated}
-      seoLabel="Guard-Gated Communities"
+      slug="guard-gated-communities" seoLabel="Guard-Gated Communities"
     />
   )
 }

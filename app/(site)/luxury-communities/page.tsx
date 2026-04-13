@@ -16,7 +16,7 @@ export default function LuxuryPage() {
         const type = c.type?.toLowerCase() || ''
         return type.includes('luxury') || type.includes('ultra')
       }}
-      seoLabel="Luxury Communities"
+      slug="luxury-communities" seoLabel="Luxury Communities"
     />
   )
 }

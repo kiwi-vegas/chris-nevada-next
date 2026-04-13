@@ -16,7 +16,7 @@ export default function GolfPage() {
         const type = c.type?.toLowerCase() || ''
         return type.includes('golf')
       }}
-      seoLabel="Golf Communities"
+      slug="golf-communities" seoLabel="Golf Communities"
     />
   )
 }

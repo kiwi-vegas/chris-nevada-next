@@ -16,7 +16,7 @@ export default function FiftyPlusPage() {
         const type = c.type?.toLowerCase() || ''
         return type.includes('55+') || type.includes('active adult')
       }}
-      seoLabel="55+ Communities"
+      slug="55-plus-communities" seoLabel="55+ Communities"
     />
   )
 }
