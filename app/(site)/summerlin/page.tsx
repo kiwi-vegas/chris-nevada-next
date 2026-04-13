@@ -62,6 +62,30 @@ const AGENT_SCHEMA = {
     { '@type': 'City', name: 'North Las Vegas' },
   ],
   priceRange: '$$$',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    bestRating: '5',
+    worstRating: '1',
+    ratingCount: '2560',
+    reviewCount: '2560',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Michael & Sara T.' },
+      datePublished: '2024-01-01',
+      reviewBody: "We'd been researching Summerlin for eight months before we called Nevada Real Estate Group. Within two weeks we were under contract on a home in The Paseos — exactly the village, school zone, and price point we wanted. The knowledge of this specific community was unlike anything we'd experienced with other agents.",
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5', worstRating: '1' },
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'David K.' },
+      datePublished: '2025-01-01',
+      reviewBody: "Sold our Summerlin home in Stonebridge in 11 days at $32,000 over asking. The team knew exactly what buyers in this price range in this village were looking for. The pricing strategy was surgical — we listed on Thursday and had three offers by Saturday.",
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5', worstRating: '1' },
+    },
+  ],
 }
 
 /* ── Hardcoded Data ─────────────────────────────────────────── */
