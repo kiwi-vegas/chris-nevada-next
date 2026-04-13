@@ -122,10 +122,11 @@ ul { list-style: none; }
 .hero-tagline-number { font-family: var(--font-sans); font-size: min(5vw, 80px); font-weight: 300; color: #FFFFFF; line-height: 1; text-shadow: 0 0 10px rgba(0,0,0,0.8); letter-spacing: -0.02em; }
 .hero-tagline-text { font-family: var(--font-sans); font-size: min(2.4vw, 36px); font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: #FFFFFF; text-shadow: 0 0 10px rgba(0,0,0,0.8); margin-top: 4px; }
 @media (max-width: 768px) {
-  .hero-tagline-number { font-size: 50px; }
-  .hero-tagline-text { font-size: 11px; letter-spacing: 0.12em; }
+  .hero-tagline-number { font-size: 60px; }
+  .hero-tagline-text { font-size: 20px; letter-spacing: 0.12em; }
   .nav-logo img { height: 80px; }
-  .nav-logo { margin-top: 40px; }
+  .nav-logo { margin-top: 20px; }
+  .nav-hamburger { display: flex; }
 }
 .hero-sub strong { color: var(--white); font-weight: 400; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
