@@ -94,7 +94,7 @@ export default function CommunitiesPage() {
           <div className="section-header" style={{ textAlign: 'center' }}>
             <span className="section-label">Explore Las Vegas</span>
             <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: 'var(--text-2xl)', fontWeight: 400, color: 'var(--navy)', marginBottom: '16px' }}>Las Vegas Communities &amp; Neighborhoods</h1>
-            <p style={{ maxWidth: '640px', margin: '0 auto' }}>200+ communities across Las Vegas, Henderson, Summerlin, and North Las Vegas. From luxury guard-gated estates to family-friendly master plans.</p>
+            <p style={{ maxWidth: '640px', margin: '0 auto', textAlign: 'center' }}>200+ communities across Las Vegas, Henderson, Summerlin, and North Las Vegas. From luxury guard-gated estates to family-friendly master plans.</p>
           </div>
 
           {COMMUNITY_GROUPS.map(group => (
