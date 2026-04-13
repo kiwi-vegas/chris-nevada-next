@@ -1,0 +1,4282 @@
+[
+  {
+    "slug": "southern-highlands-golf-estates",
+    "name": "Golf Estates at Southern Highlands",
+    "parentCommunity": "Southern Highlands",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Golf · Luxury",
+    "zipCodes": [
+      "89141"
+    ],
+    "center": [
+      -115.230,
+      35.992
+    ],
+    "heroEyebrow": "Southern Highlands, Las Vegas",
+    "priceRange": "$800K–$3M+",
+    "established": "2000",
+    "developer": "Olympia Group",
+    "acreage": "~180 acres",
+    "homeCount": "350+",
+    "guardGated": true,
+    "hoaRange": "$300–$700/mo",
+    "overview": [
+      "The Golf Estates at Southern Highlands occupy one of the most coveted positions within the Southern Highlands master-planned community — directly along the fairways and greens of the private Jack Nicklaus Signature championship golf course. These guard-gated homes sit behind both the Southern Highlands community gate and their own secondary gate, providing two layers of 24-hour security and creating one of the most private residential enclaves in the southwest valley.",
+      "Homes in the Golf Estates range from approximately $800,000 for semi-custom resale homes to well over $3 million for the largest custom estates on premium golf course frontage lots. The architectural character blends Mediterranean, Tuscan, and desert contemporary styles, with homes typically ranging from 3,500 to 8,000+ square feet. Many properties feature resort-style pools, outdoor kitchens, motor courts, and direct golf course views from expansive rear patios and covered loggias.",
+      "As a Golf Estates resident, access to the Southern Highlands Golf Club is the defining lifestyle advantage. The private club features the Nicklaus-designed championship course, a Mediterranean-inspired clubhouse with fine dining, resort-style pools, tennis courts, a spa and fitness center, and a full social calendar. Golf membership is available by application and is one of the most sought-after private memberships in Las Vegas.",
+      "The Golf Estates benefit from Southern Highlands' exceptional location in the southern foothills of the Las Vegas Valley. The I-15 freeway is minutes away, putting the Strip approximately 15 minutes north and Harry Reid International Airport about 20 minutes away. For buyers who want private golf course living within a prestigious master-planned community at price points that represent genuine value compared to comparable Summerlin properties, the Golf Estates deliver."
+    ],
+    "highlights": [
+      {
+        "title": "Nicklaus Golf Course Frontage",
+        "body": "Homes sit directly along the fairways and greens of the private Jack Nicklaus Signature championship course, consistently ranked among the finest in Nevada.",
+        "iconType": "golf"
+      },
+      {
+        "title": "Double Guard-Gated Security",
+        "body": "Two layers of 24-hour staffed guard gates — the Southern Highlands community gate plus a dedicated Golf Estates gate — provide exceptional privacy and security.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Private Club Membership",
+        "body": "Access to the Southern Highlands Golf Club with its Mediterranean clubhouse, fine dining, resort pools, tennis courts, spa, and fitness center. Membership by application.",
+        "iconType": "building"
+      },
+      {
+        "title": "Semi-Custom & Custom Homes",
+        "body": "Homes from 3,500 to 8,000+ square feet in Mediterranean, Tuscan, and desert contemporary styles. Many with resort pools, motor courts, and direct golf course views.",
+        "iconType": "home"
+      },
+      {
+        "title": "Mountain & Fairway Views",
+        "body": "Elevated positions with panoramic views of the Spring Mountains and sweeping fairway views across the Nicklaus course. Sunset views are among the best in the south valley.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Strong Appreciation",
+        "body": "Golf course frontage properties in guard-gated communities consistently outperform the broader market. Limited inventory and strong demand support long-term value.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Fairway Estates",
+        "type": "Custom · Golf Frontage",
+        "desc": "The most prized lots in the Golf Estates with direct frontage along the Nicklaus course. Custom homes with panoramic fairway and mountain views.",
+        "price": "From $1.5M+"
+      },
+      {
+        "name": "Clubhouse Terrace",
+        "type": "Semi-Custom · Premium",
+        "desc": "Homes near the Southern Highlands Golf Club clubhouse with easy walking access to dining, pools, and fitness. Larger lots and premium finishes.",
+        "price": "From $1.2M+"
+      },
+      {
+        "name": "Ridge View",
+        "type": "Semi-Custom · Mountain Views",
+        "desc": "Elevated lots along the community's western edge with panoramic Spring Mountain views and western-exposure sunset views over the golf course.",
+        "price": "From $1M+"
+      },
+      {
+        "name": "Interior Golf Estates",
+        "type": "Semi-Custom · Established",
+        "desc": "Well-established homes set back from the fairways with mature landscaping, privacy, and competitive pricing relative to frontage properties.",
+        "price": "From $800K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Southern Highlands Golf Club",
+        "address": "1 Robert Trent Jones Ln, Las Vegas, NV 89141",
+        "acreage": "250+ acres",
+        "amenities": [
+          "Championship golf course",
+          "Clubhouse dining",
+          "Resort-style pools",
+          "Fitness center",
+          "Tennis courts",
+          "Spa"
+        ]
+      },
+      {
+        "name": "Southern Highlands Community Park",
+        "address": "11701 Southern Highlands Pkwy, Las Vegas, NV 89141",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Walking trails",
+          "Playground",
+          "Picnic areas",
+          "Basketball courts",
+          "Open space"
+        ]
+      },
+      {
+        "name": "Sloan Canyon National Conservation Area",
+        "address": "Near S Las Vegas Blvd, Henderson, NV",
+        "acreage": "48,438 acres",
+        "amenities": [
+          "Petroglyph hiking",
+          "Desert trails",
+          "Wildlife viewing",
+          "Photography",
+          "Rock art"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John R. Hummel Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Del E. Webb Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Coronado High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~1,000",
+      "medianAge": "52",
+      "avgIncome": "$225,000+",
+      "households": "350+",
+      "homeownership": "92%"
+    },
+    "driveTimes": [
+      {
+        "time": "~15 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 → I-215"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Summerlin",
+        "route": "via I-215 West"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Mountains Edge",
+        "route": "via S Las Vegas Blvd"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in the Golf Estates at Southern Highlands?",
+        "a": "Homes in the Golf Estates range from approximately $800,000 for semi-custom resale homes to over $3 million for custom estates on premium golf course frontage lots with mountain views."
+      },
+      {
+        "q": "Are the Golf Estates guard-gated?",
+        "a": "Yes — the Golf Estates are double guard-gated. Residents pass through the main Southern Highlands community guard gate and then a second dedicated Golf Estates gate. Both are staffed 24 hours a day."
+      },
+      {
+        "q": "What golf course is in the Golf Estates?",
+        "a": "The Golf Estates sit directly along the Southern Highlands Golf Club, an 18-hole Jack Nicklaus Signature championship course. The private club includes a Mediterranean clubhouse, dining, pools, tennis, spa, and fitness center."
+      },
+      {
+        "q": "What ZIP code are the Golf Estates in?",
+        "a": "The Golf Estates at Southern Highlands are located in ZIP code 89141 in southwest Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in the Golf Estates?",
+        "a": "HOA fees typically range from $300 to $700 per month, covering the Southern Highlands master association fee plus the Golf Estates sub-association fee. Fees include guard gate staffing, security patrols, common area maintenance, and landscaping."
+      },
+      {
+        "q": "Do I have to join the golf club?",
+        "a": "Golf club membership is not mandatory with home ownership in the Golf Estates, but it is available by application. Many residents join for the dining, fitness, and social benefits as well as the golf."
+      },
+      {
+        "q": "How does the Golf Estates compare to The Estates at Southern Highlands?",
+        "a": "Both are double guard-gated enclaves within Southern Highlands. The Estates typically features larger custom homes on larger lots ($2M–$10M+), while the Golf Estates offers a broader range starting at $800K with a mix of semi-custom and custom homes, many with golf course frontage."
+      },
+      {
+        "q": "What schools serve the Golf Estates?",
+        "a": "The Golf Estates are served by CCSD schools including John R. Hummel Elementary (8/10), Del E. Webb Middle School (7/10), and Coronado High School. Bishop Gorman High School (A+) is the top private option nearby."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $400K",
+        "compare": "The broader master-planned community with Jack Nicklaus golf and multiple guard-gated enclaves."
+      },
+      {
+        "name": "The Estates at SH",
+        "href": "/southern-highlands-the-estates/",
+        "price": "From $2M",
+        "compare": "Southern Highlands' ultra-luxury enclave with custom estates on half-acre to full-acre lots."
+      },
+      {
+        "name": "Olympia Ridge",
+        "href": "/olympia-ridge/",
+        "price": "From $1.5M",
+        "compare": "Ultra-luxury guard-gated enclave within Southern Highlands with the highest elevation and golf frontage."
+      },
+      {
+        "name": "Tuscan Cliffs",
+        "href": "/tuscan-cliffs/",
+        "price": "From $800K",
+        "compare": "Mediterranean-inspired guard-gated enclave with dramatic hillside homesites in Southern Highlands."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated community with Bear's Best golf and Red Rock Canyon views."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community with Rio Secco golf and panoramic Strip views."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We wanted golf course living without the Summerlin price tag. Nevada Real Estate Group found us a stunning home on the 7th fairway in the Golf Estates with mountain views we never imagined were possible at our budget.",
+        "name": "Michael & Sandra K.",
+        "detail": "Bought in Golf Estates, Southern Highlands · 2024"
+      },
+      {
+        "quote": "Selling our home in the Golf Estates required a team that understood the luxury golf community market. Nevada Real Estate Group attracted the right buyers and delivered a smooth closing at our target price.",
+        "name": "Gregory T.",
+        "detail": "Sold in Golf Estates, Southern Highlands · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Southern Highlands",
+    "ylopoMinPrice": 800000
+  },
+  {
+    "slug": "southern-highlands-portofino",
+    "name": "Portofino at Southern Highlands",
+    "parentCommunity": "Southern Highlands",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury",
+    "zipCodes": [
+      "89141"
+    ],
+    "center": [
+      -115.248,
+      35.999
+    ],
+    "heroEyebrow": "Southern Highlands, Las Vegas",
+    "priceRange": "$600K–$1.5M",
+    "established": "2002",
+    "developer": "Olympia Group",
+    "acreage": "~120 acres",
+    "homeCount": "400+",
+    "guardGated": true,
+    "hoaRange": "$250–$550/mo",
+    "overview": [
+      "Portofino at Southern Highlands is one of the most sought-after guard-gated enclaves within the Southern Highlands master-planned community. Named after the Italian Riviera fishing village, Portofino captures a Mediterranean lifestyle aesthetic with Tuscan-inspired architecture, lush landscaping, and tree-lined streets that create a warm, inviting atmosphere unique among Las Vegas luxury communities.",
+      "Behind its staffed guard gate within the already-gated Southern Highlands community, Portofino features approximately 400 homes ranging from $600,000 to $1.5 million. Homes typically range from 2,800 to 5,500 square feet, with floor plans featuring grand foyers, formal living and dining rooms, gourmet kitchens, and expansive rear yards with room for resort-style pools. The architectural standards emphasize Mediterranean and Tuscan design elements — stucco exteriors, tile roofs, arched entryways, and wrought-iron details.",
+      "What distinguishes Portofino from the higher-priced enclaves within Southern Highlands is its balance of luxury and accessibility. Buyers get double guard-gated security, the Mediterranean character, and access to the broader Southern Highlands amenity package — including proximity to the private Jack Nicklaus Golf Club — at price points that are significantly more accessible than The Estates, Olympia Ridge, or Tuscan Cliffs.",
+      "Portofino residents enjoy all the benefits of the Southern Highlands location: 15 minutes to the Strip via I-15, 20 minutes to Harry Reid Airport, top-rated schools in the CCSD southwest cluster, and the Southern Highlands commercial corridor with grocery, dining, and retail along Southern Highlands Parkway. For buyers seeking guard-gated Mediterranean luxury in one of Las Vegas's most established master-planned communities, Portofino represents outstanding value."
+    ],
+    "highlights": [
+      {
+        "title": "Double Guard-Gated Security",
+        "body": "Portofino sits behind its own staffed guard gate within the already guard-gated Southern Highlands community. Two layers of 24-hour security provide exceptional privacy.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Mediterranean Architecture",
+        "body": "Tuscan-inspired homes with stucco exteriors, tile roofs, arched entryways, and wrought-iron details. Tree-lined streets and lush landscaping create an Italian Riviera atmosphere.",
+        "iconType": "home"
+      },
+      {
+        "title": "Nicklaus Golf Proximity",
+        "body": "Minutes from the Southern Highlands Golf Club, a private Jack Nicklaus Signature championship course with Mediterranean clubhouse, dining, pools, and fitness. Membership by application.",
+        "iconType": "golf"
+      },
+      {
+        "title": "Luxury at Accessible Pricing",
+        "body": "Guard-gated luxury from $600K — significantly more accessible than comparable enclaves like The Estates or Tuscan Cliffs, while offering the same Southern Highlands prestige.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Mountain Views",
+        "body": "Many homes enjoy views of the Spring Mountains to the west and the McCullough Range to the south. Elevated lots on the community's perimeter offer panoramic valley views.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Established Community Feel",
+        "body": "With over 400 homes and mature landscaping, Portofino has developed a warm, tight-knit neighborhood character with strong social connections among residents.",
+        "iconType": "building"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Portofino Estates",
+        "type": "Semi-Custom · Premium",
+        "desc": "The larger homes in Portofino with 4,000–5,500 square feet, premium lot positions, and upgraded architectural details. Many with resort-style pools and views.",
+        "price": "From $1M+"
+      },
+      {
+        "name": "Portofino Villas",
+        "type": "Semi-Custom · Mid-Range",
+        "desc": "Well-proportioned homes from 3,200 to 4,200 square feet with Mediterranean styling and mature landscaping. The core of the Portofino community.",
+        "price": "From $750K"
+      },
+      {
+        "name": "Portofino Terrace",
+        "type": "Production · Entry",
+        "desc": "The most accessible homes in Portofino from 2,800 to 3,500 square feet. Full guard-gated security and Southern Highlands amenity access at competitive pricing.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Portofino View Lots",
+        "type": "Premium · Perimeter Views",
+        "desc": "Homes along the community's elevated perimeter with unobstructed mountain and valley views. Sought-after positions that rarely come to market.",
+        "price": "From $1.2M+"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Southern Highlands Community Park",
+        "address": "11701 Southern Highlands Pkwy, Las Vegas, NV 89141",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Resort-style pool",
+          "Playground",
+          "Basketball courts",
+          "Walking trails",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Olympia Ridge Park",
+        "address": "Olympia Ridge Pkwy, Las Vegas, NV 89141",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Open turf",
+          "Walking paths",
+          "Playground",
+          "Shade structures",
+          "Desert landscape trails"
+        ]
+      },
+      {
+        "name": "Sloan Canyon National Conservation Area",
+        "address": "Near S Las Vegas Blvd, Henderson, NV",
+        "acreage": "48,438 acres",
+        "amenities": [
+          "Petroglyph hiking",
+          "Desert trails",
+          "Wildlife viewing",
+          "Photography",
+          "Rock art"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John R. Hummel Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Del E. Webb Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Coronado High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~1,200",
+      "medianAge": "45",
+      "avgIncome": "$165,000",
+      "households": "400+",
+      "homeownership": "88%"
+    },
+    "driveTimes": [
+      {
+        "time": "~15 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 → I-215"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Summerlin",
+        "route": "via I-215 West"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Mountains Edge",
+        "route": "via S Las Vegas Blvd"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Portofino at Southern Highlands?",
+        "a": "Homes in Portofino range from approximately $600,000 for entry-level homes within the enclave to $1.5 million for premium estate-sized homes on view lots."
+      },
+      {
+        "q": "Is Portofino guard-gated?",
+        "a": "Yes — Portofino is double guard-gated. Residents pass through the Southern Highlands community guard gate and then a second Portofino-specific gate. Both are staffed 24 hours."
+      },
+      {
+        "q": "What is the architectural style in Portofino?",
+        "a": "Portofino features Mediterranean and Tuscan-inspired architecture with stucco exteriors, clay tile roofs, arched entryways, wrought-iron accents, and lush landscaping. The streetscapes are designed to evoke an Italian village character."
+      },
+      {
+        "q": "What ZIP code is Portofino in?",
+        "a": "Portofino at Southern Highlands is located in ZIP code 89141 in southwest Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Portofino?",
+        "a": "HOA fees typically range from $250 to $550 per month, covering the Southern Highlands master association fee plus the Portofino sub-association fee. Fees include guard gate staffing, security, common area maintenance, and landscaping."
+      },
+      {
+        "q": "How does Portofino compare to Tuscan Cliffs?",
+        "a": "Both are guard-gated enclaves within Southern Highlands. Tuscan Cliffs features more dramatic hillside lots and higher price points ($800K–$3M), while Portofino offers a more accessible entry point ($600K–$1.5M) with a warm Mediterranean village atmosphere and mature landscaping."
+      },
+      {
+        "q": "Is golf membership required in Portofino?",
+        "a": "No. Golf club membership at the Southern Highlands Golf Club is optional and available by application. Many Portofino residents enjoy the club's dining, fitness, and social amenities without being golfers."
+      },
+      {
+        "q": "What schools serve Portofino?",
+        "a": "Portofino is served by CCSD schools including John R. Hummel Elementary (8/10) and Del E. Webb Middle School (7/10). Bishop Gorman High School (A+) is the top private option in the area."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $400K",
+        "compare": "The broader master-planned community with Nicklaus golf and multiple guard-gated enclaves at every price point."
+      },
+      {
+        "name": "Tuscan Cliffs",
+        "href": "/tuscan-cliffs/",
+        "price": "From $800K",
+        "compare": "Hillside guard-gated enclave within Southern Highlands with dramatic elevation and mountain views."
+      },
+      {
+        "name": "The Estates at SH",
+        "href": "/southern-highlands-the-estates/",
+        "price": "From $2M",
+        "compare": "Ultra-luxury custom estate enclave within Southern Highlands on half-acre to full-acre golf course lots."
+      },
+      {
+        "name": "Rhodes Ranch",
+        "href": "/rhodes-ranch/",
+        "price": "From $350K",
+        "compare": "Guard-gated golf community to the north with Ted Robinson course and resort amenities."
+      },
+      {
+        "name": "Mountains Edge",
+        "href": "/mountains-edge/",
+        "price": "From $350K",
+        "compare": "Adjacent master-planned community with 12,000+ homes and more attainable pricing."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community with Rio Secco golf and panoramic Strip views."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Portofino gave us everything we wanted — guard-gated security, Mediterranean character, and the Southern Highlands address — at a price point that let us put money into customizing our backyard. Nevada Real Estate Group knew exactly which lots offered the best value.",
+        "name": "Anthony & Lisa M.",
+        "detail": "Bought in Portofino, Southern Highlands · 2024"
+      },
+      {
+        "quote": "When we decided to sell in Portofino, Nevada Real Estate Group's marketing attracted multiple offers within two weeks. Their knowledge of the Southern Highlands enclaves and what makes each one special was evident in every showing.",
+        "name": "Catherine R.",
+        "detail": "Sold in Portofino, Southern Highlands · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Southern Highlands",
+    "ylopoMinPrice": 600000
+  },
+  {
+    "slug": "southern-highlands-augusta-canyon",
+    "name": "Augusta Canyon at Southern Highlands",
+    "parentCommunity": "Southern Highlands",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Ultra-Luxury · Golf",
+    "zipCodes": [
+      "89141"
+    ],
+    "center": [
+      -115.210,
+      35.988
+    ],
+    "heroEyebrow": "Southern Highlands, Las Vegas",
+    "priceRange": "$1M–$4M+",
+    "established": "2004",
+    "developer": "Olympia Group",
+    "acreage": "~100 acres",
+    "homeCount": "120+",
+    "guardGated": true,
+    "hoaRange": "$400–$900/mo",
+    "overview": [
+      "Augusta Canyon is among the most exclusive guard-gated enclaves within Southern Highlands, offering custom and semi-custom estate living on generous lots with sweeping golf course, mountain, and valley views. Named to evoke the grandeur of Augusta National, this enclave attracts discerning buyers seeking the pinnacle of private golf community living in the southwest Las Vegas Valley.",
+      "Homes in Augusta Canyon range from approximately $1 million for semi-custom resale homes to well over $4 million for the largest custom estates. Lot sizes are generous — many exceeding a third of an acre — with homes typically ranging from 4,000 to 10,000+ square feet. The architectural standards allow for Mediterranean, Tuscan, transitional, and desert contemporary styles, resulting in a visually diverse but consistently high-quality streetscape. Many homes feature custom pool designs, outdoor living pavilions, four-car-plus garages, and sweeping rooflines that complement the terrain.",
+      "Augusta Canyon benefits from its position near the most elevated terrain within Southern Highlands, providing commanding views of the Jack Nicklaus Signature golf course, the Spring Mountains, and the Las Vegas Valley. The private Southern Highlands Golf Club is the community's social and recreational anchor, offering championship golf, fine dining, resort pools, tennis, spa, and fitness — all accessible to members.",
+      "The enclave's double guard-gated entry — through the Southern Highlands community gate and then a dedicated Augusta Canyon gate — provides the kind of privacy that attracts executives, professional athletes, and high-net-worth individuals. Combined with Southern Highlands' proximity to I-15 and Harry Reid Airport, Augusta Canyon offers ultra-luxury living with genuine convenience."
+    ],
+    "highlights": [
+      {
+        "title": "Custom Estate Lots",
+        "body": "Generous lots exceeding a third of an acre accommodate homes from 4,000 to 10,000+ square feet. Full custom builds with resort pools, outdoor pavilions, and multi-car motor courts.",
+        "iconType": "home"
+      },
+      {
+        "title": "Double Guard-Gated",
+        "body": "Two layers of 24-hour staffed guard gates provide the highest level of residential security within Southern Highlands. Privacy and exclusivity for high-profile residents.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Nicklaus Golf & Club",
+        "body": "Adjacent to the private Jack Nicklaus Signature championship course. The Southern Highlands Golf Club offers fine dining, resort pools, tennis, spa, and an active social calendar.",
+        "iconType": "golf"
+      },
+      {
+        "title": "Elevated Terrain & Views",
+        "body": "Among the highest elevation within Southern Highlands. Commanding views of the golf course, Spring Mountains, and the Las Vegas Valley from estate-level vantage points.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Airport Proximity",
+        "body": "Harry Reid International Airport is approximately 20 minutes via I-15 — one of the shortest luxury-community-to-airport commutes in the valley. Ideal for frequent travelers.",
+        "iconType": "building"
+      },
+      {
+        "title": "Ultra-Luxury Value",
+        "body": "Augusta Canyon delivers custom estate living at price points below comparable enclaves in Summerlin's The Ridges or Henderson's Ascaya, offering genuine value in the ultra-luxury tier.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Hilltop Custom Estates",
+        "type": "Custom · Panoramic Views",
+        "desc": "The highest-elevation lots within Augusta Canyon with 270-degree views of the golf course, mountains, and valley. The most exclusive positions in the enclave.",
+        "price": "From $3M+"
+      },
+      {
+        "name": "Golf Course Frontage",
+        "type": "Custom · Fairway Views",
+        "desc": "Lots with direct frontage along the Nicklaus-designed championship course. Sweeping fairway and mountain views from expansive rear yards.",
+        "price": "From $2M+"
+      },
+      {
+        "name": "Canyon View",
+        "type": "Semi-Custom · Premium",
+        "desc": "Semi-custom homes with views toward the natural desert canyon terrain. A blend of privacy and panoramic vistas at slightly more accessible price points.",
+        "price": "From $1.5M+"
+      },
+      {
+        "name": "Interior Estates",
+        "type": "Semi-Custom · Established",
+        "desc": "Established homes on interior lots with mature landscaping and enhanced privacy. The entry tier for Augusta Canyon living.",
+        "price": "From $1M+"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Southern Highlands Golf Club",
+        "address": "1 Robert Trent Jones Ln, Las Vegas, NV 89141",
+        "acreage": "250+ acres",
+        "amenities": [
+          "Championship golf course",
+          "Clubhouse dining",
+          "Resort-style pools",
+          "Fitness center",
+          "Tennis courts",
+          "Spa"
+        ]
+      },
+      {
+        "name": "Southern Highlands Community Park",
+        "address": "11701 Southern Highlands Pkwy, Las Vegas, NV 89141",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Walking trails",
+          "Playground",
+          "Picnic areas",
+          "Basketball courts",
+          "Open space"
+        ]
+      },
+      {
+        "name": "Sloan Canyon National Conservation Area",
+        "address": "Near S Las Vegas Blvd, Henderson, NV",
+        "acreage": "48,438 acres",
+        "amenities": [
+          "Petroglyph hiking",
+          "Desert trails",
+          "Wildlife viewing",
+          "Photography",
+          "Rock art"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "John R. Hummel Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Del E. Webb Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Coronado High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Pinecrest Academy of Nevada",
+          "PreK–12",
+          "9/10"
+        ],
+        [
+          "Doral Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~350",
+      "medianAge": "52",
+      "avgIncome": "$350,000+",
+      "households": "120+",
+      "homeownership": "95%"
+    },
+    "driveTimes": [
+      {
+        "time": "~15 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 → I-215"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Summerlin",
+        "route": "via I-215 West"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Henderson",
+        "route": "via I-215 East"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Augusta Canyon?",
+        "a": "Homes in Augusta Canyon range from approximately $1 million for semi-custom resale homes to over $4 million for custom estates on premium hilltop or golf course frontage lots."
+      },
+      {
+        "q": "Is Augusta Canyon guard-gated?",
+        "a": "Yes — Augusta Canyon is double guard-gated within Southern Highlands. Residents pass through two staffed guard gates to reach the enclave, providing exceptional security and privacy."
+      },
+      {
+        "q": "What ZIP code is Augusta Canyon in?",
+        "a": "Augusta Canyon at Southern Highlands is in ZIP code 89141 in southwest Las Vegas."
+      },
+      {
+        "q": "Can I build a custom home in Augusta Canyon?",
+        "a": "Custom home construction is available on approved lots. Architectural plans must be reviewed by the HOA architectural review committee to ensure compliance with the community's design standards."
+      },
+      {
+        "q": "What are HOA fees in Augusta Canyon?",
+        "a": "HOA fees typically range from $400 to $900 per month, covering the Southern Highlands master association fee plus the Augusta Canyon sub-association fee. Fees include guard gate staffing, security patrols, and common area maintenance."
+      },
+      {
+        "q": "How does Augusta Canyon compare to The Ridges in Summerlin?",
+        "a": "Both are ultra-luxury guard-gated communities with golf course proximity. The Ridges typically commands higher per-square-foot prices and backs against Red Rock Canyon. Augusta Canyon offers comparable lot sizes and custom building opportunities at price points that represent better relative value."
+      },
+      {
+        "q": "What golf course is near Augusta Canyon?",
+        "a": "The Southern Highlands Golf Club, a private 18-hole Jack Nicklaus Signature course, is the community's anchor. The Mediterranean clubhouse features dining, resort pools, tennis, spa, and fitness."
+      },
+      {
+        "q": "What schools serve Augusta Canyon?",
+        "a": "Augusta Canyon is served by CCSD schools including John R. Hummel Elementary (8/10) and Del E. Webb Middle School (7/10). Bishop Gorman High School (A+) is the premier private option."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $400K",
+        "compare": "The broader master-planned community with Nicklaus golf and multiple guard-gated enclaves."
+      },
+      {
+        "name": "The Estates at SH",
+        "href": "/southern-highlands-the-estates/",
+        "price": "From $2M",
+        "compare": "The premier ultra-luxury enclave within Southern Highlands on half-acre to full-acre lots."
+      },
+      {
+        "name": "Olympia Ridge",
+        "href": "/olympia-ridge/",
+        "price": "From $1.5M",
+        "compare": "Guard-gated golf enclave with the highest elevation in Southern Highlands."
+      },
+      {
+        "name": "Tuscan Cliffs",
+        "href": "/tuscan-cliffs/",
+        "price": "From $800K",
+        "compare": "Mediterranean guard-gated enclave with dramatic hillside architecture."
+      },
+      {
+        "name": "Ascaya",
+        "href": "/ascaya/",
+        "price": "From $3M",
+        "compare": "Ultra-luxury custom lot community in Henderson with desert-modern architecture."
+      },
+      {
+        "name": "MacDonald Highlands",
+        "href": "/macdonald-highlands/",
+        "price": "From $800K",
+        "compare": "Henderson's premier luxury community with DragonRidge Country Club and Strip views."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Augusta Canyon was exactly what we were looking for — a custom lot with golf course views and real privacy. Nevada Real Estate Group understood the ultra-luxury market and found us a lot that exceeded our expectations.",
+        "name": "David & Margaret W.",
+        "detail": "Bought lot in Augusta Canyon · 2024"
+      },
+      {
+        "quote": "Relocating from Scottsdale, we compared Augusta Canyon to every luxury community in Las Vegas. Nevada Real Estate Group showed us why Southern Highlands delivered the best combination of quality, views, and value. We closed on a custom estate within six weeks.",
+        "name": "Richard H.",
+        "detail": "Bought in Augusta Canyon, Southern Highlands · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Southern Highlands",
+    "ylopoMinPrice": 1000000
+  },
+  {
+    "slug": "mountains-edge-tuscano",
+    "name": "Tuscano at Mountains Edge",
+    "parentCommunity": "Mountains Edge",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": [
+      "89178"
+    ],
+    "center": [
+      -115.270,
+      36.018
+    ],
+    "heroEyebrow": "Mountains Edge, Las Vegas",
+    "priceRange": "$400K–$600K",
+    "established": "2006",
+    "developer": "Focus Property Group / Pardee Homes",
+    "acreage": "~150 acres",
+    "homeCount": "800+",
+    "guardGated": false,
+    "hoaRange": "$60–$140/mo",
+    "overview": [
+      "Tuscano at Mountains Edge is one of the most established and desirable neighborhoods within the larger Mountains Edge master-planned community. Developed primarily by Pardee Homes beginning around 2006, Tuscano features well-built single-family homes with Tuscan-inspired architectural elements — warm stucco tones, clay tile accents, and stone veneer details — that give the neighborhood a distinctive character within the broader community.",
+      "Homes in Tuscano range from approximately $400,000 to $600,000, with floor plans spanning 1,800 to 3,200 square feet. Most homes feature three to five bedrooms, two-car garages, open-concept living areas, and rear yards large enough for pools and outdoor entertaining. The neighborhood's mature landscaping and established trees give it a settled, comfortable feel that newer sections of Mountains Edge are still developing.",
+      "Tuscano benefits from its location near the heart of the Mountains Edge master plan, with easy access to Mountains Edge Regional Park — a 100-acre facility with athletic fields, playgrounds, splash pads, and walking trails. The community's extensive trail network connects Tuscano to parks, schools, and the commercial corridor along Blue Diamond Road. Exploration Peak Park, with its hiking trails and mountain summit views, is a short drive away.",
+      "The neighborhood is served by well-regarded CCSD schools and is within the attendance boundaries for some of the highest-rated elementary schools in the southwest valley. For families seeking a well-built, well-located home in one of Las Vegas's most successful master-planned communities at price points well below Summerlin, Tuscano delivers outstanding value."
+    ],
+    "highlights": [
+      {
+        "title": "Pardee Homes Quality",
+        "body": "Built primarily by Pardee Homes, one of Las Vegas's most respected builders. Solid construction with Tuscan-inspired architecture and mature landscaping throughout.",
+        "iconType": "home"
+      },
+      {
+        "title": "Mountains Edge Regional Park",
+        "body": "Minutes from the 100-acre Regional Park with athletic fields, playgrounds, splash pads, and walking trails. One of the premier park facilities in the southwest valley.",
+        "iconType": "park"
+      },
+      {
+        "title": "Extensive Trail Network",
+        "body": "Connected multi-use trails link Tuscano to parks, schools, and commercial areas throughout the Mountains Edge master plan. Walk or bike from your front door.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Top-Rated Schools",
+        "body": "Within attendance boundaries for highly rated CCSD schools. Carolyn S. Reedom Elementary (8/10) and quality charter options including Doral Academy are nearby.",
+        "iconType": "building"
+      },
+      {
+        "title": "Established Neighborhood",
+        "body": "Mature landscaping, established trees, and a settled community feel. Tuscano has the character that newer sections of Mountains Edge are still building toward.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Exceptional Value",
+        "body": "Master-planned community living from $400K in one of Las Vegas's most successful developments. Strong resale performance and consistent family buyer demand.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Tuscano Estates",
+        "type": "Single-Family · Premium",
+        "desc": "Larger homes in the 2,800–3,200 square foot range on premium lots. Many with upgraded finishes, pools, and mature backyard landscaping.",
+        "price": "From $525K"
+      },
+      {
+        "name": "Tuscano Core",
+        "type": "Single-Family · Established",
+        "desc": "The heart of the neighborhood with well-maintained homes from 2,200 to 2,800 square feet. Mature landscaping and proximity to trails and parks.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Tuscano Gardens",
+        "type": "Single-Family · Value",
+        "desc": "Entry-level homes from 1,800 to 2,200 square feet. Ideal for first-time buyers and young families seeking Mountains Edge living at the most accessible price.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Tuscano Park-Side",
+        "type": "Single-Family · Park Adjacent",
+        "desc": "Homes adjacent to the community's internal parks and trail connections. Popular with families who prioritize walkable outdoor recreation.",
+        "price": "From $475K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Mountains Edge Regional Park",
+        "address": "7701 Mountains Edge Pkwy, Las Vegas, NV 89178",
+        "acreage": "~100 acres",
+        "amenities": [
+          "Baseball/softball fields",
+          "Soccer fields",
+          "Basketball courts",
+          "Playground",
+          "Splash pad",
+          "Walking trails"
+        ]
+      },
+      {
+        "name": "Exploration Peak Park",
+        "address": "9600 S Buffalo Dr, Las Vegas, NV 89178",
+        "acreage": "~98 acres",
+        "amenities": [
+          "Hiking trails",
+          "Mountain summit views",
+          "Nature exploration",
+          "Picnic areas",
+          "Desert landscape trails"
+        ]
+      },
+      {
+        "name": "Mountains Edge Park (Central)",
+        "address": "8101 W Mountains Edge Pkwy, Las Vegas, NV 89178",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Playground",
+          "Walking paths",
+          "Picnic shelters",
+          "Open turf",
+          "Dog-friendly areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Carolyn S. Reedom Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Lawrence & Heidi Canarelli Middle",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Sierra Vista High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Mountain View Christian School",
+          "PreK–8",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy Sky Pointe",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~2,500",
+      "medianAge": "37",
+      "avgIncome": "$80,000",
+      "households": "800+",
+      "homeownership": "75%"
+    },
+    "driveTimes": [
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via Blue Diamond Rd"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 → I-215"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Southern Highlands",
+        "route": "via S Las Vegas Blvd"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Tuscano at Mountains Edge?",
+        "a": "Homes in Tuscano range from approximately $400,000 for smaller homes to $600,000 for larger premium homes on the best lots. The sweet spot for most buyers is $450K to $550K."
+      },
+      {
+        "q": "Who built homes in Tuscano?",
+        "a": "Tuscano was built primarily by Pardee Homes, one of Las Vegas's most respected builders known for quality construction and thoughtful floor plan design."
+      },
+      {
+        "q": "Is Tuscano guard-gated?",
+        "a": "No — Tuscano is not guard-gated. It is part of the broader Mountains Edge master-planned community, which is an open community with HOA governance and well-maintained common areas."
+      },
+      {
+        "q": "What ZIP code is Tuscano in?",
+        "a": "Tuscano at Mountains Edge is located in ZIP code 89178 in southwest Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Tuscano?",
+        "a": "HOA fees are relatively low, typically ranging from $60 to $140 per month. Fees cover common area maintenance, trails, parks, and landscaping of shared spaces."
+      },
+      {
+        "q": "What schools serve Tuscano?",
+        "a": "Tuscano is served by CCSD schools including Carolyn S. Reedom Elementary (8/10), Lawrence & Heidi Canarelli Middle School (7/10), and Sierra Vista High School. Doral Academy (9/10) is a popular charter option."
+      },
+      {
+        "q": "Is Tuscano good for families?",
+        "a": "Tuscano is one of the most family-friendly neighborhoods in Mountains Edge. The combination of quality Pardee construction, mature landscaping, trail connectivity, top-rated schools, and proximity to the Regional Park makes it ideal for families with children."
+      },
+      {
+        "q": "How does Tuscano compare to other Mountains Edge neighborhoods?",
+        "a": "Tuscano is one of the most established neighborhoods within Mountains Edge, offering mature landscaping and a settled community character that newer sections are still developing. Pricing is competitive with the broader community, with the added appeal of Pardee's build quality."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Mountains Edge",
+        "href": "/mountains-edge/",
+        "price": "From $350K",
+        "compare": "The broader 3,500-acre master plan encompassing Tuscano and 12,000+ homes with extensive trails and parks."
+      },
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $400K",
+        "compare": "Guard-gated golf community to the south with Jack Nicklaus course and luxury estates."
+      },
+      {
+        "name": "Rhodes Ranch",
+        "href": "/rhodes-ranch/",
+        "price": "From $350K",
+        "compare": "Guard-gated golf community to the north with Ted Robinson course and resort amenities."
+      },
+      {
+        "name": "Enterprise",
+        "href": "/enterprise/",
+        "price": "From $350K",
+        "compare": "Growing unincorporated area surrounding Mountains Edge with diverse housing options."
+      },
+      {
+        "name": "Spring Valley",
+        "href": "/spring-valley/",
+        "price": "From $300K",
+        "compare": "Established suburban community to the north with strong retail and dining corridors."
+      },
+      {
+        "name": "Inspirada",
+        "href": "/inspirada/",
+        "price": "From $420K",
+        "compare": "Henderson's newest master-planned community with design-forward gathering spaces."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Nevada Real Estate Group helped us find the perfect Pardee-built home in Tuscano. They knew which floor plans had the best layouts and which lots backed to the trails. Our family loves the neighborhood and the parks are amazing.",
+        "name": "Steven & Amanda B.",
+        "detail": "Bought in Tuscano, Mountains Edge · 2024"
+      },
+      {
+        "quote": "We sold our Tuscano home quickly and at a great price thanks to Nevada Real Estate Group. They marketed the home's proximity to the Regional Park and trails beautifully. Three offers in the first week.",
+        "name": "Jennifer L.",
+        "detail": "Sold in Tuscano, Mountains Edge · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Mountains Edge",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "mountains-edge-sierra-madre",
+    "name": "Sierra Madre at Mountains Edge",
+    "parentCommunity": "Mountains Edge",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": [
+      "89178"
+    ],
+    "center": [
+      -115.285,
+      36.010
+    ],
+    "heroEyebrow": "Mountains Edge, Las Vegas",
+    "priceRange": "$450K–$700K",
+    "established": "2008",
+    "developer": "Focus Property Group / Pulte Homes",
+    "acreage": "~130 acres",
+    "homeCount": "600+",
+    "guardGated": false,
+    "hoaRange": "$65–$150/mo",
+    "overview": [
+      "Sierra Madre at Mountains Edge is a premium neighborhood within the Mountains Edge master-planned community, situated on the community's western edge where the desert terrain begins to rise toward the Spring Mountains. This elevated position gives Sierra Madre homes some of the best mountain views within the broader master plan, with many homesites offering sweeping vistas of Red Rock Canyon's sandstone formations to the northwest.",
+      "Homes in Sierra Madre range from approximately $450,000 to $700,000, with floor plans spanning 2,200 to 3,800 square feet. Built primarily by Pulte Homes beginning around 2008, the neighborhood features thoughtful floor plans with open-concept living areas, gourmet kitchens, and generous master suites. Construction quality reflects Pulte's Energy Star-rated building practices, with many homes featuring upgraded insulation, high-efficiency HVAC systems, and smart-home wiring.",
+      "What sets Sierra Madre apart from other Mountains Edge neighborhoods is its position and views. The western edge location provides direct mountain views that most of the master plan's interior neighborhoods cannot match. The proximity to Exploration Peak Park — a 98-acre natural desert park with hiking trails, a mountain summit, and panoramic valley views — adds a recreational dimension that resonates with outdoor-oriented buyers.",
+      "Sierra Madre offers the Mountains Edge lifestyle — excellent schools, trail connectivity, community parks, and attainable pricing — with a premium position and mountain proximity that buyers typically only find in more expensive communities like Summerlin. For families and move-up buyers seeking value with views, Sierra Madre is one of the best-kept secrets in the southwest valley."
+    ],
+    "highlights": [
+      {
+        "title": "Mountain Views",
+        "body": "Elevated western-edge position provides sweeping views of Red Rock Canyon, the Spring Mountains, and the surrounding desert. Views that rival communities priced well above Sierra Madre.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Pulte Homes Quality",
+        "body": "Energy Star-rated construction by Pulte Homes with upgraded insulation, high-efficiency HVAC, and thoughtful floor plans. 2,200 to 3,800 square feet with modern open-concept living.",
+        "iconType": "home"
+      },
+      {
+        "title": "Exploration Peak Park",
+        "body": "Adjacent to the 98-acre natural desert park with hiking trails, a mountain summit, and panoramic valley views. An outdoor recreation anchor for the neighborhood.",
+        "iconType": "park"
+      },
+      {
+        "title": "Trail Connectivity",
+        "body": "Connected to the Mountains Edge trail network linking neighborhoods to parks, schools, and commercial areas. Walk or bike throughout the master plan on dedicated paths.",
+        "iconType": "building"
+      },
+      {
+        "title": "Top-Rated Schools",
+        "body": "Served by highly rated CCSD schools with strong academic programs. Quality charter options including Doral Academy (9/10) provide school choice for families.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Premium Value",
+        "body": "Mountain views and premium positioning at Mountains Edge pricing — well below comparable view homes in Summerlin or Southern Highlands. Strong appreciation track record.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Sierra Madre Summit",
+        "type": "Single-Family · Premium Views",
+        "desc": "The highest-elevation lots in Sierra Madre with panoramic Red Rock Canyon and Spring Mountain views. Larger homes with premium upgrades.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Sierra Madre West",
+        "type": "Single-Family · Mountain Proximity",
+        "desc": "Western-edge homes closest to Exploration Peak Park with direct desert access and mountain views. Popular with outdoor enthusiasts.",
+        "price": "From $550K"
+      },
+      {
+        "name": "Sierra Madre Core",
+        "type": "Single-Family · Established",
+        "desc": "The central section of the neighborhood with mature landscaping, established homes, and competitive pricing.",
+        "price": "From $475K"
+      },
+      {
+        "name": "Sierra Madre Entry",
+        "type": "Single-Family · Value",
+        "desc": "More accessible homes from 2,200 to 2,600 square feet. Full access to all Mountains Edge amenities and trail connections.",
+        "price": "From $450K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Exploration Peak Park",
+        "address": "9600 S Buffalo Dr, Las Vegas, NV 89178",
+        "acreage": "~98 acres",
+        "amenities": [
+          "Hiking trails",
+          "Mountain summit views",
+          "Nature exploration",
+          "Picnic areas",
+          "Desert landscape trails"
+        ]
+      },
+      {
+        "name": "Mountains Edge Regional Park",
+        "address": "7701 Mountains Edge Pkwy, Las Vegas, NV 89178",
+        "acreage": "~100 acres",
+        "amenities": [
+          "Baseball/softball fields",
+          "Soccer fields",
+          "Basketball courts",
+          "Playground",
+          "Splash pad",
+          "Walking trails"
+        ]
+      },
+      {
+        "name": "Mountains Edge Park (Central)",
+        "address": "8101 W Mountains Edge Pkwy, Las Vegas, NV 89178",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Playground",
+          "Walking paths",
+          "Picnic shelters",
+          "Open turf",
+          "Dog-friendly areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Carolyn S. Reedom Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Lawrence & Heidi Canarelli Middle",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Sierra Vista High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Mountain View Christian School",
+          "PreK–8",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy Sky Pointe",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~1,800",
+      "medianAge": "36",
+      "avgIncome": "$85,000",
+      "households": "600+",
+      "homeownership": "76%"
+    },
+    "driveTimes": [
+      {
+        "time": "~8 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via Blue Diamond Rd"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 → I-215"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Southern Highlands",
+        "route": "via S Las Vegas Blvd"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Sierra Madre at Mountains Edge?",
+        "a": "Homes in Sierra Madre range from approximately $450,000 for entry-level homes to $700,000 for premium homes on elevated view lots with mountain panoramas."
+      },
+      {
+        "q": "Who built homes in Sierra Madre?",
+        "a": "Sierra Madre was built primarily by Pulte Homes, known for Energy Star-rated construction, thoughtful floor plans, and quality finishes."
+      },
+      {
+        "q": "What views do Sierra Madre homes have?",
+        "a": "Sierra Madre's western-edge position provides many homes with views of Red Rock Canyon's sandstone formations and the Spring Mountains. The elevated lots on the community's west side have the most dramatic views."
+      },
+      {
+        "q": "What ZIP code is Sierra Madre in?",
+        "a": "Sierra Madre at Mountains Edge is located in ZIP code 89178 in southwest Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Sierra Madre?",
+        "a": "HOA fees are low, typically $65 to $150 per month, covering common area maintenance, trails, and community parks."
+      },
+      {
+        "q": "Is Sierra Madre near hiking?",
+        "a": "Yes — Exploration Peak Park, a 98-acre natural desert park with hiking trails and a mountain summit, is adjacent to Sierra Madre. Red Rock Canyon National Conservation Area is about 8 minutes away via Blue Diamond Road."
+      },
+      {
+        "q": "What schools serve Sierra Madre?",
+        "a": "Sierra Madre is served by CCSD schools including Carolyn S. Reedom Elementary (8/10) and Lawrence & Heidi Canarelli Middle School (7/10). Doral Academy (9/10) is a popular charter option."
+      },
+      {
+        "q": "How does Sierra Madre compare to Summerlin?",
+        "a": "Sierra Madre offers mountain views comparable to many Summerlin neighborhoods at price points typically 20–30% lower. The trade-off is that Mountains Edge doesn't have the same breadth of commercial amenities as Downtown Summerlin, though the Blue Diamond Road corridor is growing rapidly."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Mountains Edge",
+        "href": "/mountains-edge/",
+        "price": "From $350K",
+        "compare": "The broader 3,500-acre master plan with 12,000+ homes, Regional Park, and extensive trail network."
+      },
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $400K",
+        "compare": "Guard-gated golf community to the south with Nicklaus course and luxury enclaves."
+      },
+      {
+        "name": "Rhodes Ranch",
+        "href": "/rhodes-ranch/",
+        "price": "From $350K",
+        "compare": "Guard-gated golf community to the north with resort-style amenities."
+      },
+      {
+        "name": "Enterprise",
+        "href": "/enterprise/",
+        "price": "From $350K",
+        "compare": "Growing area surrounding Mountains Edge with diverse housing options."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "Premier west-side master plan with 20+ villages and extensive commercial amenities."
+      },
+      {
+        "name": "Inspirada",
+        "href": "/inspirada/",
+        "price": "From $420K",
+        "compare": "Henderson's design-forward master plan with award-winning gathering spaces."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We wanted mountain views without paying Summerlin prices. Nevada Real Estate Group showed us Sierra Madre and we were blown away — Red Rock views from our backyard at a price point that made sense. Best decision we've made.",
+        "name": "Ryan & Stephanie C.",
+        "detail": "Bought in Sierra Madre, Mountains Edge · 2024"
+      },
+      {
+        "quote": "Nevada Real Estate Group helped us sell our Sierra Madre home and find a larger home in the same neighborhood. They understood the community's premium position within Mountains Edge and marketed our views perfectly.",
+        "name": "Mark D.",
+        "detail": "Bought & Sold in Sierra Madre · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Mountains Edge",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "mountains-edge-vista-verde",
+    "name": "Vista Verde at Mountains Edge",
+    "parentCommunity": "Mountains Edge",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": [
+      "89178"
+    ],
+    "center": [
+      -115.263,
+      36.022
+    ],
+    "heroEyebrow": "Mountains Edge, Las Vegas",
+    "priceRange": "$350K–$550K",
+    "established": "2005",
+    "developer": "Focus Property Group / KB Home",
+    "acreage": "~120 acres",
+    "homeCount": "700+",
+    "guardGated": false,
+    "hoaRange": "$55–$130/mo",
+    "overview": [
+      "Vista Verde at Mountains Edge is one of the original neighborhoods built during the early phases of the Mountains Edge master-planned community. Developed primarily by KB Home beginning around 2005, Vista Verde established the foundation for what would become one of the largest and most successful master-planned communities in the Las Vegas Valley. The neighborhood's name — meaning 'green view' — reflects its orientation toward the community's green corridors and trail connections.",
+      "Homes in Vista Verde range from approximately $350,000 to $550,000, offering some of the most accessible pricing within the Mountains Edge master plan. Floor plans span 1,600 to 3,000 square feet, with most homes featuring three to four bedrooms, two-car garages, and functional layouts designed for family living. KB Home's build quality from this era is well-regarded, and many homes have been updated by current owners with modern finishes.",
+      "As an early-phase neighborhood, Vista Verde benefits from mature landscaping — established trees, grown-in yards, and a settled community character that gives the neighborhood a warmth that newer developments lack. The community's internal parks and trail connections provide direct access to the broader Mountains Edge trail network, linking residents to Mountains Edge Regional Park, Exploration Peak Park, and the commercial corridors along Blue Diamond Road.",
+      "Vista Verde's pricing makes it one of the strongest entry points for families seeking master-planned community living in the southwest valley. The combination of KB Home construction, mature landscaping, trail connectivity, and top-rated nearby schools creates a compelling value proposition. For first-time buyers, growing families, and investors seeking strong rental demand in a well-run master plan, Vista Verde at Mountains Edge is a smart choice."
+    ],
+    "highlights": [
+      {
+        "title": "Most Accessible Pricing",
+        "body": "Starting in the $350s, Vista Verde offers some of the most attainable pricing within Mountains Edge — master-planned community living at a price point accessible to first-time buyers.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Mature Landscaping",
+        "body": "As one of the original Mountains Edge neighborhoods, Vista Verde features established trees, grown-in landscaping, and a settled community character that newer sections are still developing.",
+        "iconType": "park"
+      },
+      {
+        "title": "KB Home Construction",
+        "body": "Built by KB Home with functional floor plans from 1,600 to 3,000 square feet. Solid construction with many homes updated by current owners with modern finishes.",
+        "iconType": "home"
+      },
+      {
+        "title": "Trail Network Access",
+        "body": "Direct connections to the Mountains Edge trail system linking Vista Verde to the Regional Park, Exploration Peak, schools, and commercial areas.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Quality Schools",
+        "body": "Served by well-regarded CCSD schools and quality charter options. The southwest valley school cluster includes several top-rated elementary schools.",
+        "iconType": "building"
+      },
+      {
+        "title": "Strong Rental Demand",
+        "body": "Vista Verde's accessible pricing and master-planned amenities create strong rental demand for investors. High occupancy rates and stable rental income.",
+        "iconType": "shield"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Vista Verde Estates",
+        "type": "Single-Family · Larger",
+        "desc": "Larger homes in the 2,600–3,000 square foot range with upgraded lots. Popular with families seeking more space within the neighborhood.",
+        "price": "From $475K"
+      },
+      {
+        "name": "Vista Verde Central",
+        "type": "Single-Family · Established",
+        "desc": "Core homes in the 2,000–2,600 square foot range with mature landscaping and established community character.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Vista Verde Village",
+        "type": "Single-Family · Entry",
+        "desc": "Smaller floor plans from 1,600 to 2,000 square feet offering the most accessible entry into Mountains Edge living.",
+        "price": "From $350K"
+      },
+      {
+        "name": "Vista Verde Trail-Side",
+        "type": "Single-Family · Trail Adjacent",
+        "desc": "Homes along the community's trail corridors with direct access to walking and biking paths. Peaceful setting with open-space views.",
+        "price": "From $425K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Mountains Edge Regional Park",
+        "address": "7701 Mountains Edge Pkwy, Las Vegas, NV 89178",
+        "acreage": "~100 acres",
+        "amenities": [
+          "Baseball/softball fields",
+          "Soccer fields",
+          "Basketball courts",
+          "Playground",
+          "Splash pad",
+          "Walking trails"
+        ]
+      },
+      {
+        "name": "Exploration Peak Park",
+        "address": "9600 S Buffalo Dr, Las Vegas, NV 89178",
+        "acreage": "~98 acres",
+        "amenities": [
+          "Hiking trails",
+          "Mountain summit views",
+          "Nature exploration",
+          "Picnic areas",
+          "Desert landscape trails"
+        ]
+      },
+      {
+        "name": "Mountains Edge Park (Central)",
+        "address": "8101 W Mountains Edge Pkwy, Las Vegas, NV 89178",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Playground",
+          "Walking paths",
+          "Picnic shelters",
+          "Open turf",
+          "Dog-friendly areas"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Carolyn S. Reedom Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Lawrence & Heidi Canarelli Middle",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Sierra Vista High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Mountain View Christian School",
+          "PreK–8",
+          "A"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy Sky Pointe",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~2,200",
+      "medianAge": "35",
+      "avgIncome": "$70,000",
+      "households": "700+",
+      "homeownership": "68%"
+    },
+    "driveTimes": [
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via Blue Diamond Rd"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 → I-215"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Southern Highlands",
+        "route": "via S Las Vegas Blvd"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Vista Verde at Mountains Edge?",
+        "a": "Homes in Vista Verde range from approximately $350,000 for smaller floor plans to $550,000 for larger homes on premium lots. Most sales fall in the $400K to $500K range."
+      },
+      {
+        "q": "Who built homes in Vista Verde?",
+        "a": "Vista Verde was built primarily by KB Home during the early phases of the Mountains Edge master plan, beginning around 2005. Many homes have been updated by current owners."
+      },
+      {
+        "q": "Is Vista Verde good for first-time buyers?",
+        "a": "Yes — Vista Verde offers some of the most accessible pricing within the Mountains Edge master plan. First-time buyers get the full master-planned community experience — trails, parks, schools, and commercial access — at price points in the $350K range."
+      },
+      {
+        "q": "What ZIP code is Vista Verde in?",
+        "a": "Vista Verde at Mountains Edge is located in ZIP code 89178 in southwest Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Vista Verde?",
+        "a": "HOA fees are low, typically $55 to $130 per month, covering common area maintenance, trails, and community landscaping."
+      },
+      {
+        "q": "Is Vista Verde a good investment property area?",
+        "a": "Vista Verde's accessible pricing, master-planned amenities, and family-friendly character create strong rental demand. Many investors own homes in Vista Verde for long-term rental income."
+      },
+      {
+        "q": "What schools serve Vista Verde?",
+        "a": "Vista Verde is served by CCSD schools including Carolyn S. Reedom Elementary (8/10) and Lawrence & Heidi Canarelli Middle School (7/10). Doral Academy (9/10) is a popular charter option."
+      },
+      {
+        "q": "How does Vista Verde compare to other Mountains Edge neighborhoods?",
+        "a": "Vista Verde is one of the original neighborhoods, offering mature landscaping and the most accessible pricing. Newer sections like Tuscano and Sierra Madre have more contemporary construction but at higher price points."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Mountains Edge",
+        "href": "/mountains-edge/",
+        "price": "From $350K",
+        "compare": "The broader 3,500-acre master plan with 12,000+ homes and extensive trail networks."
+      },
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $400K",
+        "compare": "Guard-gated golf community to the south with luxury estates and Jack Nicklaus course."
+      },
+      {
+        "name": "Enterprise",
+        "href": "/enterprise/",
+        "price": "From $350K",
+        "compare": "Growing unincorporated area with diverse housing options and new commercial development."
+      },
+      {
+        "name": "Spring Valley",
+        "href": "/spring-valley/",
+        "price": "From $300K",
+        "compare": "Established suburban community to the north with strong retail corridors."
+      },
+      {
+        "name": "Rhodes Ranch",
+        "href": "/rhodes-ranch/",
+        "price": "From $350K",
+        "compare": "Guard-gated golf community with Ted Robinson course and resort amenities."
+      },
+      {
+        "name": "Aliante",
+        "href": "/aliante/",
+        "price": "From $300K",
+        "compare": "North Las Vegas master-planned community with comparable pricing and golf course amenities."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "As first-time buyers, Vista Verde was the perfect entry into homeownership. Nevada Real Estate Group showed us how much value we could get in Mountains Edge and helped us close on a home we love at a price that fit our budget.",
+        "name": "Daniel & Priya N.",
+        "detail": "Bought in Vista Verde, Mountains Edge · 2024"
+      },
+      {
+        "quote": "We purchased our Vista Verde home as an investment through Nevada Real Estate Group. They understood the rental market, helped us price it right, and we had tenants within three weeks of closing. Great return on a great property.",
+        "name": "Marcus T.",
+        "detail": "Bought Investment Property in Vista Verde · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Mountains Edge",
+    "ylopoMinPrice": 300000
+  },
+  {
+    "slug": "summerlin-west-affinity",
+    "name": "Affinity by Taylor Morrison",
+    "parentCommunity": "Summerlin West",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "New Construction · Master-Planned",
+    "zipCodes": [
+      "89138"
+    ],
+    "center": [
+      -115.348,
+      36.188
+    ],
+    "heroEyebrow": "Summerlin West, Las Vegas",
+    "priceRange": "$500K–$800K",
+    "established": "2019",
+    "developer": "Taylor Morrison",
+    "acreage": "~60 acres",
+    "homeCount": "300+",
+    "guardGated": false,
+    "hoaRange": "$175–$400/mo",
+    "overview": [
+      "Affinity by Taylor Morrison is one of the most popular new-construction neighborhoods in Summerlin West, delivering modern desert-contemporary architecture, energy-efficient construction, and the full Summerlin lifestyle at price points that represent genuine value within the master plan. Located in the western expansion of Summerlin, Affinity offers brand-new and nearly-new homes with contemporary floor plans, smart-home technology, and proximity to Red Rock Canyon.",
+      "Taylor Morrison, one of the nation's top five homebuilders, designed Affinity with the modern buyer in mind. Homes range from approximately $500,000 to $800,000, with floor plans spanning 1,800 to 3,500 square feet. Standard features include quartz countertops, modern cabinetry, energy-efficient windows, tankless water heaters, and pre-wired smart-home systems. Open-concept great rooms, large kitchen islands, and seamless indoor-outdoor living are hallmarks of the Affinity designs.",
+      "Affinity's location within Summerlin West provides access to the full suite of Summerlin amenities — over 200 miles of trails, award-winning parks, top-rated schools, and the retail and dining hub of Downtown Summerlin with its 125+ shops and restaurants. The proximity to Red Rock Canyon National Conservation Area means residents can be hiking, rock climbing, or driving the scenic loop within 10 minutes.",
+      "For buyers who want new construction in Summerlin without paying guard-gated or luxury-tier prices, Affinity delivers. The Taylor Morrison brand carries weight in the Las Vegas market for build quality and warranty support, and the community's position in Summerlin West means buyers are purchasing in the most active growth corridor within the valley's most prestigious master plan."
+    ],
+    "highlights": [
+      {
+        "title": "Taylor Morrison Quality",
+        "body": "Built by Taylor Morrison, a top-five national homebuilder known for quality construction, modern design, and comprehensive warranties. Energy Star-rated homes with smart-home technology.",
+        "iconType": "home"
+      },
+      {
+        "title": "Modern Desert Architecture",
+        "body": "Contemporary desert-inspired designs with clean lines, open floor plans, large kitchen islands, and seamless indoor-outdoor living spaces. 1,800 to 3,500 square feet.",
+        "iconType": "building"
+      },
+      {
+        "title": "Red Rock Canyon Access",
+        "body": "10 minutes to Red Rock Canyon National Conservation Area for hiking, rock climbing, and scenic drives. Dramatic mountain views from many Affinity homesites.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Summerlin Lifestyle",
+        "body": "Full access to the Summerlin trail network, award-winning parks, top-rated schools, and Downtown Summerlin with 125+ shops and restaurants.",
+        "iconType": "park"
+      },
+      {
+        "title": "Energy Efficiency",
+        "body": "Energy Star-rated construction with upgraded insulation, high-efficiency HVAC, tankless water heaters, and energy-efficient windows. Lower utility bills year-round.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Growth Corridor Value",
+        "body": "Summerlin West is the most active growth corridor in the Las Vegas Valley. Purchasing in an expanding master plan with the Summerlin brand supports long-term appreciation.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Affinity Collection I",
+        "type": "New Build · Single-Story",
+        "desc": "Single-story floor plans from 1,800 to 2,400 square feet. Open-concept living with modern desert styling. Popular with downsizers and single-story seekers.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Affinity Collection II",
+        "type": "New Build · Two-Story",
+        "desc": "Two-story floor plans from 2,400 to 3,000 square feet with first-floor master suites and upstairs bonus rooms. Ideal for families.",
+        "price": "From $575K"
+      },
+      {
+        "name": "Affinity Premium",
+        "type": "New Build · Premium Lots",
+        "desc": "Larger floor plans from 3,000 to 3,500 square feet on premium lots with mountain views and enhanced outdoor living spaces.",
+        "price": "From $700K"
+      },
+      {
+        "name": "Affinity Quick Move-In",
+        "type": "New Build · Inventory",
+        "desc": "Move-in-ready homes at various stages of completion. Available for buyers who want new construction without the full build wait time.",
+        "price": "From $525K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "The Paseos Park",
+        "address": "Paseo Hills Dr, Las Vegas, NV 89138",
+        "acreage": "~12 acres",
+        "amenities": [
+          "Walking trails",
+          "Desert gardens",
+          "Playground",
+          "Open space",
+          "Dog-friendly areas"
+        ]
+      },
+      {
+        "name": "Fox Hill Park",
+        "address": "10100 Trails Dr, Las Vegas, NV 89138",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Adventure playground",
+          "Zip lines",
+          "Disc golf",
+          "Trails",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Red Rock Canyon NCA",
+        "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161",
+        "acreage": "195,819 acres",
+        "amenities": [
+          "Scenic Loop Drive",
+          "Hiking trails",
+          "Rock climbing",
+          "Visitor center",
+          "Wildlife viewing"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Staton Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Sig Rogich Middle School",
+          "6–8",
+          "10/10"
+        ],
+        [
+          "Arbor View High School",
+          "9–12",
+          "7/10"
+        ]
+      ],
+      "Private": [
+        [
+          "The Meadows School",
+          "PreK–12",
+          "A+"
+        ],
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy Red Rock",
+          "K–12",
+          "9/10"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–8",
+          "9/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~900",
+      "medianAge": "35",
+      "avgIncome": "$110,000",
+      "households": "300+",
+      "homeownership": "78%"
+    },
+    "driveTimes": [
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via Summerlin Pkwy"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via Summerlin Pkwy → I-15"
+      },
+      {
+        "time": "~35 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 South → I-15"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Affinity by Taylor Morrison?",
+        "a": "Homes in Affinity range from approximately $500,000 for single-story plans to $800,000 for premium two-story homes on the best lots with mountain views."
+      },
+      {
+        "q": "Who is the builder for Affinity?",
+        "a": "Affinity is built by Taylor Morrison, one of the top five national homebuilders. Taylor Morrison is known for quality construction, modern design, Energy Star ratings, and comprehensive new-home warranties."
+      },
+      {
+        "q": "Is Affinity still selling new homes?",
+        "a": "Affinity has active new-home sales with both build-to-order and quick move-in inventory available. Contact Nevada Real Estate Group for current availability and pricing."
+      },
+      {
+        "q": "What ZIP code is Affinity in?",
+        "a": "Affinity by Taylor Morrison is located in ZIP code 89138 in the Summerlin West section of Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Affinity?",
+        "a": "HOA fees typically range from $175 to $400 per month, covering the Summerlin master association fee plus the Affinity neighborhood sub-association fee."
+      },
+      {
+        "q": "What schools serve Affinity?",
+        "a": "Affinity is served by top-rated schools including Sig Rogich Middle School (10/10 GreatSchools) and Staton Elementary (8/10). The Meadows School (A+) and Bishop Gorman (A+) are nearby private options."
+      },
+      {
+        "q": "How close is Affinity to Red Rock Canyon?",
+        "a": "Red Rock Canyon National Conservation Area is approximately 10 minutes from Affinity via West Charleston Boulevard. Many Affinity homes have views of the canyon's formations."
+      },
+      {
+        "q": "Is Affinity guard-gated?",
+        "a": "Affinity is not guard-gated. It is part of the Summerlin West open community with HOA governance and well-maintained common areas. Guard-gated options in Summerlin West include nearby communities like Carlisle Peak and Glenrock."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Summerlin West",
+        "href": "/summerlin-west/",
+        "price": "From $400K",
+        "compare": "The broader Summerlin West expansion with multiple villages and new construction from many builders."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "The entire Summerlin master-planned community with 20+ villages and Downtown Summerlin."
+      },
+      {
+        "name": "The Ridges",
+        "href": "/summerlin-the-ridges/",
+        "price": "From $2M",
+        "compare": "Summerlin's ultra-luxury guard-gated enclave with Bear's Best golf and Red Rock Canyon views."
+      },
+      {
+        "name": "Skye Canyon",
+        "href": "/skye-canyon/",
+        "price": "From $400K",
+        "compare": "Northwest Las Vegas master-plan with newer construction and mountain access."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer courses."
+      },
+      {
+        "name": "Providence",
+        "href": "/providence/",
+        "price": "From $450K",
+        "compare": "Family-friendly master-plan in northwest Las Vegas with parks and trail systems."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Nevada Real Estate Group walked us through every new-construction option in Summerlin West and Affinity was the clear winner for our budget. They negotiated builder incentives we didn't even know existed. Our new home is everything we hoped for.",
+        "name": "Brandon & Melissa W.",
+        "detail": "Bought New Construction in Affinity · 2024"
+      },
+      {
+        "quote": "We sold our older Summerlin home and moved into a brand-new Taylor Morrison in Affinity. Nevada Real Estate Group managed both sides — selling our old home and negotiating the best deal on the new build. Seamless from start to finish.",
+        "name": "Paul & Linda K.",
+        "detail": "Bought in Affinity, Summerlin West · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Summerlin West",
+    "ylopoMinPrice": 450000
+  },
+  {
+    "slug": "anthem-sun-city-anthem-center",
+    "name": "Sun City Anthem Center",
+    "parentCommunity": "Sun City Anthem",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "55+ Active Adult · Community Center",
+    "zipCodes": [
+      "89052"
+    ],
+    "center": [
+      -115.055,
+      35.988
+    ],
+    "heroEyebrow": "Sun City Anthem, Henderson",
+    "priceRange": "$400K–$700K",
+    "established": "1999",
+    "developer": "Del Webb / Pulte Homes",
+    "acreage": "~400 acres",
+    "homeCount": "1,800+",
+    "guardGated": false,
+    "hoaRange": "$200–$350/mo",
+    "overview": [
+      "Sun City Anthem Center is the vibrant heart of the Sun City Anthem 55+ active adult community, encompassing the neighborhoods surrounding the Anthem Center — the community's flagship recreation facility. This section of Sun City Anthem puts residents within walking distance of the 50,000-square-foot Anthem Center, which houses resort-style pools, a state-of-the-art fitness center, tennis and pickleball courts, a grand ballroom, arts studios, meeting rooms for 100+ clubs, and the social programming that makes Sun City Anthem one of the most acclaimed active adult communities in the country.",
+      "Homes in the Anthem Center area range from approximately $400,000 for well-maintained single-story villas to $700,000 for larger estate-style homes on premium lots with golf course or mountain views. Virtually every home is single-story, consistent with the Del Webb 55+ design philosophy, with floor plans ranging from 1,400 to 3,200 square feet. The most sought-after properties are those within a short walk of the Anthem Center, where proximity to pools, fitness, dining, and social activities defines daily life.",
+      "The Anthem Center section also benefits from proximity to the Anthem Course, an 18-hole championship golf course that winds through the community's neighborhoods. Homes with golf course views and frontage command a premium and are among the most desirable properties in the entire Sun City Anthem community. The course offers preferred rates for residents and is the backdrop for many of the community's social events.",
+      "Sun City Anthem Center residents enjoy all the advantages of Henderson living — consistently ranked among the safest large cities in America, excellent healthcare access, and proximity to shopping, dining, and entertainment. The I-215 beltway provides a direct corridor to the Strip and Harry Reid Airport in approximately 20 minutes."
+    ],
+    "highlights": [
+      {
+        "title": "Anthem Center Proximity",
+        "body": "Walking distance to the 50,000-square-foot Anthem Center with resort pools, fitness center, tennis/pickleball courts, ballroom, arts studios, and 100+ social clubs.",
+        "iconType": "building"
+      },
+      {
+        "title": "Championship Golf",
+        "body": "Adjacent to the Anthem Course, an 18-hole championship layout winding through the community. Preferred rates for residents. Golf course frontage homes available.",
+        "iconType": "golf"
+      },
+      {
+        "title": "Active Social Calendar",
+        "body": "100+ chartered clubs, organized travel groups, fitness classes, art guilds, card clubs, and community events. One of the most active social calendars in any 55+ community nationwide.",
+        "iconType": "park"
+      },
+      {
+        "title": "Single-Story Living",
+        "body": "Virtually every home is single-story, designed for comfort, accessibility, and the active adult lifestyle. Floor plans from 1,400 to 3,200 square feet.",
+        "iconType": "home"
+      },
+      {
+        "title": "Henderson Safety",
+        "body": "Henderson consistently ranks among the top 10 safest large cities in America, with responsive city services and excellent healthcare access nearby.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Strong Resale Value",
+        "body": "Anthem Center-area homes command premium pricing due to their proximity to the flagship recreation facility. Consistent demand from active adult buyers nationwide.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Golf Course Homes",
+        "type": "55+ · Golf Frontage",
+        "desc": "Single-story homes with direct frontage along the Anthem Course. Golf and mountain views from rear patios. The most premium positions in the Anthem Center area.",
+        "price": "From $575K"
+      },
+      {
+        "name": "Center Walk",
+        "type": "55+ · Walkable",
+        "desc": "Homes within a 5-minute walk of the Anthem Center. Maximum convenience to pools, fitness, dining, and social activities.",
+        "price": "From $475K"
+      },
+      {
+        "name": "Mountain View",
+        "type": "55+ · Views",
+        "desc": "Elevated lots with views of the McCullough Range and the surrounding desert terrain. Popular with buyers who prioritize scenery.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Interior Neighborhoods",
+        "type": "55+ · Value",
+        "desc": "Well-maintained single-story homes on interior lots with mature landscaping. The most accessible pricing in the Anthem Center area.",
+        "price": "From $400K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Anthem Center",
+        "address": "2450 Hampton Rd, Henderson, NV 89052",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Resort-style pools",
+          "Fitness center",
+          "Tennis & pickleball courts",
+          "Grand ballroom",
+          "Arts studios",
+          "Meeting rooms"
+        ]
+      },
+      {
+        "name": "Anthem Community Park",
+        "address": "2256 N Reunion Dr, Henderson, NV 89052",
+        "acreage": "~63 acres",
+        "amenities": [
+          "Sports fields",
+          "Walking trails",
+          "Playground",
+          "Dog park",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Sloan Canyon National Conservation Area",
+        "address": "Near S Las Vegas Blvd, Henderson, NV",
+        "acreage": "48,438 acres",
+        "amenities": [
+          "Petroglyph hiking",
+          "Desert trails",
+          "Wildlife viewing",
+          "Photography",
+          "Rock art"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Not applicable (55+ community)",
+          "—",
+          "—"
+        ]
+      ],
+      "Private": [
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Somerset Academy Losee",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~4,500",
+      "medianAge": "68",
+      "avgIncome": "$80,000",
+      "households": "1,800+",
+      "homeownership": "90%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Henderson Green Valley",
+        "route": "via Eastern Ave"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Lake Mead",
+        "route": "via Lake Mead Pkwy"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes near the Anthem Center?",
+        "a": "Homes in the Anthem Center area range from approximately $400,000 for interior-lot single-story villas to $700,000 for larger estate homes on premium golf course or view lots."
+      },
+      {
+        "q": "What is the Anthem Center?",
+        "a": "The Anthem Center is Sun City Anthem's flagship 50,000-square-foot recreation facility featuring resort-style pools, a fitness center, tennis and pickleball courts, a grand ballroom, arts studios, and meeting rooms for 100+ chartered clubs and organizations."
+      },
+      {
+        "q": "Is Sun City Anthem Center guard-gated?",
+        "a": "Sun City Anthem is not guard-gated. The community has controlled access points and neighborhood watch programs, but does not have staffed guard gates."
+      },
+      {
+        "q": "What is the minimum age to live in Sun City Anthem?",
+        "a": "Sun City Anthem is a 55+ active adult community. At least one resident in each home must be 55 years of age or older. No permanent residents under 19 are permitted."
+      },
+      {
+        "q": "What are HOA fees in Sun City Anthem Center area?",
+        "a": "HOA fees typically range from $200 to $350 per month, which covers access to all three recreation centers, pools, fitness, common area maintenance, and community programming."
+      },
+      {
+        "q": "What golf course is near the Anthem Center?",
+        "a": "The Anthem Course is an 18-hole championship golf course that winds through the Sun City Anthem community. It offers preferred rates for residents and is accessible from the Anthem Center area."
+      },
+      {
+        "q": "How many clubs and activities are available?",
+        "a": "Sun City Anthem has 100+ chartered clubs and organizations covering everything from pickleball and tennis leagues to art guilds, book clubs, travel groups, card clubs, and community theater. The social calendar is one of the most active in any 55+ community nationwide."
+      },
+      {
+        "q": "How close is the Anthem Center area to shopping?",
+        "a": "The Anthem Center area is about 10 minutes from the Green Valley Ranch resort area and the Henderson shopping corridors along Eastern Avenue and St. Rose Parkway."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Sun City Anthem",
+        "href": "/sun-city-anthem/",
+        "price": "From $350K",
+        "compare": "The broader 55+ community encompassing 7,200+ homes with three recreation centers and two golf courses."
+      },
+      {
+        "name": "Anthem",
+        "href": "/anthem/",
+        "price": "From $400K",
+        "compare": "Henderson's largest master-planned community adjacent to Sun City Anthem with all-ages neighborhoods."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community with Rio Secco golf and panoramic Strip views."
+      },
+      {
+        "name": "Solera at Anthem",
+        "href": "/solera-at-anthem/",
+        "price": "From $300K",
+        "compare": "Smaller 55+ guard-gated community in the Anthem area with a more intimate setting."
+      },
+      {
+        "name": "Inspirada",
+        "href": "/inspirada/",
+        "price": "From $420K",
+        "compare": "All-ages master-planned community in southern Henderson with award-winning design."
+      },
+      {
+        "name": "MacDonald Highlands",
+        "href": "/macdonald-highlands/",
+        "price": "From $800K",
+        "compare": "Henderson's premier luxury community with DragonRidge Country Club."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We wanted to be walking distance to the Anthem Center so we could use the pools and fitness center every day. Nevada Real Estate Group found us the perfect home two blocks from the center. Best move we've ever made.",
+        "name": "Robert & Joan F.",
+        "detail": "Bought near Anthem Center, Sun City Anthem · 2024"
+      },
+      {
+        "quote": "Nevada Real Estate Group understood what matters to active adults — proximity to the center, single-story living, and a strong community. They helped us sell our California home and transition seamlessly to Sun City Anthem.",
+        "name": "Carol M.",
+        "detail": "Bought in Sun City Anthem · 2025"
+      }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Sun City Anthem",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "henderson-cadence-park",
+    "name": "Cadence Park",
+    "parentCommunity": "Cadence",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Master-Planned · New Construction",
+    "zipCodes": [
+      "89011"
+    ],
+    "center": [
+      -115.000,
+      36.020
+    ],
+    "heroEyebrow": "Cadence, Henderson",
+    "priceRange": "$400K–$650K",
+    "established": "2018",
+    "developer": "LandWell Company / Multiple Builders",
+    "acreage": "~100 acres",
+    "homeCount": "500+",
+    "guardGated": false,
+    "hoaRange": "$80–$200/mo",
+    "overview": [
+      "Cadence Park is one of the most dynamic and family-friendly neighborhoods within the Cadence master-planned community in Henderson. Located adjacent to the community's signature Central Park — a 50-acre civic amenity with amphitheater, sports fields, playgrounds, and gathering spaces — Cadence Park puts residents at the center of one of Henderson's most active community lifestyles.",
+      "Homes in Cadence Park range from approximately $400,000 to $650,000, with active new construction and nearly-new resale options from builders including Lennar, Richmond American, Woodside Homes, and Century Communities. Floor plans span 1,600 to 3,200 square feet with contemporary desert-inspired architecture, open-concept living areas, and energy-efficient construction. Many homes feature first-floor master suites, upstairs lofts, and covered rear patios oriented toward the community's parks and open spaces.",
+      "The Central Park is the defining amenity for Cadence Park residents. This 50-acre facility includes a performance amphitheater, sports courts, multi-use athletic fields, a splash pad, playground, community garden, and walking trails. The park hosts regular community events including outdoor concerts, movie nights, farmers markets, and holiday festivals. A commercial village along Lake Mead Parkway adds restaurants, retail, and services within walking distance.",
+      "Cadence Park benefits from Henderson's reputation as one of the safest and best-managed cities in the country. The community sits along the Lake Mead Parkway corridor with direct access to I-215, putting the Strip and Harry Reid Airport approximately 20 minutes away. For families and professionals seeking new construction in a design-forward community with genuine neighborhood character, Cadence Park delivers."
+    ],
+    "highlights": [
+      {
+        "title": "50-Acre Central Park",
+        "body": "Walking-distance access to Cadence's signature Central Park with amphitheater, sports fields, splash pad, playground, community garden, and walking trails.",
+        "iconType": "park"
+      },
+      {
+        "title": "Active New Construction",
+        "body": "New homes from Lennar, Richmond American, Woodside, and Century Communities. Contemporary floor plans from 1,600 to 3,200 square feet with modern finishes.",
+        "iconType": "home"
+      },
+      {
+        "title": "Community Events",
+        "body": "Regular outdoor concerts, movie nights, farmers markets, and festivals at Central Park. An active community calendar that creates genuine neighborhood connections.",
+        "iconType": "building"
+      },
+      {
+        "title": "Henderson Safety",
+        "body": "Henderson consistently ranks among the safest large cities in America. Cadence benefits from responsive city services and well-maintained public spaces.",
+        "iconType": "shield"
+      },
+      {
+        "title": "I-215 Beltway Access",
+        "body": "Direct access to the I-215 beltway via Lake Mead Parkway for a 20-minute commute to the Strip and Harry Reid Airport.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Growth Community Value",
+        "body": "Cadence is one of the fastest-growing communities in Henderson. Early buyers in Cadence Park have seen strong appreciation as the community matures.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Park Front",
+        "type": "New Build · Park Adjacent",
+        "desc": "Homes directly adjacent to Central Park with walking access to the amphitheater, splash pad, and community events. The most sought-after positions.",
+        "price": "From $525K"
+      },
+      {
+        "name": "Village Walk",
+        "type": "New Build · Commercial Proximity",
+        "desc": "Homes near the Cadence commercial village with walkable access to restaurants, shops, and daily services.",
+        "price": "From $475K"
+      },
+      {
+        "name": "Family Greens",
+        "type": "New Build · Family",
+        "desc": "Neighborhoods designed with families in mind, featuring larger floor plans, cul-de-sacs, and proximity to schools and playgrounds.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Starter Collection",
+        "type": "New Build · Entry",
+        "desc": "Smaller floor plans from 1,600 to 2,000 square feet offering the most accessible entry into Cadence living.",
+        "price": "From $400K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Cadence Central Park",
+        "address": "Lake Mead Pkwy, Henderson, NV 89011",
+        "acreage": "~50 acres",
+        "amenities": [
+          "Amphitheater",
+          "Sports fields",
+          "Splash pad",
+          "Playground",
+          "Community garden",
+          "Walking trails"
+        ]
+      },
+      {
+        "name": "Cadence Dog Park",
+        "address": "Cadence Village Dr, Henderson, NV 89011",
+        "acreage": "~3 acres",
+        "amenities": [
+          "Off-leash dog area",
+          "Agility equipment",
+          "Water stations",
+          "Shade structures"
+        ]
+      },
+      {
+        "name": "Henderson Bird Viewing Preserve",
+        "address": "350 E Galleria Dr, Henderson, NV 89011",
+        "acreage": "~140 acres",
+        "amenities": [
+          "Birding trails",
+          "Observation platforms",
+          "Educational signage",
+          "Photography opportunities"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Elise L. Wolff Elementary",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Jack Lund Schofield Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Foothill High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~1,600",
+      "medianAge": "34",
+      "avgIncome": "$80,000",
+      "households": "500+",
+      "homeownership": "72%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via Lake Mead Pkwy → I-215 → I-15"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Henderson Green Valley",
+        "route": "via Lake Mead Pkwy"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Lake Mead",
+        "route": "via Lake Mead Pkwy East"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Cadence Park?",
+        "a": "Homes in Cadence Park range from approximately $400,000 for entry-level new construction to $650,000 for larger homes on premium park-adjacent lots."
+      },
+      {
+        "q": "Is Cadence Park still building new homes?",
+        "a": "Yes — Cadence Park has active new-home construction from multiple national builders including Lennar, Richmond American, and Century Communities. Both build-to-order and quick move-in options are available."
+      },
+      {
+        "q": "What is Cadence Central Park?",
+        "a": "Cadence Central Park is a 50-acre civic amenity featuring an amphitheater, sports fields, splash pad, playground, community garden, and walking trails. It hosts regular community events including concerts, movie nights, and farmers markets."
+      },
+      {
+        "q": "What ZIP code is Cadence Park in?",
+        "a": "Cadence Park is located in ZIP code 89011 in Henderson, Nevada."
+      },
+      {
+        "q": "What are HOA fees in Cadence Park?",
+        "a": "HOA fees typically range from $80 to $200 per month, covering common area maintenance, parks, trails, and community amenities."
+      },
+      {
+        "q": "Is Cadence Park guard-gated?",
+        "a": "No — Cadence Park is part of the open Cadence master-planned community with HOA governance. There are no guard gates."
+      },
+      {
+        "q": "What schools serve Cadence Park?",
+        "a": "Cadence Park is served by CCSD schools including Elise L. Wolff Elementary (8/10) and Jack Lund Schofield Middle School (7/10). Doral Academy (9/10) is a popular charter school nearby."
+      },
+      {
+        "q": "How does Cadence compare to Inspirada?",
+        "a": "Both are newer Henderson master-planned communities with strong amenity packages. Cadence offers slightly more accessible pricing and the 50-acre Central Park, while Inspirada emphasizes design-forward gathering spaces and plaza-style architecture. Both are excellent family choices."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Cadence",
+        "href": "/cadence/",
+        "price": "From $380K",
+        "compare": "The broader Cadence master-planned community with multiple neighborhoods and commercial village."
+      },
+      {
+        "name": "Inspirada",
+        "href": "/inspirada/",
+        "price": "From $420K",
+        "compare": "Henderson's design-forward master plan with award-winning plazas and gathering spaces."
+      },
+      {
+        "name": "Lake Las Vegas",
+        "href": "/lake-las-vegas/",
+        "price": "From $400K",
+        "compare": "Lakefront resort community east of Henderson with golf and luxury amenities."
+      },
+      {
+        "name": "Whitney Ranch",
+        "href": "/whitney-ranch/",
+        "price": "From $350K",
+        "compare": "Established Henderson community with mature landscaping and competitive pricing."
+      },
+      {
+        "name": "Anthem",
+        "href": "/anthem/",
+        "price": "From $400K",
+        "compare": "Henderson's largest master-planned community with guard-gated options and mountain views."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community with Rio Secco golf and Strip views."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Cadence Park was the perfect fit for our family. Nevada Real Estate Group showed us the value of being next to Central Park — the kids play there every day, and we walk to the farmers market on weekends. It's exactly the neighborhood life we wanted.",
+        "name": "Kevin & Rachel S.",
+        "detail": "Bought in Cadence Park, Henderson · 2024"
+      },
+      {
+        "quote": "We compared every new-construction community in Henderson and Cadence Park stood out. Nevada Real Estate Group negotiated builder incentives that saved us over $15,000. Outstanding service and knowledge.",
+        "name": "Tanya W.",
+        "detail": "Bought New Construction in Cadence Park · 2025"
+      }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Cadence",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "inspirada-nevada-trails",
+    "name": "Nevada Trails at Inspirada",
+    "parentCommunity": "Inspirada",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": [
+      "89044"
+    ],
+    "center": [
+      -115.090,
+      35.970
+    ],
+    "heroEyebrow": "Inspirada, Henderson",
+    "priceRange": "$450K–$700K",
+    "established": "2010",
+    "developer": "Focus Property Group / Multiple Builders",
+    "acreage": "~200 acres",
+    "homeCount": "1,200+",
+    "guardGated": false,
+    "hoaRange": "$100–$225/mo",
+    "overview": [
+      "Nevada Trails at Inspirada is one of the most established and sought-after neighborhoods within the Inspirada master-planned community in southern Henderson. The neighborhood takes its name from the extensive trail network that defines its character — miles of interconnected walking and biking paths that link homes to parks, schools, plazas, and the broader Inspirada gathering spaces. For buyers who want an active, connected lifestyle within a thoughtfully designed community, Nevada Trails delivers.",
+      "Homes in Nevada Trails range from approximately $450,000 to $700,000, with a mix of well-maintained resale properties and newer construction. Floor plans span 1,800 to 3,500 square feet, with multiple builders having contributed to the neighborhood's diverse housing stock. Architectural styles include Mediterranean, Spanish Colonial, and contemporary desert designs, all governed by Inspirada's design standards that maintain visual cohesion while allowing individual character.",
+      "The trail system is the defining feature. Dedicated walking and biking paths connect Nevada Trails to Inspirada's signature gathering spaces — landscaped plazas with fire features, resort-style pools, splash pads, playgrounds, and an amphitheater. The trails also connect to Henderson's broader public trail system, giving residents access to miles of outdoor recreation without leaving their neighborhood. Many homes in Nevada Trails are positioned directly along trail corridors with open-space views.",
+      "Nevada Trails benefits from Inspirada's thoughtful master planning and Henderson's reputation for safety and quality city services. The I-215 beltway is minutes away, providing a 20-minute corridor to the Strip and Harry Reid Airport. For families, active adults, and professionals seeking a walkable, design-forward neighborhood with strong community character, Nevada Trails at Inspirada is one of Henderson's best choices."
+    ],
+    "highlights": [
+      {
+        "title": "Extensive Trail Network",
+        "body": "Miles of dedicated walking and biking trails connect homes to parks, plazas, schools, and gathering spaces. Many homes sit directly along trail corridors with open-space views.",
+        "iconType": "park"
+      },
+      {
+        "title": "Inspirada Gathering Spaces",
+        "body": "Connected to Inspirada's signature plazas with fire features, resort pools, splash pads, and community events. Walkable access to the social heart of the community.",
+        "iconType": "building"
+      },
+      {
+        "title": "Diverse Housing Options",
+        "body": "Multiple builders and architectural styles from 1,800 to 3,500 square feet. Mediterranean, Spanish Colonial, and contemporary desert designs within Inspirada's cohesive standards.",
+        "iconType": "home"
+      },
+      {
+        "title": "Henderson Safety",
+        "body": "Henderson consistently ranks among the safest large cities in America. Nevada Trails benefits from responsive city services and well-maintained public spaces.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Established Community Feel",
+        "body": "As one of Inspirada's earliest neighborhoods, Nevada Trails has mature landscaping, established trees, and a settled community character with strong neighbor connections.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "I-215 Commute Corridor",
+        "body": "Minutes from the I-215 beltway for a clean 20-minute commute to the Strip and Harry Reid Airport. Convenient access to Henderson's shopping and dining corridors.",
+        "iconType": "trend"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Trailside Estates",
+        "type": "Single-Family · Trail Adjacent",
+        "desc": "Homes directly along the community's primary trail corridors with open-space views. The most sought-after positions for active-lifestyle buyers.",
+        "price": "From $575K"
+      },
+      {
+        "name": "Plaza Walk",
+        "type": "Single-Family · Near Plazas",
+        "desc": "Homes within walking distance of Inspirada's signature gathering plazas. Easy access to pools, fire features, and community events.",
+        "price": "From $525K"
+      },
+      {
+        "name": "Nevada Trails Core",
+        "type": "Single-Family · Established",
+        "desc": "The heart of the neighborhood with mature landscaping, diverse floor plans, and a strong community character.",
+        "price": "From $475K"
+      },
+      {
+        "name": "Nevada Trails Entry",
+        "type": "Single-Family · Value",
+        "desc": "More accessible homes from 1,800 to 2,200 square feet. Full access to all Inspirada trails, parks, and amenities.",
+        "price": "From $450K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Inspirada Community Park",
+        "address": "Inspirada Blvd, Henderson, NV 89044",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Resort-style pool",
+          "Splash pad",
+          "Playground",
+          "Walking trails",
+          "Community garden"
+        ]
+      },
+      {
+        "name": "Inspirada Plaza",
+        "address": "Inspirada Blvd, Henderson, NV 89044",
+        "acreage": "~5 acres",
+        "amenities": [
+          "Fire features",
+          "Amphitheater seating",
+          "Event lawn",
+          "Shade structures",
+          "Gathering spaces"
+        ]
+      },
+      {
+        "name": "Anthem Hills Park",
+        "address": "Anthem Hills Dr, Henderson, NV 89052",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Walking trails",
+          "Playground",
+          "Basketball courts",
+          "Open space"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Dean Allen Elementary",
+          "K–5",
+          "7/10"
+        ],
+        [
+          "Del E. Webb Middle School",
+          "6–8",
+          "7/10"
+        ],
+        [
+          "Coronado High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Henderson International School",
+          "PreK–12",
+          "A"
+        ],
+        [
+          "Pinecrest Academy of Nevada",
+          "K–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Pinecrest Academy — Inspirada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~3,800",
+      "medianAge": "36",
+      "avgIncome": "$85,000",
+      "households": "1,200+",
+      "homeownership": "74%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Henderson Green Valley",
+        "route": "via St. Rose Pkwy"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Summerlin",
+        "route": "via I-215 West"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Nevada Trails at Inspirada?",
+        "a": "Homes in Nevada Trails range from approximately $450,000 for smaller resale homes to $700,000 for larger trail-adjacent and plaza-walk properties."
+      },
+      {
+        "q": "What makes Nevada Trails different from other Inspirada neighborhoods?",
+        "a": "Nevada Trails is defined by its extensive trail connectivity — homes along dedicated walking and biking paths with direct connections to Inspirada's plazas, parks, and gathering spaces. It is also one of the most established sections with mature landscaping."
+      },
+      {
+        "q": "Is Nevada Trails guard-gated?",
+        "a": "No — Nevada Trails is part of the open Inspirada master plan with HOA governance. There are no guard gates."
+      },
+      {
+        "q": "What ZIP code is Nevada Trails in?",
+        "a": "Nevada Trails at Inspirada is located in ZIP code 89044 in southern Henderson."
+      },
+      {
+        "q": "What are HOA fees in Nevada Trails?",
+        "a": "HOA fees typically range from $100 to $225 per month, covering access to Inspirada's parks, pools, plazas, trail maintenance, and community programming."
+      },
+      {
+        "q": "What schools serve Nevada Trails?",
+        "a": "Nevada Trails is served by CCSD schools including Dean Allen Elementary (7/10) and Del E. Webb Middle School (7/10). Pinecrest Academy Inspirada (9/10) is a popular charter option within the community."
+      },
+      {
+        "q": "Is Nevada Trails walkable?",
+        "a": "Yes — the trail network connects Nevada Trails to parks, plazas, schools, and the commercial district along St. Rose Parkway. Many residents walk or bike to community amenities and events."
+      },
+      {
+        "q": "How does Nevada Trails compare to Cadence?",
+        "a": "Nevada Trails offers a more established neighborhood with mature landscaping, while Cadence has more active new construction. Both are excellent Henderson master-planned communities with strong amenity packages."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Inspirada",
+        "href": "/inspirada/",
+        "price": "From $420K",
+        "compare": "The broader master-planned community with award-winning gathering spaces and multiple neighborhoods."
+      },
+      {
+        "name": "Cadence",
+        "href": "/cadence/",
+        "price": "From $380K",
+        "compare": "Henderson's fastest-growing community with 50-acre Central Park and active new construction."
+      },
+      {
+        "name": "Anthem",
+        "href": "/anthem/",
+        "price": "From $400K",
+        "compare": "Henderson's largest master-planned community with guard-gated options and mountain views."
+      },
+      {
+        "name": "Seven Hills",
+        "href": "/seven-hills/",
+        "price": "From $500K",
+        "compare": "Guard-gated Henderson community with Rio Secco golf and Strip views."
+      },
+      {
+        "name": "Sun City Anthem",
+        "href": "/sun-city-anthem/",
+        "price": "From $350K",
+        "compare": "Premier 55+ community adjacent to Inspirada with three recreation centers."
+      },
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $400K",
+        "compare": "Southwest Las Vegas guard-gated golf community with Nicklaus course."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "We fell in love with the trail system in Nevada Trails. Nevada Real Estate Group showed us homes along the main trail corridor and we found a home where we can walk to the pool, the plaza, and our kids' school. It's the connected lifestyle we wanted.",
+        "name": "James & Maria T.",
+        "detail": "Bought in Nevada Trails, Inspirada · 2024"
+      },
+      {
+        "quote": "Nevada Real Estate Group helped us sell our Nevada Trails home and move up to a larger home in the same community. They understood the premium that trail-adjacent homes command and priced our home perfectly. Sold in six days.",
+        "name": "Susan K.",
+        "detail": "Sold in Nevada Trails, Inspirada · 2025"
+      }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Inspirada",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "spring-mountain-ranch",
+    "name": "Spring Mountain Ranch",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Suburban · Family",
+    "zipCodes": [
+      "89148",
+      "89113"
+    ],
+    "center": [
+      -115.280,
+      36.055
+    ],
+    "heroEyebrow": "Southwest Las Vegas, Nevada",
+    "priceRange": "$500K–$1.2M",
+    "established": "2003",
+    "developer": "Various Builders",
+    "acreage": "~600 acres",
+    "homeCount": "2,000+",
+    "guardGated": false,
+    "hoaRange": "$75–$200/mo",
+    "overview": [
+      "Spring Mountain Ranch is a well-established residential community in southwest Las Vegas that offers a compelling blend of quality construction, mountain views, and accessibility at price points between the more affordable Mountains Edge and the premium Southern Highlands. Named for the nearby Spring Mountain Ranch State Park, the community captures the spirit of desert living with homes that range from upscale family residences to executive-caliber estates.",
+      "Homes in Spring Mountain Ranch range from approximately $500,000 to $1.2 million, with most properties built between 2003 and 2015 by a variety of respected builders. Floor plans typically range from 2,200 to 4,500 square feet, with architecture spanning Mediterranean, Tuscan, and transitional desert styles. Many homes feature upgraded finishes including granite or quartz countertops, travertine or hardwood flooring, and resort-style backyards with pools, spas, and outdoor kitchens.",
+      "The community's southwest valley location provides excellent mountain views toward the Spring Mountains and Red Rock Canyon to the west and northwest. The elevated terrain on the community's western side offers premium view lots that command a significant premium. Spring Mountain Ranch State Park is a short drive away, offering hiking, picnicking, and scenic desert landscapes within a state-managed preserve.",
+      "Spring Mountain Ranch sits near the intersection of several major corridors including Durango Drive and Blue Diamond Road, providing quick access to retail, dining, and medical services. The I-215 beltway and I-15 are both within a 10-minute drive, making commutes to the Strip, airport, and other valley destinations convenient. For buyers seeking quality homes with mountain views in the southwest valley at a price point below the guard-gated communities, Spring Mountain Ranch is an outstanding option."
+    ],
+    "highlights": [
+      {
+        "title": "Mountain Views",
+        "body": "Southwest valley position with sweeping views of the Spring Mountains and Red Rock Canyon from many homes. Premium view lots on the western edge command a significant premium.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Quality Construction",
+        "body": "Built by respected national and regional builders with homes from 2,200 to 4,500 square feet. Mediterranean, Tuscan, and transitional architecture with quality finishes throughout.",
+        "iconType": "home"
+      },
+      {
+        "title": "State Park Access",
+        "body": "Minutes from Spring Mountain Ranch State Park with hiking trails, historic ranch buildings, and scenic desert landscapes. Outdoor recreation without leaving the neighborhood.",
+        "iconType": "park"
+      },
+      {
+        "title": "Corridor Convenience",
+        "body": "Near the Durango and Blue Diamond commercial corridors with major retail, restaurants, and medical facilities. I-215 and I-15 within 10 minutes.",
+        "iconType": "building"
+      },
+      {
+        "title": "Mid-Tier Value",
+        "body": "Positioned between Mountains Edge pricing and Southern Highlands premiums. Quality homes with views at price points that represent strong value for the southwest valley.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Family-Friendly",
+        "body": "Well-maintained neighborhood with quality schools, parks, and a suburban character that attracts families seeking space, quality, and a strong community feel.",
+        "iconType": "shield"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Ranch Estates",
+        "type": "Semi-Custom · Premium",
+        "desc": "The largest homes in Spring Mountain Ranch from 3,500 to 4,500+ square feet on premium lots. Executive-caliber homes with mountain views and resort backyards.",
+        "price": "From $900K"
+      },
+      {
+        "name": "Mountain View Section",
+        "type": "Single-Family · Views",
+        "desc": "Elevated lots on the community's western edge with panoramic Spring Mountain and Red Rock Canyon views. Popular with buyers who prioritize scenery.",
+        "price": "From $700K"
+      },
+      {
+        "name": "Ranch Core",
+        "type": "Single-Family · Family",
+        "desc": "Well-maintained homes from 2,500 to 3,200 square feet in the community's established central neighborhoods. Mature landscaping and a settled character.",
+        "price": "From $575K"
+      },
+      {
+        "name": "Ranch Village",
+        "type": "Single-Family · Entry",
+        "desc": "More accessible homes from 2,200 to 2,800 square feet. The entry tier for Spring Mountain Ranch living.",
+        "price": "From $500K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Spring Mountain Ranch State Park",
+        "address": "6375 NV-159, Las Vegas, NV 89161",
+        "acreage": "520 acres",
+        "amenities": [
+          "Hiking trails",
+          "Picnic areas",
+          "Historic ranch buildings",
+          "Outdoor theater",
+          "Desert wildlife viewing"
+        ]
+      },
+      {
+        "name": "Exploration Peak Park",
+        "address": "9600 S Buffalo Dr, Las Vegas, NV 89178",
+        "acreage": "~98 acres",
+        "amenities": [
+          "Hiking trails",
+          "Mountain summit views",
+          "Nature exploration",
+          "Picnic areas"
+        ]
+      },
+      {
+        "name": "Desert Bloom Park",
+        "address": "8405 S Maryland Pkwy, Las Vegas, NV 89123",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Playground",
+          "Basketball courts",
+          "Walking paths",
+          "Shade structures"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Gene Ward Elementary",
+          "K–5",
+          "7/10"
+        ],
+        [
+          "Walter Johnson Jr. Middle",
+          "6–8",
+          "6/10"
+        ],
+        [
+          "Sierra Vista High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Mountain View Christian School",
+          "PreK–8",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~6,000",
+      "medianAge": "40",
+      "avgIncome": "$95,000",
+      "households": "2,000+",
+      "homeownership": "80%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+      },
+      {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via Blue Diamond Rd"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Southern Highlands",
+        "route": "via S Las Vegas Blvd"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Spring Mountain Ranch?",
+        "a": "Homes in Spring Mountain Ranch range from approximately $500,000 for entry-level homes to $1.2 million for premium executive estates on mountain-view lots."
+      },
+      {
+        "q": "Is Spring Mountain Ranch guard-gated?",
+        "a": "No — Spring Mountain Ranch is not guard-gated. It is a well-maintained suburban community with HOA governance."
+      },
+      {
+        "q": "What ZIP codes are in Spring Mountain Ranch?",
+        "a": "Spring Mountain Ranch is located in ZIP codes 89148 and 89113 in southwest Las Vegas."
+      },
+      {
+        "q": "Is Spring Mountain Ranch near hiking?",
+        "a": "Yes — Spring Mountain Ranch State Park is a short drive away with hiking trails and scenic desert landscapes. Red Rock Canyon is approximately 10 minutes west via Blue Diamond Road."
+      },
+      {
+        "q": "What are HOA fees in Spring Mountain Ranch?",
+        "a": "HOA fees typically range from $75 to $200 per month, covering common area maintenance and community landscaping."
+      },
+      {
+        "q": "What schools serve Spring Mountain Ranch?",
+        "a": "The community is served by CCSD schools and quality charter options including Doral Academy (9/10). Bishop Gorman High School (A+) is a nearby private option."
+      },
+      {
+        "q": "How does Spring Mountain Ranch compare to Southern Highlands?",
+        "a": "Spring Mountain Ranch offers quality homes with mountain views at price points below Southern Highlands. The trade-off is that Spring Mountain Ranch doesn't have guard-gated enclaves or a private golf club."
+      },
+      {
+        "q": "Who built homes in Spring Mountain Ranch?",
+        "a": "Various respected builders contributed to Spring Mountain Ranch over the 2003–2015 build period. The diversity of builders means a wide range of floor plans and architectural styles."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Mountains Edge",
+        "href": "/mountains-edge/",
+        "price": "From $350K",
+        "compare": "Adjacent master-planned community with more accessible pricing and extensive trail networks."
+      },
+      {
+        "name": "Southern Highlands",
+        "href": "/southern-highlands/",
+        "price": "From $400K",
+        "compare": "Guard-gated golf community with Nicklaus course and luxury enclaves to the south."
+      },
+      {
+        "name": "Rhodes Ranch",
+        "href": "/rhodes-ranch/",
+        "price": "From $350K",
+        "compare": "Guard-gated golf community with Ted Robinson course and resort amenities."
+      },
+      {
+        "name": "Enterprise",
+        "href": "/enterprise/",
+        "price": "From $350K",
+        "compare": "Growing unincorporated area with diverse housing and new commercial development."
+      },
+      {
+        "name": "Spring Valley",
+        "href": "/spring-valley/",
+        "price": "From $300K",
+        "compare": "Established suburban community to the north with strong retail corridors."
+      },
+      {
+        "name": "Summerlin",
+        "href": "/summerlin/",
+        "price": "From $450K",
+        "compare": "Premier west-side master plan with 20+ villages and Downtown Summerlin."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Spring Mountain Ranch gave us the mountain views and quality home we wanted without breaking the budget. Nevada Real Estate Group showed us what was possible between Mountains Edge and Southern Highlands — we found the perfect middle ground.",
+        "name": "Scott & Diana R.",
+        "detail": "Bought in Spring Mountain Ranch · 2024"
+      },
+      {
+        "quote": "Nevada Real Estate Group helped us sell our Spring Mountain Ranch home at top dollar. They knew the community's strengths — the views, the State Park access, the convenient location — and marketed them perfectly.",
+        "name": "Thomas A.",
+        "detail": "Sold in Spring Mountain Ranch · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Spring Mountain Ranch",
+    "ylopoMinPrice": 450000
+  },
+  {
+    "slug": "silverstone-ranch",
+    "name": "Silverstone Ranch",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Golf",
+    "zipCodes": [
+      "89131"
+    ],
+    "center": [
+      -115.260,
+      36.260
+    ],
+    "heroEyebrow": "Northwest Las Vegas, Nevada",
+    "priceRange": "$400K–$800K",
+    "established": "2001",
+    "developer": "Olympia Group",
+    "acreage": "~800 acres",
+    "homeCount": "2,500+",
+    "guardGated": true,
+    "hoaRange": "$150–$350/mo",
+    "overview": [
+      "Silverstone Ranch is a guard-gated golf community in northwest Las Vegas that offers an exceptional combination of security, golf course living, and attainable pricing. Developed by Olympia Group beginning in 2001, the community centers around the 18-hole Silverstone Golf Club, which winds through the residential neighborhoods and provides golf course frontage and views for hundreds of homes.",
+      "Homes in Silverstone Ranch range from approximately $400,000 to $800,000, with most properties built between 2001 and 2010. Floor plans span 1,800 to 4,000 square feet, with architecture primarily in Mediterranean and transitional desert styles. The community's guard-gated entry with 24-hour staffed security creates a sense of privacy and exclusivity that elevates the everyday living experience. Golf course frontage homes with fairway and mountain views command a premium.",
+      "The Silverstone Golf Club is the community's centerpiece — an 18-hole championship course that has hosted professional events and maintains a strong reputation among Las Vegas golfers. The course is available for public play but offers preferred rates and tee times for Silverstone Ranch residents. The clubhouse provides dining, a pro shop, and event space. Beyond golf, the community features parks, walking trails, and common areas maintained by the HOA.",
+      "Silverstone Ranch's northwest Las Vegas location puts residents near the US-95 freeway corridor for convenient access to the Strip, downtown, and the northwest valley's growing retail and dining scene. Centennial Hills, Desert Shores, and The Lakes are all neighboring communities. For buyers seeking guard-gated golf community living at price points that don't require a seven-figure budget, Silverstone Ranch is one of the best values in the Las Vegas Valley."
+    ],
+    "highlights": [
+      {
+        "title": "Guard-Gated Security",
+        "body": "24-hour staffed guard gate providing controlled access and enhanced security for all residents. One of the most affordable guard-gated communities in the Las Vegas Valley.",
+        "iconType": "shield"
+      },
+      {
+        "title": "Silverstone Golf Club",
+        "body": "18-hole championship course winding through the community. Public play with preferred resident rates. Clubhouse with dining, pro shop, and event facilities.",
+        "iconType": "golf"
+      },
+      {
+        "title": "Attainable Golf Community",
+        "body": "Guard-gated golf community living from the low $400s — significantly more accessible than comparable communities like Red Rock Country Club or Spanish Trail.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Quality Construction",
+        "body": "Well-built homes from 1,800 to 4,000 square feet in Mediterranean and transitional styles. Many with golf course frontage, mountain views, and resort-style backyards.",
+        "iconType": "home"
+      },
+      {
+        "title": "Northwest Location",
+        "body": "Convenient northwest Las Vegas position near US-95 and the growing Centennial Hills commercial corridor. Good access to both the Strip and northwest valley amenities.",
+        "iconType": "building"
+      },
+      {
+        "title": "Community Amenities",
+        "body": "Parks, walking trails, and well-maintained common areas throughout the community. HOA-managed landscaping keeps the community looking its best year-round.",
+        "iconType": "park"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Golf Course Estates",
+        "type": "Guard-Gated · Golf Frontage",
+        "desc": "Homes with direct frontage along the Silverstone Golf Club fairways. Sweeping course and mountain views from rear yards.",
+        "price": "From $600K"
+      },
+      {
+        "name": "Premium View Lots",
+        "type": "Guard-Gated · Views",
+        "desc": "Elevated lots with mountain views to the west and northwest. Desert sunset views and open-sky panoramas.",
+        "price": "From $550K"
+      },
+      {
+        "name": "Silverstone Core",
+        "type": "Guard-Gated · Established",
+        "desc": "Well-maintained homes in the community's central neighborhoods with mature landscaping and established character.",
+        "price": "From $450K"
+      },
+      {
+        "name": "Entry Neighborhoods",
+        "type": "Guard-Gated · Value",
+        "desc": "The most accessible homes within the guard-gated community. Full security benefits and golf access at entry-level pricing.",
+        "price": "From $400K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Silverstone Golf Club",
+        "address": "8600 Cupp Dr, Las Vegas, NV 89131",
+        "acreage": "~140 acres",
+        "amenities": [
+          "18-hole championship course",
+          "Driving range",
+          "Pro shop",
+          "Clubhouse dining",
+          "Event space"
+        ]
+      },
+      {
+        "name": "Floyd Lamb Park at Tule Springs",
+        "address": "9200 Tule Springs Rd, Las Vegas, NV 89131",
+        "acreage": "~680 acres",
+        "amenities": [
+          "Fishing ponds",
+          "Picnic areas",
+          "Historic ranch buildings",
+          "Walking trails",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Craig Ranch Regional Park",
+        "address": "628 W Craig Rd, North Las Vegas, NV 89032",
+        "acreage": "~170 acres",
+        "amenities": [
+          "Skatepark",
+          "Sports fields",
+          "Playground",
+          "Dog park",
+          "Walking trails"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Marc & Eva Stern STEM Academy",
+          "K–5",
+          "8/10"
+        ],
+        [
+          "Robert O. Gibson Middle School",
+          "6–8",
+          "6/10"
+        ],
+        [
+          "Arbor View High School",
+          "9–12",
+          "7/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~7,500",
+      "medianAge": "42",
+      "avgIncome": "$90,000",
+      "households": "2,500+",
+      "homeownership": "80%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via US-95 → I-15"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via US-95 → I-15 → I-215"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Centennial Hills",
+        "route": "via N Durango Dr"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Summerlin",
+        "route": "via US-95 West"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Silverstone Ranch?",
+        "a": "Homes in Silverstone Ranch range from approximately $400,000 for entry-level properties to $800,000 for premium golf course frontage homes with mountain views."
+      },
+      {
+        "q": "Is Silverstone Ranch guard-gated?",
+        "a": "Yes — Silverstone Ranch is a guard-gated community with 24-hour staffed security at the main entrance. It is one of the most affordable guard-gated communities in the Las Vegas Valley."
+      },
+      {
+        "q": "What golf course is in Silverstone Ranch?",
+        "a": "The Silverstone Golf Club is an 18-hole championship course that winds through the community. It is open for public play but offers preferred rates and tee times for residents."
+      },
+      {
+        "q": "What ZIP code is Silverstone Ranch in?",
+        "a": "Silverstone Ranch is located in ZIP code 89131 in northwest Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Silverstone Ranch?",
+        "a": "HOA fees typically range from $150 to $350 per month, covering guard gate staffing, security patrols, common area maintenance, and landscaping."
+      },
+      {
+        "q": "How does Silverstone Ranch compare to Red Rock Country Club?",
+        "a": "Both are guard-gated golf communities, but Red Rock Country Club is in a higher price tier ($1.2M+) with two Arnold Palmer courses. Silverstone Ranch offers similar guard-gated golf living at significantly more accessible price points starting in the $400s."
+      },
+      {
+        "q": "What schools serve Silverstone Ranch?",
+        "a": "Silverstone Ranch is served by CCSD schools including Marc & Eva Stern STEM Academy (8/10) and Arbor View High School (7/10). Bishop Gorman (A+) and Faith Lutheran (A) are nearby private options."
+      },
+      {
+        "q": "Who developed Silverstone Ranch?",
+        "a": "Silverstone Ranch was developed by Olympia Group beginning in 2001. The community spans approximately 800 acres with over 2,500 homes surrounding the Silverstone Golf Club."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Centennial Hills",
+        "href": "/centennial-hills/",
+        "price": "From $350K",
+        "compare": "Growing northwest Las Vegas community with diverse housing and family-friendly amenities."
+      },
+      {
+        "name": "Desert Shores",
+        "href": "/desert-shores/",
+        "price": "From $350K",
+        "compare": "Lakefront community in northwest Las Vegas with man-made lakes and waterfront living."
+      },
+      {
+        "name": "The Lakes",
+        "href": "/the-lakes/",
+        "price": "From $350K",
+        "compare": "Lake community in west Las Vegas with waterfront homes and established character."
+      },
+      {
+        "name": "Lone Mountain",
+        "href": "/lone-mountain/",
+        "price": "From $400K",
+        "compare": "Semi-rural enclave with large lots, equestrian properties, and mountain views."
+      },
+      {
+        "name": "Red Rock Country Club",
+        "href": "/red-rock-country-club/",
+        "price": "From $1.2M",
+        "compare": "Summerlin's premier guard-gated golf community with two Arnold Palmer courses."
+      },
+      {
+        "name": "Aliante",
+        "href": "/aliante/",
+        "price": "From $300K",
+        "compare": "North Las Vegas master plan with golf, casino, and nature discovery park."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Silverstone Ranch was the answer to our search for guard-gated golf community living that didn't cost a million dollars. Nevada Real Estate Group found us a beautiful golf course home for less than what we were looking at in Summerlin.",
+        "name": "Larry & Christine M.",
+        "detail": "Bought in Silverstone Ranch · 2024"
+      },
+      {
+        "quote": "Nevada Real Estate Group sold our Silverstone Ranch home quickly and helped us move to a larger property within the same community. They know every street, every view corridor, and every builder in the neighborhood.",
+        "name": "Gerald P.",
+        "detail": "Bought & Sold in Silverstone Ranch · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Silverstone Ranch",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "iron-mountain-ranch",
+    "name": "Iron Mountain Ranch",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": [
+      "89131"
+    ],
+    "center": [
+      -115.280,
+      36.282
+    ],
+    "heroEyebrow": "Northwest Las Vegas, Nevada",
+    "priceRange": "$350K–$600K",
+    "established": "2004",
+    "developer": "Richmond American / KB Home",
+    "acreage": "~500 acres",
+    "homeCount": "2,800+",
+    "guardGated": false,
+    "hoaRange": "$50–$150/mo",
+    "overview": [
+      "Iron Mountain Ranch is a well-established family-friendly community in northwest Las Vegas that has quietly become one of the best values in the valley. Located near the intersection of Iron Mountain Road and Farm Road, the community encompasses approximately 2,800+ homes spread across ~500 acres of the northwest valley's gently sloping terrain. The elevated position provides many homes with views of the Spring Mountains, Sheep Range, and the Las Vegas Valley.",
+      "Homes in Iron Mountain Ranch range from approximately $350,000 to $600,000, with floor plans spanning 1,500 to 3,200 square feet. The majority of homes were built between 2004 and 2012 by builders including Richmond American, KB Home, and Beazer Homes. Architecture follows the desert contemporary and Mediterranean styles common to Las Vegas neighborhoods of that era, with stucco exteriors, tile roofs, and functional floor plans designed for family living.",
+      "The community is centered around Iron Mountain Ranch Park, which provides sports fields, playgrounds, walking paths, and picnic areas. Several smaller pocket parks are distributed throughout the neighborhoods, creating green spaces within walking distance of most homes. The community's HOA maintains common areas, landscaping, and community standards that keep Iron Mountain Ranch looking well-cared-for.",
+      "Iron Mountain Ranch's northwest location provides convenient access to the growing Centennial Hills commercial corridor, the US-95 freeway, and the northwest valley's expanding retail and dining options. Skye Canyon and Providence are nearby newer communities, but Iron Mountain Ranch offers the advantage of mature landscaping, established schools, and proven long-term value at more accessible price points."
+    ],
+    "highlights": [
+      {
+        "title": "Exceptional Value",
+        "body": "Family homes from the $350s in a well-maintained community. One of the strongest values for single-family homes in northwest Las Vegas.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Mountain Views",
+        "body": "Elevated northwest valley position with views of the Spring Mountains, Sheep Range, and the broader Las Vegas Valley from many homesites.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Community Parks",
+        "body": "Iron Mountain Ranch Park anchors the community with sports fields, playgrounds, and walking paths. Several pocket parks provide green space throughout the neighborhoods.",
+        "iconType": "park"
+      },
+      {
+        "title": "Established Character",
+        "body": "Mature landscaping, grown-in trees, and a settled neighborhood character. Iron Mountain Ranch has the warmth that newer communities are still building.",
+        "iconType": "home"
+      },
+      {
+        "title": "Northwest Growth Corridor",
+        "body": "Near the growing Centennial Hills commercial corridor with new retail, dining, and medical facilities. US-95 provides quick access to the valley.",
+        "iconType": "building"
+      },
+      {
+        "title": "Family-Friendly Schools",
+        "body": "Served by established CCSD schools with strong community ties. Charter options including Doral Academy provide school choice for families.",
+        "iconType": "shield"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Iron Mountain Estates",
+        "type": "Single-Family · Premium",
+        "desc": "Larger homes from 2,800 to 3,200 square feet on premium lots with mountain views. The upper tier of the community.",
+        "price": "From $500K"
+      },
+      {
+        "name": "Ranch View",
+        "type": "Single-Family · Views",
+        "desc": "Homes on the community's elevated western edge with the best mountain panoramas. Sunset views toward the Spring Mountains.",
+        "price": "From $475K"
+      },
+      {
+        "name": "Iron Mountain Core",
+        "type": "Single-Family · Established",
+        "desc": "The heart of the community with well-maintained homes, mature landscaping, and proximity to Iron Mountain Ranch Park.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Entry Neighborhoods",
+        "type": "Single-Family · Value",
+        "desc": "Smaller floor plans from 1,500 to 2,000 square feet offering the most accessible entry into Iron Mountain Ranch.",
+        "price": "From $350K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Iron Mountain Ranch Park",
+        "address": "Iron Mountain Rd, Las Vegas, NV 89131",
+        "acreage": "~15 acres",
+        "amenities": [
+          "Sports fields",
+          "Playground",
+          "Walking paths",
+          "Picnic areas",
+          "Basketball courts"
+        ]
+      },
+      {
+        "name": "Floyd Lamb Park at Tule Springs",
+        "address": "9200 Tule Springs Rd, Las Vegas, NV 89131",
+        "acreage": "~680 acres",
+        "amenities": [
+          "Fishing ponds",
+          "Picnic areas",
+          "Historic ranch buildings",
+          "Walking trails",
+          "Wildlife viewing"
+        ]
+      },
+      {
+        "name": "Craig Ranch Regional Park",
+        "address": "628 W Craig Rd, North Las Vegas, NV 89032",
+        "acreage": "~170 acres",
+        "amenities": [
+          "Skatepark",
+          "Sports fields",
+          "Playground",
+          "Dog park",
+          "Walking trails"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Neal Elementary",
+          "K–5",
+          "7/10"
+        ],
+        [
+          "Thurman White Middle School",
+          "6–8",
+          "6/10"
+        ],
+        [
+          "Shadow Ridge High School",
+          "9–12",
+          "6/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "Faith Lutheran Middle & High",
+          "6–12",
+          "A"
+        ]
+      ],
+      "Charter": [
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ],
+        [
+          "Somerset Academy",
+          "K–8",
+          "8/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~8,500",
+      "medianAge": "36",
+      "avgIncome": "$72,000",
+      "households": "2,800+",
+      "homeownership": "72%"
+    },
+    "driveTimes": [
+      {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via US-95 → I-15"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via US-95 → I-15 → I-215"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Centennial Hills",
+        "route": "via N Durango Dr"
+      },
+      {
+        "time": "~20 min",
+        "destination": "to Summerlin",
+        "route": "via US-95 West"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Iron Mountain Ranch?",
+        "a": "Homes in Iron Mountain Ranch range from approximately $350,000 for smaller homes to $600,000 for premium homes on the best lots with mountain views."
+      },
+      {
+        "q": "Is Iron Mountain Ranch guard-gated?",
+        "a": "No — Iron Mountain Ranch is not guard-gated. It is an open community with HOA governance and well-maintained common areas."
+      },
+      {
+        "q": "What ZIP code is Iron Mountain Ranch in?",
+        "a": "Iron Mountain Ranch is located in ZIP code 89131 in northwest Las Vegas."
+      },
+      {
+        "q": "What schools serve Iron Mountain Ranch?",
+        "a": "Iron Mountain Ranch is served by CCSD schools including Shadow Ridge High School. Charter options like Doral Academy (9/10) provide school choice. Bishop Gorman (A+) is the top private option."
+      },
+      {
+        "q": "What are HOA fees in Iron Mountain Ranch?",
+        "a": "HOA fees are low, typically $50 to $150 per month, covering common area maintenance and community landscaping."
+      },
+      {
+        "q": "How does Iron Mountain Ranch compare to Skye Canyon?",
+        "a": "Iron Mountain Ranch offers more established neighborhoods with mature landscaping at lower price points. Skye Canyon is newer with more current architecture and the Skye Center amenity hub, but at higher prices."
+      },
+      {
+        "q": "Who built homes in Iron Mountain Ranch?",
+        "a": "Major builders include Richmond American, KB Home, and Beazer Homes. The variety of builders provides diverse floor plan options throughout the community."
+      },
+      {
+        "q": "Is Iron Mountain Ranch a good investment?",
+        "a": "Iron Mountain Ranch has shown strong long-term appreciation and the affordable price points create strong rental demand. The northwest valley's continued growth supports ongoing value."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Centennial Hills",
+        "href": "/centennial-hills/",
+        "price": "From $350K",
+        "compare": "Growing northwest Las Vegas community with expanding commercial corridor."
+      },
+      {
+        "name": "Skye Canyon",
+        "href": "/skye-canyon/",
+        "price": "From $400K",
+        "compare": "Newer master-planned community with Skye Center amenities and mountain access."
+      },
+      {
+        "name": "Providence",
+        "href": "/providence/",
+        "price": "From $450K",
+        "compare": "Family-friendly master plan with newer construction and community parks."
+      },
+      {
+        "name": "Silverstone Ranch",
+        "href": "/silverstone-ranch/",
+        "price": "From $400K",
+        "compare": "Guard-gated golf community in the northwest with 18-hole championship course."
+      },
+      {
+        "name": "Lone Mountain",
+        "href": "/lone-mountain/",
+        "price": "From $400K",
+        "compare": "Semi-rural enclave with large lots and mountain views."
+      },
+      {
+        "name": "Aliante",
+        "href": "/aliante/",
+        "price": "From $300K",
+        "compare": "North Las Vegas master plan with golf, casino, and nature park."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Iron Mountain Ranch gave us everything we wanted — a great neighborhood, mountain views, and a price that let us stay comfortable. Nevada Real Estate Group knew the community inside and out and found us the perfect home.",
+        "name": "Andrew & Jennifer H.",
+        "detail": "Bought in Iron Mountain Ranch · 2024"
+      },
+      {
+        "quote": "We sold our Iron Mountain Ranch home through Nevada Real Estate Group and were thrilled with the result. They attracted qualified buyers quickly and managed a smooth closing at a price that exceeded our expectations.",
+        "name": "Michelle G.",
+        "detail": "Sold in Iron Mountain Ranch · 2025"
+      }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Iron Mountain Ranch",
+    "ylopoMinPrice": 300000
+  },
+  {
+    "slug": "craig-ranch",
+    "name": "Craig Ranch",
+    "parentCommunity": null,
+    "city": "North Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": [
+      "89032",
+      "89081"
+    ],
+    "center": [
+      -115.140,
+      36.242
+    ],
+    "heroEyebrow": "North Las Vegas, Nevada",
+    "priceRange": "$300K–$500K",
+    "established": "2005",
+    "developer": "Various Builders",
+    "acreage": "~400 acres",
+    "homeCount": "2,000+",
+    "guardGated": false,
+    "hoaRange": "$40–$120/mo",
+    "overview": [
+      "Craig Ranch is a well-established family-friendly community in North Las Vegas anchored by the award-winning Craig Ranch Regional Park — one of the most impressive public park facilities in the entire Las Vegas Valley. The park and surrounding residential neighborhoods have transformed this area of North Las Vegas into a desirable family destination with an identity all its own.",
+      "Homes in Craig Ranch range from approximately $300,000 to $500,000, with floor plans spanning 1,400 to 2,800 square feet. Most homes were built between 2005 and 2015 by a mix of national builders. The architecture reflects the desert contemporary and Mediterranean styles common to Las Vegas construction of that era, with functional floor plans, two-car garages, and rear yards that accommodate pools and outdoor living spaces.",
+      "Craig Ranch Regional Park is the community's defining asset. This 170-acre facility features one of the largest skateparks in the western United States, championship-quality sports fields, a dog park, playgrounds, walking and biking trails, and event facilities. The park draws visitors from across the valley and hosts youth sports leagues, tournaments, and community events throughout the year. For families with active children, the park alone justifies choosing Craig Ranch.",
+      "The community's North Las Vegas location along Craig Road provides direct access to I-15 and I-215 for commutes to the Strip, downtown, and other valley destinations. The VA Medical Center and several major employers are nearby. Craig Ranch's affordable pricing, park amenities, and established neighborhood character make it one of the strongest value propositions for families in the Las Vegas metro."
+    ],
+    "highlights": [
+      {
+        "title": "Craig Ranch Regional Park",
+        "body": "170-acre park featuring one of the West's largest skateparks, championship sports fields, dog park, playgrounds, and miles of trails. A valley-wide destination.",
+        "iconType": "park"
+      },
+      {
+        "title": "Most Affordable Family Community",
+        "body": "Family homes from the $300s in a well-maintained community with exceptional park amenities. Among the strongest values for families in the Las Vegas metro.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Youth Sports Hub",
+        "body": "Craig Ranch Regional Park hosts youth sports leagues and tournaments year-round. Championship-quality fields for baseball, softball, soccer, and football.",
+        "iconType": "building"
+      },
+      {
+        "title": "Established Neighborhoods",
+        "body": "Mature landscaping and settled community character with homes from 1,400 to 2,800 square feet. Well-maintained neighborhoods with strong HOA governance.",
+        "iconType": "home"
+      },
+      {
+        "title": "Freeway Access",
+        "body": "Direct access to I-15 and I-215 via Craig Road for commutes to the Strip (20 min), downtown Las Vegas (15 min), and the northwest valley.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Investment Potential",
+        "body": "Affordable pricing and strong rental demand create excellent investment potential. North Las Vegas is the fastest-growing jurisdiction in the metro with ongoing infrastructure improvements.",
+        "iconType": "shield"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Park View",
+        "type": "Single-Family · Park Adjacent",
+        "desc": "Homes adjacent to or near Craig Ranch Regional Park with easy access to sports fields, trails, and playgrounds.",
+        "price": "From $375K"
+      },
+      {
+        "name": "Craig Ranch Estates",
+        "type": "Single-Family · Premium",
+        "desc": "Larger homes from 2,400 to 2,800 square feet with upgraded lots and finishes. The upper tier of the community.",
+        "price": "From $425K"
+      },
+      {
+        "name": "Craig Ranch Core",
+        "type": "Single-Family · Established",
+        "desc": "The heart of the community with established homes, mature landscaping, and a settled neighborhood character.",
+        "price": "From $350K"
+      },
+      {
+        "name": "Entry Neighborhoods",
+        "type": "Single-Family · Value",
+        "desc": "Smaller homes from 1,400 to 1,800 square feet offering the most affordable entry. Popular with first-time buyers and investors.",
+        "price": "From $300K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Craig Ranch Regional Park",
+        "address": "628 W Craig Rd, North Las Vegas, NV 89032",
+        "acreage": "~170 acres",
+        "amenities": [
+          "Major skatepark",
+          "Championship sports fields",
+          "Dog park",
+          "Playground",
+          "Walking/biking trails",
+          "Event facilities"
+        ]
+      },
+      {
+        "name": "Aliante Nature Discovery Park",
+        "address": "2627 Nature Park Dr, North Las Vegas, NV 89084",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Lake",
+          "Nature trails",
+          "Amphitheater",
+          "Playground",
+          "Interactive water features"
+        ]
+      },
+      {
+        "name": "Veterans Memorial Park",
+        "address": "1650 N Walnut Rd, Las Vegas, NV 89115",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Sports fields",
+          "Walking trails",
+          "Playground",
+          "Memorial area"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Elbert Edwards Elementary",
+          "K–5",
+          "5/10"
+        ],
+        [
+          "Lois Craig Elementary",
+          "K–5",
+          "5/10"
+        ],
+        [
+          "Cheyenne High School",
+          "9–12",
+          "4/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "American Preparatory Academy",
+          "K–12",
+          "B+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Somerset Academy North Las Vegas",
+          "K–8",
+          "8/10"
+        ],
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~6,500",
+      "medianAge": "33",
+      "avgIncome": "$55,000",
+      "households": "2,000+",
+      "homeownership": "62%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-15 South"
+      },
+      {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 South → I-215"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Downtown Las Vegas",
+        "route": "via I-15 South"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Aliante",
+        "route": "via N Las Vegas Blvd"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Craig Ranch?",
+        "a": "Homes in Craig Ranch range from approximately $300,000 for smaller homes to $500,000 for premium properties near the park. Most sales fall in the $350K to $425K range."
+      },
+      {
+        "q": "Is Craig Ranch in Las Vegas or North Las Vegas?",
+        "a": "Craig Ranch is located in North Las Vegas, a separately incorporated city in the northern Las Vegas Valley."
+      },
+      {
+        "q": "What is Craig Ranch Regional Park?",
+        "a": "Craig Ranch Regional Park is a 170-acre public park featuring one of the largest skateparks in the western United States, championship sports fields, a dog park, playgrounds, and miles of walking and biking trails."
+      },
+      {
+        "q": "What ZIP codes are in Craig Ranch?",
+        "a": "Craig Ranch spans ZIP codes 89032 and 89081 in North Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Craig Ranch?",
+        "a": "HOA fees are very affordable, typically $40 to $120 per month, covering common area maintenance and basic community upkeep."
+      },
+      {
+        "q": "Is Craig Ranch a good investment?",
+        "a": "Craig Ranch's affordable pricing and proximity to the regional park create strong rental demand. North Las Vegas is the fastest-growing jurisdiction in the metro, and ongoing infrastructure investment supports long-term appreciation."
+      },
+      {
+        "q": "What schools serve Craig Ranch?",
+        "a": "Craig Ranch is served by CCSD schools. Charter options including Somerset Academy NLV (8/10) and Doral Academy (9/10) provide higher-rated alternatives. Bishop Gorman (A+) is a private option."
+      },
+      {
+        "q": "How does Craig Ranch compare to Aliante?",
+        "a": "Craig Ranch offers more affordable pricing ($300K–$500K vs. $300K–$650K) and the exceptional Regional Park. Aliante offers a more complete master-planned experience with a golf course, casino, and nature discovery park at slightly higher prices."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Aliante",
+        "href": "/aliante/",
+        "price": "From $300K",
+        "compare": "North Las Vegas master plan with golf course, casino, and nature discovery park."
+      },
+      {
+        "name": "North Las Vegas",
+        "href": "/north-las-vegas/",
+        "price": "From $280K",
+        "compare": "The broader North Las Vegas market with diverse housing and rapid growth."
+      },
+      {
+        "name": "Centennial Hills",
+        "href": "/centennial-hills/",
+        "price": "From $350K",
+        "compare": "Growing northwest community with expanding commercial corridor."
+      },
+      {
+        "name": "Skye Canyon",
+        "href": "/skye-canyon/",
+        "price": "From $400K",
+        "compare": "Newer master plan in the far northwest with Skye Center and mountain access."
+      },
+      {
+        "name": "Downtown Las Vegas",
+        "href": "/downtown-las-vegas/",
+        "price": "From $200K",
+        "compare": "The urban core with Arts District and walkable entertainment, 15 minutes south."
+      },
+      {
+        "name": "Providence",
+        "href": "/providence/",
+        "price": "From $450K",
+        "compare": "Newer family-friendly master plan in northwest Las Vegas."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "Craig Ranch Regional Park sold us on the neighborhood. Our kids play sports there every weekend, and our home was half the price of what we were looking at in Henderson. Nevada Real Estate Group showed us the value of North Las Vegas.",
+        "name": "Marcus & Jennifer C.",
+        "detail": "Bought in Craig Ranch · 2024"
+      },
+      {
+        "quote": "We purchased our Craig Ranch home as a rental investment and it has performed beautifully. Nevada Real Estate Group helped us identify the right property and find tenants within two weeks of closing.",
+        "name": "Raymond T.",
+        "detail": "Bought Investment Property in Craig Ranch · 2025"
+      }
+    ],
+    "ylopoCity": "North Las Vegas",
+    "ylopoKeywords": "Craig Ranch",
+    "ylopoMinPrice": 250000
+  },
+  {
+    "slug": "alexander-park",
+    "name": "Alexander Park",
+    "parentCommunity": null,
+    "city": "North Las Vegas",
+    "state": "NV",
+    "type": "New Construction · Master-Planned",
+    "zipCodes": [
+      "89032",
+      "89086"
+    ],
+    "center": [
+      -115.120,
+      36.268
+    ],
+    "heroEyebrow": "North Las Vegas, Nevada",
+    "priceRange": "$350K–$550K",
+    "established": "2020",
+    "developer": "Various Builders",
+    "acreage": "~300 acres",
+    "homeCount": "1,500+",
+    "guardGated": false,
+    "hoaRange": "$60–$150/mo",
+    "overview": [
+      "Alexander Park is one of North Las Vegas's newest residential communities, bringing contemporary architecture, energy-efficient construction, and modern community design to the rapidly growing northern Las Vegas Valley. Developed beginning around 2020, the community features brand-new and nearly-new homes from national builders including Lennar, KB Home, and Century Communities, offering buyers the latest in floor plan design and building technology.",
+      "Homes in Alexander Park range from approximately $350,000 to $550,000, with floor plans spanning 1,500 to 3,000 square feet. As a new-construction community, every home features modern amenities — open-concept great rooms, quartz or granite countertops, energy-efficient windows and HVAC systems, smart-home wiring, and covered rear patios. Single-story and two-story options are available, with some plans offering first-floor master suites and upstairs lofts or bonus rooms.",
+      "The community is designed around a central park and trail system that connects neighborhoods to schools, commercial areas, and the broader North Las Vegas recreation network. Craig Ranch Regional Park, one of the valley's premier park facilities, is a short drive away. North Las Vegas's rapidly expanding commercial infrastructure means new restaurants, shops, and services are opening regularly along the community's main corridors.",
+      "Alexander Park represents the next generation of North Las Vegas housing. As the city continues its transformation from an overlooked bedroom community into one of the valley's fastest-growing municipalities, communities like Alexander Park are attracting first-time buyers, young families, and investors who recognize the value of new construction at price points that are typically $100K–$200K below comparable new homes in Summerlin or Henderson."
+    ],
+    "highlights": [
+      {
+        "title": "Brand-New Construction",
+        "body": "New homes from national builders with the latest floor plans, energy-efficient systems, smart-home technology, and builder warranties. No deferred maintenance.",
+        "iconType": "home"
+      },
+      {
+        "title": "Modern Design",
+        "body": "Contemporary open-concept floor plans with quartz countertops, modern cabinetry, energy-efficient windows, and covered outdoor living spaces. Today's design standards.",
+        "iconType": "building"
+      },
+      {
+        "title": "Attainable New Construction",
+        "body": "New-build homes from the $350s — typically $100K–$200K less than comparable new construction in Summerlin or Henderson. The strongest new-home value in the valley.",
+        "iconType": "trend"
+      },
+      {
+        "title": "Community Parks & Trails",
+        "body": "Central park and connected trail system with playgrounds, open space, and walking paths. Craig Ranch Regional Park with its 170 acres is a short drive away.",
+        "iconType": "park"
+      },
+      {
+        "title": "Growing Infrastructure",
+        "body": "North Las Vegas is investing heavily in roads, utilities, and commercial development. New restaurants, shops, and services open regularly along main corridors.",
+        "iconType": "mountain"
+      },
+      {
+        "title": "Investment Opportunity",
+        "body": "New construction at affordable pricing in a rapidly growing city creates strong rental demand and appreciation potential. North Las Vegas is the fastest-growing jurisdiction in the metro.",
+        "iconType": "shield"
+      }
+    ],
+    "neighborhoods": [
+      {
+        "name": "Alexander Park Premium",
+        "type": "New Build · Larger Plans",
+        "desc": "Larger floor plans from 2,500 to 3,000 square feet with premium lots and upgraded finishes. The upper tier of the community.",
+        "price": "From $475K"
+      },
+      {
+        "name": "Alexander Park Family",
+        "type": "New Build · Family",
+        "desc": "Family-oriented two-story homes with 2,000 to 2,500 square feet, first-floor living areas, and upstairs bedrooms.",
+        "price": "From $400K"
+      },
+      {
+        "name": "Alexander Park Village",
+        "type": "New Build · Entry",
+        "desc": "Smaller floor plans from 1,500 to 2,000 square feet offering the most accessible new-construction pricing in the community.",
+        "price": "From $350K"
+      },
+      {
+        "name": "Alexander Park Quick Move-In",
+        "type": "New Build · Inventory",
+        "desc": "Move-in-ready homes at various stages of completion. Brand-new construction available without the full build wait.",
+        "price": "From $375K"
+      }
+    ],
+    "parks": [
+      {
+        "name": "Alexander Park Community Park",
+        "address": "Alexander Rd, North Las Vegas, NV 89032",
+        "acreage": "~10 acres",
+        "amenities": [
+          "Playground",
+          "Walking trails",
+          "Open space",
+          "Shade structures",
+          "Sports courts"
+        ]
+      },
+      {
+        "name": "Craig Ranch Regional Park",
+        "address": "628 W Craig Rd, North Las Vegas, NV 89032",
+        "acreage": "~170 acres",
+        "amenities": [
+          "Major skatepark",
+          "Championship sports fields",
+          "Dog park",
+          "Playground",
+          "Walking/biking trails"
+        ]
+      },
+      {
+        "name": "Aliante Nature Discovery Park",
+        "address": "2627 Nature Park Dr, North Las Vegas, NV 89084",
+        "acreage": "~20 acres",
+        "amenities": [
+          "Lake",
+          "Nature trails",
+          "Amphitheater",
+          "Playground",
+          "Interactive water features"
+        ]
+      }
+    ],
+    "schools": {
+      "Public": [
+        [
+          "Elbert Edwards Elementary",
+          "K–5",
+          "5/10"
+        ],
+        [
+          "Kathleen & Tim Harney Middle",
+          "6–8",
+          "6/10"
+        ],
+        [
+          "Legacy High School",
+          "9–12",
+          "5/10"
+        ]
+      ],
+      "Private": [
+        [
+          "Bishop Gorman High School",
+          "9–12",
+          "A+"
+        ],
+        [
+          "American Preparatory Academy",
+          "K–12",
+          "B+"
+        ]
+      ],
+      "Charter": [
+        [
+          "Somerset Academy North Las Vegas",
+          "K–8",
+          "8/10"
+        ],
+        [
+          "Doral Academy of Nevada",
+          "K–8",
+          "9/10"
+        ]
+      ]
+    },
+    "demographics": {
+      "population": "~4,500",
+      "medianAge": "32",
+      "avgIncome": "$62,000",
+      "households": "1,500+",
+      "homeownership": "65%"
+    },
+    "driveTimes": [
+      {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-15 South"
+      },
+      {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 South → I-215"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Downtown Las Vegas",
+        "route": "via I-15 South"
+      },
+      {
+        "time": "~15 min",
+        "destination": "to Aliante",
+        "route": "via N Las Vegas Blvd"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the price range for homes in Alexander Park?",
+        "a": "New homes in Alexander Park range from approximately $350,000 for entry-level floor plans to $550,000 for larger premium homes. Most buyers purchase in the $375K to $475K range."
+      },
+      {
+        "q": "Is Alexander Park still selling new homes?",
+        "a": "Yes — Alexander Park has active new-home sales from multiple national builders including Lennar, KB Home, and Century Communities. Both build-to-order and quick move-in options are available."
+      },
+      {
+        "q": "Is Alexander Park in Las Vegas or North Las Vegas?",
+        "a": "Alexander Park is located in North Las Vegas, a separately incorporated city in the northern Las Vegas Valley."
+      },
+      {
+        "q": "What ZIP codes are in Alexander Park?",
+        "a": "Alexander Park spans ZIP codes 89032 and 89086 in North Las Vegas."
+      },
+      {
+        "q": "What are HOA fees in Alexander Park?",
+        "a": "HOA fees are affordable, typically $60 to $150 per month, covering common area maintenance, parks, and community landscaping."
+      },
+      {
+        "q": "Is Alexander Park a good first-time buyer community?",
+        "a": "Alexander Park is one of the best choices for first-time buyers in the Las Vegas metro. Brand-new construction at price points in the $350K range, with builder warranties and energy-efficient systems, is extremely compelling for buyers entering the market."
+      },
+      {
+        "q": "What schools serve Alexander Park?",
+        "a": "Alexander Park is served by CCSD schools. Charter options including Somerset Academy NLV (8/10) and Doral Academy (9/10) provide higher-rated alternatives. Bishop Gorman (A+) is the top private option."
+      },
+      {
+        "q": "How does Alexander Park compare to Aliante?",
+        "a": "Alexander Park offers newer construction at comparable pricing. Aliante offers a more mature master-planned community with golf, casino, and nature park amenities. Both are strong North Las Vegas options — Alexander Park for new construction, Aliante for established community character."
+      }
+    ],
+    "nearby": [
+      {
+        "name": "Aliante",
+        "href": "/aliante/",
+        "price": "From $300K",
+        "compare": "Established North Las Vegas master plan with golf, casino, and nature discovery park."
+      },
+      {
+        "name": "Craig Ranch",
+        "href": "/craig-ranch/",
+        "price": "From $300K",
+        "compare": "Adjacent community anchored by the 170-acre Craig Ranch Regional Park."
+      },
+      {
+        "name": "North Las Vegas",
+        "href": "/north-las-vegas/",
+        "price": "From $280K",
+        "compare": "The broader North Las Vegas market with rapid growth and diverse housing."
+      },
+      {
+        "name": "Centennial Hills",
+        "href": "/centennial-hills/",
+        "price": "From $350K",
+        "compare": "Northwest Las Vegas community with expanding commercial corridor."
+      },
+      {
+        "name": "Skye Canyon",
+        "href": "/skye-canyon/",
+        "price": "From $400K",
+        "compare": "Newer master plan in the far northwest with Skye Center and mountain access."
+      },
+      {
+        "name": "Providence",
+        "href": "/providence/",
+        "price": "From $450K",
+        "compare": "Family-friendly master plan in northwest Las Vegas with newer construction."
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "As first-time buyers, we couldn't believe we could get a brand-new home for under $400K. Nevada Real Estate Group walked us through every builder option in Alexander Park and helped us negotiate incentives that made it even more affordable.",
+        "name": "Justin & Ashley M.",
+        "detail": "Bought New Construction in Alexander Park · 2024"
+      },
+      {
+        "quote": "We bought two investment properties in Alexander Park through Nevada Real Estate Group. New construction, low HOA, and strong rental demand — the numbers just work. Their knowledge of the North Las Vegas market is unmatched.",
+        "name": "Kevin L.",
+        "detail": "Bought Investment Properties in Alexander Park · 2025"
+      }
+    ],
+    "ylopoCity": "North Las Vegas",
+    "ylopoKeywords": "Alexander Park",
+    "ylopoMinPrice": 300000
+  }
+]
