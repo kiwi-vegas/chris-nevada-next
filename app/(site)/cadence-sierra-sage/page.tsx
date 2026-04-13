@@ -43,14 +43,6 @@ const FAQ_DATA = [
   {
     "q": "What are HOA fees in Sierra Sage?",
     "a": "HOA fees typically range from $120 to $220 per month, covering access to all Cadence amenities, parks, pools, the Clubhouse, and common area maintenance."
-  },
-  {
-    "q": "What schools serve Sierra Sage?",
-    "a": "Sierra Sage is served by CCSD schools including John C. Vanderburg Elementary (8/10) and Foothill High School. Charter options include Doral Academy (9/10) and Somerset Academy."
-  },
-  {
-    "q": "What size are homes in Sierra Sage?",
-    "a": "Floor plans in Sierra Sage range from approximately 2,200 to 4,000 square feet, with most offering 3 to 6 bedrooms, open-concept living areas, and two-car or three-car garages."
   }
 ]
 

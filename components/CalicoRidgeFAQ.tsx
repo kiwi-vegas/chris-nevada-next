@@ -33,6 +33,10 @@ const FAQS = [
   {
     "q": "Is Calico Ridge a good value compared to guard-gated communities?",
     "a": "Calico Ridge offers foothill views and larger lots similar to guard-gated communities like Roma Hills and Madeira Canyon, but without the guard-gated HOA premium. It is an excellent value for buyers who prioritize views and lot size over gated access."
+  },
+  {
+    "q": "How is the commute from Calico Ridge?",
+    "a": "Calico Ridge residents typically commute ~22 min to the Strip via I-215 → I-15. Henderson offers multiple freeway access points for commuters."
   }
 ]
 

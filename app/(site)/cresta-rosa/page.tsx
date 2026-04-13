@@ -51,6 +51,10 @@ const FAQ_DATA = [
   {
     "q": "How does Cresta Rosa compare to Ascaya?",
     "a": "Ascaya ($3M–$20M+) offers fully custom builds on engineered lots. Cresta Rosa ($2.83M–$3.95M) delivers turnkey luxury from Taylor Morrison without the custom build timeline. Both offer dramatic views in the Henderson foothills."
+  },
+  {
+    "q": "How is the commute from Cresta Rosa?",
+    "a": "Cresta Rosa residents typically commute ~20 min to the Strip via I-215 → I-15. Henderson offers multiple freeway access points for commuters."
   }
 ]
 

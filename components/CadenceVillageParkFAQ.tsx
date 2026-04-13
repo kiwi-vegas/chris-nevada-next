@@ -25,14 +25,6 @@ const FAQS = [
   {
     "q": "What schools serve Village Park?",
     "a": "Village Park is served by CCSD schools including John C. Vanderburg Elementary (8/10) and Foothill High School. Charter options include Doral Academy (9/10) and Somerset Academy."
-  },
-  {
-    "q": "What are HOA fees in Village Park?",
-    "a": "HOA fees in Village Park typically range from $100 to $200 per month, covering access to all Cadence amenities, parks, pools, the Clubhouse, and common area maintenance."
-  },
-  {
-    "q": "Is Village Park a good investment?",
-    "a": "Cadence is Henderson's fastest-growing master plan with continued development of retail, dining, and community infrastructure. Early buyers in maturing master plans typically benefit from strong appreciation as the community builds out."
   }
 ]
 

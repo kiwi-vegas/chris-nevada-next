@@ -43,14 +43,6 @@ const FAQ_DATA = [
   {
     "q": "What is the difference between Desert Shores and Desert Shores Villas?",
     "a": "Desert Shores is the larger master-planned community with single-family homes, custom homes, and lakefront estates. Desert Shores Villas specifically refers to the condominium and townhome complexes within the community, offering a lower price point and maintenance-free lifestyle."
-  },
-  {
-    "q": "What ZIP code are Desert Shores Villas in?",
-    "a": "Desert Shores Villas are located in ZIP code 89128 in northwest Las Vegas. Home prices range from $200K–$450K."
-  },
-  {
-    "q": "Is Desert Shores guard-gated?",
-    "a": "Desert Shores is not guard-gated, though some individual condo complexes within the Villas have their own controlled access gates. The community does have a community association that maintains the lakes, beaches, and common areas."
   }
 ]
 

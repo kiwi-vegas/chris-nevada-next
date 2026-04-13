@@ -51,6 +51,10 @@ const FAQ_DATA = [
   {
     "q": "Is Stonybrook a good investment?",
     "a": "Seven Hills communities have historically held their value well in Henderson. Stonybrook's combination of a prestigious Seven Hills address, established character, family-friendly layout, and strong school options supports consistent resale performance."
+  },
+  {
+    "q": "How is the commute from Stonybrook?",
+    "a": "Stonybrook residents typically commute ~20 min to the Strip via I-215 → I-15. Henderson offers multiple freeway access points for commuters."
   }
 ]
 

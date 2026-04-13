@@ -43,14 +43,6 @@ const FAQ_DATA = [
   {
     "q": "What size are homes in Mesa del Sol?",
     "a": "Homes in Mesa del Sol range from approximately 1,800 to 3,800 square feet, with most floor plans offering 3 to 5 bedrooms, open-concept living areas, and two-car garages."
-  },
-  {
-    "q": "What are HOA fees in Mesa del Sol?",
-    "a": "HOA fees typically range from $130 to $250 per month, covering the Inspirada master association and access to all community amenities, parks, pools, and recreation facilities."
-  },
-  {
-    "q": "What schools serve Mesa del Sol?",
-    "a": "The area is served by CCSD schools including Elise L. Wolff Elementary (8/10) and Coronado High School. Charter options include Doral Academy (9/10) and Somerset Academy."
   }
 ]
 

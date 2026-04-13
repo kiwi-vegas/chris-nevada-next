@@ -25,14 +25,6 @@ const FAQS = [
   {
     "q": "What recreation is nearby?",
     "a": "Lake Mead National Recreation Area is minutes away for boating, fishing, and hiking. Lake Las Vegas provides kayaking, paddleboarding, lakefront dining, and two championship golf courses. Boulder City's historic downtown is a short drive south."
-  },
-  {
-    "q": "What are HOA fees in Lake Mead View Estates?",
-    "a": "HOA fees typically range from $150 to $350 per month, covering common area maintenance, landscaping of shared spaces, and community infrastructure."
-  },
-  {
-    "q": "What schools serve Lake Mead View Estates?",
-    "a": "The area is served by CCSD schools including Elise L. Wolff Elementary (8/10), Jack Lund Schofield Middle School, and Basic High School. Private options include Henderson International School."
   }
 ]
 
