@@ -14,7 +14,7 @@ const BREADCRUMB_SCHEMA = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/communities' },
     { '@type': 'ListItem', position: 3, name: 'The Palisades', item: 'https://www.lasvegashomesearchexperts.com/the-palisades-summerlin/' },
   ],
 }
@@ -147,7 +147,7 @@ export default async function ThePalisadesSummerlinPage() {
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
           <span className="breadcrumb-sep">&rsaquo;</span>
-          <a href="/#communities">Communities</a>
+          <a href="/communities/">Communities</a>
           <span className="breadcrumb-sep">&rsaquo;</span>
           <span>The Palisades</span>
         </div>
@@ -269,7 +269,7 @@ export default async function ThePalisadesSummerlinPage() {
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
             <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=The%20Palisades%20Summerlin" target="_blank" rel="noopener noreferrer" className="btn-gold">View All The Palisades Listings &rarr;</a>
-            <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
+            <Link href="/communities/" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>

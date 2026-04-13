@@ -14,7 +14,7 @@ const BREADCRUMB_SCHEMA = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/communities' },
     { '@type': 'ListItem', position: 3, name: 'Henderson', item: 'https://www.lasvegashomesearchexperts.com/henderson/' },
   ],
 }
@@ -147,7 +147,7 @@ export default async function HendersonPage() {
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
           <span className="breadcrumb-sep">&rsaquo;</span>
-          <a href="/#communities">Communities</a>
+          <a href="/communities/">Communities</a>
           <span className="breadcrumb-sep">&rsaquo;</span>
           <span>Henderson</span>
         </div>
@@ -269,7 +269,7 @@ export default async function HendersonPage() {
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
             <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Henderson" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Henderson Listings &rarr;</a>
-            <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
+            <Link href="/communities/" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
@@ -312,37 +312,10 @@ export default async function HendersonPage() {
       </section>
 
       <section id="villages">
-        <div className="villages-header-bar">
-          <h2>HENDERSON COMMUNITIES</h2>
-        </div>
+        <div className="villages-header-bar"><h2>HENDERSON COMMUNITIES</h2></div>
         <div className="container">
           <div className="villages-grid">
-            {[
-              { name: 'Anthem', href: '/anthem/', type: 'Master-Planned \u00B7 Golf', price: 'From $400K' },
-              { name: 'Anthem Country Club', href: '/anthem-country-club/', type: 'Guard-Gated \u00B7 Golf', price: 'From $1.2M' },
-              { name: 'Sun City Anthem', href: '/sun-city-anthem/', type: '55+ Active Adult', price: 'From $350K' },
-              { name: 'Green Valley', href: '/green-valley/', type: 'Master-Planned', price: 'From $350K' },
-              { name: 'Green Valley Ranch', href: '/green-valley-ranch/', type: 'Master-Planned', price: 'From $400K' },
-              { name: 'Seven Hills', href: '/seven-hills/', type: 'Guard-Gated \u00B7 Golf', price: 'From $500K' },
-              { name: 'MacDonald Highlands', href: '/macdonald-highlands/', type: 'Guard-Gated \u00B7 Ultra-Luxury', price: 'From $800K' },
-              { name: 'Ascaya', href: '/ascaya/', type: 'Guard-Gated \u00B7 Ultra-Luxury', price: 'From $3M' },
-              { name: 'Dragon Rock', href: '/dragon-rock/', type: 'Double Guard-Gated', price: 'From $5M' },
-              { name: 'Lake Las Vegas', href: '/lake-las-vegas/', type: 'Resort \u00B7 Luxury', price: 'From $400K' },
-              { name: 'Inspirada', href: '/inspirada/', type: 'Master-Planned', price: 'From $420K' },
-              { name: 'Cadence', href: '/cadence/', type: 'Master-Planned \u00B7 New Construction', price: 'From $350K' },
-              { name: 'MacDonald Ranch', href: '/macdonald-ranch/', type: 'Master-Planned \u00B7 Golf', price: 'From $300K' },
-              { name: 'Tuscany Village', href: '/tuscany-village/', type: 'Guard-Gated \u00B7 Golf', price: 'From $400K' },
-              { name: 'Silverado Ranch', href: '/silverado-ranch/', type: 'Master-Planned', price: 'From $350K' },
-              { name: 'Whitney Ranch', href: '/whitney-ranch/', type: 'Master-Planned', price: 'From $350K' },
-              { name: 'Madeira Canyon', href: '/madeira-canyon/', type: 'Guard-Gated', price: 'From $400K' },
-              { name: 'Boulder City', href: '/boulder-city/', type: 'Independent City', price: 'From $400K' },
-            ].map(v => (
-              <a href={v.href} className="village-card" key={v.name} style={{ textDecoration: 'none' }}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <div className="village-price">{v.price}</div>
-              </a>
-            ))}
+            {[{name:'Anthem',href:'/anthem/',type:'Master-Planned · Golf',price:'From $400K'},{name:'Anthem Country Club',href:'/anthem-country-club/',type:'Guard-Gated · Golf',price:'From $1.2M'},{name:'Sun City Anthem',href:'/sun-city-anthem/',type:'55+ Active Adult',price:'From $350K'},{name:'Green Valley',href:'/green-valley/',type:'Master-Planned',price:'From $350K'},{name:'Green Valley Ranch',href:'/green-valley-ranch/',type:'Master-Planned',price:'From $400K'},{name:'Seven Hills',href:'/seven-hills/',type:'Guard-Gated · Golf',price:'From $500K'},{name:'MacDonald Highlands',href:'/macdonald-highlands/',type:'Guard-Gated · Ultra-Luxury',price:'From $800K'},{name:'Ascaya',href:'/ascaya/',type:'Guard-Gated · Ultra-Luxury',price:'From $3M'},{name:'Dragon Rock',href:'/dragon-rock/',type:'Double Guard-Gated',price:'From $5M'},{name:'Lake Las Vegas',href:'/lake-las-vegas/',type:'Resort · Luxury',price:'From $400K'},{name:'Inspirada',href:'/inspirada/',type:'Master-Planned',price:'From $420K'},{name:'Cadence',href:'/cadence/',type:'New Construction',price:'From $350K'},{name:'MacDonald Ranch',href:'/macdonald-ranch/',type:'Golf',price:'From $300K'},{name:'Tuscany Village',href:'/tuscany-village/',type:'Guard-Gated · Golf',price:'From $400K'},{name:'Silverado Ranch',href:'/silverado-ranch/',type:'Master-Planned',price:'From $350K'},{name:'Whitney Ranch',href:'/whitney-ranch/',type:'Master-Planned',price:'From $350K'},{name:'Madeira Canyon',href:'/madeira-canyon/',type:'Guard-Gated',price:'From $400K'},{name:'Boulder City',href:'/boulder-city/',type:'Independent City',price:'From $400K'}].map((v:any)=>(<a href={v.href} className="village-card" key={v.name} style={{textDecoration:'none'}}><div className="village-name">{v.name}</div><div className="village-type">{v.type}</div><div className="village-price">{v.price}</div></a>))}
           </div>
         </div>
       </section>

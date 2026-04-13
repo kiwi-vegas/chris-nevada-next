@@ -14,7 +14,7 @@ const BREADCRUMB_SCHEMA = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/communities' },
     { '@type': 'ListItem', position: 3, name: 'North Las Vegas', item: 'https://www.lasvegashomesearchexperts.com/north-las-vegas/' },
   ],
 }
@@ -147,7 +147,7 @@ export default async function NorthLasVegasPage() {
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
           <span className="breadcrumb-sep">&rsaquo;</span>
-          <a href="/#communities">Communities</a>
+          <a href="/communities/">Communities</a>
           <span className="breadcrumb-sep">&rsaquo;</span>
           <span>North Las Vegas</span>
         </div>
@@ -269,7 +269,7 @@ export default async function NorthLasVegasPage() {
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
             <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=North%20Las%20Vegas&s[locations][0][state]=NV&s[keywords]=North%20Las%20Vegas" target="_blank" rel="noopener noreferrer" className="btn-gold">View All North Las Vegas Listings &rarr;</a>
-            <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
+            <Link href="/communities/" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
@@ -312,31 +312,10 @@ export default async function NorthLasVegasPage() {
       </section>
 
       <section id="villages">
-        <div className="villages-header-bar">
-          <h2>NORTH LAS VEGAS COMMUNITIES</h2>
-        </div>
+        <div className="villages-header-bar"><h2>NORTH LAS VEGAS COMMUNITIES</h2></div>
         <div className="container">
           <div className="villages-grid">
-            {[
-              { name: 'Aliante', href: '/aliante/', type: 'Master-Planned \u00B7 Golf', price: 'From $300K' },
-              { name: 'Skye Canyon', href: '/skye-canyon/', type: 'Master-Planned \u00B7 New Construction', price: 'From $400K' },
-              { name: 'Centennial Hills', href: '/centennial-hills/', type: 'Master-Planned', price: 'From $350K' },
-              { name: 'Providence', href: '/providence/', type: 'Master-Planned', price: 'From $350K' },
-              { name: 'Lone Mountain', href: '/lone-mountain/', type: 'Semi-Rural \u00B7 Equestrian', price: 'From $400K' },
-              { name: 'Heartland at Tule Springs', href: '/heartland-tule-springs/', type: 'New Construction', price: 'From $350K' },
-              { name: 'Sunstone', href: '/sunstone/', type: 'Master-Planned \u00B7 New Construction', price: 'From $380K' },
-              { name: 'Sun City Aliante', href: '/sun-city-aliante/', type: '55+ Active Adult', price: 'From $300K' },
-              { name: 'Park Highlands', href: '/north-las-vegas-park-highlands/', type: 'Master-Planned', price: 'From $350K' },
-              { name: 'Craig Ranch', href: '/craig-ranch/', type: 'Family \u00B7 Parks', price: 'From $300K' },
-              { name: 'Eldorado', href: '/eldorado/', type: 'Established', price: 'From $300K' },
-              { name: 'Tule Springs', href: '/tule-springs/', type: 'Established', price: 'From $300K' },
-            ].map(v => (
-              <a href={v.href} className="village-card" key={v.name} style={{ textDecoration: 'none' }}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <div className="village-price">{v.price}</div>
-              </a>
-            ))}
+            {[{name:'Aliante',href:'/aliante/',type:'Master-Planned · Golf',price:'From $300K'},{name:'Skye Canyon',href:'/skye-canyon/',type:'New Construction',price:'From $400K'},{name:'Centennial Hills',href:'/centennial-hills/',type:'Master-Planned',price:'From $350K'},{name:'Providence',href:'/providence/',type:'Master-Planned',price:'From $350K'},{name:'Lone Mountain',href:'/lone-mountain/',type:'Semi-Rural',price:'From $400K'},{name:'Heartland at Tule Springs',href:'/heartland-tule-springs/',type:'New Construction',price:'From $350K'},{name:'Sunstone',href:'/sunstone/',type:'New Construction',price:'From $380K'},{name:'Sun City Aliante',href:'/sun-city-aliante/',type:'55+ Active Adult',price:'From $300K'},{name:'Park Highlands',href:'/north-las-vegas-park-highlands/',type:'Master-Planned',price:'From $350K'},{name:'Craig Ranch',href:'/craig-ranch/',type:'Family · Parks',price:'From $300K'},{name:'Eldorado',href:'/eldorado/',type:'Established',price:'From $300K'},{name:'Tule Springs',href:'/tule-springs/',type:'Established',price:'From $300K'}].map((v:any)=>(<a href={v.href} className="village-card" key={v.name} style={{textDecoration:'none'}}><div className="village-name">{v.name}</div><div className="village-type">{v.type}</div><div className="village-price">{v.price}</div></a>))}
           </div>
         </div>
       </section>
