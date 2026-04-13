@@ -342,6 +342,124 @@ export default async function FoothillsAtMacdonaldRanchPage() {
         </div>
       </section>
 
+      <section id="parks" className="parks-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Outdoor Amenities</span>
+            <h2>Parks &amp; Recreation Near Foothills at MacDonald Ranch</h2>
+          </div>
+          <div className="parks-grid">
+            {[
+              { name: 'DragonRidge Country Club', address: '552 S Stephanie St, Henderson, NV 89012', acreage: '200+ acres', amenities: ["Championship golf course","Clubhouse dining","Fitness center","Swimming pool","Tennis courts","Social events"] },
+              { name: 'Cornerstone Park', address: '1600 Wigwam Pkwy, Henderson, NV 89074', acreage: '~25 acres', amenities: ["Lake with fishing","Walking trails","Picnic areas","Playground","Amphitheater"] },
+              { name: 'Sloan Canyon National Conservation Area', address: 'South of Henderson, NV', acreage: '48,438 acres', amenities: ["Hiking trails","Petroglyphs","Desert wildlife","Photography"] },
+            ].map((park: any) => (
+              <div className="park-card" key={park.name}>
+                <h3 className="park-name">{park.name}</h3>
+                <p className="park-address">{park.address}</p>
+                <span className="park-acreage">{park.acreage}</span>
+                <ul className="park-amenities">
+                  {park.amenities.map((a: string) => <li key={a}>{a}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="lifestyle" className="lifestyle-v2">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Outdoor Living</span>
+            <h2>The Foothills at MacDonald Ranch Lifestyle</h2>
+          </div>
+          <div className="lifestyle-v2-grid">
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+              <div className="lifestyle-v2-stat">~20 min</div>
+              <div className="lifestyle-v2-label">to the Strip</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div className="lifestyle-v2-stat">3+</div>
+              <div className="lifestyle-v2-label">Nearby Parks</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div className="lifestyle-v2-stat">350+</div>
+              <div className="lifestyle-v2-label">Homes</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/></svg></div>
+              <div className="lifestyle-v2-stat">2000</div>
+              <div className="lifestyle-v2-label">Established</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div className="lifestyle-v2-stat">Yes</div>
+              <div className="lifestyle-v2-label">Guard-Gated</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="schools" className="schools-v2">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Education</span>
+            <h2>Schools Serving Foothills at MacDonald Ranch</h2>
+          </div>
+          <div className="schools-v2-table">
+            <div className="schools-v2-header">
+              <span>School Name</span>
+              <span>Grades</span>
+              <span>Rating</span>
+            </div>
+            {[
+              ['Coronado High School', '9–12', '8/10'],
+              ['Bob Miller Middle School', '6–8', '7/10'],
+              ['Fay Herron Elementary', 'K–5', '7/10'],
+              ['Henderson International School', 'PreK–12', 'A'],
+              ['Bishop Gorman High School', '9–12', 'A+'],
+              ['Pinecrest Academy of Nevada', 'K–12', 'A'],
+              ['Pinecrest Academy of Nevada', 'PreK–12', '9/10'],
+              ['Doral Academy', 'K–8', '8/10'],
+            ].map(([name, grades, rating]: any) => (
+              <div className="schools-v2-row" key={name}>
+                <span className="schools-v2-name">{name}</span>
+                <span className="schools-v2-grades">{grades}</span>
+                <span className={`schools-v2-rating${rating.includes('10') || rating === 'A+' ? ' top-rated' : ''}`}>{rating}</span>
+              </div>
+            ))}
+          </div>
+          <p className="schools-v2-note">School assignments are address-specific. Verify with CCSD before purchasing.</p>
+        </div>
+      </section>
+
+      <section id="testimonials" className="testimonials-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Client Stories</span>
+            <h2>What Foothills at MacDonald Ranch Buyers Say</h2>
+          </div>
+          <div className="testimonials-grid">
+            {[
+              { quote: 'The views from The Foothills are as good as anything in MacDonald Highlands — at a fraction of the price. Nevada Real Estate Group showed us both communities and helped us see the value. We got our dream home with Strip views for under $2M.', name: 'James & Sandra W.', detail: 'Bought in Foothills at MacDonald Ranch · 2024' },
+              { quote: 'Our custom estate in The Foothills attracted interest from luxury buyers in both Henderson and Summerlin. The team\'s marketing — drone footage, 3D tours, targeted digital — brought the right buyer in 45 days.', name: 'Robert E.', detail: 'Sold in Foothills at MacDonald Ranch · 2025' },
+            ].map((t: any, i: number) => (
+              <div className="testimonial-card" key={i}>
+                <div className="testimonial-stars">{'★★★★★'}</div>
+                <blockquote className="testimonial-quote">&ldquo;{t.quote}&rdquo;</blockquote>
+                <div className="testimonial-meta">
+                  <span className="testimonial-name">{t.name}</span>
+                  <span className="testimonial-detail">{t.detail}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <FoothillsAtMacdonaldRanchFAQ />
 
       <section id="nearby" className="nearby-v2">

@@ -337,6 +337,123 @@ export default async function LasVegasCharlestonHeightsPage() {
         </div>
       </section>
 
+      <section id="parks" className="parks-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Outdoor Amenities</span>
+            <h2>Parks &amp; Recreation Near Charleston Heights</h2>
+          </div>
+          <div className="parks-grid">
+            {[
+              { name: 'Charleston Heights Park', address: '800 S Brush St, Las Vegas, NV 89107', acreage: '~10 acres', amenities: ["Sports fields","Playground","Picnic areas","Walking paths","Community building"] },
+              { name: 'Lorenzi Park', address: '3333 W Washington Ave, Las Vegas, NV 89107', acreage: '~30 acres', amenities: ["Lake","Nevada State Museum","Jogging paths","Playground","Picnic areas"] },
+              { name: 'Baker Park', address: '1020 E St Louis Ave, Las Vegas, NV 89104', acreage: '~5 acres', amenities: ["Basketball courts","Playground","Picnic tables","Open space"] },
+            ].map((park: any) => (
+              <div className="park-card" key={park.name}>
+                <h3 className="park-name">{park.name}</h3>
+                <p className="park-address">{park.address}</p>
+                <span className="park-acreage">{park.acreage}</span>
+                <ul className="park-amenities">
+                  {park.amenities.map((a: string) => <li key={a}>{a}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="lifestyle" className="lifestyle-v2">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Outdoor Living</span>
+            <h2>The Charleston Heights Lifestyle</h2>
+          </div>
+          <div className="lifestyle-v2-grid">
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+              <div className="lifestyle-v2-stat">~10 min</div>
+              <div className="lifestyle-v2-label">to Downtown Las Vegas</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div className="lifestyle-v2-stat">3+</div>
+              <div className="lifestyle-v2-label">Nearby Parks</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div className="lifestyle-v2-stat">15,000+</div>
+              <div className="lifestyle-v2-label">Homes</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/></svg></div>
+              <div className="lifestyle-v2-stat">1950s</div>
+              <div className="lifestyle-v2-label">Established</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div className="lifestyle-v2-stat">No</div>
+              <div className="lifestyle-v2-label">Guard-Gated</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="schools" className="schools-v2">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Education</span>
+            <h2>Schools Serving Charleston Heights</h2>
+          </div>
+          <div className="schools-v2-table">
+            <div className="schools-v2-header">
+              <span>School Name</span>
+              <span>Grades</span>
+              <span>Rating</span>
+            </div>
+            {[
+              ['Matt Kelly Elementary', 'K–5', '4/10'],
+              ['Jim Bridger Middle School', '6–8', '3/10'],
+              ['Rancho High School', '9–12', '3/10'],
+              ['The Meadows School', 'PreK–12', 'A+'],
+              ['Bishop Gorman High School', '9–12', 'A+'],
+              ['Explore Knowledge Academy', 'K–12', '6/10'],
+              ['Nevada State High School', '9–12', 'A'],
+            ].map(([name, grades, rating]: any) => (
+              <div className="schools-v2-row" key={name}>
+                <span className="schools-v2-name">{name}</span>
+                <span className="schools-v2-grades">{grades}</span>
+                <span className={`schools-v2-rating${rating.includes('10') || rating === 'A+' ? ' top-rated' : ''}`}>{rating}</span>
+              </div>
+            ))}
+          </div>
+          <p className="schools-v2-note">School assignments are address-specific. Verify with CCSD before purchasing.</p>
+        </div>
+      </section>
+
+      <section id="testimonials" className="testimonials-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Client Stories</span>
+            <h2>What Charleston Heights Buyers Say</h2>
+          </div>
+          <div className="testimonials-grid">
+            {[
+              { quote: 'We found an incredible deal in Charleston Heights through Nevada Real Estate Group — a 1960s ranch on a huge lot that we renovated into our dream home for less than half what Summerlin would have cost.', name: 'Tyler & Jordan M.', detail: 'Bought in Charleston Heights · 2024' },
+              { quote: 'Nevada Real Estate Group helped us buy two investment properties in Charleston Heights. The rental income is strong and the appreciation has been fantastic. They understand the value play here.', name: 'Robert C.', detail: 'Invested in Charleston Heights · 2025' },
+            ].map((t: any, i: number) => (
+              <div className="testimonial-card" key={i}>
+                <div className="testimonial-stars">{'★★★★★'}</div>
+                <blockquote className="testimonial-quote">&ldquo;{t.quote}&rdquo;</blockquote>
+                <div className="testimonial-meta">
+                  <span className="testimonial-name">{t.name}</span>
+                  <span className="testimonial-detail">{t.detail}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <LasVegasCharlestonHeightsFAQ />
 
       <section id="nearby" className="nearby-v2">

@@ -337,6 +337,124 @@ export default async function LasVegasBuffaloRanchPage() {
         </div>
       </section>
 
+      <section id="parks" className="parks-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Outdoor Amenities</span>
+            <h2>Parks &amp; Recreation Near Buffalo Ranch</h2>
+          </div>
+          <div className="parks-grid">
+            {[
+              { name: 'Buffalo Ranch Park', address: '7095 N Buffalo Dr, Las Vegas, NV 89131', acreage: '~8 acres', amenities: ["Playground","Basketball courts","Walking paths","Picnic areas","Open turf"] },
+              { name: 'Centennial Hills Park', address: '7101 N Buffalo Dr, Las Vegas, NV 89131', acreage: '~120 acres', amenities: ["Sports fields","Playground","Dog park","Trails","Community center"] },
+              { name: 'Chuck Minker Sports Complex', address: '275 N Mojave Rd, Las Vegas, NV 89101', acreage: '~10 acres', amenities: ["Baseball diamonds","Soccer fields","Track","Concessions","Bleachers"] },
+            ].map((park: any) => (
+              <div className="park-card" key={park.name}>
+                <h3 className="park-name">{park.name}</h3>
+                <p className="park-address">{park.address}</p>
+                <span className="park-acreage">{park.acreage}</span>
+                <ul className="park-amenities">
+                  {park.amenities.map((a: string) => <li key={a}>{a}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="lifestyle" className="lifestyle-v2">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Outdoor Living</span>
+            <h2>The Buffalo Ranch Lifestyle</h2>
+          </div>
+          <div className="lifestyle-v2-grid">
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+              <div className="lifestyle-v2-stat">~18 min</div>
+              <div className="lifestyle-v2-label">to the Strip</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div className="lifestyle-v2-stat">3+</div>
+              <div className="lifestyle-v2-label">Nearby Parks</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div className="lifestyle-v2-stat">3,500+</div>
+              <div className="lifestyle-v2-label">Homes</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/></svg></div>
+              <div className="lifestyle-v2-stat">1998</div>
+              <div className="lifestyle-v2-label">Established</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div className="lifestyle-v2-stat">No</div>
+              <div className="lifestyle-v2-label">Guard-Gated</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="schools" className="schools-v2">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Education</span>
+            <h2>Schools Serving Buffalo Ranch</h2>
+          </div>
+          <div className="schools-v2-table">
+            <div className="schools-v2-header">
+              <span>School Name</span>
+              <span>Grades</span>
+              <span>Rating</span>
+            </div>
+            {[
+              ['Oran K. Gragson Elementary', 'K–5', '6/10'],
+              ['Ernest Becker Middle School', '6–8', '6/10'],
+              ['Centennial High School', '9–12', '6/10'],
+              ['Faith Lutheran Middle & High', '6–12', 'A'],
+              ['Bishop Gorman High School', '9–12', 'A+'],
+              ['Mountain View Christian School', 'K–8', 'B+'],
+              ['Somerset Academy NW', 'K–8', '8/10'],
+              ['Doral Academy of Nevada', 'K–8', '9/10'],
+            ].map(([name, grades, rating]: any) => (
+              <div className="schools-v2-row" key={name}>
+                <span className="schools-v2-name">{name}</span>
+                <span className="schools-v2-grades">{grades}</span>
+                <span className={`schools-v2-rating${rating.includes('10') || rating === 'A+' ? ' top-rated' : ''}`}>{rating}</span>
+              </div>
+            ))}
+          </div>
+          <p className="schools-v2-note">School assignments are address-specific. Verify with CCSD before purchasing.</p>
+        </div>
+      </section>
+
+      <section id="testimonials" className="testimonials-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Client Stories</span>
+            <h2>What Buffalo Ranch Buyers Say</h2>
+          </div>
+          <div className="testimonials-grid">
+            {[
+              { quote: 'We looked at newer master-planned communities in the northwest but kept coming back to Buffalo Ranch for the value. Nevada Real Estate Group showed us a beautiful home with a big backyard for $200K less than comparable new construction. Best decision we made.', name: 'Ryan & Stacy V.', detail: 'Bought in Buffalo Ranch, Las Vegas · 2024' },
+              { quote: 'Buffalo Ranch was the right fit for our family — good schools, safe streets, and a reasonable commute. Nevada Real Estate Group knew the neighborhood block by block and helped us pick the best street.', name: 'Andrew & Jessica B.', detail: 'Bought in Buffalo Ranch · 2025' },
+            ].map((t: any, i: number) => (
+              <div className="testimonial-card" key={i}>
+                <div className="testimonial-stars">{'★★★★★'}</div>
+                <blockquote className="testimonial-quote">&ldquo;{t.quote}&rdquo;</blockquote>
+                <div className="testimonial-meta">
+                  <span className="testimonial-name">{t.name}</span>
+                  <span className="testimonial-detail">{t.detail}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <LasVegasBuffaloRanchFAQ />
 
       <section id="nearby" className="nearby-v2">

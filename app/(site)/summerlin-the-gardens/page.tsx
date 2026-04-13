@@ -337,6 +337,124 @@ export default async function SummerlinTheGardensPage() {
         </div>
       </section>
 
+      <section id="parks" className="parks-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Outdoor Amenities</span>
+            <h2>Parks &amp; Recreation Near The Gardens</h2>
+          </div>
+          <div className="parks-grid">
+            {[
+              { name: 'Gardens Park', address: '10401 Garden Park Dr, Las Vegas, NV 89134', acreage: '~15 acres', amenities: ["Playground","Basketball courts","Walking trails","Picnic areas","Open fields","Dog park"] },
+              { name: 'The Paseos Linear Park', address: 'Paseo Hills Dr, Las Vegas, NV 89135', acreage: '~12 acres', amenities: ["Walking trails","Desert gardens","Open space","Dog-friendly areas"] },
+              { name: 'Summerlin Trail System', address: 'Access points throughout The Gardens', acreage: 'Connected network', amenities: ["Paved multi-use trails","Desert landscape","Connects to Red Rock trails","Dog-friendly"] },
+            ].map((park: any) => (
+              <div className="park-card" key={park.name}>
+                <h3 className="park-name">{park.name}</h3>
+                <p className="park-address">{park.address}</p>
+                <span className="park-acreage">{park.acreage}</span>
+                <ul className="park-amenities">
+                  {park.amenities.map((a: string) => <li key={a}>{a}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="lifestyle" className="lifestyle-v2">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center' }}>
+            <span className="section-label">Outdoor Living</span>
+            <h2>The The Gardens Lifestyle</h2>
+          </div>
+          <div className="lifestyle-v2-grid">
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+              <div className="lifestyle-v2-stat">~20 min</div>
+              <div className="lifestyle-v2-label">to the Strip</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div className="lifestyle-v2-stat">3+</div>
+              <div className="lifestyle-v2-label">Nearby Parks</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div className="lifestyle-v2-stat">2,600+</div>
+              <div className="lifestyle-v2-label">Homes</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/></svg></div>
+              <div className="lifestyle-v2-stat">1999</div>
+              <div className="lifestyle-v2-label">Established</div>
+            </div>
+            <div className="lifestyle-v2-item">
+              <div className="lifestyle-v2-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div className="lifestyle-v2-stat">No</div>
+              <div className="lifestyle-v2-label">Guard-Gated</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="schools" className="schools-v2">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Education</span>
+            <h2>Schools Serving The Gardens</h2>
+          </div>
+          <div className="schools-v2-table">
+            <div className="schools-v2-header">
+              <span>School Name</span>
+              <span>Grades</span>
+              <span>Rating</span>
+            </div>
+            {[
+              ['Zel & Mary Lowman Elementary', 'K–5', '8/10'],
+              ['Sig Rogich Middle School', '6–8', '10/10'],
+              ['Palo Verde High School', '9–12', '8/10'],
+              ['The Meadows School', 'PreK–12', 'A+'],
+              ['Bishop Gorman High School', '9–12', 'A+'],
+              ['Faith Lutheran Middle & High', '6–12', 'A'],
+              ['Doral Academy Red Rock', 'K–12', '9/10'],
+              ['Alexander Dawson School', 'K–8', 'A+'],
+            ].map(([name, grades, rating]: any) => (
+              <div className="schools-v2-row" key={name}>
+                <span className="schools-v2-name">{name}</span>
+                <span className="schools-v2-grades">{grades}</span>
+                <span className={`schools-v2-rating${rating.includes('10') || rating === 'A+' ? ' top-rated' : ''}`}>{rating}</span>
+              </div>
+            ))}
+          </div>
+          <p className="schools-v2-note">School assignments are address-specific. Verify with CCSD before purchasing.</p>
+        </div>
+      </section>
+
+      <section id="testimonials" className="testimonials-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Client Stories</span>
+            <h2>What The Gardens Buyers Say</h2>
+          </div>
+          <div className="testimonials-grid">
+            {[
+              { quote: 'The Gardens lives up to its name — the parks, the trees, the green spaces. It feels like a different world from the rest of the desert. Nevada Real Estate Group helped us find a home backing to Gardens Park, and our kids practically live out there.', name: 'Josh & Rebecca L.', detail: 'Bought in The Gardens, Summerlin · 2024' },
+              { quote: 'We chose The Gardens for the parks and stayed 16 years. When we sold, buyers loved the mature landscaping and park access. Nevada Real Estate Group marketed it perfectly and got us above asking.', name: 'Dan & Susan W.', detail: 'Sold in The Gardens, Summerlin · 2025' },
+            ].map((t: any, i: number) => (
+              <div className="testimonial-card" key={i}>
+                <div className="testimonial-stars">{'★★★★★'}</div>
+                <blockquote className="testimonial-quote">&ldquo;{t.quote}&rdquo;</blockquote>
+                <div className="testimonial-meta">
+                  <span className="testimonial-name">{t.name}</span>
+                  <span className="testimonial-detail">{t.detail}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <SummerlinTheGardensFAQ />
 
       <section id="nearby" className="nearby-v2">
