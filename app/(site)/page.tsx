@@ -72,81 +72,26 @@ export default async function HomePage() {
             <span className="section-label">Find Your Community</span>
             <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'var(--text-xl)', fontWeight: 400, color: 'var(--navy)' }}>Explore Las Vegas Communities</h2>
           </div>
-          <div className="comm-hero-grid">
-            <a href="/summerlin" className="comm-hero-card comm-hero-featured">
-              <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&h=600&q=80" alt="Summerlin Las Vegas luxury community" />
-              <div className="comm-hero-overlay">
-                <span className="comm-hero-label">Master-Planned &middot; 22,500 Acres</span>
-                <h3>Summerlin</h3>
-                <span className="comm-hero-price">From $450K &ndash; $30M+</span>
-              </div>
-            </a>
-            <a href="/henderson" className="comm-hero-card">
-              <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=600&h=400&q=80" alt="Henderson Nevada luxury homes" />
-              <div className="comm-hero-overlay">
-                <span className="comm-hero-label">Safest Large City in America</span>
-                <h3>Henderson</h3>
-                <span className="comm-hero-price">From $300K &ndash; $28M+</span>
-              </div>
-            </a>
-            <a href="/southern-highlands" className="comm-hero-card">
-              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&h=400&q=80" alt="Southern Highlands guard-gated golf community" />
-              <div className="comm-hero-overlay">
-                <span className="comm-hero-label">Guard-Gated &middot; Golf</span>
-                <h3>Southern Highlands</h3>
-                <span className="comm-hero-price">From $400K &ndash; $10M+</span>
-              </div>
-            </a>
-            <a href="/summerlin-the-ridges" className="comm-hero-card">
-              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6d349947?auto=format&fit=crop&w=600&h=400&q=80" alt="The Ridges Summerlin luxury estate" />
-              <div className="comm-hero-overlay">
-                <span className="comm-hero-label">Guard-Gated &middot; Ultra-Luxury</span>
-                <h3>The Ridges</h3>
-                <span className="comm-hero-price">From $2M &ndash; $20M+</span>
-              </div>
-            </a>
-            <a href="/skye-canyon" className="comm-hero-card">
-              <img src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?auto=format&fit=crop&w=600&h=400&q=80" alt="Skye Canyon new construction homes" />
-              <div className="comm-hero-overlay">
-                <span className="comm-hero-label">New Construction &middot; Mountain Views</span>
-                <h3>Skye Canyon</h3>
-                <span className="comm-hero-price">From $400K &ndash; $800K</span>
-              </div>
-            </a>
-          </div>
-          <div className="comm-hero-row2">
-            <a href="/macdonald-highlands" className="comm-hero-card">
-              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&h=400&q=80" alt="MacDonald Highlands Henderson luxury" />
-              <div className="comm-hero-overlay">
-                <span className="comm-hero-label">Guard-Gated &middot; DragonRidge Golf</span>
-                <h3>MacDonald Highlands</h3>
-                <span className="comm-hero-price">From $800K &ndash; $28M+</span>
-              </div>
-            </a>
-            <a href="/sun-city-summerlin" className="comm-hero-card">
-              <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&h=400&q=80" alt="Sun City Summerlin 55+ active adult community" />
-              <div className="comm-hero-overlay">
-                <span className="comm-hero-label">55+ Active Adult &middot; 7,779 Homes</span>
-                <h3>Sun City Summerlin</h3>
-                <span className="comm-hero-price">From $300K &ndash; $700K</span>
-              </div>
-            </a>
-            <a href="/guard-gated-communities" className="comm-hero-card">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&h=400&q=80" alt="Las Vegas guard-gated luxury community" />
-              <div className="comm-hero-overlay">
-                <span className="comm-hero-label">80+ Communities</span>
-                <h3>Guard-Gated</h3>
-                <span className="comm-hero-price">Browse All &rarr;</span>
-              </div>
-            </a>
-            <a href="/high-rise-condos" className="comm-hero-card">
-              <img src="https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?auto=format&fit=crop&w=600&h=400&q=80" alt="Las Vegas high-rise condos Strip view" />
-              <div className="comm-hero-overlay">
-                <span className="comm-hero-label">Strip &amp; Downtown Towers</span>
-                <h3>High-Rise Condos</h3>
-                <span className="comm-hero-price">Browse All &rarr;</span>
-              </div>
-            </a>
+          <div className="comm-photo-grid">
+            {[
+              { name: 'Summerlin', href: '/summerlin', label: 'Master-Planned · 22,500 Acres', price: '$450K – $30M+', img: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=600&h=450&q=80' },
+              { name: 'Henderson', href: '/henderson', label: 'Safest Large City in America', price: '$300K – $28M+', img: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=600&h=450&q=80' },
+              { name: 'Southern Highlands', href: '/southern-highlands', label: 'Guard-Gated · Golf', price: '$400K – $10M+', img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&h=450&q=80' },
+              { name: 'The Ridges', href: '/summerlin-the-ridges', label: 'Guard-Gated · Ultra-Luxury', price: '$2M – $20M+', img: 'https://images.unsplash.com/photo-1600607687939-ce8a6d349947?auto=format&fit=crop&w=600&h=450&q=80' },
+              { name: 'MacDonald Highlands', href: '/macdonald-highlands', label: 'Guard-Gated · DragonRidge Golf', price: '$800K – $28M+', img: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&h=450&q=80' },
+              { name: 'Skye Canyon', href: '/skye-canyon', label: 'New Construction · Mountain Views', price: '$400K – $800K', img: 'https://images.unsplash.com/photo-1570126618953-d437176e8c79?auto=format&fit=crop&w=600&h=450&q=80' },
+              { name: 'Sun City Summerlin', href: '/sun-city-summerlin', label: '55+ Active Adult · 7,779 Homes', price: '$300K – $700K', img: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&h=450&q=80' },
+              { name: 'Guard-Gated', href: '/guard-gated-communities', label: '80+ Communities', price: 'Browse All →', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&h=450&q=80' },
+            ].map(c => (
+              <a href={c.href} className="comm-photo-card" key={c.name}>
+                <img src={c.img} alt={`${c.name} Las Vegas community`} />
+                <div className="comm-photo-overlay">
+                  <span className="comm-photo-label">{c.label}</span>
+                  <h3>{c.name}</h3>
+                  <span className="comm-photo-price">{c.price}</span>
+                </div>
+              </a>
+            ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '32px' }}>
             <a href="/communities" className="btn-gold">Explore All 250+ Communities &rarr;</a>
