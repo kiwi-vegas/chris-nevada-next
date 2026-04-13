@@ -3,33 +3,37 @@ import { useState } from 'react'
 
 const FAQS = [
   {
-    q: 'What are HOA fees like in Skye Canyon?',
-    a: "Skye Canyon has a master-planned community association that typically runs around $50–$70 per month, plus a sub-association fee that varies by neighborhood — usually another $30–$80. Total monthly HOA for most single-family homes falls in the $80–$150 range. These fees cover access to Skye Center, community parks, trail maintenance, and common area landscaping.",
+    "q": "What is the price range for homes in Skye Canyon?",
+    "a": "Homes in Skye Canyon range from approximately $400,000 for resale homes to $800,000 for premium new construction on elevated lots with mountain views. Active new construction is available from multiple builders."
   },
   {
-    q: 'Which Skye Canyon neighborhoods are best for families?',
-    a: "Most of Skye Canyon is family-oriented — that's one of its strongest selling points. Neighborhoods closer to Skye Canyon Park and the Skye Center tend to be particularly popular with families because of the playground access, splash pad, and youth programming. Builders like Lennar, KB Home, and Century Communities have all built family-focused floor plans here.",
+    "q": "Is Skye Canyon still building?",
+    "a": "Yes. Skye Canyon is one of the few established master plans in the valley with active new-home construction. Multiple builders are selling new homes, and additional phases continue to be developed."
   },
   {
-    q: 'How far is Skye Canyon from the Las Vegas Strip?',
-    a: 'Skye Canyon is about 25–30 miles from the Strip — roughly 30–35 minutes in normal traffic via US-95 South. The trade-off for the extra drive time is significantly more home for your money, newer construction, and a quieter suburban feel with mountain views.',
+    "q": "What is the Skye Center?",
+    "a": "The Skye Center is a 7,500-square-foot recreation facility featuring resort-style pools, a fitness center, sports courts, outdoor event lawns, and a commercial village with restaurants and shops. It is the social hub of the community."
   },
   {
-    q: "What's the price range for homes in Skye Canyon?",
-    a: "Skye Canyon offers some of the best value in Las Vegas for newer construction. Townhomes and smaller single-family homes start in the mid-$300K range. Most single-family homes fall between $400K and $650K. Larger custom and semi-custom homes can reach $800K+. The overall median sits around $500K — substantially below Summerlin while offering comparable amenities.",
+    "q": "What ZIP code is Skye Canyon in?",
+    "a": "Skye Canyon is in ZIP code 89166 in northwest Las Vegas."
   },
   {
-    q: 'Is Skye Canyon still being built out?',
-    a: "Yes — Skye Canyon is an actively developing community with new neighborhoods and phases still under construction. This means buyers have the option of purchasing brand-new construction directly from builders, which is increasingly rare in established Las Vegas communities. The community is expected to include over 9,000 homes at full build-out.",
+    "q": "How close is Skye Canyon to the mountains?",
+    "a": "Skye Canyon is approximately 15 minutes from Lee Canyon ski area and the Mount Charleston recreation corridor via US-95 and Kyle Canyon Road. It is the closest major master-planned community to mountain recreation."
   },
   {
-    q: 'What makes Skye Canyon different from other northwest Las Vegas communities?',
-    a: "Three things stand out: the Skye Center (a 16,000 sq ft community center that rivals resort amenities), the proximity to Tule Springs Fossil Beds National Monument, and the fact that it's one of the few master-planned communities in Las Vegas still offering new construction at accessible price points. The desert mountain backdrop is also hard to beat.",
+    "q": "What schools serve Skye Canyon?",
+    "a": "Skye Canyon is served by CCSD schools including Scherkenbach STEAM Academy (7/10) and Shadow Ridge High School (6/10). New schools are being built to serve the growing community. Bishop Gorman (A+) and Doral Academy (9/10) are nearby options."
   },
   {
-    q: 'Are there good schools near Skye Canyon?',
-    a: "Yes. Skye Canyon is served by several newer CCSD schools built to accommodate the area's growth, including Bonner Elementary, Goolsby Elementary, and Tule Springs Elementary. The area also has access to Northwest Career & Technical Academy. As always with CCSD, school assignments are address-specific — confirm zoning for any property you're considering.",
+    "q": "Who developed Skye Canyon?",
+    "a": "Skye Canyon was developed by Olympia Companies, the same developer behind Southern Highlands. The 1,700-acre community broke ground in 2015 and continues to expand."
   },
+  {
+    "q": "What are HOA fees in Skye Canyon?",
+    "a": "HOA fees in Skye Canyon typically range from $75 to $200 per month, depending on the specific builder section. Fees cover community amenity operations, Skye Center access, parks, trails, and common area maintenance."
+  }
 ]
 
 export default function SkyeCanyonFAQ() {
@@ -40,11 +44,11 @@ export default function SkyeCanyonFAQ() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">Common Questions</span>
-          <h2>Skye Canyon Home Buyer FAQ</h2>
-          <p>The questions I hear most from buyers exploring Skye Canyon.</p>
+          <h2>Frequently Asked Questions About Skye Canyon</h2>
+          <p>The questions buyers ask most when exploring Skye Canyon.</p>
         </div>
         <div className="faq-list">
-          {FAQS.map((faq, i) => (
+          {FAQS.map((faq: any, i: number) => (
             <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
               <button className="faq-btn" onClick={() => setOpen(open === i ? null : i)}>
                 <span className="faq-question">{faq.q}</span>

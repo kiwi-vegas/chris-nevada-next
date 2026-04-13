@@ -1,86 +1,142 @@
-import CommunityFAQ from '@/components/CommunityFAQ'
-import CommunityMapWrapper from '@/components/CommunityMapWrapper'
+import MountainsEdgeFAQ from '@/components/MountainsEdgeFAQ'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import MountainsEdgeMapWrapper from '@/components/MountainsEdgeMapWrapper'
+import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Mountains Edge', item: 'https://www.lasvegashomesearchexperts.com/mountains-edge/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Mountains Edge?",
+    "a": "Homes in Mountains Edge typically range from $350,000 for well-maintained resale homes to approximately $650,000 for newer construction with premium features. The sweet spot for most buyers is the $400K to $550K range."
+  },
+  {
+    "q": "Is Mountains Edge a master-planned community?",
+    "a": "Yes. Mountains Edge is a 3,500-acre master-planned community developed by Focus Property Group. It features over 12,000 homes, extensive trail networks, dedicated parks, and commercial corridors — one of the largest master plans in the Las Vegas Valley."
+  },
+  {
+    "q": "What ZIP codes are in Mountains Edge?",
+    "a": "Mountains Edge is primarily in ZIP codes 89178 and 89141 in southwest Las Vegas, within unincorporated Clark County."
+  },
+  {
+    "q": "What schools serve Mountains Edge?",
+    "a": "Mountains Edge is served by several CCSD schools including Carolyn S. Reedom Elementary (8/10), Lawrence & Heidi Canarelli Middle School (7/10), and Sierra Vista High School. Charter options like Doral Academy (9/10) are also nearby."
+  },
+  {
+    "q": "How close is Mountains Edge to Red Rock Canyon?",
+    "a": "Mountains Edge is approximately 10 minutes from the Red Rock Canyon scenic loop entrance via Blue Diamond Road. The community's elevated position also provides mountain views from many homes."
+  },
+  {
+    "q": "What are HOA fees in Mountains Edge?",
+    "a": "HOA fees in Mountains Edge are relatively low, typically ranging from $50 to $150 per month depending on the specific neighborhood. The master association fee covers common area maintenance, trails, and parks."
+  },
+  {
+    "q": "Is Mountains Edge good for families?",
+    "a": "Mountains Edge is one of the most family-friendly communities in the valley. The extensive trail system, multiple parks including the 100-acre Regional Park, top-rated elementary schools, and affordable pricing make it extremely popular with young families."
+  },
+  {
+    "q": "Who built homes in Mountains Edge?",
+    "a": "Multiple national builders have contributed to Mountains Edge, including Pulte Homes, KB Home, Pardee Homes, Richmond American, and Beazer Homes. The variety of builders means a wide range of floor plans and price points."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Mountains Edge',
+  description: 'Mountains Edge is a master-planned community community in Las Vegas, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.013, longitude: -115.278 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89178', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Las Vegas' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('mountains-edge')
   return {
-    title: cms?.metaTitle ?? 'Mountains Edge Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Mountains Edge homes for sale. Southwest Las Vegas\'s largest master-planned community — 3,500 acres, dramatic mountain views, Red Rock Canyon nearby. 350+ active listings from $350K. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Mountains Edge Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Mountains Edge homes for sale in Las Vegas, NV. $350K–$650K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
-const boundary: [number, number][] = [
-  [-115.35, 36.06],
-  [-115.31, 36.07],
-  [-115.24, 36.06],
-  [-115.21, 36.04],
-  [-115.21, 35.99],
-  [-115.25, 35.97],
-  [-115.33, 35.97],
-  [-115.36, 36.01],
-  [-115.35, 36.06],
-]
-
-const faqs = [
-  {
-    q: 'What is Mountains Edge known for?',
-    a: 'Mountains Edge is known for being the largest master-planned community in southwest Las Vegas, covering approximately 3,500 acres. It\'s recognized for its dramatic desert mountain backdrop, community parks with splash pads, newer construction homes, and its proximity to Red Rock Canyon National Conservation Area. The community has been popular with military families, first-time buyers, and California transplants seeking affordable desert living.',
-  },
-  {
-    q: 'How does Mountains Edge compare to Henderson?',
-    a: 'Both are excellent suburban choices, but they serve different buyers. Mountains Edge offers southwest Las Vegas\'s most affordable new construction in a master-planned setting with mountain views, while Henderson offers more established communities, a wider price range, and proximity to Lake Mead. Henderson has more amenity depth (shopping, dining, the arts district), while Mountains Edge tends to offer newer homes at lower prices per square foot.',
-  },
-  {
-    q: 'What is the price range for Mountains Edge homes?',
-    a: 'Homes in Mountains Edge generally range from $350,000 for townhomes and smaller single-family homes up to $750,000+ for larger single-family homes in premium locations. The community offers one of the better value propositions in the Las Vegas Valley for newer construction in a master-planned setting.',
-  },
-  {
-    q: 'What are typical HOA fees in Mountains Edge?',
-    a: 'HOA fees in Mountains Edge typically range from $50 to $120 per month depending on the specific sub-community. Most fees cover common area maintenance, community park upkeep, and neighborhood landscaping. Always confirm the exact fee and what it covers with the listing agent before making an offer.',
-  },
-  {
-    q: 'Are there new construction homes available in Mountains Edge?',
-    a: 'Mountains Edge has had active new construction phases over the years, and select parcels and phases may still have new builds available. The community has largely built out, but there are occasional new construction pockets. Contact us for the most current availability from builders.',
-  },
-  {
-    q: 'How long does it take to commute from Mountains Edge to the Strip?',
-    a: 'Mountains Edge sits in the southwest valley, approximately 20 minutes from the Las Vegas Strip under normal traffic conditions via Blue Diamond Road and I-15. During peak hours, budget 25–35 minutes. The community is also close to the I-215 beltway, which improves access across the entire valley.',
-  },
-]
-
 export default async function MountainsEdgePage() {
   const cms = await getCommunityPage('mountains-edge')
+  const market = getMarketStats('mountains-edge')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Mountains Edge\nHomes For Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Southwest Las Vegas's largest master-planned community — 3,500 acres of thoughtfully designed neighborhoods, dramatic desert mountain backdrops, and quick access to Red Rock Canyon."
+  const heroHeadline = cms?.heroHeadline ?? 'Mountains Edge'
+  const heroSubtitle = 'Homes for Sale in Las Vegas, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Mountains Edge: Master-Planned Community Living in Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
-    ['Location', 'SW Las Vegas, NV'],
-    ['Development', '3,500 Acres'],
-    ['Built', '2004–Present'],
-    ['Min Price', '$350K', 'gold'],
-    ['HOA', '$50–$120/mo'],
-    ['To Strip', '~20 min'],
-    ['To Red Rock', '~15 min'],
-    ['Anchor Park', 'Exploration Peak'],
-    ['State Income Tax', 'None'],
-    ['Property Tax Rate', '~0.6%'],
+    ['Established', '2004'],
+    ['Developer', 'Focus Property Group'],
+    ['Total Acreage', '3,500 acres'],
+    ['Homes', '12,000+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$350K–$650K'],
+    ['ZIP Codes', '89178, 89141'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$50–$150/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '~20 min', destination: 'to the Strip', route: 'via Blue Diamond → I-15 N' },
-    { time: '~15 min', destination: 'to Red Rock Canyon', route: 'via W Charleston Blvd' },
-    { time: '~25 min', destination: 'to Downtown Las Vegas', route: 'via I-15 N → US-95' },
-    { time: '~25 min', destination: 'to Harry Reid Airport', route: 'via I-15 N → I-215 E' },
-  ]
+    {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via Blue Diamond Rd"
+    },
+    {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+    },
+    {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 → I-215"
+    },
+    {
+        "time": "~15 min",
+        "destination": "to Southern Highlands",
+        "route": "via S Las Vegas Blvd"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -90,58 +146,107 @@ export default async function MountainsEdgePage() {
       <div className="breadcrumb">
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <a href="/#communities">Communities</a>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <span>Mountains Edge</span>
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="mountains-edge-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Mountains Edge hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">Southwest Las Vegas, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '350+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$350K–$1.5M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Property Types', '3')}</span><span className="hero-stat-lbl">Property Types</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">Daily</span><span className="hero-stat-lbl">Updates</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$350K–$650K')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Mountains Edge</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '64px 0', background: 'var(--charcoal)', borderBottom: '1px solid var(--border-dim)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89178, 89141</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Master-Planned Community</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $350K–$650K</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $50–$150/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 2004</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Mountains Edge Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['40,000+', 'Population'],
+              ['35', 'Median Age'],
+              ['$75,000', 'Avg Household Income'],
+              ['12,000+', 'Total Households'],
+              ['72%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Mountains Edge?</h2>
-            <p>Located in the southwest Las Vegas Valley — the desert mountain ranges that give the community its name form a dramatic natural backdrop to the west and south.</p>
+            <p>Southwest Las Vegas, Nevada &mdash; Las Vegas, Nevada.</p>
           </div>
-          <div style={{ height: '420px', borderRadius: 'var(--radius-lg)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-            <CommunityMapWrapper
-              center={[-115.270, 36.021]}
-              zoom={12}
-              boundary={boundary}
-              name="Mountains Edge"
-              subtitle="Southwest Las Vegas, Nevada"
-              id="mountains-edge-map"
-            />
+          <div className="map-container">
+            <MountainsEdgeMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -152,41 +257,45 @@ export default async function MountainsEdgePage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings · Updated Daily</span>
-            <h2>New Mountains Edge Listings</h2>
-            <p>The latest homes listed in Mountains Edge — houses, condos, and townhomes in southwest Las Vegas&apos;s most ambitious master-planned community.</p>
+            <h2 className="listings-title">NEW MOUNTAINS EDGE LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":350000,"locations":[{"community":"Mountains Edge","city":"Las Vegas","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_searchWidget" />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":300000,"locations":[{"city":"Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Mountains Edge","zipCodes":["89178","89141"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=Mountains+Edge&s[locations][0][city]=Las+Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Mountains Edge Listings →</a>
-            <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Mountains%20Edge" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Mountains Edge Listings &rarr;</a>
+            <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
-              <h2>Mountains Edge: Southwest Las Vegas Done Right</h2>
-              <p>When Mountains Edge broke ground in 2004, it set out to be the southwest valley&apos;s defining master-planned community — and it delivered. Covering approximately 3,500 acres along the southern face of the Spring Mountains, the community was designed with mountain views as an intentional feature rather than an accident of geography. The ridgeline backdrop that defines the Mountains Edge skyline is one of the most striking in the Las Vegas Valley.</p>
-              <p>The community is particularly well-known for its parks, which go beyond the standard Las Vegas neighborhood playgrounds. Several Mountains Edge parks feature splash pads, amphitheaters, and maintained open space that serves the dense family population the community has attracted. Exploration Peak Community Park is the centerpiece — a regional destination with walking paths, a splash pad, and panoramic mountain views.</p>
-              <p>Mountains Edge has consistently attracted military families from Nellis Air Force Base, first-time buyers priced out of Summerlin, and California transplants seeking affordable desert living with newer construction. The proximity to Red Rock Canyon National Conservation Area — one of the most spectacular landscapes in the American West — puts world-class hiking, climbing, and scenic driving within 15 minutes of most Mountains Edge addresses. That&apos;s a combination that&apos;s hard to find at any price point in the valley.</p>
+              <h2>{overviewTitle}</h2>
+              {cms?.overviewBody?.length ? (
+                <PortableText value={cms.overviewBody} />
+              ) : (
+                <>
+                  <p>Mountains Edge is one of the largest and most successful master-planned communities in the Las Vegas Valley. Spanning approximately 3,500 acres in the southwest corner of the valley, this Focus Property Group development has grown from its 2004 groundbreaking to encompass over 12,000 homes, miles of trail systems, multiple parks, and a thriving commercial corridor along Blue Diamond Road. The community's elevated position on the valley's southwest rim provides mountain views toward the Spring Mountains and Red Rock Canyon.</p>
+                  <p>What sets Mountains Edge apart from many Las Vegas master-planned communities is its emphasis on outdoor recreation and connectivity. The community features an extensive trail network that connects neighborhoods to parks, schools, and commercial areas. Mountains Edge Regional Park anchors the community with over 100 acres of athletic fields, playgrounds, and open space. The master plan also includes dedicated open-space corridors that preserve the desert terrain between neighborhoods.</p>
+                  <p>Homes in Mountains Edge range from approximately $350,000 for well-maintained resale homes to $650,000 or more for newer construction with premium features and views. Builders who have contributed to the community include Pulte, KB Home, Pardee, Richmond American, and Beazer. Floor plans typically range from 1,600 to 3,500 square feet, with most homes built between 2004 and 2020. The community attracts families drawn by the strong schools, abundant parks, and attainable pricing compared to Summerlin or Southern Highlands.</p>
+                  <p>Mountains Edge sits at the intersection of several major corridors. Blue Diamond Road provides direct access to Red Rock Canyon and the mountains. The I-15 and I-215 freeways are both within minutes, and the commercial development along Blue Diamond and Durango includes major retail, restaurants, and medical facilities. The community's location in unincorporated Clark County means no city income tax and lower property tax rates than some neighboring jurisdictions.</p>
+                </>
+              )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Mountains Edge At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -194,7 +303,7 @@ export default async function MountainsEdgePage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Mountains Edge? Let&apos;s schedule a private tour of the community and the listings that match your goals.</p>
+                <p>Ready to explore Mountains Edge? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -202,23 +311,21 @@ export default async function MountainsEdgePage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Mountains Edge</span>
-            <h2>The Reasons Buyers Keep Choosing Mountains Edge</h2>
-            <p>Affordable luxury, mountain views, community parks, and Red Rock Canyon at your door — here&apos;s what drives demand in the southwest valley.</p>
+            <h2>What Makes Mountains Edge Stand Out</h2>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '💰', title: 'Affordable Entry Point', body: 'Mountains Edge offers one of the valley\'s best value propositions for newer master-planned living. Buyers consistently find more home for their money here versus comparable communities in Henderson or Summerlin.' },
-              { icon: '🏔️', title: 'Dramatic Mountain Views', body: 'The Spring Mountains form a constant backdrop along the western and southern edges of the community. Many homes and all major parks are sited to take advantage of views that would cost a premium anywhere else in the valley.' },
-              { icon: '🏞️', title: 'Community Parks with Splash Pads', body: 'Mountains Edge is known for park quality that goes above the Las Vegas average. Exploration Peak Community Park features splash pads, walking paths, and mountain vista points that make it a genuine community asset.' },
-              { icon: '🪨', title: 'Red Rock Canyon Proximity', body: 'Red Rock Canyon National Conservation Area — 200,000 acres of spectacular Mojave desert terrain — is approximately 15 minutes from Mountains Edge. World-class hiking, rock climbing, and the 13-mile scenic drive are effectively in the backyard.' },
-              { icon: '🏡', title: 'Newer Construction Throughout', body: 'The community was developed from 2004 onward, meaning the housing stock is relatively modern throughout. Buyers get contemporary floor plans, updated systems, and the curb appeal that comes with planned-community standards.' },
-              { icon: '📈', title: 'Strong Resale Performance', body: 'Mountains Edge has demonstrated consistent resale strength driven by sustained family demand, ongoing infrastructure investment, and the scarcity of quality master-planned living in the southwest corridor.' },
-            ].map(h => (
+              { title: '3,500-Acre Master Plan', body: 'One of the largest master-planned communities in the Las Vegas Valley. Over 12,000 homes, extensive trail networks, and dedicated open-space corridors throughout the community.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Mountains Edge Regional Park', body: 'Over 100 acres of athletic fields, playgrounds, splash pads, walking trails, and open space. One of the premier park facilities in the southwest valley.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'Mountain & Red Rock Views', body: 'Elevated southwest valley position provides views of the Spring Mountains and Red Rock Canyon from many homes and community vantage points.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Extensive Trail System', body: 'Miles of connected multi-use trails link neighborhoods to parks, schools, and commercial areas. Walk or bike across the entire community on dedicated paths.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+              { title: 'Top-Rated Schools', body: 'Mountains Edge is served by several highly rated CCSD schools. Carolyn S. Reedom Elementary and Wright STEM Academy are among the highest-rated in the southwest valley.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Attainable Value', body: 'Mountains Edge offers modern master-planned living at price points well below Summerlin and Southern Highlands. Strong resale performance and consistent demand from families.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -229,129 +336,76 @@ export default async function MountainsEdgePage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <MountainsEdgeFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Find Your Neighborhood in Mountains Edge</h2>
-            <p>From affordable starter communities to premium hillside addresses — Mountains Edge offers a range of sub-communities for every buyer profile.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Exploration Peak', type: 'Premier · Park-Adjacent', desc: 'The community surrounding Exploration Peak Community Park — the largest and most amenity-rich park in Mountains Edge. Park views, walking path access, and premium positioning.', price: 'From $400K' },
-              { name: 'Inspirada Adjacent', type: 'Border Community · Family', desc: 'Neighborhoods on the eastern edge of Mountains Edge that border the Inspirada master-planned community in Henderson, giving residents access to both communities\' amenities.', price: 'From $425K' },
-              { name: 'Cimarron', type: 'Established · Family', desc: 'One of the earlier-developed neighborhoods in Mountains Edge with an established feel and consistent character. Good school zoning and strong community identity.', price: 'From $350K' },
-              { name: 'Cambria', type: 'Mid-Range · Family', desc: 'A well-regarded sub-community offering a solid balance of price, size, and location within the Mountains Edge footprint. Popular with growing families and relocators.', price: 'From $370K' },
-              { name: 'Marquis', type: 'Premium · Larger Homes', desc: 'One of the more premium address zones within Mountains Edge, featuring larger lots, more spacious floor plans, and a generally quieter residential character.', price: 'From $450K' },
-              { name: 'Saguaro Ridge', type: 'Views · Hillside', desc: 'Hillside positioning gives Saguaro Ridge residents elevated mountain and valley views. A sought-after location within the community for buyers who prioritize the visual backdrop.', price: 'From $380K' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Southern Highlands', href: '/southern-highlands/', price: 'From $400K', compare: 'Guard-gated golf community to the south with Jack Nicklaus course and luxury estates.' },
+              { name: 'Rhodes Ranch', href: '/rhodes-ranch/', price: 'From $350K', compare: 'Guard-gated golf community to the north. Ted Robinson-designed course and resort-style amenities.' },
+              { name: 'Enterprise', href: '/enterprise/', price: 'From $350K', compare: 'Rapidly growing unincorporated area surrounding Mountains Edge with diverse housing options.' },
+              { name: 'Spring Valley', href: '/spring-valley/', price: 'From $300K', compare: 'Established suburban community to the north with strong retail and dining corridors.' },
+              { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'The valley\'s premier master-planned community with 20+ villages and premium amenities.' },
+              { name: 'Inspirada', href: '/inspirada/', price: 'From $420K', compare: 'Henderson\'s newest master-planned community with new construction and resort-style amenities.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&h=600&q=80'} alt="Red Rock Canyon desert landscape near Mountains Edge Las Vegas" />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Outdoor Living</span>
-              <div className="gold-rule" />
-              <h2>Desert Mountains, Red Rock Canyon, and Community Parks</h2>
-              <p>Mountains Edge was designed around the idea that Las Vegas outdoor living should be exceptional. The community parks go well beyond what most Nevada neighborhoods provide, and the proximity to Red Rock Canyon makes weekend outdoor adventure a genuine part of daily life here rather than a special occasion.</p>
-              <p>Exploration Peak Community Park is the heart of the outdoor life in Mountains Edge — a regional-quality park with mountain views, walking paths, and splash pads that draws families from across the southwest valley. The park system, combined with Red Rock Canyon at 15 minutes, creates a lifestyle that surprises buyers expecting a typical Las Vegas suburb.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  'Exploration Peak Community Park — mountain views, splash pads, and regional walking paths',
-                  'Red Rock Canyon National Conservation Area — approximately 15 minutes from most addresses',
-                  '13-mile Red Rock Scenic Loop Drive — open for driving, cycling, and wildlife viewing',
-                  'Community parks with consistent HOA maintenance throughout all neighborhoods',
-                  'Day trips to Mount Charleston, Valley of Fire, and Lake Mead within 30–60 minutes',
-                  'Spring Mountains provide natural air conditioning — elevation cooling on hot summer days',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Mountains Edge Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Mountains Edge, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Mountains Edge Families</h2>
-            <p>Public and charter school options serving the southwest Las Vegas community.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[
-                ['Desert Oasis High School', '9–12'],
-                ['Sierra Vista High School', '9–12'],
-                ['Frank F. Garside Junior High', '6–8'],
-                ['Multiple CCSD Elementary Schools', 'K–5'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter Schools</h3>
-              {[
-                ['Pinecrest Academy of Nevada', 'PreK–12'],
-                ['Doral Academy of Nevada', 'K–8'],
-                ['Faiss Middle School', '6–8'],
-                ['Charter Options (Various)', 'K–12'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private Options</h3>
-              {[
-                ['Faith Lutheran Schools', '6–12'],
-                ['Desert Christian Academy', 'K–12'],
-                ['Private School Options Nearby', 'Various'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{ marginTop: '24px', padding: '18px', background: 'rgba(201,168,76,0.06)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', fontSize: '13px', color: 'var(--white-70)', lineHeight: '1.7' }}>
-                <strong style={{ color: 'var(--white)' }}>School Assignment Note:</strong> Zoning varies by address within Mountains Edge. Always confirm your specific assignment with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Mountains Edge Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <CommunityFAQ
-        title="Mountains Edge FAQ"
-        subtitle="Common questions from buyers considering southwest Las Vegas's largest master-planned community."
-        faqs={faqs}
-      />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Mountains Edge Home?</h2>
-          <p>Three thousand five hundred acres of master-planned living, dramatic mountain views, and a price point that delivers genuine value in the Las Vegas Valley.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="https://www.nevadarealestategroup.com/free-market-analysis/" target="_blank" rel="noopener noreferrer" className="btn-outline">Free Market Analysis</a>
-          </div>
-          <p style={{ marginTop: '24px', fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>Nevada Lic. #S.0181401.LLC · lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

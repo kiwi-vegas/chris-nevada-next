@@ -5,47 +5,138 @@ import AlianteMapWrapper from '@/components/AlianteMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Aliante', item: 'https://www.lasvegashomesearchexperts.com/aliante/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Aliante?",
+    "a": "Homes in Aliante range from approximately $300,000 for well-maintained resale properties to $650,000 for newer construction and premium golf-course-adjacent lots. Most homes fall in the $350K to $500K range."
+  },
+  {
+    "q": "Is Aliante in Las Vegas or North Las Vegas?",
+    "a": "Aliante is located in North Las Vegas, which is a separately incorporated city from Las Vegas. It is in the northernmost part of the Las Vegas Valley, accessible via I-15 and the 215 beltway."
+  },
+  {
+    "q": "What golf course is in Aliante?",
+    "a": "The Aliante Golf Club is an 18-hole championship course designed by Gary Panks. It winds through the community's residential neighborhoods and offers public play with preferred rates for Aliante residents."
+  },
+  {
+    "q": "What ZIP codes are in Aliante?",
+    "a": "Aliante is located in ZIP codes 89084 and 89085 in North Las Vegas."
+  },
+  {
+    "q": "What is the Aliante Casino?",
+    "a": "The Aliante Casino + Hotel + Spa is a full-service resort casino located within the Aliante master-planned community. It offers dining, entertainment, gaming, hotel accommodations, and spa services — all within walking distance of many Aliante neighborhoods."
+  },
+  {
+    "q": "Is there a 55+ community in Aliante?",
+    "a": "Yes. Sun City Aliante is a Del Webb 55+ active adult community within Aliante. It features single-story homes, a recreation center, pools, fitness facilities, and organized social activities for active adults."
+  },
+  {
+    "q": "What are HOA fees in Aliante?",
+    "a": "HOA fees in Aliante typically range from $50 to $175 per month, depending on the specific neighborhood. Fees cover common area maintenance, parks, trails, and community amenities. Club Aliante and Sun City Aliante have separate fee structures."
+  },
+  {
+    "q": "How does Aliante compare to Summerlin?",
+    "a": "Aliante offers a similar master-planned community experience to Summerlin — with golf, parks, trails, and commercial amenities — at price points typically 20–30% lower. The trade-off is a longer commute to the Strip and a North Las Vegas address."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Aliante',
+  description: 'Aliante is a master-planned community community in North Las Vegas, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.289, longitude: -115.216 },
+  address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89084', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('aliante')
   return {
-    title: cms?.metaTitle ?? 'Aliante Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Aliante homes for sale in North Las Vegas. Master-planned community with championship golf, Nature Discovery Park, and casino resort. Homes from $300K. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Aliante Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Aliante homes for sale in North Las Vegas, NV. $300K–$650K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
 export default async function AliantePage() {
   const cms = await getCommunityPage('aliante')
+  const market = getMarketStats('aliante')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Aliante Homes\nFor Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "North Las Vegas\u2019 premier master-planned community \u2014 championship golf, a nature discovery park, and a casino resort all within walking distance."
-  const overviewTitle = cms?.overviewTitle ?? 'Aliante: The Complete Community in North Las Vegas'
+  const heroHeadline = cms?.heroHeadline ?? 'Aliante'
+  const heroSubtitle = 'Homes for Sale in North Las Vegas, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Aliante: Master-Planned Community Living in North Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
     ['Established', '2003'],
-    ['Developer', 'North Las Vegas Partners'],
-    ['Total Acreage', '~1,905 acres'],
-    ['Homes', '7,000+'],
-    ['Median Home Price', '~$425,000', 'gold'],
-    ['Neighborhoods', '15+'],
-    ['Schools', '5+ nearby'],
-    ['Parks', '10+'],
-    ['Golf Course', 'Aliante Golf Club (18 holes)'],
-    ['Casino Resort', 'Aliante Casino + Hotel + Spa'],
-    ['Distance to Strip', '~25 min'],
-    ['Distance to Downtown', '~20 min'],
+    ['Developer', 'American West Development / North Valley Enterprises'],
+    ['Total Acreage', '1,905 acres'],
+    ['Homes', '6,500+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$300K–$650K'],
+    ['ZIP Codes', '89084, 89085'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$50–$175/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '~25 min', destination: 'to the Strip', route: 'via I-215 \u2192 I-15' },
-    { time: '~20 min', destination: 'to Downtown Las Vegas', route: 'via US-95 South' },
-    { time: '~30 min', destination: 'to Harry Reid Airport', route: 'via I-215 \u2192 I-15' },
-    { time: '~40 min', destination: 'to Mt. Charleston', route: 'via US-95 \u2192 SR-157' },
-  ]
+    {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-15 South"
+    },
+    {
+        "time": "~30 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 South → I-215"
+    },
+    {
+        "time": "~25 min",
+        "destination": "to Summerlin",
+        "route": "via US-95 West"
+    },
+    {
+        "time": "~15 min",
+        "destination": "to Downtown Las Vegas",
+        "route": "via I-15 South"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -62,44 +153,100 @@ export default async function AliantePage() {
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="summerlin-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Aliante hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">North Las Vegas, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '100+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$300K\u2013$650K+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Golf Course', '18 holes')}</span><span className="hero-stat-lbl">Championship Golf</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Total Acreage', '1,905')}</span><span className="hero-stat-lbl">Acres</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$300K–$650K')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Aliante</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '32px 0 0', background: 'var(--charcoal)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89084, 89085</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Master-Planned Community</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $300K–$650K</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $50–$175/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 2003</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Aliante Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['22,000+', 'Population'],
+              ['36', 'Median Age'],
+              ['$65,000', 'Avg Household Income'],
+              ['6,800+', 'Total Households'],
+              ['68%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Aliante?</h2>
-            <p>Located in the northwest quadrant of North Las Vegas &mdash; bordered by the I-215 beltway with quick access to US-95 and I-15.</p>
+            <p>North Las Vegas, Nevada &mdash; North Las Vegas, Nevada.</p>
           </div>
           <div className="map-container">
             <AlianteMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -110,49 +257,45 @@ export default async function AliantePage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings &middot; Updated Daily</span>
-            <h2>New Aliante Listings</h2>
-            <p>The 12 most recently listed homes in Aliante &mdash; single-family homes, townhomes, and golf course properties from $300K.</p>
+            <h2 className="listings-title">NEW ALIANTE LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"city":"North Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Aliante"}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":250000,"locations":[{"city":"North Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Aliante","zipCodes":["89084","89085"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=North%20Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Aliante" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Aliante Listings Now &rarr;</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=North%20Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Aliante" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Aliante Listings &rarr;</a>
             <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
               <h2>{overviewTitle}</h2>
               {cms?.overviewBody?.length ? (
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>I&apos;ve been watching Aliante evolve since it broke ground in the early 2000s, and what impresses me most is how it changed the entire perception of North Las Vegas. Before Aliante, most buyers didn&apos;t consider North Las Vegas for serious master-planned community living. Aliante proved that you could build a genuinely world-class neighborhood here &mdash; complete with championship golf, resort-level amenities, and home quality that rivals anything on the west side of town &mdash; at price points that make the math work for a much wider range of buyers.</p>
-                  <p>The Aliante Golf Club is the crown jewel. Designed by Gary Panks and Associates, this 18-hole championship course has been rated among the top public courses in Nevada since it opened. Whether you play or not, the golf course creates an open-space buffer through the community that elevates every neighborhood around it. Homes backing the fairways command a premium, but even homes several blocks away benefit from the views and the sense of space.</p>
-                  <p>Then there&apos;s the Nature Discovery Park &mdash; a 20-acre educational park that showcases native Mojave Desert habitats with walking trails, wildlife viewing areas, and interpretive displays. It&apos;s a genuinely unique amenity that no other community in the valley has. Kids love it, and it gives the whole community a connection to the desert landscape that gets lost in most subdivisions.</p>
-                  <p>The Aliante Casino + Hotel + Spa rounds out the package in a way that no other master-planned community can match. Fine dining, entertainment, a spa, and a full casino &mdash; walkable from most neighborhoods. It sounds unusual until you live here, and then it becomes one of those everyday conveniences that residents never want to give up. Combined with the I-215 beltway access, solid schools, and home prices that consistently offer more square footage per dollar than the valley average, Aliante is one of the smartest buys in the Las Vegas metro.</p>
+                  <p>Aliante is the premier master-planned community in North Las Vegas, spanning approximately 1,905 acres and encompassing over 6,500 homes, a championship golf course, a resort-style casino hotel, and one of the best nature discovery parks in the valley. Developed by American West Development and North Valley Enterprises beginning in 2003, Aliante quickly established itself as the anchor community that transformed North Las Vegas from an overlooked bedroom suburb into a desirable residential destination.</p>
+                  <p>The Aliante Golf Club is an 18-hole championship course designed by Gary Panks that winds through the community's residential neighborhoods. The course is open to the public but offers preferred rates and tee times for residents. Adjacent to the course, the Aliante Casino + Hotel + Spa provides resort-style dining, entertainment, and gaming within walking distance of many homes. This combination of golf, resort amenities, and master-planned community living is unique in the North Las Vegas market.</p>
+                  <p>The crown jewel of Aliante's amenity package is the Aliante Nature Discovery Park, a 20-acre facility featuring a lake, nature trails, playground, amphitheater, and interactive water features. The park has won multiple awards and draws visitors from across the valley. Additional community parks, sports courts, and trail connections are distributed throughout the master plan, creating an outdoor-recreation-focused lifestyle.</p>
+                  <p>Homes in Aliante range from approximately $300,000 for well-maintained resale properties to $650,000 for newer construction and premium lots. National builders including Pulte, KB Home, Richmond American, and Lennar have contributed to the community, offering a variety of floor plans from 1,500 to 3,500+ square feet. Aliante's pricing typically runs 20–30% below comparable homes in Summerlin or Henderson, making it one of the strongest value propositions for master-planned community living in the Las Vegas metro.</p>
                 </>
               )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Aliante At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -160,7 +303,7 @@ export default async function AliantePage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Aliante? Let&apos;s schedule a private tour of the community and the current listings that match your goals.</p>
+                <p>Ready to explore Aliante? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -168,23 +311,21 @@ export default async function AliantePage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Aliante</span>
             <h2>What Makes Aliante Stand Out</h2>
-            <p>Championship golf, a nature park, and a casino resort &mdash; all in a master-planned community priced well below the valley average.</p>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '\u26F3', title: 'Championship Golf Course', body: 'Aliante Golf Club is an 18-hole Gary Panks design consistently rated among the top public courses in Nevada. Open fairways and mountain views create a resort atmosphere for the entire community.' },
-              { icon: '\u{1F3B0}', title: 'Aliante Casino + Hotel + Spa', body: 'A full-service casino resort within walking distance \u2014 fine dining, entertainment, a luxury spa, and a sportsbook. An everyday convenience no other master-planned community offers.' },
-              { icon: '\u{1F335}', title: 'Nature Discovery Park', body: 'A 20-acre educational park showcasing native Mojave Desert habitats with walking trails, wildlife viewing areas, and interpretive displays. A one-of-a-kind community amenity.' },
-              { icon: '\u{1F4B0}', title: 'Exceptional Value', body: 'More home for your dollar than almost anywhere in the Las Vegas metro. Median prices ~40% below Summerlin with comparable master-plan amenities and newer construction.' },
-              { icon: '\u{1F6E3}\uFE0F', title: 'I-215 Beltway Access', body: 'Direct access to the I-215 beltway puts you 20\u201325 minutes from the Strip, downtown, and major employment centers. US-95 and I-15 connections are minutes away.' },
-              { icon: '\u{1F6E1}\uFE0F', title: 'Growing North Las Vegas', body: 'North Las Vegas is one of the fastest-growing cities in Nevada with significant commercial development, new retail, and expanding city services. Aliante anchors the northwest quadrant.' },
-            ].map(h => (
+              { title: '1,905-Acre Master Plan', body: 'The largest and most established master-planned community in North Las Vegas. Over 6,500 homes with golf, parks, trails, and commercial amenities throughout.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Aliante Golf Club', body: '18-hole Gary Panks-designed championship course winding through the community. Public play with preferred rates for residents. Desert and mountain views throughout.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/></svg> },
+              { title: 'Nature Discovery Park', body: 'Award-winning 20-acre park with a lake, nature trails, amphitheater, playground, and interactive water features. One of the best park facilities in the valley.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'Aliante Casino + Hotel + Spa', body: 'Full-service resort casino within the community offering dining, entertainment, gaming, and spa services. Walking distance from many Aliante neighborhoods.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Exceptional Value', body: 'Master-planned community living at 20–30% below comparable Summerlin or Henderson homes. The strongest value proposition for planned community living in the metro.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Growing Appreciation', body: 'Aliante has been one of the strongest-appreciating communities in North Las Vegas. As the area matures and commercial amenities grow, long-term value continues to strengthen.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -195,113 +336,76 @@ export default async function AliantePage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <AlianteFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Explore Aliante&apos;s Neighborhoods</h2>
-            <p>From golf course homes to family-friendly cul-de-sacs, Aliante has a neighborhood for every lifestyle.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Golf Course Estates', type: 'Golf \u00B7 Premium Views', desc: 'Single-family homes backing the Aliante Golf Club fairways. Panoramic course and mountain views with the open-space buffer that golf course living provides.', price: 'From $500K' },
-              { name: 'Aliante North', type: 'Family \u00B7 Established', desc: 'Well-established neighborhoods in the northern section of the community with mature landscaping, parks, and proximity to the Nature Discovery Park.', price: 'From $400K' },
-              { name: 'Aliante South', type: 'Entry-Level \u00B7 Convenient', desc: 'More accessible price points near the southern entrance of the community. Convenient freeway access and walking distance to the Aliante Casino.', price: 'From $330K' },
-              { name: 'The Villas', type: 'Townhomes \u00B7 Low-Maintenance', desc: 'Attached townhome communities ideal for first-time buyers, young professionals, and downsizers looking for low-maintenance living within Aliante.', price: 'From $300K' },
-              { name: 'Nature Park Neighborhoods', type: 'Family \u00B7 Outdoor Access', desc: 'Neighborhoods adjacent to the Nature Discovery Park and community trail system. Popular with families who want outdoor access built into daily life.', price: 'From $380K' },
-              { name: 'Premium Single-Family', type: 'Move-Up \u00B7 Spacious', desc: 'Larger single-family homes with 4\u20135 bedrooms, three-car garages, and premium lot sizes. The top tier of Aliante\u2019s housing stock.', price: 'From $550K+' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Providence', href: '/providence/', price: 'From $350K', compare: 'Newer master-planned community in northwest North Las Vegas with contemporary construction.' },
+              { name: 'Centennial Hills', href: '/centennial-hills/', price: 'From $350K', compare: 'Growing northwest Las Vegas community with diverse housing and family-friendly amenities.' },
+              { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $400K', compare: 'New master-planned community in the far northwest with Skye Center amenities and mountain access.' },
+              { name: 'Lone Mountain', href: '/lone-mountain/', price: 'From $400K', compare: 'Semi-rural enclave with large lots, equestrian properties, and mountain views.' },
+              { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'The valley\'s premier master-planned community. Higher prices but more extensive amenities.' },
+              { name: 'Downtown Las Vegas', href: '/downtown-las-vegas/', price: 'From $200K', compare: 'The urban core with Arts District and walkable entertainment. 15 minutes south via I-15.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img
-                src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : '/red-rock-canyon.jpg'}
-                alt="Golf course and desert landscape in Aliante, North Las Vegas"
-              />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Outdoor Living</span>
-              <div className="gold-rule" />
-              <h2>Championship Golf, Desert Trails, and Mountain Views</h2>
-              <p>Aliante delivers an outdoor lifestyle that punches well above its price point. The championship golf course creates a green corridor through the heart of the community, and the Nature Discovery Park adds something genuinely unique &mdash; a 20-acre window into the Mojave Desert ecosystem.</p>
-              <p>The community trail system connects neighborhoods to parks, the golf course, and the Nature Discovery Park, making it easy to walk, jog, or bike without ever leaving the community.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  'Aliante Golf Club \u2014 18-hole championship course, top-rated public course in Nevada',
-                  'Nature Discovery Park \u2014 20 acres of native desert habitats, trails, and wildlife viewing',
-                  'Community trail system connecting neighborhoods, parks, and open spaces',
-                  'Panoramic views of the Spring Mountains, Sheep Range, and surrounding desert',
-                  'Mt. Charleston ski resort ~40 minutes; Red Rock Canyon and Valley of Fire within an hour',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Aliante Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Aliante, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Aliante Families</h2>
-            <p>North Las Vegas has invested in new schools to serve the growing northwest corridor.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[['Aliante Elementary','K\u20135'],['Sandra L. Thompson Elementary','K\u20135'],['William E. Ferron Elementary','K\u20135'],['James & Rosemary Fong Elementary','K\u20135'],['Ralph & Betty Cadwallader Middle','6\u20138'],['Cheyenne High School','9\u201312'],['Legacy High School','9\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Faith-Based</h3>
-              {[['Mountain View Christian School','PreK\u201312'],['Legacy Traditional School','K\u20138'],['Faith Lutheran Academy','K\u20135'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Specialty</h3>
-              {[['Doral Academy of Nevada','K\u20138'],['Somerset Academy Sky Pointe','K\u20138'],['Pinecrest Academy of Nevada','K\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{marginTop:'24px',padding:'18px',background:'rgba(201,168,76,0.06)',border:'1px solid var(--border)',borderRadius:'var(--radius)',fontSize:'13px',color:'var(--white-70)',lineHeight:'1.7'}}>
-                <strong style={{color:'var(--white)'}}>School Assignment Note:</strong> North Las Vegas school zones vary by address. The city has built several new schools in recent years to serve the northwest corridor. Always confirm your assigned school with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Aliante Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <AlianteFAQ />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Aliante Home?</h2>
-          <p>Whether you want a golf course view, a family home near the Nature Discovery Park, or the best value per square foot in the valley, I&apos;ll help you find the right fit in Aliante.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="#listings" className="btn-outline">Browse All Listings</a>
-          </div>
-          <p style={{marginTop:'24px',fontSize:'12px',color:'rgba(255,255,255,0.3)'}}>Nevada Lic. #S.0181401.LLC &middot; lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

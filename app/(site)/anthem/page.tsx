@@ -5,47 +5,138 @@ import AnthemMapWrapper from '@/components/AnthemMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Anthem', item: 'https://www.lasvegashomesearchexperts.com/anthem/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Anthem?",
+    "a": "Anthem spans from approximately $350,000 for single-story homes in Sun City Anthem to over $8 million for custom estates in Anthem Country Club. Family neighborhoods like Highlands and Coventry range from $400K to $900K."
+  },
+  {
+    "q": "Is Anthem guard-gated?",
+    "a": "Anthem Country Club and Solera at Anthem are guard-gated. The broader Anthem master plan is not guard-gated but has controlled access points and active HOA management throughout."
+  },
+  {
+    "q": "What ZIP codes is Anthem in?",
+    "a": "Anthem spans ZIP codes 89052 and 89044 in Henderson, Nevada."
+  },
+  {
+    "q": "What golf courses are in Anthem?",
+    "a": "Anthem Country Club features an 18-hole Hale Irwin-designed championship course. Sun City Anthem has two courses — the Anthem Course and the Revere Golf Club at Anthem."
+  },
+  {
+    "q": "Is there a 55+ community in Anthem?",
+    "a": "Yes. Sun City Anthem is one of the premier 55+ communities in America with 7,200+ homes and three recreation centers. Solera at Anthem is a smaller, more intimate 55+ option."
+  },
+  {
+    "q": "What are HOA fees in Anthem?",
+    "a": "HOA fees vary significantly by sub-community: $80–$150/mo in family neighborhoods, $180–$350/mo in Sun City Anthem (includes recreation centers), and $350–$800/mo in Anthem Country Club (includes guard gate)."
+  },
+  {
+    "q": "How big is Anthem?",
+    "a": "Anthem spans approximately 4,775 acres with over 14,000 homes across multiple sub-communities. It is the largest master-planned community in Henderson and one of the largest in the Las Vegas Valley."
+  },
+  {
+    "q": "What schools serve Anthem?",
+    "a": "Anthem is served by CCSD schools including John C. Vanderburg Elementary (8/10), Del E. Webb Middle School (7/10), and Coronado High School (6/10). Private options include Henderson International School and Bishop Gorman."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Anthem',
+  description: 'Anthem is a master-planned · multi-community community in Henderson, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 35.995, longitude: -115.065 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Henderson' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('anthem')
   return {
-    title: cms?.metaTitle ?? 'Anthem Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Anthem homes for sale in Henderson, NV. Premier master-planned community in the McCullough Range foothills with country club golf, luxury estates, and Strip views. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Anthem Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Anthem homes for sale in Henderson, NV. $400K–$8M+. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
 export default async function AnthemPage() {
   const cms = await getCommunityPage('anthem')
+  const market = getMarketStats('anthem')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Anthem Homes\nFor Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Henderson\u2019s premier foothill community \u2014 4,755 acres in the McCullough Range with a private country club, luxury neighborhoods, and panoramic Strip views."
-  const overviewTitle = cms?.overviewTitle ?? 'Anthem: Henderson\u2019s Address in the Foothills'
+  const heroHeadline = cms?.heroHeadline ?? 'Anthem'
+  const heroSubtitle = 'Homes for Sale in Henderson, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Anthem: Master-Planned · Multi-Community Living in Henderson'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
     ['Established', '1998'],
     ['Developer', 'Del Webb / Pulte Homes'],
-    ['Total Acreage', '~4,755 acres'],
-    ['Homes', '11,000+'],
-    ['Median Home Price', '~$625,000', 'gold'],
-    ['Neighborhoods', '25+'],
-    ['Schools', '8+ nearby'],
-    ['Parks & Trails', '30+ miles of trails'],
-    ['Country Club', 'Anthem Country Club (private)'],
-    ['Community Center', 'Anthem Center'],
-    ['Distance to Strip', '~25 min'],
-    ['Distance to Lake Mead', '~25 min'],
+    ['Total Acreage', '4,775 acres'],
+    ['Homes', '14,000+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$400K–$8M+'],
+    ['ZIP Codes', '89052, 89044'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$80–$800/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '~25 min', destination: 'to the Strip', route: 'via I-215 \u2192 I-15' },
-    { time: '~10 min', destination: 'to Galleria at Sunset', route: 'via Eastern Ave' },
-    { time: '~25 min', destination: 'to Lake Mead', route: 'via Lake Mead Pkwy East' },
-    { time: '~20 min', destination: 'to Harry Reid Airport', route: 'via I-215 \u2192 I-15' },
-  ]
+    {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~20 min",
+        "destination": "to Lake Mead",
+        "route": "via Lake Mead Pkwy East"
+    },
+    {
+        "time": "~10 min",
+        "destination": "to Galleria at Sunset",
+        "route": "via Eastern Ave"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -62,44 +153,100 @@ export default async function AnthemPage() {
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="summerlin-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Anthem hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">Henderson, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '150+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$400K\u2013$3M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Country Club', 'Private')}</span><span className="hero-stat-lbl">Country Club</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Total Acreage', '4,755')}</span><span className="hero-stat-lbl">Acres</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$400K–$8M+')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Anthem</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '32px 0 0', background: 'var(--charcoal)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89052, 89044</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Master-Planned · Multi-Community</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $400K–$8M+</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $80–$800/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 1998</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Anthem Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['~38,000', 'Population'],
+              ['48', 'Median Age'],
+              ['$100,000', 'Avg Household Income'],
+              ['~14,000', 'Total Households'],
+              ['78%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Anthem?</h2>
-            <p>Built into the foothills of the McCullough Range in southeast Henderson &mdash; elevated terrain with panoramic views of the Las Vegas Valley and the Strip skyline.</p>
+            <p>Henderson, Nevada &mdash; Henderson, Nevada.</p>
           </div>
           <div className="map-container">
             <AnthemMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -110,49 +257,45 @@ export default async function AnthemPage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings &middot; Updated Daily</span>
-            <h2>New Anthem Listings</h2>
-            <p>The 12 most recently listed homes in Anthem &mdash; from family neighborhoods to country club estates.</p>
+            <h2 className="listings-title">NEW ANTHEM LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":300000,"locations":[{"city":"Henderson","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Anthem"}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":350000,"locations":[{"city":"Henderson","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Anthem Henderson","zipCodes":["89052","89044"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Anthem" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Anthem Listings Now &rarr;</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Anthem%20Henderson" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Anthem Listings &rarr;</a>
             <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
               <h2>{overviewTitle}</h2>
               {cms?.overviewBody?.length ? (
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Anthem is the community I show to buyers who want more than a house &mdash; they want a setting. Built into the foothills of the McCullough Range starting in the late 1990s, Anthem has something that no other Henderson community can replicate: genuine elevation. Streets rise and wind through natural desert terrain, and the higher you go, the more dramatic the views become. On a clear evening, you can see the entire Las Vegas Strip from your backyard. That&apos;s not marketing &mdash; that&apos;s geography.</p>
-                  <p>Del Webb and Pulte Homes developed Anthem as a full-spectrum community, and the variety shows. Sun City Anthem anchors the southeast as one of the most successful 55+ active adult communities in the country &mdash; multiple golf courses, recreation centers, and a social calendar that never stops. Anthem Country Club occupies the premium tier with its Hale Irwin-designed private course, guard gates, and custom estates. And Anthem Highlands fills the family segment with well-built neighborhoods, strong schools, and the Anthem Center as a community hub.</p>
-                  <p>The Anthem Center is worth calling out specifically. It&apos;s a full community center with resort-style pools, sports courts, a fitness area, and year-round programming for all ages. The trail system extends over 30 miles through the community, connecting neighborhoods to parks, open desert, and the surrounding mountain terrain. People who move to Anthem for the views end up staying for the trails.</p>
-                  <p>The location in southeast Henderson puts you in one of the safest cities in America with the I-215 beltway providing a clean commute corridor to the airport, the Strip, and the rest of the valley. Lake Mead is about 25 minutes east. Galleria at Sunset and the Henderson dining scene are 10 minutes north. And the price spectrum &mdash; from $400K townhomes to $3M+ country club estates &mdash; means Anthem has a genuine path for buyers at every stage of life.</p>
+                  <p>Anthem is the largest and most diverse master-planned community in Henderson, spanning 4,775 acres across the McCullough Range foothills in the southeastern quadrant of the city. With over 14,000 homes across multiple distinct sub-communities, Anthem offers an extraordinary range of lifestyles — from the guard-gated luxury of Anthem Country Club and its $8M+ custom estates to the active retirement living of Sun City Anthem and the family-friendly neighborhoods of Anthem Highlands and Coventry.</p>
+                  <p>The community's elevated foothills terrain is one of its greatest assets. Many Anthem neighborhoods sit at elevations between 2,500 and 3,400 feet, delivering panoramic views of the Las Vegas Strip, the Spring Mountains, and the surrounding McCullough Range that are among the most dramatic in the valley. The desert-mountain setting also provides cooler temperatures and a more natural landscape than the valley floor.</p>
+                  <p>Anthem's amenity infrastructure is extensive. The community features multiple parks, including the award-winning Anthem Hills Park and the popular Madeira Canyon trailhead for hiking and biking. Sun City Anthem operates three recreation centers with over 100,000 square feet of amenity space. Anthem Country Club offers an 18-hole Hale Irwin-designed championship golf course with a full-service clubhouse. Neighborhood parks, pools, and walking trails are distributed throughout.</p>
+                  <p>Located along the I-215 beltway corridor in southeast Henderson, Anthem provides direct commute access to the Strip and Harry Reid Airport in approximately 20–25 minutes. The Galleria at Sunset, St. Rose Dominican Hospital, and Henderson's infrastructure are all within easy reach. Lake Mead National Recreation Area is just 20 minutes east. For buyers who want Henderson's safety and lifestyle with mountain views and community depth, Anthem is the gold standard.</p>
                 </>
               )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Anthem At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -160,7 +303,7 @@ export default async function AnthemPage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Anthem? Let&apos;s schedule a private tour of the community, the country club, and the listings that match your goals.</p>
+                <p>Ready to explore Anthem? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -168,23 +311,21 @@ export default async function AnthemPage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Anthem</span>
             <h2>What Makes Anthem Stand Out</h2>
-            <p>Foothill elevation, a private country club, and panoramic Strip views &mdash; in one of America&apos;s safest cities.</p>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '\u{26F0}\uFE0F', title: 'McCullough Range Foothills', body: 'Built into genuine mountain terrain with elevation changes that create dramatic views of the Las Vegas Valley and Strip skyline. A setting that no flat-ground community can match.' },
-              { icon: '\u26F3', title: 'Anthem Country Club', body: 'A private, guard-gated club with an 18-hole Hale Irwin championship course, full-service clubhouse, resort pools, tennis courts, and dining. One of Henderson\u2019s premier private clubs.' },
-              { icon: '\u{1F6E1}\uFE0F', title: 'Henderson: Top 10 Safest City', body: 'Henderson consistently ranks among the top 10 safest large cities in America. Low crime, clean streets, and responsive city services that residents consistently praise.' },
-              { icon: '\u{1F6B6}', title: '30+ Miles of Trails', body: 'An extensive trail system connecting neighborhoods to parks, open desert, and mountain terrain. Hiking, biking, and trail running from your front door \u2014 no car required.' },
-              { icon: '\u{1F3CA}', title: 'Anthem Center', body: 'A full community center with resort-style pools, sports courts, fitness area, and year-round programming for all ages. The social and recreational hub of the community.' },
-              { icon: '\u{1F3E0}', title: 'Every Life Stage', body: 'From Sun City Anthem (55+) to Anthem Highlands (families) to Anthem Country Club (luxury). A community with genuine paths for first-time buyers, families, empty nesters, and retirees.' },
-            ].map(h => (
+              { title: 'Foothills Location & Views', body: 'Elevated terrain at 2,500–3,400 feet delivers panoramic views of the Las Vegas Strip, Spring Mountains, and McCullough Range. Cooler temperatures and natural desert landscape.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Anthem Country Club', body: 'Guard-gated luxury community with an 18-hole Hale Irwin championship course, full-service clubhouse, resort pool, tennis, and custom estates from $1.2M to $8M+.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/></svg> },
+              { title: 'Sun City Anthem (55+)', body: 'Premier 55+ active adult community with 7,200+ homes, three recreation centers, two golf courses, 100+ clubs, and one of the most active social calendars in the nation.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Family-Friendly Neighborhoods', body: 'Anthem Highlands, Coventry, and other sub-communities offer family homes from $400K to $900K with parks, pools, and easy access to Henderson\'s top-rated schools.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Henderson\'s Safest City', body: 'Henderson is consistently ranked among the top 10 safest large cities in America. Anthem benefits from the city\'s low crime rates and responsive services.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+              { title: 'Strong Resale Demand', body: 'Anthem homes hold value well due to the community\'s established reputation, mountain views, diverse amenities, and Henderson\'s safety. Consistently strong resale performance.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -195,113 +336,76 @@ export default async function AnthemPage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <AnthemFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Explore Anthem&apos;s Neighborhoods</h2>
-            <p>From guard-gated country club estates to active adult living, Anthem has a neighborhood for every lifestyle.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Anthem Country Club', type: 'Guard-Gated \u00B7 Golf \u00B7 Luxury', desc: 'The premier address in Anthem \u2014 a private, guard-gated community with an 18-hole Hale Irwin course, custom estates, and full country club amenities. The highest elevation and best views in the community.', price: 'From $800K' },
-              { name: 'Anthem Hills', type: 'Guard-Gated \u00B7 Luxury', desc: 'A guard-gated luxury neighborhood featuring larger custom and semi-custom homes on elevated lots with panoramic Strip and valley views. Quieter and more exclusive than the family neighborhoods.', price: 'From $700K' },
-              { name: 'Anthem Highlands', type: 'Family \u00B7 Master-Planned', desc: 'The family heart of Anthem with well-designed neighborhoods, strong schools, trail access, and the Anthem Center. The most popular section for families with school-age children.', price: 'From $500K' },
-              { name: 'Sun City Anthem', type: '55+ Active Adult', desc: 'One of the most successful active adult communities in the country. Two golf courses, multiple recreation centers, 100+ clubs, and a social calendar that keeps residents engaged year-round.', price: 'From $350K' },
-              { name: 'Solera at Anthem', type: '55+ \u00B7 Boutique', desc: 'A smaller, more intimate 55+ community within Anthem. Single-story homes with low-maintenance yards, a private clubhouse, and the convenience of the broader Anthem amenity package.', price: 'From $400K' },
-              { name: 'Anthem Parkside', type: 'Family \u00B7 Park-Adjacent', desc: 'Neighborhoods positioned along the community\u2019s trail system and park corridors. Popular with active families who want outdoor access built into daily life.', price: 'From $475K' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Guard-gated Henderson community with Rio Secco golf, adjacent to Anthem.' },
+              { name: 'MacDonald Highlands', href: '/macdonald-highlands/', price: 'From $800K', compare: 'Henderson\'s premier luxury mountainside community with DragonRidge Country Club.' },
+              { name: 'Inspirada', href: '/inspirada/', price: 'From $420K', compare: 'Newer Henderson master plan adjacent to Anthem with parks, trails, and new construction.' },
+              { name: 'Ascaya', href: '/ascaya/', price: 'From $3M', compare: 'Ultra-luxury custom lot community on the McCullough Range ridgeline.' },
+              { name: 'Green Valley Ranch', href: '/green-valley-ranch/', price: 'From $400K', compare: 'Henderson\'s premier established master plan with parks, top schools, and retail.' },
+              { name: 'Cadence', href: '/cadence/', price: 'From $350K', compare: 'Henderson\'s newest master plan with new construction and Central Park.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img
-                src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : '/red-rock-canyon.jpg'}
-                alt="McCullough Range foothills and Strip views from Anthem, Henderson"
-              />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Outdoor Living</span>
-              <div className="gold-rule" />
-              <h2>Foothill Trails, Country Club Golf, and Valley-Wide Views</h2>
-              <p>Anthem&apos;s setting in the McCullough Range foothills defines the lifestyle here. The elevation creates a natural cooling effect, the terrain provides built-in hiking and biking trails, and the views &mdash; especially at sunset when the Strip lights up against the mountains &mdash; are genuinely spectacular.</p>
-              <p>Whether you play golf at the country club, swim at the Anthem Center, or hike the 30+ miles of community trails, outdoor living is woven into daily life here.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  '30+ miles of trails through foothill terrain connecting neighborhoods, parks, and open desert',
-                  'Anthem Country Club \u2014 18-hole Hale Irwin design with Strip views from elevated fairways',
-                  'Anthem Center with resort pools, sports courts, and year-round community programming',
-                  'Panoramic views of the Las Vegas Strip, Spring Mountains, and surrounding valley from elevated lots',
-                  'Lake Mead, Sloan Canyon, and Bootleg Canyon mountain biking all within 30 minutes',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Anthem Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Anthem, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Anthem Families</h2>
-            <p>Henderson&apos;s strong school options include several well-regarded campuses serving the Anthem community.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[['John C. Vanderburg Elementary','K\u20135'],['Elise L. Wolff Elementary','K\u20135'],['Dean Petersen Elementary','K\u20135'],['Del E. Webb Middle School','6\u20138'],['Jim Bridger Middle School','6\u20138'],['Coronado High School','9\u201312'],['Liberty High School','9\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Faith-Based</h3>
-              {[['Henderson International School','PreK\u201312'],['Pinecrest Academy of Nevada','K\u201312'],['Mountain View Christian School','PreK\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Specialty</h3>
-              {[['Doral Academy of Nevada','K\u20138'],['Somerset Academy','K\u20138'],['Coral Academy of Science','K\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{marginTop:'24px',padding:'18px',background:'rgba(201,168,76,0.06)',border:'1px solid var(--border)',borderRadius:'var(--radius)',fontSize:'13px',color:'var(--white-70)',lineHeight:'1.7'}}>
-                <strong style={{color:'var(--white)'}}>School Assignment Note:</strong> Anthem spans a large area with multiple school zones. Anthem Highlands tends to zone into some of Henderson\u2019s highest-rated schools. Always confirm your assigned school with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Anthem Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <AnthemFAQ />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Anthem Home?</h2>
-          <p>From country club estates with Strip views to family homes near the Anthem Center, I&apos;ll help you find the right neighborhood and price point in Anthem.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="#listings" className="btn-outline">Browse All Listings</a>
-          </div>
-          <p style={{marginTop:'24px',fontSize:'12px',color:'rgba(255,255,255,0.3)'}}>Nevada Lic. #S.0181401.LLC &middot; lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

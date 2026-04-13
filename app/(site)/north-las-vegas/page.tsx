@@ -1,72 +1,142 @@
-import CommunityFAQ from '@/components/CommunityFAQ'
-import CommunityMapWrapper from '@/components/CommunityMapWrapper'
+import NorthLasVegasFAQ from '@/components/NorthLasVegasFAQ'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import NorthLasVegasMapWrapper from '@/components/NorthLasVegasMapWrapper'
+import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'North Las Vegas', item: 'https://www.lasvegashomesearchexperts.com/north-las-vegas/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "Is North Las Vegas a good place to buy a home?",
+    "a": "Yes. North Las Vegas offers the best value in the Las Vegas Valley with new-construction homes from the mid-$200s — typically $50K–$100K below comparable homes in Henderson or Summerlin. Major economic development and improving infrastructure support long-term appreciation."
+  },
+  {
+    "q": "What is the price range for homes in North Las Vegas?",
+    "a": "Homes in North Las Vegas range from approximately $250,000 in established neighborhoods to $600,000 for premium homes in newer master-planned communities like Skye Canyon and Aliante."
+  },
+  {
+    "q": "What are the best neighborhoods in North Las Vegas?",
+    "a": "Aliante is the most established master-planned community with golf and a casino resort. Skye Canyon offers premium new construction. Heartland at Tule Springs and The Villages deliver affordable new builds. Centennial Hills straddles the Las Vegas border."
+  },
+  {
+    "q": "Is North Las Vegas safe?",
+    "a": "Safety varies by neighborhood. Newer master-planned communities like Aliante, Skye Canyon, and Heartland at Tule Springs have low crime rates comparable to Henderson. The city's investment in policing and infrastructure continues to improve safety across all areas."
+  },
+  {
+    "q": "How far is North Las Vegas from the Strip?",
+    "a": "North Las Vegas is approximately 15–25 minutes from the Las Vegas Strip depending on which area you're in. The I-15 and US-95 corridors provide direct commute access."
+  },
+  {
+    "q": "Is there new construction in North Las Vegas?",
+    "a": "Yes. North Las Vegas is one of the most active new-construction markets in the Las Vegas Valley. Multiple national builders are delivering new homes in Skye Canyon, Heartland at Tule Springs, The Villages at Tule Springs, Craig Ranch, and other communities."
+  },
+  {
+    "q": "What ZIP codes does North Las Vegas cover?",
+    "a": "North Las Vegas spans multiple ZIP codes including 89030, 89031, 89032, 89081, 89084, 89085, and 89086. Newer communities tend to be in the 89084, 89085, and 89086 ZIP codes."
+  },
+  {
+    "q": "Are there 55+ communities in North Las Vegas?",
+    "a": "Yes. Sun City Aliante is a Del Webb 55+ community within the Aliante master plan. Ardiente and Del Webb at North Ranch offer additional active adult options."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'North Las Vegas',
+  description: 'North Las Vegas is a city hub · all price points community in North Las Vegas, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.228, longitude: -115.117 },
+  address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89030', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('north-las-vegas')
   return {
-    title: cms?.metaTitle ?? 'North Las Vegas Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? "Browse North Las Vegas homes for sale. Nevada's fastest-growing city — master-planned communities, affordable prices from $250K, Brightline West terminus, and direct Mount Charleston access. 800+ active listings. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'North Las Vegas Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse North Las Vegas homes for sale in North Las Vegas, NV. $250K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
-const northLVFaqs = [
-  {
-    q: 'Is North Las Vegas the same as Las Vegas?',
-    a: 'No — North Las Vegas is a completely separate, incorporated city with its own mayor, city council, police department, fire department, water system, and municipal government. It shares a border with the City of Las Vegas and Clark County unincorporated areas but operates entirely independently. When you purchase a home in North Las Vegas, your property taxes, services, and local government are all North Las Vegas — not the City of Las Vegas or Clark County.',
-  },
-  {
-    q: 'What is Aliante, and is it a good community?',
-    a: "Aliante is one of North Las Vegas's two major master-planned communities and consistently ranks as the most desirable area within the city. It features a dedicated community center, the Aliante Golf Club, retail anchored by the Aliante Gaming Casino & Hotel, multiple parks, and well-maintained streets. Home values in Aliante are stronger and more stable than the broader North Las Vegas market, and the community attracts families and buyers relocating from California who want a planned neighborhood at a reasonable price point.",
-  },
-  {
-    q: 'Is North Las Vegas safe? How has it changed?',
-    a: "North Las Vegas historically carried a higher crime rate than Henderson or Summerlin. Over the past decade, significant investment in infrastructure, policing, and community programming has improved conditions considerably — particularly in Aliante and the newer master-planned areas. As with any city, neighborhood selection matters. The newer northern and western sections of North Las Vegas are notably different from older core neighborhoods near downtown. Your agent can guide you to the specific areas that match your priorities.",
-  },
-  {
-    q: 'How does North Las Vegas compare to Henderson for investors?',
-    a: "North Las Vegas offers lower acquisition costs than Henderson, which means stronger gross rental yields on paper. However, Henderson's tenant quality, vacancy rates, and long-term appreciation have historically been more consistent. North Las Vegas appeals to investors willing to trade some stability for a higher yield. The city's job growth story — logistics, distribution, Brightline West construction, and tech manufacturing — is building a stronger rental demand base. Both cities have active investor markets; the right choice depends on your strategy.",
-  },
-  {
-    q: 'How will Brightline West affect North Las Vegas property values?',
-    a: "Brightline West's high-speed rail line will connect Las Vegas to Rancho Cucamonga (and onward to Los Angeles) with a Nevada terminus in the North Las Vegas/Las Vegas area. The station proximity creates transit-oriented development opportunities and is expected to increase demand from California buyers and commuters. Properties within a reasonable drive of the terminus are likely to benefit as construction progresses and opening approaches. This is a long-term catalyst — the effect on day-to-day values is gradual rather than immediate.",
-  },
-  {
-    q: 'What is the commute like from North Las Vegas to the Strip?',
-    a: "The commute depends heavily on traffic. During off-peak hours, North Las Vegas to the Strip runs 20–30 minutes via I-15 or US-95. During peak commute hours, especially the I-15 corridor, travel times can extend to 40–50 minutes. The US-95 north-south corridor is the primary artery, and several new interchange improvements have been completed in recent years. Many North Las Vegas residents commute to Strip hospitality and gaming jobs — it's a well-traveled route.",
-  },
-]
-
 export default async function NorthLasVegasPage() {
   const cms = await getCommunityPage('north-las-vegas')
+  const market = getMarketStats('north-las-vegas')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'North Las Vegas\nHomes For Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Nevada's fastest-growing city — an independent municipality north of Las Vegas with newer master-planned communities, affordable entry prices, the Valley's largest industrial job base, and direct access to Mount Charleston."
+  const heroHeadline = cms?.heroHeadline ?? 'North Las Vegas'
+  const heroSubtitle = 'Homes for Sale in North Las Vegas, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'North Las Vegas: City Hub · All Price Points Living in North Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
-    ['Location', 'North Las Vegas, NV (incorporated city)'],
-    ['Population', '~290,000'],
-    ['Notable', 'Nellis AFB adjacent'],
-    ['Min Price', '$250K', 'gold'],
-    ['Brightline West', 'Nearby terminus'],
-    ['Mount Charleston', '30 min'],
-    ['State Income Tax', 'None'],
-    ['Property Tax Rate', '~0.6%'],
+    ['Established', '1946'],
+    ['Developer', 'Multiple developers'],
+    ['Total Acreage', '101.3 sq mi'],
+    ['Homes', '60,000+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$250K–$600K'],
+    ['ZIP Codes', '89030, 89031, 89032, 89081, 89084, 89085, 89086'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$0–$250/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '~25 min', destination: 'to the Strip', route: 'via I-15 S or US-95 S' },
-    { time: '~30 min', destination: 'to Mount Charleston', route: 'via US-95 N → NV-157' },
-    { time: '~20 min', destination: 'to Downtown Las Vegas', route: 'via US-95 S' },
-    { time: '~35 min', destination: 'to Harry Reid Airport', route: 'via I-15 S' },
-  ]
+    {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-15 or US-95"
+    },
+    {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15"
+    },
+    {
+        "time": "~30 min",
+        "destination": "to Henderson",
+        "route": "via I-15 → I-215"
+    },
+    {
+        "time": "~15 min",
+        "destination": "to Downtown Las Vegas",
+        "route": "via Las Vegas Blvd or I-15"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -76,70 +146,107 @@ export default async function NorthLasVegasPage() {
       <div className="breadcrumb">
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <a href="/#communities">Communities</a>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <span>North Las Vegas</span>
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="north-las-vegas-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="North Las Vegas hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">North Las Vegas, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line: string, i: number) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '800+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$250K–$1M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Property Types', '3')}</span><span className="hero-stat-lbl">Property Types</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">Daily</span><span className="hero-stat-lbl">Updates</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$250K–$600K')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in North Las Vegas</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '64px 0', background: 'var(--charcoal)', borderBottom: '1px solid var(--border-dim)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89030, 89031, 89032, 89081, 89084, 89085, 89086</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> City Hub · All Price Points</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $250K–$600K</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $0–$250/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 1946</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>North Las Vegas Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['270,000+', 'Population'],
+              ['34', 'Median Age'],
+              ['$65,000', 'Avg Household Income'],
+              ['~60,000', 'Total Households'],
+              ['58%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is North Las Vegas?</h2>
-            <p>An independent incorporated city directly north of Las Vegas — bordered by Nellis Air Force Base to the east and the Spring Mountains to the west, with Mount Charleston visible on clear days.</p>
+            <p>North Las Vegas, Nevada &mdash; North Las Vegas, Nevada.</p>
           </div>
-          <div style={{ height: '420px', borderRadius: 'var(--radius-lg)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-            <CommunityMapWrapper
-              center={[-115.117, 36.198]}
-              zoom={12}
-              boundary={[
-                [-115.21, 36.31],
-                [-115.17, 36.34],
-                [-115.09, 36.33],
-                [-115.04, 36.30],
-                [-115.02, 36.25],
-                [-115.03, 36.19],
-                [-115.07, 36.16],
-                [-115.13, 36.16],
-                [-115.18, 36.17],
-                [-115.21, 36.20],
-                [-115.21, 36.31],
-              ]}
-              name="North Las Vegas"
-              subtitle="North Las Vegas, Nevada"
-              id="north-las-vegas-map"
-            />
+          <div className="map-container">
+            <NorthLasVegasMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -150,41 +257,45 @@ export default async function NorthLasVegasPage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings · Updated Daily</span>
-            <h2>New North Las Vegas Listings</h2>
-            <p>The latest homes listed in North Las Vegas — houses, condos, and townhomes across Aliante, Eldorado, Providence, and all city neighborhoods.</p>
+            <h2 className="listings-title">NEW NORTH LAS VEGAS LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":250000,"locations":[{"city":"North Las Vegas","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_searchWidget" />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"city":"North Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"North Las Vegas","zipCodes":["89030","89031","89032","89081","89084","89085","89086"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=North+Las+Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All North Las Vegas Listings →</a>
-            <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=North%20Las%20Vegas&s[locations][0][state]=NV&s[keywords]=North%20Las%20Vegas" target="_blank" rel="noopener noreferrer" className="btn-gold">View All North Las Vegas Listings &rarr;</a>
+            <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
-              <h2>North Las Vegas: Nevada&apos;s Fastest-Growing City</h2>
-              <p>North Las Vegas is its own incorporated city — a separate municipality with its own mayor, city council, police department, and city services, not a neighborhood within Las Vegas. With a population approaching 300,000, it&apos;s Nevada&apos;s fourth-largest city and one of the fastest-growing municipalities in the country. The city has invested heavily in infrastructure over the past decade, adding parks, libraries, and improving roads in response to explosive growth.</p>
-              <p>Real estate is anchored by two large master-planned communities — Aliante and Eldorado — plus the newer Apex/Lamb industrial corridor development bringing major employers like Brightline West&apos;s Nevada terminus and a growing logistics and distribution center cluster. For first-time buyers and investors, North Las Vegas offers some of the most affordable quality housing in the metro at prices that still make California buyers feel like they&apos;ve found something unreasonable.</p>
-              <p>The city has been aggressively courting tech and manufacturing, and an Amazon distribution center, IKEA, and Brightline West high-speed rail terminus are all within or adjacent to the city limits. These employment anchors are building a rental demand base that makes North Las Vegas increasingly attractive to investors alongside owner-occupants.</p>
+              <h2>{overviewTitle}</h2>
+              {cms?.overviewBody?.length ? (
+                <PortableText value={cms.overviewBody} />
+              ) : (
+                <>
+                  <p>North Las Vegas is one of the fastest-growing cities in Nevada and an increasingly attractive destination for homebuyers seeking value, new construction, and a family-friendly environment. With a population exceeding 270,000, North Las Vegas has transformed dramatically over the past two decades — from a small, overlooked city north of the Strip into a hub of modern master-planned communities, new school construction, and major economic development.</p>
+                  <p>The city's residential landscape spans from established neighborhoods near downtown to brand-new master-planned communities along the northern and northwestern corridors. Aliante is the most well-known, a mature master-planned community with a championship golf course, casino resort, and parks. Newer communities like Skye Canyon, Heartland at Tule Springs, and The Villages at Tule Springs offer brand-new construction from national builders at price points that are typically $50,000–$100,000 below comparable homes in Henderson or Summerlin.</p>
+                  <p>North Las Vegas has attracted significant economic investment, with Amazon, Sephora, and other major employers building distribution and logistics centers that have brought thousands of jobs to the city. The VA Southern Nevada Healthcare System campus in North Las Vegas serves the region's veteran population. Las Vegas Motor Speedway, the Craig Ranch Regional Park, and the new Tule Springs Fossil Beds National Monument add recreation and cultural amenities.</p>
+                  <p>For homebuyers, North Las Vegas represents the best value proposition in the Las Vegas Valley. New-construction single-family homes from the mid-$200s, established communities with parks and schools, and improving infrastructure make it an excellent choice for first-time buyers, families, and investors. The US-95 and I-15 corridors provide 20–30 minute commute access to the Strip, downtown Las Vegas, and the valley's employment centers.</p>
+                </>
+              )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>North Las Vegas At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -192,7 +303,7 @@ export default async function NorthLasVegasPage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore North Las Vegas? Let&apos;s schedule a tour of the communities and listings that match your goals.</p>
+                <p>Ready to explore North Las Vegas? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -200,23 +311,21 @@ export default async function NorthLasVegasPage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why North Las Vegas</span>
-            <h2>The Reasons Buyers Are Choosing North Las Vegas</h2>
-            <p>Affordability, growth, master-planned communities, and a job market expanding faster than any other part of the valley.</p>
+            <h2>What Makes North Las Vegas Stand Out</h2>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '💰', title: 'Affordable Entry Prices', body: "North Las Vegas offers the lowest entry point for quality housing in the Las Vegas metro. With homes starting under $300K, buyers who are priced out of Summerlin or Henderson find North Las Vegas gives them new construction, master-planned amenities, and solid schools at a fraction of the cost." },
-              { icon: '🏘️', title: 'Aliante Master-Planned Community', body: "Aliante is North Las Vegas's showpiece development — a fully planned community with its own golf club, community center, shopping center anchored by the Aliante Casino, parks, and trails. It's the most desirable neighborhood in the city and consistently outperforms the broader North Las Vegas market on resale." },
-              { icon: '✈️', title: 'Nellis AFB Proximity', body: "Nellis Air Force Base, one of the largest and busiest Air Force installations in the country, sits on the eastern edge of North Las Vegas. Military families seeking VA loan purchases near base represent a strong and consistent buyer pool — and a reliable rental market for investors targeting VA-eligible tenants." },
-              { icon: '🚄', title: 'Brightline West Rail Terminus', body: "Brightline West's high-speed passenger rail will connect the Las Vegas area to Southern California with the Nevada terminus in the North Las Vegas corridor. This creates long-term transit-oriented development opportunities and positions the area favorably for California buyers and commuters." },
-              { icon: '⛷️', title: 'Mount Charleston 30 Minutes Away', body: "The Spring Mountains and Mount Charleston — offering skiing, hiking, and cool-elevation relief from valley heat — sit 30 minutes from most North Las Vegas addresses. This access to year-round mountain recreation is a genuine quality-of-life differentiator unavailable from Henderson or the south valley." },
-              { icon: '📈', title: 'Strong Job Growth', body: "North Las Vegas has attracted Amazon distribution, IKEA, and a growing cluster of logistics and light manufacturing employers to its Apex industrial corridor. These jobs create rental demand and support home values independent of Strip tourism cycles — a meaningful stabilizer for the local market." },
-            ].map(h => (
+              { title: 'Best Value in the Valley', body: 'New-construction homes from the mid-$200s — typically $50K–$100K below comparable homes in Henderson or Summerlin. The strongest value proposition in the Las Vegas metro.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+              { title: 'New Master-Planned Communities', body: 'Aliante, Skye Canyon, Heartland at Tule Springs, and Sunstone offer modern master-planned living with parks, trails, and community amenities.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Major Economic Growth', body: 'Amazon, Sephora, and other major employers have built facilities in North Las Vegas, bringing thousands of jobs and driving housing demand and appreciation.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Craig Ranch Regional Park', body: 'One of the largest municipal parks in the Las Vegas Valley with 170 acres of sports fields, skate parks, water playgrounds, and walking trails.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'Active New Construction', body: 'Multiple national builders delivering new homes across several communities. Lennar, KB Home, Richmond American, DR Horton, and others offer a wide range of floor plans.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Improving Infrastructure', body: 'New schools, roads, parks, and commercial development continue to transform North Las Vegas. The city\'s investment in infrastructure supports long-term value appreciation.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -227,126 +336,76 @@ export default async function NorthLasVegasPage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <NorthLasVegasFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Find Your Neighborhood in North Las Vegas</h2>
-            <p>From master-planned Aliante to affordable starter neighborhoods — North Las Vegas has options for first-time buyers, investors, and growing families.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Aliante', type: 'Master-Planned · Golf', desc: "North Las Vegas's most desirable community. Dedicated golf club, community center, casino and retail anchors, parks, and trails. Consistent resale performance and the strongest long-term appreciation track record in the city.", price: 'From $350K' },
-              { name: 'Eldorado', type: 'Established · Master-Planned', desc: 'One of the original large master-planned communities in North Las Vegas. Established landscaping, community parks, and a broad range of home sizes and price points. Good schools and stable neighborhood character.', price: 'From $300K' },
-              { name: 'The Crossings', type: 'Family · Newer Construction', desc: 'A newer community on the northern edge of North Las Vegas with contemporary home designs, good school zoning, and proximity to the growing retail and employment base in the city\'s north sector.', price: 'From $375K' },
-              { name: 'Deer Valley', type: 'Affordable · Family', desc: 'One of the more affordable established neighborhoods in North Las Vegas. Larger lot sizes relative to price, well-maintained streets, and convenient access to US-95 for commuting throughout the valley.', price: 'From $280K' },
-              { name: 'Sunrise Estates', type: 'Affordable · Entry-Level', desc: "An accessible neighborhood for first-time buyers and investors. Proximity to Nellis AFB makes it popular with military families. Strong rental demand and a steady buyer pool driven by VA loan eligibility.", price: 'From $280K' },
-              { name: 'Providence', type: 'Master-Planned · Premium', desc: "One of North Las Vegas's newer and more upscale planned communities on the western edge of the city. Contemporary architecture, community parks, and a higher price point that reflects newer construction and amenities.", price: 'From $400K' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Las Vegas', href: '/summerlin/', price: 'From $300K', compare: 'The broader Las Vegas metro including Summerlin, Southern Highlands, and central neighborhoods.' },
+              { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Las Vegas\' premier west-side master plan. Higher prices but more established infrastructure.' },
+              { name: 'Henderson', href: '/henderson/', price: 'From $300K', compare: 'Nevada\'s second-largest city. Safer reputation and more upscale communities.' },
+              { name: 'Centennial Hills', href: '/centennial-hills/', price: 'From $400K', compare: 'Established community straddling the LV/NLV border with family-friendly neighborhoods.' },
+              { name: 'Aliante', href: '/aliante/', price: 'From $350K', compare: 'North Las Vegas\' premier master-planned community with golf, casino, and parks.' },
+              { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $450K', compare: 'Premium new-construction master plan in the northwest with mountain views.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&h=600&q=80'} alt="North Las Vegas neighborhood with mountain backdrop" />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Outdoor Living &amp; Recreation</span>
-              <div className="gold-rule" />
-              <h2>Mountains, Desert, and a City Growing Into Itself</h2>
-              <p>North Las Vegas sits at the foot of the Spring Mountains, giving residents quicker access to Mount Charleston&apos;s skiing, hiking, and cool-weather escapes than any other Las Vegas metro community. At 8,000+ feet, Charleston Peak is visible from most of the city on clear days.</p>
-              <p>The Aliante Town Center brings walkable retail, dining, and entertainment to the community&apos;s core. Nellis AFB adds a military community network of services and recreation. Lake Mead&apos;s boating and hiking sits 30 minutes southeast, rounding out a strong outdoor recreation portfolio.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  'Mount Charleston — skiing, hiking, and cool-weather elevation relief within 30 min',
-                  'Aliante Town Center — walkable dining, retail, and casino entertainment',
-                  'Nellis AFB — community services, recreation programs, and a strong military network',
-                  'Lake Mead National Recreation Area — boating and hiking 30 min southeast',
-                  'Craig Ranch Regional Park — 164 acres of trails, sports fields, and open space',
-                  'Valley of Fire State Park — stunning red rock landscapes 45 min east',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your North Las Vegas Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in North Las Vegas, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving North Las Vegas Families</h2>
-            <p>North Las Vegas is served by CCSD (Clark County School District), with several strong options in the Aliante and Providence areas.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Elementary (CCSD)</h3>
-              {[
-                ['Aliante Elementary School', 'K–5'],
-                ['Staton Elementary School', 'K–5'],
-                ['Multiple CCSD Elementary Schools', 'K–5'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Public High Schools (CCSD)</h3>
-              {[
-                ['Legacy High School', '9–12'],
-                ['Shadow Ridge High School', '9–12'],
-                ['Mojave High School', '9–12'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Higher Education</h3>
-              {[
-                ['Charter School Options (×3)', 'Various'],
-                ['College of Southern Nevada (N. Las Vegas)', 'Post-secondary'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{ marginTop: '24px', padding: '18px', background: 'rgba(201,168,76,0.06)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', fontSize: '13px', color: 'var(--white-70)', lineHeight: '1.7' }}>
-                <strong style={{ color: 'var(--white)' }}>School Assignment Note:</strong> Zoning varies by neighborhood and address within North Las Vegas. Always confirm your specific assignment with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="North Las Vegas Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <CommunityFAQ
-        title="North Las Vegas — Frequently Asked Questions"
-        subtitle="Answers to the most common questions from buyers and investors considering North Las Vegas."
-        faqs={northLVFaqs}
-      />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your North Las Vegas Home?</h2>
-          <p>Nevada&apos;s fastest-growing city — master-planned communities, affordable prices, and a job market that&apos;s building lasting value for buyers who move early.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="https://www.nevadarealestategroup.com/free-market-analysis/" target="_blank" rel="noopener noreferrer" className="btn-outline">Free Market Analysis</a>
-          </div>
-          <p style={{ marginTop: '24px', fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>Nevada Lic. #S.0181401.LLC · lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

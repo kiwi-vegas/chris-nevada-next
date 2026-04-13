@@ -1,49 +1,142 @@
-import CommunityFAQ from '@/components/CommunityFAQ'
-import CommunityMapWrapper from '@/components/CommunityMapWrapper'
+import GreenValleyRanchFAQ from '@/components/GreenValleyRanchFAQ'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import GreenValleyRanchMapWrapper from '@/components/GreenValleyRanchMapWrapper'
+import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Green Valley Ranch', item: 'https://www.lasvegashomesearchexperts.com/green-valley-ranch/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Green Valley Ranch?",
+    "a": "Homes in Green Valley Ranch range from approximately $400,000 for smaller resale homes to $900,000 for larger estate-style properties on premium lots. The community offers a well-defined mid-range that appeals to families and move-up buyers."
+  },
+  {
+    "q": "Is Green Valley Ranch guard-gated?",
+    "a": "No. Green Valley Ranch is not a guard-gated community. It is an open master-planned community with active HOA governance and the safety benefits of Henderson — one of America's safest large cities."
+  },
+  {
+    "q": "What ZIP codes is Green Valley Ranch in?",
+    "a": "Green Valley Ranch spans ZIP codes 89012, 89052, and 89074 in Henderson, Nevada."
+  },
+  {
+    "q": "What are HOA fees in Green Valley Ranch?",
+    "a": "HOA fees in Green Valley Ranch typically range from $60 to $180 per month, covering common area maintenance, community parks, landscaping, and HOA governance."
+  },
+  {
+    "q": "What schools serve Green Valley Ranch?",
+    "a": "Green Valley Ranch feeds into some of Henderson's top-rated schools including Nate Mack Elementary (8/10), Bob Miller Middle School (7/10), and Green Valley High School (7/10). Private and charter options are also available nearby."
+  },
+  {
+    "q": "Is the Green Valley Ranch Resort part of the community?",
+    "a": "Green Valley Ranch Resort Casino & Spa is located within the community and serves as a neighborhood amenity, but it is a separate commercial property — not a community amenity included in HOA fees. Residents enjoy the dining, spa, and entertainment as paying guests."
+  },
+  {
+    "q": "When were homes in Green Valley Ranch built?",
+    "a": "Green Valley Ranch was developed from the mid-1990s through the mid-2000s across multiple phases. The community features mature landscaping, tree-lined streets, and a settled character."
+  },
+  {
+    "q": "How does Green Valley Ranch compare to Summerlin?",
+    "a": "Both are premier master-planned communities. Summerlin is on the west side near Red Rock Canyon with a broader price range. Green Valley Ranch is in Henderson with a focus on family-friendly living, top schools, and central convenience. Both offer excellent quality of life at similar entry-level price points."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Green Valley Ranch',
+  description: 'Green Valley Ranch is a master-planned · established community in Henderson, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.05, longitude: -115.085 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89012', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Henderson' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('green-valley-ranch')
   return {
-    title: cms?.metaTitle ?? 'Green Valley Ranch Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? "Browse homes for sale in Green Valley Ranch, Henderson — Henderson's most walkable master-planned community with top-rated CCSD schools, the District town center, and Green Valley Ranch Resort. Homes from $450K. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Green Valley Ranch Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Green Valley Ranch homes for sale in Henderson, NV. $400K–$900K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
 export default async function GreenValleyRanchPage() {
   const cms = await getCommunityPage('green-valley-ranch')
+  const market = getMarketStats('green-valley-ranch')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Green Valley Ranch\nHomes For Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Henderson's most walkable and established master-planned community — anchored by the Green Valley Ranch Resort & Spa, a vibrant town center, and some of CCSD's most consistently top-rated schools."
+  const heroHeadline = cms?.heroHeadline ?? 'Green Valley Ranch'
+  const heroSubtitle = 'Homes for Sale in Henderson, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Green Valley Ranch: Master-Planned · Established Living in Henderson'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
-    ['Location', 'Green Valley, Henderson, NV'],
-    ['Developer', 'American Nevada Corp'],
-    ['Built', '1980s–2000s'],
-    ['Min Price', '$450K', 'gold'],
-    ['HOA', '$60–$160/mo'],
-    ['Resort', 'Green Valley Ranch Resort & Spa'],
-    ['Town Center', 'The District at GVR'],
-    ['Distance to Strip', '~15 min'],
-    ['Distance to Airport', '~15 min'],
-    ['Distance to Lake Mead', '~20 min'],
-    ['State Income Tax', 'None'],
-    ['Property Tax Rate', '~0.6%'],
+    ['Established', '1994'],
+    ['Developer', 'American Nevada Corporation'],
+    ['Total Acreage', '~1,600 acres'],
+    ['Homes', '6,000+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$400K–$900K'],
+    ['ZIP Codes', '89012, 89052, 89074'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$60–$180/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '~15 min', destination: 'to the Strip', route: 'via I-215 W → I-15 N' },
-    { time: '~15 min', destination: 'to Harry Reid Airport', route: 'via I-215 W' },
-    { time: '~20 min', destination: 'to Downtown Las Vegas', route: 'via I-215 W → US-95 N' },
-    { time: '~20 min', destination: 'to Lake Mead', route: 'via Lake Mead Dr E' },
-  ]
+    {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~5 min",
+        "destination": "to The District",
+        "route": "via Green Valley Pkwy"
+    },
+    {
+        "time": "~10 min",
+        "destination": "to Galleria at Sunset",
+        "route": "via Sunset Rd"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -53,58 +146,107 @@ export default async function GreenValleyRanchPage() {
       <div className="breadcrumb">
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <a href="/#communities">Communities</a>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <span>Green Valley Ranch</span>
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="green-valley-ranch-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Green Valley Ranch hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">Henderson, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '300+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$450K–$2M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Property Types', '3')}</span><span className="hero-stat-lbl">Property Types</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">Daily</span><span className="hero-stat-lbl">Updates</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$400K–$900K')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Green Valley Ranch</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '64px 0', background: 'var(--charcoal)', borderBottom: '1px solid var(--border-dim)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89012, 89052, 89074</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Master-Planned · Established</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $400K–$900K</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $60–$180/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 1994</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Green Valley Ranch Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['~17,000', 'Population'],
+              ['42', 'Median Age'],
+              ['$100,000', 'Avg Household Income'],
+              ['~6,000', 'Total Households'],
+              ['75%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Green Valley Ranch?</h2>
-            <p>Located in the Green Valley area of Henderson — convenient to the I-215 beltway, Harry Reid Airport, and the Las Vegas Strip.</p>
+            <p>Henderson, Nevada &mdash; Henderson, Nevada.</p>
           </div>
-          <div style={{ height: '420px', borderRadius: 'var(--radius-lg)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-            <CommunityMapWrapper
-              center={[-115.070, 36.037]}
-              zoom={13}
-              boundary={[[-115.10,36.06],[-115.06,36.06],[-115.03,36.05],[-115.02,36.03],[-115.03,36.01],[-115.06,36.00],[-115.10,36.00],[-115.12,36.02],[-115.12,36.04],[-115.10,36.06]]}
-              name="Green Valley Ranch"
-              subtitle="Henderson, Nevada"
-              id="green-valley-ranch-map"
-            />
+          <div className="map-container">
+            <GreenValleyRanchMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -115,42 +257,45 @@ export default async function GreenValleyRanchPage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings · Updated Daily</span>
-            <h2>New Green Valley Ranch Listings</h2>
-            <p>The latest homes listed in Green Valley Ranch — houses, condos, and townhomes starting at $450K in Henderson&apos;s most established community.</p>
+            <h2 className="listings-title">NEW GREEN VALLEY RANCH LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":450000,"locations":[{"community":"Green Valley Ranch","city":"Henderson","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_searchWidget" />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":350000,"locations":[{"city":"Henderson","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Green Valley Ranch","zipCodes":["89012","89052","89074"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=Green+Valley+Ranch&s[locations][0][city]=Henderson&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Green Valley Ranch Listings →</a>
-            <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Green%20Valley%20Ranch" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Green Valley Ranch Listings &rarr;</a>
+            <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
-              <h2>Green Valley Ranch: Henderson&apos;s Gold Standard for Master-Planned Living</h2>
-              <p>Green Valley Ranch is Henderson&apos;s flagship master-planned community — developed by American Nevada Corporation starting in the 1980s and widely regarded as the template for what large-scale planned communities in the Southwest should look like. It was here before most of the valley&apos;s current development, and that head start shows in everything from the tree canopy to the school quality.</p>
-              <p>The centerpiece is the District at Green Valley Ranch — an outdoor lifestyle center that predated the modern mixed-use trend and has only gotten better with age. Restaurants, boutiques, a Whole Foods, a Regal Cinema, and direct access to the Green Valley Ranch Resort & Spa make it the kind of walkable town center most master-planned communities in the Southwest never manage to build. Residents walk to it. That sounds simple but it&apos;s genuinely rare in Las Vegas.</p>
-              <p>The community features mature tree-lined streets that set it apart from almost every other Las Vegas suburb. Trees here have had 30–40 years to mature, and the effect on walkability and livability is real. Connected path networks tie neighborhoods together without requiring a car for every trip.</p>
-              <p>Green Valley Ranch consistently ranks in the top 10 for CCSD school performance across its feeder pattern. For families relocating from quality school markets in California or other states, this is often the deciding factor. Coronado High School, which serves much of the community, is among Southern Nevada&apos;s highest-ranked public schools.</p>
+              <h2>{overviewTitle}</h2>
+              {cms?.overviewBody?.length ? (
+                <PortableText value={cms.overviewBody} />
+              ) : (
+                <>
+                  <p>Green Valley Ranch is one of the most desirable and well-established master-planned communities in the Las Vegas Valley. Developed by American Nevada Corporation beginning in the mid-1990s, the community spans approximately 1,600 acres in the heart of Henderson and has become synonymous with family-friendly living, top-rated schools, beautiful parks, and everyday convenience.</p>
+                  <p>The community is anchored by Green Valley Ranch Resort Casino & Spa — a AAA Four-Diamond property that serves as a world-class dining, entertainment, and relaxation destination right in the neighborhood. The District at Green Valley Ranch adds an outdoor lifestyle shopping center with boutiques, restaurants, and entertainment. Combined with multiple grocery stores, medical facilities, and professional services, Green Valley Ranch offers a complete live-work-play environment.</p>
+                  <p>Homes in Green Valley Ranch range from approximately $400,000 for well-maintained resale homes with 1,500–2,000 square feet to $900,000 for larger estate-style properties on premium lots with mountain and valley views. The community features a mix of national builders including Pardee, American West, and Pulte who delivered homes across multiple phases. Mature landscaping, tree-lined streets, and well-maintained common areas give the community a polished, established character.</p>
+                  <p>Green Valley Ranch's central Henderson location provides outstanding connectivity. The I-215 beltway and Green Valley Parkway are the community's primary corridors, offering 20-minute access to the Strip, Harry Reid Airport, and Summerlin. The community is served by several of Henderson's highest-rated CCSD schools, making it one of the most popular choices for families relocating to the Las Vegas area.</p>
+                </>
+              )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Green Valley Ranch At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -158,7 +303,7 @@ export default async function GreenValleyRanchPage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Green Valley Ranch? Let&apos;s schedule a private tour of the community and the listings that match your goals.</p>
+                <p>Ready to explore Green Valley Ranch? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -166,23 +311,21 @@ export default async function GreenValleyRanchPage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Green Valley Ranch</span>
-            <h2>What Makes Green Valley Ranch Henderson&apos;s Most Consistent Community</h2>
-            <p>Schools, walkability, a real town center, and 40 years of quality — here&apos;s why Green Valley Ranch consistently outperforms Henderson&apos;s broader market.</p>
+            <h2>What Makes Green Valley Ranch Stand Out</h2>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '🏨', title: 'Green Valley Ranch Resort On-Site', body: "The Green Valley Ranch Resort & Spa is one of Henderson's best full-service hotel and entertainment properties — and it's inside the community. Residents have dining, spa services, and entertainment within walking distance of their front door." },
-              { icon: '🛍️', title: 'The District Town Center', body: "The District at Green Valley Ranch is a genuine mixed-use lifestyle center — not a strip mall, a real walkable outdoor district. Whole Foods, boutiques, restaurants, a cinema, and direct hotel access in one connected space. Rare in the Las Vegas Valley." },
-              { icon: '🌳', title: 'Mature Tree Canopy', body: "Planted in the 1980s and 90s, the trees throughout Green Valley Ranch have had decades to mature. Walking through the community feels entirely different from newer Las Vegas suburbs — shaded, established, and genuinely livable." },
-              { icon: '🎓', title: 'Top-Ranked CCSD Schools', body: "Green Valley Ranch's feeder pattern consistently produces some of Clark County's strongest school results. Coronado High School routinely ranks in the top tier of Southern Nevada public schools for academics and extracurriculars." },
-              { icon: '🚶', title: 'Connected Paths & Walkability', body: "Green Valley Ranch was designed with pedestrian connectivity in mind before walkability was a marketing term. Internal paths connect neighborhoods, parks, and the District — and residents actually use them." },
-              { icon: '🏠', title: 'Proven Long-Term Value', body: "Green Valley Ranch has been one of Henderson's most consistently appreciating communities across multiple market cycles. The combination of school quality, amenity infrastructure, and established character creates durable demand." },
-            ].map(h => (
+              { title: 'GVR Resort Casino & Spa', body: 'AAA Four-Diamond resort right in the neighborhood. Fine dining, spa, pool complex, movie theater, and entertainment — all within minutes of home.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'The District Shopping', body: 'Outdoor lifestyle shopping center with restaurants, boutiques, and entertainment. Walkable from many GVR neighborhoods and a community gathering place.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'Top-Rated Schools', body: 'Green Valley Ranch feeds into some of Henderson\'s highest-rated CCSD schools. One of the top reasons families choose GVR over other Henderson communities.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Henderson Safety', body: 'Henderson consistently ranks among the top 10 safest large cities in America. Green Valley Ranch benefits from low crime rates and responsive city services.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+              { title: 'Established & Mature', body: 'Tree-lined streets, mature landscaping, and a settled community character. Over 6,000 homes built across a 15+ year build-out with a strong sense of community.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Excellent Connectivity', body: 'Central Henderson location with I-215 beltway access. 20 minutes to the Strip, Harry Reid Airport, and every quadrant of the valley.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -193,156 +336,76 @@ export default async function GreenValleyRanchPage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <GreenValleyRanchFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Neighborhoods Within Green Valley Ranch</h2>
-            <p>From walkable attached communities to guard-gated single-family enclaves — Green Valley Ranch covers a broad range of product types and price points.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Tuscany', type: 'Mediterranean · Established', desc: 'Italian-inspired architecture, guard-gated sections, and some of the community&apos;s most desirable single-family homes. Consistent resale demand and mature landscaping throughout.', price: 'From $600K' },
-              { name: 'Anthem Highlands', type: 'Guard-Gated · Premium', desc: 'One of the more upscale gated sections within the broader Green Valley Ranch area. Larger homes, strong views in elevated positions, and top school zoning.', price: 'From $700K' },
-              { name: 'The Fountains', type: 'Established · Single-Family', desc: 'A well-established neighborhood with a mix of single-story and two-story homes. Popular with families for its proximity to parks, schools, and the District.', price: 'From $500K' },
-              { name: 'Willowbrook', type: 'Family · Walkable', desc: 'One of the community&apos;s more walkable neighborhoods — close to the path network and within easy reach of the District. A mix of product types and price points.', price: 'From $475K' },
-              { name: 'Tiara', type: 'Accessible · Established', desc: "An accessible entry point into Green Valley Ranch's desirable feeder pattern. Solid school zoning, community path access, and a consistent resale market.", price: 'From $450K' },
-              { name: 'Hampton Cove', type: 'Mid-Range · Community Feel', desc: 'A mid-range neighborhood with good access to community amenities. Popular with buyers who want the Green Valley Ranch lifestyle without the premium of the top-tier sections.', price: 'From $550K' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Guard-gated Henderson community with Rio Secco golf and Strip views.' },
+              { name: 'Anthem', href: '/anthem/', price: 'From $400K', compare: 'Henderson\'s largest master plan with guard-gated golf, 55+, and family neighborhoods.' },
+              { name: 'Tuscany Village', href: '/tuscany-village/', price: 'From $400K', compare: 'Guard-gated golf community adjacent to Green Valley Ranch with Chimera Golf Club.' },
+              { name: 'Whitney Ranch', href: '/whitney-ranch/', price: 'From $350K', compare: 'Established central Henderson community with similar convenience at lower price points.' },
+              { name: 'MacDonald Highlands', href: '/macdonald-highlands/', price: 'From $800K', compare: 'Henderson\'s ultra-luxury community with DragonRidge Country Club.' },
+              { name: 'Cadence', href: '/cadence/', price: 'From $350K', compare: 'Henderson\'s newest master plan with new construction and modern amenities.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&h=600&q=80'} alt="Beautiful home in Green Valley Ranch, Henderson Nevada" />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Community Living</span>
-              <div className="gold-rule" />
-              <h2>Walkable, Established, and Actually Livable</h2>
-              <p>Green Valley Ranch was planned around the idea that a community should work as a community — that residents should be able to walk to a restaurant, a park, or a school without getting in a car. That planning philosophy has aged extremely well in a valley where most suburbs are the opposite.</p>
-              <p>The District at Green Valley Ranch is the community&apos;s living room — an outdoor lifestyle center where residents actually go on weeknights and weekends. It&apos;s the kind of place that creates the community feel that master-planned developments usually only claim to have.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  'The District at Green Valley Ranch — walkable outdoor lifestyle center, dining, Whole Foods, cinema',
-                  'Green Valley Ranch Resort & Spa — on-site dining, spa, and entertainment',
-                  'Connected internal path network through all community neighborhoods',
-                  'Multiple community parks with sports facilities, playgrounds, and green space',
-                  'Mature tree canopy — 30–40+ years of growth setting the community apart visually',
-                  'Harry Reid Airport 15 minutes — ideal for frequent travelers',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Green Valley Ranch Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Green Valley Ranch, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Green Valley Ranch Families</h2>
-            <p>One of Henderson&apos;s strongest school feeder patterns — consistently top-ranked public schools and excellent private options nearby.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[
-                ['Henry Elementary School', 'K–5'],
-                ['Del E. Webb Middle School', '6–8'],
-                ['Coronado High School', '9–12'],
-                ['Green Valley High School', '9–12'],
-                ['Multiple CCSD Elementary Options', 'K–5'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Charter Nearby</h3>
-              {[
-                ['Pinecrest Academy of Nevada', 'PreK–12'],
-                ['Henderson International School', 'PreK–8'],
-                ['Alexander Dawson School', 'K–8'],
-                ['Desert Christian Academy', 'K–12'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Magnet</h3>
-              {[
-                ['STEM Academy at Pinecrest', '6–8'],
-                ['Nevada State High School', '11–12'],
-                ['Advanced Technologies Academy', '9–12'],
-                ['Charter School Options (×3)', 'Various'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{ marginTop: '24px', padding: '18px', background: 'rgba(201,168,76,0.06)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', fontSize: '13px', color: 'var(--white-70)', lineHeight: '1.7' }}>
-                <strong style={{ color: 'var(--white)' }}>School Assignment Note:</strong> Zoning varies by neighborhood and address within Green Valley Ranch. Always confirm your specific assignment with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Green Valley Ranch Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <CommunityFAQ
-        title="Green Valley Ranch Henderson — Common Questions"
-        subtitle="Answers to what buyers most often ask about Green Valley Ranch in Henderson."
-        faqs={[
-          {
-            q: "How does Green Valley Ranch compare to Henderson Anthem?",
-            a: "Green Valley Ranch and Anthem are Henderson's two most consistently desirable master-planned communities, but they serve different buyer profiles. Green Valley Ranch is more central, more walkable, and more established — it's ideal for buyers who want the District town center, airport proximity, and mature community character. Anthem is further south, more suburban in scale, and better suited for buyers who prioritize guard-gated living, the Anthem Community Center, and hillside views with Strip vistas. Green Valley Ranch tends to have a slightly lower entry price; Anthem has stronger guard-gated options at mid-price."
-          },
-          {
-            q: "What are the HOA fees in Green Valley Ranch?",
-            a: "HOA fees in Green Valley Ranch typically range from $60–$160 per month depending on the specific neighborhood and property type. The master HOA covers common area maintenance, community paths, and shared amenities. Some gated sub-neighborhoods have additional sub-association fees. Always confirm total monthly dues with your real estate agent before purchasing."
-          },
-          {
-            q: "Is Green Valley Ranch actually walkable?",
-            a: "Yes — more than almost any other community in the Las Vegas Valley. The internal path network connects neighborhoods, and the District at Green Valley Ranch is within walking distance of a significant portion of the community. Most residents can walk to the District, the resort, and community parks without driving. It's one of the primary reasons the community commands a consistent premium in the Henderson market."
-          },
-          {
-            q: "How are the schools in Green Valley Ranch?",
-            a: "Green Valley Ranch has one of Henderson's strongest school feeder patterns. Coronado High School, which serves much of the community, is consistently among the top-ranked public high schools in Clark County. Middle and elementary schools in the feeder pattern also perform well above the CCSD average. Private options including Pinecrest Academy are also nearby."
-          },
-          {
-            q: "What is the price range in Green Valley Ranch?",
-            a: "Homes in Green Valley Ranch range from approximately $450K for entry-level condos and townhomes to $2M+ for larger single-family homes in premium positions. The sweet spot for single-family homes is typically $550K–$900K. Guard-gated sections and homes with direct access to the District or path network command a premium over comparable properties elsewhere in the community."
-          },
-          {
-            q: "How far is Green Valley Ranch from Harry Reid Airport?",
-            a: "Harry Reid International Airport is approximately 15 minutes from most Green Valley Ranch addresses via I-215 West. This proximity makes Green Valley Ranch particularly appealing for frequent travelers and business buyers who need easy airport access — it's a practical advantage that most of Henderson's other desirable communities can't match."
-          },
-        ]}
-      />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Green Valley Ranch Home?</h2>
-          <p>Henderson&apos;s most established master-planned community — top schools, a walkable town center, and a character that newer developments can&apos;t replicate.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="https://www.nevadarealestategroup.com/free-market-analysis/" target="_blank" rel="noopener noreferrer" className="btn-outline">Free Market Analysis</a>
-          </div>
-          <p style={{ marginTop: '24px', fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>Nevada Lic. #S.0181401.LLC · lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

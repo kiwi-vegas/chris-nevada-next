@@ -2,24 +2,7 @@
 import { useEffect, useRef } from 'react'
 
 const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''
-
-// Center of Cadence — south Henderson near Lake Mead Pkwy & Boulder Hwy
-const CENTER: [number, number] = [-114.960, 36.015]
-
-// Approximate Cadence boundary polygon
-const BOUNDARY: [number, number][] = [
-  [-114.978, 36.030], // NW
-  [-114.963, 36.033], // N
-  [-114.945, 36.030], // NE — near Boulder Hwy
-  [-114.938, 36.022], // E
-  [-114.937, 36.010], // SE
-  [-114.940, 36.000], // S
-  [-114.952, 35.996], // S
-  [-114.968, 35.998], // SW
-  [-114.980, 36.005], // W
-  [-114.982, 36.018], // W
-  [-114.978, 36.030], // back to NW
-]
+const CENTER: [number, number] = [-114.968, 36.05]
 
 export default function CadenceMap() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -27,15 +10,11 @@ export default function CadenceMap() {
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return
-
     let map: any
-
     const init = async () => {
       const mapboxgl = (await import('mapbox-gl')).default
       await import('mapbox-gl/dist/mapbox-gl.css')
-
       mapboxgl.accessToken = TOKEN
-
       map = new mapboxgl.Map({
         container: containerRef.current!,
         style: 'mapbox://styles/mapbox/light-v11',
@@ -45,91 +24,44 @@ export default function CadenceMap() {
         pitchWithRotate: false,
         dragRotate: false,
       })
-
       mapRef.current = map
-
       map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), 'top-right')
       map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right')
 
       map.on('load', () => {
-        map.addSource('cadence-boundary', {
-          type: 'geojson',
-          data: {
-            type: 'Feature',
-            geometry: { type: 'Polygon', coordinates: [BOUNDARY] },
-            properties: {},
-          },
-        })
-
         map.addLayer({
-          id: 'cadence-fill',
-          type: 'fill',
-          source: 'cadence-boundary',
-          paint: {
-            'fill-color': '#C9A96E',
-            'fill-opacity': 0.10,
-          },
+          id: 'dim-overlay',
+          type: 'background',
+          paint: { 'background-color': '#1B2A4A', 'background-opacity': 0.25 },
         })
-
-        map.addLayer({
-          id: 'cadence-outline',
-          type: 'line',
-          source: 'cadence-boundary',
-          paint: {
-            'line-color': '#C9A96E',
-            'line-width': 2,
-            'line-opacity': 0.85,
-          },
-        })
-
         const el = document.createElement('div')
-        el.style.cssText = `
-          width: 14px; height: 14px;
-          background: #C9A96E;
-          border: 2px solid #fff;
-          border-radius: 50%;
-          box-shadow: 0 0 12px rgba(27,42,74,0.4);
-        `
-
+        el.style.cssText = 'width: 14px; height: 14px; background: #C9A96E; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 12px rgba(27,42,74,0.4);'
         new mapboxgl.Marker({ element: el })
           .setLngLat(CENTER)
           .setPopup(
             new mapboxgl.Popup({ offset: 16, className: 'summerlin-popup' })
-              .setHTML('<div style="font-family:Inter,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Cadence</div><div style="font-size:11px;color:#555;margin-top:2px;">Henderson, NV</div>')
+              .setHTML('<div style="font-family:DM Sans,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Cadence</div><div style="font-size:11px;color:#555;margin-top:2px;">Henderson, NV</div>')
           )
           .addTo(map)
       })
     }
-
     init()
-
-    return () => {
-      if (mapRef.current) {
-        mapRef.current.remove()
-        mapRef.current = null
-      }
-    }
+    return () => { if (mapRef.current) { mapRef.current.remove(); mapRef.current = null } }
   }, [])
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
       <div ref={containerRef} style={{ width: '100%', height: '100%', borderRadius: 'inherit' }} />
       <div style={{
-        position: 'absolute',
-        bottom: '40px',
-        left: '16px',
-        background: 'rgba(255,255,255,0.95)',
-        backdropFilter: 'blur(8px)',
-        border: '1px solid #EDE9E3',
-        borderRadius: '4px',
-        padding: '8px 12px',
-        pointerEvents: 'none',
+        position: 'absolute', bottom: '40px', left: '16px',
+        background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(8px)',
+        border: '1px solid #EDE9E3', borderRadius: '4px', padding: '8px 12px', pointerEvents: 'none',
       }}>
         <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1B2A4A', fontFamily: 'DM Sans,sans-serif' }}>
           Cadence
         </div>
         <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
-          Henderson, Nevada · ~2,200 acres
+          Henderson, Nevada · 2,200 acres
         </div>
       </div>
     </div>

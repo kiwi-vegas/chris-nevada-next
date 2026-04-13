@@ -5,47 +5,138 @@ import CadenceMapWrapper from '@/components/CadenceMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Cadence', item: 'https://www.lasvegashomesearchexperts.com/cadence/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Cadence?",
+    "a": "Homes in Cadence range from approximately $350,000 for entry-level new construction to $800,000 for premium homes in luxury neighborhoods. New construction from multiple national builders is available across the community."
+  },
+  {
+    "q": "Is Cadence guard-gated?",
+    "a": "The broader Cadence community is not guard-gated, but Heritage at Cadence — the 55+ active adult section — features its own guard-gated entry. The overall community has controlled access and active HOA management."
+  },
+  {
+    "q": "Is Cadence still building new homes?",
+    "a": "Yes. Cadence is one of the most active new-construction communities in the Las Vegas Valley. Multiple builders including Lennar, Toll Brothers, Woodside Homes, Richmond American, and Taylor Morrison are delivering new homes across multiple neighborhoods."
+  },
+  {
+    "q": "What ZIP codes is Cadence in?",
+    "a": "Cadence spans ZIP codes 89011 and 89015 in Henderson, Nevada."
+  },
+  {
+    "q": "What are HOA fees in Cadence?",
+    "a": "HOA fees in Cadence typically range from $100 to $250 per month, covering access to Central Park, the trail system, community events, and common area maintenance. Heritage at Cadence (55+) has separate fees that include guard gate and recreation center access."
+  },
+  {
+    "q": "Does Cadence have fiber internet?",
+    "a": "Yes. Cadence was designed with fiber-optic internet infrastructure to every home — one of the few master-planned communities in the valley with this distinction. This supports high-speed remote work, streaming, and smart-home connectivity."
+  },
+  {
+    "q": "What amenities does Cadence offer?",
+    "a": "Cadence features a 50-acre Central Park with resort pool and splash pad, a 50-acre sports complex, amphitheater, dog park, sports courts, and miles of interconnected walking and biking trails linking neighborhoods to parks and schools."
+  },
+  {
+    "q": "Is there a 55+ community in Cadence?",
+    "a": "Yes. Heritage at Cadence is a guard-gated 55+ active adult community within the Cadence master plan, offering single-story homes, a private recreation center, and age-restricted living."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Cadence',
+  description: 'Cadence is a master-planned · new construction community in Henderson, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.05, longitude: -114.968 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89011', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Henderson' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('cadence')
   return {
-    title: cms?.metaTitle ?? 'Cadence Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Cadence homes for sale in Henderson, NV. 2,200-acre master-planned community with a 50-acre central park, resort clubhouse, and new construction from $350K. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Cadence Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Cadence homes for sale in Henderson, NV. $350K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
 export default async function CadencePage() {
   const cms = await getCommunityPage('cadence')
+  const market = getMarketStats('cadence')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Cadence Homes\nFor Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Henderson\u2019s newest master-planned community \u2014 2,200 acres anchored by a 50-acre central park and resort-caliber clubhouse."
-  const overviewTitle = cms?.overviewTitle ?? 'Cadence: Henderson\u2019s Next Great Neighborhood'
+  const heroHeadline = cms?.heroHeadline ?? 'Cadence'
+  const heroSubtitle = 'Homes for Sale in Henderson, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Cadence: Master-Planned · New Construction Living in Henderson'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
     ['Established', '2014'],
     ['Developer', 'The LandWell Company'],
-    ['Total Acreage', '~2,200 acres'],
-    ['Planned Homes', '~13,000'],
-    ['Median Home Price', '~$500,000', 'gold'],
-    ['Neighborhoods', '20+'],
-    ['Schools', '5+ nearby'],
-    ['Central Park', '50 acres'],
-    ['Clubhouse', 'Cadence Clubhouse'],
-    ['Builders', 'Lennar, Toll Brothers, Richmond American'],
-    ['Distance to Strip', '~25 min'],
-    ['Distance to Lake Mead', '~20 min'],
+    ['Total Acreage', '2,200 acres'],
+    ['Homes', '6,500+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$350K–$800K'],
+    ['ZIP Codes', '89011, 89015'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$100–$250/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '~25 min', destination: 'to the Strip', route: 'via I-11 \u2192 I-515' },
-    { time: '~10 min', destination: 'to Water Street District', route: 'via Lake Mead Pkwy' },
-    { time: '~20 min', destination: 'to Lake Mead', route: 'via Lake Mead Pkwy East' },
-    { time: '~15 min', destination: 'to Harry Reid Airport', route: 'via I-11 \u2192 I-515' },
-  ]
+    {
+        "time": "~25 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~20 min",
+        "destination": "to Lake Mead",
+        "route": "via Lake Mead Pkwy East"
+    },
+    {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~10 min",
+        "destination": "to Downtown Henderson",
+        "route": "via Boulder Hwy"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -62,44 +153,100 @@ export default async function CadencePage() {
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="summerlin-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Cadence hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">Henderson, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '200+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$350K\u2013$800K+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Central Park', '50 acres')}</span><span className="hero-stat-lbl">Central Park</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Total Acreage', '2,200')}</span><span className="hero-stat-lbl">Acres</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$350K–$800K')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Cadence</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '32px 0 0', background: 'var(--charcoal)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89011, 89015</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Master-Planned · New Construction</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $350K–$800K</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $100–$250/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 2014</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Cadence Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['~18,000', 'Population'],
+              ['36', 'Median Age'],
+              ['$90,000', 'Avg Household Income'],
+              ['~6,500', 'Total Households'],
+              ['70%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Cadence?</h2>
-            <p>Located in east Henderson near Lake Mead Parkway &mdash; with quick access to I-11, Lake Mead, and the River Mountains Loop Trail.</p>
+            <p>Henderson, Nevada &mdash; Henderson, Nevada.</p>
           </div>
           <div className="map-container">
             <CadenceMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -110,49 +257,45 @@ export default async function CadencePage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings &middot; Updated Daily</span>
-            <h2>New Cadence Listings</h2>
-            <p>The 12 most recently listed homes in Cadence &mdash; new construction and resale starting in the mid-$300Ks.</p>
+            <h2 className="listings-title">NEW CADENCE LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"city":"Henderson","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Cadence"}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":300000,"locations":[{"city":"Henderson","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Cadence","zipCodes":["89011","89015"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Cadence" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Cadence Listings Now &rarr;</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Cadence" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Cadence Listings &rarr;</a>
             <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
               <h2>{overviewTitle}</h2>
               {cms?.overviewBody?.length ? (
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Cadence is one of those communities that quietly became one of the best deals in the Las Vegas Valley. When The LandWell Company started developing this 2,200-acre site in east Henderson around 2014, the area didn&apos;t have the name recognition of Summerlin or Inspirada. But the developers did something smart &mdash; they invested heavily in the amenity package first, and that decision is paying dividends for every homeowner in the community.</p>
-                  <p>The centerpiece is the 50-acre central park, and I&apos;m not exaggerating when I say it&apos;s one of the best community parks in Southern Nevada. Sports fields, an amphitheater for concerts and events, splash pads for the kids, walking loops, and wide open green space that actually feels like a real park &mdash; not just a patch of grass between houses. Every time I bring buyers through here, the park sells the community before I say a word.</p>
-                  <p>The Cadence Clubhouse rounds it out with resort-style pools, a full fitness center, sports courts, and year-round social programming. These are the kinds of amenities that you&apos;d pay a separate membership for in most communities, but they&apos;re bundled into your HOA &mdash; which, by the way, is remarkably reasonable for what you get.</p>
-                  <p>The builder lineup is another strength. Lennar, Toll Brothers, Richmond American, and Woodside Homes are all here, which gives buyers real variety in floor plans, finishes, and price points. Whether you&apos;re a first-time buyer looking for an efficient three-bedroom or a move-up buyer wanting a premium Toll Brothers build, Cadence has something that fits. And the location on Lake Mead Parkway puts Lake Mead itself about 20 minutes east &mdash; a proximity that no other major Henderson community can match.</p>
+                  <p>Cadence is Henderson's newest and most dynamic master-planned community. Developed by The LandWell Company on 2,200 acres in the eastern Henderson corridor, Cadence has quickly grown to over 6,500 homes since opening in 2014, with multiple phases of new construction still delivering. The community was designed from the ground up for a 21st-century active lifestyle, with over 50 acres of parks, a 50-acre sports complex, miles of interconnected trails, and fiber internet to every home.</p>
+                  <p>Cadence Central Park is the 50-acre heart of the community, featuring a resort-style swimming pool, splash pad, event amphitheater, sports courts, dog park, and extensive walking and biking trails. The community's trail network connects neighborhoods to parks, schools, and the Cadence commercial district, encouraging a walkable, active-lifestyle experience that sets it apart from older Henderson communities.</p>
+                  <p>New construction from top national builders including Lennar, Toll Brothers, Woodside Homes, Richmond American, and Taylor Morrison is available across a wide price range. Homes start in the mid-$300s for entry-level single-family residences and extend to approximately $800,000 for premium homes in the community's luxury neighborhoods. Floor plans range from 1,200 to 4,000+ square feet with contemporary open-concept designs, energy-efficient construction, and smart-home technology.</p>
+                  <p>Cadence's eastern Henderson location provides easy access to Lake Mead, Henderson's trail network, and the I-215 beltway. The community is building out its own commercial district with retail, dining, and professional services. For buyers seeking brand-new construction with modern amenities, walkable design, and Henderson's top-ranked safety, Cadence delivers one of the best values in the Las Vegas Valley.</p>
                 </>
               )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Cadence At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -160,7 +303,7 @@ export default async function CadencePage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Cadence? Let&apos;s schedule a private tour of the community and the current listings that match your goals.</p>
+                <p>Ready to explore Cadence? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -168,23 +311,21 @@ export default async function CadencePage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Cadence</span>
             <h2>What Makes Cadence Stand Out</h2>
-            <p>A modern community built around a flagship park with the builder variety and price points to match any buyer.</p>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '\u{1F3DE}\uFE0F', title: '50-Acre Central Park', body: 'One of the largest community parks in the Las Vegas Valley \u2014 sports fields, amphitheater, splash pads, walking loops, and wide open green space at the heart of the community.' },
-              { icon: '\u{1F3CA}', title: 'Cadence Clubhouse', body: 'Resort-style pools, a full fitness center, sports courts, event spaces, and year-round community programming \u2014 all included with your HOA dues.' },
-              { icon: '\u{1F3D7}\uFE0F', title: 'Four National Builders', body: 'Lennar, Toll Brothers, Richmond American, and Woodside Homes all build here \u2014 giving buyers real choice in floor plans, finishes, and price points from $350K to $800K+.' },
-              { icon: '\u{1F30A}', title: 'Lake Mead in 20 Minutes', body: 'Cadence is the closest major Henderson community to Lake Mead National Recreation Area \u2014 boating, fishing, kayaking, and shoreline beaches just a short drive east.' },
-              { icon: '\u{1F6B4}', title: 'River Mountains Loop Trail', body: 'Direct access to the 34-mile River Mountains Loop Trail connecting Henderson, Boulder City, and Lake Mead \u2014 one of the premier cycling and running routes in Nevada.' },
-              { icon: '\u{1F4B0}', title: 'Henderson Value', body: 'Newer construction in one of America\u2019s safest cities at price points well below comparable Henderson communities. Strong appreciation and builder warranty on new homes.' },
-            ].map(h => (
+              { title: '50-Acre Central Park', body: 'Cadence Central Park features a resort pool, splash pad, amphitheater, sports courts, dog park, and miles of trails. The community\'s social and recreational hub.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'New Construction Variety', body: 'Top national builders delivering new homes from the mid-$300s to $800K. Contemporary designs, energy efficiency, and smart-home technology come standard.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Fiber Internet Community', body: 'Cadence was designed with fiber-optic internet to every home — a rare distinction that supports remote work, streaming, and connected living.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Connected Trail System', body: 'Miles of interconnected walking and biking trails link neighborhoods to parks, schools, and commercial areas. A walkable, active-lifestyle community.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Henderson\'s Safest City', body: 'Henderson is consistently ranked among the safest large cities in America. Cadence benefits from the city\'s low crime rates and responsive services.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+              { title: 'Strong Appreciation', body: 'As one of the newest master-planned communities in the valley, Cadence has seen strong home value appreciation driven by demand for new construction and modern amenities.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -195,113 +336,76 @@ export default async function CadencePage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <CadenceFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Explore Cadence&apos;s Neighborhoods</h2>
-            <p>Multiple national builders offer variety in style, size, and price from starter homes to luxury.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Lennar at Cadence', type: 'Family \u00B7 Everything\u2019s Included', desc: 'Lennar\u2019s signature Everything\u2019s Included homes with premium finishes, smart home features, and no hidden upgrade costs. A popular choice for families.', price: 'From $420K' },
-              { name: 'Toll Brothers at Cadence', type: 'Luxury \u00B7 Semi-Custom', desc: 'Premium single-family homes with upscale finishes, gourmet kitchens, and Toll Brothers\u2019 signature quality. The prestige option within Cadence.', price: 'From $600K' },
-              { name: 'Richmond American Homes', type: 'Personalized \u00B7 Modern', desc: 'Richmond American\u2019s HomeGallery experience lets buyers personalize finishes and layouts. Contemporary designs with energy-efficient construction.', price: 'From $450K' },
-              { name: 'Woodside Homes', type: 'Family \u00B7 Value', desc: 'Well-designed family homes with thoughtful floor plans and quality construction at accessible price points. Strong option for first-time and move-up buyers.', price: 'From $400K' },
-              { name: 'Cadence Townhomes', type: 'Attached \u00B7 Low-Maintenance', desc: 'Townhome communities ideal for professionals, downsizers, and first-time buyers. Walking distance to the central park and clubhouse.', price: 'From $350K' },
-              { name: 'Premium & Custom Lots', type: 'Luxury \u00B7 Select Sites', desc: 'Select lots within Cadence offer the opportunity for larger custom and semi-custom builds with premium positioning near the central park and mountain views.', price: 'From $700K+' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Lake Las Vegas', href: '/lake-las-vegas/', price: 'From $400K', compare: 'Resort community built around a 320-acre private lake. More upscale with lakefront and golf.' },
+              { name: 'Inspirada', href: '/inspirada/', price: 'From $420K', compare: 'Henderson\'s other newer master plan with parks, trails, and community gathering spaces.' },
+              { name: 'Whitney Ranch', href: '/whitney-ranch/', price: 'From $350K', compare: 'Established central Henderson community. Similar prices but older construction.' },
+              { name: 'Green Valley Ranch', href: '/green-valley-ranch/', price: 'From $400K', compare: 'Henderson\'s premier established master plan with parks, top schools, and the GVR resort.' },
+              { name: 'Anthem', href: '/anthem/', price: 'From $400K', compare: 'Henderson\'s largest master plan with guard-gated golf, 55+, and family neighborhoods.' },
+              { name: 'Black Mountain Ranch', href: '/black-mountain-ranch/', price: 'From $400K', compare: 'Henderson foothills community with mountain trails and valley views.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img
-                src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : '/red-rock-canyon.jpg'}
-                alt="Central park and outdoor lifestyle in Cadence, Henderson"
-              />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Outdoor Living</span>
-              <div className="gold-rule" />
-              <h2>A 50-Acre Park, Lake Mead Access, and 34 Miles of Loop Trail</h2>
-              <p>Cadence was designed with outdoor living as a core feature, not an afterthought. The 50-acre central park is the community&apos;s anchor &mdash; a genuine civic space with sports fields, event programming, and enough open green space that it never feels crowded.</p>
-              <p>The location in east Henderson gives you something no other major community in the valley can match: proximity to Lake Mead and direct access to the River Mountains Loop Trail.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  '50-acre central park with sports fields, amphitheater, splash pads, and walking loops',
-                  'Cadence Clubhouse with resort pools, fitness center, sports courts, and event spaces',
-                  'River Mountains Loop Trail \u2014 34-mile paved loop connecting Henderson, Boulder City, and Lake Mead',
-                  'Lake Mead National Recreation Area \u2014 boating, kayaking, fishing \u2014 roughly 20 minutes east',
-                  'Sloan Canyon National Conservation Area, Bootleg Canyon, and Valley of Fire all within an hour',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Cadence Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Cadence, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Cadence Families</h2>
-            <p>Growing east Henderson has seen new schools built to serve communities like Cadence.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[['Robert L. Forbuss Elementary','K\u20135'],['Elise L. Wolff Elementary','K\u20135'],['C.T. Sewell Elementary','K\u20135'],['Del E. Webb Middle School','6\u20138'],['Basic High School','9\u201312'],['Southeast Career Technical Academy','9\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Faith-Based</h3>
-              {[['Henderson International School','PreK\u201312'],['Mountain View Christian School','PreK\u201312'],['Pinecrest Academy of Nevada','K\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Specialty</h3>
-              {[['Doral Academy of Nevada','K\u20138'],['Somerset Academy','K\u20138'],['Coral Academy of Science','K\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{marginTop:'24px',padding:'18px',background:'rgba(201,168,76,0.06)',border:'1px solid var(--border)',borderRadius:'var(--radius)',fontSize:'13px',color:'var(--white-70)',lineHeight:'1.7'}}>
-                <strong style={{color:'var(--white)'}}>School Assignment Note:</strong> Henderson school zones vary by address. New schools continue to be built as east Henderson grows. Always confirm your assigned school with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Cadence Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <CadenceFAQ />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Cadence Home?</h2>
-          <p>Whether you&apos;re looking at new construction from Lennar or Toll Brothers, or a move-in-ready resale near the central park, I&apos;ll help you find the right home in Cadence.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="#listings" className="btn-outline">Browse All Listings</a>
-          </div>
-          <p style={{marginTop:'24px',fontSize:'12px',color:'rgba(255,255,255,0.3)'}}>Nevada Lic. #S.0181401.LLC &middot; lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

@@ -3,33 +3,37 @@ import { useState } from 'react'
 
 const FAQS = [
   {
-    q: 'What are HOA fees like in Inspirada?',
-    a: "Inspirada has a master association fee that typically runs $60\u2013$80 per month, which covers access to the Inspirada Club, community parks, trail maintenance, and common areas. Most neighborhoods also have a sub-association fee of $30\u2013$70 on top of that. Total monthly HOA for a typical single-family home runs $90\u2013$150. The amenities you get for that fee are genuinely resort-level.",
+    "q": "What is the price range for homes in Inspirada?",
+    "a": "Homes in Inspirada range from approximately $420,000 for entry-level new construction to over $1.1 million for premium luxury homes by Toll Brothers and other top builders."
   },
   {
-    q: 'Which Inspirada neighborhoods are best for families?',
-    a: "Inspirada is one of the most family-friendly communities in the entire Las Vegas Valley. Neighborhoods near the Inspirada Club and the central park system tend to be particularly popular \u2014 kids can walk or bike to the pools, playgrounds, and sports courts. Toll Brothers and Beazer Homes have both built family-oriented floor plans with 3\u20135 bedrooms in the $450K\u2013$700K range.",
+    "q": "Is Inspirada guard-gated?",
+    "a": "No. Inspirada is not a guard-gated community. It is an open master-planned community with HOA governance, maintained common areas, and the safety benefits of Henderson — one of America's safest large cities."
   },
   {
-    q: 'How far is Inspirada from the Las Vegas Strip?',
-    a: "Inspirada is about 15\u201320 miles from the Strip \u2014 roughly 20\u201325 minutes via I-215 and I-15. You\u2019re actually closer to downtown Henderson, the Water Street District, and the Henderson Bird Viewing Preserve, all within 10\u201315 minutes.",
+    "q": "Is Inspirada still building new homes?",
+    "a": "Yes. Inspirada continues to offer new construction from multiple national builders including Toll Brothers, Lennar, and Century Communities across several active neighborhoods."
   },
   {
-    q: "What\u2019s the price range for homes in Inspirada?",
-    a: "Inspirada offers a solid range. Townhomes and smaller single-family homes start around $400K. The bulk of single-family homes fall in the $500K\u2013$750K range with modern floor plans and energy-efficient construction. Larger luxury homes from Toll Brothers and semi-custom builds can reach $900K+. The median sits around $575K.",
+    "q": "What ZIP code is Inspirada in?",
+    "a": "Inspirada is located in ZIP code 89044 in Henderson, Nevada."
   },
   {
-    q: 'Is Inspirada still being developed?',
-    a: "Yes \u2014 Inspirada still has active construction with multiple builders offering new homes. The community is planned for approximately 8,000\u20139,000 homes at full build-out. This means buyers can still purchase brand-new construction, which is a significant advantage for those who want modern floor plans, energy efficiency, and builder warranties.",
+    "q": "What are HOA fees in Inspirada?",
+    "a": "HOA fees in Inspirada typically range from $100 to $250 per month, covering access to community parks, pools, trails, gathering spaces, and common area maintenance."
   },
   {
-    q: 'What makes Inspirada different from other Henderson communities?',
-    a: "Three things stand out: the Mediterranean-inspired architecture that gives the community a cohesive, resort-like aesthetic; the park system with 30+ parks connected by trails; and the Inspirada Club, which rivals private country club amenities but is included with HOA dues. The Henderson Bird Viewing Preserve next door is also a unique amenity you won\u2019t find anywhere else in the valley.",
+    "q": "What schools serve Inspirada?",
+    "a": "Inspirada is served by CCSD schools including Elise L. Wolff Elementary (6/10), Del E. Webb Middle School (7/10), and Liberty High School (6/10). Charter options include Doral Academy (9/10) and Somerset Academy (8/10)."
   },
   {
-    q: 'Are there good schools near Inspirada?',
-    a: "Yes. Inspirada is served by several highly rated CCSD schools, including Elise L. Wolff Elementary and John C. Vanderburg Elementary. The community also has convenient access to Coronado High School and Henderson International School. As always with CCSD, school assignments are address-specific \u2014 confirm zoning for any property you\u2019re considering.",
+    "q": "What amenities does Inspirada offer?",
+    "a": "Inspirada features over 600 acres of open space, resort-style pools, splash pads, landscaped plazas with fire features, sports courts, playgrounds, and miles of interconnected walking and biking trails connecting every neighborhood."
   },
+  {
+    "q": "How does Inspirada compare to Cadence?",
+    "a": "Both are newer Henderson master plans with new construction. Inspirada emphasizes community design, gathering spaces, and open space (600+ acres). Cadence is newer and more centrally located with fiber internet and a sports complex. Inspirada's price range starts slightly higher ($420K vs $350K)."
+  }
 ]
 
 export default function InspiradaFAQ() {
@@ -40,11 +44,11 @@ export default function InspiradaFAQ() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">Common Questions</span>
-          <h2>Inspirada Home Buyer FAQ</h2>
-          <p>The questions I hear most from buyers exploring Inspirada.</p>
+          <h2>Frequently Asked Questions About Inspirada</h2>
+          <p>The questions buyers ask most when exploring Inspirada.</p>
         </div>
         <div className="faq-list">
-          {FAQS.map((faq, i) => (
+          {FAQS.map((faq: any, i: number) => (
             <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
               <button className="faq-btn" onClick={() => setOpen(open === i ? null : i)}>
                 <span className="faq-question">{faq.q}</span>

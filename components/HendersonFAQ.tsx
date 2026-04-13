@@ -3,33 +3,37 @@ import { useState } from 'react'
 
 const FAQS = [
   {
-    q: "What's the difference between Henderson and Las Vegas?",
-    a: "Henderson is its own incorporated city — Nevada's second largest — not a neighborhood of Las Vegas. It has its own city government, police department, water system, and tax base. In practice, the two cities are seamlessly connected, but Henderson consistently outranks Las Vegas on safety, school quality, and livability indexes. It tends to attract buyers who want the amenities of the Las Vegas metro without living in an unincorporated county pocket.",
+    "q": "Why is Henderson considered one of the best places to live in Nevada?",
+    "a": "Henderson consistently ranks among the top 10 safest large cities in America, has its own city infrastructure (police, fire, hospital, parks), features world-class master-planned communities, and offers every lifestyle and price point from $300K to $28M+."
   },
   {
-    q: 'Is Anthem part of Henderson?',
-    a: "Yes — Anthem is a master-planned community located within Henderson city limits, developed by Del Webb starting in the mid-1990s. It's one of the most successful planned communities in the Southwest, covering roughly 4,800 acres across the Black Mountain foothills. Anthem has its own homeowners association, parks, community center, and guard-gated neighborhoods like Anthem Country Club. It's separate from Sun City Anthem, which is the 55+ portion.",
+    "q": "What is the price range for homes in Henderson?",
+    "a": "Henderson homes range from approximately $300,000 in established neighborhoods like Whitney Ranch and downtown Henderson to over $28 million in ultra-luxury communities like MacDonald Highlands and Ascaya."
   },
   {
-    q: 'How safe is Henderson compared to Las Vegas?',
-    a: "Henderson is consistently one of the safest large cities in the country — not just in Nevada. It routinely ranks in the top 10-15 nationally for cities over 200,000 residents. The crime rates per capita in Henderson run well below the national average and are dramatically lower than in unincorporated Clark County. That safety record is one of the primary drivers for families relocating from California.",
+    "q": "What are the best neighborhoods in Henderson?",
+    "a": "The best Henderson neighborhoods depend on your lifestyle and budget. MacDonald Highlands and Ascaya lead the luxury segment. Anthem, Green Valley Ranch, and Seven Hills are premier master-planned communities. Inspirada and Cadence offer the best new construction. Lake Las Vegas provides resort-style living."
   },
   {
-    q: "What's the price range for Henderson homes?",
-    a: "Henderson covers a wide spectrum. Entry-level condos and townhomes start around $280K–$320K. Single-family homes in established neighborhoods like Green Valley typically start in the $400K–$550K range. Anthem homes run $500K–$1.5M depending on the neighborhood and views. MacDonald Highlands is Henderson's ultra-luxury tier — guard-gated estates with Strip views from $1.5M to well over $10M. The overall Henderson median currently sits around $485,000.",
+    "q": "Is Henderson safe?",
+    "a": "Yes. Henderson is one of the safest large cities in the United States, consistently ranking in the top 10 nationally by the FBI's Uniform Crime Reporting data. The city operates its own police department with proactive community policing."
   },
   {
-    q: 'Which Henderson neighborhood is best for families?',
-    a: "Anthem and Green Valley Ranch come up most consistently for families with school-age children. Anthem offers excellent community amenities, strong school zoning, and a genuine master-planned feel with parks and trails built into the design. Green Valley Ranch is one of Henderson's most established and walkable communities, anchored by the Green Valley Ranch Resort and Town Center. For newer construction with a community feel, Inspirada on the southwest side has been very well received.",
+    "q": "How far is Henderson from the Las Vegas Strip?",
+    "a": "Henderson is approximately 15–25 minutes from the Las Vegas Strip depending on which part of the city you're in. The I-215 beltway and I-15 provide direct commute corridors."
   },
   {
-    q: 'Is Lake Las Vegas in Henderson?',
-    a: "Yes — Lake Las Vegas is fully within Henderson city limits, located in the northeastern part of the city near the Lake Mead Recreation Area. It's a 320-acre man-made lake surrounded by resort hotels, two golf courses, and upscale residential communities. It has a distinctly different atmosphere from the rest of Henderson — almost Mediterranean in character — and attracts buyers looking for resort-style living with dramatic water and mountain views.",
+    "q": "What golf courses are in Henderson?",
+    "a": "Henderson features world-class golf including DragonRidge Country Club (Tom Fazio), Rio Secco Golf Club, Reflection Bay (Jack Nicklaus), Anthem Country Club (Hale Irwin), Chimera Golf Club, SouthShore Country Club, and Revere Golf Club."
   },
   {
-    q: "What's Henderson's job market like for people relocating?",
-    a: "Henderson has one of the most diversified employment bases in Southern Nevada. Major employers include Amazon (multiple fulfillment centers), Barclaycard, Ethel M Chocolates, St. Rose Dominican Hospitals, and a growing tech and healthcare corridor. The Titanium Way and Green Valley Parkway areas have become regional business hubs. Being adjacent to Las Vegas, Henderson residents also have access to the full Strip employment corridor — hospitality, entertainment, and conventions — without living in the thick of it.",
+    "q": "Are there 55+ communities in Henderson?",
+    "a": "Yes. Henderson has several excellent 55+ communities including Sun City Anthem (Del Webb, 7,200+ homes), Heritage at Cadence, Solera at Anthem, Del Webb at Lake Las Vegas, and Sun City MacDonald Ranch."
   },
+  {
+    "q": "What ZIP codes does Henderson cover?",
+    "a": "Henderson spans multiple ZIP codes including 89002, 89011, 89012, 89014, 89015, 89044, 89052, and 89074. Each ZIP code corresponds to different areas and communities within the city."
+  }
 ]
 
 export default function HendersonFAQ() {
@@ -40,11 +44,11 @@ export default function HendersonFAQ() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">Common Questions</span>
-          <h2>Henderson Home Buyer FAQ</h2>
-          <p>The questions we hear most from buyers considering Henderson — answered straight.</p>
+          <h2>Frequently Asked Questions About Henderson</h2>
+          <p>The questions buyers ask most when exploring Henderson.</p>
         </div>
         <div className="faq-list">
-          {FAQS.map((faq, i) => (
+          {FAQS.map((faq: any, i: number) => (
             <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
               <button className="faq-btn" onClick={() => setOpen(open === i ? null : i)}>
                 <span className="faq-question">{faq.q}</span>

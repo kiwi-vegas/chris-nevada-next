@@ -1,87 +1,142 @@
-import CommunityFAQ from '@/components/CommunityFAQ'
-import CommunityMapWrapper from '@/components/CommunityMapWrapper'
+import SouthernHighlandsFAQ from '@/components/SouthernHighlandsFAQ'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import SouthernHighlandsMapWrapper from '@/components/SouthernHighlandsMapWrapper'
+import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Southern Highlands', item: 'https://www.lasvegashomesearchexperts.com/southern-highlands/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Southern Highlands?",
+    "a": "Southern Highlands offers an exceptional range from approximately $400,000 for non-gated family homes to over $10 million for custom estates in the guard-gated enclaves. Guard-gated homes typically start around $700K."
+  },
+  {
+    "q": "Is Southern Highlands guard-gated?",
+    "a": "Southern Highlands includes both guard-gated and non-gated sections. The guard-gated enclaves include The Estates, Tuscan Cliffs, Olympia Ridge, The Foothills, Royal Highlands, The Enclave, Vintage Canyon, and others. The broader community has non-gated sections as well."
+  },
+  {
+    "q": "What golf course is in Southern Highlands?",
+    "a": "The Southern Highlands Golf Club features an 18-hole Jack Nicklaus Signature course, consistently ranked among the best in Nevada. It is a private club with a Mediterranean clubhouse, fine dining, pools, tennis, spa, and fitness center."
+  },
+  {
+    "q": "What ZIP codes are in Southern Highlands?",
+    "a": "Southern Highlands spans ZIP codes 89141, 89139, and 89178 in southwest Las Vegas, within unincorporated Clark County."
+  },
+  {
+    "q": "What are HOA fees in Southern Highlands?",
+    "a": "HOA fees vary by section. Non-gated sections typically pay $150–$250 per month. Guard-gated enclaves range from $300 to $600+ per month, covering guard gate staffing, security, common area maintenance, and community amenities."
+  },
+  {
+    "q": "How far is Southern Highlands from the Strip?",
+    "a": "Southern Highlands is approximately 15 minutes from the Las Vegas Strip via I-15 North. Harry Reid International Airport is about 20 minutes away."
+  },
+  {
+    "q": "What schools serve Southern Highlands?",
+    "a": "Southern Highlands is served by CCSD schools including John R. Hummel Elementary (8/10) and Del E. Webb Middle School (7/10). Private options include Bishop Gorman High School (A+). Doral Academy Red Rock (9/10) is the top charter option."
+  },
+  {
+    "q": "Who developed Southern Highlands?",
+    "a": "Southern Highlands was developed by the Olympia Group beginning in 1997. The community spans approximately 2,200 acres in the southwestern foothills and has grown to include over 6,500 homes and multiple guard-gated enclaves."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Southern Highlands',
+  description: 'Southern Highlands is a guard-gated · golf · master-planned community in Las Vegas, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 35.996, longitude: -115.244 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89141', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Las Vegas' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('southern-highlands')
   return {
-    title: cms?.metaTitle ?? 'Southern Highlands Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? "Browse Southern Highlands homes for sale. Las Vegas's most prestigious gated master-planned community — private golf club, guard-gated enclaves, 15 min to airport. 300+ active listings from $500K. Call 725.239.9950.",
+    title: cms?.metaTitle ?? 'Southern Highlands Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Southern Highlands homes for sale in Las Vegas, NV. $400K–$10M+. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
-const boundary: [number, number][] = [
-  [-115.24, 36.03],
-  [-115.18, 36.03],
-  [-115.15, 36.02],
-  [-115.14, 35.97],
-  [-115.15, 35.95],
-  [-115.20, 35.95],
-  [-115.26, 35.97],
-  [-115.26, 36.01],
-  [-115.24, 36.03],
-]
-
-const faqs = [
-  {
-    q: 'Is Southern Highlands a gated community?',
-    a: 'Yes — Southern Highlands is a guard-gated master-planned community with multiple guard-gated enclaves within the larger development. The community has 24-hour security at primary access points, and several of the premium sub-communities (like Vista Encanto and Regency) have their own secondary guard gates for an additional level of privacy.',
-  },
-  {
-    q: 'How does Southern Highlands Golf Club membership work?',
-    a: 'Southern Highlands Golf Club is a private member club featuring an Arnold Palmer-designed championship course. Membership is by application and involves initiation fees and annual dues — it is not automatically included with home purchase. However, living in Southern Highlands gives residents priority access to the membership waitlist. Contact us for current membership information.',
-  },
-  {
-    q: 'What is the price range for Southern Highlands homes?',
-    a: 'Southern Highlands homes range from approximately $500,000 for smaller single-family homes and townhomes in entry communities like Emerald, up to $5M+ for custom estates in Vista Encanto and premium hillside addresses. The median falls in the $700K–$1.2M range depending on size, lot, and sub-community.',
-  },
-  {
-    q: 'How does Southern Highlands compare to Summerlin?',
-    a: 'Both are prestigious master-planned communities, but they have distinct characters. Summerlin is larger (22,500 acres vs. roughly 2,200 for Southern Highlands), has more established retail (Downtown Summerlin), and sits against Red Rock Canyon. Southern Highlands is more intimate, more uniformly upscale, features a private golf club, and is positioned much closer to the airport — a significant advantage for frequent travelers and executives. Southern Highlands also tends to offer more guard-gating per dollar spent.',
-  },
-  {
-    q: 'How long is the commute from Southern Highlands to the Strip?',
-    a: 'From most Southern Highlands addresses to the Las Vegas Strip is approximately 20–25 minutes via I-15 North. To Harry Reid International Airport is approximately 15 minutes — one of the shortest airport commutes of any upscale Las Vegas community. This proximity to the airport is a consistent draw for business travelers and executives.',
-  },
-  {
-    q: 'Is Southern Highlands a good investment?',
-    a: "Southern Highlands has demonstrated strong investment fundamentals — guard-gated prestige, private golf club anchoring, limited land available for new development, and consistent executive-level demand. The community has held value well through market cycles and benefits from being perceived as one of Las Vegas's most prestigious addresses. The airport proximity also makes it popular with short-term rental investors in appropriate zones.",
-  },
-]
-
 export default async function SouthernHighlandsPage() {
   const cms = await getCommunityPage('southern-highlands')
+  const market = getMarketStats('southern-highlands')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Southern Highlands\nHomes For Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Las Vegas's most livable zip code — a prestigious master-planned community with a private golf club, guard-gated enclaves, and a price-per-square-foot that would stun any California buyer."
+  const heroHeadline = cms?.heroHeadline ?? 'Southern Highlands'
+  const heroSubtitle = 'Homes for Sale in Las Vegas, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Southern Highlands: Guard-Gated · Golf · Master-Planned Living in Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
-    ['Location', 'South Las Vegas, NV'],
-    ['Type', 'Gated Master-Planned'],
-    ['Golf Club', 'Private (Arnold Palmer)', 'gold'],
-    ['Min Price', '$500K'],
-    ['HOA', '$75–$200/mo'],
-    ['Airport', '15 min'],
-    ['To Strip', '~20 min'],
-    ['To Henderson', '~15 min'],
-    ['Security', '24-hr Guard-Gated'],
-    ['State Income Tax', 'None'],
-    ['Property Tax Rate', '~0.6%'],
+    ['Established', '1997'],
+    ['Developer', 'Olympia Group'],
+    ['Total Acreage', '2,200 acres'],
+    ['Homes', '6,500+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$400K–$10M+'],
+    ['ZIP Codes', '89141, 89139, 89178'],
+    ['Guard-Gated', 'Yes'],
+    ['HOA', '$150–$600/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '~20 min', destination: 'to the Strip', route: 'via I-15 N' },
-    { time: '~15 min', destination: 'to Harry Reid Airport', route: 'via I-15 N → I-215 W' },
-    { time: '~15 min', destination: 'to Henderson', route: 'via I-215 E' },
-    { time: '~4.5 hrs', destination: 'to Los Angeles', route: 'via I-15 S' },
-  ]
+    {
+        "time": "~15 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+    },
+    {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 → I-215"
+    },
+    {
+        "time": "~25 min",
+        "destination": "to Summerlin",
+        "route": "via I-215 West"
+    },
+    {
+        "time": "~10 min",
+        "destination": "to Mountains Edge",
+        "route": "via S Las Vegas Blvd"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -91,58 +146,107 @@ export default async function SouthernHighlandsPage() {
       <div className="breadcrumb">
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <a href="/#communities">Communities</a>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <span>Southern Highlands</span>
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="southern-highlands-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Southern Highlands hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">South Las Vegas, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '300+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$500K–$5M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Property Types', '3')}</span><span className="hero-stat-lbl">Property Types</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">Daily</span><span className="hero-stat-lbl">Updates</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$400K–$10M+')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Southern Highlands</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '64px 0', background: 'var(--charcoal)', borderBottom: '1px solid var(--border-dim)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89141, 89139, 89178</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Guard-Gated · Golf · Master-Planned</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $400K–$10M+</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $150–$600/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 1997</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Southern Highlands Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['22,000+', 'Population'],
+              ['42', 'Median Age'],
+              ['$120,000', 'Avg Household Income'],
+              ['6,500+', 'Total Households'],
+              ['78%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Southern Highlands?</h2>
-            <p>Located at the southernmost edge of Las Vegas — just 15 minutes from Harry Reid Airport with direct I-15 access to Henderson and California.</p>
+            <p>Southwest Las Vegas, Nevada &mdash; Las Vegas, Nevada.</p>
           </div>
-          <div style={{ height: '420px', borderRadius: 'var(--radius-lg)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-            <CommunityMapWrapper
-              center={[-115.190, 35.987]}
-              zoom={12}
-              boundary={boundary}
-              name="Southern Highlands"
-              subtitle="South Las Vegas, Nevada"
-              id="southern-highlands-map"
-            />
+          <div className="map-container">
+            <SouthernHighlandsMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -153,41 +257,45 @@ export default async function SouthernHighlandsPage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings · Updated Daily</span>
-            <h2>New Southern Highlands Listings</h2>
-            <p>The latest homes listed in Southern Highlands — guard-gated luxury, golf course living, and executive estates from $500K.</p>
+            <h2 className="listings-title">NEW SOUTHERN HIGHLANDS LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":500000,"locations":[{"community":"Southern Highlands","city":"Las Vegas","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_searchWidget" />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":350000,"locations":[{"city":"Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Southern Highlands","zipCodes":["89141","89139","89178"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=Southern+Highlands&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Southern Highlands Listings →</a>
-            <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Southern%20Highlands" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Southern Highlands Listings &rarr;</a>
+            <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
-              <h2>Southern Highlands: Las Vegas Prestige, Without the Price Tag</h2>
-              <p>Southern Highlands sits at the southernmost point of Las Vegas — quieter, more private, and more uniformly upscale than most of the valley. The community is anchored by Southern Highlands Golf Club, an Arnold Palmer championship design that gives the entire development a sense of purpose and permanence that newer Las Vegas communities often lack. The club is private, which does something important: it keeps the golf course beautiful and the community composition largely consistent.</p>
-              <p>The guard-gating here is comprehensive. The outer community has primary security gates, and several interior enclaves — Vista Encanto, Regency, the Foothills — have their own secondary guard stations. For executives and families who prioritize genuine privacy and security, Southern Highlands delivers a level of protection that few communities in the valley can match at comparable price points. Crime rates in Southern Highlands are among the lowest in all of Las Vegas.</p>
-              <p>The location story is often what surprises buyers. Harry Reid International Airport is 15 minutes away via I-15 — a commute that makes Southern Highlands the logical choice for anyone who travels frequently for business. The I-15 runs directly south to California, making weekend drives to Los Angeles and San Diego more straightforward than from Summerlin or Henderson. For executives and second-home buyers who split time between Nevada and California, the math on Southern Highlands&apos; location is compelling.</p>
+              <h2>{overviewTitle}</h2>
+              {cms?.overviewBody?.length ? (
+                <PortableText value={cms.overviewBody} />
+              ) : (
+                <>
+                  <p>Southern Highlands is one of the most prestigious master-planned communities in Las Vegas, combining guard-gated luxury living with a Jack Nicklaus Signature championship golf course in the scenic southwestern foothills. Spanning approximately 2,200 acres, the community was developed by the Olympia Group beginning in 1997 and has matured into one of the valley's most desirable addresses, attracting executives, professionals, entertainers, and athletes seeking privacy, views, and world-class amenities.</p>
+                  <p>The centerpiece of Southern Highlands is the Southern Highlands Golf Club, an 18-hole Jack Nicklaus Signature course consistently ranked among the best in Nevada. The private club includes a Mediterranean-inspired clubhouse, fine dining, resort-style pools, tennis courts, a spa and fitness center, and an active social calendar. Membership is available to residents of certain guard-gated sections, though many homes in the community do not require golf membership.</p>
+                  <p>Southern Highlands offers an extraordinary range of housing. The non-gated sections feature well-built single-family homes from approximately $400,000, while the community's multiple guard-gated enclaves — including The Estates, Tuscan Cliffs, The Foothills, Royal Highlands, Olympia Ridge, and Vintage Canyon — offer custom and semi-custom homes from $700,000 to well over $10 million. The architectural standards are high throughout, with Mediterranean, Tuscan, and desert contemporary styles predominating.</p>
+                  <p>The community's location at the southern rim of the Las Vegas Valley provides elevation, mountain views, and a sense of separation from the urban core while remaining just 15 minutes from the Strip and 20 minutes from Harry Reid International Airport via I-15. The Southern Highlands commercial corridor along Southern Highlands Parkway includes grocery, dining, medical, and retail, ensuring residents have everyday conveniences without leaving the community.</p>
+                </>
+              )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Southern Highlands At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -195,7 +303,7 @@ export default async function SouthernHighlandsPage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Southern Highlands? Let&apos;s schedule a private tour of the community and the gated enclaves that match your goals.</p>
+                <p>Ready to explore Southern Highlands? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -203,23 +311,21 @@ export default async function SouthernHighlandsPage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Southern Highlands</span>
-            <h2>The Reasons Executives and Families Choose Southern Highlands</h2>
-            <p>Private golf, guard-gated security, airport proximity, and ultra-low crime — here&apos;s what defines Las Vegas&apos;s southernmost prestige address.</p>
+            <h2>What Makes Southern Highlands Stand Out</h2>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '⛳', title: 'Private Golf Club (Arnold Palmer)', body: 'Southern Highlands Golf Club is a true private member club anchored by an Arnold Palmer championship design. The course is maintained to country club standards and serves as the social and architectural centerpiece of the entire community.' },
-              { icon: '🔒', title: 'Guard-Gated Enclaves', body: 'Multiple layers of security define Southern Highlands — community-level guard gates and sub-community secondary gates in the premium enclaves. Twenty-four-hour security is a standard feature, not an upgrade.' },
-              { icon: '✈️', title: 'Airport 15 Minutes Away', body: 'Harry Reid International Airport is the shortest executive commute of any upscale Las Vegas community. For frequent flyers and business travelers, this single geographic fact makes Southern Highlands the rational choice.' },
-              { icon: '🛡️', title: 'Ultra-Low Crime Rate', body: 'Southern Highlands consistently records among the lowest crime rates in all of Las Vegas, benefiting from gated access, private security, and the demographic consistency of the community.' },
-              { icon: '💼', title: 'Executive Lifestyle', body: 'The community profile skews heavily toward executives, business owners, and professionals. The private club, gating, and community character create an environment that supports that lifestyle throughout.' },
-              { icon: '🏫', title: 'Excellent School Options', body: "Southern Highlands is zoned to strong CCSD schools including Liberty High School, one of Henderson area's highest-rated public schools. Private options including Faith Lutheran serve the community as well." },
-            ].map(h => (
+              { title: 'Jack Nicklaus Golf Club', body: 'Southern Highlands Golf Club features an 18-hole Jack Nicklaus Signature course consistently ranked among Nevada\'s best. Private membership with Mediterranean clubhouse, dining, and resort amenities.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/></svg> },
+              { title: 'Multiple Guard-Gated Enclaves', body: 'Over 10 distinct guard-gated neighborhoods including The Estates, Tuscan Cliffs, Olympia Ridge, The Foothills, Royal Highlands, and Vintage Canyon. Each with unique character and pricing.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+              { title: 'Mountain & Valley Views', body: 'Elevated position at the valley\'s southern rim provides panoramic views of the Spring Mountains, Red Rock Canyon, and the Las Vegas Strip skyline from many homes.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: '$400K to $10M+ Range', body: 'From non-gated family homes to ultra-luxury custom estates, Southern Highlands offers one of the widest price ranges of any Las Vegas master-planned community.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Resort-Style Amenities', body: 'Multiple community parks, pools, fitness centers, trails, and the Southern Highlands Golf Club. Active HOA programming with social events and activities throughout the year.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Proven Appreciation', body: 'Southern Highlands has consistently appreciated through market cycles. The guard-gated enclaves and Nicklaus golf course anchor long-term value in the southwest valley\'s premium tier.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -230,129 +336,76 @@ export default async function SouthernHighlandsPage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <SouthernHighlandsFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Find Your Enclave in Southern Highlands</h2>
-            <p>From entry-level luxury to private-gated trophy estates — Southern Highlands has a neighborhood for every level of the executive market.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'The Foothills', type: 'Guard-Gated · Golf Views', desc: 'Premium positioning within Southern Highlands with golf course views and elevated terrain. Guard-gated with larger lots and more spacious floor plans.', price: 'From $550K' },
-              { name: 'Painted Desert', type: 'Established · Family', desc: 'A well-regarded neighborhood within Southern Highlands featuring consistent HOA maintenance and a mix of family-sized homes. Popular with professionals relocating from California.', price: 'From $600K' },
-              { name: 'Regency', type: 'Semi-Custom · Private', desc: 'An upscale gated enclave within Southern Highlands featuring larger semi-custom homes on premium lots. Secondary guard gate provides additional privacy.', price: 'From $800K' },
-              { name: 'Vista Encanto', type: 'Ultra-Luxury · Guard-Gated', desc: 'The most exclusive address within Southern Highlands — custom and semi-custom estates with the highest level of gating and privacy. A true trophy community.', price: 'From $1M+' },
-              { name: 'Emerald', type: 'Entry Luxury · Value', desc: 'An accessible entry point into Southern Highlands prestige. Well-maintained and benefiting from all community amenities while offering the most competitive pricing within the gates.', price: 'From $500K' },
-              { name: 'Enclave at Southern Highlands', type: 'Premium · Gated', desc: 'A guard-gated enclave featuring upscale single-family homes with well-maintained streets and proximity to the Southern Highlands Golf Club.', price: 'From $700K' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Mountains Edge', href: '/mountains-edge/', price: 'From $350K', compare: 'Adjacent master-planned community with 12,000+ homes. More attainable pricing for families.' },
+              { name: 'Rhodes Ranch', href: '/rhodes-ranch/', price: 'From $350K', compare: 'Guard-gated golf community to the north. Ted Robinson course and resort amenities.' },
+              { name: 'Enterprise', href: '/enterprise/', price: 'From $350K', compare: 'Growing unincorporated area surrounding Southern Highlands with diverse housing.' },
+              { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'The valley\'s other premier master-planned community with 20+ villages on the west side.' },
+              { name: 'MacDonald Highlands', href: '/macdonald-highlands/', price: 'From $800K', compare: 'Henderson\'s premier luxury community with DragonRidge golf. Comparable ultra-luxury tier.' },
+              { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Guard-gated Henderson community with Rio Secco golf and Strip views.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=900&h=600&q=80'} alt="Championship golf course at Southern Highlands Las Vegas" />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Executive Living</span>
-              <div className="gold-rule" />
-              <h2>Private Golf, Airport Access, and the Desert&apos;s Best-Kept Secret</h2>
-              <p>Life in Southern Highlands moves at a different pace than the rest of Las Vegas. The community is large enough to have everything you need — the private club, parks, and retail — but intimate enough that it doesn&apos;t feel like a city.</p>
-              <p>The Arnold Palmer golf course defines daily life for members in a way that goes beyond just the game. The clubhouse, the dining, the practice facilities — it&apos;s a social infrastructure that builds the kind of community connection that most Las Vegas neighborhoods lack. For buyers who prioritize a genuine community identity alongside privacy and security, Southern Highlands delivers both.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  'Southern Highlands Golf Club — Arnold Palmer design, private membership, championship conditioning',
-                  '24-hour guard-gated security across the community and secondary gates in premium enclaves',
-                  'Harry Reid Airport 15 minutes away — the best business traveler commute in Las Vegas',
-                  'Community parks, walking paths, and maintained open space throughout the development',
-                  'Quick I-15 access south to Jean, Primm, and ultimately Los Angeles (~4.5 hours)',
-                  "Henderson's retail, dining, and arts district 15 minutes east via the 215",
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Southern Highlands Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Southern Highlands, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Southern Highlands Families</h2>
-            <p>Strong public options and respected private schools within the community and nearby.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[
-                ['Liberty High School', '9–12'],
-                ['Del E. Webb Middle School', '6–8'],
-                ['Elise L. Wolff Elementary', 'K–5'],
-                ['Multiple CCSD Elementary Schools', 'K–5'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Faith-Based</h3>
-              {[
-                ['Faith Lutheran Middle & High', '6–12'],
-                ['Faith Lutheran Academy', 'K–5'],
-                ['Desert Christian Academy', 'K–12'],
-                ['Private Options Nearby', 'Various'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Specialized</h3>
-              {[
-                ['Pinecrest Academy (Henderson)', 'PreK–12'],
-                ['Doral Academy', 'K–8'],
-                ['Charter School Options', 'Various'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{ marginTop: '24px', padding: '18px', background: 'rgba(201,168,76,0.06)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', fontSize: '13px', color: 'var(--white-70)', lineHeight: '1.7' }}>
-                <strong style={{ color: 'var(--white)' }}>School Assignment Note:</strong> Zoning varies by address within Southern Highlands. Always confirm your specific assignment with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Southern Highlands Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <CommunityFAQ
-        title="Southern Highlands FAQ"
-        subtitle="Common questions from buyers considering Las Vegas's most prestigious gated master-planned community."
-        faqs={faqs}
-      />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Southern Highlands Home?</h2>
-          <p>Private golf, guard-gated prestige, airport proximity, and a price-per-square-foot that would be impossible anywhere in California.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="https://www.nevadarealestategroup.com/free-market-analysis/" target="_blank" rel="noopener noreferrer" className="btn-outline">Free Market Analysis</a>
-          </div>
-          <p style={{ marginTop: '24px', fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>Nevada Lic. #S.0181401.LLC · lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

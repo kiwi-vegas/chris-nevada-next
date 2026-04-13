@@ -3,33 +3,37 @@ import { useState } from 'react'
 
 const FAQS = [
   {
-    q: 'Is Silverado Ranch part of Las Vegas or Henderson?',
-    a: "Silverado Ranch is an unincorporated area within Clark County that sits right on the Las Vegas\u2013Henderson border. Most of Silverado Ranch uses a Las Vegas mailing address (89123 and 89183 zip codes), but the southern portions border and blend into Henderson. For practical purposes, residents have easy access to both cities\u2019 amenities, retail, and services.",
+    "q": "What is the price range for homes in Silverado Ranch?",
+    "a": "Homes in Silverado Ranch range from approximately $350,000 for smaller single-story homes to $600,000 for larger upgraded properties on premium lots. The community offers some of the best values in the southern Las Vegas Valley."
   },
   {
-    q: 'What are HOA fees like in Silverado Ranch?',
-    a: "Silverado Ranch has a mix of HOA and non-HOA neighborhoods. Newer subdivisions with HOAs typically run $40\u2013$100 per month for single-family homes. Gated sections carry slightly higher fees. Some of the older or more established neighborhoods have no HOA at all, which is a draw for buyers who want more flexibility.",
+    "q": "Is Silverado Ranch in Henderson or Las Vegas?",
+    "a": "Silverado Ranch straddles the border of Henderson and unincorporated Clark County (Las Vegas mailing address). Some homes have Henderson addresses while others have Las Vegas addresses, though the community is contiguous."
   },
   {
-    q: 'How far is Silverado Ranch from the Las Vegas Strip?',
-    a: "Silverado Ranch is about 8\u201312 miles from the Strip \u2014 roughly 10\u201315 minutes via I-15 or Las Vegas Blvd. Harry Reid International Airport is even closer, about 5\u201310 minutes away. It\u2019s one of the more convenient locations in the valley for Strip and airport commuters.",
+    "q": "Is Silverado Ranch guard-gated?",
+    "a": "No. Silverado Ranch is not a guard-gated community. It is an open community with HOA governance and the convenience of being near both Henderson and Las Vegas police services."
   },
   {
-    q: "What\u2019s the price range for homes in Silverado Ranch?",
-    a: "Silverado Ranch is one of the strongest value plays in the southeast valley. Condos and townhomes start around $225K\u2013$275K. Single-family homes typically range from $350K to $550K. Larger or newer homes can reach $650K+. The median sits around $425K \u2014 offering strong value given the proximity to the airport, Strip, and Henderson.",
+    "q": "What ZIP codes is Silverado Ranch in?",
+    "a": "Silverado Ranch spans ZIP codes 89123 and 89183 in the Henderson/Las Vegas area."
   },
   {
-    q: 'What makes Silverado Ranch different from Henderson?',
-    a: "Price and convenience. Silverado Ranch delivers many of the same advantages as Henderson \u2014 southeast valley location, I-215 access, proximity to retail and dining \u2014 at price points that are typically $50K\u2013$100K below comparable Henderson homes. You\u2019re also closer to the airport and Strip than most Henderson communities.",
+    "q": "What are HOA fees in Silverado Ranch?",
+    "a": "HOA fees in Silverado Ranch are among the lowest in the valley, typically ranging from $40 to $120 per month. Fees cover common area maintenance and community landscaping."
   },
   {
-    q: 'Is Silverado Ranch good for families?',
-    a: "Yes. The area has a strong suburban character with parks, community pools in many subdivisions, and proximity to well-regarded schools. Silverado Ranch Park is a popular community green space. The neighborhoods south of Silverado Ranch Blvd tend to be newer and more family-oriented, with cul-de-sac layouts and wider streets.",
+    "q": "What schools serve Silverado Ranch?",
+    "a": "Silverado Ranch is served by CCSD schools including Elise L. Wolff Elementary (6/10), Silvestri Junior High (5/10), and Silverado High School (5/10). Charter options include Doral Academy (9/10) and Somerset Academy (8/10)."
   },
   {
-    q: 'Are there good schools near Silverado Ranch?',
-    a: "Yes \u2014 Silverado Ranch is served by several CCSD schools, and the area benefits from its border position between Las Vegas and Henderson school zones. There are also charter and private school options nearby. As always with CCSD, school assignments are address-specific \u2014 confirm zoning for any property you\u2019re considering.",
+    "q": "Is there a hospital near Silverado Ranch?",
+    "a": "Yes. St. Rose Dominican Hospital — Siena Campus is located within the Silverado Ranch community, providing immediate access to emergency care, surgery, and specialty medical services."
   },
+  {
+    "q": "How far is Silverado Ranch from the Strip?",
+    "a": "Silverado Ranch is approximately 15 minutes from the Las Vegas Strip via I-15. Harry Reid International Airport is also about 15 minutes away. The community's central location makes it one of the most convenient in the valley."
+  }
 ]
 
 export default function SilveradoRanchFAQ() {
@@ -40,11 +44,11 @@ export default function SilveradoRanchFAQ() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">Common Questions</span>
-          <h2>Silverado Ranch Home Buyer FAQ</h2>
-          <p>The questions I hear most from buyers exploring Silverado Ranch.</p>
+          <h2>Frequently Asked Questions About Silverado Ranch</h2>
+          <p>The questions buyers ask most when exploring Silverado Ranch.</p>
         </div>
         <div className="faq-list">
-          {FAQS.map((faq, i) => (
+          {FAQS.map((faq: any, i: number) => (
             <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
               <button className="faq-btn" onClick={() => setOpen(open === i ? null : i)}>
                 <span className="faq-question">{faq.q}</span>

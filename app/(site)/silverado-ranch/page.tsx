@@ -5,47 +5,138 @@ import SilveradoRanchMapWrapper from '@/components/SilveradoRanchMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Silverado Ranch', item: 'https://www.lasvegashomesearchexperts.com/silverado-ranch/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Silverado Ranch?",
+    "a": "Homes in Silverado Ranch range from approximately $350,000 for smaller single-story homes to $600,000 for larger upgraded properties on premium lots. The community offers some of the best values in the southern Las Vegas Valley."
+  },
+  {
+    "q": "Is Silverado Ranch in Henderson or Las Vegas?",
+    "a": "Silverado Ranch straddles the border of Henderson and unincorporated Clark County (Las Vegas mailing address). Some homes have Henderson addresses while others have Las Vegas addresses, though the community is contiguous."
+  },
+  {
+    "q": "Is Silverado Ranch guard-gated?",
+    "a": "No. Silverado Ranch is not a guard-gated community. It is an open community with HOA governance and the convenience of being near both Henderson and Las Vegas police services."
+  },
+  {
+    "q": "What ZIP codes is Silverado Ranch in?",
+    "a": "Silverado Ranch spans ZIP codes 89123 and 89183 in the Henderson/Las Vegas area."
+  },
+  {
+    "q": "What are HOA fees in Silverado Ranch?",
+    "a": "HOA fees in Silverado Ranch are among the lowest in the valley, typically ranging from $40 to $120 per month. Fees cover common area maintenance and community landscaping."
+  },
+  {
+    "q": "What schools serve Silverado Ranch?",
+    "a": "Silverado Ranch is served by CCSD schools including Elise L. Wolff Elementary (6/10), Silvestri Junior High (5/10), and Silverado High School (5/10). Charter options include Doral Academy (9/10) and Somerset Academy (8/10)."
+  },
+  {
+    "q": "Is there a hospital near Silverado Ranch?",
+    "a": "Yes. St. Rose Dominican Hospital — Siena Campus is located within the Silverado Ranch community, providing immediate access to emergency care, surgery, and specialty medical services."
+  },
+  {
+    "q": "How far is Silverado Ranch from the Strip?",
+    "a": "Silverado Ranch is approximately 15 minutes from the Las Vegas Strip via I-15. Harry Reid International Airport is also about 15 minutes away. The community's central location makes it one of the most convenient in the valley."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Silverado Ranch',
+  description: 'Silverado Ranch is a master-planned · established community in Henderson, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.02, longitude: -115.118 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89123', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Henderson' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('silverado-ranch')
   return {
-    title: cms?.metaTitle ?? 'Silverado Ranch Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Silverado Ranch homes for sale in southeast Las Vegas. Established community minutes from the airport and Henderson with homes from $225K to $650K+. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Silverado Ranch Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Silverado Ranch homes for sale in Henderson, NV. $350K–$600K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
 export default async function SilveradoRanchPage() {
   const cms = await getCommunityPage('silverado-ranch')
+  const market = getMarketStats('silverado-ranch')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Silverado Ranch Homes\nFor Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Southeast Las Vegas\u2019 best-connected established community \u2014 minutes from the airport, the Strip, and Henderson, with genuine value at every price point."
-  const overviewTitle = cms?.overviewTitle ?? 'Silverado Ranch: Southeast Value With Unbeatable Access'
+  const heroHeadline = cms?.heroHeadline ?? 'Silverado Ranch'
+  const heroSubtitle = 'Homes for Sale in Henderson, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Silverado Ranch: Master-Planned · Established Living in Henderson'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
-    ['Type', 'Unincorporated area'],
-    ['County', 'Clark County'],
-    ['Zip Codes', '89123 / 89183'],
-    ['Population', '~40,000'],
-    ['Median Home Price', '~$425,000', 'gold'],
-    ['Neighborhoods', '15+'],
-    ['Schools', '6+ nearby'],
-    ['Parks', '5+'],
-    ['Key Freeways', 'I-215 & I-15'],
-    ['Nearest Airport', 'Harry Reid (5\u201310 min)'],
-    ['Distance to Strip', '10\u201315 min'],
-    ['Distance to Henderson', '~5 min'],
+    ['Established', '1996'],
+    ['Developer', 'Various builders'],
+    ['Total Acreage', '~2,000 acres'],
+    ['Homes', '8,000+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$350K–$600K'],
+    ['ZIP Codes', '89123, 89183'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$40–$120/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '10\u201315 min', destination: 'to the Strip', route: 'via I-15 or Las Vegas Blvd' },
-    { time: '5\u201310 min', destination: 'to Harry Reid Airport', route: 'via I-215 or Las Vegas Blvd' },
-    { time: '~5 min', destination: 'to Henderson', route: 'via Eastern Ave or I-215' },
-    { time: '~15 min', destination: 'to Downtown Las Vegas', route: 'via I-15 North' },
-  ]
+    {
+        "time": "~15 min",
+        "destination": "to the Strip",
+        "route": "via I-15"
+    },
+    {
+        "time": "~15 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~10 min",
+        "destination": "to Galleria at Sunset",
+        "route": "via Eastern Ave"
+    },
+    {
+        "time": "~5 min",
+        "destination": "to St. Rose Hospital",
+        "route": "via Silverado Ranch Blvd"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -62,44 +153,100 @@ export default async function SilveradoRanchPage() {
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="summerlin-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Silverado Ranch hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">Southeast Las Vegas, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '150+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$225K\u2013$650K+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Distance to Strip', '10\u201315 min')}</span><span className="hero-stat-lbl">To the Strip</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Nearest Airport', '5\u201310 min')}</span><span className="hero-stat-lbl">To the Airport</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$350K–$600K')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Silverado Ranch</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '32px 0 0', background: 'var(--charcoal)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89123, 89183</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Master-Planned · Established</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $350K–$600K</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $40–$120/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 1996</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Silverado Ranch Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['~22,000', 'Population'],
+              ['38', 'Median Age'],
+              ['$75,000', 'Avg Household Income'],
+              ['~8,000', 'Total Households'],
+              ['65%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Silverado Ranch?</h2>
-            <p>Straddling the Las Vegas&ndash;Henderson border in the southeast valley &mdash; one of the most centrally connected locations with I-215 and I-15 access.</p>
+            <p>Henderson / Las Vegas, Nevada &mdash; Henderson, Nevada.</p>
           </div>
           <div className="map-container">
             <SilveradoRanchMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -110,49 +257,45 @@ export default async function SilveradoRanchPage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings &middot; Updated Daily</span>
-            <h2>New Silverado Ranch Listings</h2>
-            <p>The 12 most recently listed homes in Silverado Ranch &mdash; condos, townhomes, and single-family homes from $225K.</p>
+            <h2 className="listings-title">NEW SILVERADO RANCH LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":150000,"locations":[{"city":"Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Silverado Ranch"}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":300000,"locations":[{"city":"Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Silverado Ranch","zipCodes":["89123","89183"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Silverado%20Ranch" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Silverado Ranch Listings Now &rarr;</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Silverado%20Ranch" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Silverado Ranch Listings &rarr;</a>
             <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
               <h2>{overviewTitle}</h2>
               {cms?.overviewBody?.length ? (
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Silverado Ranch is the community I recommend to buyers who tell me they want the southeast valley &mdash; close to Henderson, close to the airport, close to the Strip &mdash; but don&apos;t want to pay Henderson prices. Sitting right on the Las Vegas&ndash;Henderson border, Silverado Ranch gives you almost everything Henderson offers at price points that are typically $50K&ndash;$100K lower for comparable homes. That&apos;s a meaningful difference, especially for first-time buyers or investors.</p>
-                  <p>The location really is the story here. Harry Reid International Airport is 5&ndash;10 minutes away. The Strip is 10&ndash;15 minutes via I-15 or Las Vegas Blvd. Henderson&apos;s Galleria at Sunset, dining, and retail are about 5 minutes south. And the I-215 beltway connects you to the entire valley without touching surface streets. If you work in hospitality, aviation, healthcare, or anywhere along the I-15 corridor, the commute from Silverado Ranch is hard to beat.</p>
-                  <p>The housing stock is a healthy mix of established and newer construction. The neighborhoods north of Silverado Ranch Blvd tend to be older &mdash; built in the early 2000s with mature landscaping and larger lots. South of the boulevard, you&apos;ll find newer subdivisions with modern floor plans and energy-efficient construction. And there are still some non-HOA pockets for buyers who want more freedom with their property, which is increasingly rare in this part of the valley.</p>
-                  <p>Silverado Ranch Park anchors the community green space, and several subdivisions have their own community pools and parks. The suburban character is genuine &mdash; tree-lined streets, family-oriented neighborhoods, and the kind of settled feel that newer communities are still working toward. It&apos;s not flashy, it&apos;s not trying to be a resort. It&apos;s a well-located, well-priced community that consistently delivers for buyers who prioritize value and convenience.</p>
+                  <p>Silverado Ranch is one of the most accessible and centrally located residential communities in the Las Vegas Valley. Straddling the border of Henderson and unincorporated Clark County (Las Vegas address), the community spans approximately 2,000 acres and over 8,000 homes, making it one of the largest residential areas in the southern valley corridor. Its central position between the Strip, Henderson, and the I-15/I-215 interchange makes it exceptionally convenient for commuters.</p>
+                  <p>Developed primarily from the mid-1990s through the early 2000s by a variety of national and regional builders, Silverado Ranch features homes ranging from approximately $350,000 for smaller single-story homes to $600,000 for larger upgraded properties on premium lots. The community offers a straightforward, no-frills approach to suburban living — quality single-family homes with yards, parks, and easy access to shopping, schools, and major highways.</p>
+                  <p>Silverado Ranch's location along Silverado Ranch Boulevard and Eastern Avenue puts residents within minutes of multiple shopping centers, grocery stores, restaurants, and medical facilities. The Galleria at Sunset mall is a short drive north, and the premium outlets at Las Vegas South are nearby. St. Rose Dominican Hospital's Siena Campus is within the community's boundaries, providing immediate access to emergency and specialty care.</p>
+                  <p>For buyers seeking an established, centrally located community with honest price points and excellent commute access, Silverado Ranch delivers outstanding value. The community's proximity to the I-215 beltway and I-15 means the Strip, Harry Reid Airport, Henderson, and Summerlin are all reachable in 15–25 minutes. Low HOA fees, solid infrastructure, and a stable resale market round out the appeal.</p>
                 </>
               )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Silverado Ranch At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -160,7 +303,7 @@ export default async function SilveradoRanchPage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Silverado Ranch? Let&apos;s find the neighborhood that fits your commute, lifestyle, and budget.</p>
+                <p>Ready to explore Silverado Ranch? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -168,23 +311,21 @@ export default async function SilveradoRanchPage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Silverado Ranch</span>
             <h2>What Makes Silverado Ranch Stand Out</h2>
-            <p>Location, value, and convenience &mdash; the three reasons buyers keep choosing Silverado Ranch.</p>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '\u2708\uFE0F', title: '5\u201310 Minutes to the Airport', body: 'One of the closest established communities to Harry Reid International Airport. A major advantage for frequent travelers, flight crews, and aviation industry professionals.' },
-              { icon: '\u{1F4CD}', title: 'Strip in 10\u201315 Minutes', body: 'Direct access to the Las Vegas Strip via I-15 or Las Vegas Blvd. One of the shortest commutes in the valley for hospitality and entertainment industry workers.' },
-              { icon: '\u{1F4B0}', title: 'Henderson Quality, Lower Prices', body: 'Same southeast valley location, same freeway access, same proximity to Henderson retail and dining \u2014 at price points typically $50K\u2013$100K below comparable Henderson homes.' },
-              { icon: '\u{1F6E3}\uFE0F', title: 'I-215 & I-15 Access', body: 'Two major freeways within minutes. The I-215 beltway connects to Summerlin, Henderson, and the southwest corridor. I-15 runs straight to the Strip and downtown.' },
-              { icon: '\u{1F3E0}', title: 'HOA & Non-HOA Options', body: 'One of the few southeast valley communities with both HOA-managed subdivisions and non-HOA neighborhoods. Choose the level of structure and cost that fits your lifestyle.' },
-              { icon: '\u{1F333}', title: 'Established & Settled', body: 'Mature trees, established landscaping, and a settled suburban character. Silverado Ranch feels like a real neighborhood \u2014 not a construction zone waiting to be finished.' },
-            ].map(h => (
+              { title: 'Central Valley Location', body: 'Straddling Henderson and Las Vegas with direct access to I-215 and I-15. 15–20 minutes to the Strip, Harry Reid Airport, and Henderson\'s infrastructure.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Accessible Price Points', body: 'Homes from $350K to $600K offer some of the best value in the southern Las Vegas Valley. Established single-family homes with yards at honest prices.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+              { title: 'Everyday Convenience', body: 'Multiple shopping centers, grocery stores, restaurants, and medical facilities within minutes. St. Rose Dominican Hospital is within the community\'s boundaries.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Low HOA Fees', body: 'HOA fees from $40 to $120 per month — significantly lower than guard-gated and newer master-planned communities. More value in your pocket.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Family-Friendly Parks', body: 'Silverado Ranch Park, Desert Breeze Park, and multiple neighborhood parks provide playgrounds, sports fields, pools, and walking paths throughout the community.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'Commuter\'s Dream', body: 'The I-215/I-15 interchange is minutes away, providing direct corridors to the Strip, Harry Reid Airport, Henderson, Summerlin, and every quadrant of the valley.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -195,113 +336,76 @@ export default async function SilveradoRanchPage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <SilveradoRanchFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Explore Silverado Ranch&apos;s Neighborhoods</h2>
-            <p>A mix of established and newer neighborhoods with genuine price diversity.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Silverado Ranch North', type: 'Established \u00B7 Mature', desc: 'The original Silverado Ranch neighborhoods north of Silverado Ranch Blvd. Mature landscaping, larger lots, and an established suburban feel. Some non-HOA pockets available.', price: 'From $375K' },
-              { name: 'Silverado Ranch South', type: 'Newer \u00B7 Family', desc: 'Newer subdivisions south of Silverado Ranch Blvd with modern floor plans, energy-efficient construction, and proximity to the I-215 beltway. Popular with families.', price: 'From $425K' },
-              { name: 'Gated Subdivisions', type: 'Gated \u00B7 Premium', desc: 'Several gated neighborhoods within Silverado Ranch offer an extra layer of privacy and security. Well-maintained common areas, community pools, and controlled-access entry.', price: 'From $450K' },
-              { name: 'Silverado Ranch Townhomes', type: 'Attached \u00B7 Entry-Level', desc: 'Townhome and condo communities ideal for first-time buyers, investors, and professionals. Low-maintenance living with proximity to the airport and Strip.', price: 'From $225K' },
-              { name: 'Eastern Avenue Corridor', type: 'Convenient \u00B7 Mixed', desc: 'Neighborhoods along the Eastern Avenue corridor with walkable access to retail, dining, and services. A mix of single-family homes and attached units.', price: 'From $300K' },
-              { name: 'Premium Single-Family', type: 'Move-Up \u00B7 Spacious', desc: 'Larger single-family homes with 4\u20135 bedrooms and premium lot sizes. The top tier of Silverado Ranch housing, often with mountain views and upgraded finishes.', price: 'From $550K+' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Guard-gated Henderson community with golf and Strip views. Higher price range.' },
+              { name: 'Green Valley Ranch', href: '/green-valley-ranch/', price: 'From $400K', compare: 'Henderson\'s premier established master plan with top schools and the GVR resort.' },
+              { name: 'Whitney Ranch', href: '/whitney-ranch/', price: 'From $350K', compare: 'Central Henderson community with similar pricing and established character.' },
+              { name: 'Inspirada', href: '/inspirada/', price: 'From $420K', compare: 'Newer Henderson master plan with parks, trails, and new construction.' },
+              { name: 'Enterprise', href: '/enterprise/', price: 'From $350K', compare: 'Growing area south of the Strip with new-construction communities.' },
+              { name: 'Mountains Edge', href: '/mountains-edge/', price: 'From $350K', compare: 'Master-planned community in southwest Las Vegas with similar price points.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img
-                src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : '/red-rock-canyon.jpg'}
-                alt="Suburban neighborhood and mountain views in Silverado Ranch, Las Vegas"
-              />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Lifestyle &amp; Convenience</span>
-              <div className="gold-rule" />
-              <h2>Airport Access, Henderson Dining, and Suburban Comfort</h2>
-              <p>Silverado Ranch&apos;s lifestyle is defined by convenience. The airport, the Strip, and Henderson&apos;s best retail and dining corridors are all within 15 minutes. Daily life here feels effortless &mdash; errands are quick, commutes are short, and weekends are wide open.</p>
-              <p>The suburban character provides a genuine neighborhood feel with parks, community pools, and mature tree-lined streets that make Silverado Ranch feel lived-in and welcoming.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  'Harry Reid International Airport \u2014 5\u201310 minutes, one of the closest communities to the terminal',
-                  'Galleria at Sunset and Henderson dining corridor \u2014 roughly 5 minutes south via Eastern Ave',
-                  'Las Vegas Strip entertainment, dining, and employment \u2014 10\u201315 minutes via I-15',
-                  'Silverado Ranch Park and multiple subdivision community pools and green spaces',
-                  'Clark County Wetlands Park \u2014 210 acres of trails and nature viewing \u2014 minutes east toward Henderson',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Silverado Ranch Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Silverado Ranch, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Silverado Ranch Families</h2>
-            <p>A mix of Las Vegas and Henderson school zones serving the border community.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[['Lois & Jerry Tarkanian Middle School','6\u20138'],['Silvestri Junior High School','6\u20138'],['Silverado High School','9\u201312'],['Green Valley High School','9\u201312'],['Southeast Career Technical Academy','9\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Faith-Based</h3>
-              {[['Henderson International School','PreK\u201312'],['Mountain View Christian School','PreK\u201312'],['Pinecrest Academy of Nevada','K\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Specialty</h3>
-              {[['Doral Academy of Nevada','K\u20138'],['Somerset Academy','K\u20138'],['Coral Academy of Science','K\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{marginTop:'24px',padding:'18px',background:'rgba(201,168,76,0.06)',border:'1px solid var(--border)',borderRadius:'var(--radius)',fontSize:'13px',color:'var(--white-70)',lineHeight:'1.7'}}>
-                <strong style={{color:'var(--white)'}}>School Assignment Note:</strong> Silverado Ranch straddles Las Vegas and Henderson school zones. Assignments vary significantly by address and may fall into either district\u2019s boundaries. Always confirm your assigned school with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Silverado Ranch Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <SilveradoRanchFAQ />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Silverado Ranch Home?</h2>
-          <p>Whether you&apos;re looking for a starter condo near the airport or a family home bordering Henderson, I&apos;ll help you find the right fit in Silverado Ranch.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="#listings" className="btn-outline">Browse All Listings</a>
-          </div>
-          <p style={{marginTop:'24px',fontSize:'12px',color:'rgba(255,255,255,0.3)'}}>Nevada Lic. #S.0181401.LLC &middot; lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

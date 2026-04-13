@@ -5,47 +5,138 @@ import InspiradaMapWrapper from '@/components/InspiradaMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Inspirada', item: 'https://www.lasvegashomesearchexperts.com/inspirada/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Inspirada?",
+    "a": "Homes in Inspirada range from approximately $420,000 for entry-level new construction to over $1.1 million for premium luxury homes by Toll Brothers and other top builders."
+  },
+  {
+    "q": "Is Inspirada guard-gated?",
+    "a": "No. Inspirada is not a guard-gated community. It is an open master-planned community with HOA governance, maintained common areas, and the safety benefits of Henderson — one of America's safest large cities."
+  },
+  {
+    "q": "Is Inspirada still building new homes?",
+    "a": "Yes. Inspirada continues to offer new construction from multiple national builders including Toll Brothers, Lennar, and Century Communities across several active neighborhoods."
+  },
+  {
+    "q": "What ZIP code is Inspirada in?",
+    "a": "Inspirada is located in ZIP code 89044 in Henderson, Nevada."
+  },
+  {
+    "q": "What are HOA fees in Inspirada?",
+    "a": "HOA fees in Inspirada typically range from $100 to $250 per month, covering access to community parks, pools, trails, gathering spaces, and common area maintenance."
+  },
+  {
+    "q": "What schools serve Inspirada?",
+    "a": "Inspirada is served by CCSD schools including Elise L. Wolff Elementary (6/10), Del E. Webb Middle School (7/10), and Liberty High School (6/10). Charter options include Doral Academy (9/10) and Somerset Academy (8/10)."
+  },
+  {
+    "q": "What amenities does Inspirada offer?",
+    "a": "Inspirada features over 600 acres of open space, resort-style pools, splash pads, landscaped plazas with fire features, sports courts, playgrounds, and miles of interconnected walking and biking trails connecting every neighborhood."
+  },
+  {
+    "q": "How does Inspirada compare to Cadence?",
+    "a": "Both are newer Henderson master plans with new construction. Inspirada emphasizes community design, gathering spaces, and open space (600+ acres). Cadence is newer and more centrally located with fiber internet and a sports complex. Inspirada's price range starts slightly higher ($420K vs $350K)."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Inspirada',
+  description: 'Inspirada is a master-planned · new construction community in Henderson, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 35.975, longitude: -115.076 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89044', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Henderson' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('inspirada')
   return {
-    title: cms?.metaTitle ?? 'Inspirada Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Inspirada homes for sale in Henderson, NV. 2,500-acre master-planned community with resort amenities, 30+ parks, and Mediterranean-inspired architecture. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Inspirada Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Inspirada homes for sale in Henderson, NV. $420K–$1.1M+. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
 export default async function InspiradaPage() {
   const cms = await getCommunityPage('inspirada')
+  const market = getMarketStats('inspirada')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Inspirada Homes\nFor Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Henderson\u2019s premier master-planned community \u2014 2,500 acres of Mediterranean-inspired living with resort-level amenities and 30+ parks."
-  const overviewTitle = cms?.overviewTitle ?? 'Inspirada: Henderson Living at Its Best'
+  const heroHeadline = cms?.heroHeadline ?? 'Inspirada'
+  const heroSubtitle = 'Homes for Sale in Henderson, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Inspirada: Master-Planned · New Construction Living in Henderson'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
     ['Established', '2007'],
-    ['Developers', 'Toll Brothers, Beazer, Century'],
-    ['Total Acreage', '~2,500 acres'],
-    ['Planned Homes', '8,000\u20139,000'],
-    ['Median Home Price', '~$575,000', 'gold'],
-    ['Neighborhoods', '20+'],
-    ['Schools', '5+ nearby'],
-    ['Parks', '30+'],
-    ['Community Club', 'Inspirada Club'],
-    ['Architecture', 'Mediterranean-inspired'],
-    ['Distance to Strip', '~25 min'],
-    ['Distance to Water Street', '~10 min'],
+    ['Developer', 'Focus Property Group / Multiple builders'],
+    ['Total Acreage', '1,700 acres'],
+    ['Homes', '5,000+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$420K–$1.1M+'],
+    ['ZIP Codes', '89044'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$100–$250/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '~25 min', destination: 'to the Strip', route: 'via I-215 \u2192 I-15' },
-    { time: '~10 min', destination: 'to Water Street District', route: 'via S Eastern Ave' },
-    { time: '~15 min', destination: 'to Henderson Bird Preserve', route: 'via Volunteer Blvd' },
-    { time: '~20 min', destination: 'to Harry Reid Airport', route: 'via I-215 West' },
-  ]
+    {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~15 min",
+        "destination": "to Henderson Pavilion",
+        "route": "via St. Rose Pkwy"
+    },
+    {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~10 min",
+        "destination": "to Galleria at Sunset",
+        "route": "via Eastern Ave"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -62,44 +153,100 @@ export default async function InspiradaPage() {
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="summerlin-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Inspirada hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">Henderson, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '150+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$400K\u2013$900K+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Parks', '30+')}</span><span className="hero-stat-lbl">Parks</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Total Acreage', '2,500')}</span><span className="hero-stat-lbl">Acres</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$420K–$1.1M+')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Inspirada</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '64px 0 0', background: 'var(--charcoal)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89044</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Master-Planned · New Construction</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $420K–$1.1M+</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $100–$250/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 2007</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Inspirada Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['~14,000', 'Population'],
+              ['37', 'Median Age'],
+              ['$95,000', 'Avg Household Income'],
+              ['~5,000', 'Total Households'],
+              ['75%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Inspirada?</h2>
-            <p>Located in the southern reaches of Henderson &mdash; one of America&apos;s safest cities &mdash; with easy access to the I-215 beltway and downtown Henderson.</p>
+            <p>Henderson, Nevada &mdash; Henderson, Nevada.</p>
           </div>
           <div className="map-container">
             <InspiradaMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -110,49 +257,45 @@ export default async function InspiradaPage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings &middot; Updated Daily</span>
-            <h2>New Inspirada Listings</h2>
-            <p>The 12 most recently listed homes in Inspirada &mdash; new construction and resale homes from the $400Ks.</p>
+            <h2 className="listings-title">NEW INSPIRADA LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"city":"Henderson","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Inspirada"}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":400000,"locations":[{"city":"Henderson","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Inspirada","zipCodes":["89044"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Inspirada" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Inspirada Listings Now &rarr;</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Inspirada" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Inspirada Listings &rarr;</a>
             <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
               <h2>{overviewTitle}</h2>
               {cms?.overviewBody?.length ? (
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>I&apos;ve been selling homes in Henderson for decades, and Inspirada is one of the communities I find myself recommending more and more. When the development partnership broke ground back in 2007, the timing was brutal &mdash; right into the teeth of the recession. But that turned out to be a hidden advantage. The developers had time to get the master plan right, and what emerged is one of the most thoughtfully designed communities in the entire Las Vegas Valley.</p>
-                  <p>The Mediterranean-inspired architecture gives Inspirada a cohesive, resort-like feel that you don&apos;t get in most master-planned communities. Every neighborhood has a consistent aesthetic &mdash; warm stucco exteriors, tile roofs, courtyards, and mature landscaping that makes the community feel established even in its newer sections. It&apos;s a deliberate design choice, and it pays off in curb appeal and long-term property values.</p>
-                  <p>What really sets Inspirada apart is the amenity package. The Inspirada Club is the centerpiece &mdash; resort-style pools, a full fitness center, sports courts, event spaces, and year-round programming &mdash; all included with your HOA dues. Then there are the 30-plus parks connected by a trail network that weaves through the entire community. My clients with kids consistently tell me it&apos;s the parks that sold them.</p>
-                  <p>The location in south Henderson puts you in one of the safest cities in America (Henderson regularly ranks in the top 10 nationally), with easy freeway access via I-215. You&apos;re 10 minutes from the Water Street District, 15 minutes from the Henderson Bird Viewing Preserve, and 20&ndash;25 minutes from the Strip. For families and professionals who want newer construction with genuine community character, Inspirada delivers.</p>
+                  <p>Inspirada is a premier master-planned community in southern Henderson that has set a new standard for community design in the Las Vegas Valley. Spanning 1,700 acres with over 5,000 homes, Inspirada was built around the idea that great neighborhoods need great gathering spaces — and the community delivers with over 600 acres of open space, interconnected parks, tree-lined pathways, and a series of community plazas that encourage neighbors to connect.</p>
+                  <p>The community features a thoughtful mix of architectural styles — from Mediterranean and Spanish Colonial to contemporary desert modern — that gives each neighborhood a distinct character while maintaining a cohesive, visually appealing streetscape. Homes range from approximately $420,000 for entry-level production homes to over $1.1 million for premium homes in the community's luxury enclaves. Builders including Toll Brothers, Lennar, Century Communities, and Beazer have delivered a wide variety of floor plans from 1,400 to 4,500+ square feet.</p>
+                  <p>Inspirada's parks and amenities set it apart from other Henderson communities. The community's signature gathering spaces include landscaped plazas with fire features, resort-style pools, splash pads, sports courts, playgrounds, and a network of trails that connect every neighborhood to the community's green spaces. The planned commercial district along St. Rose Parkway brings dining and retail within walking or biking distance of most neighborhoods.</p>
+                  <p>Located along the I-215 beltway corridor in southern Henderson, Inspirada provides direct access to the Strip and Harry Reid Airport in approximately 20 minutes. The community is near top-rated Henderson schools, the Henderson Pavilion amphitheater, and the emerging commercial corridor along St. Rose Parkway. For families and professionals seeking a walkable, design-forward community with new construction options, Inspirada is one of the best choices in Henderson.</p>
                 </>
               )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Inspirada At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -160,7 +303,7 @@ export default async function InspiradaPage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Inspirada? Let&apos;s schedule a private tour of the community and the current listings that match your goals.</p>
+                <p>Ready to explore Inspirada? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -168,23 +311,21 @@ export default async function InspiradaPage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Inspirada</span>
             <h2>What Makes Inspirada Stand Out</h2>
-            <p>A master-planned community with the polish of a private resort and the warmth of a real neighborhood.</p>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '\u{1F3DB}\uFE0F', title: 'Mediterranean Architecture', body: 'A cohesive, resort-inspired design language across every neighborhood \u2014 warm stucco, tile roofs, courtyards, and mature landscaping that gives the community instant character.' },
-              { icon: '\u{1F3CA}', title: 'The Inspirada Club', body: 'A resort-caliber community center with multiple pools, a full fitness center, sports courts, event lawns, and year-round social programming \u2014 all included with HOA dues.' },
-              { icon: '\u{1F333}', title: '30+ Parks & Connected Trails', body: 'One of the most extensive park systems in Southern Nevada. Pocket parks, playgrounds, splash pads, dog parks, and open green spaces connected by miles of walking and biking trails.' },
-              { icon: '\u{1F6E1}\uFE0F', title: 'Henderson: Top 10 Safest City', body: 'Inspirada sits in Henderson, which consistently ranks among the top 10 safest large cities in America. Low crime, clean streets, and responsive city services.' },
-              { icon: '\u{1F426}', title: 'Bird Viewing Preserve Nearby', body: 'The Henderson Bird Viewing Preserve \u2014 a 140-acre wetland oasis with 270+ bird species \u2014 is just minutes away. A unique amenity you won\u2019t find near any other Las Vegas community.' },
-              { icon: '\u{1F3D7}\uFE0F', title: 'New Construction Available', body: 'Multiple national builders \u2014 Toll Brothers, Beazer Homes, Century Communities \u2014 are still actively building. Brand-new homes with modern floor plans and energy-efficient construction.' },
-            ].map(h => (
+              { title: 'Award-Winning Community Design', body: 'Over 600 acres of open space, landscaped plazas, tree-lined pathways, and signature gathering places. Inspirada has won multiple planning and design awards.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'New Construction Available', body: 'Active new-home construction from Toll Brothers, Lennar, Century Communities, and other national builders. Floor plans from 1,400 to 4,500+ square feet.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Connected Trail Network', body: 'Miles of interconnected walking and biking trails link every neighborhood to parks, plazas, schools, and the commercial district. A walkable, active-lifestyle community.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Community Gathering Spaces', body: 'Landscaped plazas with fire features, resort-style pools, splash pads, and amphitheater-style seating create natural gathering points throughout the community.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'I-215 Beltway Access', body: 'Direct access to the I-215 beltway for a clean 20-minute commute to the Strip and Harry Reid Airport. Southern Henderson\'s premier commuter corridor.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+              { title: 'Henderson Safety', body: 'Henderson consistently ranks among the top 10 safest large cities in America. Inspirada benefits from low crime rates and responsive city services.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -195,113 +336,76 @@ export default async function InspiradaPage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <InspiradaFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Explore Inspirada&apos;s Neighborhoods</h2>
-            <p>National builders and diverse floor plans offer something for every lifestyle and budget.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Toll Brothers at Inspirada', type: 'Luxury \u00B7 Semi-Custom', desc: 'Premium single-family homes with upscale finishes, gourmet kitchens, and spacious lots. Toll Brothers\u2019 signature quality in a master-planned setting.', price: 'From $650K' },
-              { name: 'Beazer Homes', type: 'Family \u00B7 Energy-Efficient', desc: 'Well-designed family homes with Beazer\u2019s emphasis on energy efficiency and sustainable building practices. Popular with move-up buyers.', price: 'From $500K' },
-              { name: 'Century Communities', type: 'Entry-Level \u00B7 Modern', desc: 'Accessible price points with contemporary floor plans. A strong option for first-time buyers looking to enter the Henderson market.', price: 'From $420K' },
-              { name: 'Pardee Homes', type: 'Family \u00B7 Established', desc: 'One of Inspirada\u2019s original builders, Pardee delivered many of the community\u2019s earliest and most established neighborhoods with mature landscaping.', price: 'From $480K' },
-              { name: 'The Paseo Collection', type: 'Townhomes \u00B7 Low-Maintenance', desc: 'Attached townhomes ideal for professionals, downsizers, and first-time buyers. Walking distance to the Inspirada Club and central parks.', price: 'From $400K' },
-              { name: 'Custom & Premium Lots', type: 'Luxury \u00B7 Select Sites', desc: 'Select oversized lots within Inspirada offer the opportunity for custom and semi-custom builds with premium views and private positioning.', price: 'From $800K+' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Anthem', href: '/anthem/', price: 'From $400K', compare: 'Henderson\'s largest master plan with guard-gated golf, 55+, and family neighborhoods. Adjacent to Inspirada.' },
+              { name: 'Cadence', href: '/cadence/', price: 'From $350K', compare: 'Henderson\'s other new master-planned community with modern new construction and Central Park.' },
+              { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Guard-gated Henderson community with Rio Secco golf and Strip views.' },
+              { name: 'Green Valley Ranch', href: '/green-valley-ranch/', price: 'From $400K', compare: 'Henderson\'s premier established master plan with parks, top schools, and retail.' },
+              { name: 'MacDonald Highlands', href: '/macdonald-highlands/', price: 'From $800K', compare: 'Henderson\'s premier luxury mountainside community with DragonRidge Country Club.' },
+              { name: 'Silverado Ranch', href: '/silverado-ranch/', price: 'From $350K', compare: 'Established community with accessible pricing straddling Henderson and Las Vegas.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img
-                src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : '/red-rock-canyon.jpg'}
-                alt="Parks and outdoor lifestyle in Inspirada, Henderson"
-              />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Outdoor Living</span>
-              <div className="gold-rule" />
-              <h2>30+ Parks, Connected Trails, and a Resort You Already Belong To</h2>
-              <p>Inspirada was designed around the idea that outdoor space isn&apos;t a luxury &mdash; it&apos;s infrastructure. The park system here is one of the most extensive in Southern Nevada, with 30-plus parks connected by a trail network that lets you walk, jog, or bike through the entire community without ever touching a road.</p>
-              <p>The Inspirada Club anchors it all with resort-style pools, sports courts, and event spaces that would cost thousands per year in a private club &mdash; but are included with your HOA.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  '30+ parks including pocket parks, playgrounds, splash pads, dog parks, and open green spaces',
-                  'Miles of interconnected walking and biking trails through every neighborhood',
-                  'Inspirada Club with resort pools, fitness center, sports courts, and event lawns',
-                  'Henderson Bird Viewing Preserve \u2014 140 acres, 270+ bird species \u2014 minutes away',
-                  'Lake Mead, Sloan Canyon, Bootleg Canyon mountain biking, and Valley of Fire all within an hour',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Inspirada Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Inspirada, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Inspirada Families</h2>
-            <p>Henderson&apos;s strong school options include several newer campuses built for this part of the city.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[['Elise L. Wolff Elementary','K\u20135'],['John C. Vanderburg Elementary','K\u20135'],['Robert L. Forbuss Elementary','K\u20135'],['Del E. Webb Middle School','6\u20138'],['Coronado High School','9\u201312'],['Southeast Career Technical Academy','9\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Faith-Based</h3>
-              {[['Henderson International School','PreK\u201312'],['Pinecrest Academy of Nevada','K\u201312'],['Mountain View Christian School','PreK\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Specialty</h3>
-              {[['Doral Academy of Nevada','K\u20138'],['Somerset Academy','K\u20138'],['Coral Academy of Science','K\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{marginTop:'24px',padding:'18px',background:'rgba(201,168,76,0.06)',border:'1px solid var(--border)',borderRadius:'var(--radius)',fontSize:'13px',color:'var(--white-70)',lineHeight:'1.7'}}>
-                <strong style={{color:'var(--white)'}}>School Assignment Note:</strong> Henderson school zones vary by address. Several newer schools have been built specifically to serve south Henderson communities like Inspirada. Always confirm your assigned school with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Inspirada Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <InspiradaFAQ />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Inspirada Home?</h2>
-          <p>Whether you&apos;re looking at new construction from Toll Brothers or a move-in-ready resale, I&apos;ll help you find the right home in Inspirada for your family and budget.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="#listings" className="btn-outline">Browse All Listings</a>
-          </div>
-          <p style={{marginTop:'24px',fontSize:'12px',color:'rgba(255,255,255,0.3)'}}>Nevada Lic. #S.0181401.LLC &middot; lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

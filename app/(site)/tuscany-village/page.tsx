@@ -5,47 +5,138 @@ import TuscanyVillageMapWrapper from '@/components/TuscanyVillageMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Tuscany Village', item: 'https://www.lasvegashomesearchexperts.com/tuscany-village/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Tuscany Village?",
+    "a": "Homes in Tuscany Village range from approximately $400,000 for townhomes and smaller single-story homes to $700,000 for larger homes on premium golf course lots with mountain views."
+  },
+  {
+    "q": "Is Tuscany Village guard-gated?",
+    "a": "Yes. Tuscany Village is a fully guard-gated community with 24-hour staffed entry. It is one of the most affordable guard-gated communities in Henderson."
+  },
+  {
+    "q": "What golf course is in Tuscany Village?",
+    "a": "Chimera Golf Club (formerly Tuscany Golf Club) is an 18-hole, par-72 championship course that winds through the community. It is open for both membership and public play."
+  },
+  {
+    "q": "What ZIP code is Tuscany Village in?",
+    "a": "Tuscany Village is located in ZIP code 89074 in Henderson, Nevada."
+  },
+  {
+    "q": "What are HOA fees in Tuscany Village?",
+    "a": "HOA fees in Tuscany Village typically range from $150 to $350 per month, depending on the neighborhood. Fees cover guard gate staffing, common area maintenance, and community amenities."
+  },
+  {
+    "q": "What schools serve Tuscany Village?",
+    "a": "Tuscany Village is served by CCSD schools including Nate Mack Elementary (8/10), Del E. Webb Middle School (7/10), and Green Valley High School (7/10). Private and charter options are also available nearby."
+  },
+  {
+    "q": "Do you have to join the golf club to live in Tuscany Village?",
+    "a": "No. Golf club membership is entirely optional. Many Tuscany Village residents enjoy the guard-gated security, golf course views, and community character without playing golf."
+  },
+  {
+    "q": "How does Tuscany Village compare to Seven Hills?",
+    "a": "Both are guard-gated Henderson communities with golf. Seven Hills is larger and more upscale ($500K–$7M+) with Rio Secco Golf Club. Tuscany Village is more accessible ($400K–$700K) with Chimera Golf Club, making it ideal for buyers who want guard-gated golf living without luxury pricing."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Tuscany Village',
+  description: 'Tuscany Village is a guard-gated · golf community in Henderson, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.04, longitude: -115.065 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89074', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Henderson' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('tuscany-village')
   return {
-    title: cms?.metaTitle ?? 'Tuscany Village Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Tuscany Village homes for sale in Henderson, NV. Established Mediterranean-inspired community near Eastern Ave and Horizon Ridge. Homes from $375K to $750K+. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Tuscany Village Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Tuscany Village homes for sale in Henderson, NV. $400K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
 export default async function TuscanyVillagePage() {
   const cms = await getCommunityPage('tuscany-village')
+  const market = getMarketStats('tuscany-village')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Tuscany Village Homes\nFor Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Henderson\u2019s Mediterranean-inspired community \u2014 established neighborhoods with cohesive architecture, mature landscaping, and genuine neighborhood character."
-  const overviewTitle = cms?.overviewTitle ?? 'Tuscany Village: Henderson\u2019s Mediterranean Enclave'
+  const heroHeadline = cms?.heroHeadline ?? 'Tuscany Village'
+  const heroSubtitle = 'Homes for Sale in Henderson, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Tuscany Village: Guard-Gated · Golf Living in Henderson'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
-    ['Established', 'Early 2000s'],
-    ['Style', 'Mediterranean-inspired'],
-    ['Location', 'Eastern Ave & Horizon Ridge'],
-    ['City', 'Henderson'],
-    ['Median Home Price', '~$525,000', 'gold'],
-    ['Neighborhoods', '10+'],
-    ['Schools', '5+ nearby'],
-    ['Parks', 'Community parks & paths'],
-    ['Architecture', 'Stucco, tile roofs, courtyards'],
-    ['Character', 'Established & mature'],
-    ['Distance to Strip', '15\u201320 min'],
-    ['Distance to Water Street', '~12 min'],
+    ['Established', '1997'],
+    ['Developer', 'Tuscany Golf Management'],
+    ['Total Acreage', '~450 acres'],
+    ['Homes', '1,200+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$400K–$700K'],
+    ['ZIP Codes', '89074'],
+    ['Guard-Gated', 'Yes'],
+    ['HOA', '$150–$350/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '15\u201320 min', destination: 'to the Strip', route: 'via I-215 \u2192 I-15' },
-    { time: '~12 min', destination: 'to Water Street District', route: 'via Eastern Ave' },
-    { time: '~10 min', destination: 'to Galleria at Sunset', route: 'via Eastern Ave North' },
-    { time: '~15 min', destination: 'to Harry Reid Airport', route: 'via I-215 West' },
-  ]
+    {
+        "time": "~20 min",
+        "destination": "to the Strip",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~5 min",
+        "destination": "to Green Valley Ranch Resort",
+        "route": "via Valle Verde Dr"
+    },
+    {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-215 → I-15"
+    },
+    {
+        "time": "~5 min",
+        "destination": "to Galleria at Sunset",
+        "route": "via Sunset Rd"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -62,44 +153,100 @@ export default async function TuscanyVillagePage() {
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="summerlin-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Tuscany Village hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">Henderson, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '50+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$375K\u2013$750K+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Style', 'Mediterranean')}</span><span className="hero-stat-lbl">Architecture</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Character', 'Established')}</span><span className="hero-stat-lbl">Community</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$400K–$700K')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Tuscany Village</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '32px 0 0', background: 'var(--charcoal)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89074</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Guard-Gated · Golf</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $400K–$700K</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $150–$350/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 1997</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Tuscany Village Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['~3,200', 'Population'],
+              ['46', 'Median Age'],
+              ['$105,000', 'Avg Household Income'],
+              ['~1,200', 'Total Households'],
+              ['85%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Tuscany Village?</h2>
-            <p>Situated in south Henderson near the intersection of Eastern Avenue and Horizon Ridge Parkway &mdash; central to Henderson&apos;s best retail, dining, and recreation.</p>
+            <p>Henderson, Nevada &mdash; Henderson, Nevada.</p>
           </div>
           <div className="map-container">
             <TuscanyVillageMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -110,49 +257,45 @@ export default async function TuscanyVillagePage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings &middot; Updated Daily</span>
-            <h2>New Tuscany Village Listings</h2>
-            <p>The 12 most recently listed homes in Tuscany Village &mdash; Mediterranean-styled single-family homes and townhomes.</p>
+            <h2 className="listings-title">NEW TUSCANY VILLAGE LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":250000,"locations":[{"city":"Henderson","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Tuscany Village"}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":350000,"locations":[{"city":"Henderson","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Tuscany Village","zipCodes":["89074"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Tuscany%20Village" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Tuscany Village Listings Now &rarr;</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Henderson&s[locations][0][state]=NV&s[keywords]=Tuscany%20Village" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Tuscany Village Listings &rarr;</a>
             <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
               <h2>{overviewTitle}</h2>
               {cms?.overviewBody?.length ? (
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Tuscany Village is one of those Henderson communities that rewards buyers who take the time to look beyond the big-name master plans. Developed in the early 2000s near the intersection of Eastern Avenue and Horizon Ridge Parkway, it was built with a deliberate Mediterranean design vision &mdash; warm stucco exteriors, clay tile roofs, arched doorways, and courtyard-style layouts that give the entire community a cohesive, almost European feel. Two decades later, that design choice has aged beautifully.</p>
-                  <p>The mature landscaping is what strikes you first when you drive through. Established trees line the streets, front yards have had twenty-plus years to fill in, and the common areas have the settled, lush character that newer communities simply can&apos;t replicate. In a valley where most homes are surrounded by rock and desert landscaping, Tuscany Village stands out with genuine shade trees and green spaces that create a noticeably different atmosphere.</p>
-                  <p>The location on the Eastern Avenue corridor puts you in a sweet spot for Henderson living. Galleria at Sunset is about 10 minutes north. The Water Street District &mdash; Henderson&apos;s walkable downtown with restaurants, breweries, and shops &mdash; is about 12 minutes away. The I-215 beltway provides a clean route to the airport, the Strip, and the rest of the valley. And Anthem, with its country club and foothill trails, is just a few minutes south.</p>
-                  <p>Price-wise, Tuscany Village sits in the Henderson mid-range &mdash; above the entry-level communities but well below the guard-gated luxury tier. You&apos;re getting established homes with genuine architectural character in one of the safest cities in America, at prices that are competitive with newer construction that won&apos;t have the same design cohesion or mature landscaping for another decade. For buyers who value character and aesthetic consistency, Tuscany Village delivers something that&apos;s genuinely hard to find elsewhere in the valley.</p>
+                  <p>Tuscany Village is a guard-gated golf community in the heart of Henderson that delivers country club living at an accessible price point. Built around the Chimera Golf Club — an 18-hole championship course that winds through the community's rolling terrain — Tuscany Village offers the rare combination of guard-gated security, golf course views, and Henderson's central location, all without the seven-figure price tags found at Henderson's luxury guard-gated enclaves.</p>
+                  <p>Developed in the late 1990s, Tuscany Village features approximately 1,200 homes built by a variety of national and regional builders. Residences range from approximately $400,000 for well-maintained single-story homes to $700,000 for larger homes on premium golf course lots. Floor plans span from 1,600 to 3,200 square feet with a mix of single-story and two-story configurations. The Tuscan-Mediterranean architectural theme gives the community a warm, cohesive character.</p>
+                  <p>Chimera Golf Club (formerly Tuscany Golf Club) is an 18-hole, par-72 championship course open to both members and the public. The course features well-maintained fairways, strategic bunkering, and mountain views that make it one of Henderson's most enjoyable golf experiences. For non-golfers, the community's guard-gated perimeter, walking paths, and quiet streetscapes provide a secure and pleasant environment.</p>
+                  <p>Tuscany Village's central Henderson location puts residents within minutes of Green Valley Ranch resort, the Galleria at Sunset, multiple grocery stores, and St. Rose Dominican Hospital. The I-215 beltway interchange is a short drive away, offering direct commute corridors to the Strip, Harry Reid Airport, and the broader valley. For buyers who want guard-gated golf community living without paying luxury premiums, Tuscany Village is one of Henderson's best-kept secrets.</p>
                 </>
               )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Tuscany Village At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -160,7 +303,7 @@ export default async function TuscanyVillagePage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Tuscany Village? Let&apos;s schedule a tour of the community and find the home that fits your style.</p>
+                <p>Ready to explore Tuscany Village? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -168,23 +311,21 @@ export default async function TuscanyVillagePage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Tuscany Village</span>
             <h2>What Makes Tuscany Village Stand Out</h2>
-            <p>Mediterranean character, mature landscaping, and Henderson safety &mdash; a community with genuine personality.</p>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '\u{1F3DB}\uFE0F', title: 'Mediterranean Architecture', body: 'A cohesive design language throughout \u2014 warm stucco, clay tile roofs, arched entries, and courtyard layouts. Design guidelines maintain the community\u2019s character home by home.' },
-              { icon: '\u{1F333}', title: 'Mature & Established', body: 'Twenty-plus years of growth have created tree-lined streets, lush front yards, and mature common areas. A settled aesthetic that newer communities won\u2019t achieve for a decade or more.' },
-              { icon: '\u{1F6E1}\uFE0F', title: 'Henderson: Top 10 Safest City', body: 'Henderson consistently ranks among the top 10 safest large cities in America. Low crime, clean streets, and responsive city services that residents consistently praise.' },
-              { icon: '\u{1F4CD}', title: 'Eastern Ave & Horizon Ridge', body: 'Central to Henderson\u2019s best retail, dining, and services. Galleria at Sunset ~10 min, Water Street District ~12 min, and the I-215 beltway within easy reach.' },
-              { icon: '\u{1F3E0}', title: 'Genuine Neighborhood Feel', body: 'Quieter residential streets, pedestrian-friendly layouts, and a community where neighbors know each other. The kind of lived-in character that can\u2019t be manufactured.' },
-              { icon: '\u{1F4B0}', title: 'Henderson Mid-Range Value', body: 'Established homes with real architectural character at prices below the guard-gated luxury tier. Strong value for buyers who prioritize aesthetics and community feel.' },
-            ].map(h => (
+              { title: 'Chimera Golf Club', body: '18-hole, par-72 championship course winding through the community. Open for both membership and public play, with mountain views and well-maintained conditions.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/></svg> },
+              { title: 'Guard-Gated Security', body: '24-hour staffed guard gate with controlled access. Tuscany Village offers guard-gated living at price points well below Henderson\'s luxury communities.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+              { title: 'Central Henderson Location', body: 'Minutes to Green Valley Ranch, Galleria at Sunset, St. Rose Hospital, and everyday shopping. One of the most convenient locations in Henderson.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Accessible Golf Living', body: 'Guard-gated golf community homes from $400K–$700K. One of the most affordable ways to live on a golf course in Henderson.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+              { title: 'Tuscan-Mediterranean Design', body: 'Cohesive Tuscan-Mediterranean architectural standards throughout the community. Warm stucco finishes, tile roofs, and mature landscaping create a unified aesthetic.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Henderson Safety', body: 'Henderson consistently ranks among the top 10 safest large cities in America. Combined with the guard gate, Tuscany Village is one of the most secure communities in the valley.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -195,113 +336,76 @@ export default async function TuscanyVillagePage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <TuscanyVillageFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Explore Tuscany Village&apos;s Neighborhoods</h2>
-            <p>Mediterranean-themed neighborhoods with variety in size, layout, and price point.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Tuscany Village Estates', type: 'Single-Family \u00B7 Premium', desc: 'Larger single-family homes with 4\u20135 bedrooms, premium lot sizes, and the most pronounced Mediterranean styling. Many feature private courtyards and upgraded landscaping.', price: 'From $600K' },
-              { name: 'Tuscany Village Core', type: 'Family \u00B7 Established', desc: 'The heart of the community with well-maintained single-family homes, mature trees, and walking distance to community parks. The most popular section for families.', price: 'From $475K' },
-              { name: 'Courtyard Collection', type: 'Single-Story \u00B7 Courtyard', desc: 'Single-story homes with courtyard entries and low-maintenance desert landscaping. Popular with downsizers and buyers who want single-level living with Mediterranean character.', price: 'From $450K' },
-              { name: 'Tuscany Village Townhomes', type: 'Attached \u00B7 Low-Maintenance', desc: 'Townhome communities within the Tuscany Village area offering the Mediterranean aesthetic in a low-maintenance, attached format. Ideal for first-time buyers and professionals.', price: 'From $375K' },
-              { name: 'Horizon Ridge Corridor', type: 'Convenient \u00B7 Mixed', desc: 'Neighborhoods along the Horizon Ridge corridor with walkable access to retail, dining, and the Horizon Ridge trail system. A mix of single-family and attached homes.', price: 'From $425K' },
-              { name: 'Premium View Homes', type: 'Views \u00B7 Elevated', desc: 'Select homes on elevated lots with views of the McCullough Range and the broader Henderson valley. Premium positioning within the community.', price: 'From $650K+' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Guard-gated Henderson community with Rio Secco golf and Strip views. Higher price range.' },
+              { name: 'Green Valley Ranch', href: '/green-valley-ranch/', price: 'From $400K', compare: 'Henderson\'s premier established master plan, adjacent to Tuscany Village.' },
+              { name: 'Anthem', href: '/anthem/', price: 'From $400K', compare: 'Henderson\'s largest master-planned community with Anthem Country Club.' },
+              { name: 'Whitney Ranch', href: '/whitney-ranch/', price: 'From $350K', compare: 'Central Henderson community with similar price points. Not guard-gated.' },
+              { name: 'MacDonald Highlands', href: '/macdonald-highlands/', price: 'From $800K', compare: 'Henderson\'s premier luxury mountainside community with DragonRidge Country Club.' },
+              { name: 'Cadence', href: '/cadence/', price: 'From $350K', compare: 'Henderson\'s newest master plan with new construction and modern amenities.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img
-                src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : '/red-rock-canyon.jpg'}
-                alt="Mediterranean-styled homes and mature landscaping in Tuscany Village, Henderson"
-              />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Lifestyle &amp; Community</span>
-              <div className="gold-rule" />
-              <h2>Tree-Lined Streets, Henderson Dining, and a Real Sense of Place</h2>
-              <p>Life in Tuscany Village moves at a different pace. The mature landscaping, quiet residential streets, and Mediterranean aesthetic create an atmosphere that feels more like a European village than a Las Vegas suburb. It&apos;s the kind of community where people wave to their neighbors and know the mail carrier by name.</p>
-              <p>Henderson&apos;s retail, dining, and recreation infrastructure surrounds you, with everything from the Galleria to the Water Street District within a short drive.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  'Tree-lined streets with twenty-plus years of mature landscaping and established shade trees',
-                  'Galleria at Sunset \u2014 major retail, dining, and entertainment \u2014 roughly 10 minutes north on Eastern Ave',
-                  'Water Street District \u2014 Henderson\u2019s walkable downtown with restaurants, breweries, and local shops',
-                  'Community parks and walking paths throughout the neighborhood',
-                  'Anthem foothill trails, Sloan Canyon, and Lake Mead all within 20\u201330 minutes for weekend adventures',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Tuscany Village Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Tuscany Village, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Tuscany Village Families</h2>
-            <p>Henderson&apos;s solid school options include well-regarded campuses near the community.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[['John C. Vanderburg Elementary','K\u20135'],['Dean Petersen Elementary','K\u20135'],['Del E. Webb Middle School','6\u20138'],['Jim Bridger Middle School','6\u20138'],['Coronado High School','9\u201312'],['Liberty High School','9\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Faith-Based</h3>
-              {[['Henderson International School','PreK\u201312'],['Pinecrest Academy of Nevada','K\u201312'],['Mountain View Christian School','PreK\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Specialty</h3>
-              {[['Doral Academy of Nevada','K\u20138'],['Somerset Academy','K\u20138'],['Coral Academy of Science','K\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{marginTop:'24px',padding:'18px',background:'rgba(201,168,76,0.06)',border:'1px solid var(--border)',borderRadius:'var(--radius)',fontSize:'13px',color:'var(--white-70)',lineHeight:'1.7'}}>
-                <strong style={{color:'var(--white)'}}>School Assignment Note:</strong> Henderson school zones vary by address. Always confirm your assigned school with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Tuscany Village Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <TuscanyVillageFAQ />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Tuscany Village Home?</h2>
-          <p>Whether you want a courtyard home with Mediterranean character or a family property near Horizon Ridge, I&apos;ll help you find the right fit in Tuscany Village.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="#listings" className="btn-outline">Browse All Listings</a>
-          </div>
-          <p style={{marginTop:'24px',fontSize:'12px',color:'rgba(255,255,255,0.3)'}}>Nevada Lic. #S.0181401.LLC &middot; lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

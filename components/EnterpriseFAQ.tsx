@@ -3,33 +3,37 @@ import { useState } from 'react'
 
 const FAQS = [
   {
-    q: 'Is Enterprise a city or part of Las Vegas?',
-    a: "Enterprise is an unincorporated town within Clark County \u2014 it\u2019s not part of the City of Las Vegas. It\u2019s governed directly by the Clark County Commission, which means county zoning and services. For most practical purposes, residents use a Las Vegas mailing address, but it\u2019s a distinct community with its own identity, lower density, and a different development pattern than the city proper.",
+    "q": "What is Enterprise, Las Vegas?",
+    "a": "Enterprise is an unincorporated town within Clark County, covering approximately 42 square miles in the southwest Las Vegas Valley. Established in 2003, it encompasses major communities like Southern Highlands, Mountains Edge, and Rhodes Ranch, along with many standalone neighborhoods."
   },
   {
-    q: 'What are HOA fees like in Enterprise?',
-    a: "HOA fees in Enterprise vary widely depending on the neighborhood. Newer master-planned subdivisions typically run $50\u2013$120 per month for single-family homes. Guard-gated communities like Southern Highlands (which overlaps into Enterprise) carry higher fees. Some older or non-HOA pockets exist too, which is increasingly rare in Las Vegas.",
+    "q": "What is the price range for homes in Enterprise?",
+    "a": "Homes in Enterprise typically range from $350,000 to $700,000, with the majority of single-family homes in the $400K–$550K range. Guard-gated communities within Enterprise like Southern Highlands extend well beyond this range."
   },
   {
-    q: 'How far is Enterprise from the Las Vegas Strip?',
-    a: "Enterprise literally borders the south end of the Strip. Depending on where you are in the community, you could be 5\u201315 minutes from the major resorts via Las Vegas Blvd or I-15. Harry Reid International Airport is also right in the northeast corner of Enterprise \u2014 10\u201315 minutes from most neighborhoods.",
+    "q": "What ZIP codes are in Enterprise?",
+    "a": "Enterprise spans multiple ZIP codes including 89113, 89139, 89141, 89178, and 89148. The boundaries overlap with several named communities."
   },
   {
-    q: "What\u2019s the price range for homes in Enterprise?",
-    a: "Enterprise covers a wide spectrum. Condos and townhomes start around $250K\u2013$300K. The bulk of single-family homes fall between $400K and $700K. Guard-gated and luxury properties in communities like Southern Highlands, Rhodes Ranch, and Coronado Ranch can reach $1M+. The median for the area sits around $475K.",
+    "q": "Is Enterprise a city?",
+    "a": "No. Enterprise is an unincorporated town within Clark County, not a separate city. Residents receive county services rather than city services. This results in slightly different tax rates and service structures compared to incorporated cities like Henderson or North Las Vegas."
   },
   {
-    q: 'What are the best neighborhoods within Enterprise?',
-    a: "Southern Highlands is the premier address \u2014 a large master-planned community with a golf course, parks, and high-end homes. Rhodes Ranch offers golf course living at more accessible price points. Mountains Edge (which borders Enterprise) adds family-friendly neighborhoods. The corridor along Bermuda Road and Cactus Avenue has seen significant new development in recent years.",
+    "q": "What schools serve Enterprise?",
+    "a": "Enterprise is served by CCSD schools including Carolyn S. Reedom Elementary (8/10), Canarelli Middle (7/10), and Sierra Vista High School. Bishop Gorman High School (A+) and Doral Academy (9/10) are nearby private and charter options."
   },
   {
-    q: 'Is Enterprise good for commuters?',
-    a: "Enterprise is one of the best-connected areas in the valley for commuters. I-15 runs through the east side, I-215 loops through the south and west, and Las Vegas Blvd provides a straight shot to the Strip. If you work on the Strip, at the airport, or anywhere along the I-15/I-215 corridor, Enterprise puts you 10\u201320 minutes from the office.",
+    "q": "Is Enterprise a good area for families?",
+    "a": "Enterprise is extremely popular with families due to newer construction, multiple master-planned communities with parks and trails, relatively affordable pricing, and good school options. Mountains Edge in particular is one of the valley's most family-oriented communities."
   },
   {
-    q: 'Are there good schools in Enterprise?',
-    a: "Yes. Enterprise is served by several well-regarded CCSD schools, including newer campuses built to serve the area\u2019s growth. The area also has strong charter and private school options. Bishop Gorman High School \u2014 one of the top private schools in Nevada \u2014 is located in Enterprise. As always with CCSD, school assignments are address-specific.",
+    "q": "How far is Enterprise from the Strip?",
+    "a": "Enterprise is approximately 15 minutes from the Las Vegas Strip via I-15 North. Harry Reid International Airport is about 20 minutes away."
   },
+  {
+    "q": "Is there new construction in Enterprise?",
+    "a": "Yes. Enterprise has some of the most active new construction in the Las Vegas Valley. National builders are developing new subdivisions throughout the southern portions of the area, with new homes typically priced from the high $300s to mid $600s."
+  }
 ]
 
 export default function EnterpriseFAQ() {
@@ -40,11 +44,11 @@ export default function EnterpriseFAQ() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">Common Questions</span>
-          <h2>Enterprise Home Buyer FAQ</h2>
-          <p>The questions I hear most from buyers exploring Enterprise.</p>
+          <h2>Frequently Asked Questions About Enterprise</h2>
+          <p>The questions buyers ask most when exploring Enterprise.</p>
         </div>
         <div className="faq-list">
-          {FAQS.map((faq, i) => (
+          {FAQS.map((faq: any, i: number) => (
             <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
               <button className="faq-btn" onClick={() => setOpen(open === i ? null : i)}>
                 <span className="faq-question">{faq.q}</span>

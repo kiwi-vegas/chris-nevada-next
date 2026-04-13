@@ -1,87 +1,142 @@
-import CommunityFAQ from '@/components/CommunityFAQ'
-import CommunityMapWrapper from '@/components/CommunityMapWrapper'
+import DesertShoresFAQ from '@/components/DesertShoresFAQ'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import DesertShoresMapWrapper from '@/components/DesertShoresMapWrapper'
+import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Desert Shores', item: 'https://www.lasvegashomesearchexperts.com/desert-shores/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is the price range for homes in Desert Shores?",
+    "a": "Homes in Desert Shores range from approximately $350,000 for interior-lot single-family homes to $800,000 or more for lakefront properties with private docks and water views. Townhomes start around $325K."
+  },
+  {
+    "q": "Does Desert Shores have real lakes?",
+    "a": "Yes. Desert Shores features four man-made interconnected lakes covering approximately 50 acres. Residents enjoy fishing, kayaking, paddleboarding, private beaches, and lakeside walking paths — a true waterfront lifestyle in the desert."
+  },
+  {
+    "q": "What are Desert Shores HOA fees?",
+    "a": "HOA fees in Desert Shores typically range from $75 to $200 per month, depending on the specific section and whether the home is a single-family residence or townhome. Fees cover community center operations, lake maintenance, common area upkeep, and community events."
+  },
+  {
+    "q": "What ZIP codes are in Desert Shores?",
+    "a": "Desert Shores is located in ZIP codes 89128 and 89145 in northwest Las Vegas."
+  },
+  {
+    "q": "Is Desert Shores close to Summerlin?",
+    "a": "Yes. Desert Shores is approximately 10 minutes from Downtown Summerlin shopping and dining, and 15 minutes from Red Rock Canyon. It is adjacent to the Summerlin border and benefits from Summerlin's commercial amenities."
+  },
+  {
+    "q": "Can you have a boat in Desert Shores?",
+    "a": "The lakes are designed for non-motorized watercraft. Residents can use kayaks, paddleboards, canoes, and small sailboats. Motorized boats are not permitted, keeping the lakes quiet and peaceful."
+  },
+  {
+    "q": "What schools serve Desert Shores?",
+    "a": "Desert Shores is served by CCSD schools including Palo Verde High School (7/10) and Rogich Middle School (7/10). Private options include The Meadows School (A+) and Faith Lutheran (A). Doral Academy Red Rock (9/10) is a top charter."
+  },
+  {
+    "q": "When was Desert Shores built?",
+    "a": "Desert Shores was developed in the late 1980s, with most homes built between 1988 and the mid-1990s. The community features some of the most mature landscaping and tree canopy in the Las Vegas Valley."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Desert Shores',
+  description: 'Desert Shores is a lakefront · master-planned community in Las Vegas, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.198, longitude: -115.264 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89128', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Las Vegas' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('desert-shores')
   return {
-    title: cms?.metaTitle ?? 'Desert Shores Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Desert Shores homes for sale. Las Vegas\'s hidden waterfront community — four man-made lakes, lakeside walking paths, boat launches, and established neighborhoods. 200+ listings from $350K. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Desert Shores Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Desert Shores homes for sale in Las Vegas, NV. $350K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
-const boundary: [number, number][] = [
-  [-115.26, 36.22],
-  [-115.22, 36.22],
-  [-115.20, 36.21],
-  [-115.20, 36.19],
-  [-115.21, 36.18],
-  [-115.25, 36.18],
-  [-115.27, 36.19],
-  [-115.27, 36.21],
-  [-115.26, 36.22],
-]
-
-const faqs = [
-  {
-    q: 'Is Desert Shores an affordable community?',
-    a: 'Desert Shores offers a range of price points, starting around $350,000 for condos and smaller townhomes and reaching $700,000+ for lakefront single-family homes. Compared to Summerlin, Desert Shores tends to be more accessible while offering the unique amenity of actual waterfront living. The value proposition — man-made lakes, walking paths, and established mature trees — is genuinely difficult to find at this price range anywhere in Las Vegas.',
-  },
-  {
-    q: 'How much of a premium do lakefront homes command?',
-    a: 'Lakefront and lake-view homes in Desert Shores typically command a 15–30% premium over comparable interior homes in the same neighborhood. The premium varies by lake, view quality, and direct water access. Homes on Lake Sahara Estates and The Point tend to carry the highest premiums. The waterfront premium in Desert Shores is often considered strong value compared to manufactured lake communities in other states.',
-  },
-  {
-    q: 'What activities are available on the Desert Shores lakes?',
-    a: 'The Desert Shores lakes support non-motorized watercraft — kayaks, paddleboards, and small sailboats are common. There are designated boat launches for community residents. The lakeside walking and jogging paths that ring the lakes are heavily used, and lakeside dining is available at the Duck Club restaurant. The lakes also support fishing and wildlife viewing.',
-  },
-  {
-    q: 'How does Desert Shores compare to The Lakes community?',
-    a: 'Both are established northwest Las Vegas communities built around man-made lakes, developed in roughly the same era. Desert Shores has four lakes and tends to have slightly more commercial lakeside activity (the Duck Club restaurant, boat launches). The Lakes is immediately adjacent and residents of both communities often use the combined path system. Home prices are comparable, though Desert Shores tends to have slightly more lakefront inventory.',
-  },
-  {
-    q: 'How long is the commute from Desert Shores to Downtown Las Vegas?',
-    a: 'Desert Shores is in northwest Las Vegas, approximately 10–15 minutes from Downtown Las Vegas via US-95 South. The Strip is roughly 15–20 minutes depending on traffic. The community\'s location between US-95 and the 215 gives residents good valley-wide access without the longer Strip commute that Centennial Hills or Summerlin involves.',
-  },
-  {
-    q: 'What does the Desert Shores HOA cover?',
-    a: 'HOA fees in Desert Shores typically cover lake maintenance (a significant cost), lakeside path upkeep, common area landscaping, and community amenity management. The lake maintenance component is what makes the HOA essential — the artificial lakes require ongoing water treatment and upkeep that the HOA funds. Fees generally range from $60 to $150 per month depending on sub-community and home type.',
-  },
-]
-
 export default async function DesertShoresPage() {
   const cms = await getCommunityPage('desert-shores')
+  const market = getMarketStats('desert-shores')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Desert Shores\nHomes For Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Las Vegas's hidden waterfront community — four man-made lakes, lakeside walking paths, boat launches, and established neighborhoods that established the template for Vegas resort living."
+  const heroHeadline = cms?.heroHeadline ?? 'Desert Shores'
+  const heroSubtitle = 'Homes for Sale in Las Vegas, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Desert Shores: Lakefront · Master-Planned Living in Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
-    ['Location', 'NW Las Vegas, NV'],
-    ['Lakes', '4 man-made lakes', 'gold'],
-    ['Built', '1980s–1990s'],
-    ['Min Price', '$350K'],
-    ['HOA', '$60–$150/mo'],
-    ['To Strip', '~15 min'],
-    ['To Downtown', '~10 min'],
-    ['Dining', 'Duck Club on the Lake'],
-    ['Watercraft', 'Kayak, Paddleboard, Sail'],
-    ['State Income Tax', 'None'],
-    ['Property Tax Rate', '~0.6%'],
+    ['Established', '1988'],
+    ['Developer', 'Various'],
+    ['Total Acreage', '~600 acres'],
+    ['Homes', '3,000+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$350K–$800K'],
+    ['ZIP Codes', '89128, 89145'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$75–$200/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '~15 min', destination: 'to the Strip', route: 'via US-95 S → I-15 S' },
-    { time: '~10 min', destination: 'to Downtown Las Vegas', route: 'via US-95 S' },
-    { time: '~10 min', destination: 'to Summerlin', route: 'via W Sahara Ave' },
-    { time: '~20 min', destination: 'to Harry Reid Airport', route: 'via I-15 S → I-215' },
-  ]
+    {
+        "time": "~10 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Sahara Ave"
+    },
+    {
+        "time": "~15 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via W Charleston Blvd"
+    },
+    {
+        "time": "~15 min",
+        "destination": "to the Strip",
+        "route": "via US-95 South"
+    },
+    {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via US-95 → I-15 South"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -91,58 +146,107 @@ export default async function DesertShoresPage() {
       <div className="breadcrumb">
         <div className="breadcrumb-inner">
           <Link href="/">Home</Link>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <a href="/#communities">Communities</a>
-          <span className="breadcrumb-sep">›</span>
+          <span className="breadcrumb-sep">&rsaquo;</span>
           <span>Desert Shores</span>
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="desert-shores-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Desert Shores hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">Northwest Las Vegas, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '200+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$350K–$1.5M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Property Types', '3')}</span><span className="hero-stat-lbl">Property Types</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">Daily</span><span className="hero-stat-lbl">Updates</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$350K–$800K')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Desert Shores</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '64px 0', background: 'var(--charcoal)', borderBottom: '1px solid var(--border-dim)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89128, 89145</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Lakefront · Master-Planned</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $350K–$800K</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $75–$200/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 1988</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Desert Shores Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['10,000+', 'Population'],
+              ['42', 'Median Age'],
+              ['$70,000', 'Avg Household Income'],
+              ['3,500+', 'Total Households'],
+              ['65%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Desert Shores?</h2>
-            <p>Located in northwest Las Vegas between US-95 and the 215 beltway — close to Summerlin, close to the Strip, and built around four man-made lakes.</p>
+            <p>Northwest Las Vegas, Nevada &mdash; Las Vegas, Nevada.</p>
           </div>
-          <div style={{ height: '420px', borderRadius: 'var(--radius-lg)', overflow: 'hidden', border: '1px solid var(--border)' }}>
-            <CommunityMapWrapper
-              center={[-115.233, 36.203]}
-              zoom={13}
-              boundary={boundary}
-              name="Desert Shores"
-              subtitle="Northwest Las Vegas, Nevada"
-              id="desert-shores-map"
-            />
+          <div className="map-container">
+            <DesertShoresMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -153,41 +257,45 @@ export default async function DesertShoresPage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings · Updated Daily</span>
-            <h2>New Desert Shores Listings</h2>
-            <p>The latest homes listed in Desert Shores — lakefront estates, lake-view single-family homes, and condos on four man-made lakes in northwest Las Vegas.</p>
+            <h2 className="listings-title">NEW DESERT SHORES LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":350000,"locations":[{"community":"Desert Shores","city":"Las Vegas","state":"NV"}],"limit":12}'></div>
+            <div className="YLOPO_searchWidget" />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":300000,"locations":[{"city":"Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Desert Shores","zipCodes":["89128","89145"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=Desert+Shores&s[locations][0][city]=Las+Vegas&s[locations][0][state]=NV" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Desert Shores Listings →</a>
-            <Link href="/#communities" className="btn-outline">← Back to All Communities</Link>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Desert%20Shores" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Desert Shores Listings &rarr;</a>
+            <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
-              <h2>Desert Shores: Las Vegas&apos;s Best-Kept Waterfront Secret</h2>
-              <p>Desert Shores was built in the 1980s and early 1990s around a genuinely audacious concept: create real waterfront living in the middle of the Mojave Desert. The community was developed with four man-made lakes — Lake Sahara, Lakeshore Lake, Sandpiper Lake, and the main Desert Shores Lake — and a network of lakeside paths, boat launches, and community amenities designed to make the water feel like a genuine part of daily life rather than a decorative backdrop.</p>
-              <p>The Duck Club restaurant on the lake has become an institution — a lakeside dining destination that serves both residents and visitors from across the valley. It&apos;s the kind of anchor that gives a neighborhood identity. Paddleboarding, kayaking, and fishing on the lakes are part of normal weekend life for Desert Shores residents, and the walking and jogging paths that ring the lakes are among the most used recreational infrastructure in northwest Las Vegas.</p>
-              <p>What buyers consistently discover about Desert Shores is the maturity of the community. The trees are established, the landscaping is lush by Las Vegas standards, and the neighborhood has a settled, human-scaled character that newer master-planned developments can&apos;t replicate for decades. It sits between Summerlin to the west and downtown Las Vegas to the southeast, making it one of the better-positioned established communities in the city. The price-to-lifestyle ratio — particularly for lakefront and lake-view homes — remains one of the most compelling in the entire valley.</p>
+              <h2>{overviewTitle}</h2>
+              {cms?.overviewBody?.length ? (
+                <PortableText value={cms.overviewBody} />
+              ) : (
+                <>
+                  <p>Desert Shores is one of the most distinctive communities in the Las Vegas Valley, built around four man-made lakes that create a resort-like waterfront lifestyle in the heart of the desert. Located in northwest Las Vegas along Cheyenne Avenue west of the 95 freeway, Desert Shores was developed in the late 1980s and has matured into a beloved community prized for its waterfront living, community center amenities, and unique neighborhood character.</p>
+                  <p>The community's four interconnected lakes — covering approximately 50 acres — are the defining feature. Residents enjoy private beaches, fishing, kayaking, paddleboarding, and lakeside walking paths. The Desert Shores Community Association operates a community center with resort-style pools, a fitness center, tennis courts, and event spaces. The annual calendar includes lakeside festivals, movie nights, and seasonal celebrations that foster a tight-knit community atmosphere.</p>
+                  <p>Homes in Desert Shores range from approximately $350,000 for interior-lot properties to $800,000 or more for lakefront homes with private docks and water views. The housing stock includes single-family homes, townhomes, and patio homes, most built between 1988 and the mid-1990s. Waterfront properties command a significant premium and are among the most unique residential offerings in the Las Vegas Valley — very few communities in the metro offer true lakefront living.</p>
+                  <p>Desert Shores' northwest location provides convenient access to Summerlin's shopping and dining at Downtown Summerlin (10 minutes), Red Rock Canyon (15 minutes), and the 95 freeway for commutes to the Strip and downtown. The community's mature landscaping, established HOA governance, and waterfront lifestyle make it particularly appealing to buyers seeking something beyond the typical desert suburban experience.</p>
+                </>
+              )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Desert Shores At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -195,7 +303,7 @@ export default async function DesertShoresPage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Desert Shores? Let&apos;s schedule a private lakeside tour of the community and the listings that match your goals.</p>
+                <p>Ready to explore Desert Shores? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -203,23 +311,21 @@ export default async function DesertShoresPage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Desert Shores</span>
-            <h2>The Reasons Buyers Discover Desert Shores and Never Leave</h2>
-            <p>Four lakes, waterfront living, mature trees, and a 15-minute Strip commute — a combination that genuinely doesn&apos;t exist anywhere else in Las Vegas.</p>
+            <h2>What Makes Desert Shores Stand Out</h2>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '🌊', title: '4 Man-Made Lakes', body: 'Desert Shores, Lake Sahara, Lakeshore, and Sandpiper — four interconnected bodies of water that form the heart of the community. Each has its own character, and the lakeside path network connects them all.' },
-              { icon: '🏠', title: 'True Waterfront Homes', body: 'Lakefront single-family homes with direct water access, private docks, and permanent lake views. A genuinely rare product in Las Vegas that commands steady demand and strong resale — waterfront real estate doesn\'t depreciate easily.' },
-              { icon: '🚣', title: 'Boat Launches & Water Recreation', body: 'Designated boat launches serve kayakers, paddleboarders, and small sailboat owners throughout the community. Non-motorized watercraft keeps the lakes peaceful while maintaining the active-living character that defines Desert Shores.' },
-              { icon: '🍽️', title: 'Lakeside Dining — The Duck Club', body: 'The Duck Club restaurant on the lake has served as the community\'s social anchor for decades. Lakeside dining, outdoor seating, and a consistently maintained waterfront experience that residents genuinely use.' },
-              { icon: '🚶', title: 'Lakeside Walking Paths', body: 'The walking and jogging paths that ring the Desert Shores lakes are some of the most heavily used recreational infrastructure in northwest Las Vegas. Shaded by mature trees and consistently maintained.' },
-              { icon: '🌳', title: 'Established Mature Trees & Landscaping', body: 'Desert Shores was planted in the 1980s, and those trees are now mature. The canopy cover and established landscaping give the community a genuinely different character than newer Las Vegas developments — a character that takes 30 years to grow.' },
-            ].map(h => (
+              { title: 'Four Man-Made Lakes', body: 'Approximately 50 acres of interconnected lakes provide fishing, kayaking, paddleboarding, and lakeside walks. One of the few true waterfront communities in the Las Vegas Valley.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'Private Beaches & Docks', body: 'Waterfront homes feature private docks and beach access. Community beaches are available to all residents for swimming, sunbathing, and lakeside recreation.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Resort-Style Community Center', body: 'The Desert Shores Community Association operates pools, a fitness center, tennis courts, event spaces, and an active social calendar with lakeside festivals and seasonal events.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Mature Landscaping', body: 'Developed in the late 1980s, Desert Shores features some of the most mature landscaping and tree canopy in the Las Vegas Valley. Established neighborhood character throughout.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Northwest Valley Location', body: '10 minutes to Downtown Summerlin, 15 minutes to Red Rock Canyon, and easy US-95 access for commutes to the Strip and downtown Las Vegas.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+              { title: 'Unique Value Proposition', body: 'Waterfront living in the desert is rare. Desert Shores offers a lifestyle that is virtually unavailable elsewhere in Las Vegas at any price point.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -230,129 +336,76 @@ export default async function DesertShoresPage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <DesertShoresFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Find Your Neighborhood in Desert Shores</h2>
-            <p>From lakefront estates to established interior neighborhoods — Desert Shores offers a range of price points within its waterfront community.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Lakeshore', type: 'Lakefront · Premier', desc: 'Direct lakefront addresses on the main Desert Shores lake. The most sought-after positioning in the community, with private dock access and permanent water views from the primary living areas.', price: 'From $500K' },
-              { name: 'The Point', type: 'Peninsula · Water Views', desc: 'Peninsula-positioned homes with water on multiple sides. The Point offers some of the most dramatic lake views in Desert Shores and a genuine sense of being surrounded by water.', price: 'From $600K' },
-              { name: 'Sandpiper Cove', type: 'Established · Family', desc: 'A well-established neighborhood along Sandpiper Lake with consistent character and strong community identity. Lake access within easy walking distance.', price: 'From $450K' },
-              { name: 'Lake Sahara Estates', type: 'Lake Views · Premium', desc: 'Premium addresses on Lake Sahara with excellent lake views and established mature landscaping. One of the more consistently desirable sub-communities within Desert Shores.', price: 'From $700K' },
-              { name: 'Desert Shores Villas', type: 'Townhome · Entry Luxury', desc: 'An accessible entry point into the Desert Shores community. Well-maintained townhomes and villas with HOA-managed landscaping and access to community amenities.', price: 'From $375K' },
-              { name: 'Golf Estates', type: 'Established · Interior', desc: 'Interior single-family homes with well-maintained streets and proximity to both the lakes and the Desert Shores Golf Course. A solid family neighborhood within the master-planned footprint.', price: 'From $400K' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'The Lakes', href: '/the-lakes/', price: 'From $400K', compare: 'Another waterfront community nearby with a large man-made lake and guard-gated sections.' },
+              { name: 'Spring Valley', href: '/spring-valley/', price: 'From $300K', compare: 'Large established community to the south with diverse housing and strong commercial infrastructure.' },
+              { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Premier master-planned community adjacent to Desert Shores. 20+ villages with premium amenities.' },
+              { name: 'Centennial Hills', href: '/centennial-hills/', price: 'From $350K', compare: 'Growing northwest community with newer construction and family-oriented neighborhoods.' },
+              { name: 'Lone Mountain', href: '/lone-mountain/', price: 'From $400K', compare: 'Semi-rural enclave north of Summerlin with large lots, equestrian properties, and mountain views.' },
+              { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $400K', compare: 'New master-planned community in the far northwest with modern amenities and mountain access.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&h=600&q=80'} alt="Lakeside living and waterfront homes at Desert Shores Las Vegas" />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Waterfront Living</span>
-              <div className="gold-rule" />
-              <h2>Four Lakes, Lakeside Dining, and Las Vegas&apos;s Finest Walking Paths</h2>
-              <p>Desert Shores offers something that feels genuinely anomalous in the Mojave Desert: real waterfront living. The four man-made lakes aren&apos;t decorative — they&apos;re functional bodies of water with boat launches, active recreation, and lakeside restaurants that serve as the social core of the community.</p>
-              <p>The walking paths that ring the lakes connect through mature trees and maintained landscaping, making Desert Shores one of the most walkable established communities in Las Vegas. Residents consistently describe the lakeside morning walks as a defining quality-of-life feature that justifies the premium over comparable interior Las Vegas neighborhoods.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  'Four man-made lakes — Desert Shores, Lake Sahara, Lakeshore, and Sandpiper — with active recreation',
-                  'Designated boat launches for kayaks, paddleboards, and small sailboats throughout the community',
-                  'The Duck Club restaurant — lakeside dining institution serving residents and valley visitors alike',
-                  'Lakeside walking and jogging paths shaded by mature trees planted in the 1980s',
-                  'Fishing and wildlife viewing on the lakes — unexpected in the middle of Las Vegas',
-                  '15 minutes to the Strip, 10 minutes to Downtown — the best-positioned waterfront in the valley',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Desert Shores Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Desert Shores, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Desert Shores Families</h2>
-            <p>Public schools and charter options serving northwest Las Vegas families.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public High Schools (CCSD)</h3>
-              {[
-                ['Cimarron-Memorial High School', '9–12'],
-                ['Shadow Ridge High School', '9–12'],
-                ['Clark High School', '9–12'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Middle &amp; Elementary</h3>
-              {[
-                ['Hyde Park Middle School', '6–8'],
-                ['J.E. Manch Elementary School', 'K–5'],
-                ['William E. Ferron Elementary', 'K–5'],
-                ['Multiple CCSD Elementaries', 'K–5'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Charter</h3>
-              {[
-                ['Merryhill School (NW Campus)', 'PreK–5'],
-                ['The Meadows School', 'PreK–12'],
-                ['Advanced Technologies Academy', '9–12'],
-                ['Charter School Options', 'Various'],
-              ].map(([n, g]) => (
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{ marginTop: '24px', padding: '18px', background: 'rgba(201,168,76,0.06)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', fontSize: '13px', color: 'var(--white-70)', lineHeight: '1.7' }}>
-                <strong style={{ color: 'var(--white)' }}>School Assignment Note:</strong> Zoning varies by address within Desert Shores. Always confirm your specific assignment with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Desert Shores Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <CommunityFAQ
-        title="Desert Shores FAQ"
-        subtitle="Common questions from buyers considering Las Vegas's most unique waterfront community."
-        faqs={faqs}
-      />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Desert Shores Home?</h2>
-          <p>Four man-made lakes, waterfront living, mature trees, and a 15-minute commute to the Strip — Las Vegas&apos;s best-kept real estate secret.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="https://www.nevadarealestategroup.com/free-market-analysis/" target="_blank" rel="noopener noreferrer" className="btn-outline">Free Market Analysis</a>
-          </div>
-          <p style={{ marginTop: '24px', fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>Nevada Lic. #S.0181401.LLC · lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

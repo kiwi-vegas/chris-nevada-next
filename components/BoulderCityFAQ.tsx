@@ -3,33 +3,37 @@ import { useState } from 'react'
 
 const FAQS = [
   {
-    q: 'Is gambling really illegal in Boulder City?',
-    a: "Yes \u2014 Boulder City is one of only two cities in Nevada where gambling is prohibited. The city has maintained this ordinance since its founding in 1931. It\u2019s part of what gives Boulder City its quiet, small-town character that is completely different from the rest of the Las Vegas metro.",
+    "q": "What is the price range for homes in Boulder City?",
+    "a": "Homes in Boulder City range from approximately $400,000 for established homes in older neighborhoods to over $1 million for custom properties with mountain views or Lake Mead proximity."
   },
   {
-    q: 'What are home prices like in Boulder City?',
-    a: "Boulder City\u2019s limited housing supply due to strict growth control ordinances supports strong property values. Single-family homes generally range from $400K to $800K+, with a median around $525K. Custom homes on larger lots and properties with lake or mountain views can exceed $1M. The limited inventory means homes tend to hold value well.",
+    "q": "Is gambling legal in Boulder City?",
+    "a": "No. Boulder City is the only city in Nevada where gambling is prohibited. This was established when the city was founded in 1931 and has been maintained ever since, creating a distinctly different atmosphere from the rest of the valley."
   },
   {
-    q: 'How far is Boulder City from the Las Vegas Strip?',
-    a: "About 25 miles southeast \u2014 roughly 25 minutes via the I-11 corridor and I-515. Henderson is about 20 minutes away, and Harry Reid International Airport is approximately 15 minutes via I-11. You\u2019re close enough to work in Las Vegas but far enough to enjoy genuine small-town living.",
+    "q": "Why are there so few new homes in Boulder City?",
+    "a": "Boulder City maintains a controlled-growth ordinance that strictly limits new development. This preserves the small-town character and permanently constrains housing supply, which supports property values."
   },
   {
-    q: 'What is there to do in Boulder City?',
-    a: "The historic downtown along Nevada Highway is the heart of the community \u2014 antique shops, art galleries, breweries, restaurants, and seasonal events like Art in the Park (one of the largest outdoor art festivals in the Southwest). Lake Mead is 10 minutes away for boating, kayaking, and fishing. The Hoover Dam is 15 minutes east. The River Mountains Loop Trail (34 miles of paved trail) runs right through town for cycling and running.",
+    "q": "What ZIP code is Boulder City in?",
+    "a": "Boulder City is in ZIP code 89005."
   },
   {
-    q: 'What are the growth control ordinances?',
-    a: "Boulder City has some of the strictest growth control measures in Nevada. The city limits how much new development can be built each year, which keeps the population stable around 16,000 residents and preserves the small-town character. For buyers, this means limited new housing supply \u2014 which supports property values but also means inventory is tighter than in master-planned communities.",
+    "q": "How close is Boulder City to Lake Mead?",
+    "a": "Boulder City is approximately 10 minutes from Lake Mead Marina and the Hemenway Harbor area. Lake Mead National Recreation Area — the largest reservoir in the United States — is immediately adjacent to the city."
   },
   {
-    q: 'Are there good schools in Boulder City?',
-    a: "Boulder City has its own dedicated CCSD schools including Andrew J. Mitchell Elementary, Elise L. Wolff Elementary, Garrett Junior High, and Boulder City High School. The smaller school populations and strong community involvement create an environment that many families prefer over the larger Las Vegas schools. Boulder City High School\u2019s athletics programs are well-regarded.",
+    "q": "What outdoor recreation is near Boulder City?",
+    "a": "Boulder City offers world-class outdoor recreation: Lake Mead (boating, fishing, kayaking), Bootleg Canyon (mountain biking, zip lines), River Mountains Loop Trail (34-mile paved trail), Historic Railroad Trail, and the Hoover Dam."
   },
   {
-    q: 'What makes Boulder City different from the rest of the Las Vegas metro?',
-    a: "Everything. No casinos, no strip malls, no cookie-cutter subdivisions. Boulder City feels like a small Nevada town from another era \u2014 walkable downtown, established trees, historic architecture, and a tight-knit community of about 16,000 people. Add in the fact that Lake Mead and the Hoover Dam are essentially in your backyard, and you get a lifestyle that doesn\u2019t exist anywhere else in the valley.",
+    "q": "What schools serve Boulder City?",
+    "a": "Boulder City has its own CCSD schools including Andrew J. Mitchell Elementary (7/10), Garrett Middle School (7/10), and Boulder City High School (7/10). The compact town means short school commutes for all families."
   },
+  {
+    "q": "How far is Boulder City from the Strip?",
+    "a": "Boulder City is approximately 30 minutes from the Las Vegas Strip via I-11 and I-215. Harry Reid International Airport is about 35 minutes away."
+  }
 ]
 
 export default function BoulderCityFAQ() {
@@ -40,11 +44,11 @@ export default function BoulderCityFAQ() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">Common Questions</span>
-          <h2>Boulder City Home Buyer FAQ</h2>
-          <p>The questions I hear most from buyers exploring Boulder City.</p>
+          <h2>Frequently Asked Questions About Boulder City</h2>
+          <p>The questions buyers ask most when exploring Boulder City.</p>
         </div>
         <div className="faq-list">
-          {FAQS.map((faq, i) => (
+          {FAQS.map((faq: any, i: number) => (
             <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
               <button className="faq-btn" onClick={() => setOpen(open === i ? null : i)}>
                 <span className="faq-question">{faq.q}</span>

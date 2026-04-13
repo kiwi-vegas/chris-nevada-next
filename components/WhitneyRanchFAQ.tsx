@@ -3,33 +3,37 @@ import { useState } from 'react'
 
 const FAQS = [
   {
-    q: 'How old is Whitney Ranch?',
-    a: "Whitney Ranch is one of Henderson\u2019s original master-planned communities, with development beginning in the late 1980s and continuing through the 1990s. That makes it one of the most established residential areas in the city \u2014 30+ years of mature landscaping, settled neighborhoods, and a community character that newer developments are still working toward.",
+    "q": "What is the price range for homes in Whitney Ranch?",
+    "a": "Homes in Whitney Ranch range from approximately $350,000 for smaller homes and townhomes to $600,000 for larger single-family homes on premium lots with upgraded finishes."
   },
   {
-    q: 'What are HOA fees like in Whitney Ranch?',
-    a: "Whitney Ranch HOA fees are generally modest compared to newer communities. Most single-family homes pay $40\u2013$80 per month for the master association, which covers common areas, parks, and community maintenance. Some neighborhoods have additional sub-association fees. The lower HOA costs reflect the community\u2019s established infrastructure and lower amenity overhead.",
+    "q": "Is Whitney Ranch guard-gated?",
+    "a": "No. Whitney Ranch is not a guard-gated community. It is an open master-planned community with HOA governance and the safety benefits of Henderson — one of America's safest large cities."
   },
   {
-    q: 'How far is Whitney Ranch from the Las Vegas Strip?',
-    a: "Whitney Ranch is about 10\u201315 miles from the Strip \u2014 roughly 15\u201320 minutes via I-215 and I-15 or via Sunset Road. Harry Reid Airport is about 10\u201315 minutes away. The Galleria at Sunset mall is within walking distance of many Whitney Ranch neighborhoods.",
+    "q": "What ZIP codes is Whitney Ranch in?",
+    "a": "Whitney Ranch spans ZIP codes 89014 and 89074 in Henderson, Nevada."
   },
   {
-    q: "What\u2019s the price range for homes in Whitney Ranch?",
-    a: "Whitney Ranch is one of Henderson\u2019s most accessible established communities. Condos and townhomes start around $250K\u2013$300K. Single-family homes typically range from $375K to $550K. Larger homes on premium lots can reach $650K+. The median sits around $425K \u2014 strong value for a mature Henderson address with this level of convenience.",
+    "q": "What are HOA fees in Whitney Ranch?",
+    "a": "HOA fees in Whitney Ranch typically range from $50 to $120 per month, depending on the specific neighborhood. Fees cover common area maintenance, community landscaping, and HOA governance."
   },
   {
-    q: 'What makes Whitney Ranch different from newer Henderson communities?',
-    a: "Maturity and location. Whitney Ranch has 30+ years of established trees, settled landscaping, and neighborhood character that newer communities simply can\u2019t replicate. The location in central Henderson puts you within walking distance of Galleria at Sunset and minutes from I-215. And the price points are typically $75K\u2013$150K below comparable newer construction in communities like Inspirada or Cadence.",
+    "q": "What schools serve Whitney Ranch?",
+    "a": "Whitney Ranch is served by CCSD schools including Nate Mack Elementary (8/10), Jack Lund Schofield Middle School (6/10), and Green Valley High School (7/10). Charter and private options are also available nearby."
   },
   {
-    q: 'Is Whitney Ranch good for families?',
-    a: "Yes \u2014 Whitney Ranch has been a family community since its founding. Community parks, established schools, walkable retail, and quiet residential streets make it a strong choice for families. The Whitney Ranch Recreation Center and aquatic complex provide year-round swimming, fitness, and youth programming.",
+    "q": "How close is Whitney Ranch to shopping?",
+    "a": "Whitney Ranch is one of the most conveniently located communities in Henderson. The Galleria at Sunset mall is approximately a 5-minute drive. Water Street District, grocery stores, and dozens of restaurants are even closer."
   },
   {
-    q: 'Are there good schools near Whitney Ranch?',
-    a: "Yes. Whitney Ranch is served by well-established CCSD schools that have been serving the community for decades. The area also has access to Henderson\u2019s strong charter and private school options. As always with CCSD, school assignments are address-specific \u2014 confirm zoning for any property you\u2019re considering.",
+    "q": "When were homes in Whitney Ranch built?",
+    "a": "Whitney Ranch was developed from the early 1990s through the mid-2000s across multiple phases. The community features mature landscaping and a settled character with homes ranging from 1,200 to 3,000+ square feet."
   },
+  {
+    "q": "Is Whitney Ranch a good area for families?",
+    "a": "Yes. Whitney Ranch is one of Henderson's most popular family communities due to its central location, well-regarded schools, multiple parks and playgrounds, walking paths, and easy access to youth sports leagues and activities throughout Henderson."
+  }
 ]
 
 export default function WhitneyRanchFAQ() {
@@ -40,11 +44,11 @@ export default function WhitneyRanchFAQ() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">Common Questions</span>
-          <h2>Whitney Ranch Home Buyer FAQ</h2>
-          <p>The questions I hear most from buyers exploring Whitney Ranch.</p>
+          <h2>Frequently Asked Questions About Whitney Ranch</h2>
+          <p>The questions buyers ask most when exploring Whitney Ranch.</p>
         </div>
         <div className="faq-list">
-          {FAQS.map((faq, i) => (
+          {FAQS.map((faq: any, i: number) => (
             <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
               <button className="faq-btn" onClick={() => setOpen(open === i ? null : i)}>
                 <span className="faq-question">{faq.q}</span>

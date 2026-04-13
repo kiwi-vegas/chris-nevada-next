@@ -5,47 +5,138 @@ import EnterpriseMapWrapper from '@/components/EnterpriseMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
+import { getMarketStats } from '@/lib/market-stats'
 
 export const revalidate = 60
+
+const BREADCRUMB_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
+    { '@type': 'ListItem', position: 3, name: 'Enterprise', item: 'https://www.lasvegashomesearchexperts.com/enterprise/' },
+  ],
+}
+
+const FAQ_DATA = [
+  {
+    "q": "What is Enterprise, Las Vegas?",
+    "a": "Enterprise is an unincorporated town within Clark County, covering approximately 42 square miles in the southwest Las Vegas Valley. Established in 2003, it encompasses major communities like Southern Highlands, Mountains Edge, and Rhodes Ranch, along with many standalone neighborhoods."
+  },
+  {
+    "q": "What is the price range for homes in Enterprise?",
+    "a": "Homes in Enterprise typically range from $350,000 to $700,000, with the majority of single-family homes in the $400K–$550K range. Guard-gated communities within Enterprise like Southern Highlands extend well beyond this range."
+  },
+  {
+    "q": "What ZIP codes are in Enterprise?",
+    "a": "Enterprise spans multiple ZIP codes including 89113, 89139, 89141, 89178, and 89148. The boundaries overlap with several named communities."
+  },
+  {
+    "q": "Is Enterprise a city?",
+    "a": "No. Enterprise is an unincorporated town within Clark County, not a separate city. Residents receive county services rather than city services. This results in slightly different tax rates and service structures compared to incorporated cities like Henderson or North Las Vegas."
+  },
+  {
+    "q": "What schools serve Enterprise?",
+    "a": "Enterprise is served by CCSD schools including Carolyn S. Reedom Elementary (8/10), Canarelli Middle (7/10), and Sierra Vista High School. Bishop Gorman High School (A+) and Doral Academy (9/10) are nearby private and charter options."
+  },
+  {
+    "q": "Is Enterprise a good area for families?",
+    "a": "Enterprise is extremely popular with families due to newer construction, multiple master-planned communities with parks and trails, relatively affordable pricing, and good school options. Mountains Edge in particular is one of the valley's most family-oriented communities."
+  },
+  {
+    "q": "How far is Enterprise from the Strip?",
+    "a": "Enterprise is approximately 15 minutes from the Las Vegas Strip via I-15 North. Harry Reid International Airport is about 20 minutes away."
+  },
+  {
+    "q": "Is there new construction in Enterprise?",
+    "a": "Yes. Enterprise has some of the most active new construction in the Las Vegas Valley. National builders are developing new subdivisions throughout the southern portions of the area, with new homes typically priced from the high $300s to mid $600s."
+  }
+]
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_DATA.map((faq: any) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
+const PLACE_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: 'Enterprise',
+  description: 'Enterprise is a unincorporated · growing suburban community in Las Vegas, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.03, longitude: -115.236 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89113', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'Las Vegas' },
+}
+
+const AGENT_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'Nevada Real Estate Group',
+  url: 'https://www.nevadarealestategroup.com',
+  telephone: '+17252399950',
+  email: 'info@nevadagroup.com',
+  address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
+  priceRange: '$$$',
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: '5.0', bestRating: '5', worstRating: '1', ratingCount: '2560', reviewCount: '2560' },
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('enterprise')
   return {
-    title: cms?.metaTitle ?? 'Enterprise Homes For Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Enterprise homes for sale in southwest Las Vegas. Minutes from the Strip and airport with easy I-15 and I-215 access. Homes from $250K to $1M+. Call 725.239.9950.',
+    title: cms?.metaTitle ?? 'Enterprise Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Enterprise homes for sale in Las Vegas, NV. $350K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
 export default async function EnterprisePage() {
   const cms = await getCommunityPage('enterprise')
+  const market = getMarketStats('enterprise')
+  const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Enterprise Homes\nFor Sale'
-  const heroSubheadline = cms?.heroSubheadline ?? "Southwest Las Vegas\u2019 most connected community \u2014 minutes from the Strip, the airport, and two major freeways, with neighborhoods for every budget."
-  const overviewTitle = cms?.overviewTitle ?? 'Enterprise: Southwest Las Vegas at the Center of Everything'
+  const heroHeadline = cms?.heroHeadline ?? 'Enterprise'
+  const heroSubtitle = 'Homes for Sale in Las Vegas, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Enterprise: Unincorporated · Growing Suburban Living in Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
-    ['Type', 'Unincorporated town'],
-    ['County', 'Clark County'],
-    ['Population', '~170,000'],
-    ['Area', '~44 sq miles'],
-    ['Median Home Price', '~$475,000', 'gold'],
-    ['Neighborhoods', '30+'],
-    ['Schools', '15+ nearby'],
-    ['Golf Courses', '5+'],
-    ['Key Freeways', 'I-15 & I-215'],
-    ['Nearest Airport', 'Harry Reid (5\u201315 min)'],
-    ['Distance to Strip', '5\u201315 min'],
-    ['Distance to Red Rock', '~20 min'],
+    ['Established', '2003'],
+    ['Developer', 'Various'],
+    ['Total Acreage', '~42 sq mi'],
+    ['Homes', '50,000+'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$350K–$700K'],
+    ['ZIP Codes', '89113, 89139, 89141, 89178, 89148'],
+    ['Guard-Gated', 'No'],
+    ['HOA', '$25–$200/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
-    { time: '5\u201315 min', destination: 'to the Strip', route: 'via Las Vegas Blvd or I-15' },
-    { time: '10\u201315 min', destination: 'to Harry Reid Airport', route: 'via I-15 or Las Vegas Blvd' },
-    { time: '~20 min', destination: 'to Red Rock Canyon', route: 'via I-215 West' },
-    { time: '~15 min', destination: 'to Downtown Las Vegas', route: 'via I-15 North' },
-  ]
+    {
+        "time": "~15 min",
+        "destination": "to the Strip",
+        "route": "via I-15 North"
+    },
+    {
+        "time": "~20 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via I-15 → I-215"
+    },
+    {
+        "time": "~10 min",
+        "destination": "to Red Rock Canyon",
+        "route": "via Blue Diamond Rd"
+    },
+    {
+        "time": "~25 min",
+        "destination": "to Summerlin",
+        "route": "via I-215 West"
+    }
+]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
-  const lifestyleImageUrl = getSectionImageUrl(cms?.sectionImages, 'lifestyle')
 
   const qs = (key: string, fallback: string) =>
     cms?.quickStats?.find((s) => s.key.toLowerCase() === key.toLowerCase())?.value ?? fallback
@@ -62,44 +153,100 @@ export default async function EnterprisePage() {
         </div>
       </div>
 
-      {/* HERO */}
-      <header id="hero" className="summerlin-hero">
-        {cms?.heroImageUrl
-          ? <img src={`${cms.heroImageUrl}?w=1920&auto=format&q=85`} alt="Enterprise hero" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          : <div className="hero-bg" />
-        }
+      <header id="hero" className="summerlin-hero hero-v2">
+        <div className="hero-bg" />
         <div className="hero-overlay" />
-        <div className="hero-content summerlin">
+        <div className="hero-v2-content">
           <div className="container">
-            <p className="hero-eyebrow-sm">Southwest Las Vegas, Nevada</p>
-            <div className="hero-rule" />
-            <h1>{heroHeadline.split('\n').map((line, i) => (
-              <span key={i}>{line}{i < heroHeadline.split('\n').length - 1 && <br />}</span>
-            ))}</h1>
-            <p className="hero-sub">{heroSubheadline}</p>
-            <div className="hero-stats">
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Active Listings', '500+')}</span><span className="hero-stat-lbl">Active Listings</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Price Range', '$250K\u2013$1M+')}</span><span className="hero-stat-lbl">Price Range</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Distance to Strip', '5\u201315 min')}</span><span className="hero-stat-lbl">To the Strip</span></div>
-              <div className="hero-stat"><span className="hero-stat-num">{qs('Population', '170K+')}</span><span className="hero-stat-lbl">Population</span></div>
+            <h1 className="hero-v2-h1">
+              <span className="hero-v2-community">{heroHeadline}</span>
+              <span className="hero-v2-subtitle">{heroSubtitle}</span>
+            </h1>
+            <div className="hero-v2-stats">
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.newListings ?? qs('Active Listings', '100+')}</span>
+                <span className="hero-v2-stat-lbl">New Listings</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$350K–$700K')}</span>
+                <span className="hero-v2-stat-lbl">Median Sale Price</span>
+              </div>
+              <div className="hero-v2-stat">
+                <span className="hero-v2-stat-num">{ms?.avgDaysToClose ?? qs('Avg Days on Market', '45')}</span>
+                <span className="hero-v2-stat-lbl">Avg Days to Close</span>
+              </div>
             </div>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Enterprise</a>
           </div>
         </div>
       </header>
 
-      {/* MAP */}
-      <section id="map" style={{ padding: '32px 0 0', background: 'var(--charcoal)' }}>
+      <div className="hero-v2-qfb">
+        <div className="container">
+          <div className="hero-v2-qfb-row">
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>ZIP:</strong> 89113, 89139, 89141, 89178, 89148</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span><strong>Type:</strong> Unincorporated · Growing Suburban</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <span><strong>Price Range:</strong> $350K–$700K</span>
+            </div>
+            <div className="hero-v2-qfb-divider" />
+            <div className="hero-v2-qfb-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span><strong>HOA:</strong> $25–$200/mo</span>
+            </div>
+          </div>
+          <div className="hero-v2-qfb-est">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Est. 2003</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="demographics" className="demographics-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Demographics</span>
+            <h2>Enterprise Demographics</h2>
+          </div>
+          <div className="demo-grid">
+            {[
+              ['170,000+', 'Population'],
+              ['36', 'Median Age'],
+              ['$70,000', 'Avg Household Income'],
+              ['50,000+', 'Total Households'],
+              ['60%', 'Homeownership Rate'],
+            ].map(([value, label]) => (
+              <div className="demo-stat" key={label}>
+                <div className="demo-value">{value}</div>
+                <div className="demo-label">{label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="demo-citation">Source: U.S. Census Bureau, American Community Survey 2022 5-Year Estimates.</p>
+        </div>
+      </section>
+
+      <section id="map" style={{ padding: '64px 0 0', background: 'var(--white)' }}>
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Enterprise?</h2>
-            <p>Spanning southwest Las Vegas from the south end of the Strip to the I-215 beltway &mdash; one of the most centrally connected areas in the valley.</p>
+            <p>Southwest Las Vegas, Nevada &mdash; Las Vegas, Nevada.</p>
           </div>
           <div className="map-container">
             <EnterpriseMapWrapper />
           </div>
           <div className="drive-time-grid">
-            {displayDriveTimes.map(({ time, destination, route }) => (
+            {displayDriveTimes.map(({ time, destination, route }: any) => (
               <div key={destination} className="drive-time-card">
                 <div className="drive-time-time">{time}</div>
                 <div className="drive-time-label">{destination}</div>
@@ -110,49 +257,45 @@ export default async function EnterprisePage() {
         </div>
       </section>
 
-      {/* LISTINGS */}
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">New Listings &middot; Updated Daily</span>
-            <h2>New Enterprise Listings</h2>
-            <p>The 12 most recently listed homes in Enterprise &mdash; condos, townhomes, and single-family homes from $250K to $1M+.</p>
+            <h2 className="listings-title">NEW ENTERPRISE LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":200000,"locations":[{"city":"Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Enterprise"}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":300000,"locations":[{"city":"Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Enterprise","zipCodes":["89113","89139","89141","89178","89148"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Enterprise" target="_blank" rel="noopener noreferrer" className="btn-gold">View New Enterprise Listings Now &rarr;</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Enterprise" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Enterprise Listings &rarr;</a>
             <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
       </section>
 
-      {/* OVERVIEW */}
       <section id="overview">
         <div className="container">
           <div className="overview-grid">
             <div className="overview-text">
-              <span className="section-label">A Local&apos;s Perspective</span>
+              <span className="section-label">Community Overview</span>
               <div className="gold-rule" />
               <h2>{overviewTitle}</h2>
               {cms?.overviewBody?.length ? (
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Enterprise is one of those areas that a lot of out-of-state buyers don&apos;t know by name, but once I show them the map, it clicks immediately. This is the southwest quadrant of the Las Vegas Valley &mdash; an unincorporated Clark County town that stretches from the south end of the Strip all the way to the mountains. It borders Henderson to the east, Southern Highlands to the south, and Summerlin-adjacent areas to the northwest. In terms of pure location, it&apos;s hard to beat.</p>
-                  <p>What makes Enterprise work for so many of my clients is the combination of proximity and variety. You can be on the Strip or at the airport in 5&ndash;15 minutes. You have I-15 running through the east side and I-215 looping through the south and west. If you work in hospitality, aviation, healthcare, or anywhere along those freeway corridors, Enterprise is the commute sweet spot. And unlike a lot of commuter-friendly areas, this isn&apos;t all tract housing &mdash; Enterprise has genuine neighborhood diversity.</p>
-                  <p>Southern Highlands, one of the most prestigious master-planned communities in the valley, sits within Enterprise. So does Rhodes Ranch with its golf course and family-friendly streets. The corridor along Bermuda Road and Cactus Avenue has seen a wave of newer construction. And there are still pockets of older, non-HOA neighborhoods for buyers who want more flexibility and lower monthly costs. The price range reflects all of that &mdash; from $250K condos to $1M+ estates.</p>
-                  <p>The retail and dining infrastructure has matured significantly over the past decade. The St. Rose Parkway corridor is packed with shopping, restaurants, and medical facilities. The M Resort Spa Casino anchors the southern end. And the new UNLV campus expansion and Raiders headquarters have brought even more investment into the area. Enterprise isn&apos;t the flashiest name on the map, but in terms of value, connectivity, and long-term upside, it&apos;s one of the smartest places to buy in Las Vegas.</p>
+                  <p>Enterprise is one of the fastest-growing and most geographically expansive residential areas in the Las Vegas Valley. Designated as an unincorporated town within Clark County in 2003, Enterprise covers approximately 42 square miles in the southwest portion of the valley, encompassing major communities like Southern Highlands and Mountains Edge while also including vast stretches of newer residential development, commercial corridors, and open desert slated for future growth.</p>
+                  <p>The area's appeal lies in its combination of newer construction, master-planned community access, and relative affordability compared to Summerlin or Henderson. Much of Enterprise's housing stock was built from the mid-2000s through the present day, meaning buyers benefit from modern floor plans, energy-efficient construction, and contemporary design at price points that are typically 15–25% below comparable homes in more established communities to the west and east.</p>
+                  <p>Enterprise is anchored by several commercial corridors, including Southern Highlands Parkway, Blue Diamond Road, and the Warm Springs/Durango intersection. Major retailers, restaurants, medical facilities, and grocery stores are distributed throughout the area, reducing the commute burden for daily errands. The I-15 and I-215 freeways provide direct access to the Strip, Harry Reid Airport, and Henderson, with most destinations reachable in 15–25 minutes.</p>
+                  <p>For buyers seeking newer construction with mountain views, proximity to outdoor recreation at Red Rock Canyon and Sloan Canyon, and an unincorporated Clark County tax advantage, Enterprise represents one of the strongest value propositions in the Las Vegas metro. The area continues to attract national builders who are actively developing new subdivisions in the southwest corridor.</p>
                 </>
               )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
                 <h3>Enterprise At a Glance</h3>
-                {displayStats.map(([label, value, cls]) => (
+                {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
                     <span className={`fact-value${cls ? ' ' + cls : ''}`}>{value}</span>
@@ -160,7 +303,7 @@ export default async function EnterprisePage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Enterprise? Let&apos;s schedule a private tour and find the neighborhood that fits your lifestyle and commute.</p>
+                <p>Ready to explore Enterprise? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -168,23 +311,21 @@ export default async function EnterprisePage() {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
       <section id="highlights">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Why Enterprise</span>
             <h2>What Makes Enterprise Stand Out</h2>
-            <p>Location, variety, and value &mdash; the three things buyers consistently tell me they love about Enterprise.</p>
           </div>
           <div className="highlights-grid">
             {[
-              { icon: '\u{1F4CD}', title: 'Minutes From Everything', body: '5\u201315 minutes to the Strip and Harry Reid Airport. I-15 and I-215 put you 10\u201320 minutes from virtually every major employment center, shopping district, and entertainment venue in the valley.' },
-              { icon: '\u{1F3E0}', title: 'Every Price Point Covered', body: 'From $250K condos to $1M+ guard-gated estates. Enterprise has starter homes, move-up neighborhoods, golf communities, and luxury enclaves \u2014 all within the same area code.' },
-              { icon: '\u26F3', title: 'Multiple Golf Communities', body: 'Southern Highlands Golf Club, Rhodes Ranch, and several other courses put championship golf within minutes. Both private and public options for every level of player.' },
-              { icon: '\u{1F3EB}', title: 'Strong School Options', body: 'Home to Bishop Gorman High School \u2014 one of Nevada\u2019s top private schools \u2014 plus well-regarded CCSD public schools and multiple charter academies.' },
-              { icon: '\u{1F6CD}\uFE0F', title: 'St. Rose Parkway Corridor', body: 'A fully built-out commercial corridor with major retailers, restaurants, medical facilities, and the M Resort Spa Casino. Daily errands never require a long drive.' },
-              { icon: '\u{1F4C8}', title: 'Long-Term Growth', body: 'UNLV campus expansion, Raiders headquarters, and ongoing commercial development continue to drive investment and appreciation in the Enterprise area.' },
-            ].map(h => (
+              { title: 'Newer Construction', body: 'Much of Enterprise was built from the mid-2000s forward. Modern floor plans, energy-efficient construction, and contemporary finishes at prices below Summerlin and Henderson.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: '42 Square Miles of Growth', body: 'One of the largest unincorporated towns in the valley with significant undeveloped land for future community expansion. Active new construction throughout.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Mountain & Desert Views', body: 'Enterprise\'s southwest valley position provides views of the Spring Mountains and proximity to Red Rock Canyon and Sloan Canyon conservation areas.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Strong Commercial Infrastructure', body: 'Major retail, dining, and medical along Southern Highlands Parkway, Blue Diamond Road, and the Warm Springs/Durango corridors. Complete daily conveniences.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'Freeway Access', body: 'I-15 and I-215 are both easily accessible. The Strip is 15–20 minutes away, Harry Reid Airport 20 minutes, and Henderson 20–25 minutes.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+              { title: 'Tax Advantage', body: 'As unincorporated Clark County, Enterprise benefits from no city tax overlay. Property tax rates are competitive with the lowest in the Las Vegas metro area.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+            ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
                 <h3>{h.title}</h3>
@@ -195,113 +336,76 @@ export default async function EnterprisePage() {
         </div>
       </section>
 
-      {/* NEIGHBORHOODS */}
-      <section id="villages">
+      <EnterpriseFAQ />
+
+      <section id="nearby" className="nearby-v2">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Neighborhoods</span>
-            <h2>Explore Enterprise&apos;s Neighborhoods</h2>
-            <p>From guard-gated golf communities to accessible starter neighborhoods, Enterprise has genuine variety.</p>
+            <span className="section-label">Comparisons</span>
+            <h2>Nearby Communities to Consider</h2>
           </div>
-          <div className="villages-grid">
+          <div className="nearby-v2-table">
+            <div className="nearby-v2-header">
+              <span>Community</span>
+              <span>Starting Price</span>
+              <span>Why Consider</span>
+              <span></span>
+            </div>
             {[
-              { name: 'Southern Highlands', type: 'Guard-Gated \u00B7 Golf \u00B7 Luxury', desc: 'The premier address in Enterprise \u2014 a large master-planned community with a private golf club, resort-style amenities, parks, and homes ranging from family residences to custom estates.', price: 'From $550K' },
-              { name: 'Rhodes Ranch', type: 'Golf \u00B7 Family', desc: 'A well-established golf community centered around the Rhodes Ranch Golf Club. Family-friendly neighborhoods with mature landscaping, community pools, and parks.', price: 'From $400K' },
-              { name: 'Coronado Ranch', type: 'Gated \u00B7 Established', desc: 'A gated community near the I-215 and Bermuda Road interchange. Well-maintained neighborhoods with community pools and parks at accessible price points.', price: 'From $380K' },
-              { name: 'Bermuda / Cactus Corridor', type: 'New Construction \u00B7 Modern', desc: 'One of the newest development corridors in Enterprise. Contemporary floor plans, energy-efficient construction, and proximity to the St. Rose Parkway commercial strip.', price: 'From $420K' },
-              { name: 'Enterprise Townhomes & Condos', type: 'Attached \u00B7 Entry-Level', desc: 'Townhome and condo communities near the Strip corridor and major freeways. Ideal for first-time buyers, investors, and professionals who want proximity to work.', price: 'From $250K' },
-              { name: 'Custom & Estate Homes', type: 'Luxury \u00B7 Premium', desc: 'Scattered custom lots and estate-sized properties throughout Enterprise, including golf course frontage in Southern Highlands and mountain-view parcels near the western boundary.', price: 'From $900K+' },
-            ].map(v => (
-              <div className="village-card" key={v.name}>
-                <div className="village-name">{v.name}</div>
-                <div className="village-type">{v.type}</div>
-                <p className="village-desc">{v.desc}</p>
-                <div className="village-price">{v.price}</div>
-              </div>
+              { name: 'Southern Highlands', href: '/southern-highlands/', price: 'From $400K', compare: 'Guard-gated golf community within Enterprise. Jack Nicklaus course and luxury estates.' },
+              { name: 'Mountains Edge', href: '/mountains-edge/', price: 'From $350K', compare: '3,500-acre master-planned community within Enterprise. Family-focused with extensive trails and parks.' },
+              { name: 'Rhodes Ranch', href: '/rhodes-ranch/', price: 'From $350K', compare: 'Guard-gated golf community within Enterprise. Ted Robinson course and resort amenities.' },
+              { name: 'Spring Valley', href: '/spring-valley/', price: 'From $300K', compare: 'Established community to the north with mature neighborhoods and central location.' },
+              { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Premier master-planned community on the west side. Higher price points but premier amenities.' },
+              { name: 'Henderson', href: '/henderson/', price: 'From $350K', compare: 'Incorporated city to the east. Master-planned communities, top schools, safest-city rankings.' },
+            ].map((n: any) => (
+              <Link href={n.href} key={n.name} className="nearby-v2-row">
+                <span className="nearby-v2-name">{n.name}</span>
+                <span className="nearby-v2-price">{n.price}</span>
+                <span className="nearby-v2-compare">{n.compare}</span>
+                <span className="nearby-v2-arrow">&rarr;</span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* LIFESTYLE */}
-      <section id="lifestyle">
+      <section id="cta" className="cta-v2">
         <div className="container">
-          <div className="lifestyle-split">
-            <div className="lifestyle-img">
-              <img
-                src={lifestyleImageUrl ? `${lifestyleImageUrl}?w=900&auto=format&q=85` : '/red-rock-canyon.jpg'}
-                alt="Southwest Las Vegas landscape near Enterprise"
-              />
-            </div>
-            <div className="lifestyle-content">
-              <span className="section-label">Lifestyle &amp; Amenities</span>
-              <div className="gold-rule" />
-              <h2>Strip Access, Mountain Views, and a Fully Built-Out Corridor</h2>
-              <p>Enterprise gives you something rare in Las Vegas &mdash; the ability to live minutes from the action without feeling like you&apos;re in the middle of it. The southwest corridor has matured into one of the most complete suburban environments in the valley, with everything from world-class dining to neighborhood parks.</p>
-              <p>The western edge of Enterprise backs up to mountain terrain with hiking access, while the east side puts the Strip and airport within a short drive.</p>
-              <div className="lifestyle-bullets">
-                {[
-                  'Las Vegas Strip and Harry Reid Airport both 5\u201315 minutes away via I-15 or Las Vegas Blvd',
-                  'St. Rose Parkway corridor with major retail, dining, medical facilities, and M Resort Spa Casino',
-                  'Multiple golf courses including Southern Highlands Golf Club and Rhodes Ranch',
-                  'Red Rock Canyon National Conservation Area ~20 minutes west via I-215',
-                  'Sloan Canyon National Conservation Area and Wetlands Park accessible for hiking and nature walks',
-                ].map((b, i) => <div className="lifestyle-bullet" key={i}>{b}</div>)}
+          <div className="cta-v2-inner">
+            <div className="cta-v2-content">
+              <h2>Ready to Find Your Enterprise Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Enterprise, let&apos;s talk.</p>
+              <div className="cta-v2-agent">
+                Chris Nevada &middot; S.181401<br />
+                Owner, Nevada Real Estate Group - LPT Realty<br />
+                8945 W Russell Rd, Suite 170, Las Vegas, NV 89148<br />
+                <a href="mailto:Info@NevadaGroup.com" className="cta-v2-agent-email">Info@NevadaGroup.com</a>
+              </div>
+              <div className="cta-v2-actions">
+                <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SCHOOLS */}
-      <section id="schools">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-label">Education</span>
-            <h2>Schools Serving Enterprise Families</h2>
-            <p>A mix of strong public, private, and charter options serving the southwest corridor.</p>
-          </div>
-          <div className="schools-layout">
-            <div className="school-group">
-              <h3>Public Schools (CCSD)</h3>
-              {[['Gene Ward Elementary','K\u20135'],['Elbert Edwards Elementary','K\u20135'],['Tom Williams Elementary','K\u20135'],['Walter Johnson Middle School','6\u20138'],['Larry & Sandra Schaben Middle','6\u20138'],['Sierra Vista High School','9\u201312'],['Desert Oasis High School','9\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Private &amp; Faith-Based</h3>
-              {[['Bishop Gorman High School','Catholic \u00B7 9\u201312'],['Henderson International School','PreK\u201312'],['Merryhill School','PreK\u20135'],['St. Elizabeth Ann Seton','PreK\u20138'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-            </div>
-            <div className="school-group">
-              <h3>Charter &amp; Specialty</h3>
-              {[['Doral Academy Red Rock','K\u20138'],['Somerset Academy','K\u20138'],['Pinecrest Academy of Nevada','K\u201312'],['Coral Academy of Science','K\u201312'],].map(([n,g])=>(
-                <div className="school-item" key={n}>{n}<span className="school-grades">{g}</span></div>
-              ))}
-              <div style={{marginTop:'24px',padding:'18px',background:'rgba(201,168,76,0.06)',border:'1px solid var(--border)',borderRadius:'var(--radius)',fontSize:'13px',color:'var(--white-70)',lineHeight:'1.7'}}>
-                <strong style={{color:'var(--white)'}}>School Assignment Note:</strong> Enterprise spans a large area with multiple school zones. Assignments vary significantly by address. Always confirm your assigned school with CCSD before purchasing.
-              </div>
+            <div className="cta-v2-form">
+              <h3>Or Send Us a Message</h3>
+              <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
+                <input type="hidden" name="_subject" value="Enterprise Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
+                <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />
+                <input type="tel" name="phone" placeholder="Phone Number" className="cta-v2-input" />
+                <textarea name="message" placeholder="Tell us what you&apos;re looking for" rows={3} className="cta-v2-input cta-v2-textarea" />
+                <button type="submit" className="btn-gold cta-v2-submit">Get in Touch</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <EnterpriseFAQ />
-
-      {/* CTA */}
-      <section id="cta">
-        <div className="container">
-          <h2>Ready to Find Your Enterprise Home?</h2>
-          <p>From golf course living in Southern Highlands to starter homes near the Strip, I&apos;ll help you find the right neighborhood and price point in Enterprise.</p>
-          <div className="cta-actions">
-            <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-            <a href="#listings" className="btn-outline">Browse All Listings</a>
-          </div>
-          <p style={{marginTop:'24px',fontSize:'12px',color:'rgba(255,255,255,0.3)'}}>Nevada Lic. #S.0181401.LLC &middot; lpt Realty</p>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
     </main>
   )
 }

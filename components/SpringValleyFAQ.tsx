@@ -3,33 +3,37 @@ import { useState } from 'react'
 
 const FAQS = [
   {
-    q: 'Is Spring Valley a city or part of Las Vegas?',
-    a: "Spring Valley is an unincorporated town within Clark County \u2014 not part of the City of Las Vegas. It uses a Las Vegas mailing address, but it\u2019s governed by the Clark County Commission with its own zoning and services. It\u2019s one of the largest unincorporated communities in Nevada with a population of roughly 190,000.",
+    "q": "What is the price range for homes in Spring Valley?",
+    "a": "Homes in Spring Valley range from approximately $300,000 for condos and townhomes to $700,000 or more for larger single-family homes in premium sections. The median home price is typically in the $400K–$500K range."
   },
   {
-    q: 'What are HOA fees like in Spring Valley?',
-    a: "Spring Valley has a wide range. Many older neighborhoods have no HOA at all, which is increasingly rare in Las Vegas. Newer subdivisions and gated communities typically run $40\u2013$100 per month. Guard-gated communities and townhome complexes can run higher. The variety is part of Spring Valley\u2019s appeal \u2014 you can choose the level of structure and cost that fits your lifestyle.",
+    "q": "Is Spring Valley a city?",
+    "a": "No. Spring Valley is an unincorporated community in Clark County, not a separately incorporated city. It is commonly referred to as a neighborhood or community of Las Vegas, though it has its own distinct identity and ZIP codes."
   },
   {
-    q: 'How far is Spring Valley from the Las Vegas Strip?',
-    a: "Spring Valley\u2019s eastern edge is essentially adjacent to the Strip corridor. Depending on your specific neighborhood, you\u2019re 5\u201320 minutes from the major resorts via Flamingo, Tropicana, or Spring Mountain Road. The I-215 beltway provides a fast bypass route to Henderson and the airport.",
+    "q": "What ZIP codes are in Spring Valley?",
+    "a": "Spring Valley spans multiple ZIP codes including 89117, 89147, 89148, and 89113. The exact boundaries are fluid as Spring Valley is an unincorporated census-designated place."
   },
   {
-    q: "What\u2019s the price range for homes in Spring Valley?",
-    a: "Spring Valley offers some of the broadest price diversity in the valley. Condos start around $200K\u2013$250K. Single-family homes in established neighborhoods run $350K\u2013$550K. Newer construction and larger homes can reach $700K+. The median sits around $420K \u2014 making Spring Valley one of the better value plays in the southwest corridor.",
+    "q": "What schools serve Spring Valley?",
+    "a": "Spring Valley is served by numerous CCSD schools including Spring Valley High School, Becker Middle School, and several elementary schools. Private options include The Meadows School (A+) and Bishop Gorman High School (A+). Doral Academy (9/10) is the top charter."
   },
   {
-    q: 'What is the Chinatown district like?',
-    a: "Las Vegas Chinatown, centered along Spring Mountain Road through Spring Valley, is one of the most vibrant dining corridors in the western United States. Hundreds of Asian restaurants, bakeries, tea houses, and specialty grocery stores spanning Chinese, Korean, Japanese, Vietnamese, Thai, and Filipino cuisines. It\u2019s a genuine culinary destination that draws people from across the valley.",
+    "q": "Is Spring Valley a good area to live?",
+    "a": "Spring Valley is one of the most popular residential areas in Las Vegas due to its central location, mature neighborhoods, strong commercial infrastructure, and relative affordability. It appeals to professionals, families, and investors alike."
   },
   {
-    q: 'Is Spring Valley good for families?',
-    a: "Yes, particularly the western and southern sections of Spring Valley closer to the I-215 beltway. These areas tend to have newer construction, more parks, and proximity to well-regarded schools. The eastern sections closer to the Strip are more urban and tend to attract professionals and investors. Both zones have their strengths depending on what you\u2019re looking for.",
+    "q": "How close is Spring Valley to the Strip?",
+    "a": "Spring Valley is approximately 10 minutes from the Las Vegas Strip via Flamingo Road or Spring Mountain Road. The central location provides easy access to the Strip, downtown, Summerlin, and Henderson."
   },
   {
-    q: 'Are there good schools in Spring Valley?',
-    a: "Spring Valley has a large number of school options given its size. CCSD operates many schools in the area, and there are strong charter and private options. The western portion of Spring Valley is generally zoned for newer, higher-rated CCSD schools. As always, school assignments are address-specific \u2014 confirm zoning for any property you\u2019re considering.",
+    "q": "Are there guard-gated communities in Spring Valley?",
+    "a": "Several guard-gated communities border or overlap with Spring Valley, including Canyon Gate Country Club, Spanish Trail, and The Lakes. These offer luxury living within the broader Spring Valley area."
   },
+  {
+    "q": "Is Spring Valley good for investment?",
+    "a": "Spring Valley offers strong investment potential due to its central location, diverse tenant pool, and mature housing stock with renovation opportunities. Rental demand is consistently high given the proximity to the Strip and major employers."
+  }
 ]
 
 export default function SpringValleyFAQ() {
@@ -40,11 +44,11 @@ export default function SpringValleyFAQ() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">Common Questions</span>
-          <h2>Spring Valley Home Buyer FAQ</h2>
-          <p>The questions I hear most from buyers exploring Spring Valley.</p>
+          <h2>Frequently Asked Questions About Spring Valley</h2>
+          <p>The questions buyers ask most when exploring Spring Valley.</p>
         </div>
         <div className="faq-list">
-          {FAQS.map((faq, i) => (
+          {FAQS.map((faq: any, i: number) => (
             <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
               <button className="faq-btn" onClick={() => setOpen(open === i ? null : i)}>
                 <span className="faq-question">{faq.q}</span>
