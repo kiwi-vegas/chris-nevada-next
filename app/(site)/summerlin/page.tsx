@@ -110,8 +110,8 @@ const RELATED_POSTS = [
 export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('summerlin')
   return {
-    title: cms?.metaTitle ?? 'Summerlin Las Vegas Homes for Sale | 700+ Listings | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? '700+ homes for sale in Summerlin, Las Vegas. $450K\u2013$10M+ \u2014 from condos to custom estates in 20+ villages. Schools, HOA info, builder options. Nevada Real Estate Group \u2014 35+ years of Summerlin expertise.',
+    title: cms?.metaTitle ?? 'Summerlin Las Vegas Homes for Sale | 485+ Listings | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? '485+ homes for sale in Summerlin, Las Vegas. $450K\u2013$10M+ \u2014 from condos to custom estates in 20+ villages. Schools, HOA info, builder options. Nevada Real Estate Group.',
   }
 }
 
@@ -130,7 +130,7 @@ export default async function SummerlinPage() {
     ['Developer', 'Howard Hughes Corporation'],
     ['Total Acreage', '22,500 acres'],
     ['Population', '130,000+'],
-    ['Median Home Price', '$686,000'],
+    ['Median Home Price', '$642,000'],
     ['Villages', '20+'],
     ['Schools', '26 public, private & charter'],
     ['Parks', '250+'],
@@ -181,7 +181,7 @@ export default async function SummerlinPage() {
                 <span className="hero-v2-stat-lbl">Active Listings</span>
               </div>
               <div className="hero-v2-stat">
-                <span className="hero-v2-stat-num">{qs('Median Home Price', '$686,000')}</span>
+                <span className="hero-v2-stat-num">{qs('Median Home Price', '$642,000')}</span>
                 <span className="hero-v2-stat-lbl">Median Price</span>
               </div>
               <div className="hero-v2-stat">
@@ -342,10 +342,10 @@ export default async function SummerlinPage() {
               </div>
               <div className="mstat-table">
                 {[
-                  ['Median Sale Price', '$686,000', 'gold'],
-                  ['Avg Price Per Sq Ft', '$285'],
-                  ['Active Listings', '700+'],
-                  ['Avg Days on Market', '38'],
+                  ['Median Sale Price', '$642,000', 'gold'],
+                  ['Avg Price Per Sq Ft', '$329'],
+                  ['Active Listings', '485+'],
+                  ['Avg Days on Market', '78'],
                   ['Highest Active Listing', '$12,500,000'],
                   ['Lowest Active Listing', '$389,000'],
                 ].map(([label, value, cls]) => (
