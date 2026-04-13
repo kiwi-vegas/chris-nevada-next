@@ -555,6 +555,26 @@ export default async function NorthLasVegasPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'ItemList',
+        name: 'North Las Vegas Communities and Neighborhoods',
+        description: 'All communities and neighborhoods in North Las Vegas, Nevada.',
+        numberOfItems: 12,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Aliante', url: 'https://www.lasvegashomesearchexperts.com/aliante/' },
+          { '@type': 'ListItem', position: 2, name: 'Skye Canyon', url: 'https://www.lasvegashomesearchexperts.com/skye-canyon/' },
+          { '@type': 'ListItem', position: 3, name: 'Centennial Hills', url: 'https://www.lasvegashomesearchexperts.com/centennial-hills/' },
+          { '@type': 'ListItem', position: 4, name: 'Providence', url: 'https://www.lasvegashomesearchexperts.com/providence/' },
+          { '@type': 'ListItem', position: 5, name: 'Lone Mountain', url: 'https://www.lasvegashomesearchexperts.com/lone-mountain/' },
+          { '@type': 'ListItem', position: 6, name: 'Heartland at Tule Springs', url: 'https://www.lasvegashomesearchexperts.com/heartland-tule-springs/' },
+          { '@type': 'ListItem', position: 7, name: 'Sunstone', url: 'https://www.lasvegashomesearchexperts.com/sunstone/' },
+          { '@type': 'ListItem', position: 8, name: 'Sun City Aliante', url: 'https://www.lasvegashomesearchexperts.com/sun-city-aliante/' },
+          { '@type': 'ListItem', position: 9, name: 'Park Highlands', url: 'https://www.lasvegashomesearchexperts.com/north-las-vegas-park-highlands/' },
+          { '@type': 'ListItem', position: 10, name: 'Craig Ranch', url: 'https://www.lasvegashomesearchexperts.com/craig-ranch/' },
+          { '@type': 'ListItem', position: 11, name: 'Eldorado', url: 'https://www.lasvegashomesearchexperts.com/eldorado/' },
+          { '@type': 'ListItem', position: 12, name: 'Tule Springs', url: 'https://www.lasvegashomesearchexperts.com/tule-springs/' },
+        ],
+      }) }} />
     </main>
   )
 }

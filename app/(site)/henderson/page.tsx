@@ -556,6 +556,32 @@ export default async function HendersonPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'ItemList',
+        name: 'Henderson Communities and Neighborhoods',
+        description: 'All communities and neighborhoods in Henderson, Nevada.',
+        numberOfItems: 18,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Anthem', url: 'https://www.lasvegashomesearchexperts.com/anthem/' },
+          { '@type': 'ListItem', position: 2, name: 'Anthem Country Club', url: 'https://www.lasvegashomesearchexperts.com/anthem-country-club/' },
+          { '@type': 'ListItem', position: 3, name: 'Sun City Anthem', url: 'https://www.lasvegashomesearchexperts.com/sun-city-anthem/' },
+          { '@type': 'ListItem', position: 4, name: 'Green Valley', url: 'https://www.lasvegashomesearchexperts.com/green-valley/' },
+          { '@type': 'ListItem', position: 5, name: 'Green Valley Ranch', url: 'https://www.lasvegashomesearchexperts.com/green-valley-ranch/' },
+          { '@type': 'ListItem', position: 6, name: 'Seven Hills', url: 'https://www.lasvegashomesearchexperts.com/seven-hills/' },
+          { '@type': 'ListItem', position: 7, name: 'MacDonald Highlands', url: 'https://www.lasvegashomesearchexperts.com/macdonald-highlands/' },
+          { '@type': 'ListItem', position: 8, name: 'Ascaya', url: 'https://www.lasvegashomesearchexperts.com/ascaya/' },
+          { '@type': 'ListItem', position: 9, name: 'Dragon Rock', url: 'https://www.lasvegashomesearchexperts.com/dragon-rock/' },
+          { '@type': 'ListItem', position: 10, name: 'Lake Las Vegas', url: 'https://www.lasvegashomesearchexperts.com/lake-las-vegas/' },
+          { '@type': 'ListItem', position: 11, name: 'Inspirada', url: 'https://www.lasvegashomesearchexperts.com/inspirada/' },
+          { '@type': 'ListItem', position: 12, name: 'Cadence', url: 'https://www.lasvegashomesearchexperts.com/cadence/' },
+          { '@type': 'ListItem', position: 13, name: 'MacDonald Ranch', url: 'https://www.lasvegashomesearchexperts.com/macdonald-ranch/' },
+          { '@type': 'ListItem', position: 14, name: 'Tuscany Village', url: 'https://www.lasvegashomesearchexperts.com/tuscany-village/' },
+          { '@type': 'ListItem', position: 15, name: 'Silverado Ranch', url: 'https://www.lasvegashomesearchexperts.com/silverado-ranch/' },
+          { '@type': 'ListItem', position: 16, name: 'Whitney Ranch', url: 'https://www.lasvegashomesearchexperts.com/whitney-ranch/' },
+          { '@type': 'ListItem', position: 17, name: 'Madeira Canyon', url: 'https://www.lasvegashomesearchexperts.com/madeira-canyon/' },
+          { '@type': 'ListItem', position: 18, name: 'Boulder City', url: 'https://www.lasvegashomesearchexperts.com/boulder-city/' },
+        ],
+      }) }} />
     </main>
   )
 }

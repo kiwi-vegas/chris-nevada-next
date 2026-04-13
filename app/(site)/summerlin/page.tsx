@@ -662,6 +662,43 @@ export default async function SummerlinPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PLACE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(AGENT_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Summerlin Villages and Neighborhoods',
+        description: 'All villages and sub-communities within Summerlin, Las Vegas.',
+        numberOfItems: 28,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'The Ridges', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-ridges/' },
+          { '@type': 'ListItem', position: 2, name: 'The Paseos', url: 'https://www.lasvegashomesearchexperts.com/the-paseos/' },
+          { '@type': 'ListItem', position: 3, name: 'The Peaks', url: 'https://www.lasvegashomesearchexperts.com/the-peaks/' },
+          { '@type': 'ListItem', position: 4, name: 'Grand Park', url: 'https://www.lasvegashomesearchexperts.com/summerlin-grand-park/' },
+          { '@type': 'ListItem', position: 5, name: 'Stonebridge', url: 'https://www.lasvegashomesearchexperts.com/summerlin-stonebridge/' },
+          { '@type': 'ListItem', position: 6, name: 'The Canyons', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-canyons/' },
+          { '@type': 'ListItem', position: 7, name: 'The Hills South', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-hills-south/' },
+          { '@type': 'ListItem', position: 8, name: 'Siena', url: 'https://www.lasvegashomesearchexperts.com/summerlin-siena/' },
+          { '@type': 'ListItem', position: 9, name: 'La Madre Peaks', url: 'https://www.lasvegashomesearchexperts.com/summerlin-la-madre-peaks/' },
+          { '@type': 'ListItem', position: 10, name: 'Red Rock Country Club', url: 'https://www.lasvegashomesearchexperts.com/red-rock-country-club/' },
+          { '@type': 'ListItem', position: 11, name: 'The Summit Club', url: 'https://www.lasvegashomesearchexperts.com/the-summit-club/' },
+          { '@type': 'ListItem', position: 12, name: 'Sun City Summerlin', url: 'https://www.lasvegashomesearchexperts.com/sun-city-summerlin/' },
+          { '@type': 'ListItem', position: 13, name: 'The Arbors', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-arbors/' },
+          { '@type': 'ListItem', position: 14, name: 'The Hills', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-hills/' },
+          { '@type': 'ListItem', position: 15, name: 'The Crossing', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-crossing/' },
+          { '@type': 'ListItem', position: 16, name: 'The Trails', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-trails/' },
+          { '@type': 'ListItem', position: 17, name: 'The Vistas', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-vistas/' },
+          { '@type': 'ListItem', position: 18, name: 'The Willows', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-willows/' },
+          { '@type': 'ListItem', position: 19, name: 'The Cliffs', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-cliffs/' },
+          { '@type': 'ListItem', position: 20, name: 'The Gardens', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-gardens/' },
+          { '@type': 'ListItem', position: 21, name: 'The Mesa', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-mesa/' },
+          { '@type': 'ListItem', position: 22, name: 'The Pueblo', url: 'https://www.lasvegashomesearchexperts.com/summerlin-the-pueblo/' },
+          { '@type': 'ListItem', position: 23, name: 'Kestrel', url: 'https://www.lasvegashomesearchexperts.com/summerlin-kestrel/' },
+          { '@type': 'ListItem', position: 24, name: 'Redpoint', url: 'https://www.lasvegashomesearchexperts.com/summerlin-redpoint/' },
+          { '@type': 'ListItem', position: 25, name: 'Reverence', url: 'https://www.lasvegashomesearchexperts.com/summerlin-reverence/' },
+          { '@type': 'ListItem', position: 26, name: 'Summerlin Centre', url: 'https://www.lasvegashomesearchexperts.com/summerlin-centre/' },
+          { '@type': 'ListItem', position: 27, name: 'Discovery', url: 'https://www.lasvegashomesearchexperts.com/summerlin-discovery/' },
+          { '@type': 'ListItem', position: 28, name: 'South Square', url: 'https://www.lasvegashomesearchexperts.com/summerlin-south-square/' },
+        ],
+      }) }} />
     </main>
   )
 }
