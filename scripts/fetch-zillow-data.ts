@@ -10,7 +10,7 @@
  * Source: https://www.zillow.com/research/data/ (free, attribution required)
  */
 
-import { writeFileSync, mkdirSync } from 'fs'
+import { writeFileSync, mkdirSync, readFileSync } from 'fs'
 import { join } from 'path'
 
 // ── Zillow CSV download URLs ────────────────────────────────────────────────────
@@ -60,38 +60,31 @@ const DATASETS = {
 }
 
 // ── Community → ZIP code + neighborhood mapping ─────────────────────────────────
+// Dynamically loaded from community-data.json so all 256 communities get stats
 
-const COMMUNITY_MAP: Record<string, { zips: string[]; neighborhoods: string[]; city: string }> = {
-  'summerlin': { zips: ['89134', '89135', '89138', '89144', '89145'], neighborhoods: ['Summerlin North', 'Summerlin South', 'Sun City Summerlin'], city: 'Las Vegas' },
-  'summerlin-west': { zips: ['89138'], neighborhoods: ['Summerlin South'], city: 'Las Vegas' },
-  'henderson': { zips: ['89002', '89011', '89012', '89014', '89015', '89052', '89074'], neighborhoods: ['Anthem', 'Green Valley', 'Seven Hills'], city: 'Henderson' },
-  'anthem': { zips: ['89052'], neighborhoods: ['Anthem'], city: 'Henderson' },
-  'cadence': { zips: ['89011'], neighborhoods: [], city: 'Henderson' },
-  'inspirada': { zips: ['89044'], neighborhoods: [], city: 'Henderson' },
-  'green-valley-ranch': { zips: ['89012', '89014', '89052'], neighborhoods: ['Green Valley', 'Green Valley Ranch'], city: 'Henderson' },
-  'seven-hills': { zips: ['89052'], neighborhoods: ['Seven Hills'], city: 'Henderson' },
-  'lake-las-vegas': { zips: ['89011'], neighborhoods: ['Lake Las Vegas'], city: 'Henderson' },
-  'macdonald-highlands': { zips: ['89012'], neighborhoods: [], city: 'Henderson' },
-  'whitney-ranch': { zips: ['89014'], neighborhoods: [], city: 'Henderson' },
-  'tuscany-village': { zips: ['89014'], neighborhoods: [], city: 'Henderson' },
-  'silverado-ranch': { zips: ['89123', '89183'], neighborhoods: ['Silverado Ranch'], city: 'Las Vegas' },
-  'southern-highlands': { zips: ['89141', '89178'], neighborhoods: ['Southern Highlands'], city: 'Las Vegas' },
-  'mountains-edge': { zips: ['89141', '89178'], neighborhoods: ['Mountains Edge'], city: 'Las Vegas' },
-  'enterprise': { zips: ['89113', '89139', '89141', '89178'], neighborhoods: ['Enterprise'], city: 'Las Vegas' },
-  'spring-valley': { zips: ['89113', '89117', '89147'], neighborhoods: ['Spring Valley'], city: 'Las Vegas' },
-  'paradise': { zips: ['89109', '89119', '89121', '89169'], neighborhoods: ['Paradise'], city: 'Las Vegas' },
-  'the-lakes': { zips: ['89117', '89128'], neighborhoods: ['The Lakes'], city: 'Las Vegas' },
-  'desert-shores': { zips: ['89128'], neighborhoods: ['Desert Shores'], city: 'Las Vegas' },
-  'rhodes-ranch': { zips: ['89148'], neighborhoods: ['Rhodes Ranch'], city: 'Las Vegas' },
-  'red-rock-country-club': { zips: ['89135'], neighborhoods: [], city: 'Las Vegas' },
-  'north-las-vegas': { zips: ['89030', '89031', '89032', '89033', '89081', '89084', '89085', '89086'], neighborhoods: [], city: 'North Las Vegas' },
-  'aliante': { zips: ['89084', '89085'], neighborhoods: ['Aliante'], city: 'North Las Vegas' },
-  'skye-canyon': { zips: ['89166'], neighborhoods: ['Skye Canyon'], city: 'Las Vegas' },
-  'centennial-hills': { zips: ['89131', '89149'], neighborhoods: ['Centennial Hills'], city: 'Las Vegas' },
-  'lone-mountain': { zips: ['89129', '89131'], neighborhoods: [], city: 'Las Vegas' },
-  'providence': { zips: ['89166'], neighborhoods: [], city: 'North Las Vegas' },
-  'boulder-city': { zips: ['89005'], neighborhoods: [], city: 'Boulder City' },
+function loadCommunityMap(): Record<string, { zips: string[]; neighborhoods: string[]; city: string }> {
+  try {
+    const dataPath = join(process.cwd(), 'scripts', 'community-data.json')
+    const communities = JSON.parse(readFileSync(dataPath, 'utf-8'))
+    const map: Record<string, { zips: string[]; neighborhoods: string[]; city: string }> = {}
+    for (const c of communities) {
+      if (c.pageType) continue
+      const neighborhoods: string[] = []
+      if (c.parentCommunity) neighborhoods.push(c.parentCommunity)
+      if (c.name && c.name !== c.parentCommunity) neighborhoods.push(c.name)
+      map[c.slug] = { zips: c.zipCodes || [], neighborhoods, city: c.city }
+    }
+    return map
+  } catch {
+    // Fallback to minimal hardcoded map
+    return {
+      'summerlin': { zips: ['89134', '89135', '89138', '89144', '89145'], neighborhoods: ['Summerlin North', 'Summerlin South', 'Sun City Summerlin'], city: 'Las Vegas' },
+      'henderson': { zips: ['89002', '89011', '89012', '89014', '89015', '89052', '89074'], neighborhoods: ['Anthem', 'Green Valley', 'Seven Hills'], city: 'Henderson' },
+    }
+  }
 }
+
+const COMMUNITY_MAP = loadCommunityMap()
 
 // ── CSV parsing ─────────────────────────────────────────────────────────────────
 
