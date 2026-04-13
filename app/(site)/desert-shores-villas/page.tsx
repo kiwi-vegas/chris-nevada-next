@@ -1,7 +1,7 @@
-import SummerlinWestFAQ from '@/components/SummerlinWestFAQ'
+import DesertShoresVillasFAQ from '@/components/DesertShoresVillasFAQ'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import SummerlinWestMapWrapper from '@/components/SummerlinWestMapWrapper'
+import DesertShoresVillasMapWrapper from '@/components/DesertShoresVillasMapWrapper'
 import PortableText from '@/components/PortableText'
 import { getCommunityPage } from '@/sanity/queries'
 import { mergeQuickStats, mergeDriveTimes, getSectionImageUrl } from '@/lib/community-utils'
@@ -15,42 +15,42 @@ const BREADCRUMB_SCHEMA = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lasvegashomesearchexperts.com/' },
     { '@type': 'ListItem', position: 2, name: 'Communities', item: 'https://www.lasvegashomesearchexperts.com/#communities' },
-    { '@type': 'ListItem', position: 3, name: 'Summerlin West', item: 'https://www.lasvegashomesearchexperts.com/summerlin-west/' },
+    { '@type': 'ListItem', position: 3, name: 'Desert Shores Villas', item: 'https://www.lasvegashomesearchexperts.com/desert-shores-villas/' },
   ],
 }
 
 const FAQ_DATA = [
   {
-    "q": "What is Summerlin West?",
-    "a": "Summerlin West is the newest section of the Summerlin master-planned community, developed by the Howard Hughes Corporation. It encompasses over 5,600 acres along the western edge of the Las Vegas Valley, adjacent to Red Rock Canyon, and features the most current architecture and amenities in Summerlin."
+    "q": "What is the price range for Desert Shores Villas?",
+    "a": "Desert Shores Villas range from approximately $200,000 for one-bedroom condos to $450,000 for larger waterfront townhomes with lake views and updated interiors. The most active price range is $250,000 to $375,000."
   },
   {
-    "q": "What is the price range for homes in Summerlin West?",
-    "a": "Homes in Summerlin West range from approximately $400,000 for newer single-family homes in villages like Kestrel to over $1 million for premium homes in Grand Park and Reverence. Custom estates in La Madre Peaks can exceed $5 million."
+    "q": "Are Desert Shores Villas on the lake?",
+    "a": "Some units have direct lakefront positions with water views, while others are lake-adjacent or on interior streets. Lakefront units command higher prices. All residents have access to the four community lakes and beaches."
   },
   {
-    "q": "What ZIP codes are in Summerlin West?",
-    "a": "Summerlin West primarily spans ZIP codes 89138 and 89166 in the western Las Vegas Valley."
+    "q": "What activities are available on the Desert Shores lakes?",
+    "a": "Residents can kayak, paddleboard, and fish (catch and release) on the four man-made lakes. Sandy beaches provide sunbathing and lakeside relaxation. Motorized boats are not permitted. Walking trails circle the lakes."
   },
   {
-    "q": "Is Summerlin West guard-gated?",
-    "a": "Summerlin West as a whole is not guard-gated, but several neighborhoods within it are, including Carlisle Peak and Glenrock in Grand Park, and select enclaves in La Madre Peaks."
+    "q": "What are HOA fees at Desert Shores Villas?",
+    "a": "HOA fees for the Villas typically range from $250 to $450 per month, covering exterior maintenance, landscaping, common area upkeep, lake and beach maintenance, and community amenities. Fees vary by specific complex."
   },
   {
-    "q": "What builders are in Summerlin West?",
-    "a": "Major builders in Summerlin West include Toll Brothers, Lennar, Shea Homes, Pulte Homes, Taylor Morrison, Woodside Homes, and several others. The variety of builders offers a wide range of architectural styles and price points."
+    "q": "Are Desert Shores Villas a good investment?",
+    "a": "Desert Shores Villas offer strong rental demand due to their lakefront lifestyle and affordable pricing. The community attracts tenants seeking waterfront living at a fraction of Lake Las Vegas pricing. Verify rental restrictions in the specific HOA before purchasing for investment."
   },
   {
-    "q": "What schools serve Summerlin West?",
-    "a": "Summerlin West is served by CCSD schools including Staton Elementary, Sig Rogich Middle School (10/10 GreatSchools), and Arbor View High School. Top private options include The Meadows School and Bishop Gorman High School."
+    "q": "What is the difference between Desert Shores and Desert Shores Villas?",
+    "a": "Desert Shores is the larger master-planned community with single-family homes, custom homes, and lakefront estates. Desert Shores Villas specifically refers to the condominium and townhome complexes within the community, offering a lower price point and maintenance-free lifestyle."
   },
   {
-    "q": "How close is Summerlin West to Red Rock Canyon?",
-    "a": "Summerlin West is approximately 10 minutes from the Red Rock Canyon National Conservation Area visitor center. Many homes in the western-most neighborhoods have direct views of the canyon's sandstone formations."
+    "q": "What ZIP code are Desert Shores Villas in?",
+    "a": "Desert Shores Villas are located in ZIP code 89128 in northwest Las Vegas."
   },
   {
-    "q": "What are HOA fees in Summerlin West?",
-    "a": "HOA fees in Summerlin West typically range from $150 to $400 per month, covering the Summerlin master association fee plus individual neighborhood sub-association fees. Guard-gated communities may have higher fees."
+    "q": "Is Desert Shores guard-gated?",
+    "a": "Desert Shores is not guard-gated, though some individual condo complexes within the Villas have their own controlled access gates. The community does have a community association that maintains the lakes, beaches, and common areas."
   }
 ]
 
@@ -67,10 +67,10 @@ const FAQ_SCHEMA = {
 const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
-  name: 'Summerlin West',
-  description: 'Summerlin West is a master-planned · new construction community in Las Vegas, Nevada.',
-  geo: { '@type': 'GeoCoordinates', latitude: 36.195, longitude: -115.346 },
-  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
+  name: 'Desert Shores Villas',
+  description: 'Desert Shores Villas is a lakefront · condos community in Las Vegas, Nevada.',
+  geo: { '@type': 'GeoCoordinates', latitude: 36.21, longitude: -115.268 },
+  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89128', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
 }
 
@@ -87,53 +87,53 @@ const AGENT_SCHEMA = {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const cms = await getCommunityPage('summerlin-west')
+  const cms = await getCommunityPage('desert-shores-villas')
   return {
-    title: cms?.metaTitle ?? 'Summerlin West Homes for Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Summerlin West homes for sale in Las Vegas, NV. $400K–$1M+. Schools, HOA, market stats. Nevada Real Estate Group.',
+    title: cms?.metaTitle ?? 'Desert Shores Villas Homes for Sale | Nevada Real Estate Group',
+    description: cms?.metaDescription ?? 'Browse Desert Shores Villas homes for sale in Las Vegas, NV. $200K–$450K. Schools, HOA, market stats. Nevada Real Estate Group.',
   }
 }
 
-export default async function SummerlinWestPage() {
-  const cms = await getCommunityPage('summerlin-west')
-  const market = getMarketStats('summerlin-west')
+export default async function DesertShoresVillasPage() {
+  const cms = await getCommunityPage('desert-shores-villas')
+  const market = getMarketStats('desert-shores-villas')
   const ms = market?.stats
 
-  const heroHeadline = cms?.heroHeadline ?? 'Summerlin West'
+  const heroHeadline = cms?.heroHeadline ?? 'Desert Shores Villas'
   const heroSubtitle = 'Homes for Sale in Las Vegas, Nevada'
-  const overviewTitle = cms?.overviewTitle ?? 'Summerlin West: Master-Planned · New Construction Living in Las Vegas'
+  const overviewTitle = cms?.overviewTitle ?? 'Desert Shores Villas: Lakefront · Condos Living in Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
-    ['Established', '2014'],
-    ['Developer', 'Howard Hughes Corporation'],
-    ['Total Acreage', '5,600+ acres'],
-    ['Homes', '10,000+'],
-    ['Median Home Price', ms?.medianSalePrice ?? '$400K–$1M+'],
-    ['ZIP Codes', '89138, 89166'],
+    ['Established', '1988'],
+    ['Developer', 'Greenspun Corporation'],
+    ['Total Acreage', '~40 acres'],
+    ['Homes', '~600'],
+    ['Median Home Price', ms?.medianSalePrice ?? '$200K–$450K'],
+    ['ZIP Codes', '89128'],
     ['Guard-Gated', 'No'],
-    ['HOA', '$150–$400/mo'],
+    ['HOA', '$250–$450/mo'],
   ]
   const displayStats = mergeQuickStats(HARDCODED_STATS, cms?.quickStats)
   const HARDCODED_DRIVE_TIMES = [
     {
-        "time": "~25 min",
+        "time": "~20 min",
         "destination": "to the Strip",
-        "route": "via Summerlin Pkwy → I-15"
+        "route": "via US-95 → I-15"
     },
     {
-        "time": "~10 min",
+        "time": "~15 min",
+        "destination": "to Downtown Summerlin",
+        "route": "via W Sahara Ave / Rampart Blvd"
+    },
+    {
+        "time": "~25 min",
+        "destination": "to Harry Reid Airport",
+        "route": "via US-95 → I-15"
+    },
+    {
+        "time": "~20 min",
         "destination": "to Red Rock Canyon",
         "route": "via W Charleston Blvd"
-    },
-    {
-        "time": "~10 min",
-        "destination": "to Downtown Summerlin",
-        "route": "via Summerlin Pkwy"
-    },
-    {
-        "time": "~35 min",
-        "destination": "to Harry Reid Airport",
-        "route": "via I-215 South → I-15"
     }
 ]
   const displayDriveTimes = mergeDriveTimes(HARDCODED_DRIVE_TIMES, cms?.quickStats)
@@ -149,7 +149,7 @@ export default async function SummerlinWestPage() {
           <span className="breadcrumb-sep">&rsaquo;</span>
           <a href="/#communities">Communities</a>
           <span className="breadcrumb-sep">&rsaquo;</span>
-          <span>Summerlin West</span>
+          <span>Desert Shores Villas</span>
         </div>
       </div>
 
@@ -168,7 +168,7 @@ export default async function SummerlinWestPage() {
                 <span className="hero-v2-stat-lbl">New Listings</span>
               </div>
               <div className="hero-v2-stat">
-                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$400K–$1M+')}</span>
+                <span className="hero-v2-stat-num">{ms?.medianSalePrice ?? qs('Median Home Price', '$200K–$450K')}</span>
                 <span className="hero-v2-stat-lbl">Median Sale Price</span>
               </div>
               <div className="hero-v2-stat">
@@ -176,7 +176,7 @@ export default async function SummerlinWestPage() {
                 <span className="hero-v2-stat-lbl">Avg Days to Close</span>
               </div>
             </div>
-            <a href="#listings" className="hero-v2-cta">Search Homes in Summerlin West</a>
+            <a href="#listings" className="hero-v2-cta">Search Homes in Desert Shores Villas</a>
           </div>
         </div>
       </header>
@@ -186,27 +186,27 @@ export default async function SummerlinWestPage() {
           <div className="hero-v2-qfb-row">
             <div className="hero-v2-qfb-item">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span><strong>ZIP:</strong> 89138, 89166</span>
+              <span><strong>ZIP:</strong> 89128</span>
             </div>
             <div className="hero-v2-qfb-divider" />
             <div className="hero-v2-qfb-item">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              <span><strong>Type:</strong> Master-Planned · New Construction</span>
+              <span><strong>Type:</strong> Lakefront · Condos</span>
             </div>
             <div className="hero-v2-qfb-divider" />
             <div className="hero-v2-qfb-item">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-              <span><strong>Price Range:</strong> $400K–$1M+</span>
+              <span><strong>Price Range:</strong> $200K–$450K</span>
             </div>
             <div className="hero-v2-qfb-divider" />
             <div className="hero-v2-qfb-item">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              <span><strong>HOA:</strong> $150–$400/mo</span>
+              <span><strong>HOA:</strong> $250–$450/mo</span>
             </div>
           </div>
           <div className="hero-v2-qfb-est">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <span>Est. 2014</span>
+            <span>Est. 1988</span>
           </div>
         </div>
       </div>
@@ -215,15 +215,15 @@ export default async function SummerlinWestPage() {
         <div className="container">
           <div className="section-header">
             <span className="section-label">Demographics</span>
-            <h2>Summerlin West Demographics</h2>
+            <h2>Desert Shores Villas Demographics</h2>
           </div>
           <div className="demo-grid">
             {[
-              ['~25,000', 'Population'],
-              ['36', 'Median Age'],
-              ['$120,000', 'Avg Household Income'],
-              ['~10,000', 'Total Households'],
-              ['72%', 'Homeownership Rate'],
+              ['~1,500', 'Population'],
+              ['42', 'Median Age'],
+              ['$55,000', 'Avg Household Income'],
+              ['~600', 'Total Households'],
+              ['65%', 'Homeownership Rate'],
             ].map(([value, label]) => (
               <div className="demo-stat" key={label}>
                 <div className="demo-value">{value}</div>
@@ -239,11 +239,11 @@ export default async function SummerlinWestPage() {
         <div className="container">
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
-            <h2>Where is Summerlin West?</h2>
-            <p>Summerlin, Las Vegas &mdash; Las Vegas, Nevada.</p>
+            <h2>Where is Desert Shores Villas?</h2>
+            <p>Desert Shores, Las Vegas &mdash; Las Vegas, Nevada.</p>
           </div>
           <div className="map-container">
-            <SummerlinWestMapWrapper />
+            <DesertShoresVillasMapWrapper />
           </div>
           <div className="drive-time-grid">
             {displayDriveTimes.map(({ time, destination, route }: any) => (
@@ -260,15 +260,15 @@ export default async function SummerlinWestPage() {
       <section id="listings">
         <div className="container">
           <div className="section-header">
-            <h2 className="listings-title">NEW SUMMERLIN WEST LISTINGS</h2>
+            <h2 className="listings-title">NEW DESERT SHORES VILLAS LISTINGS</h2>
           </div>
           <div className="ylopo-wrap">
             <div className="YLOPO_searchWidget" />
-            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":400000,"locations":[{"city":"Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Summerlin West","zipCodes":["89138","89166"]}' />
+            <div className="YLOPO_resultsWidget" data-search='{"propertyTypes":["house","condo","townhouse"],"minPrice":150000,"locations":[{"city":"Las Vegas","state":"NV"}],"limit":12,"sortBy":"listDate","sortOrder":"desc","keywords":"Desert Shores","zipCodes":["89128"]}' />
           </div>
           <p className="ylopo-note">Listing data sourced from regional MLS. Information deemed reliable but not guaranteed. Updated daily.</p>
           <div className="listings-actions">
-            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Summerlin%20West" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Summerlin West Listings &rarr;</a>
+            <a href="https://search.nevadarealestategroup.net/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][city]=Las%20Vegas&s[locations][0][state]=NV&s[keywords]=Desert%20Shores" target="_blank" rel="noopener noreferrer" className="btn-gold">View All Desert Shores Villas Listings &rarr;</a>
             <Link href="/#communities" className="btn-outline">&larr; Back to All Communities</Link>
           </div>
         </div>
@@ -285,16 +285,16 @@ export default async function SummerlinWestPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Summerlin West is the newest and fastest-growing section of the Summerlin master-planned community, representing the western frontier of residential development in the Las Vegas Valley. Spanning over 5,600 acres along the base of the Spring Mountains, Summerlin West offers the most current architecture, the newest community amenities, and some of the most dramatic mountain and canyon views available in the Las Vegas metro area.</p>
-                  <p>Developed by the Howard Hughes Corporation beginning around 2014, Summerlin West is organized into distinct villages including Grand Park, Kestrel, Kestrel Commons, Redpoint, Redpoint Square, Reverence, and La Madre Peaks. Each village contains multiple neighborhoods built by a mix of national and regional builders — Toll Brothers, Lennar, Shea Homes, Pulte, Taylor Morrison, and Woodside Homes among them. The variety of builders translates into a wide range of architectural styles, floor plans, and price points.</p>
-                  <p>The village of Grand Park anchors Summerlin West with some of its most premium offerings, including the guard-gated luxury neighborhoods of Carlisle Peak and Glenrock. At the top of the price spectrum, La Madre Peaks delivers custom estate lots with panoramic Red Rock Canyon views, while Kestrel and Reverence provide attainable newer-construction options for move-up buyers and young families.</p>
-                  <p>Summerlin West residents enjoy immediate proximity to Red Rock Canyon National Conservation Area, the extensive Summerlin trail network, and the newest parks and recreation facilities in the Summerlin system. Downtown Summerlin — with its 125+ shops, restaurants, and the Las Vegas Ballpark — is a short drive east. The area is served by top-rated CCSD schools and several acclaimed private and charter school options.</p>
+                  <p>Desert Shores Villas is a collection of lakefront and lake-adjacent condominium and townhome communities within the larger Desert Shores development in northwest Las Vegas. Built beginning in 1988 as part of the Greenspun Corporation's Desert Shores master plan, the Villas offer an affordable entry point to one of Las Vegas' most unique residential environments — a community centered around four man-made recreational lakes totaling over 30 acres of waterfront.</p>
+                  <p>The Desert Shores Villas include several distinct condo and townhome complexes positioned along or near the community's lakes. Units range from approximately $200,000 for one-bedroom condos to $450,000 for larger waterfront townhomes with lake views, private patios, and updated interiors. Many units have been renovated with modern kitchens, new flooring, and updated bathrooms, while others present opportunities for buyers who want to customize.</p>
+                  <p>Desert Shores' four lakes — Lake Jacqueline, Lake Ashley, Lake Tiffany, and Lake Serena — provide a lifestyle uncommon in the Las Vegas desert. Residents enjoy kayaking, paddleboarding, fishing (catch and release), and lakeside walking trails. The community's beaches, parks, and open spaces create a resort-like atmosphere, and the Desert Shores Community Association maintains the lakes, beaches, and common areas to a high standard.</p>
+                  <p>The Villas' northwest Las Vegas location provides good access to the US-95 freeway, the shopping and dining along N Rancho Drive and W Lake Mead Boulevard, and the Summerlin corridor. The community is also close to The Lakes, another established community, and the growing Centennial Hills area. For buyers seeking waterfront living at a fraction of Lake Las Vegas pricing, Desert Shores Villas delivers remarkable value.</p>
                 </>
               )}
             </div>
             <div className="overview-aside">
               <div className="quick-facts">
-                <h3>Summerlin West At a Glance</h3>
+                <h3>Desert Shores Villas At a Glance</h3>
                 {displayStats.map(([label, value, cls]: any) => (
                   <div className="fact-row" key={label}>
                     <span className="fact-label">{label}</span>
@@ -303,7 +303,7 @@ export default async function SummerlinWestPage() {
                 ))}
               </div>
               <div className="cta-card">
-                <p>Ready to explore Summerlin West? Schedule a private tour of the community and the current listings that match your goals.</p>
+                <p>Ready to explore Desert Shores Villas? Schedule a private tour of the community and the current listings that match your goals.</p>
                 <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
               </div>
             </div>
@@ -314,17 +314,17 @@ export default async function SummerlinWestPage() {
       <section id="highlights">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Why Summerlin West</span>
-            <h2>What Makes Summerlin West Stand Out</h2>
+            <span className="section-label">Why Desert Shores Villas</span>
+            <h2>What Makes Desert Shores Villas Stand Out</h2>
           </div>
           <div className="highlights-grid">
             {[
-              { title: 'Newest Construction', body: 'Summerlin West features the newest homes in the entire Summerlin master plan. Most neighborhoods were built from 2016 onward with modern open floor plans, energy-efficient systems, and smart-home technology.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
-              { title: 'Red Rock Canyon Proximity', body: 'Summerlin West backs directly against the Red Rock Canyon National Conservation Area. Many homes have unobstructed views of the canyon\'s dramatic sandstone formations and the Spring Mountains.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
-              { title: 'Multiple Villages & Price Points', body: 'From attainable single-family homes in Kestrel to custom estates in La Madre Peaks, Summerlin West offers something at every price point from the $400s to well over $5 million.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
-              { title: 'Summerlin Trail Network', body: 'Over 200 miles of interconnected trails wind through Summerlin, with the newest segments running through Summerlin West connecting to parks, schools, and the greater Red Rock trail system.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
-              { title: 'Top-Rated Schools', body: 'Summerlin West is served by some of the highest-rated schools in Clark County, including newer CCSD campuses built to serve the growing population of families moving to the area.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z"/></svg> },
-              { title: 'Strong Appreciation', body: 'New construction in Summerlin consistently outperforms the broader Las Vegas market in appreciation. Summerlin West\'s combination of brand, location, and limited land supply supports long-term value.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+              { title: 'Lakefront Living', body: 'Four man-made recreational lakes — Jacqueline, Ashley, Tiffany, and Serena — provide waterfront living, lake views, and water activities unique in the Las Vegas desert.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="3"/></svg> },
+              { title: 'Affordable Waterfront', body: 'Lake-view condos and townhomes from $200K — a fraction of what waterfront living costs at Lake Las Vegas or other lakefront communities nationwide.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> },
+              { title: 'Water Recreation', body: 'Kayaking, paddleboarding, fishing (catch and release), and lakeside walking on four interconnected lakes. Sandy beaches and lakeside picnic areas for residents.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 21l4-11 4 11"/><path d="M2 21l5-14 4 8"/><path d="M14 15l4-8 4 14"/><line x1="2" y1="21" x2="22" y2="21"/></svg> },
+              { title: 'Community Beaches', body: 'Sandy beaches maintained by the Desert Shores Community Association provide a resort-like atmosphere with lounge areas, shade structures, and lake access.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> },
+              { title: 'Low-Maintenance Living', body: 'Condo and townhome ownership with HOA-maintained exteriors, landscaping, and common areas. Ideal for busy professionals, snowbirds, and investors.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg> },
+              { title: 'Central NW Location', body: 'Easy US-95 access, proximity to Summerlin and Centennial Hills shopping, and minutes from Red Rock Canyon and outdoor recreation.', icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
             ].map((h: any) => (
               <div className="highlight-card" key={h.title}>
                 <div className="highlight-icon">{h.icon}</div>
@@ -336,7 +336,7 @@ export default async function SummerlinWestPage() {
         </div>
       </section>
 
-      <SummerlinWestFAQ />
+      <DesertShoresVillasFAQ />
 
       <section id="nearby" className="nearby-v2">
         <div className="container">
@@ -352,12 +352,12 @@ export default async function SummerlinWestPage() {
               <span></span>
             </div>
             {[
-              { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'The broader Summerlin master plan encompassing 20+ villages across North, South, and West associations.' },
-              { name: 'The Ridges', href: '/summerlin-the-ridges/', price: 'From $2M', compare: 'Summerlin\'s ultra-luxury guard-gated enclave with Bear\'s Best golf and Red Rock views.' },
-              { name: 'Red Rock Country Club', href: '/red-rock-country-club/', price: 'From $1.2M', compare: 'Guard-gated golf community within Summerlin featuring two Arnold Palmer courses.' },
-              { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $450K', compare: 'Northwest Las Vegas master-plan with newer construction, Skye Center, and mountain views.' },
-              { name: 'Providence', href: '/providence/', price: 'From $450K', compare: 'Family-friendly master-planned community in northwest Las Vegas with parks and trails.' },
-              { name: 'The Summit Club', href: '/the-summit-club/', price: 'From $5M', compare: 'The most exclusive private community in Las Vegas with Tom Fazio golf. By invitation only.' },
+              { name: 'Desert Shores', href: '/desert-shores/', price: 'From $350K', compare: 'The broader Desert Shores community with single-family homes and custom lakefront estates.' },
+              { name: 'The Lakes', href: '/the-lakes/', price: 'From $350K', compare: 'Adjacent lakefront community with recreational lakes and a similar waterfront lifestyle.' },
+              { name: 'Canyon Gate Country Club', href: '/canyon-gate-country-club/', price: 'From $700K', compare: 'Guard-gated golf community nearby for buyers seeking a step up in price and amenities.' },
+              { name: 'Peccole Ranch', href: '/peccole-ranch/', price: 'From $250K', compare: 'Nearby master-planned community with guard-gated sections and excellent schools.' },
+              { name: 'Summerlin', href: '/summerlin/', price: 'From $400K', compare: 'Nevada\'s premier master-planned community minutes west with every price point.' },
+              { name: 'Los Prados', href: '/los-prados/', price: 'From $300K', compare: 'Guard-gated golf community nearby for buyers who prefer golf course views over lake views.' },
             ].map((n: any) => (
               <Link href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
@@ -374,8 +374,8 @@ export default async function SummerlinWestPage() {
         <div className="container">
           <div className="cta-v2-inner">
             <div className="cta-v2-content">
-              <h2>Ready to Find Your Summerlin West Home?</h2>
-              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Summerlin West, let&apos;s talk.</p>
+              <h2>Ready to Find Your Desert Shores Villas Home?</h2>
+              <p>Nevada Real Estate Group is the #1 real estate team in Nevada. Whether you&apos;re buying or selling in Desert Shores Villas, let&apos;s talk.</p>
               <div className="cta-v2-agent">
                 Chris Nevada &middot; S.181401<br />
                 Owner, Nevada Real Estate Group - LPT Realty<br />
@@ -389,7 +389,7 @@ export default async function SummerlinWestPage() {
             <div className="cta-v2-form">
               <h3>Or Send Us a Message</h3>
               <form action="https://formsubmit.co/info@nevadagroup.com" method="POST">
-                <input type="hidden" name="_subject" value="Summerlin West Inquiry — LasVegasHomeSearchExperts.com" />
+                <input type="hidden" name="_subject" value="Desert Shores Villas Inquiry — LasVegasHomeSearchExperts.com" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="text" name="name" placeholder="Your Name" required className="cta-v2-input" />
                 <input type="email" name="email" placeholder="Email Address" required className="cta-v2-input" />

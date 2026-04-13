@@ -3,33 +3,37 @@ import { useState } from 'react'
 
 const FAQS = [
   {
-    q: 'What is the difference between Summerlin and Summerlin West?',
-    a: "Summerlin West is the newest expansion of the larger Summerlin master-planned community, developed by Howard Hughes Corporation. While central Summerlin was largely built out from the 1990s through the 2010s, Summerlin West represents the westernmost growth \u2014 the newest villages closest to Red Rock Canyon. Residents of Summerlin West are part of the Summerlin master association and have access to all of Summerlin\u2019s trail systems, events, and amenities.",
+    "q": "What is Summerlin West?",
+    "a": "Summerlin West is the newest section of the Summerlin master-planned community, developed by the Howard Hughes Corporation. It encompasses over 5,600 acres along the western edge of the Las Vegas Valley, adjacent to Red Rock Canyon, and features the most current architecture and amenities in Summerlin."
   },
   {
-    q: 'What are HOA fees like in Summerlin West?',
-    a: "Summerlin West carries the same two-layer HOA structure as the rest of Summerlin. The master association runs about $55\u2013$65 per month, and a village-level HOA typically adds another $50\u2013$150. For a typical single-family home, expect $100\u2013$215 total per month. Reverence, as a gated age-qualified community, carries higher fees that include its private clubhouse and amenities.",
+    "q": "What is the price range for homes in Summerlin West?",
+    "a": "Homes in Summerlin West range from approximately $400,000 for newer single-family homes in villages like Kestrel to over $1 million for premium homes in Grand Park and Reverence. Custom estates in La Madre Peaks can exceed $5 million."
   },
   {
-    q: 'How close is Summerlin West to Red Rock Canyon?',
-    a: "This is Summerlin West\u2019s defining advantage. Many homes are 5 minutes or less from the Red Rock Canyon National Conservation Area entrance. Some neighborhoods in Stonebridge and Redpoint back directly up to the canyon\u2019s boundary. The trail system connects community paths to actual Red Rock hiking trails \u2014 you can literally hike from your front door into 200,000 acres of protected desert.",
+    "q": "What ZIP codes are in Summerlin West?",
+    "a": "Summerlin West primarily spans ZIP codes 89138 and 89166 in the western Las Vegas Valley."
   },
   {
-    q: "What\u2019s the price range for homes in Summerlin West?",
-    a: "Summerlin West skews higher than central Summerlin because it\u2019s the newest construction. Townhomes and smaller single-family homes start around $500K\u2013$600K. The core of single-family homes runs $650K\u2013$900K. Custom and semi-custom homes in Reverence and premium Stonebridge neighborhoods can reach $1.5M+. The median sits around $750K.",
+    "q": "Is Summerlin West guard-gated?",
+    "a": "Summerlin West as a whole is not guard-gated, but several neighborhoods within it are, including Carlisle Peak and Glenrock in Grand Park, and select enclaves in La Madre Peaks."
   },
   {
-    q: 'What is Reverence in Summerlin West?',
-    a: "Reverence is a gated, age-qualified (55+) community within Summerlin West developed by Pulte Homes. It features a private clubhouse, resort-style pool, fitness center, and social programming. Homes are single-story designs built specifically for active adult living. It\u2019s one of the most sought-after 55+ communities in the valley thanks to its location adjacent to Red Rock Canyon.",
+    "q": "What builders are in Summerlin West?",
+    "a": "Major builders in Summerlin West include Toll Brothers, Lennar, Shea Homes, Pulte Homes, Taylor Morrison, Woodside Homes, and several others. The variety of builders offers a wide range of architectural styles and price points."
   },
   {
-    q: 'Is Summerlin West still being built?',
-    a: "Yes \u2014 Summerlin West is actively developing with new neighborhoods, parks, and trails still under construction. This is the last major expansion area for Summerlin, which means new construction opportunities here are finite. Builders like Toll Brothers, Lennar, Shea Homes, and Taylor Morrison are actively building. Once Summerlin West is built out, there won\u2019t be new Summerlin homes to buy.",
+    "q": "What schools serve Summerlin West?",
+    "a": "Summerlin West is served by CCSD schools including Staton Elementary, Sig Rogich Middle School (10/10 GreatSchools), and Arbor View High School. Top private options include The Meadows School and Bishop Gorman High School."
   },
   {
-    q: 'Are there good schools near Summerlin West?',
-    a: "Yes \u2014 Summerlin West is served by several of Summerlin\u2019s well-regarded CCSD schools, as well as top private schools like The Meadows School, Bishop Gorman, and Faith Lutheran. Newer schools continue to be built to serve the westernmost neighborhoods. As always with CCSD, school assignments are address-specific.",
+    "q": "How close is Summerlin West to Red Rock Canyon?",
+    "a": "Summerlin West is approximately 10 minutes from the Red Rock Canyon National Conservation Area visitor center. Many homes in the western-most neighborhoods have direct views of the canyon's sandstone formations."
   },
+  {
+    "q": "What are HOA fees in Summerlin West?",
+    "a": "HOA fees in Summerlin West typically range from $150 to $400 per month, covering the Summerlin master association fee plus individual neighborhood sub-association fees. Guard-gated communities may have higher fees."
+  }
 ]
 
 export default function SummerlinWestFAQ() {
@@ -40,11 +44,11 @@ export default function SummerlinWestFAQ() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">Common Questions</span>
-          <h2>Summerlin West Home Buyer FAQ</h2>
-          <p>The questions I hear most from buyers exploring Summerlin West.</p>
+          <h2>Frequently Asked Questions About Summerlin West</h2>
+          <p>The questions buyers ask most when exploring Summerlin West.</p>
         </div>
         <div className="faq-list">
-          {FAQS.map((faq, i) => (
+          {FAQS.map((faq: any, i: number) => (
             <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
               <button className="faq-btn" onClick={() => setOpen(open === i ? null : i)}>
                 <span className="faq-question">{faq.q}</span>

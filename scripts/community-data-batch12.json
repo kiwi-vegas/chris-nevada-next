@@ -1,0 +1,1487 @@
+[
+  {
+    "slug": "veer-towers",
+    "name": "Veer Towers",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Luxury · Strip",
+    "zipCodes": ["89158"],
+    "center": [-115.176, 36.108],
+    "heroEyebrow": "CityCenter, Las Vegas Strip",
+    "priceRange": "$400K–$5M+",
+    "established": "2010",
+    "developer": "MGM Resorts International / Infinity World Development",
+    "acreage": "~2 acres",
+    "homeCount": "670",
+    "guardGated": true,
+    "hoaRange": "$400–$2,000/mo",
+    "overview": [
+      "Veer Towers is a pair of striking 37-story residential towers located at the heart of CityCenter on the Las Vegas Strip. Designed by the Pritzker Prize-winning firm Helmut Jahn, the twin towers are iconic for their five-degree lean away from each other, creating one of the most visually dramatic architectural statements on the Strip. Completed in 2010, Veer remains one of the premier luxury high-rise condominium addresses in Las Vegas.",
+      "The towers contain approximately 670 residences ranging from efficient studios and one-bedroom units starting around $400,000 to expansive penthouses and combined units exceeding $5 million. Every residence features floor-to-ceiling glass curtain walls, high-end finishes, European-style kitchens with premium appliances, and sweeping views of the Strip, the Bellagio Fountains, the Spring Mountains, or the Las Vegas Valley skyline.",
+      "Veer Towers offers residents a fully amenitized luxury lifestyle including a resort-style pool deck, state-of-the-art fitness center, 24-hour concierge, valet parking, private residential lobbies, and direct access to CityCenter's world-class shopping at ARIA, Crystals, and the Waldorf Astoria Las Vegas. The building's location at the geographic center of the Strip places residents within walking distance of virtually every major resort and entertainment venue.",
+      "For buyers seeking the ultimate Strip-adjacent lifestyle — where you can walk to a Michelin-starred dinner, catch a world-class show, and return home to a private luxury residence — Veer Towers represents one of the strongest value propositions in the Las Vegas high-rise market. The combination of iconic architecture, CityCenter amenities, and an unbeatable location makes Veer one of the most sought-after addresses in the valley."
+    ],
+    "highlights": [
+      { "title": "Iconic Architecture", "body": "Twin 37-story towers designed by Helmut Jahn with a distinctive five-degree lean. One of the most recognized residential buildings on the Las Vegas Strip.", "iconType": "building" },
+      { "title": "CityCenter Location", "body": "Located at the heart of CityCenter with direct access to ARIA Resort, Crystals luxury shopping, and Waldorf Astoria Las Vegas. The geographic center of the Strip.", "iconType": "community" },
+      { "title": "Floor-to-Ceiling Glass", "body": "Every residence features glass curtain walls with panoramic views of the Strip, Bellagio Fountains, Spring Mountains, or the Las Vegas Valley.", "iconType": "home" },
+      { "title": "Resort Amenities", "body": "Pool deck, fitness center, 24-hour concierge, valet parking, and private residential lobbies. Full-service luxury living.", "iconType": "pool" },
+      { "title": "24-Hour Security", "body": "Controlled access residential lobbies, 24-hour concierge and security, and dedicated residential parking garage separate from CityCenter guests.", "iconType": "shield" },
+      { "title": "Strong Rental Demand", "body": "Veer Towers is one of the most desirable high-rise rental addresses in Las Vegas, offering strong income potential for investor-buyers.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Collection", "type": "Ultra-Luxury · Top Floor", "desc": "The most exclusive residences in Veer Towers with expansive floor plans, premium finishes, and unobstructed panoramic Strip views.", "price": "From $3M+" },
+      { "name": "Sky Residences (30–37)", "type": "High Floor · Premium", "desc": "Upper-floor residences with the best views and most desirable exposure. Two- and three-bedroom layouts.", "price": "From $1.5M+" },
+      { "name": "Tower Residences (15–29)", "type": "Mid-Rise · Views", "desc": "Mid-level residences with excellent Strip and mountain views. One- and two-bedroom configurations.", "price": "From $700K+" },
+      { "name": "City Residences (4–14)", "type": "Lower Floor · Value", "desc": "Entry-level residences offering the Veer lifestyle at the most accessible price point. Studios and one-bedrooms.", "price": "From $400K+" },
+      { "name": "CityCenter (Adjacent)", "type": "Mixed-Use · Resort", "desc": "The broader CityCenter complex including ARIA, Crystals, Park MGM, and the Waldorf Astoria Las Vegas.", "price": "Adjacent" },
+      { "name": "Waldorf Astoria (Adjacent)", "type": "Ultra-Luxury · High-Rise", "desc": "The Waldorf Astoria Las Vegas sits directly adjacent to Veer Towers within CityCenter, offering the city's most prestigious residential address.", "price": "From $500K+" }
+    ],
+    "parks": [
+      { "name": "The Park Las Vegas", "address": "3784 Las Vegas Blvd S, Las Vegas, NV 89158", "acreage": "~8 acres", "amenities": ["Outdoor dining", "Live entertainment", "Public art", "T-Mobile Arena access", "Landscaped promenades"] },
+      { "name": "Bellagio Conservatory & Gardens", "address": "3600 Las Vegas Blvd S, Las Vegas, NV 89109", "acreage": "~14,000 sq ft", "amenities": ["Seasonal botanical displays", "Public art", "Free admission", "Adjacent fountains"] },
+      { "name": "ARIA Fine Art Collection", "address": "3730 Las Vegas Blvd S, Las Vegas, NV 89158", "acreage": "~3 acres (campus)", "amenities": ["Public art installations", "Maya Lin sculpture", "Walking paths", "Resort grounds"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Walter Bracken STEAM Academy", "K–5", "8/10"],
+        ["Valley High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~1,200",
+      "medianAge": "42",
+      "avgIncome": "$200,000+",
+      "households": "670",
+      "homeownership": "55%"
+    },
+    "driveTimes": [
+      { "time": "~0 min", "destination": "to the Strip", "route": "on-site at CityCenter" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~5 min", "destination": "to T-Mobile Arena", "route": "via The Park walkway" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via I-15 → Summerlin Pkwy" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for Veer Towers?", "a": "Residences in Veer Towers range from approximately $400,000 for entry-level studios and one-bedrooms on lower floors to over $5 million for penthouses and combined units with premium Strip views." },
+      { "q": "How many units are in Veer Towers?", "a": "Veer Towers contains approximately 670 residences across twin 37-story towers. Unit types range from studios to three-bedroom penthouses." },
+      { "q": "What is the architecture of Veer Towers?", "a": "Veer Towers was designed by Helmut Jahn. The twin towers are famous for their five-degree lean away from each other, creating a dramatic architectural statement. The buildings feature all-glass curtain walls." },
+      { "q": "What amenities does Veer Towers offer?", "a": "Residents enjoy a resort-style pool deck, fitness center, 24-hour concierge, valet parking, private residential lobbies, and direct access to CityCenter's amenities including ARIA, Crystals shopping, and world-class dining." },
+      { "q": "Can you rent out a unit at Veer Towers?", "a": "Yes. Veer Towers allows owners to rent their units, making it a popular choice for investor-buyers. The CityCenter location and luxury amenities drive strong rental demand, particularly for short-term and furnished rentals." },
+      { "q": "What is CityCenter?", "a": "CityCenter is a 67-acre mixed-use urban complex on the Las Vegas Strip that includes ARIA Resort & Casino, Crystals luxury shopping, Waldorf Astoria Las Vegas, Park MGM, and Veer Towers. It was developed by MGM Resorts International." },
+      { "q": "What views do Veer Towers units have?", "a": "Depending on unit location and floor, views include the Bellagio Fountains, the Las Vegas Strip, the Spring Mountains, the Las Vegas Valley, and CityCenter's resort campus." },
+      { "q": "What are HOA fees at Veer Towers?", "a": "HOA fees at Veer Towers typically range from $400 to $2,000 per month depending on unit size and floor level. Fees cover building maintenance, concierge services, pool, fitness center, security, and common area upkeep." }
+    ],
+    "nearby": [
+      { "name": "Waldorf Astoria Las Vegas", "href": "/waldorf-astoria-las-vegas/", "price": "From $500K", "compare": "The most prestigious residential address in CityCenter with five-star Waldorf Astoria services." },
+      { "name": "Panorama Towers", "href": "/panorama-towers/", "price": "From $300K", "compare": "Strip-adjacent twin towers with larger floor plans and more accessible pricing." },
+      { "name": "The Martin", "href": "/the-martin/", "price": "From $400K", "compare": "45-story luxury high-rise adjacent to the Strip with spacious residences." },
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "45-story Strip-view tower with direct Las Vegas Boulevard frontage." },
+      { "name": "Turnberry Place", "href": "/turnberry-place/", "price": "From $500K", "compare": "Four-tower luxury complex on Paradise Road with resort amenities." },
+      { "name": "Allure Las Vegas", "href": "/allure-las-vegas/", "price": "From $250K", "compare": "41-story tower near the north end of the Strip with competitive pricing." }
+    ],
+    "testimonials": [
+      { "quote": "Living at Veer Towers puts us at the center of everything. Nevada Real Estate Group found us the perfect unit with Bellagio Fountain views and handled the entire transaction seamlessly.", "name": "Michael & Lauren K.", "detail": "Bought in Veer Towers · 2024" },
+      { "quote": "We purchased our Veer unit as an investment and it's been exceptional. Nevada Real Estate Group understood the rental market and helped us select a unit that maximizes income potential.", "name": "James T.", "detail": "Bought in Veer Towers · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Veer Towers CityCenter",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "waldorf-astoria-las-vegas",
+    "name": "Waldorf Astoria Las Vegas",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Ultra-Luxury High-Rise · Five-Star",
+    "zipCodes": ["89158"],
+    "center": [-115.178, 36.107],
+    "heroEyebrow": "CityCenter, Las Vegas Strip",
+    "priceRange": "$500K–$10M+",
+    "established": "2010",
+    "developer": "MGM Resorts International / Infinity World Development",
+    "acreage": "~1.5 acres",
+    "homeCount": "~225",
+    "guardGated": true,
+    "hoaRange": "$800–$5,000/mo",
+    "overview": [
+      "The Waldorf Astoria Las Vegas is the most prestigious residential high-rise address on the Las Vegas Strip. Rising 47 stories within the CityCenter complex, this five-star branded residence offers approximately 225 privately owned condominiums that come with the full suite of Waldorf Astoria hotel services — including housekeeping, room service, concierge, valet, spa access, and priority dining reservations at the hotel's acclaimed restaurants.",
+      "Originally opened as the Mandarin Oriental Las Vegas in 2010, the property was rebranded to Waldorf Astoria in 2018, elevating the brand prestige while maintaining the building's refined Asian-inspired design aesthetic. Residences range from approximately $500,000 for entry-level studios to well over $10 million for the tower's most exclusive penthouses and combined units with direct Strip views.",
+      "Every residence features floor-to-ceiling windows, Italian marble bathrooms, Sub-Zero and Wolf kitchens, smart home technology, and the kind of finish quality that defines five-star hospitality. The building amenities include a 27th-floor sky pool and lounge, a world-class spa and fitness center, the celebrated Twist by Pierre Gagnaire restaurant (Michelin-starred), and 24-hour Waldorf Astoria concierge services available to all residential owners.",
+      "For buyers seeking the pinnacle of luxury living in Las Vegas — where your home comes with the services of a five-star hotel and you can walk to any destination on the Strip — the Waldorf Astoria Las Vegas is in a class by itself. It is the only Waldorf Astoria branded residential property in Nevada and one of only a handful in the world, making it a globally recognized address for discerning buyers."
+    ],
+    "highlights": [
+      { "title": "Five-Star Hotel Services", "body": "Full Waldorf Astoria hotel services including housekeeping, room service, 24-hour concierge, valet parking, spa privileges, and priority dining reservations.", "iconType": "shield" },
+      { "title": "Sky Pool & Spa", "body": "27th-floor infinity pool and lounge with panoramic Strip views, plus a world-class spa and fitness center available to residential owners.", "iconType": "pool" },
+      { "title": "Michelin-Caliber Dining", "body": "Home to acclaimed dining venues within the hotel. Residents enjoy priority reservations and in-residence dining from the hotel's culinary team.", "iconType": "dining" },
+      { "title": "CityCenter Address", "body": "Located within the 67-acre CityCenter complex with direct access to ARIA Resort, Crystals luxury shopping, and the Las Vegas Strip.", "iconType": "building" },
+      { "title": "Globally Recognized Brand", "body": "One of only a handful of Waldorf Astoria branded residences worldwide. A globally recognized address that carries inherent prestige and value.", "iconType": "community" },
+      { "title": "Exceptional Appreciation", "body": "Waldorf Astoria residences command the highest per-square-foot prices on the Strip. The branded residence model supports long-term value retention and appreciation.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Collection", "type": "Ultra-Luxury · Top Floor", "desc": "The tower's most exclusive residences with expansive layouts, private terraces, and 360-degree panoramic views of the Strip, mountains, and valley.", "price": "From $5M+" },
+      { "name": "Sky Residences (35–47)", "type": "Premium · High Floor", "desc": "Upper-floor residences with the best views and largest floor plans. Two- and three-bedroom layouts with premium Strip exposure.", "price": "From $2M+" },
+      { "name": "Tower Residences (20–34)", "type": "Luxury · Mid-Rise", "desc": "Mid-level residences offering excellent views and Waldorf Astoria living at a strong value proposition.", "price": "From $1M+" },
+      { "name": "City Residences (5–19)", "type": "Five-Star · Entry", "desc": "Entry-level residences with full hotel services, Italian marble baths, and premium kitchen appliances.", "price": "From $500K+" },
+      { "name": "Veer Towers (Adjacent)", "type": "High-Rise · Luxury", "desc": "Twin 37-story residential towers within CityCenter offering a more contemporary, non-branded alternative.", "price": "From $400K+" },
+      { "name": "CityCenter Complex", "type": "Mixed-Use · Resort", "desc": "The broader CityCenter campus including ARIA, Crystals shopping, Park MGM, and The Park entertainment district.", "price": "Adjacent" }
+    ],
+    "parks": [
+      { "name": "The Park Las Vegas", "address": "3784 Las Vegas Blvd S, Las Vegas, NV 89158", "acreage": "~8 acres", "amenities": ["Outdoor dining", "Live entertainment", "Public art", "T-Mobile Arena access", "Landscaped promenades"] },
+      { "name": "Bellagio Conservatory & Gardens", "address": "3600 Las Vegas Blvd S, Las Vegas, NV 89109", "acreage": "~14,000 sq ft", "amenities": ["Seasonal botanical displays", "Public art", "Free admission", "Adjacent fountains"] },
+      { "name": "Crystals at CityCenter", "address": "3720 Las Vegas Blvd S, Las Vegas, NV 89158", "acreage": "~500,000 sq ft", "amenities": ["Luxury retail", "Fine dining", "Public art installations", "Daniel Libeskind architecture"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Walter Bracken STEAM Academy", "K–5", "8/10"],
+        ["Valley High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~400",
+      "medianAge": "50",
+      "avgIncome": "$400,000+",
+      "households": "~225",
+      "homeownership": "60%"
+    },
+    "driveTimes": [
+      { "time": "~0 min", "destination": "to the Strip", "route": "on-site at CityCenter" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~5 min", "destination": "to T-Mobile Arena", "route": "via The Park walkway" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via I-15 → Summerlin Pkwy" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Waldorf Astoria Las Vegas?", "a": "Residences range from approximately $500,000 for entry-level studios and one-bedrooms to over $10 million for penthouses and combined units with premium Strip views. Per-square-foot prices are among the highest on the Strip." },
+      { "q": "What hotel services do residents receive?", "a": "Residential owners have access to full Waldorf Astoria hotel services including daily housekeeping, 24-hour concierge, room service, valet parking, spa and fitness center access, and priority dining reservations at the hotel's restaurants." },
+      { "q": "Can you rent out a Waldorf Astoria residence?", "a": "Yes. Many owners participate in the hotel's rental program, which allows their unit to be rented as a hotel room when not in personal use. This generates income and offsets ownership costs. Contact our team for current program details." },
+      { "q": "What is the history of the building?", "a": "The tower opened in 2010 as the Mandarin Oriental Las Vegas and was rebranded to Waldorf Astoria in 2018, elevating the property's brand prestige. The building retains its original refined design while benefiting from the Waldorf Astoria brand recognition." },
+      { "q": "How many units are in the Waldorf Astoria?", "a": "The Waldorf Astoria Las Vegas contains approximately 225 privately owned residences across 47 stories. The relatively small unit count ensures exclusivity and personalized service." },
+      { "q": "What are HOA fees at the Waldorf Astoria?", "a": "HOA fees at the Waldorf Astoria typically range from $800 to $5,000+ per month depending on unit size, floor, and services used. Fees cover building operations, hotel services, concierge, pool, spa, fitness center, and common area maintenance." },
+      { "q": "What dining is available in the building?", "a": "The Waldorf Astoria Las Vegas features acclaimed dining venues within the hotel. Residents also enjoy in-residence dining from the hotel's culinary team and priority reservations." },
+      { "q": "How does the Waldorf compare to Veer Towers?", "a": "The Waldorf Astoria offers five-star hotel services, branded prestige, and typically higher per-square-foot pricing. Veer Towers is a standalone residential building without hotel services but offers more unit diversity and a lower entry point. Both are located within CityCenter." }
+    ],
+    "nearby": [
+      { "name": "Veer Towers", "href": "/veer-towers/", "price": "From $400K", "compare": "Twin 37-story residential towers within CityCenter. Contemporary design without hotel services." },
+      { "name": "Panorama Towers", "href": "/panorama-towers/", "price": "From $300K", "compare": "Strip-adjacent twin towers with larger floor plans and more competitive pricing." },
+      { "name": "Turnberry Place", "href": "/turnberry-place/", "price": "From $500K", "compare": "Four-tower luxury complex with resort amenities and spacious residences." },
+      { "name": "The Martin", "href": "/the-martin/", "price": "From $400K", "compare": "45-story luxury tower with Strip views and a lower price point than Waldorf." },
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "45-story Strip-front tower with direct Las Vegas Boulevard views." },
+      { "name": "Turnberry Towers", "href": "/turnberry-towers/", "price": "From $400K", "compare": "Twin 45-story luxury towers near the Convention Center with full amenities." }
+    ],
+    "testimonials": [
+      { "quote": "The Waldorf Astoria is in a class by itself. Nevada Real Estate Group secured our unit before it hit the open market and negotiated terms that reflected the true value of branded luxury living.", "name": "Richard & Patricia H.", "detail": "Bought at Waldorf Astoria Las Vegas · 2024" },
+      { "quote": "We own Waldorf Astoria branded residences in two cities. Nevada Real Estate Group understood this market segment better than any team we've worked with. True luxury specialists.", "name": "Anthony D.", "detail": "Bought at Waldorf Astoria Las Vegas · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Waldorf Astoria CityCenter",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "panorama-towers",
+    "name": "Panorama Towers",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Luxury · Strip-Adjacent",
+    "zipCodes": ["89158"],
+    "center": [-115.181, 36.108],
+    "heroEyebrow": "Las Vegas Strip Corridor",
+    "priceRange": "$300K–$2M+",
+    "established": "2006",
+    "developer": "Panorama Group / Laurence Hallier",
+    "acreage": "~6 acres",
+    "homeCount": "~650",
+    "guardGated": true,
+    "hoaRange": "$350–$1,500/mo",
+    "overview": [
+      "Panorama Towers is a twin-tower luxury high-rise condominium community located on Dean Martin Drive, directly adjacent to the Las Vegas Strip and CityCenter. Completed in phases between 2006 and 2008, the two 33-story towers contain approximately 650 residences and offer some of the most compelling high-rise living in the Las Vegas corridor, combining spacious floor plans with panoramic Strip, mountain, and valley views.",
+      "Panorama Towers was one of the first purpose-built luxury residential high-rises in the Las Vegas market, and it set the standard for amenity-rich condo living near the Strip. Residences range from approximately $300,000 for one-bedroom units to over $2 million for penthouses and combined corner units with sweeping views. Floor plans are notably generous compared to many Strip and Strip-adjacent towers, with two- and three-bedroom units offering substantial living space.",
+      "The complex features two resort-style pool decks, a fully equipped fitness center, 24-hour concierge and security, valet parking, tennis courts, a business center, and private resident lounges. The gated entry and dedicated residential parking provide a sense of privacy and security, while the location on Dean Martin Drive offers direct access to the Strip, CityCenter, T-Mobile Arena, and the I-15 freeway.",
+      "For buyers seeking the convenience of Strip-adjacent living with more space and value than on-Strip towers like Veer or the Waldorf Astoria, Panorama Towers has been a go-to address for over 15 years. Its established reputation, strong HOA reserves, and large floor plans continue to attract both primary residents and investors looking for a proven high-rise community in the heart of the Las Vegas corridor."
+    ],
+    "highlights": [
+      { "title": "Twin 33-Story Towers", "body": "Two 33-story residential towers with approximately 650 residences. One of the largest and most established luxury high-rise communities near the Strip.", "iconType": "building" },
+      { "title": "Spacious Floor Plans", "body": "Floor plans are notably generous compared to on-Strip towers. Two- and three-bedroom units offer substantial living space for full-time residents.", "iconType": "home" },
+      { "title": "Dual Pool Decks", "body": "Two resort-style pool decks with cabanas, lounge areas, and panoramic views. Tennis courts and outdoor recreation areas enhance the resort lifestyle.", "iconType": "pool" },
+      { "title": "Strip-Adjacent Location", "body": "Located on Dean Martin Drive with direct access to CityCenter, T-Mobile Arena, ARIA, and the Las Vegas Strip — all within a five-minute walk.", "iconType": "community" },
+      { "title": "24-Hour Concierge", "body": "Gated entry with 24-hour concierge, valet parking, fitness center, business center, and dedicated security for resident privacy.", "iconType": "shield" },
+      { "title": "Proven Investment", "body": "One of the first luxury high-rises in Las Vegas with strong HOA reserves, an established track record, and consistent demand from both residents and investors.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Level", "type": "Ultra-Luxury · Top Floor", "desc": "The most exclusive residences in Panorama Towers with expansive layouts, premium finishes, and unobstructed 360-degree views.", "price": "From $1.5M+" },
+      { "name": "Tower I (South)", "type": "High-Rise · Original", "desc": "The first tower completed at Panorama with south-facing views toward the mountains and the M Resort corridor.", "price": "From $300K+" },
+      { "name": "Tower II (North)", "type": "High-Rise · Newer", "desc": "The second tower with north-facing views toward the Strip, CityCenter, and the Spring Mountains.", "price": "From $350K+" },
+      { "name": "High-Floor Residences (20–33)", "type": "Premium · Views", "desc": "Upper-floor units with the best views and highest demand. Sweeping Strip, mountain, and valley panoramas.", "price": "From $600K+" },
+      { "name": "Mid-Floor Residences (10–19)", "type": "Mid-Rise · Value", "desc": "Mid-level units offering strong views at a more accessible price point. Popular with primary residents.", "price": "From $400K+" },
+      { "name": "City Residences (3–9)", "type": "Lower Floor · Entry", "desc": "Entry-level residences providing the Panorama lifestyle at the community's most accessible pricing.", "price": "From $300K+" }
+    ],
+    "parks": [
+      { "name": "The Park Las Vegas", "address": "3784 Las Vegas Blvd S, Las Vegas, NV 89158", "acreage": "~8 acres", "amenities": ["Outdoor dining", "Live entertainment", "Public art", "T-Mobile Arena access", "Landscaped promenades"] },
+      { "name": "Panorama Towers Pool & Tennis", "address": "4525 Dean Martin Dr, Las Vegas, NV 89103", "acreage": "~3 acres", "amenities": ["Two resort pools", "Tennis courts", "Cabanas", "Lounge areas", "BBQ grills"] },
+      { "name": "Bruce Trent Park", "address": "8851 Vegas Dr, Las Vegas, NV 89128", "acreage": "~20 acres", "amenities": ["Sports fields", "Playground", "Walking paths", "Picnic areas"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Walter Bracken STEAM Academy", "K–5", "8/10"],
+        ["Valley High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~1,200",
+      "medianAge": "45",
+      "avgIncome": "$150,000+",
+      "households": "~650",
+      "homeownership": "55%"
+    },
+    "driveTimes": [
+      { "time": "~3 min", "destination": "to the Strip", "route": "via Dean Martin Dr" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~5 min", "destination": "to T-Mobile Arena", "route": "via Dean Martin Dr" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via I-15 → Summerlin Pkwy" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Panorama Towers?", "a": "Residences at Panorama Towers range from approximately $300,000 for one-bedroom units on lower floors to over $2 million for penthouses and combined corner units with panoramic Strip and mountain views." },
+      { "q": "How many towers and units are there?", "a": "Panorama Towers consists of twin 33-story towers containing approximately 650 total residences. The two towers were completed in phases between 2006 and 2008." },
+      { "q": "What amenities does Panorama Towers offer?", "a": "Amenities include two resort-style pool decks, tennis courts, a fitness center, 24-hour concierge and security, valet parking, a business center, and private resident lounges." },
+      { "q": "Is Panorama Towers gated?", "a": "Yes. Panorama Towers has a gated entry with 24-hour security and concierge services. Dedicated residential parking and controlled building access provide privacy for residents." },
+      { "q": "Can you rent out a unit at Panorama Towers?", "a": "Yes. Panorama Towers allows owners to rent their units. The Strip-adjacent location and resort amenities drive consistent rental demand. Contact our team for current rental market conditions." },
+      { "q": "How does Panorama compare to Veer Towers?", "a": "Panorama Towers generally offers larger floor plans at a lower per-square-foot price compared to Veer Towers. Veer is directly on-Strip at CityCenter with a more modern design. Panorama is Strip-adjacent with more established HOA reserves and two pool decks." },
+      { "q": "What are HOA fees at Panorama Towers?", "a": "HOA fees at Panorama Towers typically range from $350 to $1,500 per month depending on unit size and floor level. Fees cover building maintenance, concierge, security, pool and fitness facilities, and common area upkeep." },
+      { "q": "What views do Panorama Towers units have?", "a": "Depending on tower and unit position, views include the Las Vegas Strip, CityCenter, the Spring Mountains, the Las Vegas Valley, and Red Rock Canyon in the distance." }
+    ],
+    "nearby": [
+      { "name": "Veer Towers", "href": "/veer-towers/", "price": "From $400K", "compare": "CityCenter's iconic twin leaning towers with on-Strip location and modern design." },
+      { "name": "The Martin", "href": "/the-martin/", "price": "From $400K", "compare": "45-story luxury tower on the same Dean Martin Drive corridor with comparable views." },
+      { "name": "Waldorf Astoria Las Vegas", "href": "/waldorf-astoria-las-vegas/", "price": "From $500K", "compare": "Five-star branded residences at CityCenter with full hotel services." },
+      { "name": "Allure Las Vegas", "href": "/allure-las-vegas/", "price": "From $250K", "compare": "41-story tower with a more accessible price point, located north of the Strip." },
+      { "name": "Turnberry Towers", "href": "/turnberry-towers/", "price": "From $400K", "compare": "Twin 45-story luxury towers near the Convention Center with full resort amenities." },
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "45-story tower directly on the Strip with Las Vegas Boulevard frontage." }
+    ],
+    "testimonials": [
+      { "quote": "Panorama Towers gave us the Strip lifestyle we wanted with the space we needed. Nevada Real Estate Group helped us find a high-floor two-bedroom with mountain views at a price that was well below comparable units at Veer.", "name": "Steven & Amy R.", "detail": "Bought at Panorama Towers · 2024" },
+      { "quote": "We've owned at Panorama for five years and recently upgraded to a higher floor. Nevada Real Estate Group handled both transactions and their knowledge of the building's inventory is unmatched.", "name": "Karen M.", "detail": "Upgraded at Panorama Towers · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Panorama Towers",
+    "ylopoMinPrice": 300000
+  },
+  {
+    "slug": "turnberry-towers",
+    "name": "Turnberry Towers",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Luxury · Strip-Adjacent",
+    "zipCodes": ["89109"],
+    "center": [-115.152, 36.125],
+    "heroEyebrow": "Paradise, Las Vegas",
+    "priceRange": "$400K–$2.5M+",
+    "established": "2007",
+    "developer": "Turnberry Associates / Jeffrey Soffer",
+    "acreage": "~8 acres",
+    "homeCount": "~636",
+    "guardGated": true,
+    "hoaRange": "$400–$1,800/mo",
+    "overview": [
+      "Turnberry Towers is a twin-tower luxury high-rise condominium community located on Karen Avenue, just east of the Las Vegas Strip and adjacent to the Las Vegas Convention Center. Developed by Turnberry Associates and completed in 2007 and 2008, the two 45-story towers contain approximately 636 residences and offer a resort-caliber living experience that has established Turnberry as one of the most recognizable luxury high-rise brands in Las Vegas.",
+      "Residences at Turnberry Towers range from approximately $400,000 for one-bedroom units to over $2.5 million for penthouses and combined units with premium Strip views. Floor plans are generous and well-designed, with one-, two-, and three-bedroom configurations featuring high-end finishes, floor-to-ceiling windows, European-style kitchens, and private balconies — a feature that many competing Strip towers do not offer.",
+      "The community's amenity package is among the most comprehensive of any Las Vegas high-rise. Residents enjoy two resort-style pool decks with private cabanas, a state-of-the-art fitness center with personal training, a full-service spa, tennis courts, a business center, private dining and entertainment rooms, 24-hour concierge and valet, and lushly landscaped grounds that provide a genuine resort atmosphere despite the tower's urban location.",
+      "Turnberry Towers' location near the Convention Center, the Wynn/Encore resorts, and the Las Vegas Monorail makes it an ideal choice for both primary residents and those who want easy access to Strip entertainment while maintaining a residential feel. The gated entry, mature landscaping, and resort-style grounds create a sense of escape that distinguishes Turnberry Towers from glass-and-steel competitors."
+    ],
+    "highlights": [
+      { "title": "Twin 45-Story Towers", "body": "Two 45-story luxury residential towers with approximately 636 residences. One of the tallest and most prominent high-rise communities in the Las Vegas corridor.", "iconType": "building" },
+      { "title": "Private Balconies", "body": "Most residences include private balconies — a distinguishing feature that many competing Las Vegas high-rise towers do not offer.", "iconType": "home" },
+      { "title": "Resort-Style Grounds", "body": "Two pool decks with cabanas, tennis courts, spa, lush landscaping, and expansive outdoor recreation areas create a genuine resort atmosphere.", "iconType": "pool" },
+      { "title": "Full-Service Spa", "body": "On-site spa with treatment rooms, sauna, and relaxation areas. One of the few Las Vegas residential high-rises with a dedicated full-service spa.", "iconType": "park" },
+      { "title": "Convention Center Adjacent", "body": "Steps from the Las Vegas Convention Center, Wynn/Encore, and the Las Vegas Monorail. Ideal for business professionals and frequent visitors.", "iconType": "community" },
+      { "title": "Turnberry Brand Legacy", "body": "Developed by Turnberry Associates, a nationally recognized luxury developer. The Turnberry name carries significant brand recognition in the Las Vegas market.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Collection", "type": "Ultra-Luxury · Top Floor", "desc": "Expansive penthouses with panoramic views, private terraces, and the finest finishes in the building. Some feature combined units for maximum square footage.", "price": "From $1.5M+" },
+      { "name": "Sky Residences (30–45)", "type": "Premium · High Floor", "desc": "Upper-floor residences with sweeping Strip, mountain, and valley views. The most sought-after floors in both towers.", "price": "From $800K+" },
+      { "name": "Tower Residences (15–29)", "type": "Mid-Rise · Views", "desc": "Mid-level residences with excellent views and well-designed floor plans. Popular with full-time residents.", "price": "From $500K+" },
+      { "name": "Garden Residences (3–14)", "type": "Lower Floor · Resort", "desc": "Entry-level residences with direct access to the resort grounds, pools, and landscaped common areas.", "price": "From $400K+" },
+      { "name": "Tower I (East)", "type": "High-Rise · Strip Views", "desc": "The eastern tower with direct views toward the Strip, Wynn, and the Convention Center.", "price": "From $400K+" },
+      { "name": "Tower II (West)", "type": "High-Rise · Mountain Views", "desc": "The western tower with views toward the Spring Mountains, Red Rock Canyon, and the Las Vegas Valley.", "price": "From $400K+" }
+    ],
+    "parks": [
+      { "name": "Turnberry Towers Pool & Tennis Complex", "address": "222 Karen Ave, Las Vegas, NV 89109", "acreage": "~4 acres", "amenities": ["Two resort pools", "Private cabanas", "Tennis courts", "Spa", "Lounge areas"] },
+      { "name": "Las Vegas Convention Center District", "address": "3150 Paradise Rd, Las Vegas, NV 89109", "acreage": "~200 acres", "amenities": ["Convention center", "Monorail station", "Restaurants", "Hotels"] },
+      { "name": "Wynn Golf Club", "address": "3131 Las Vegas Blvd S, Las Vegas, NV 89109", "acreage": "~130 acres", "amenities": ["18-hole golf course", "Pro shop", "Dining", "Caddie service"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["John C. Fremont Middle School", "6–8", "5/10"],
+        ["Valley High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~1,100",
+      "medianAge": "48",
+      "avgIncome": "$175,000+",
+      "households": "~636",
+      "homeownership": "55%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Karen Ave" },
+      { "time": "~12 min", "destination": "to Harry Reid Airport", "route": "via Paradise Rd → I-15" },
+      { "time": "~3 min", "destination": "to Convention Center", "route": "via Karen Ave" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via I-15 → Summerlin Pkwy" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Turnberry Towers?", "a": "Residences range from approximately $400,000 for one-bedroom units on lower floors to over $2.5 million for penthouses and combined units with premium Strip views on upper floors." },
+      { "q": "Do units at Turnberry Towers have balconies?", "a": "Yes. Most residences at Turnberry Towers include private balconies, which is a distinguishing feature compared to many other Las Vegas high-rise towers that do not offer outdoor living space." },
+      { "q": "What amenities does Turnberry Towers offer?", "a": "Amenities include two resort-style pool decks with cabanas, a full-service spa, tennis courts, a state-of-the-art fitness center, 24-hour concierge and valet, a business center, private dining rooms, and lushly landscaped grounds." },
+      { "q": "Is Turnberry Towers gated?", "a": "Yes. Turnberry Towers has a gated entry with 24-hour security, concierge services, and controlled building access for resident privacy." },
+      { "q": "What is the difference between Turnberry Towers and Turnberry Place?", "a": "Turnberry Towers (2007-2008) and Turnberry Place (2001-2006) are separate high-rise communities developed by the same Turnberry Associates team. Turnberry Place is a four-tower complex located nearby on Paradise Road, while Turnberry Towers is a twin-tower complex on Karen Avenue. Both are luxury communities." },
+      { "q": "Can you rent out a unit at Turnberry Towers?", "a": "Yes. Turnberry Towers allows owners to rent their units. The location near the Convention Center and the Strip drives consistent demand from both long-term tenants and corporate housing clients." },
+      { "q": "What are HOA fees at Turnberry Towers?", "a": "HOA fees at Turnberry Towers typically range from $400 to $1,800 per month depending on unit size and floor level. Fees cover building maintenance, concierge, security, pool, spa, fitness center, and common area upkeep." },
+      { "q": "How tall is Turnberry Towers?", "a": "Each of the twin towers rises 45 stories, making Turnberry Towers one of the tallest residential high-rise communities in the Las Vegas area." }
+    ],
+    "nearby": [
+      { "name": "Turnberry Place", "href": "/turnberry-place/", "price": "From $500K", "compare": "The four-tower Turnberry sibling community on Paradise Road with equally luxurious amenities." },
+      { "name": "Veer Towers", "href": "/veer-towers/", "price": "From $400K", "compare": "CityCenter's iconic leaning towers with on-Strip location." },
+      { "name": "Panorama Towers", "href": "/panorama-towers/", "price": "From $300K", "compare": "Strip-adjacent twin towers with a more accessible entry price." },
+      { "name": "The Martin", "href": "/the-martin/", "price": "From $400K", "compare": "45-story luxury tower on the west side of the Strip corridor." },
+      { "name": "Waldorf Astoria Las Vegas", "href": "/waldorf-astoria-las-vegas/", "price": "From $500K", "compare": "Five-star branded residences with hotel services at CityCenter." },
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "45-story tower directly on Las Vegas Boulevard with Strip frontage." }
+    ],
+    "testimonials": [
+      { "quote": "Turnberry Towers has the best amenities of any high-rise we toured in Las Vegas. The pools, spa, and resort grounds feel like a vacation every day. Nevada Real Estate Group knew every unit in the building and found us the perfect fit.", "name": "Gregory & Susan W.", "detail": "Bought at Turnberry Towers · 2024" },
+      { "quote": "We travel to Las Vegas frequently for conventions and wanted a home base near the Convention Center. Turnberry Towers was the ideal choice. Nevada Real Estate Group made the purchase seamless from out of state.", "name": "Brian C.", "detail": "Bought at Turnberry Towers · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Turnberry Towers",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "turnberry-place",
+    "name": "Turnberry Place",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Luxury · Four Towers",
+    "zipCodes": ["89109"],
+    "center": [-115.149, 36.121],
+    "heroEyebrow": "Paradise, Las Vegas",
+    "priceRange": "$500K–$5M+",
+    "established": "2001",
+    "developer": "Turnberry Associates / Jeffrey Soffer",
+    "acreage": "~16 acres",
+    "homeCount": "~720",
+    "guardGated": true,
+    "hoaRange": "$500–$2,500/mo",
+    "overview": [
+      "Turnberry Place is a four-tower luxury high-rise condominium community located on Paradise Road, just east of the Las Vegas Strip. Developed by Turnberry Associates between 2001 and 2006, the complex was the development that proved Las Vegas could sustain a world-class luxury residential high-rise market. Its four 36-story towers contain approximately 720 residences spread across 16 resort-style acres, making it one of the largest and most established luxury high-rise communities in the valley.",
+      "Residences at Turnberry Place range from approximately $500,000 for one- and two-bedroom units to well over $5 million for the community's most expansive penthouses and combined units. Floor plans are exceptionally generous — many two-bedroom units exceed 2,000 square feet and three-bedroom penthouses can surpass 5,000 square feet. Every unit features private balconies, floor-to-ceiling windows, marble and granite finishes, and Sub-Zero/Wolf kitchen appliances.",
+      "The community's 16-acre campus is the most resort-like of any Las Vegas high-rise. Amenities include a 3-acre pool deck with waterfalls and private cabanas, a championship tennis court complex, a 10,000-square-foot fitness center, a full-service spa, a putting green, 24-hour concierge and valet, private wine storage, and dedicated dog parks. The lush landscaping and resort grounds are maintained to five-star standards.",
+      "Turnberry Place occupies a unique position in the Las Vegas high-rise market — it offers the spacious floor plans and resort grounds that newer glass towers cannot match, combined with a location that puts residents minutes from the Strip, the Convention Center, and Harry Reid Airport. For buyers who prioritize space, amenities, and a resort lifestyle over the newest construction, Turnberry Place remains one of the most compelling options in the valley."
+    ],
+    "highlights": [
+      { "title": "Four 36-Story Towers", "body": "Four residential towers containing approximately 720 residences on 16 resort-style acres. The largest luxury high-rise community in Las Vegas.", "iconType": "building" },
+      { "title": "3-Acre Pool Complex", "body": "Resort-style pool deck with waterfalls, private cabanas, lounge areas, and lush tropical landscaping. The most expansive pool complex of any Las Vegas high-rise.", "iconType": "pool" },
+      { "title": "Largest Floor Plans", "body": "Among the most spacious residences in any Las Vegas high-rise. Two-bedrooms exceed 2,000 sq ft; penthouses can surpass 5,000 sq ft. All units have private balconies.", "iconType": "home" },
+      { "title": "Tennis & Fitness", "body": "Championship tennis courts, 10,000-square-foot fitness center with personal training, putting green, and dedicated dog parks.", "iconType": "park" },
+      { "title": "Full-Service Spa", "body": "On-site spa with treatment rooms, sauna, steam room, and relaxation areas. One of the premier residential spa experiences in Las Vegas.", "iconType": "community" },
+      { "title": "Turnberry Legacy", "body": "The pioneer of luxury high-rise living in Las Vegas. Turnberry Place proved the market and set the standard that every subsequent tower has tried to match.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Collection", "type": "Ultra-Luxury · Top Floor", "desc": "The most expansive residences at Turnberry Place. Multi-level penthouses exceeding 5,000 sq ft with wrap-around terraces and panoramic views.", "price": "From $3M+" },
+      { "name": "Tower I", "type": "High-Rise · Original", "desc": "The first tower completed at Turnberry Place (2001). Established residences with mature landscaping and the community's original resort character.", "price": "From $500K+" },
+      { "name": "Tower II", "type": "High-Rise · Strip Views", "desc": "Direct westward views toward the Las Vegas Strip and the Spring Mountains beyond. Completed in 2003.", "price": "From $500K+" },
+      { "name": "Tower III", "type": "High-Rise · Premium", "desc": "Later construction with updated finishes. Premium positioning within the 16-acre campus.", "price": "From $550K+" },
+      { "name": "Tower IV", "type": "High-Rise · Newest", "desc": "The final tower completed in 2006 with the most contemporary finishes and design elements.", "price": "From $550K+" },
+      { "name": "Resort Grounds", "type": "Campus · Amenities", "desc": "The 16-acre resort campus with pool complex, tennis courts, spa, putting green, dog parks, and landscaped walking paths.", "price": "Included" }
+    ],
+    "parks": [
+      { "name": "Turnberry Place Pool & Tennis Complex", "address": "2777 Paradise Rd, Las Vegas, NV 89109", "acreage": "~5 acres", "amenities": ["3-acre pool with waterfalls", "Private cabanas", "Championship tennis courts", "Putting green", "Dog parks"] },
+      { "name": "Las Vegas Convention Center District", "address": "3150 Paradise Rd, Las Vegas, NV 89109", "acreage": "~200 acres", "amenities": ["Convention center", "Monorail station", "Restaurants", "Hotels"] },
+      { "name": "Wynn Golf Club", "address": "3131 Las Vegas Blvd S, Las Vegas, NV 89109", "acreage": "~130 acres", "amenities": ["18-hole golf course", "Pro shop", "Dining", "Caddie service"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["John C. Fremont Middle School", "6–8", "5/10"],
+        ["Valley High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~1,300",
+      "medianAge": "50",
+      "avgIncome": "$200,000+",
+      "households": "~720",
+      "homeownership": "60%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Paradise Rd" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via Paradise Rd South" },
+      { "time": "~3 min", "destination": "to Convention Center", "route": "via Paradise Rd" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via I-15 → Summerlin Pkwy" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Turnberry Place?", "a": "Residences range from approximately $500,000 for one- and two-bedroom units to well over $5 million for expansive penthouses and combined units with panoramic views." },
+      { "q": "How many towers are at Turnberry Place?", "a": "Turnberry Place consists of four 36-story towers containing approximately 720 total residences. The towers were completed in phases between 2001 and 2006." },
+      { "q": "How large are the units at Turnberry Place?", "a": "Floor plans at Turnberry Place are among the most spacious in any Las Vegas high-rise. Two-bedroom units typically exceed 2,000 square feet, and penthouses can surpass 5,000 square feet. All units include private balconies." },
+      { "q": "What amenities does Turnberry Place offer?", "a": "The 16-acre campus includes a 3-acre pool complex with waterfalls and cabanas, championship tennis courts, a 10,000 sq ft fitness center, full-service spa, putting green, dog parks, 24-hour concierge, valet parking, and private wine storage." },
+      { "q": "What is the difference between Turnberry Place and Turnberry Towers?", "a": "Both were developed by Turnberry Associates. Turnberry Place (2001-2006) is a four-tower complex on Paradise Road with 720 units and a 16-acre resort campus. Turnberry Towers (2007-2008) is a twin-tower complex on Karen Avenue with 636 units. Both are luxury communities with distinct characters." },
+      { "q": "Is Turnberry Place gated?", "a": "Yes. Turnberry Place is a gated community with 24-hour security, concierge services, valet parking, and controlled building access." },
+      { "q": "What are HOA fees at Turnberry Place?", "a": "HOA fees typically range from $500 to $2,500 per month depending on unit size and tower. Fees cover building maintenance, the 16-acre resort campus, pool complex, spa, fitness center, concierge, security, and all common area operations." },
+      { "q": "Can you rent out a unit at Turnberry Place?", "a": "Yes. Turnberry Place allows rentals. The spacious floor plans, resort amenities, and Strip-adjacent location make it one of the stronger rental performers among Las Vegas luxury high-rises." }
+    ],
+    "nearby": [
+      { "name": "Turnberry Towers", "href": "/turnberry-towers/", "price": "From $400K", "compare": "The twin-tower Turnberry sibling on Karen Avenue. Newer construction, similar luxury standard." },
+      { "name": "Veer Towers", "href": "/veer-towers/", "price": "From $400K", "compare": "CityCenter's iconic leaning towers with direct on-Strip location." },
+      { "name": "Panorama Towers", "href": "/panorama-towers/", "price": "From $300K", "compare": "Strip-adjacent twin 33-story towers with a more accessible entry point." },
+      { "name": "The Martin", "href": "/the-martin/", "price": "From $400K", "compare": "45-story luxury tower on the west side of the Strip corridor." },
+      { "name": "Waldorf Astoria Las Vegas", "href": "/waldorf-astoria-las-vegas/", "price": "From $500K", "compare": "Five-star branded residences at CityCenter with full hotel services." },
+      { "name": "Las Vegas Country Club", "href": "/las-vegas-country-club/", "price": "From $400K", "compare": "Established golf community just south of Turnberry Place. Single-family and estates." }
+    ],
+    "testimonials": [
+      { "quote": "We toured every luxury high-rise in Las Vegas and nothing matched Turnberry Place for space, amenities, and resort-style living. Nevada Real Estate Group found us a three-bedroom penthouse that exceeded our expectations.", "name": "Richard & Diana F.", "detail": "Bought at Turnberry Place · 2024" },
+      { "quote": "The floor plans at Turnberry Place are unmatched. Our two-bedroom is larger than most three-bedrooms at other towers. Nevada Real Estate Group's high-rise expertise made all the difference.", "name": "Jennifer L.", "detail": "Bought at Turnberry Place · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Turnberry Place",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "sky-las-vegas",
+    "name": "Sky Las Vegas",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Strip-Front",
+    "zipCodes": ["89109"],
+    "center": [-115.163, 36.131],
+    "heroEyebrow": "Las Vegas Strip",
+    "priceRange": "$300K–$2M+",
+    "established": "2007",
+    "developer": "Molasky Group of Companies",
+    "acreage": "~2 acres",
+    "homeCount": "409",
+    "guardGated": true,
+    "hoaRange": "$350–$1,500/mo",
+    "overview": [
+      "Sky Las Vegas is a 45-story luxury high-rise condominium tower located directly on Las Vegas Boulevard, offering one of the purest Strip-front living experiences in the city. Completed in 2007 by the Molasky Group of Companies, the tower contains 409 residences and stands on the west side of the Strip near the intersection with Sahara Avenue, providing direct views of the Strip corridor, the Wynn and Encore resorts, and the Spring Mountains.",
+      "Residences at Sky Las Vegas range from approximately $300,000 for studio and one-bedroom units to over $2 million for penthouses and larger combined units with premium Strip views. Every unit features floor-to-ceiling glass, high-end finishes, and modern open floor plans. The tower's position on Las Vegas Boulevard means that east-facing units look directly down the Strip, offering one of the most iconic residential views in the world.",
+      "The building amenities include a rooftop pool deck with Strip views, a fitness center, 24-hour concierge and security, valet parking, a business center, and resident lounges. Sky's location at the north end of the Strip provides easy access to both the Strip's entertainment corridor and the emerging Sahara Avenue redevelopment zone, which is driving new investment and energy into the area.",
+      "For buyers who want to live directly on the Las Vegas Strip — with the lights, energy, and excitement of the boulevard as their front yard — Sky Las Vegas delivers that experience at a price point that is significantly more accessible than CityCenter or the Waldorf Astoria. The combination of Strip-front location, 45-story height, and a sub-$300K entry point makes Sky one of the strongest value propositions in the Las Vegas high-rise market."
+    ],
+    "highlights": [
+      { "title": "Direct Strip Frontage", "body": "Located directly on Las Vegas Boulevard with east-facing units looking straight down the Strip. One of the purest Strip-front residential experiences available.", "iconType": "building" },
+      { "title": "45 Stories", "body": "Rising 45 stories, Sky Las Vegas commands panoramic views of the Strip corridor, Wynn/Encore, and the Spring Mountains from its elevated position.", "iconType": "mountain" },
+      { "title": "Rooftop Pool Deck", "body": "Elevated pool deck with Strip views, lounge areas, and panoramic vistas. One of the most photographed residential pool experiences in Las Vegas.", "iconType": "pool" },
+      { "title": "Accessible Entry Price", "body": "Entry-level studios and one-bedrooms start around $300,000, making Sky one of the most accessible luxury high-rise options directly on the Strip.", "iconType": "trend" },
+      { "title": "Floor-to-Ceiling Glass", "body": "Every residence features floor-to-ceiling glass walls maximizing views and natural light. Modern open floor plans throughout.", "iconType": "home" },
+      { "title": "24-Hour Concierge", "body": "Full-service concierge, valet parking, fitness center, and 24-hour security. Controlled building access and dedicated residential parking.", "iconType": "shield" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Collection", "type": "Ultra-Luxury · Top Floor", "desc": "The tower's most exclusive residences with panoramic Strip views, expansive layouts, and premium finishes.", "price": "From $1.5M+" },
+      { "name": "Sky Residences (30–45)", "type": "High Floor · Premium", "desc": "Upper-floor residences with the best views and most desirable exposure. Unobstructed Strip and mountain panoramas.", "price": "From $800K+" },
+      { "name": "View Residences (15–29)", "type": "Mid-Rise · Strip Views", "desc": "Mid-level residences with excellent Strip views and well-designed floor plans.", "price": "From $500K+" },
+      { "name": "City Residences (3–14)", "type": "Lower Floor · Value", "desc": "Entry-level residences offering Strip-front living at the most accessible price point.", "price": "From $300K+" },
+      { "name": "East-Facing Units", "type": "Strip View · Premium", "desc": "East-facing units look directly down Las Vegas Boulevard — the most sought-after exposure in the building.", "price": "Premium pricing" },
+      { "name": "West-Facing Units", "type": "Mountain View · Sunset", "desc": "West-facing units offer views of the Spring Mountains and Red Rock Canyon with spectacular sunsets.", "price": "From $300K+" }
+    ],
+    "parks": [
+      { "name": "Sky Las Vegas Rooftop Pool", "address": "2700 Las Vegas Blvd S, Las Vegas, NV 89109", "acreage": "~0.5 acres", "amenities": ["Pool deck", "Lounge areas", "Strip views", "Cabanas"] },
+      { "name": "Wynn Golf Club", "address": "3131 Las Vegas Blvd S, Las Vegas, NV 89109", "acreage": "~130 acres", "amenities": ["18-hole golf course", "Pro shop", "Dining", "Caddie service"] },
+      { "name": "Circus Circus Adventuredome", "address": "2880 Las Vegas Blvd S, Las Vegas, NV 89109", "acreage": "~5 acres", "amenities": ["Indoor theme park", "Rides", "Arcade", "Food court"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["John C. Fremont Middle School", "6–8", "5/10"],
+        ["Valley High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~700",
+      "medianAge": "40",
+      "avgIncome": "$120,000+",
+      "households": "409",
+      "homeownership": "50%"
+    },
+    "driveTimes": [
+      { "time": "~0 min", "destination": "to the Strip", "route": "on Las Vegas Boulevard" },
+      { "time": "~12 min", "destination": "to Harry Reid Airport", "route": "via Las Vegas Blvd → I-15" },
+      { "time": "~5 min", "destination": "to Wynn/Encore", "route": "via Las Vegas Blvd" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via Sahara Ave → I-15 → Summerlin Pkwy" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Sky Las Vegas?", "a": "Residences range from approximately $300,000 for studios and one-bedrooms on lower floors to over $2 million for penthouses and combined units with premium Strip views." },
+      { "q": "Is Sky Las Vegas on the Strip?", "a": "Yes. Sky Las Vegas is located directly on Las Vegas Boulevard, making it one of the few residential towers with true Strip frontage. East-facing units look directly down the Strip corridor." },
+      { "q": "How many units are in Sky Las Vegas?", "a": "Sky Las Vegas contains 409 residences across 45 stories. Unit types include studios, one-bedrooms, two-bedrooms, and penthouses." },
+      { "q": "What amenities does Sky Las Vegas offer?", "a": "Amenities include a rooftop pool deck with Strip views, fitness center, 24-hour concierge and security, valet parking, business center, and resident lounges." },
+      { "q": "Can you rent out a unit at Sky Las Vegas?", "a": "Yes. Sky Las Vegas allows rentals and the Strip-front location drives strong demand. The accessible price point makes it popular with investor-buyers seeking rental income." },
+      { "q": "What views do Sky Las Vegas units have?", "a": "East-facing units look directly down the Las Vegas Strip — one of the most iconic residential views in the world. West-facing units offer Spring Mountain and Red Rock Canyon sunset views. Upper floors provide 360-degree panoramas." },
+      { "q": "What are HOA fees at Sky Las Vegas?", "a": "HOA fees typically range from $350 to $1,500 per month depending on unit size and floor level. Fees cover building operations, concierge, pool, fitness center, security, and common area maintenance." },
+      { "q": "How does Sky Las Vegas compare to Veer Towers?", "a": "Sky is directly on the Strip with true boulevard frontage and a lower entry price. Veer is at CityCenter with newer construction and access to ARIA and Crystals amenities. Both offer excellent Strip lifestyle options." }
+    ],
+    "nearby": [
+      { "name": "Veer Towers", "href": "/veer-towers/", "price": "From $400K", "compare": "CityCenter's iconic leaning towers. Newer construction, on-Strip but within a resort campus." },
+      { "name": "Allure Las Vegas", "href": "/allure-las-vegas/", "price": "From $250K", "compare": "41-story tower north of the Strip with the most accessible pricing in the luxury high-rise market." },
+      { "name": "Panorama Towers", "href": "/panorama-towers/", "price": "From $300K", "compare": "Strip-adjacent twin towers with spacious floor plans and resort-style amenities." },
+      { "name": "The Martin", "href": "/the-martin/", "price": "From $400K", "compare": "45-story luxury tower on the west side of the Strip corridor." },
+      { "name": "Turnberry Towers", "href": "/turnberry-towers/", "price": "From $400K", "compare": "Twin 45-story towers near the Convention Center with full spa and tennis." },
+      { "name": "Waldorf Astoria Las Vegas", "href": "/waldorf-astoria-las-vegas/", "price": "From $500K", "compare": "Five-star branded residences at CityCenter with full hotel services." }
+    ],
+    "testimonials": [
+      { "quote": "We wanted to live on the Strip — not near it, on it. Sky Las Vegas delivered exactly that. Nevada Real Estate Group found us a high-floor east-facing unit with a view straight down the boulevard.", "name": "Mark & Lisa T.", "detail": "Bought at Sky Las Vegas · 2024" },
+      { "quote": "Sky was the best value in the Strip high-rise market. Nevada Real Estate Group compared every tower and helped us understand why Sky made the most sense for our budget and lifestyle.", "name": "David K.", "detail": "Bought at Sky Las Vegas · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Sky Las Vegas",
+    "ylopoMinPrice": 300000
+  },
+  {
+    "slug": "allure-las-vegas",
+    "name": "Allure Las Vegas",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Urban · Strip-Adjacent",
+    "zipCodes": ["89102"],
+    "center": [-115.171, 36.151],
+    "heroEyebrow": "Las Vegas",
+    "priceRange": "$250K–$1M+",
+    "established": "2007",
+    "developer": "Mac Homes / Gary Carlin",
+    "acreage": "~2 acres",
+    "homeCount": "428",
+    "guardGated": true,
+    "hoaRange": "$300–$1,200/mo",
+    "overview": [
+      "Allure Las Vegas is a 41-story luxury high-rise condominium tower located on West Sahara Avenue, just north of the Las Vegas Strip. Completed in 2007, the tower contains 428 residences and offers one of the most accessible entry points into the Las Vegas luxury high-rise market, with one-bedroom units starting around $250,000 and penthouses reaching over $1 million.",
+      "The tower features a sleek glass-and-steel design with floor-to-ceiling windows throughout, providing panoramic views of the Strip skyline, the Spring Mountains, and the Las Vegas Valley from virtually every unit. Floor plans range from efficient studios and one-bedrooms to spacious two- and three-bedroom residences and penthouses. Finishes include granite countertops, stainless steel appliances, and hardwood-style flooring.",
+      "Amenities at Allure include a resort-style pool deck with cabanas and Strip views, a fitness center, 24-hour concierge and security, valet parking, a media room, a business center, and resident lounge areas. The gated entry and controlled building access provide the security and privacy expected of a luxury high-rise community.",
+      "Allure's location on Sahara Avenue provides convenient access to the Strip, the emerging Arts District and Downtown Las Vegas, and the I-15 and US-95 freeways. For buyers seeking a luxury high-rise lifestyle near the Strip without the premium pricing of CityCenter or Turnberry, Allure Las Vegas offers a compelling combination of quality construction, strong amenities, and value."
+    ],
+    "highlights": [
+      { "title": "41-Story Tower", "body": "A 41-story glass tower rising above the Las Vegas skyline with 428 residences and panoramic views from virtually every unit.", "iconType": "building" },
+      { "title": "Accessible Luxury", "body": "Entry-level one-bedrooms start around $250,000, making Allure one of the most accessible luxury high-rise options in the Las Vegas corridor.", "iconType": "trend" },
+      { "title": "Strip Views", "body": "South-facing units offer direct views of the Las Vegas Strip skyline, while west-facing units capture the Spring Mountains and Red Rock Canyon.", "iconType": "mountain" },
+      { "title": "Pool Deck & Amenities", "body": "Resort-style pool with cabanas and Strip views, fitness center, media room, business center, and resident lounges.", "iconType": "pool" },
+      { "title": "24-Hour Security", "body": "Gated entry, 24-hour concierge and security, valet parking, and controlled building access for resident privacy.", "iconType": "shield" },
+      { "title": "Strategic Location", "body": "Minutes from the Strip, the Arts District, and Downtown Las Vegas. Easy freeway access via I-15 and US-95.", "iconType": "community" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Collection", "type": "Luxury · Top Floor", "desc": "The tower's most exclusive residences with panoramic views, expansive layouts, and premium finishes.", "price": "From $800K+" },
+      { "name": "Sky Residences (28–41)", "type": "High Floor · Views", "desc": "Upper-floor residences with the best views and most sought-after exposure. Strip and mountain panoramas.", "price": "From $500K+" },
+      { "name": "View Residences (15–27)", "type": "Mid-Rise · Panoramic", "desc": "Mid-level residences with excellent views and well-designed open floor plans.", "price": "From $350K+" },
+      { "name": "City Residences (3–14)", "type": "Lower Floor · Value", "desc": "Entry-level residences offering luxury high-rise living at the community's most accessible pricing.", "price": "From $250K+" },
+      { "name": "South-Facing Units", "type": "Strip View · Premium", "desc": "Units facing south toward the Strip, offering views of the resort corridor and Bellagio Fountains from upper floors.", "price": "Premium pricing" },
+      { "name": "West-Facing Units", "type": "Mountain View · Sunset", "desc": "Units facing west with views of the Spring Mountains and Red Rock Canyon. Spectacular sunsets.", "price": "From $250K+" }
+    ],
+    "parks": [
+      { "name": "Allure Pool Deck", "address": "200 W Sahara Ave, Las Vegas, NV 89102", "acreage": "~0.5 acres", "amenities": ["Resort pool", "Cabanas", "Strip views", "Lounge areas", "BBQ"] },
+      { "name": "SLS Las Vegas / The Sahara", "address": "2535 Las Vegas Blvd S, Las Vegas, NV 89109", "acreage": "~25 acres", "amenities": ["Casino", "Restaurants", "Pool", "Entertainment", "Convention space"] },
+      { "name": "Meadows Mall Area Parks", "address": "4300 Meadows Ln, Las Vegas, NV 89107", "acreage": "~5 acres", "amenities": ["Shopping", "Dining", "Walking paths", "Community recreation"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["John C. Fremont Middle School", "6–8", "5/10"],
+        ["Western High School", "9–12", "4/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~750",
+      "medianAge": "38",
+      "avgIncome": "$100,000+",
+      "households": "428",
+      "homeownership": "50%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Sahara Ave / Las Vegas Blvd" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~10 min", "destination": "to Downtown / Fremont", "route": "via Sahara Ave → Las Vegas Blvd" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via Sahara Ave / US-95" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Allure Las Vegas?", "a": "Residences range from approximately $250,000 for one-bedroom units on lower floors to over $1 million for penthouses and premium units with Strip views." },
+      { "q": "How many units are in Allure Las Vegas?", "a": "Allure Las Vegas contains 428 residences across 41 stories. Unit types include studios, one-bedrooms, two-bedrooms, three-bedrooms, and penthouses." },
+      { "q": "What amenities does Allure offer?", "a": "Amenities include a resort-style pool deck with cabanas and Strip views, fitness center, 24-hour concierge and security, valet parking, media room, business center, and resident lounge areas." },
+      { "q": "Is Allure Las Vegas gated?", "a": "Yes. Allure has a gated entry with 24-hour security, concierge services, and controlled building access. Valet parking is also available." },
+      { "q": "Can you rent out a unit at Allure?", "a": "Yes. Allure allows rentals and the accessible price point combined with the location near the Strip makes it popular with investor-buyers seeking rental income." },
+      { "q": "What views do Allure units have?", "a": "South-facing units offer views of the Las Vegas Strip skyline. West-facing units capture the Spring Mountains and Red Rock Canyon. Upper floors provide sweeping panoramic views in all directions." },
+      { "q": "What are HOA fees at Allure?", "a": "HOA fees typically range from $300 to $1,200 per month depending on unit size and floor level. Fees cover building operations, concierge, pool, fitness center, security, and common area maintenance." },
+      { "q": "How does Allure compare to Sky Las Vegas?", "a": "Both are luxury high-rise towers near the Strip. Sky has true Strip frontage on Las Vegas Boulevard and slightly newer finishes. Allure offers a lower entry price and is located on Sahara Avenue just north of the Strip." }
+    ],
+    "nearby": [
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "45-story tower directly on the Strip with Las Vegas Boulevard frontage." },
+      { "name": "Panorama Towers", "href": "/panorama-towers/", "price": "From $300K", "compare": "Twin 33-story towers on the south side of the Strip corridor." },
+      { "name": "Veer Towers", "href": "/veer-towers/", "price": "From $400K", "compare": "CityCenter's iconic leaning towers with on-Strip location." },
+      { "name": "The Martin", "href": "/the-martin/", "price": "From $400K", "compare": "45-story luxury tower on the west side of the Strip corridor." },
+      { "name": "The Ogden", "href": "/the-ogden/", "price": "From $200K", "compare": "Downtown Las Vegas high-rise with walkable urban living." },
+      { "name": "Juhl", "href": "/juhl/", "price": "From $200K", "compare": "Boutique loft-style condos in the downtown Arts District." }
+    ],
+    "testimonials": [
+      { "quote": "Allure gave us the high-rise lifestyle we wanted at a price that actually made sense. Nevada Real Estate Group compared every tower in the corridor and showed us why Allure was the best value for our budget.", "name": "Jason & Michelle P.", "detail": "Bought at Allure Las Vegas · 2024" },
+      { "quote": "We bought at Allure as an investment and the rental income has been strong from day one. Nevada Real Estate Group understood the investor angle and helped us pick the right unit.", "name": "Sarah L.", "detail": "Bought at Allure Las Vegas · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Allure Las Vegas",
+    "ylopoMinPrice": 250000
+  },
+  {
+    "slug": "juhl",
+    "name": "Juhl",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Loft-Style · Urban · Downtown",
+    "zipCodes": ["89101"],
+    "center": [-115.148, 36.164],
+    "heroEyebrow": "Downtown Las Vegas",
+    "priceRange": "$200K–$600K",
+    "established": "2009",
+    "developer": "CityMark Development",
+    "acreage": "~2 acres",
+    "homeCount": "341",
+    "guardGated": false,
+    "hoaRange": "$250–$800/mo",
+    "overview": [
+      "Juhl is a boutique loft-style condominium community in the heart of Downtown Las Vegas, located just south of the Fremont Street Experience and adjacent to the growing Arts District. Developed by CityMark Development and completed in 2009, Juhl contains 341 residences across a mid-rise campus and stands as one of the pioneering residential developments that helped spark downtown's urban renaissance.",
+      "What sets Juhl apart from every other condo community in Las Vegas is its design philosophy. Inspired by urban loft living in cities like New York, San Francisco, and Portland, Juhl features open floor plans with soaring ceilings, exposed concrete columns, oversized windows, and a deliberately creative aesthetic. Residences range from approximately $200,000 for studios and one-bedrooms to around $600,000 for two-story townhome-style lofts and premium corner units.",
+      "The community's amenities reflect its urban-creative identity. Residents have access to a resort-style pool and spa, a communal Sky Deck with Strip and mountain views, an indoor/outdoor Sky Lounge, a co-working studio, a screening room, a dog park, a community art gallery, and fitness facilities. The ground-floor retail and restaurants add walkable dining and shopping directly to the community.",
+      "Juhl's location in Downtown Las Vegas positions residents within walking distance of the Fremont East entertainment district, the Arts District's galleries and breweries, the Smith Center for the Performing Arts, and the emerging Symphony Park development corridor. For buyers seeking a lifestyle that is genuinely urban and creative — distinctly different from the suburban master-planned communities that dominate Las Vegas — Juhl is the definitive downtown address."
+    ],
+    "highlights": [
+      { "title": "Loft-Style Design", "body": "Open floor plans with soaring ceilings, exposed concrete, oversized windows, and a creative urban aesthetic inspired by New York and San Francisco loft living.", "iconType": "home" },
+      { "title": "Sky Deck & Lounge", "body": "Communal rooftop Sky Deck with Strip and mountain views, indoor/outdoor Sky Lounge, and entertainment spaces for resident events.", "iconType": "building" },
+      { "title": "Arts District Adjacent", "body": "Steps from the Arts District's galleries, breweries, vintage shops, and restaurants. First Friday events draw thousands monthly.", "iconType": "community" },
+      { "title": "Walkable Urban Living", "body": "Walking distance to Fremont East, Fremont Street Experience, Container Park, and Downtown's growing dining and nightlife scene.", "iconType": "park" },
+      { "title": "Co-Working & Creative Spaces", "body": "On-site co-working studio, screening room, community art gallery, and creative spaces designed for downtown's entrepreneurial residents.", "iconType": "trend" },
+      { "title": "Pool, Spa & Dog Park", "body": "Resort-style pool and spa, fitness center, dedicated dog park, and ground-floor retail and restaurants.", "iconType": "pool" }
+    ],
+    "neighborhoods": [
+      { "name": "Townhome Lofts", "type": "Two-Story · Premium", "desc": "Two-story townhome-style loft residences with the most living space in the community. Soaring ceilings and unique layouts.", "price": "From $450K+" },
+      { "name": "Penthouse Lofts", "type": "Top Floor · Views", "desc": "Upper-floor residences with the best views of the Strip skyline and mountains. Premium finishes and expanded floor plans.", "price": "From $400K+" },
+      { "name": "Urban Lofts", "type": "Open Plan · Creative", "desc": "Classic loft-style residences with open floor plans, high ceilings, and the signature Juhl design aesthetic.", "price": "From $250K+" },
+      { "name": "Studio & One-Bedroom", "type": "Efficient · Entry", "desc": "Compact but well-designed residences for singles and couples seeking downtown living at the most accessible price.", "price": "From $200K+" },
+      { "name": "Ground-Floor Retail", "type": "Commercial · Walkable", "desc": "Ground-floor retail including restaurants, cafes, and shops that contribute to Juhl's walkable neighborhood character.", "price": "Commercial" },
+      { "name": "Arts District (Adjacent)", "type": "Neighborhood · Creative", "desc": "The adjacent Arts District with galleries, breweries, and creative businesses. Las Vegas' most vibrant urban neighborhood.", "price": "Adjacent" }
+    ],
+    "parks": [
+      { "name": "Juhl Pool & Sky Deck", "address": "353 E Bonneville Ave, Las Vegas, NV 89101", "acreage": "~1 acre", "amenities": ["Resort pool", "Spa", "Sky Deck", "Dog park", "Outdoor lounge"] },
+      { "name": "Fremont Street Experience", "address": "425 Fremont St, Las Vegas, NV 89101", "acreage": "~5 acres", "amenities": ["LED canopy", "Live entertainment", "Dining", "Shopping", "Events"] },
+      { "name": "Container Park", "address": "707 Fremont St, Las Vegas, NV 89101", "acreage": "~1 acre", "amenities": ["Outdoor shopping", "Dining", "Live entertainment", "Treehouse playground", "Art installations"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Rancho High School", "9–12", "5/10"],
+        ["West Prep Academy", "6–12", "6/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~600",
+      "medianAge": "35",
+      "avgIncome": "$75,000+",
+      "households": "341",
+      "homeownership": "45%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Las Vegas Blvd" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~3 min", "destination": "to Fremont East", "route": "via Fremont St" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via US-95 West" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Juhl?", "a": "Residences at Juhl range from approximately $200,000 for studios and one-bedrooms to around $600,000 for two-story townhome lofts and premium corner units." },
+      { "q": "What is the design style at Juhl?", "a": "Juhl features a loft-style design with open floor plans, soaring ceilings, exposed concrete elements, oversized windows, and a creative urban aesthetic. It is designed to evoke the loft living culture of cities like New York and San Francisco." },
+      { "q": "What amenities does Juhl offer?", "a": "Amenities include a resort-style pool and spa, Sky Deck with Strip views, Sky Lounge, co-working studio, screening room, art gallery, dog park, fitness center, and ground-floor retail and restaurants." },
+      { "q": "Is Juhl in the Arts District?", "a": "Juhl is located in Downtown Las Vegas adjacent to the Arts District. The Arts District's galleries, breweries, restaurants, and monthly First Friday events are within walking distance." },
+      { "q": "Can you rent out a unit at Juhl?", "a": "Yes. Juhl allows rentals. The downtown location and loft-style aesthetic attract young professionals, creatives, and remote workers, driving consistent rental demand." },
+      { "q": "Is there parking at Juhl?", "a": "Yes. Juhl includes covered parking for residents. The downtown location also offers convenient access to public transit and walkable amenities." },
+      { "q": "What are HOA fees at Juhl?", "a": "HOA fees at Juhl typically range from $250 to $800 per month depending on unit size. Fees cover building maintenance, pool, Sky Deck, concierge, common area upkeep, and security." },
+      { "q": "How does Juhl compare to The Ogden?", "a": "Both are downtown Las Vegas condo communities. Juhl has a more deliberately loft-style, creative design with a campus feel. The Ogden is a traditional high-rise tower with more conventional condo layouts. Both are excellent downtown options at similar price points." }
+    ],
+    "nearby": [
+      { "name": "The Ogden", "href": "/the-ogden/", "price": "From $200K", "compare": "Downtown Las Vegas high-rise tower with conventional condo layouts and city views." },
+      { "name": "Soho Lofts", "href": "/soho-lofts/", "price": "From $200K", "compare": "Industrial-chic loft condos in the Arts District. Similar urban aesthetic." },
+      { "name": "Newport Lofts", "href": "/newport-lofts/", "price": "From $200K", "compare": "Downtown loft conversion with raw industrial character." },
+      { "name": "Cello Tower", "href": "/cello-tower/", "price": "From $700K", "compare": "Downtown's newest luxury high-rise. Brand new construction with premium pricing." },
+      { "name": "Allure Las Vegas", "href": "/allure-las-vegas/", "price": "From $250K", "compare": "41-story tower near the north Strip. More traditional high-rise living." },
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "Strip-front high-rise for buyers wanting the boulevard lifestyle." }
+    ],
+    "testimonials": [
+      { "quote": "Juhl is unlike anything else in Las Vegas. The loft design, the Sky Deck, the walkability — it feels like a different city. Nevada Real Estate Group understood exactly what we were looking for in a downtown home.", "name": "Alex & Megan R.", "detail": "Bought at Juhl · 2024" },
+      { "quote": "We relocated from Portland and wanted urban creative living. Juhl was the only community in Las Vegas that matched the lifestyle we love. Nevada Real Estate Group made the transition seamless.", "name": "Chris M.", "detail": "Bought at Juhl · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Juhl Downtown",
+    "ylopoMinPrice": 200000
+  },
+  {
+    "slug": "the-ogden",
+    "name": "The Ogden",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Urban · Downtown",
+    "zipCodes": ["89101"],
+    "center": [-115.142, 36.171],
+    "heroEyebrow": "Downtown Las Vegas",
+    "priceRange": "$200K–$700K",
+    "established": "2008",
+    "developer": "Loft Holdings / David Friedman",
+    "acreage": "~1 acre",
+    "homeCount": "275",
+    "guardGated": false,
+    "hoaRange": "$250–$900/mo",
+    "overview": [
+      "The Ogden is a 21-story high-rise condominium tower located in the heart of Downtown Las Vegas, directly above the Fremont East entertainment district. Completed in 2008 and repositioned in the 2010s, The Ogden contains 275 residences and has become one of the most popular urban condo addresses in the city, attracting young professionals, remote workers, and buyers who want a walkable, culturally rich downtown lifestyle.",
+      "Residences at The Ogden range from approximately $200,000 for studios and one-bedrooms to around $700,000 for penthouses and premium corner units with Strip and mountain views. Floor plans are modern and efficient, with clean lines, contemporary finishes, and floor-to-ceiling windows that maximize natural light and views. The building underwent a significant renovation and modernization in the 2010s, resulting in updated common areas, amenities, and unit finishes.",
+      "The Ogden's amenity package includes a rooftop pool deck and lounge with panoramic views, a fitness center, 24-hour security, controlled building access, resident event spaces, and ground-floor retail. The building's rooftop is one of the most popular social spaces in downtown Las Vegas, offering sweeping views of the Fremont Street Experience, the Strip, and the surrounding mountains.",
+      "Location is The Ogden's greatest asset. The building sits at the intersection of Ogden Avenue and Las Vegas Boulevard, placing residents within steps of Fremont East's bars and restaurants, Container Park, the Mob Museum, the Arts District, and the Fremont Street Experience. For buyers who want to be at the epicenter of downtown's cultural and culinary renaissance, The Ogden is the most centrally located residential tower in the district."
+    ],
+    "highlights": [
+      { "title": "Rooftop Pool & Lounge", "body": "The Ogden's rooftop pool deck and lounge offers panoramic views of Fremont Street, the Strip skyline, and the surrounding mountains. One of downtown's best social spaces.", "iconType": "pool" },
+      { "title": "Fremont East Location", "body": "Directly above the Fremont East entertainment district. Steps from Container Park, the Mob Museum, and downtown's best restaurants and bars.", "iconType": "community" },
+      { "title": "21-Story Tower", "body": "A 21-story tower with 275 residences, modern finishes, and floor-to-ceiling windows. Updated through significant renovation in the 2010s.", "iconType": "building" },
+      { "title": "Walkable Urban Lifestyle", "body": "One of the most walkable addresses in Las Vegas. Restaurants, bars, entertainment, cultural venues, and transit all within steps.", "iconType": "park" },
+      { "title": "Accessible Pricing", "body": "Entry-level units start around $200,000, making The Ogden one of the most accessible high-rise options in the Las Vegas market.", "iconType": "trend" },
+      { "title": "24-Hour Security", "body": "Controlled building access, 24-hour security, and dedicated resident parking. Safe, secure urban living in the heart of downtown.", "iconType": "shield" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Level", "type": "Premium · Top Floor", "desc": "The most exclusive residences with expansive floor plans, premium finishes, and unobstructed panoramic views.", "price": "From $500K+" },
+      { "name": "Upper Residences (14–21)", "type": "High Floor · Views", "desc": "Upper-floor units with the best views of Fremont Street, the Strip, and the surrounding mountains.", "price": "From $350K+" },
+      { "name": "Mid Residences (7–13)", "type": "Mid-Rise · Urban", "desc": "Mid-level residences with city views and convenient access to all building amenities.", "price": "From $275K+" },
+      { "name": "City Residences (2–6)", "type": "Lower Floor · Entry", "desc": "Entry-level residences offering The Ogden lifestyle at the most accessible pricing.", "price": "From $200K+" },
+      { "name": "Fremont East (Adjacent)", "type": "Entertainment · Walkable", "desc": "The Fremont East entertainment district with craft cocktail bars, restaurants, and the vibrant energy of downtown Las Vegas.", "price": "Adjacent" },
+      { "name": "Arts District (Adjacent)", "type": "Creative · Urban", "desc": "Downtown's growing Arts District with galleries, breweries, and creative studios. A short walk south of The Ogden.", "price": "Adjacent" }
+    ],
+    "parks": [
+      { "name": "The Ogden Rooftop Pool", "address": "150 N Las Vegas Blvd, Las Vegas, NV 89101", "acreage": "~0.3 acres", "amenities": ["Rooftop pool", "Lounge", "Panoramic views", "Event space"] },
+      { "name": "Fremont Street Experience", "address": "425 Fremont St, Las Vegas, NV 89101", "acreage": "~5 acres", "amenities": ["LED canopy", "Live entertainment", "Dining", "Shopping", "Events"] },
+      { "name": "Container Park", "address": "707 Fremont St, Las Vegas, NV 89101", "acreage": "~1 acre", "amenities": ["Outdoor shopping", "Dining", "Live entertainment", "Treehouse playground", "Art installations"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Rancho High School", "9–12", "5/10"],
+        ["West Prep Academy", "6–12", "6/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~500",
+      "medianAge": "34",
+      "avgIncome": "$70,000+",
+      "households": "275",
+      "homeownership": "40%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Las Vegas Blvd" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~2 min", "destination": "to Fremont East", "route": "on foot" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via US-95 West" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at The Ogden?", "a": "Residences range from approximately $200,000 for studios and one-bedrooms to around $700,000 for penthouses and premium corner units with panoramic views." },
+      { "q": "Where is The Ogden located?", "a": "The Ogden is located at the intersection of Ogden Avenue and Las Vegas Boulevard in Downtown Las Vegas, directly above the Fremont East entertainment district." },
+      { "q": "What amenities does The Ogden offer?", "a": "Amenities include a rooftop pool deck and lounge with panoramic views, fitness center, 24-hour security, controlled building access, resident event spaces, and ground-floor retail." },
+      { "q": "Is The Ogden walkable?", "a": "Yes. The Ogden is one of the most walkable addresses in Las Vegas. Fremont East, Container Park, the Mob Museum, the Arts District, and dozens of restaurants and bars are all within walking distance." },
+      { "q": "Can you rent out a unit at The Ogden?", "a": "Yes. The Ogden allows rentals and the downtown location, affordable pricing, and walkable lifestyle drive consistent demand from young professionals and remote workers." },
+      { "q": "What are HOA fees at The Ogden?", "a": "HOA fees typically range from $250 to $900 per month depending on unit size. Fees cover building maintenance, rooftop pool, fitness center, security, and common area upkeep." },
+      { "q": "How does The Ogden compare to Juhl?", "a": "The Ogden is a traditional high-rise tower with conventional condo layouts. Juhl has a more deliberately loft-style, campus-oriented design. The Ogden has a more central Fremont East location, while Juhl is closer to the Arts District. Both are excellent downtown options." },
+      { "q": "Was The Ogden renovated?", "a": "Yes. The Ogden underwent a significant renovation and modernization in the 2010s, updating common areas, amenities, and unit finishes to contemporary standards." }
+    ],
+    "nearby": [
+      { "name": "Juhl", "href": "/juhl/", "price": "From $200K", "compare": "Loft-style condos near the Arts District with creative design and Sky Deck." },
+      { "name": "Soho Lofts", "href": "/soho-lofts/", "price": "From $200K", "compare": "Industrial-chic loft conversions in the Arts District." },
+      { "name": "Newport Lofts", "href": "/newport-lofts/", "price": "From $200K", "compare": "Downtown loft conversion with raw industrial character." },
+      { "name": "Cello Tower", "href": "/cello-tower/", "price": "From $700K", "compare": "Downtown's newest luxury high-rise near Symphony Park." },
+      { "name": "Allure Las Vegas", "href": "/allure-las-vegas/", "price": "From $250K", "compare": "41-story tower near the north Strip. Traditional high-rise living." },
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "Strip-front high-rise for buyers wanting boulevard living." }
+    ],
+    "testimonials": [
+      { "quote": "The Ogden put us right in the middle of everything downtown. We walk to dinner, walk to shows, walk to art galleries. Nevada Real Estate Group knew downtown inside and out and found us the perfect unit.", "name": "Tyler & Amanda S.", "detail": "Bought at The Ogden · 2024" },
+      { "quote": "We moved from Chicago and wanted genuine urban living in Las Vegas. The Ogden was the answer. Nevada Real Estate Group understood exactly what we meant and delivered.", "name": "Rachel D.", "detail": "Bought at The Ogden · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Ogden Downtown",
+    "ylopoMinPrice": 200000
+  },
+  {
+    "slug": "soho-lofts",
+    "name": "Soho Lofts",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Loft Conversion · Urban · Downtown",
+    "zipCodes": ["89101"],
+    "center": [-115.150, 36.159],
+    "heroEyebrow": "Arts District, Downtown Las Vegas",
+    "priceRange": "$200K–$600K",
+    "established": "2007",
+    "developer": "Molasky Group of Companies",
+    "acreage": "~1.5 acres",
+    "homeCount": "178",
+    "guardGated": false,
+    "hoaRange": "$250–$750/mo",
+    "overview": [
+      "Soho Lofts is a 15-story residential tower located in the heart of the Las Vegas Arts District, offering industrial-chic loft-style condominiums that are unlike anything else in the Las Vegas market. Completed in 2007 by the Molasky Group of Companies, the building contains 178 residences and has become a defining address for the Arts District's creative community.",
+      "Residences at Soho Lofts range from approximately $200,000 for studios and one-bedrooms to around $600,000 for two-story loft units and premium penthouses. The design aesthetic is deliberately raw and urban — exposed concrete ceilings, oversized warehouse-style windows, open floor plans with minimal walls, and soaring ceiling heights that give every unit a sense of volume and light. Many units feature mezzanine sleeping lofts accessed by floating staircases.",
+      "The building amenities include a rooftop pool deck with downtown and mountain views, a fitness center, controlled building access with security, dedicated resident parking, and a ground-floor lobby that reflects the building's industrial-creative character. The rooftop pool is one of the Arts District's most popular social spaces.",
+      "Soho Lofts sits at the epicenter of the Las Vegas Arts District, surrounded by galleries, breweries, craft coffee shops, restaurants, and creative studios. The monthly First Friday art walk draws thousands of visitors to the neighborhood. For buyers seeking authentic urban loft living with genuine neighborhood character — the kind of community that defines arts districts in cities like Los Angeles, Portland, and Brooklyn — Soho Lofts is the address."
+    ],
+    "highlights": [
+      { "title": "Industrial-Chic Design", "body": "Exposed concrete, warehouse-style windows, soaring ceilings, and open floor plans with mezzanine lofts. Authentic urban loft living.", "iconType": "home" },
+      { "title": "Arts District Address", "body": "Located at the heart of the Las Vegas Arts District, surrounded by galleries, breweries, and creative studios. First Friday art walks are steps away.", "iconType": "community" },
+      { "title": "Rooftop Pool", "body": "Rooftop pool deck with downtown skyline and mountain views. One of the most popular social spaces in the Arts District.", "iconType": "pool" },
+      { "title": "Mezzanine Lofts", "body": "Many units feature dramatic mezzanine sleeping lofts accessed by floating staircases, maximizing the building's soaring ceiling heights.", "iconType": "building" },
+      { "title": "Creative Community", "body": "Soho Lofts attracts artists, designers, entrepreneurs, and creatives who value authentic urban living over suburban convention.", "iconType": "park" },
+      { "title": "Accessible Entry Price", "body": "Studios and one-bedrooms start around $200,000, offering genuine loft living at a fraction of coastal city prices.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Lofts", "type": "Premium · Top Floor", "desc": "The most exclusive residences with the best views, highest ceilings, and the most dramatic mezzanine configurations.", "price": "From $450K+" },
+      { "name": "Two-Story Lofts", "type": "Duplex · Creative", "desc": "Two-story loft units with mezzanine sleeping areas, floating staircases, and the most dramatic interior volumes.", "price": "From $350K+" },
+      { "name": "Urban Lofts", "type": "Open Plan · Mid-Rise", "desc": "Classic single-level loft residences with open floor plans, exposed concrete, and oversized windows.", "price": "From $250K+" },
+      { "name": "Studio Lofts", "type": "Compact · Entry", "desc": "Efficient studio loft residences with high ceilings and open layouts at the community's most accessible pricing.", "price": "From $200K+" },
+      { "name": "Arts District (Surrounding)", "type": "Neighborhood · Creative", "desc": "The Las Vegas Arts District featuring galleries, breweries, vintage shops, restaurants, and First Friday art walks.", "price": "Adjacent" },
+      { "name": "Fremont East (Adjacent)", "type": "Entertainment · Urban", "desc": "The Fremont East entertainment district with craft cocktail bars, restaurants, and the energy of downtown Las Vegas.", "price": "Adjacent" }
+    ],
+    "parks": [
+      { "name": "Soho Lofts Rooftop Pool", "address": "900 S Las Vegas Blvd, Las Vegas, NV 89101", "acreage": "~0.3 acres", "amenities": ["Rooftop pool", "Lounge deck", "Downtown views", "Mountain views"] },
+      { "name": "Arts District Galleries", "address": "S Main St & E Charleston Blvd, Las Vegas, NV 89104", "acreage": "~20 blocks", "amenities": ["Art galleries", "Breweries", "First Friday events", "Public art", "Creative studios"] },
+      { "name": "Cashman Field & Heritage Park", "address": "850 Las Vegas Blvd N, Las Vegas, NV 89101", "acreage": "~35 acres", "amenities": ["Sports fields", "Event space", "Heritage park", "Walking paths"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Rancho High School", "9–12", "5/10"],
+        ["West Prep Academy", "6–12", "6/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~300",
+      "medianAge": "33",
+      "avgIncome": "$65,000+",
+      "households": "178",
+      "homeownership": "40%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Las Vegas Blvd" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~5 min", "destination": "to Fremont East", "route": "via Las Vegas Blvd" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via US-95 West" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Soho Lofts?", "a": "Residences range from approximately $200,000 for studios to around $600,000 for two-story loft units and premium penthouses." },
+      { "q": "What is the design style at Soho Lofts?", "a": "Soho Lofts features an industrial-chic aesthetic with exposed concrete ceilings, warehouse-style oversized windows, open floor plans, soaring ceiling heights, and mezzanine sleeping lofts accessed by floating staircases." },
+      { "q": "Is Soho Lofts in the Arts District?", "a": "Yes. Soho Lofts is located in the heart of the Las Vegas Arts District. Galleries, breweries, restaurants, and the monthly First Friday art walk are all within walking distance." },
+      { "q": "What amenities does Soho Lofts offer?", "a": "Amenities include a rooftop pool deck with downtown and mountain views, fitness center, controlled building access, dedicated resident parking, and secure lobbies." },
+      { "q": "Can you rent out a unit at Soho Lofts?", "a": "Yes. Soho Lofts allows rentals. The Arts District location and loft aesthetic attract creatives, young professionals, and remote workers." },
+      { "q": "What are HOA fees at Soho Lofts?", "a": "HOA fees typically range from $250 to $750 per month depending on unit size. Fees cover building operations, rooftop pool, fitness center, security, and common area maintenance." },
+      { "q": "How does Soho Lofts compare to Newport Lofts?", "a": "Both are downtown loft-style communities. Soho Lofts is more refined with a 15-story tower design and mezzanine configurations. Newport Lofts is a converted building with a rawer industrial character. Both offer authentic urban loft living." },
+      { "q": "What is First Friday?", "a": "First Friday is a monthly arts and culture event in the Las Vegas Arts District where galleries open their doors, food trucks line the streets, and live music fills the neighborhood. It draws thousands of visitors and is one of the signature cultural events in Las Vegas." }
+    ],
+    "nearby": [
+      { "name": "Newport Lofts", "href": "/newport-lofts/", "price": "From $200K", "compare": "Downtown loft conversion with raw industrial character. Similar price range." },
+      { "name": "Juhl", "href": "/juhl/", "price": "From $200K", "compare": "Loft-style condos with Sky Deck and co-working spaces. More campus-oriented feel." },
+      { "name": "The Ogden", "href": "/the-ogden/", "price": "From $200K", "compare": "Downtown high-rise tower with conventional condo layouts on Fremont East." },
+      { "name": "Cello Tower", "href": "/cello-tower/", "price": "From $700K", "compare": "Downtown's newest luxury high-rise near Symphony Park. Premium pricing." },
+      { "name": "Allure Las Vegas", "href": "/allure-las-vegas/", "price": "From $250K", "compare": "41-story tower near the north Strip. Traditional high-rise living." },
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "Strip-front high-rise for buyers wanting boulevard living." }
+    ],
+    "testimonials": [
+      { "quote": "Soho Lofts is the real deal. The exposed concrete, the giant windows, the Arts District energy — it feels like living in a different city. Nevada Real Estate Group understood our vision for urban living.", "name": "Jake & Priya N.", "detail": "Bought at Soho Lofts · 2024" },
+      { "quote": "We moved from Brooklyn and wanted that same loft energy. Soho Lofts delivered. Nevada Real Estate Group found us a two-story unit with a mezzanine that feels like our old Williamsburg loft.", "name": "Marcus L.", "detail": "Bought at Soho Lofts · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Soho Lofts Downtown Arts District",
+    "ylopoMinPrice": 200000
+  },
+  {
+    "slug": "newport-lofts",
+    "name": "Newport Lofts",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Loft Conversion · Urban · Downtown",
+    "zipCodes": ["89101"],
+    "center": [-115.151, 36.163],
+    "heroEyebrow": "Downtown Las Vegas",
+    "priceRange": "$200K–$500K",
+    "established": "2008",
+    "developer": "Christopher Homes",
+    "acreage": "~1 acre",
+    "homeCount": "168",
+    "guardGated": false,
+    "hoaRange": "$200–$600/mo",
+    "overview": [
+      "Newport Lofts is a 23-story residential tower located in Downtown Las Vegas, offering authentic loft-style condominiums with a raw, industrial character that distinguishes it from the city's more conventional high-rise communities. Completed in 2008, the building contains 168 residences and has earned a loyal following among buyers who appreciate genuine urban design and the energy of downtown living.",
+      "Residences at Newport Lofts range from approximately $200,000 for studios and one-bedrooms to around $500,000 for two-bedroom and penthouse-level units. The design aesthetic emphasizes raw industrial elements — polished concrete floors, exposed ductwork, floor-to-ceiling windows, open floor plans with minimal interior walls, and ceiling heights that give every unit an airy, expansive feel. Many units offer direct views of the Stratosphere Tower, the downtown skyline, and the Spring Mountains.",
+      "Building amenities include a pool deck, fitness center, controlled building access, and dedicated resident parking. While the amenity package is more streamlined than some competing towers, Newport Lofts' appeal lies in its authentic loft character and its central downtown location — not in resort-style extras.",
+      "Newport Lofts is positioned between the Fremont East entertainment district and the Arts District, giving residents walkable access to both neighborhoods. The building is within blocks of the Mob Museum, Container Park, Fremont Street Experience, and the growing concentration of restaurants, bars, and creative businesses that are transforming downtown Las Vegas. For buyers seeking the most authentic loft living experience in Las Vegas at the most accessible price point, Newport Lofts delivers."
+    ],
+    "highlights": [
+      { "title": "Raw Industrial Character", "body": "Polished concrete floors, exposed ductwork, floor-to-ceiling windows, and minimal interior walls. The most authentically industrial loft experience in Las Vegas.", "iconType": "home" },
+      { "title": "23-Story Tower", "body": "A 23-story tower with 168 residences offering downtown skyline and mountain views. Compact building with a tight-knit community feel.", "iconType": "building" },
+      { "title": "Downtown Central Location", "body": "Between Fremont East and the Arts District with walkable access to restaurants, bars, galleries, and entertainment venues.", "iconType": "community" },
+      { "title": "Most Accessible Entry Price", "body": "Studios and one-bedrooms start around $200,000 with some of the lowest HOA fees among downtown towers, making Newport the most accessible loft option.", "iconType": "trend" },
+      { "title": "Pool & Fitness", "body": "Pool deck, fitness center, and resident common areas. Streamlined amenities that keep HOA fees low.", "iconType": "pool" },
+      { "title": "Secure Parking", "body": "Controlled building access, dedicated resident parking, and security systems for resident safety.", "iconType": "shield" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Level", "type": "Premium · Top Floor", "desc": "Upper-floor residences with the best views and largest floor plans. Downtown skyline and mountain panoramas.", "price": "From $400K+" },
+      { "name": "High Lofts (15–23)", "type": "Upper Floor · Views", "desc": "Upper-floor loft residences with expansive views and excellent natural light through floor-to-ceiling windows.", "price": "From $300K+" },
+      { "name": "Mid Lofts (8–14)", "type": "Mid-Rise · Urban", "desc": "Mid-level loft residences with city views and the signature industrial aesthetic.", "price": "From $250K+" },
+      { "name": "City Lofts (2–7)", "type": "Lower Floor · Entry", "desc": "Entry-level loft residences offering the Newport experience at the community's most accessible pricing.", "price": "From $200K+" },
+      { "name": "Fremont East (Adjacent)", "type": "Entertainment · Walkable", "desc": "Steps from the Fremont East entertainment district with craft cocktail bars, restaurants, and nightlife.", "price": "Adjacent" },
+      { "name": "Arts District (Adjacent)", "type": "Creative · Urban", "desc": "The growing Arts District with galleries, breweries, and creative studios within walking distance.", "price": "Adjacent" }
+    ],
+    "parks": [
+      { "name": "Newport Lofts Pool Deck", "address": "200 Hoover Ave, Las Vegas, NV 89101", "acreage": "~0.2 acres", "amenities": ["Pool", "Lounge area", "City views"] },
+      { "name": "Fremont Street Experience", "address": "425 Fremont St, Las Vegas, NV 89101", "acreage": "~5 acres", "amenities": ["LED canopy", "Live entertainment", "Dining", "Shopping", "Events"] },
+      { "name": "Container Park", "address": "707 Fremont St, Las Vegas, NV 89101", "acreage": "~1 acre", "amenities": ["Outdoor shopping", "Dining", "Live entertainment", "Treehouse playground", "Art installations"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Rancho High School", "9–12", "5/10"],
+        ["West Prep Academy", "6–12", "6/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~300",
+      "medianAge": "32",
+      "avgIncome": "$60,000+",
+      "households": "168",
+      "homeownership": "38%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Las Vegas Blvd" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~3 min", "destination": "to Fremont East", "route": "via Fremont St" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via US-95 West" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Newport Lofts?", "a": "Residences range from approximately $200,000 for studios and one-bedrooms to around $500,000 for two-bedroom and penthouse-level units." },
+      { "q": "What is the design style at Newport Lofts?", "a": "Newport Lofts features a raw industrial aesthetic with polished concrete floors, exposed ductwork, floor-to-ceiling windows, open floor plans, and soaring ceilings. It is the most authentically industrial loft experience in Las Vegas." },
+      { "q": "What amenities does Newport Lofts offer?", "a": "Amenities include a pool deck, fitness center, controlled building access, and dedicated resident parking. The streamlined amenity package helps keep HOA fees among the lowest of any downtown tower." },
+      { "q": "Can you rent out a unit at Newport Lofts?", "a": "Yes. Newport Lofts allows rentals. The accessible pricing and downtown location attract young professionals and remote workers." },
+      { "q": "What are HOA fees at Newport Lofts?", "a": "HOA fees typically range from $200 to $600 per month depending on unit size — among the lowest of any condo tower in downtown Las Vegas." },
+      { "q": "How does Newport Lofts compare to Soho Lofts?", "a": "Both are downtown loft-style communities. Newport has a rawer, more industrial character with polished concrete and exposed ductwork. Soho Lofts is a taller 15-story tower with a slightly more refined design and mezzanine configurations. Newport has lower HOA fees and a lower entry price." },
+      { "q": "Where is Newport Lofts located?", "a": "Newport Lofts is located in Downtown Las Vegas between the Fremont East entertainment district and the Arts District, within walking distance of both neighborhoods' restaurants, bars, and cultural venues." },
+      { "q": "How many units are in Newport Lofts?", "a": "Newport Lofts contains 168 residences across 23 stories, making it one of the more intimate tower communities in downtown Las Vegas." }
+    ],
+    "nearby": [
+      { "name": "Soho Lofts", "href": "/soho-lofts/", "price": "From $200K", "compare": "Arts District loft tower with mezzanine configurations and a more refined industrial design." },
+      { "name": "Juhl", "href": "/juhl/", "price": "From $200K", "compare": "Loft-style campus condos with Sky Deck, co-working spaces, and a creative community." },
+      { "name": "The Ogden", "href": "/the-ogden/", "price": "From $200K", "compare": "Downtown high-rise tower with conventional layouts and Fremont East location." },
+      { "name": "Cello Tower", "href": "/cello-tower/", "price": "From $700K", "compare": "Downtown's newest luxury high-rise. Premium new construction." },
+      { "name": "Allure Las Vegas", "href": "/allure-las-vegas/", "price": "From $250K", "compare": "41-story tower near the north Strip with traditional high-rise design." },
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "Strip-front high-rise for buyers wanting the Las Vegas Boulevard experience." }
+    ],
+    "testimonials": [
+      { "quote": "Newport Lofts is the most authentic loft living in Las Vegas. The concrete floors, the exposed ductwork, the giant windows — it's the real thing. Nevada Real Estate Group found us the perfect unit.", "name": "Evan & Sarah C.", "detail": "Bought at Newport Lofts · 2024" },
+      { "quote": "We wanted a downtown loft at the lowest possible price and Newport delivered. Nevada Real Estate Group showed us every option and Newport was the clear winner for value.", "name": "Andrea K.", "detail": "Bought at Newport Lofts · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Newport Lofts Downtown",
+    "ylopoMinPrice": 200000
+  },
+  {
+    "slug": "the-martin",
+    "name": "The Martin",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "High-Rise · Luxury · Strip-Adjacent",
+    "zipCodes": ["89103"],
+    "center": [-115.183, 36.112],
+    "heroEyebrow": "Las Vegas Strip Corridor",
+    "priceRange": "$400K–$3M+",
+    "established": "2009",
+    "developer": "Focus Property Group",
+    "acreage": "~2 acres",
+    "homeCount": "372",
+    "guardGated": true,
+    "hoaRange": "$400–$2,000/mo",
+    "overview": [
+      "The Martin is a 45-story luxury high-rise condominium tower located on Dean Martin Drive, directly adjacent to the Las Vegas Strip and CityCenter. Completed in 2009, the tower contains 372 residences and is named after the legendary Las Vegas entertainer whose spirit embodies the building's combination of sophistication, style, and Strip-adjacent luxury.",
+      "Residences at The Martin range from approximately $400,000 for one-bedroom units to over $3 million for the tower's most expansive penthouses with panoramic Strip, mountain, and valley views. Floor plans are generous by Strip-area standards, with many two-bedroom units exceeding 1,800 square feet. Every residence features floor-to-ceiling glass, European-style kitchens with premium appliances, and spa-inspired bathrooms with designer finishes.",
+      "The building amenities include a resort-style pool deck with cabanas and Strip views, a state-of-the-art fitness center, a resident lounge, a business center, 24-hour concierge and valet, and a private screening room. The tower's modern glass design makes a striking architectural statement on the Las Vegas skyline, particularly when illuminated at night.",
+      "The Martin's location on Dean Martin Drive places residents within a five-minute walk of CityCenter, ARIA, Crystals, T-Mobile Arena, and the heart of the Strip. The building also benefits from immediate freeway access via I-15, making it easy to reach the airport, Summerlin, or Henderson. For buyers seeking a luxury high-rise with spacious floor plans, strong amenities, and a Strip-adjacent location at a more accessible price point than CityCenter, The Martin offers an exceptional value proposition."
+    ],
+    "highlights": [
+      { "title": "45-Story Tower", "body": "A striking 45-story glass tower rising above the Strip corridor with 372 residences and panoramic views from virtually every unit.", "iconType": "building" },
+      { "title": "Spacious Floor Plans", "body": "Generous floor plans with many two-bedroom units exceeding 1,800 square feet. Larger than most comparable Strip-area towers.", "iconType": "home" },
+      { "title": "Pool Deck & Cabanas", "body": "Resort-style pool deck with private cabanas, Strip views, and outdoor lounge areas. A resort oasis above the Las Vegas skyline.", "iconType": "pool" },
+      { "title": "CityCenter Adjacent", "body": "Five-minute walk to CityCenter, ARIA, Crystals, T-Mobile Arena, and the heart of the Strip. Immediate I-15 freeway access.", "iconType": "community" },
+      { "title": "24-Hour Concierge", "body": "Full-service concierge, valet parking, fitness center, screening room, and 24-hour security. Luxury high-rise service standards.", "iconType": "shield" },
+      { "title": "Value Proposition", "body": "The Martin offers luxury Strip-adjacent living at a more accessible per-square-foot price than on-Strip towers like Veer or Waldorf Astoria.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Collection", "type": "Ultra-Luxury · Top Floor", "desc": "The tower's most exclusive residences with expansive layouts, wrap-around glass, and 360-degree panoramic views.", "price": "From $2M+" },
+      { "name": "Sky Residences (30–45)", "type": "Premium · High Floor", "desc": "Upper-floor residences with the best views and most sought-after exposure. Strip, mountain, and valley panoramas.", "price": "From $1M+" },
+      { "name": "Tower Residences (15–29)", "type": "Mid-Rise · Views", "desc": "Mid-level residences with excellent views and spacious floor plans. Popular with full-time residents.", "price": "From $600K+" },
+      { "name": "City Residences (3–14)", "type": "Lower Floor · Value", "desc": "Entry-level residences offering The Martin lifestyle at the community's most accessible pricing.", "price": "From $400K+" },
+      { "name": "East-Facing Units", "type": "Strip View · Premium", "desc": "East-facing units with direct views toward CityCenter and the Las Vegas Strip. The most coveted exposure.", "price": "Premium pricing" },
+      { "name": "West-Facing Units", "type": "Mountain View · Sunset", "desc": "West-facing units with views of the Spring Mountains, Red Rock Canyon, and spectacular desert sunsets.", "price": "From $400K+" }
+    ],
+    "parks": [
+      { "name": "The Martin Pool Deck", "address": "4471 Dean Martin Dr, Las Vegas, NV 89103", "acreage": "~0.5 acres", "amenities": ["Resort pool", "Cabanas", "Strip views", "Outdoor lounge", "BBQ"] },
+      { "name": "The Park Las Vegas", "address": "3784 Las Vegas Blvd S, Las Vegas, NV 89158", "acreage": "~8 acres", "amenities": ["Outdoor dining", "Live entertainment", "Public art", "T-Mobile Arena access", "Landscaped promenades"] },
+      { "name": "Bellagio Conservatory & Gardens", "address": "3600 Las Vegas Blvd S, Las Vegas, NV 89109", "acreage": "~14,000 sq ft", "amenities": ["Seasonal botanical displays", "Public art", "Free admission", "Adjacent fountains"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Walter Bracken STEAM Academy", "K–5", "8/10"],
+        ["Valley High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~650",
+      "medianAge": "44",
+      "avgIncome": "$175,000+",
+      "households": "372",
+      "homeownership": "55%"
+    },
+    "driveTimes": [
+      { "time": "~3 min", "destination": "to the Strip", "route": "via Dean Martin Dr" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~5 min", "destination": "to CityCenter / ARIA", "route": "via Dean Martin Dr" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via I-15 → Summerlin Pkwy" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at The Martin?", "a": "Residences range from approximately $400,000 for one-bedroom units to over $3 million for penthouses with panoramic Strip and mountain views." },
+      { "q": "How many units are in The Martin?", "a": "The Martin contains 372 residences across 45 stories with a range of one-, two-, and three-bedroom floor plans plus penthouses." },
+      { "q": "What amenities does The Martin offer?", "a": "Amenities include a resort-style pool deck with cabanas, fitness center, 24-hour concierge and valet, private screening room, business center, resident lounge, and 24-hour security." },
+      { "q": "Is The Martin gated?", "a": "Yes. The Martin has controlled vehicular and pedestrian access with 24-hour security, concierge services, and valet parking." },
+      { "q": "How does The Martin compare to Panorama Towers?", "a": "Both are on Dean Martin Drive near the Strip. The Martin is a single 45-story tower with 372 units. Panorama Towers is a twin 33-story complex with ~650 units and two pool decks. The Martin is generally newer with slightly higher per-square-foot pricing." },
+      { "q": "Can you rent out a unit at The Martin?", "a": "Yes. The Martin allows rentals. The Strip-adjacent location drives consistent demand from both long-term tenants and corporate clients." },
+      { "q": "What are HOA fees at The Martin?", "a": "HOA fees typically range from $400 to $2,000 per month depending on unit size and floor level. Fees cover building operations, pool, fitness center, concierge, security, and common area maintenance." },
+      { "q": "What views do Martin units have?", "a": "East-facing units offer views of CityCenter and the Strip. West-facing units capture the Spring Mountains and Red Rock Canyon. Upper floors provide sweeping 360-degree panoramas." }
+    ],
+    "nearby": [
+      { "name": "Panorama Towers", "href": "/panorama-towers/", "price": "From $300K", "compare": "Twin 33-story towers on the same Dean Martin Drive corridor with dual pool decks." },
+      { "name": "Veer Towers", "href": "/veer-towers/", "price": "From $400K", "compare": "CityCenter's iconic leaning towers with on-Strip location." },
+      { "name": "Waldorf Astoria Las Vegas", "href": "/waldorf-astoria-las-vegas/", "price": "From $500K", "compare": "Five-star branded residences at CityCenter with full hotel services." },
+      { "name": "Sky Las Vegas", "href": "/sky-las-vegas/", "price": "From $300K", "compare": "45-story tower on the Strip with Las Vegas Boulevard frontage." },
+      { "name": "Turnberry Towers", "href": "/turnberry-towers/", "price": "From $400K", "compare": "Twin 45-story towers near the Convention Center with resort amenities." },
+      { "name": "Allure Las Vegas", "href": "/allure-las-vegas/", "price": "From $250K", "compare": "41-story tower north of the Strip with the most accessible pricing." }
+    ],
+    "testimonials": [
+      { "quote": "The Martin gave us the space and views we wanted at a fraction of what CityCenter was asking. Nevada Real Estate Group's deep knowledge of the Strip corridor towers saved us hundreds of thousands.", "name": "William & Catherine B.", "detail": "Bought at The Martin · 2024" },
+      { "quote": "We compared every tower in the corridor and The Martin offered the best combination of floor plan size, views, and value. Nevada Real Estate Group made the decision easy.", "name": "Daniel F.", "detail": "Bought at The Martin · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Martin",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "las-vegas-country-club",
+    "name": "Las Vegas Country Club",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Golf · Established",
+    "zipCodes": ["89109", "89169"],
+    "center": [-115.143, 36.115],
+    "heroEyebrow": "Las Vegas, Nevada",
+    "priceRange": "$400K–$3M+",
+    "established": "1967",
+    "developer": "Irwin Molasky / Pardee Homes",
+    "acreage": "~800 acres",
+    "homeCount": "1,400+",
+    "guardGated": true,
+    "hoaRange": "$300–$800/mo",
+    "overview": [
+      "Las Vegas Country Club is one of the most storied residential communities in Nevada and the oldest established country club neighborhood in the Las Vegas Valley. Founded in 1967, the community spans approximately 800 acres just east of the Las Vegas Strip and features an 18-hole championship golf course, approximately 1,400 homes, and a guard-gated perimeter that has attracted celebrities, entertainers, business leaders, and Las Vegas legends for over five decades.",
+      "The community's proximity to the Strip is unmatched by any other guard-gated golf community in the valley — the Las Vegas Strip is literally minutes away, and the midcentury character of the neighborhood creates a unique atmosphere that blends old Las Vegas charm with modern luxury living. Homes range from approximately $400,000 for original-era residences to over $3 million for custom-remodeled estates on premium golf course lots.",
+      "The Las Vegas Country Club golf course is a private 18-hole layout that winds through the community, providing golf course views and mature landscaping throughout. Club membership offers golf, tennis, dining, social events, and access to the clubhouse and pool facilities. While membership is available separately from homeownership, many residents are active club members.",
+      "What makes Las Vegas Country Club irreplaceable is its combination of Strip proximity, golf course living, guard-gated security, and historical significance. This is where Las Vegas legends from Howard Hughes to Wayne Newton to Andre Agassi have called home. For buyers who want established luxury, golf, and the most convenient location of any guard-gated community in the valley, Las Vegas Country Club is the address."
+    ],
+    "highlights": [
+      { "title": "Founded in 1967", "body": "The oldest established country club community in the Las Vegas Valley. Over five decades of history with a roster of legendary residents.", "iconType": "building" },
+      { "title": "Private 18-Hole Golf Course", "body": "Championship 18-hole private golf course winding through the community with mature landscaping and golf course home sites throughout.", "iconType": "golf" },
+      { "title": "Strip-Adjacent Location", "body": "The closest guard-gated golf community to the Las Vegas Strip. Minutes from the Resort Corridor, Convention Center, and Harry Reid Airport.", "iconType": "community" },
+      { "title": "Guard-Gated Security", "body": "Guard-gated perimeter with 24-hour staffed gates, security patrols, and controlled access for resident privacy.", "iconType": "shield" },
+      { "title": "Midcentury Character", "body": "Mature landscaping, wide streets, and midcentury architecture create a character that newer master-planned communities cannot replicate.", "iconType": "home" },
+      { "title": "Historic Investment Value", "body": "An irreplaceable address with proximity to the Strip that no new community can match. Land value and location support long-term appreciation.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Golf Course Estates", "type": "Custom · Golf Views", "desc": "Premium estates on golf course lots with direct fairway and green views. The most desirable positions in the community.", "price": "From $1.5M+" },
+      { "name": "Custom Remodels", "type": "Renovated · Modern", "desc": "Original-era homes that have been fully renovated with contemporary interiors while preserving the community's midcentury character.", "price": "From $800K+" },
+      { "name": "Interior Estates", "type": "Established · Spacious", "desc": "Larger interior homes with generous lot sizes, mature landscaping, and the community's signature wide-street character.", "price": "From $600K+" },
+      { "name": "Classic Residences", "type": "Original · Character", "desc": "Original 1960s-70s era homes with midcentury architecture, offering renovation potential and the community's most accessible pricing.", "price": "From $400K+" },
+      { "name": "Country Club Grounds", "type": "Amenity · Golf", "desc": "The private country club with 18-hole golf course, clubhouse, tennis, dining, pool, and social events.", "price": "Membership" },
+      { "name": "Scotch 80s (Adjacent)", "type": "Vintage · Luxury", "desc": "The adjacent Scotch 80s neighborhood, another of Las Vegas' most storied vintage luxury areas.", "price": "From $800K+" }
+    ],
+    "parks": [
+      { "name": "Las Vegas Country Club Golf Course", "address": "3000 Joe W Brown Dr, Las Vegas, NV 89109", "acreage": "~150 acres", "amenities": ["18-hole private golf", "Pro shop", "Practice facilities", "Cart service"] },
+      { "name": "LVCC Clubhouse & Pool", "address": "3000 Joe W Brown Dr, Las Vegas, NV 89109", "acreage": "~5 acres", "amenities": ["Clubhouse dining", "Pool", "Tennis courts", "Social events", "Fitness"] },
+      { "name": "Desert Breeze Park", "address": "8275 Spring Mountain Rd, Las Vegas, NV 89147", "acreage": "~20 acres", "amenities": ["Sports fields", "Skate park", "Playground", "Walking paths", "Picnic areas"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Mabel W. Hoggard Elementary", "K–5", "7/10"],
+        ["Valley High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~3,000",
+      "medianAge": "55",
+      "avgIncome": "$200,000+",
+      "households": "1,400+",
+      "homeownership": "80%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Desert Inn Rd" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via Paradise Rd → I-15" },
+      { "time": "~3 min", "destination": "to Convention Center", "route": "via Desert Inn Rd" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via I-15 → Summerlin Pkwy" }
+    ],
+    "faqs": [
+      { "q": "What is the price range at Las Vegas Country Club?", "a": "Homes range from approximately $400,000 for original-era residences to over $3 million for custom-remodeled estates on premium golf course lots." },
+      { "q": "Is Las Vegas Country Club guard-gated?", "a": "Yes. Las Vegas Country Club is a guard-gated community with 24-hour staffed gates, security patrols, and controlled access for resident privacy." },
+      { "q": "When was Las Vegas Country Club established?", "a": "Las Vegas Country Club was founded in 1967, making it the oldest established country club community in the Las Vegas Valley." },
+      { "q": "Is the golf course private?", "a": "Yes. The Las Vegas Country Club golf course is a private 18-hole championship layout. Membership is available separately from homeownership and includes golf, tennis, dining, and social event access." },
+      { "q": "What celebrities have lived at Las Vegas Country Club?", "a": "Las Vegas Country Club has been home to many Las Vegas legends and celebrities over its 50+ year history. The community's Strip proximity and guard-gated privacy have made it a preferred address for entertainers, business leaders, and professional athletes." },
+      { "q": "What are HOA fees at Las Vegas Country Club?", "a": "HOA fees typically range from $300 to $800 per month, covering guard gate staffing, security patrols, common area maintenance, and community infrastructure. Country club membership is a separate fee." },
+      { "q": "How close is Las Vegas Country Club to the Strip?", "a": "Las Vegas Country Club is the closest guard-gated golf community to the Las Vegas Strip — approximately five minutes via Desert Inn Road. The Convention Center is even closer." },
+      { "q": "Are the homes midcentury?", "a": "Many original homes date to the late 1960s and 1970s with midcentury architecture. Many have been fully remodeled with contemporary interiors while preserving the exterior character. The community offers renovation potential at every price point." }
+    ],
+    "nearby": [
+      { "name": "Scotch 80s", "href": "/scotch-80s/", "price": "From $800K", "compare": "Adjacent vintage luxury neighborhood with estates near the Strip. No golf but historic character." },
+      { "name": "Turnberry Place", "href": "/turnberry-place/", "price": "From $500K", "compare": "Four-tower luxury high-rise complex nearby on Paradise Road." },
+      { "name": "Turnberry Towers", "href": "/turnberry-towers/", "price": "From $400K", "compare": "Twin 45-story towers near the Convention Center with resort amenities." },
+      { "name": "Canyon Gate", "href": "/canyon-gate/", "price": "From $700K", "compare": "Guard-gated golf community in west Las Vegas with Ted Robinson course." },
+      { "name": "Spanish Trail", "href": "/spanish-trail/", "price": "From $400K", "compare": "Guard-gated golf community with three 9-hole courses and resort living." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $800K", "compare": "Summerlin's premier guard-gated golf community with two Arnold Palmer courses." }
+    ],
+    "testimonials": [
+      { "quote": "There's only one Las Vegas Country Club. The location, the golf, the history — nothing else in the valley comes close. Nevada Real Estate Group helped us find a golf course estate that we completely renovated.", "name": "Robert & Sandra M.", "detail": "Bought at Las Vegas Country Club · 2024" },
+      { "quote": "We wanted guard-gated golf within five minutes of the Strip and Las Vegas Country Club was the only answer. Nevada Real Estate Group's knowledge of the community's inventory and history was invaluable.", "name": "Thomas K.", "detail": "Bought at Las Vegas Country Club · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Las Vegas Country Club",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "spanish-gate",
+    "name": "Spanish Gate",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Established",
+    "zipCodes": ["89113"],
+    "center": [-115.260, 36.068],
+    "heroEyebrow": "Southwest Las Vegas",
+    "priceRange": "$500K–$900K",
+    "established": "1997",
+    "developer": "Various builders",
+    "acreage": "~120 acres",
+    "homeCount": "~400",
+    "guardGated": true,
+    "hoaRange": "$150–$350/mo",
+    "overview": [
+      "Spanish Gate is a guard-gated residential community located in the southwest Las Vegas valley along South Rainbow Boulevard. Established in the late 1990s, the community contains approximately 400 homes and offers the security and exclusivity of a gated neighborhood at a price point that is significantly more accessible than many of the valley's other guard-gated communities.",
+      "Homes in Spanish Gate range from approximately $500,000 to $900,000, with most residences being well-maintained single-family homes built between 1997 and 2002. The community features a mix of one- and two-story homes with traditional and Mediterranean-inspired architecture, generous lot sizes, and mature landscaping that gives the neighborhood an established, settled character. Many homes have been updated and remodeled by subsequent owners.",
+      "The community amenities include the guard-gated entry with 24-hour staffed gate, community parks, walking paths, and well-maintained common areas. HOA fees are notably reasonable compared to many guard-gated communities, typically ranging from $150 to $350 per month, making Spanish Gate an attractive option for buyers who want the security of a gated community without the premium pricing of Summerlin or Henderson guard-gated neighborhoods.",
+      "Spanish Gate's location in the southwest valley provides convenient access to the I-215 Beltway, the Las Vegas Strip, and the growing retail and dining corridor along South Rainbow Boulevard and Blue Diamond Road. For families and professionals seeking guard-gated security, established homes, and a strong value proposition in the southwest Las Vegas market, Spanish Gate is a community that delivers substance without excess."
+    ],
+    "highlights": [
+      { "title": "Guard-Gated Security", "body": "24-hour staffed guard gate with controlled access. The security and privacy of a gated community at an accessible price point.", "iconType": "shield" },
+      { "title": "Accessible Price Point", "body": "Homes from $500K to $900K — significantly more accessible than many of the valley's other guard-gated neighborhoods.", "iconType": "trend" },
+      { "title": "Established Community", "body": "Built in the late 1990s with mature landscaping, wide streets, and the settled character that newer communities take years to develop.", "iconType": "home" },
+      { "title": "Low HOA Fees", "body": "HOA fees typically $150 to $350/month — among the lowest of any guard-gated community in the Las Vegas Valley.", "iconType": "community" },
+      { "title": "Southwest Location", "body": "Convenient access to I-215 Beltway, the Strip, and the growing retail and dining corridor along South Rainbow and Blue Diamond.", "iconType": "building" },
+      { "title": "Family-Friendly", "body": "Community parks, walking paths, and a quiet residential atmosphere that appeals to families, professionals, and retirees.", "iconType": "park" }
+    ],
+    "neighborhoods": [
+      { "name": "Premium Lots", "type": "Guard-Gated · Larger", "desc": "The largest lots and most updated homes in the community, many with pool and landscape upgrades.", "price": "From $750K+" },
+      { "name": "Two-Story Homes", "type": "Guard-Gated · Family", "desc": "Two-story homes offering more square footage and bedrooms. Popular with families seeking space and security.", "price": "From $600K+" },
+      { "name": "Single-Story Homes", "type": "Guard-Gated · Ranch", "desc": "Single-story homes with open floor plans and easy living. Popular with downsizers and retirees.", "price": "From $500K+" },
+      { "name": "Updated & Remodeled", "type": "Renovated · Modern", "desc": "Original homes that have been fully updated with modern kitchens, baths, and finishes.", "price": "From $600K+" },
+      { "name": "Original Condition", "type": "Value · Potential", "desc": "Homes in original condition offering renovation potential at the community's most accessible pricing.", "price": "From $500K+" },
+      { "name": "Park-Adjacent", "type": "Location · Green Space", "desc": "Homes adjacent to the community's parks and walking paths, offering green space views and direct amenity access.", "price": "From $550K+" }
+    ],
+    "parks": [
+      { "name": "Spanish Gate Community Park", "address": "Spanish Gate community, Las Vegas, NV 89113", "acreage": "~3 acres", "amenities": ["Walking paths", "Playground", "Green space", "Seating areas"] },
+      { "name": "Desert Breeze Park", "address": "8275 Spring Mountain Rd, Las Vegas, NV 89147", "acreage": "~20 acres", "amenities": ["Sports fields", "Skate park", "Playground", "Walking paths", "Picnic areas"] },
+      { "name": "Mountain Crest Park", "address": "4701 N Rainbow Blvd, Las Vegas, NV 89108", "acreage": "~15 acres", "amenities": ["Sports fields", "Dog park", "Walking trails", "Playground", "Picnic areas"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Helen Jydstrup Elementary", "K–5", "7/10"],
+        ["Walter Johnson Middle School", "6–8", "6/10"],
+        ["Durango High School", "9–12", "6/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"],
+        ["Mountain View Christian School", "PreK–8", "B+"]
+      ],
+      "Charter": [
+        ["Doral Academy of Nevada", "K–8", "8/10"],
+        ["Somerset Academy", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~1,200",
+      "medianAge": "45",
+      "avgIncome": "$125,000+",
+      "households": "~400",
+      "homeownership": "85%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via I-215 → I-15" },
+      { "time": "~20 min", "destination": "to Harry Reid Airport", "route": "via I-215 → I-15" },
+      { "time": "~15 min", "destination": "to Downtown Summerlin", "route": "via S Rainbow Blvd" },
+      { "time": "~10 min", "destination": "to Blue Diamond Rd Retail", "route": "via S Rainbow Blvd" }
+    ],
+    "faqs": [
+      { "q": "What is the price range in Spanish Gate?", "a": "Homes in Spanish Gate range from approximately $500,000 for original-condition homes to around $900,000 for fully updated homes on premium lots." },
+      { "q": "Is Spanish Gate guard-gated?", "a": "Yes. Spanish Gate has a 24-hour staffed guard gate with controlled access for resident security and privacy." },
+      { "q": "What are HOA fees in Spanish Gate?", "a": "HOA fees typically range from $150 to $350 per month — among the lowest of any guard-gated community in the Las Vegas Valley. Fees cover guard gate staffing, security, common area maintenance, and community amenities." },
+      { "q": "When was Spanish Gate built?", "a": "Spanish Gate was built primarily between 1997 and 2002. The community has mature landscaping and an established character." },
+      { "q": "What type of homes are in Spanish Gate?", "a": "Spanish Gate features single-family homes in both one- and two-story configurations with traditional and Mediterranean-inspired architecture. Most homes range from approximately 2,000 to 4,000 square feet." },
+      { "q": "Where is Spanish Gate located?", "a": "Spanish Gate is located in the southwest Las Vegas valley along South Rainbow Boulevard, with convenient access to the I-215 Beltway, the Strip, and the growing retail corridor along Blue Diamond Road." },
+      { "q": "Is Spanish Gate good for families?", "a": "Yes. Spanish Gate's guard-gated security, community parks, walking paths, and quiet residential atmosphere make it a popular choice for families. Several well-rated schools serve the area." },
+      { "q": "How does Spanish Gate compare to Southern Highlands?", "a": "Southern Highlands is a larger master-planned community with a Nicklaus-designed golf course, more amenities, and higher pricing. Spanish Gate is a smaller, more intimate guard-gated community with lower HOA fees and a more accessible price range. Both offer guard-gated security in the southwest valley." }
+    ],
+    "nearby": [
+      { "name": "Southern Highlands", "href": "/southern-highlands/", "price": "From $550K", "compare": "Large master-planned guard-gated community with Nicklaus-designed golf and premium amenities." },
+      { "name": "Mountains Edge", "href": "/mountains-edge/", "price": "From $400K", "compare": "Master-planned community in the southwest valley with parks and trails." },
+      { "name": "Rhodes Ranch", "href": "/rhodes-ranch/", "price": "From $400K", "compare": "Guard-gated golf community in the southwest valley with resort amenities." },
+      { "name": "Spring Valley", "href": "/spring-valley/", "price": "From $300K", "compare": "Established southwest Las Vegas area with diverse housing options." },
+      { "name": "Enterprise", "href": "/enterprise/", "price": "From $350K", "compare": "Growing southwest area with newer construction and retail development." },
+      { "name": "Canyon Gate", "href": "/canyon-gate/", "price": "From $700K", "compare": "Guard-gated golf community in west Las Vegas with higher price point." }
+    ],
+    "testimonials": [
+      { "quote": "We wanted guard-gated security without the guard-gated price tag. Spanish Gate delivered exactly that. Nevada Real Estate Group found us a beautifully updated home at a price we could not have found in Summerlin or Henderson.", "name": "Carlos & Maria G.", "detail": "Bought in Spanish Gate · 2024" },
+      { "quote": "Spanish Gate is one of the best-kept secrets in the valley. Low HOA, guard-gated, great location. Nevada Real Estate Group knew the community well and helped us move quickly on the right home.", "name": "Paul T.", "detail": "Bought in Spanish Gate · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Spanish Gate",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "scotch-80s",
+    "name": "Scotch 80s",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Vintage Luxury · Guard-Gated · Historic",
+    "zipCodes": ["89102"],
+    "center": [-115.169, 36.137],
+    "heroEyebrow": "Las Vegas, Nevada",
+    "priceRange": "$800K–$5M+",
+    "established": "1960s",
+    "developer": "Irwin Molasky / Paradise Development",
+    "acreage": "~180 acres",
+    "homeCount": "~300",
+    "guardGated": true,
+    "hoaRange": "$200–$500/mo",
+    "overview": [
+      "Scotch 80s is one of the most storied and prestigious residential neighborhoods in Las Vegas, a guard-gated enclave of approximately 300 homes located just minutes from the Las Vegas Strip. Developed beginning in the early 1960s, the neighborhood takes its name from Section 80 of the city plat map and has been home to some of the most prominent figures in Las Vegas history — from casino executives and entertainers to professional athletes and business leaders.",
+      "Homes in Scotch 80s range from approximately $800,000 for original-era properties to well over $5 million for custom-remodeled estates on the neighborhood's largest lots. What makes Scotch 80s unique is its lot sizes — many properties sit on half-acre to full-acre lots, giving the neighborhood a spacious, estate-like character that is impossible to replicate in modern master-planned communities. Mature trees, expansive lawns, circular driveways, and midcentury-modern architecture define the neighborhood's iconic aesthetic.",
+      "The neighborhood has experienced a significant renaissance in recent years as buyers rediscover the value of its irreplaceable location and oversized lots. Many original homes are being acquired and either meticulously remodeled or replaced with striking contemporary estates, creating an exciting juxtaposition of vintage charm and modern luxury. The trend has attracted architects, designers, and discerning buyers who appreciate the neighborhood's character and potential.",
+      "Scotch 80s occupies a unique position in the Las Vegas market — it is the only guard-gated neighborhood of this scale and character within minutes of the Strip, with lots and mature landscaping that no new community can match. For buyers seeking old Las Vegas prestige, oversized lots, and a location that puts the Strip, the airport, and the entire valley within easy reach, Scotch 80s is an address with no equal."
+    ],
+    "highlights": [
+      { "title": "Legendary Las Vegas Address", "body": "One of the most storied neighborhoods in Las Vegas. Home to casino executives, entertainers, and Las Vegas legends since the 1960s.", "iconType": "building" },
+      { "title": "Half-Acre to Full-Acre Lots", "body": "Lot sizes that are impossible to find in modern master-planned communities. Many properties sit on half-acre to full-acre parcels with mature trees and expansive landscaping.", "iconType": "home" },
+      { "title": "Guard-Gated Privacy", "body": "Guard-gated entry with 24-hour security. The privacy and exclusivity that has attracted Las Vegas' most prominent residents for over 60 years.", "iconType": "shield" },
+      { "title": "Minutes from the Strip", "body": "One of the closest residential neighborhoods to the Las Vegas Strip. Five minutes to the Resort Corridor, ten minutes to Harry Reid Airport.", "iconType": "community" },
+      { "title": "Renovation Renaissance", "body": "A wave of stunning contemporary remodels and new builds is transforming the neighborhood while preserving its historic character and oversized lots.", "iconType": "trend" },
+      { "title": "Irreplaceable Character", "body": "Mature trees, circular driveways, midcentury architecture, and a sense of history that no new community can replicate.", "iconType": "park" }
+    ],
+    "neighborhoods": [
+      { "name": "Custom Remodeled Estates", "type": "Modern · Luxury", "desc": "Original-era homes completely transformed with contemporary architecture, designer interiors, and modern amenities on oversized lots.", "price": "From $2M+" },
+      { "name": "New-Build Estates", "type": "Custom · Contemporary", "desc": "Brand-new custom homes built on acquired lots, combining modern construction with Scotch 80s' irreplaceable location and lot sizes.", "price": "From $3M+" },
+      { "name": "Classic Midcentury Homes", "type": "Original · Character", "desc": "Well-preserved midcentury homes with original architectural character, mature landscaping, and renovation potential.", "price": "From $1M+" },
+      { "name": "Value Opportunities", "type": "Renovation · Potential", "desc": "Original-condition homes on premium lots offering significant renovation or rebuild potential at the community's most accessible pricing.", "price": "From $800K+" },
+      { "name": "Premium Lot Homes", "type": "Oversized · Estate", "desc": "The largest lots in the neighborhood — full-acre and corner properties with the most development potential.", "price": "From $2.5M+" },
+      { "name": "Las Vegas Country Club (Adjacent)", "type": "Golf · Guard-Gated", "desc": "The adjacent Las Vegas Country Club community with 18-hole private golf course and similar vintage character.", "price": "From $400K+" }
+    ],
+    "parks": [
+      { "name": "Scotch 80s Community Grounds", "address": "Scotch 80s, Las Vegas, NV 89102", "acreage": "~180 acres total", "amenities": ["Tree-lined streets", "Mature landscaping", "Walking-friendly blocks", "Historic character"] },
+      { "name": "Desert Breeze Park", "address": "8275 Spring Mountain Rd, Las Vegas, NV 89147", "acreage": "~20 acres", "amenities": ["Sports fields", "Skate park", "Playground", "Walking paths", "Picnic areas"] },
+      { "name": "Angel Park", "address": "5601 S Decatur Blvd, Las Vegas, NV 89118", "acreage": "~30 acres", "amenities": ["Two 18-hole golf courses", "Cloud Nine Par-3", "Pro shop", "Dining"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Walter Bracken STEAM Academy", "K–5", "8/10"],
+        ["Valley High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~700",
+      "medianAge": "52",
+      "avgIncome": "$250,000+",
+      "households": "~300",
+      "homeownership": "85%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Rancho Dr / I-15" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~5 min", "destination": "to Downtown / Fremont", "route": "via Las Vegas Blvd" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via US-95 West" }
+    ],
+    "faqs": [
+      { "q": "What is the price range in Scotch 80s?", "a": "Homes in Scotch 80s range from approximately $800,000 for original-condition properties to well over $5 million for custom-remodeled or newly built estates on the neighborhood's largest lots." },
+      { "q": "Is Scotch 80s guard-gated?", "a": "Yes. Scotch 80s has a guard-gated entry with 24-hour security, providing the privacy that has attracted Las Vegas' most prominent residents for over 60 years." },
+      { "q": "How large are the lots in Scotch 80s?", "a": "Lots in Scotch 80s are exceptionally large by Las Vegas standards, with many properties sitting on half-acre to full-acre parcels. These lot sizes are impossible to find in modern master-planned communities." },
+      { "q": "When was Scotch 80s built?", "a": "Scotch 80s was developed beginning in the early 1960s. The neighborhood takes its name from Section 80 of the Las Vegas city plat map. Many original midcentury homes remain, alongside stunning contemporary remodels." },
+      { "q": "What celebrities have lived in Scotch 80s?", "a": "Scotch 80s has been home to casino executives, entertainers, professional athletes, and business leaders throughout its 60+ year history. The neighborhood's guard-gated privacy and Strip proximity have made it one of the most prestigious addresses in Las Vegas." },
+      { "q": "Are people building new homes in Scotch 80s?", "a": "Yes. Scotch 80s is experiencing a renaissance with buyers acquiring original homes on premium lots and either completely remodeling them or building new contemporary estates. The trend is transforming the neighborhood while preserving its historic character." },
+      { "q": "What are HOA fees in Scotch 80s?", "a": "HOA fees in Scotch 80s typically range from $200 to $500 per month, covering guard gate staffing, security patrols, and common area maintenance." },
+      { "q": "How does Scotch 80s compare to Las Vegas Country Club?", "a": "Both are vintage Las Vegas neighborhoods near the Strip with guard-gated security. Las Vegas Country Club includes a private 18-hole golf course and has more homes (~1,400). Scotch 80s has larger lots, fewer homes (~300), and a more exclusive, estate-like character without a golf course." }
+    ],
+    "nearby": [
+      { "name": "Las Vegas Country Club", "href": "/las-vegas-country-club/", "price": "From $400K", "compare": "Adjacent guard-gated golf community with 18-hole private course and vintage character." },
+      { "name": "Turnberry Place", "href": "/turnberry-place/", "price": "From $500K", "compare": "Four-tower luxury high-rise nearby for buyers wanting the vertical lifestyle." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated community. Modern custom estates with Red Rock views." },
+      { "name": "Rancho Circle", "href": "/rancho-circle/", "price": "From $1M", "compare": "Another of Las Vegas' historic luxury neighborhoods with large lots near Rancho Drive." },
+      { "name": "Canyon Gate", "href": "/canyon-gate/", "price": "From $700K", "compare": "Guard-gated golf community in west Las Vegas. Newer construction than Scotch 80s." },
+      { "name": "Spanish Trail", "href": "/spanish-trail/", "price": "From $400K", "compare": "Guard-gated golf community in the southwest valley with three 9-hole courses." }
+    ],
+    "testimonials": [
+      { "quote": "Scotch 80s is old Las Vegas at its finest. The lots, the trees, the history — you can't replicate this anywhere. Nevada Real Estate Group helped us find a classic midcentury estate on a half-acre lot that we're now renovating into our dream home.", "name": "Jonathan & Lisa V.", "detail": "Bought in Scotch 80s · 2024" },
+      { "quote": "We looked at every luxury community in the valley and kept coming back to Scotch 80s. The lot sizes and Strip proximity are unmatched. Nevada Real Estate Group's deep knowledge of the neighborhood was essential.", "name": "Michael & Diana W.", "detail": "Bought in Scotch 80s · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Scotch 80s",
+    "ylopoMinPrice": 800000
+  }
+]

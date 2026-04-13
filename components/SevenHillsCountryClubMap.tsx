@@ -2,9 +2,9 @@
 import { useEffect, useRef } from 'react'
 
 const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? ''
-const CENTER: [number, number] = [-115.346, 36.195]
+const CENTER: [number, number] = [-115.108, 36.007]
 
-export default function SummerlinWestMap() {
+export default function SevenHillsCountryClubMap() {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
 
@@ -40,7 +40,7 @@ export default function SummerlinWestMap() {
           .setLngLat(CENTER)
           .setPopup(
             new mapboxgl.Popup({ offset: 16, className: 'summerlin-popup' })
-              .setHTML('<div style="font-family:DM Sans,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Summerlin West</div><div style="font-size:11px;color:#555;margin-top:2px;">Las Vegas, NV</div>')
+              .setHTML('<div style="font-family:DM Sans,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Seven Hills Country Club</div><div style="font-size:11px;color:#555;margin-top:2px;">Henderson, NV</div>')
           )
           .addTo(map)
       })
@@ -58,10 +58,10 @@ export default function SummerlinWestMap() {
         border: '1px solid #EDE9E3', borderRadius: '4px', padding: '8px 12px', pointerEvents: 'none',
       }}>
         <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1B2A4A', fontFamily: 'DM Sans,sans-serif' }}>
-          Summerlin West
+          Seven Hills Country Club
         </div>
         <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
-          Las Vegas, Nevada · 5,600+ acres
+          Henderson, Nevada · ~250 acres
         </div>
       </div>
     </div>
