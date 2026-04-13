@@ -155,7 +155,7 @@ export default async function Scotch80sPage() {
       </div>
 
       <header id="hero" className="summerlin-hero hero-v2">
-        <div className="hero-bg" />
+        <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=1600&h=700&q=80" alt="Scotch 80s community aerial view, Las Vegas Nevada" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
         <div className="hero-overlay" />
         <div className="hero-v2-content">
           <div className="container">

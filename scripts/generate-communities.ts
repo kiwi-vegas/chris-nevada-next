@@ -67,6 +67,56 @@ const ICON_SVG: Record<string, string> = {
   home: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
 }
 
+// Area-specific hero images — different photo per geographic region
+function getHeroImage(c: CommunityData): string {
+  const type = c.type?.toLowerCase() || ''
+  const slug = c.slug
+
+  // High-rise / condo pages — Strip skyline at night
+  if (type.includes('high-rise') || type.includes('tower') || type.includes('condo-hotel') ||
+      ['veer-towers','waldorf-astoria-las-vegas','panorama-towers','turnberry-towers','turnberry-place','sky-las-vegas','allure-las-vegas','juhl','the-ogden','soho-lofts','newport-lofts','the-martin','one-queensridge-place','cello-tower','four-seasons-private-residences','palms-place','trump-international'].includes(slug)) {
+    return 'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?auto=format&fit=crop&w=1600&h=700&q=80'
+  }
+
+  // Henderson communities — Henderson/Lake Mead area
+  if (c.city === 'Henderson' || c.parentCommunity === 'Anthem' || c.parentCommunity === 'Green Valley' || c.parentCommunity === 'MacDonald Highlands' || c.parentCommunity === 'MacDonald Ranch' || c.parentCommunity === 'Seven Hills' || c.parentCommunity === 'Lake Las Vegas' || c.parentCommunity === 'Cadence' || c.parentCommunity === 'Inspirada' || c.parentCommunity === 'Sun City Anthem') {
+    return 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1600&h=700&q=80'
+  }
+
+  // North Las Vegas communities
+  if (c.city === 'North Las Vegas' || c.parentCommunity === 'Aliante') {
+    return 'https://images.unsplash.com/photo-1570126618953-d437176e8c79?auto=format&fit=crop&w=1600&h=700&q=80'
+  }
+
+  // Southern Highlands
+  if (slug.includes('southern-highlands') || c.parentCommunity === 'Southern Highlands') {
+    return 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&h=700&q=80'
+  }
+
+  // Summerlin communities — Red Rock Canyon backdrop
+  if (c.parentCommunity === 'Summerlin' || c.parentCommunity === 'Summerlin West' || c.parentCommunity === 'Sun City Summerlin' || slug.startsWith('summerlin') || ['the-summit-club','mesa-ridge','red-rock-country-club','sun-city-summerlin','the-paseos','the-peaks','section-10'].includes(slug)) {
+    return 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1600&h=700&q=80'
+  }
+
+  // Downtown / Arts District / Vintage
+  if (slug.includes('downtown') || slug.includes('arts-district') || slug.includes('chinatown') || slug === 'scotch-80s' || slug === 'rancho-circle' || slug === 'rancho-bel-air') {
+    return 'https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=1600&h=700&q=80'
+  }
+
+  // Mountains Edge / SW Las Vegas
+  if (slug.includes('mountains-edge') || slug.includes('southwest') || slug.includes('spring-mountain') || slug === 'rhodes-ranch' || slug === 'spanish-trail' || slug === 'spanish-hills') {
+    return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&h=700&q=80'
+  }
+
+  // Boulder City — desert/lake area
+  if (slug === 'boulder-city') {
+    return 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1600&h=700&q=80'
+  }
+
+  // Default — Las Vegas aerial
+  return 'https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?auto=format&fit=crop&w=1600&h=700&q=80'
+}
+
 function pascalCase(str: string): string {
   return str.split(/[-\s]/).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('')
 }
@@ -180,7 +230,7 @@ export default async function ${componentName}() {
       </div>
 
       <header id="hero" className="summerlin-hero hero-v2">
-        <div className="hero-bg" />
+        <img src="${getHeroImage(c)}" alt="${c.name} community aerial view, ${c.city} Nevada" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
         <div className="hero-overlay" />
         <div className="hero-v2-content">
           <div className="container">

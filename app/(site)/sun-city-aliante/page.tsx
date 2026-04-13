@@ -155,7 +155,7 @@ export default async function SunCityAliantePage() {
       </div>
 
       <header id="hero" className="summerlin-hero hero-v2">
-        <div className="hero-bg" />
+        <img src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?auto=format&fit=crop&w=1600&h=700&q=80" alt="Sun City Aliante community aerial view, North Las Vegas Nevada" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
         <div className="hero-overlay" />
         <div className="hero-v2-content">
           <div className="container">

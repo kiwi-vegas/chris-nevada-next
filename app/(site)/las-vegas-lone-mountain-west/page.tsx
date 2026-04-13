@@ -155,7 +155,7 @@ export default async function LasVegasLoneMountainWestPage() {
       </div>
 
       <header id="hero" className="summerlin-hero hero-v2">
-        <div className="hero-bg" />
+        <img src="https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?auto=format&fit=crop&w=1600&h=700&q=80" alt="Lone Mountain West community aerial view, Las Vegas Nevada" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
         <div className="hero-overlay" />
         <div className="hero-v2-content">
           <div className="container">
