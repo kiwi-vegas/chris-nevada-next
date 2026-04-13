@@ -93,6 +93,9 @@ const nextConfig: NextConfig = {
       { source: '/historic-neighborhoods/', destination: '/vintage-historic-neighborhoods', permanent: true },
       { source: '/vintage-historic', destination: '/vintage-historic-neighborhoods', permanent: true },
       { source: '/vintage-historic/', destination: '/vintage-historic-neighborhoods', permanent: true },
+      // Duplicate content redirects
+      { source: '/canyon-gate-country-club', destination: '/canyon-gate', permanent: true },
+      { source: '/canyon-gate-country-club/', destination: '/canyon-gate', permanent: true },
     ]
   },
 }
