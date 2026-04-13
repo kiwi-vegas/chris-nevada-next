@@ -99,12 +99,6 @@ const NEARBY = [
   { name: 'Providence', href: '/providence/', price: 'From $400K', compare: 'Northwest Las Vegas master plan at a more accessible price tier with newer construction and family-oriented amenities.' },
 ]
 
-const RELATED_POSTS = [
-  { title: 'The Best Schools in Summerlin: A Complete Parent\u2019s Guide', category: 'Education', href: '/blog' },
-  { title: 'Summerlin vs. Henderson: Which Las Vegas Community Is Right for You?', category: 'Comparison', href: '/blog' },
-  { title: 'New Construction Homes in Summerlin: What\u2019s Available in 2026', category: 'New Builds', href: '/blog' },
-  { title: 'Guard-Gated Communities in Las Vegas: The Complete Guide', category: 'Lifestyle', href: '/blog' },
-]
 
 /* ── Metadata ───────────────────────────────────────────────── */
 
@@ -598,31 +592,6 @@ export default async function SummerlinPage() {
         </div>
       </section>
 
-      {/* RELATED BLOG POSTS */}
-      <section id="related-posts" className="related-posts-v2">
-        <div className="container">
-          <div className="section-header" style={{ textAlign: 'center' }}>
-            <span className="section-label">Further Reading</span>
-            <h2>Summerlin Resources &amp; Guides</h2>
-          </div>
-          <div className="related-posts-v2-grid">
-            <Link href={RELATED_POSTS[0].href} className="related-posts-v2-featured">
-              <span className="related-posts-v2-badge">{RELATED_POSTS[0].category}</span>
-              <h3>{RELATED_POSTS[0].title}</h3>
-              <span className="related-posts-v2-link">Read Article &rarr;</span>
-            </Link>
-            <div className="related-posts-v2-small">
-              {RELATED_POSTS.slice(1).map(p => (
-                <Link href={p.href} key={p.title} className="related-posts-v2-card">
-                  <span className="related-posts-v2-badge">{p.category}</span>
-                  <h4>{p.title}</h4>
-                  <span className="related-posts-v2-link">Read &rarr;</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section id="cta" className="cta-v2">
