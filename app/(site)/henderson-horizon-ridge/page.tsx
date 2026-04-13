@@ -359,12 +359,12 @@ export default async function HendersonHorizonRidgePage() {
               { name: 'Inspirada', href: '/inspirada/', price: 'From $420K', compare: 'Newer Henderson master plan with new construction and modern amenities.' },
               { name: 'Cadence', href: '/cadence/', price: 'From $350K', compare: 'Henderson\'s newest large master plan with new construction and family amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

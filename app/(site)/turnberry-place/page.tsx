@@ -359,12 +359,12 @@ export default async function TurnberryPlacePage() {
               { name: 'Waldorf Astoria Las Vegas', href: '/waldorf-astoria-las-vegas/', price: 'From $500K', compare: 'Five-star branded residences at CityCenter with full hotel services.' },
               { name: 'Las Vegas Country Club', href: '/las-vegas-country-club/', price: 'From $400K', compare: 'Established golf community just south of Turnberry Place. Single-family and estates.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

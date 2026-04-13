@@ -359,12 +359,12 @@ export default async function DesertShoresVillasPage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $400K', compare: 'Nevada\'s premier master-planned community minutes west with every price point.' },
               { name: 'Los Prados', href: '/los-prados/', price: 'From $300K', compare: 'Guard-gated golf community nearby for buyers who prefer golf course views over lake views.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

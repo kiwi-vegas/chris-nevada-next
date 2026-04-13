@@ -359,12 +359,12 @@ export default async function BlueDiamondPage() {
               { name: 'Mountains Edge', href: '/mountains-edge/', price: 'From $375K', compare: 'Master-planned community with mountain views and family amenities. 15 minutes east on Blue Diamond Rd.' },
               { name: 'Mount Charleston', href: '/mount-charleston/', price: 'From $400K', compare: 'Mountain living at 7,000+ feet elevation. Cabins and custom homes in the Spring Mountains.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

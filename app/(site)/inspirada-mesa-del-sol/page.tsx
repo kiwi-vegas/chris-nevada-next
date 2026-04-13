@@ -358,12 +358,12 @@ export default async function InspiradaMesaDelSolPage() {
               { name: 'Anthem', href: '/anthem/', price: 'From $400K', compare: 'Henderson\'s largest master-planned community with mountain views and diverse price points.' },
               { name: 'Sun City Anthem', href: '/sun-city-anthem/', price: 'From $350K', compare: 'Premier 55+ community adjacent to Inspirada with two golf courses and three recreation centers.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

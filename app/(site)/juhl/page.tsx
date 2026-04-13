@@ -359,12 +359,12 @@ export default async function JuhlPage() {
               { name: 'Allure Las Vegas', href: '/allure-las-vegas/', price: 'From $250K', compare: '41-story tower near the north Strip. More traditional high-rise living.' },
               { name: 'Sky Las Vegas', href: '/sky-las-vegas/', price: 'From $300K', compare: 'Strip-front high-rise for buyers wanting the boulevard lifestyle.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

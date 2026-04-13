@@ -359,12 +359,12 @@ export default async function RanchoBelAirPage() {
               { name: 'Spanish Trail', href: '/spanish-trail/', price: 'From $500K', compare: 'Guard-gated golf community near the Strip with three 9-hole courses.' },
               { name: 'Tournament Hills', href: '/tournament-hills/', price: 'From $800K', compare: 'Guard-gated luxury enclave within Summerlin with TPC golf adjacency.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

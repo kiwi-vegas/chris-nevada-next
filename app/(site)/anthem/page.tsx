@@ -359,12 +359,12 @@ export default async function AnthemPage() {
               { name: 'Green Valley Ranch', href: '/green-valley-ranch/', price: 'From $400K', compare: 'Henderson\'s premier established master plan with parks, top schools, and retail.' },
               { name: 'Cadence', href: '/cadence/', price: 'From $350K', compare: 'Henderson\'s newest master plan with new construction and Central Park.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

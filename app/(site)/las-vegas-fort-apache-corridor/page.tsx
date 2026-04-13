@@ -359,12 +359,12 @@ export default async function LasVegasFortApacheCorridorPage() {
               { name: 'Enterprise', href: '/enterprise/', price: 'From $350K', compare: 'Growing community to the south with newer construction and expanding commercial infrastructure.' },
               { name: 'Lone Mountain', href: '/lone-mountain/', price: 'From $400K', compare: 'Community to the north with mountain views and a mix of established and newer homes.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

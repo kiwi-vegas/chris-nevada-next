@@ -359,12 +359,12 @@ export default async function SummerlinKestrelPage() {
               { name: 'La Madre Peaks', href: '/summerlin-la-madre-peaks/', price: 'From $800K', compare: 'Luxury new-construction village in Summerlin West at higher price points.' },
               { name: 'Discovery', href: '/summerlin-discovery/', price: 'From $450K', compare: 'Summerlin North new-construction village at similar price points.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

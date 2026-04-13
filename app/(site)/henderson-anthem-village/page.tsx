@@ -359,12 +359,12 @@ export default async function HendersonAnthemVillagePage() {
               { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Master-planned community to the north with golf course, parks, and mountain views.' },
               { name: 'Inspirada', href: '/inspirada/', price: 'From $400K', compare: 'Newer master-planned community to the south with contemporary design and resort amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

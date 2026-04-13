@@ -359,12 +359,12 @@ export default async function GibsonSpringsPage() {
               { name: 'Old Town Henderson', href: '/henderson-old-town/', price: 'From $300K', compare: 'Historic walkable neighborhood with Water Street District revitalization.' },
               { name: 'Tuscany Village', href: '/tuscany-village/', price: 'From $350K', compare: 'Nearby Henderson community with Mediterranean-inspired architecture.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

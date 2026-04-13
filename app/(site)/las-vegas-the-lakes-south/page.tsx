@@ -359,12 +359,12 @@ export default async function LasVegasTheLakesSouthPage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Premier master-planned community to the west with guard-gated options and premium amenities.' },
               { name: 'Canyon Gate', href: '/canyon-gate/', price: 'From $500K', compare: 'Guard-gated golf community nearby with Ted Robinson course and luxury homes.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

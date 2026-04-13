@@ -364,12 +364,12 @@ export default async function SunridgeAtMacdonaldRanchPage() {
               { name: 'Green Valley Ranch', href: '/green-valley-ranch/', price: 'From $400K', compare: 'Adjacent community with resort casino and The District shopping center.' },
               { name: 'Anthem', href: '/anthem/', price: 'From $400K', compare: 'Henderson master plan with top-rated schools and resort-style amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -359,12 +359,12 @@ export default async function SummerlinWestPage() {
               { name: 'Providence', href: '/providence/', price: 'From $450K', compare: 'Family-friendly master-planned community in northwest Las Vegas with parks and trails.' },
               { name: 'The Summit Club', href: '/the-summit-club/', price: 'From $5M', compare: 'The most exclusive private community in Las Vegas with Tom Fazio golf. By invitation only.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

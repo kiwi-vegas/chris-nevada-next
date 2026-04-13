@@ -359,12 +359,12 @@ export default async function LasVegasArtsDistrictPage() {
               { name: 'The Ogden', href: '/the-ogden/', price: 'From $200K', compare: 'Downtown high-rise condo with urban living and Fremont Street views.' },
               { name: 'Juhl', href: '/juhl/', price: 'From $200K', compare: 'Downtown condo community with loft-style units and a creative community focus.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

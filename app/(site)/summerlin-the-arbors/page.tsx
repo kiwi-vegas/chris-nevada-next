@@ -359,12 +359,12 @@ export default async function SummerlinTheArborsPage() {
               { name: 'Sun City Summerlin', href: '/sun-city-summerlin/', price: 'From $300K', compare: 'Adjacent 55+ community with golf courses and extensive social programming.' },
               { name: 'The Trails', href: '/summerlin-the-trails/', price: 'From $500K', compare: 'Another established Summerlin North village with guard-gated Country Rose Estates.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

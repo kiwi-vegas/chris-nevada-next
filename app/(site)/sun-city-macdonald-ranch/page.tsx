@@ -364,12 +364,12 @@ export default async function SunCityMacdonaldRanchPage() {
               { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Nearby Henderson community with Rio Secco golf. Not age-restricted.' },
               { name: 'Foothills at MacDonald Ranch', href: '/foothills-at-macdonald-ranch/', price: 'From $1M', compare: 'Guard-gated luxury community adjacent with golf and elevated views.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

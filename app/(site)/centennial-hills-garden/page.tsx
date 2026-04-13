@@ -359,12 +359,12 @@ export default async function CentennialHillsGardenPage() {
               { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $450K', compare: 'Newer master plan northwest with Skye Center amenities and trail lifestyle.' },
               { name: 'Summerlin West', href: '/summerlin-west/', price: 'From $400K', compare: 'Summerlin\'s newest section with Red Rock views and the Summerlin brand.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

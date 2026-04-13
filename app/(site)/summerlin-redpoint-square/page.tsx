@@ -359,12 +359,12 @@ export default async function SummerlinRedpointSquarePage() {
               { name: 'Providence', href: '/providence/', price: 'From $450K', compare: 'Family-friendly master-planned community in the northwest Las Vegas corridor.' },
               { name: 'Centennial Hills', href: '/centennial-hills/', price: 'From $400K', compare: 'Established northwest Las Vegas community with parks, trails, and top-rated schools.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

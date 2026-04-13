@@ -359,12 +359,12 @@ export default async function SummerlinRedpointPage() {
               { name: 'The Ridges', href: '/summerlin-the-ridges/', price: 'From $2M', compare: 'Summerlin South ultra-luxury guard-gated community with similar Red Rock proximity.' },
               { name: 'Kestrel Commons', href: '/summerlin-kestrel-commons/', price: 'From $450K', compare: 'Summerlin West village with townhomes and single-family homes at lower entry pricing.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

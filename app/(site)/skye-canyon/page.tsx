@@ -359,12 +359,12 @@ export default async function SkyeCanyonPage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'The valley\'s premier master-planned community. More mature but higher pricing across the board.' },
               { name: 'Desert Shores', href: '/desert-shores/', price: 'From $350K', compare: 'Waterfront community with man-made lakes. Different lifestyle focus — water versus mountains.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

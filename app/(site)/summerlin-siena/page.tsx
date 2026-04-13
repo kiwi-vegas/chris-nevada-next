@@ -359,12 +359,12 @@ export default async function SummerlinSienaPage() {
               { name: 'Trilogy at Summerlin', href: '/trilogy-at-summerlin/', price: 'From $500K', compare: 'Shea Homes 55+ community in Summerlin. Similar builder, newer construction.' },
               { name: 'Solera at Anthem', href: '/solera-at-anthem/', price: 'From $350K', compare: 'Henderson\'s popular 55+ community. Not guard-gated but strong social programming.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

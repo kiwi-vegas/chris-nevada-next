@@ -359,12 +359,12 @@ export default async function CanyonGateCountryClubPage() {
               { name: 'The Lakes', href: '/the-lakes/', price: 'From $350K', compare: 'Established lakefront community minutes away with recreational lakes and a more accessible entry price.' },
               { name: 'Summerlin', href: '/summerlin/', price: 'From $400K', compare: 'Nevada\'s premier master-planned community immediately west with every price point and amenity.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

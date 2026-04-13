@@ -358,12 +358,12 @@ export default async function CelloTowerPage() {
               { name: 'One Queensridge Place', href: '/one-queensridge-place/', price: 'From $500K', compare: 'Luxury high-rise towers in Queensridge — suburban luxury vs. urban living.' },
               { name: 'Veer Towers', href: '/veer-towers/', price: 'From $400K', compare: 'CityCenter Strip high-rise with resort amenities. Different lifestyle profile.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

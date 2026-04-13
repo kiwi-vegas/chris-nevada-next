@@ -359,12 +359,12 @@ export default async function LasVegasSummerlinNorthAreaPage() {
               { name: 'Centennial Hills', href: '/centennial-hills/', price: 'From $400K', compare: 'Northwest Las Vegas community north of Summerlin with newer development.' },
               { name: 'Queensridge', href: '/queensridge/', price: 'From $600K', compare: 'Guard-gated luxury community adjacent to Summerlin\'s eastern edge.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -359,12 +359,12 @@ export default async function ParadisePage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Premier master-planned community 20 minutes west. Suburban luxury alternative to urban Paradise living.' },
               { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Guard-gated Henderson community with golf, Strip views, and family-oriented living.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

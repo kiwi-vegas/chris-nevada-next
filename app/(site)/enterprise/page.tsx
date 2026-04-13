@@ -359,12 +359,12 @@ export default async function EnterprisePage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Premier master-planned community on the west side. Higher price points but premier amenities.' },
               { name: 'Henderson', href: '/henderson/', price: 'From $350K', compare: 'Incorporated city to the east. Master-planned communities, top schools, safest-city rankings.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

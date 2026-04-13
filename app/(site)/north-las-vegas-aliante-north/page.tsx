@@ -359,12 +359,12 @@ export default async function NorthLasVegasAlianteNorthPage() {
               { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $450K', compare: 'Newer master plan further northwest with active new construction.' },
               { name: 'North Las Vegas', href: '/north-las-vegas/', price: 'From $300K', compare: 'The broader North Las Vegas area with diverse housing options at accessible price points.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

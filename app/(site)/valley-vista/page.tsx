@@ -359,12 +359,12 @@ export default async function ValleyVistaPage() {
               { name: 'North Las Vegas', href: '/north-las-vegas/', price: 'From $300K', compare: 'The broader city with diverse communities and growing commercial amenities.' },
               { name: 'Centennial Hills', href: '/centennial-hills/', price: 'From $350K', compare: 'Growing northwest Las Vegas community with more established infrastructure.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

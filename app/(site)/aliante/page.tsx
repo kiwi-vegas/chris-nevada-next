@@ -359,12 +359,12 @@ export default async function AliantePage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'The valley\'s premier master-planned community. Higher prices but more extensive amenities.' },
               { name: 'Downtown Las Vegas', href: '/downtown-las-vegas/', price: 'From $200K', compare: 'The urban core with Arts District and walkable entertainment. 15 minutes south via I-15.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

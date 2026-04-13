@@ -359,12 +359,12 @@ export default async function SummerlinTheCanyonsPage() {
               { name: 'Red Rock Country Club', href: '/red-rock-country-club/', price: 'From $1.2M', compare: 'Guard-gated golf community. Two Arnold Palmer courses. Comparable to Canyon Fairways pricing.' },
               { name: 'The Trails', href: '/summerlin-the-trails/', price: 'From $500K', compare: 'Another Summerlin North village with a guard-gated enclave (Country Rose Estates).' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -359,12 +359,12 @@ export default async function HendersonAnthemCenterPage() {
               { name: 'MacDonald Ranch', href: '/macdonald-ranch/', price: 'From $300K', compare: 'Established Henderson master plan with golf and views at a range of price points.' },
               { name: 'Cadence', href: '/cadence/', price: 'From $350K', compare: 'Henderson\'s newest large master plan with abundant new construction and family amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

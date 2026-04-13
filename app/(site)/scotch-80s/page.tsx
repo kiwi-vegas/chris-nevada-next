@@ -359,12 +359,12 @@ export default async function Scotch80sPage() {
               { name: 'Canyon Gate', href: '/canyon-gate/', price: 'From $700K', compare: 'Guard-gated golf community in west Las Vegas. Newer construction than Scotch 80s.' },
               { name: 'Spanish Trail', href: '/spanish-trail/', price: 'From $400K', compare: 'Guard-gated golf community in the southwest valley with three 9-hole courses.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

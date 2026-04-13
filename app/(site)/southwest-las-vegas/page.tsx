@@ -359,12 +359,12 @@ export default async function SouthwestLasVegasPage() {
               { name: 'Spring Valley', href: '/spring-valley/', price: 'From $300K', compare: 'Established central community with mature neighborhoods and strong retail access.' },
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Premier master-planned community in the west valley with guard-gated enclaves.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -359,12 +359,12 @@ export default async function PaintedDesertPage() {
               { name: 'Desert Shores', href: '/desert-shores/', price: 'From $350K', compare: 'Lakefront community nearby with recreational lakes and waterfront living.' },
               { name: 'Canyon Gate Country Club', href: '/canyon-gate-country-club/', price: 'From $700K', compare: 'Guard-gated Ted Robinson golf community in west Las Vegas with higher price points and private club amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

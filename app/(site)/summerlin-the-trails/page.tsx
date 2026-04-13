@@ -359,12 +359,12 @@ export default async function SummerlinTheTrailsPage() {
               { name: 'The Hills', href: '/summerlin-the-hills/', price: 'From $500K', compare: 'Summerlin North village with guard-gated Mountain Trails enclave.' },
               { name: 'The Canyons', href: '/summerlin-the-canyons/', price: 'From $500K', compare: 'Summerlin North village with guard-gated enclaves and dramatic canyon views.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

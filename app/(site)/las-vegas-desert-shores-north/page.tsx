@@ -359,12 +359,12 @@ export default async function LasVegasDesertShoresNorthPage() {
               { name: 'Spring Valley', href: '/spring-valley/', price: 'From $300K', compare: 'Large established community to the south with diverse housing and central location.' },
               { name: 'Centennial Hills', href: '/centennial-hills/', price: 'From $400K', compare: 'Growing northwest community with newer construction and family-friendly amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

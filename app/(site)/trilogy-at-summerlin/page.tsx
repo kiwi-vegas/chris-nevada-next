@@ -359,12 +359,12 @@ export default async function TrilogyAtSummerlinPage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'The broader master-planned community with 20+ villages and all-ages neighborhoods.' },
               { name: 'Sun City Anthem', href: '/sun-city-anthem/', price: 'From $350K', compare: 'Henderson\'s premier Del Webb 55+ community with two golf courses and 7,200+ homes.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

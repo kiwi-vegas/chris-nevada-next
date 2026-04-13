@@ -359,12 +359,12 @@ export default async function RanchoCirclePage() {
               { name: 'The Summit Club', href: '/the-summit-club/', price: 'From $5M', compare: 'Las Vegas\' most exclusive private community. Newer construction with Tom Fazio golf.' },
               { name: 'Las Vegas Country Club', href: '/las-vegas-country-club/', price: 'From $500K', compare: 'Historic golf community near the Strip. Similar vintage Las Vegas character.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

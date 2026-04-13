@@ -359,12 +359,12 @@ export default async function MountainsEdgePage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'The valley\'s premier master-planned community with 20+ villages and premium amenities.' },
               { name: 'Inspirada', href: '/inspirada/', price: 'From $420K', compare: 'Henderson\'s newest master-planned community with new construction and resort-style amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

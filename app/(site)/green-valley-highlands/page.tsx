@@ -359,12 +359,12 @@ export default async function GreenValleyHighlandsPage() {
               { name: 'MacDonald Ranch', href: '/macdonald-ranch/', price: 'From $450K', compare: 'Henderson community adjacent to MacDonald Highlands with mountain views.' },
               { name: 'Anthem East', href: '/anthem-east/', price: 'From $500K', compare: 'Family section of Anthem with mountain trails and top-rated schools.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

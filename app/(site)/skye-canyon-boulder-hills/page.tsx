@@ -359,12 +359,12 @@ export default async function SkyeCanyonBoulderHillsPage() {
               { name: 'Skye Hills', href: '/skye-hills/', price: 'From $400K', compare: 'Adjacent community with newer construction and growing amenities.' },
               { name: 'Aliante', href: '/aliante/', price: 'From $350K', compare: 'Established North Las Vegas master plan with golf, nature park, and family amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -359,12 +359,12 @@ export default async function ThePaseosPage() {
               { name: 'The Peaks', href: '/the-peaks/', price: 'From $1M', compare: 'Guard-gated luxury village in Summerlin with new construction.' },
               { name: 'Centennial Hills', href: '/centennial-hills/', price: 'From $400K', compare: 'Northwest Las Vegas master plan with newer homes and family-friendly amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

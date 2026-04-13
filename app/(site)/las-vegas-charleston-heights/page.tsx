@@ -359,12 +359,12 @@ export default async function LasVegasCharlestonHeightsPage() {
               { name: 'Scotch 80s', href: '/scotch-80s/', price: 'From $800K', compare: 'Iconic legacy neighborhood to the south with ranch estates and historic character.' },
               { name: 'Rancho Circle', href: '/rancho-circle/', price: 'From $1M', compare: 'Las Vegas\'s most historic luxury enclave with estate properties on Rancho Drive.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -359,12 +359,12 @@ export default async function LasVegasMeadowsVillagePage() {
               { name: 'Peccole Ranch', href: '/peccole-ranch/', price: 'From $450K', compare: 'Established family community to the west with mature landscaping and community parks.' },
               { name: 'Paradise', href: '/paradise/', price: 'From $250K', compare: 'Unincorporated area east of the Strip with diverse housing and strong rental demand.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

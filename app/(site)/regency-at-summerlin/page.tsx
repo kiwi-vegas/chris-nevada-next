@@ -359,12 +359,12 @@ export default async function RegencyAtSummerlinPage() {
               { name: 'The Ridges', href: '/summerlin-the-ridges/', price: 'From $2M', compare: 'Summerlin\'s ultra-luxury guard-gated enclave for buyers without age restrictions.' },
               { name: 'Sun Colony at Siena', href: '/sun-colony-at-siena/', price: 'From $700K', compare: '55+ guard-gated enclave within Siena village offering luxury active adult living.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

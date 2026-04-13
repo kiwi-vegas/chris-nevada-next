@@ -359,12 +359,12 @@ export default async function LasVegasSunriseManorPage() {
               { name: 'Whitney Ranch', href: '/whitney-ranch/', price: 'From $350K', compare: 'Established Henderson community with family amenities and good schools.' },
               { name: 'Boulder City', href: '/boulder-city/', price: 'From $400K', compare: 'Small-town atmosphere near Lake Mead with no gaming and a historic downtown.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

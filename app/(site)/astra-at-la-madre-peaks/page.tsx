@@ -358,12 +358,12 @@ export default async function AstraAtLaMadrePeaksPage() {
               { name: 'Ascension at The Peaks', href: '/ascension-at-the-peaks/', price: 'From $1M', compare: 'Guard-gated luxury new construction in Summerlin\'s Peaks village. 561 homes.' },
               { name: 'Grand Park', href: '/summerlin-grand-park/', price: 'From $400K', compare: 'Summerlin\'s newest and largest village with 13 sub-communities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

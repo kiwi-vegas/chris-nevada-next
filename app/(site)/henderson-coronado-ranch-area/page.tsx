@@ -359,12 +359,12 @@ export default async function HendersonCoronadoRanchAreaPage() {
               { name: 'Green Valley Ranch', href: '/green-valley-ranch/', price: 'From $400K', compare: 'Established master-planned community to the north with golf, resort, and extensive amenities.' },
               { name: 'Cadence', href: '/cadence/', price: 'From $375K', compare: 'Newer master-planned community in east Henderson with modern homes and amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -359,12 +359,12 @@ export default async function LasVegasSpringValleySouthPage() {
               { name: 'Peccole Ranch', href: '/peccole-ranch/', price: 'From $250K', compare: 'Established community to the northwest with guard-gated sections.' },
               { name: 'Southern Highlands', href: '/southern-highlands/', price: 'From $400K', compare: 'Guard-gated master plan to the south with Jack Nicklaus golf.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

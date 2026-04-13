@@ -359,12 +359,12 @@ export default async function SummerlinSouthSquarePage() {
               { name: 'Stonebridge', href: '/summerlin-stonebridge/', price: 'From $550K', compare: '55+ new-construction village in Summerlin with mountain views.' },
               { name: 'The Gardens', href: '/summerlin-the-gardens/', price: 'From $450K', compare: 'Summerlin South village with park-centered design (not age-restricted).' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

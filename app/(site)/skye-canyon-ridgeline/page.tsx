@@ -359,12 +359,12 @@ export default async function SkyeCanyonRidgelinePage() {
               { name: 'Summerlin West', href: '/summerlin-west/', price: 'From $400K', compare: 'Summerlin\'s newest section with Red Rock views and the Summerlin brand.' },
               { name: 'Skye Hills', href: '/skye-hills/', price: 'From $400K', compare: 'Adjacent community to Skye Canyon with newer construction and growing amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

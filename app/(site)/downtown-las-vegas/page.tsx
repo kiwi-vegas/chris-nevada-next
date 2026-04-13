@@ -359,12 +359,12 @@ export default async function DowntownLasVegasPage() {
               { name: 'Enterprise', href: '/enterprise/', price: 'From $350K', compare: 'Growing unincorporated area in southwest Las Vegas with newer construction and family neighborhoods.' },
               { name: 'Henderson', href: '/henderson/', price: 'From $350K', compare: 'The second-largest city in Nevada. Master-planned communities, top schools, and consistently ranked among the safest cities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

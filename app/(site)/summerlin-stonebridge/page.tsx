@@ -359,12 +359,12 @@ export default async function SummerlinStonebridgePage() {
               { name: 'The Paseos', href: '/summerlin-the-paseos/', price: 'From $550K', compare: 'Summerlin\'s family-focused village with Fox Hill Park. More established, similar price range.' },
               { name: 'Siena', href: '/summerlin-siena/', price: 'From $400K', compare: 'Guard-gated 55+ community in Summerlin South. Heritage at Stonebridge offers a newer 55+ alternative.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -359,12 +359,12 @@ export default async function HendersonPage() {
               { name: 'North Las Vegas', href: '/north-las-vegas/', price: 'From $250K', compare: 'More affordable new construction in communities like Aliante, Skye Canyon, and Tule Springs.' },
               { name: 'Enterprise', href: '/enterprise/', price: 'From $350K', compare: 'Growing unincorporated area south of the Strip with new-construction communities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

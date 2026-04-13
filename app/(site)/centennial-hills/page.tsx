@@ -359,12 +359,12 @@ export default async function CentennialHillsPage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Premier master-planned community to the south. Higher prices but more extensive guard-gated options.' },
               { name: 'Desert Shores', href: '/desert-shores/', price: 'From $350K', compare: 'Waterfront community to the south with four man-made lakes and resort-style amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

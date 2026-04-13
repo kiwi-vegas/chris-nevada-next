@@ -359,12 +359,12 @@ export default async function MountCharlestonPage() {
               { name: 'Lone Mountain', href: '/lone-mountain/', price: 'From $500K', compare: 'Semi-rural custom homes near Lone Mountain. Larger lots but valley-floor desert setting.' },
               { name: 'Las Vegas', href: '/las-vegas/', price: 'From $300K', compare: 'The broader Las Vegas metro with every community type and price point. 35 minutes from Mount Charleston.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

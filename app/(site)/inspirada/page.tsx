@@ -359,12 +359,12 @@ export default async function InspiradaPage() {
               { name: 'MacDonald Highlands', href: '/macdonald-highlands/', price: 'From $800K', compare: 'Henderson\'s premier luxury mountainside community with DragonRidge Country Club.' },
               { name: 'Silverado Ranch', href: '/silverado-ranch/', price: 'From $350K', compare: 'Established community with accessible pricing straddling Henderson and Las Vegas.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

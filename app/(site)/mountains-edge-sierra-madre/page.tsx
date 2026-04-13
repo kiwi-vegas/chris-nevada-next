@@ -359,12 +359,12 @@ export default async function MountainsEdgeSierraMadrePage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Premier west-side master plan with 20+ villages and extensive commercial amenities.' },
               { name: 'Inspirada', href: '/inspirada/', price: 'From $420K', compare: 'Henderson\'s design-forward master plan with award-winning gathering spaces.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -359,12 +359,12 @@ export default async function LasVegasBuffaloRanchPage() {
               { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $450K', compare: 'Newer master plan further northwest with new construction and Skye Center amenities.' },
               { name: 'Desert Shores', href: '/desert-shores/', price: 'From $350K', compare: 'Lake community in the northwest with waterfront living and boating.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

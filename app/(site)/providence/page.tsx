@@ -359,12 +359,12 @@ export default async function ProvidencePage() {
               { name: 'Summerlin', href: '/summerlin/', price: 'From $450K', compare: 'Premier master-planned community. Higher prices but guard-gated options and premium amenities.' },
               { name: 'Mountains Edge', href: '/mountains-edge/', price: 'From $350K', compare: 'Sister community by the same developer in southwest Las Vegas. Similar amenity philosophy.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

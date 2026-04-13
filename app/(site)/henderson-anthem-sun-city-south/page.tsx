@@ -359,12 +359,12 @@ export default async function HendersonAnthemSunCitySouthPage() {
               { name: 'Madeira Canyon', href: '/madeira-canyon/', price: 'From $500K', compare: 'Guard-gated community adjacent to Anthem with canyon views and premium homes.' },
               { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K', compare: 'Premium master-planned community to the north with golf and elevated views.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

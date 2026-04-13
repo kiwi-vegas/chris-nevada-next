@@ -359,12 +359,12 @@ export default async function WhitneyRanchPage() {
               { name: 'Black Mountain Ranch', href: '/black-mountain-ranch/', price: 'From $400K', compare: 'Henderson foothills community with mountain trails and valley views.' },
               { name: 'Inspirada', href: '/inspirada/', price: 'From $420K', compare: 'Newer Henderson master plan with parks, trails, and community gathering spaces.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

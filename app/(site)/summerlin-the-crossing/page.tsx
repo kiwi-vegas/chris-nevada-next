@@ -359,12 +359,12 @@ export default async function SummerlinTheCrossingPage() {
               { name: 'Discovery', href: '/summerlin-discovery/', price: 'From $450K', compare: 'Summerlin North village featuring newer construction and modern floor plans.' },
               { name: 'Sun City Summerlin', href: '/sun-city-summerlin/', price: 'From $300K', compare: 'Adjacent 55+ community with golf courses and extensive amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

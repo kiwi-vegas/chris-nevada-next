@@ -359,12 +359,12 @@ export default async function NorthLasVegasNorthValleyPage() {
               { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $450K', compare: 'Premier master-planned community in the far northwest with resort-style amenities.' },
               { name: 'Craig Ranch', href: '/craig-ranch/', price: 'From $350K', compare: 'Community centered around Craig Ranch Regional Park with sports and recreation amenities.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

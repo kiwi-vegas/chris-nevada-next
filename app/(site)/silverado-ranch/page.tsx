@@ -359,12 +359,12 @@ export default async function SilveradoRanchPage() {
               { name: 'Enterprise', href: '/enterprise/', price: 'From $350K', compare: 'Growing area south of the Strip with new-construction communities.' },
               { name: 'Mountains Edge', href: '/mountains-edge/', price: 'From $350K', compare: 'Master-planned community in southwest Las Vegas with similar price points.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

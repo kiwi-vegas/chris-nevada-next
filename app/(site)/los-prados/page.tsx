@@ -359,12 +359,12 @@ export default async function LosPradosPage() {
               { name: 'Sun City Summerlin', href: '/sun-city-summerlin/', price: 'From $300K', compare: 'Del Webb 55+ community with three golf courses and world-class recreation centers.' },
               { name: 'Aliante', href: '/aliante/', price: 'From $350K', compare: 'North Las Vegas master plan with golf, parks, and family-friendly neighborhoods.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

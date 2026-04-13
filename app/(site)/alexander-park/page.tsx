@@ -359,12 +359,12 @@ export default async function AlexanderParkPage() {
               { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $400K', compare: 'Newer master plan in the far northwest with Skye Center and mountain access.' },
               { name: 'Providence', href: '/providence/', price: 'From $450K', compare: 'Family-friendly master plan in northwest Las Vegas with newer construction.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

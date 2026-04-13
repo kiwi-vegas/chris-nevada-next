@@ -359,12 +359,12 @@ export default async function NorthLasVegasCraigRoadPage() {
               { name: 'Valley Vista', href: '/valley-vista/', price: 'From $300K', compare: 'Adjacent NLV neighborhood with similar pricing and commute times.' },
               { name: 'El Dorado Springs', href: '/north-las-vegas-el-dorado-springs/', price: 'From $300K', compare: 'Nearby NLV area with similar affordability and improving infrastructure.' },
             ].map((n: any) => (
-              <Link href={n.href} key={n.name} className="nearby-v2-row">
+              <a href={n.href} key={n.name} className="nearby-v2-row">
                 <span className="nearby-v2-name">{n.name}</span>
                 <span className="nearby-v2-price">{n.price}</span>
                 <span className="nearby-v2-compare">{n.compare}</span>
                 <span className="nearby-v2-arrow">&rarr;</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
