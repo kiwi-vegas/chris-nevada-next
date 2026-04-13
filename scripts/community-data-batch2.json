@@ -1,0 +1,987 @@
+[
+  {
+    "slug": "ascension-at-the-peaks",
+    "name": "Ascension at The Peaks",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury New Construction",
+    "zipCodes": ["89138"],
+    "center": [-115.328, 36.195],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$1M–$4M+",
+    "established": "2023",
+    "developer": "Howard Hughes Corporation / Multiple Builders",
+    "acreage": "~300 acres",
+    "homeCount": "561",
+    "guardGated": true,
+    "hoaRange": "$300–$800/mo",
+    "overview": [
+      "Ascension at The Peaks is the newest guard-gated luxury community within Summerlin's prestigious Peaks village, representing one of the most significant new residential developments in the Las Vegas Valley. Situated along the western rim of the valley with sweeping views of Red Rock Canyon and the Spring Mountains, this 561-home enclave delivers the kind of modern desert luxury living that has made Summerlin the most sought-after master-planned community in Nevada.",
+      "Developed under the Howard Hughes Corporation's master plan, Ascension at The Peaks brings together several of the region's top production and semi-custom builders, including Toll Brothers, Shea Homes, and Taylor Morrison. The community features a curated selection of single-family homes ranging from approximately 2,500 to over 6,000 square feet, with architectural standards that emphasize contemporary desert design, clean lines, and indoor-outdoor living.",
+      "Homes in Ascension at The Peaks range from approximately $1 million for entry-level new construction to over $4 million for premium lots with unobstructed mountain views and upgraded custom finishes. The community's guard-gated entry and 24-hour security provide the privacy and exclusivity that high-net-worth buyers demand, while its location within Summerlin ensures access to world-class amenities, top-rated schools, and the 125+ shops and restaurants of Downtown Summerlin.",
+      "The Peaks village has rapidly emerged as one of Summerlin's most desirable addresses, attracting executives, professional athletes, and families seeking new-construction luxury without the multi-year timeline of a full custom build. Ascension's combination of builder variety, modern floor plans, and a premier Summerlin location makes it one of the most compelling luxury new-construction opportunities in the Las Vegas market."
+    ],
+    "highlights": [
+      { "title": "Guard-Gated New Construction", "body": "One of the only guard-gated new-construction luxury communities in Summerlin, with 24-hour staffed entry and comprehensive security patrols throughout.", "iconType": "shield" },
+      { "title": "Premier Builder Collection", "body": "Homes by Toll Brothers, Shea Homes, Taylor Morrison, and other top builders, each offering distinct architectural styles and floor plan options.", "iconType": "home" },
+      { "title": "Red Rock Canyon Views", "body": "Elevated lots along the western edge of Summerlin offer dramatic panoramic views of Red Rock Canyon's sandstone formations and the Spring Mountains.", "iconType": "mountain" },
+      { "title": "Modern Desert Architecture", "body": "Strict architectural guidelines ensure a cohesive contemporary desert aesthetic with clean lines, natural materials, and seamless indoor-outdoor living spaces.", "iconType": "building" },
+      { "title": "Summerlin Amenities Access", "body": "Full access to Summerlin's 250+ miles of trails, 150+ parks, community centers, pools, and the 1.6-million-square-foot Downtown Summerlin retail center.", "iconType": "trend" },
+      { "title": "Top-Rated Schools", "body": "Zoned for some of Clark County's highest-rated public schools and minutes from premier private options including The Meadows School and Bishop Gorman.", "iconType": "graduation" }
+    ],
+    "neighborhoods": [
+      { "name": "Toll Brothers — Montclair", "type": "Semi-Custom · Luxury", "desc": "Toll Brothers' signature luxury collection with expansive floor plans, gourmet kitchens, and premium finishes throughout.", "price": "From $1.5M+" },
+      { "name": "Shea Homes — Trilogy", "type": "Modern · New Build", "desc": "Contemporary single-story and two-story designs with open-concept living, designer kitchens, and resort-style outdoor spaces.", "price": "From $1.2M+" },
+      { "name": "Taylor Morrison — Overlook", "type": "Modern · Views", "desc": "Elevated homesites with panoramic views and modern desert architecture featuring floor-to-ceiling glass and courtyard entries.", "price": "From $1.3M+" },
+      { "name": "Premium View Lots", "type": "Custom · Elevated", "desc": "The most desirable lots in Ascension, positioned along the community's western edge with unobstructed Red Rock Canyon views.", "price": "From $2.5M+" },
+      { "name": "Interior Collection", "type": "New Build · Family", "desc": "Thoughtfully designed family-oriented homes with generous lot sizes, three-car garages, and private backyard spaces.", "price": "From $1M+" },
+      { "name": "Courtyard Series", "type": "Modern · Lock-and-Leave", "desc": "Single-story designs with central courtyard layouts, ideal for buyers seeking luxury lock-and-leave living within Summerlin.", "price": "From $1.1M+" }
+    ],
+    "parks": [
+      { "name": "The Paseos Linear Park", "address": "Paseo Hills Dr, Las Vegas, NV 89138", "acreage": "~12 acres", "amenities": ["Walking trails", "Desert gardens", "Open space", "Dog-friendly areas"] },
+      { "name": "Fox Hill Park", "address": "10100 Trails Dr, Las Vegas, NV 89138", "acreage": "~20 acres", "amenities": ["Adventure playground", "Zip lines", "Disc golf", "Trails", "Picnic areas"] },
+      { "name": "Red Rock Canyon NCA", "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161", "acreage": "195,819 acres", "amenities": ["Scenic Loop Drive", "Hiking trails", "Rock climbing", "Visitor center", "Wildlife viewing"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Bonner Elementary School", "K–5", "9/10"],
+        ["Sig Rogich Middle School", "6–8", "10/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Pinecrest Academy of Nevada", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~1,400",
+      "medianAge": "42",
+      "avgIncome": "$225,000+",
+      "households": "561",
+      "homeownership": "95%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~10 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~5 min", "destination": "to Downtown Summerlin", "route": "via W Lake Mead Blvd" },
+      { "time": "~30 min", "destination": "to Harry Reid Airport", "route": "via I-215 South → I-15" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Ascension at The Peaks?", "a": "Homes in Ascension at The Peaks range from approximately $1 million for entry-level new construction to over $4 million for premium lots with upgraded finishes and unobstructed Red Rock Canyon views." },
+      { "q": "Is Ascension at The Peaks guard-gated?", "a": "Yes. Ascension at The Peaks is a fully guard-gated community with a 24-hour staffed guard gate and security patrols, located within Summerlin's Peaks village." },
+      { "q": "Which builders are in Ascension at The Peaks?", "a": "Ascension features homes by several premier builders including Toll Brothers, Shea Homes, and Taylor Morrison. Each builder offers distinct floor plans and architectural styles within the community's contemporary desert design guidelines." },
+      { "q": "What ZIP code is Ascension at The Peaks in?", "a": "Ascension at The Peaks is located in ZIP code 89138, within the Summerlin master-planned community in Las Vegas." },
+      { "q": "How many homes are in Ascension at The Peaks?", "a": "At full build-out, Ascension at The Peaks will include approximately 561 homes across multiple builder collections and floor plan options." },
+      { "q": "What schools serve Ascension at The Peaks?", "a": "The community is served by CCSD schools including Bonner Elementary (9/10), Sig Rogich Middle School (10/10), and Palo Verde High School (8/10). Top private schools like The Meadows School and Bishop Gorman are within a 15-minute drive." },
+      { "q": "Is Ascension at The Peaks part of Summerlin?", "a": "Yes. Ascension is located within The Peaks village, one of Summerlin's South Association villages. Residents have full access to all Summerlin amenities, trails, parks, and community facilities." },
+      { "q": "What are HOA fees in Ascension at The Peaks?", "a": "HOA fees typically range from $300 to $800 per month, which includes the master Summerlin association fee plus the sub-association fee for Ascension at The Peaks. Fees cover guard gate staffing, security, common area maintenance, and community amenities." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community encompassing 20+ villages across every price point." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated enclave with Bear's Best Golf Club." },
+      { "name": "Astra at La Madre Peaks", "href": "/astra-at-la-madre-peaks/", "price": "From $2M", "compare": "167 custom lots in Summerlin's La Madre Peaks village for full custom builds." },
+      { "name": "Grand Park", "href": "/summerlin-grand-park/", "price": "From $400K", "compare": "Summerlin's newest and largest village with 13 sub-communities and broad price range." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $1.2M", "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer courses." },
+      { "name": "The Summit Club", "href": "/the-summit-club/", "price": "From $5M", "compare": "Las Vegas' most exclusive private community with Tom Fazio golf. By invitation only." }
+    ],
+    "testimonials": [
+      { "quote": "Nevada Real Estate Group guided us through the new-construction process in Ascension from lot selection to closing. Their knowledge of the builders, the upgrade options, and the best view corridors saved us time and money.", "name": "David & Sarah K.", "detail": "Bought in Ascension at The Peaks, Summerlin · 2025" },
+      { "quote": "We looked at every luxury new-construction community in Las Vegas before choosing Ascension. Nevada Real Estate Group understood our priorities and helped us secure one of the last premium view lots.", "name": "Michael T.", "detail": "Bought in Ascension at The Peaks, Summerlin · 2024" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Ascension The Peaks Summerlin",
+    "ylopoMinPrice": 1000000
+  },
+  {
+    "slug": "summerlin-grand-park",
+    "name": "Grand Park",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned Village · New Construction",
+    "zipCodes": ["89166", "89138"],
+    "center": [-115.345, 36.215],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$400K–$3M+",
+    "established": "2022",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "~2,000 acres",
+    "homeCount": "5,000+ at build-out",
+    "guardGated": false,
+    "hoaRange": "$150–$600/mo",
+    "overview": [
+      "Grand Park is the newest and largest village within the Summerlin master-planned community, representing the next generation of desert living in the Las Vegas Valley. Spanning approximately 2,000 acres along the northwestern edge of Summerlin, Grand Park is being developed by the Howard Hughes Corporation as a self-contained village with its own parks, trails, schools, and commercial centers — while maintaining full integration with Summerlin's broader amenity network.",
+      "With 13 distinct sub-communities planned at full build-out, Grand Park offers a remarkable breadth of housing options rarely found within a single village. Entry-level homes from builders like Lennar and KB Home start in the $400,000 range, while guard-gated enclaves like Carlisle Peak and Glenrock deliver semi-custom luxury homes exceeding $2 million. This diversity makes Grand Park attractive to first-time buyers, move-up families, and luxury buyers alike.",
+      "Grand Park's location along the western valley rim provides many homesites with dramatic views of Red Rock Canyon and the Spring Mountains. The village is anchored by a planned 50-acre community park — one of the largest in Summerlin's history — that will include athletic fields, playgrounds, event lawns, and extensive trail connections to Summerlin's 250+ mile trail network.",
+      "Active construction from more than a dozen national and regional builders means inventory turns over rapidly, with new model homes and floor plans regularly introduced. Grand Park is expected to be one of the primary growth engines for Summerlin through the end of the decade, making it both a compelling lifestyle choice and a strong investment opportunity in one of Nevada's most proven real estate markets."
+    ],
+    "highlights": [
+      { "title": "13 Sub-Communities", "body": "Grand Park encompasses 13 distinct neighborhoods, each with its own builder, floor plans, and price point — from entry-level to guard-gated luxury.", "iconType": "home" },
+      { "title": "Summerlin's Newest Village", "body": "As the latest addition to Summerlin's West Association, Grand Park features the newest infrastructure, architecture, and community amenities in the master plan.", "iconType": "building" },
+      { "title": "50-Acre Community Park", "body": "A planned 50-acre signature park will anchor the village with athletic fields, playgrounds, event lawns, and trail connections.", "iconType": "tree" },
+      { "title": "Red Rock Canyon Proximity", "body": "Located along Summerlin's western edge, many Grand Park homes offer direct views of Red Rock Canyon's sandstone formations and the Spring Mountains.", "iconType": "mountain" },
+      { "title": "Broad Price Range", "body": "Homes from the $400,000s to over $3 million provide options for every buyer profile, from first-time purchasers to luxury move-up buyers.", "iconType": "trend" },
+      { "title": "Top-Tier School Access", "body": "New schools planned within the village, plus access to Summerlin's existing network of top-rated public and private institutions.", "iconType": "graduation" }
+    ],
+    "neighborhoods": [
+      { "name": "Carlisle Peak", "type": "Guard-Gated · Luxury", "desc": "Guard-gated enclave featuring semi-custom luxury homes with premium finishes, private courtyards, and mountain views.", "price": "From $1.55M+" },
+      { "name": "Glenrock", "type": "Guard-Gated · Luxury", "desc": "Guard-gated luxury neighborhood with spacious floor plans, gourmet kitchens, and resort-style outdoor living.", "price": "From $1.58M+" },
+      { "name": "Reverence Collection", "type": "Semi-Custom · Views", "desc": "Elevated homesites with sweeping valley and mountain views. Contemporary architecture with open floor plans.", "price": "From $800K+" },
+      { "name": "Hillcrest by Pulte", "type": "New Build · Family", "desc": "Family-oriented community by Pulte Homes with modern floor plans, smart home technology, and community parks.", "price": "From $550K+" },
+      { "name": "Aventine by Lennar", "type": "New Build · Entry", "desc": "Lennar's everything's-included homes offering exceptional value with designer finishes and energy-efficient construction.", "price": "From $450K+" },
+      { "name": "Vista Rossa", "type": "New Build · Modern", "desc": "Contemporary desert homes with open-concept layouts, covered patios, and three-car garages on generous lot sizes.", "price": "From $600K+" }
+    ],
+    "parks": [
+      { "name": "Grand Park Community Park", "address": "Grand Park Village, Las Vegas, NV 89166", "acreage": "~50 acres (planned)", "amenities": ["Athletic fields", "Playgrounds", "Event lawns", "Trail connections", "Picnic pavilions"] },
+      { "name": "Fox Hill Park", "address": "10100 Trails Dr, Las Vegas, NV 89138", "acreage": "~20 acres", "amenities": ["Adventure playground", "Zip lines", "Disc golf", "Trails", "Picnic areas"] },
+      { "name": "The Paseos Linear Park", "address": "Paseo Hills Dr, Las Vegas, NV 89138", "acreage": "~12 acres", "amenities": ["Walking trails", "Desert gardens", "Open space", "Dog-friendly areas"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Bonner Elementary School", "K–5", "9/10"],
+        ["Sig Rogich Middle School", "6–8", "10/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Pinecrest Academy of Nevada", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~8,000 (growing)",
+      "medianAge": "38",
+      "avgIncome": "$145,000+",
+      "households": "~3,000 (growing)",
+      "homeownership": "88%"
+    },
+    "driveTimes": [
+      { "time": "~25 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~10 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~8 min", "destination": "to Downtown Summerlin", "route": "via W Lake Mead Blvd" },
+      { "time": "~35 min", "destination": "to Harry Reid Airport", "route": "via I-215 South → I-15" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Grand Park?", "a": "Grand Park offers a wide range of housing options from approximately $400,000 for entry-level new construction up to over $3 million in guard-gated luxury enclaves like Carlisle Peak and Glenrock." },
+      { "q": "How many sub-communities are in Grand Park?", "a": "Grand Park encompasses 13 distinct sub-communities at full build-out, each with its own builder, architectural style, and price point. This makes it the largest and most diverse village in Summerlin." },
+      { "q": "Is Grand Park part of Summerlin?", "a": "Yes. Grand Park is a village within Summerlin's West Association, the newest section of the master-planned community. Residents have full access to all Summerlin amenities, trails, parks, and community centers." },
+      { "q": "Are there guard-gated neighborhoods in Grand Park?", "a": "Yes. Carlisle Peak and Glenrock are guard-gated luxury neighborhoods within Grand Park, offering semi-custom homes from approximately $1.5 million to over $2 million." },
+      { "q": "What builders are in Grand Park?", "a": "Grand Park features homes from multiple national and regional builders including Toll Brothers, Lennar, Pulte Homes, KB Home, Taylor Morrison, and others. New builders and communities are added as the village expands." },
+      { "q": "What ZIP code is Grand Park in?", "a": "Grand Park spans ZIP codes 89166 and 89138, located in the western portion of the Las Vegas Valley within Summerlin." },
+      { "q": "What schools serve Grand Park?", "a": "Grand Park is served by top-rated CCSD schools including Bonner Elementary (9/10) and Sig Rogich Middle School (10/10). New schools are planned within the village as development continues. Private options include The Meadows School and Bishop Gorman." },
+      { "q": "When will Grand Park be fully built out?", "a": "Grand Park is expected to continue active construction through the end of the decade. As Summerlin's primary growth area, new sub-communities, parks, and amenities are being added on an ongoing basis." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community that Grand Park is the newest village within." },
+      { "name": "Ascension at The Peaks", "href": "/ascension-at-the-peaks/", "price": "From $1M", "compare": "Guard-gated luxury new construction in Summerlin's Peaks village. 561 homes." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated enclave with Bear's Best Golf Club." },
+      { "name": "Astra at La Madre Peaks", "href": "/astra-at-la-madre-peaks/", "price": "From $2M", "compare": "167 custom lots in La Madre Peaks for buyers seeking full custom builds." },
+      { "name": "Skye Canyon", "href": "/skye-canyon/", "price": "From $400K", "compare": "Northwest Las Vegas master plan with similar new-construction options and price points." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $1.2M", "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer courses." }
+    ],
+    "testimonials": [
+      { "quote": "We wanted new construction in Summerlin but weren't sure which sub-community fit our budget and lifestyle. Nevada Real Estate Group walked us through every option in Grand Park and helped us find the perfect home.", "name": "Jennifer & Mark L.", "detail": "Bought in Grand Park, Summerlin · 2025" },
+      { "quote": "Grand Park gave us the Summerlin lifestyle at a price point we didn't think was possible. Nevada Real Estate Group negotiated builder incentives that saved us over $30,000 on upgrades.", "name": "Anthony R.", "detail": "Bought in Grand Park, Summerlin · 2024" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Grand Park Summerlin",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "peccole-ranch",
+    "name": "Peccole Ranch",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Established",
+    "zipCodes": ["89117", "89145"],
+    "center": [-115.280, 36.159],
+    "heroEyebrow": "Las Vegas, Nevada",
+    "priceRange": "$400K–$3M+",
+    "established": "1989",
+    "developer": "Peccole Family / William Peccole",
+    "acreage": "640 acres",
+    "homeCount": "4,200+",
+    "guardGated": false,
+    "hoaRange": "$50–$400/mo",
+    "overview": [
+      "Peccole Ranch is one of the most established and centrally located master-planned communities in Las Vegas, encompassing 640 acres and more than 4,200 homes in 22 distinct neighborhoods. Developed by the Peccole family beginning in 1989, the community occupies a prime position in the western Las Vegas Valley, bordered by Charleston Boulevard to the south, Sahara Avenue to the north, and Durango Drive to the west.",
+      "What sets Peccole Ranch apart from other Las Vegas master plans is its remarkable range of housing options within a compact, mature community. The neighborhood portfolio spans from well-maintained single-family homes in the $400,000 range to the ultra-luxury guard-gated enclave of Queensridge, where estates regularly trade above $3 million. This diversity — combined with the community's central location — makes Peccole Ranch one of the most versatile residential choices in the valley.",
+      "The community is anchored by the award-winning Badlands Golf Club site (formerly a 27-hole championship course) and the iconic Queensridge Towers. Mature landscaping, wide streets, and established neighborhood character give Peccole Ranch an appeal that newer master plans cannot replicate. The surrounding commercial corridor along Sahara and Charleston provides walkable access to shopping, dining, and services.",
+      "Peccole Ranch's central location delivers drive times that are difficult to match elsewhere in Las Vegas — 15 minutes to the Strip, 10 minutes to Summerlin's shopping and dining, and easy freeway access via the 215 Beltway and US-95. For buyers who want an established community with mature trees, proven property values, and proximity to everything, Peccole Ranch remains one of the smartest choices in the market."
+    ],
+    "highlights": [
+      { "title": "22 Distinct Neighborhoods", "body": "From starter homes to guard-gated luxury estates, Peccole Ranch's 22 neighborhoods offer something for every buyer at every price point within a single master plan.", "iconType": "home" },
+      { "title": "Central Location", "body": "15 minutes to the Strip, 10 minutes to Summerlin, and immediate access to the 215 Beltway. One of the most centrally positioned communities in Las Vegas.", "iconType": "building" },
+      { "title": "Parent to Queensridge", "body": "Home to the prestigious guard-gated Queensridge community, where 987 luxury homes command the highest prices in the western valley outside of Summerlin.", "iconType": "shield" },
+      { "title": "Mature Landscaping", "body": "Decades-old trees, established common areas, and lush greenbelts create a neighborhood character that newer communities cannot replicate.", "iconType": "tree" },
+      { "title": "Top-Rated Schools", "body": "Zoned for highly rated CCSD schools including Palo Verde High School and close to premier private institutions like The Meadows School.", "iconType": "graduation" },
+      { "title": "Proven Investment", "body": "35+ years of established property values with consistent appreciation. Peccole Ranch homes hold their value through every market cycle.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Queensridge", "type": "Guard-Gated · Luxury", "desc": "The crown jewel of Peccole Ranch — a 987-home guard-gated community with luxury estates and the iconic Queensridge Towers.", "price": "From $800K+" },
+      { "name": "Canyon Gate", "type": "Guard-Gated · Golf", "desc": "Guard-gated golf course community with 330 acres of luxury homes surrounding a championship course.", "price": "From $700K+" },
+      { "name": "Pueblo at Peccole Ranch", "type": "Single-Family · Established", "desc": "Well-maintained single-family homes with generous lot sizes and mature landscaping throughout.", "price": "From $500K+" },
+      { "name": "Terracina at Peccole Ranch", "type": "Single-Family · Family", "desc": "Family-friendly neighborhood with 3-5 bedroom homes, community parks, and tree-lined streets.", "price": "From $450K+" },
+      { "name": "Sierra Madre at Peccole Ranch", "type": "Single-Family · Starter", "desc": "Entry-level single-family homes popular with first-time buyers and young families seeking a Peccole Ranch address.", "price": "From $400K+" },
+      { "name": "One Queensridge Place", "type": "High-Rise · Luxury", "desc": "Twin 18-story luxury high-rise towers offering penthouse living with Strip and mountain views.", "price": "From $500K+" }
+    ],
+    "parks": [
+      { "name": "Peccole Ranch Park", "address": "2600 Torrey Pines Dr, Las Vegas, NV 89146", "acreage": "~12 acres", "amenities": ["Playgrounds", "Basketball courts", "Picnic areas", "Walking paths", "Open fields"] },
+      { "name": "Rafael Rivera Park", "address": "2900 N Stewart Ave, Las Vegas, NV 89101", "acreage": "~8 acres", "amenities": ["Sports fields", "Playgrounds", "Picnic pavilions", "Basketball courts"] },
+      { "name": "Desert Breeze Park", "address": "8275 Spring Mountain Rd, Las Vegas, NV 89147", "acreage": "~20 acres", "amenities": ["Skate park", "Soccer fields", "Playgrounds", "Walking trails", "Community pool"] }
+    ],
+    "schools": {
+      "Public": [
+        ["William & Mary Scherkenbach Elementary", "K–5", "7/10"],
+        ["Lawrence & Heidi Canarelli Middle School", "6–8", "7/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Mountain View Christian School", "PreK–8", "B+"]
+      ],
+      "Charter": [
+        ["Doral Academy Pebble Campus", "K–8", "8/10"],
+        ["Sports Leadership & Management Academy", "6–12", "7/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~12,000",
+      "medianAge": "45",
+      "avgIncome": "$110,000+",
+      "households": "4,200+",
+      "homeownership": "72%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via W Flamingo Rd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via W Sahara Ave" },
+      { "time": "~20 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~25 min", "destination": "to Harry Reid Airport", "route": "via I-215 South → I-15" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Peccole Ranch?", "a": "Peccole Ranch offers homes from approximately $400,000 for entry-level single-family homes to over $3 million in the guard-gated Queensridge enclave. The community's 22 neighborhoods span virtually every price point." },
+      { "q": "How many neighborhoods are in Peccole Ranch?", "a": "Peccole Ranch includes 22 distinct neighborhoods across its 640 acres, ranging from starter homes to guard-gated luxury communities like Queensridge." },
+      { "q": "Is Peccole Ranch guard-gated?", "a": "Peccole Ranch itself is not guard-gated, but it contains Queensridge, a 987-home guard-gated community within its boundaries. Some individual neighborhoods within Peccole Ranch also have gated entry." },
+      { "q": "What ZIP codes cover Peccole Ranch?", "a": "Peccole Ranch spans ZIP codes 89117 and 89145, located in the western Las Vegas Valley." },
+      { "q": "Is Queensridge part of Peccole Ranch?", "a": "Yes. Queensridge is a guard-gated luxury community located within the Peccole Ranch master plan. It operates with its own HOA and guard gate but is geographically part of Peccole Ranch." },
+      { "q": "What happened to the Badlands Golf Club?", "a": "The Badlands Golf Club was a 27-hole championship course within Peccole Ranch that ceased operations. The site has been the subject of extensive development proposals and legal proceedings regarding potential residential redevelopment." },
+      { "q": "What schools serve Peccole Ranch?", "a": "Peccole Ranch is served by CCSD schools including Scherkenbach Elementary (7/10), Canarelli Middle School (7/10), and Palo Verde High School (8/10). The Meadows School (A+) is located adjacent to the community." },
+      { "q": "How old is Peccole Ranch?", "a": "Development of Peccole Ranch began in 1989, making it one of the more established master-planned communities in Las Vegas. The mature landscaping and proven property values are among its key selling points." }
+    ],
+    "nearby": [
+      { "name": "Queensridge", "href": "/queensridge/", "price": "From $800K", "compare": "Guard-gated luxury enclave within Peccole Ranch. 987 homes with estate living." },
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "Las Vegas' premier master-planned community, located directly west of Peccole Ranch." },
+      { "name": "Canyon Gate", "href": "/canyon-gate/", "price": "From $700K", "compare": "Guard-gated golf community adjacent to Peccole Ranch. 330 acres." },
+      { "name": "Spring Valley", "href": "/spring-valley/", "price": "From $300K", "compare": "Large unincorporated area south of Peccole Ranch with diverse housing options." },
+      { "name": "The Lakes", "href": "/the-lakes/", "price": "From $350K", "compare": "Established waterfront community east of Peccole Ranch with lake-front living." }
+    ],
+    "testimonials": [
+      { "quote": "We chose Peccole Ranch because of the central location and mature neighborhood feel. Nevada Real Estate Group helped us find a home with a huge backyard and mature trees that you just can't get in a new community.", "name": "Lisa & Robert P.", "detail": "Bought in Peccole Ranch · 2024" },
+      { "quote": "Nevada Real Estate Group sold our Peccole Ranch home in 11 days for above asking. Their market knowledge and pricing strategy were spot on.", "name": "Patricia H.", "detail": "Sold in Peccole Ranch · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Peccole Ranch",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "queensridge",
+    "name": "Queensridge",
+    "parentCommunity": "Peccole Ranch",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury",
+    "zipCodes": ["89117", "89145"],
+    "center": [-115.288, 36.165],
+    "heroEyebrow": "Peccole Ranch, Las Vegas",
+    "priceRange": "$800K–$5M+",
+    "established": "1997",
+    "developer": "Peccole Family / EHB Companies",
+    "acreage": "~300 acres",
+    "homeCount": "987",
+    "guardGated": true,
+    "hoaRange": "$250–$700/mo",
+    "overview": [
+      "Queensridge is one of the most prestigious guard-gated communities in the Las Vegas Valley, encompassing 987 luxury homes across approximately 300 acres within the Peccole Ranch master plan. Developed beginning in 1997, Queensridge quickly established itself as the premier address in the western valley, attracting executives, entrepreneurs, and high-net-worth individuals seeking estate-caliber living with unparalleled convenience.",
+      "The community is anchored by the iconic One Queensridge Place — twin 18-story luxury condominium towers that define the western Las Vegas skyline. Below the towers, the neighborhood features an impressive collection of custom and semi-custom single-family homes ranging from approximately 3,000 to over 10,000 square feet, many set on generous lots with mature landscaping, private pools, and sweeping views of the mountains and city lights.",
+      "Queensridge's guard-gated entry with 24-hour security staffing, combined with its meticulously maintained common areas and lush greenbelts, creates an atmosphere of exclusivity that rivals Summerlin's most expensive enclaves — at a more accessible price point. Homes range from approximately $800,000 for resale properties to over $5 million for premium estates and penthouse units in One Queensridge Place.",
+      "The community's central location is one of its greatest advantages. Queensridge sits just 15 minutes from the Las Vegas Strip, 10 minutes from Downtown Summerlin, and has immediate access to the 215 Beltway. For buyers who want guard-gated luxury without the drive times associated with more remote communities, Queensridge offers a rare combination of prestige, privacy, and proximity."
+    ],
+    "highlights": [
+      { "title": "Guard-Gated Security", "body": "24-hour staffed guard gate with roving security patrols. One of the most established and respected guard-gated communities in the Las Vegas Valley.", "iconType": "shield" },
+      { "title": "One Queensridge Place", "body": "Iconic twin 18-story luxury towers featuring penthouse residences with panoramic Strip and mountain views. Full-service concierge and resort amenities.", "iconType": "building" },
+      { "title": "Central Valley Location", "body": "15 minutes to the Strip, 10 minutes to Summerlin, and immediate 215 Beltway access. The most centrally located guard-gated luxury community in Las Vegas.", "iconType": "trend" },
+      { "title": "Estate-Caliber Lots", "body": "Generous lot sizes with mature landscaping, many exceeding a quarter acre. Custom and semi-custom homes from 3,000 to 10,000+ square feet.", "iconType": "home" },
+      { "title": "Mature Community Character", "body": "25+ years of established growth have created a lush, tree-lined environment with neighborhood character that newer communities cannot match.", "iconType": "tree" },
+      { "title": "Resort-Style Amenities", "body": "Community pool, fitness center, parks, and walking paths throughout. One Queensridge Place offers additional concierge, pool, and spa services.", "iconType": "pool" }
+    ],
+    "neighborhoods": [
+      { "name": "Queensridge Estates", "type": "Custom · Premium", "desc": "The most exclusive section of Queensridge with full custom homes on premium lots, many with city-light and mountain views.", "price": "From $2M+" },
+      { "name": "One Queensridge Place", "type": "High-Rise · Luxury", "desc": "Twin 18-story towers with full-service concierge, resort pool, spa, and penthouse residences with panoramic views.", "price": "From $500K+" },
+      { "name": "Queensridge North", "type": "Semi-Custom · Established", "desc": "Mature neighborhood with semi-custom homes, established landscaping, and quiet tree-lined streets.", "price": "From $900K+" },
+      { "name": "Queensridge South", "type": "Semi-Custom · Views", "desc": "Elevated section with mountain views and larger lot sizes. Popular with families seeking space and privacy.", "price": "From $1.2M+" },
+      { "name": "Queensridge Court", "type": "Patio Homes · Luxury", "desc": "Low-maintenance luxury patio homes ideal for downsizers who want Queensridge living without extensive yard maintenance.", "price": "From $800K+" },
+      { "name": "Queensridge Terrace", "type": "Single-Family · Entry", "desc": "Entry-level Queensridge homes offering guard-gated luxury at the community's most accessible price point.", "price": "From $800K+" }
+    ],
+    "parks": [
+      { "name": "Queensridge Park", "address": "9775 Queensridge Dr, Las Vegas, NV 89145", "acreage": "~5 acres", "amenities": ["Community pool", "Playgrounds", "Walking paths", "Picnic areas", "Green spaces"] },
+      { "name": "Peccole Ranch Park", "address": "2600 Torrey Pines Dr, Las Vegas, NV 89146", "acreage": "~12 acres", "amenities": ["Playgrounds", "Basketball courts", "Picnic areas", "Walking paths", "Open fields"] },
+      { "name": "Desert Breeze Park", "address": "8275 Spring Mountain Rd, Las Vegas, NV 89147", "acreage": "~20 acres", "amenities": ["Skate park", "Soccer fields", "Playgrounds", "Walking trails", "Community pool"] }
+    ],
+    "schools": {
+      "Public": [
+        ["William & Mary Scherkenbach Elementary", "K–5", "7/10"],
+        ["Lawrence & Heidi Canarelli Middle School", "6–8", "7/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Pebble Campus", "K–8", "8/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~2,800",
+      "medianAge": "50",
+      "avgIncome": "$225,000+",
+      "households": "987",
+      "homeownership": "78%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via W Flamingo Rd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via W Sahara Ave" },
+      { "time": "~20 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~25 min", "destination": "to Harry Reid Airport", "route": "via I-215 South → I-15" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Queensridge?", "a": "Homes in Queensridge range from approximately $800,000 for entry-level single-family homes and condominiums in One Queensridge Place to over $5 million for premium custom estates and penthouse residences." },
+      { "q": "Is Queensridge guard-gated?", "a": "Yes. Queensridge is a fully guard-gated community with a 24-hour staffed guard gate and roving security patrols. It has been one of the Las Vegas Valley's premier guard-gated communities since 1997." },
+      { "q": "What is One Queensridge Place?", "a": "One Queensridge Place consists of twin 18-story luxury condominium towers within the Queensridge community. The towers offer full-service concierge, resort-style pool, fitness center, and spa. Residences range from one-bedroom units to expansive penthouses with panoramic Strip and mountain views." },
+      { "q": "Is Queensridge part of Peccole Ranch?", "a": "Yes. Queensridge is geographically located within the Peccole Ranch master plan but operates as a distinct guard-gated community with its own HOA, guard gate, and amenities." },
+      { "q": "What ZIP codes cover Queensridge?", "a": "Queensridge is located in ZIP codes 89117 and 89145, in the western Las Vegas Valley." },
+      { "q": "What are HOA fees in Queensridge?", "a": "HOA fees in Queensridge typically range from $250 to $700 per month for single-family homes. One Queensridge Place condominium fees are higher, reflecting full-service tower amenities including concierge, pool, fitness center, and security." },
+      { "q": "What schools serve Queensridge?", "a": "Queensridge is served by CCSD schools including Palo Verde High School (8/10). The Meadows School (A+), one of Nevada's top private schools, is located adjacent to the community." },
+      { "q": "How does Queensridge compare to Summerlin luxury communities?", "a": "Queensridge offers guard-gated luxury comparable to Summerlin's high-end enclaves but at a more central location — 15 minutes to the Strip versus 20-25 minutes from most Summerlin communities. The trade-off is that Queensridge is a more established community without new construction." }
+    ],
+    "nearby": [
+      { "name": "Peccole Ranch", "href": "/peccole-ranch/", "price": "From $400K", "compare": "The 640-acre master plan that surrounds Queensridge. 22 neighborhoods at every price point." },
+      { "name": "Canyon Gate", "href": "/canyon-gate/", "price": "From $700K", "compare": "Guard-gated golf community adjacent to Peccole Ranch with championship course." },
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "Las Vegas' premier master-planned community with 20+ villages, directly west." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated enclave with Red Rock Canyon views." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $1.2M", "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer courses." },
+      { "name": "The Lakes", "href": "/the-lakes/", "price": "From $350K", "compare": "Established waterfront community east of Queensridge with lake-front living." }
+    ],
+    "testimonials": [
+      { "quote": "Queensridge was the perfect fit — guard-gated security, mature landscaping, and we're 15 minutes from everything. Nevada Real Estate Group found us an off-market estate that wasn't even listed yet.", "name": "Richard & Angela D.", "detail": "Bought in Queensridge · 2024" },
+      { "quote": "We sold our Queensridge home for top dollar thanks to Nevada Real Estate Group's luxury marketing. Their professional photography and targeted buyer outreach attracted multiple qualified offers.", "name": "Steven M.", "detail": "Sold in Queensridge · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Queensridge",
+    "ylopoMinPrice": 800000
+  },
+  {
+    "slug": "macdonald-ranch",
+    "name": "MacDonald Ranch",
+    "parentCommunity": null,
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Master-Planned · Golf",
+    "zipCodes": ["89012", "89052"],
+    "center": [-115.000, 36.020],
+    "heroEyebrow": "Henderson, Nevada",
+    "priceRange": "$300K–$15M+",
+    "established": "1994",
+    "developer": "MacDonald Properties",
+    "acreage": "~3,200 acres",
+    "homeCount": "8,000+",
+    "guardGated": false,
+    "hoaRange": "$50–$500/mo",
+    "overview": [
+      "MacDonald Ranch is one of the most expansive and diverse residential areas in Henderson, spanning approximately 3,200 acres along the eastern foothills of the McCullough Range. Developed by MacDonald Properties beginning in 1994, this master-planned area has grown to encompass more than 8,000 homes across multiple distinct communities, from active-adult neighborhoods to ultra-luxury guard-gated enclaves.",
+      "The MacDonald Ranch umbrella includes several of Henderson's most recognized communities: Sun City MacDonald Ranch (a Del Webb 55+ community), The Foothills at MacDonald Ranch (a guard-gated luxury enclave), Sunridge at MacDonald Ranch (a family-oriented neighborhood with golf views), and MacDonald Highlands (Henderson's premier luxury community with the DragonRidge Country Club). This diversity makes MacDonald Ranch a hub for virtually every buyer profile.",
+      "The area's elevated position along the Henderson foothills provides many homes with dramatic panoramic views of the Las Vegas Strip, the surrounding mountain ranges, and the desert landscape. Combined with Henderson's consistently top-ranked quality of life — including low crime, excellent schools, and abundant parks — MacDonald Ranch has become one of the most sought-after addresses in Southern Nevada.",
+      "Homes across the MacDonald Ranch area range from approximately $300,000 in Sun City MacDonald Ranch to over $15 million in MacDonald Highlands' most exclusive enclaves. This extraordinary breadth of housing options, combined with the area's natural beauty and proximity to Henderson's dining, shopping, and recreation, makes MacDonald Ranch a cornerstone of the Henderson real estate market."
+    ],
+    "highlights": [
+      { "title": "Multiple Distinct Communities", "body": "Sun City MacDonald Ranch, The Foothills, Sunridge, and MacDonald Highlands — each community offers a distinct lifestyle within the broader MacDonald Ranch area.", "iconType": "home" },
+      { "title": "DragonRidge Country Club", "body": "The centerpiece of MacDonald Highlands, DragonRidge offers a Tom Fazio/Jay Morrish-designed championship course, fine dining, fitness center, and full-service spa.", "iconType": "golf" },
+      { "title": "Henderson Foothills Location", "body": "Elevated position along the McCullough Range provides panoramic views of the Las Vegas Strip and surrounding desert from hundreds of homesites.", "iconType": "mountain" },
+      { "title": "Active Adult Living", "body": "Sun City MacDonald Ranch by Del Webb offers 2,800+ homes for 55+ buyers with two golf courses, recreation centers, pools, and over 80 clubs.", "iconType": "community" },
+      { "title": "Guard-Gated Luxury Options", "body": "The Foothills and MacDonald Highlands both offer guard-gated living with custom and semi-custom homes from $1 million to $15 million+.", "iconType": "shield" },
+      { "title": "Proven Value Appreciation", "body": "30+ years of development history with strong, consistent appreciation. One of Henderson's most established and desirable residential areas.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "MacDonald Highlands", "type": "Guard-Gated · Ultra-Luxury", "desc": "Henderson's premier luxury community with DragonRidge Country Club, custom estates, and panoramic Strip views.", "price": "From $800K+" },
+      { "name": "Sun City MacDonald Ranch", "type": "55+ · Active Adult", "desc": "Del Webb's premier Henderson 55+ community with two golf courses, recreation centers, and over 2,800 homes.", "price": "From $300K+" },
+      { "name": "Foothills at MacDonald Ranch", "type": "Guard-Gated · Luxury", "desc": "Guard-gated luxury community with custom homes, golf course views, and elevated mountain positions.", "price": "From $1M+" },
+      { "name": "Sunridge at MacDonald Ranch", "type": "Single-Family · Family", "desc": "Family-oriented community with golf course views, quality construction, and access to top-rated Henderson schools.", "price": "From $600K+" },
+      { "name": "Dragon Rock", "type": "Double Guard-Gated · Ultra-Luxury", "desc": "The most exclusive enclave within MacDonald Highlands. Double guard-gated with Blue Heron custom estates.", "price": "From $5M+" },
+      { "name": "Four Seasons Private Residences", "type": "Luxury Residences · New", "desc": "171 ultra-luxury branded residences within MacDonald Highlands, delivering Four Seasons service and luxury.", "price": "From $3.67M+" }
+    ],
+    "parks": [
+      { "name": "Anthem Hills Park", "address": "2880 Reunion Dr, Henderson, NV 89052", "acreage": "~10 acres", "amenities": ["Playgrounds", "Sports courts", "Walking paths", "Picnic areas", "Dog park"] },
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~100 acres", "amenities": ["Lake", "Fishing", "Hiking trails", "Dog park", "Amphitheater"] },
+      { "name": "McCullough Hills Trail", "address": "McCullough Hills Trailhead, Henderson, NV 89012", "acreage": "Linear trail", "amenities": ["Hiking", "Mountain biking", "Desert wildlife", "Scenic views"] }
+    ],
+    "schools": {
+      "Public": [
+        ["John C. Vanderburg Elementary", "K–5", "8/10"],
+        ["Del E. Webb Middle School", "6–8", "7/10"],
+        ["Coronado High School", "9–12", "7/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Pinecrest Academy Inspirada", "K–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy of Nevada", "K–12", "9/10"],
+        ["Somerset Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~22,000",
+      "medianAge": "52",
+      "avgIncome": "$115,000+",
+      "households": "8,000+",
+      "homeownership": "82%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-215 West → I-15 North" },
+      { "time": "~10 min", "destination": "to Henderson Green Valley", "route": "via Horizon Ridge Pkwy" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-215 West → I-15" },
+      { "time": "~25 min", "destination": "to Downtown Las Vegas", "route": "via I-515 North" }
+    ],
+    "faqs": [
+      { "q": "What is the price range in MacDonald Ranch?", "a": "The MacDonald Ranch area spans an extraordinary range from approximately $300,000 in Sun City MacDonald Ranch (55+) to over $15 million in MacDonald Highlands' most exclusive enclaves like Dragon Rock." },
+      { "q": "What communities are part of MacDonald Ranch?", "a": "The MacDonald Ranch area includes Sun City MacDonald Ranch (55+), The Foothills at MacDonald Ranch (guard-gated luxury), Sunridge at MacDonald Ranch (family), and MacDonald Highlands (ultra-luxury with DragonRidge Country Club)." },
+      { "q": "Is MacDonald Ranch in Henderson or Las Vegas?", "a": "MacDonald Ranch is located in Henderson, Nevada — the second-largest city in the Las Vegas metro area. Henderson is consistently ranked among the safest and most livable cities in America." },
+      { "q": "What golf courses are in MacDonald Ranch?", "a": "DragonRidge Country Club (Tom Fazio/Jay Morrish design) is located within MacDonald Highlands. Sun City MacDonald Ranch features two additional golf courses available to its 55+ residents." },
+      { "q": "Is there a 55+ community in MacDonald Ranch?", "a": "Yes. Sun City MacDonald Ranch by Del Webb is one of Henderson's premier 55+ communities, offering over 2,800 homes with two golf courses, recreation centers, pools, fitness facilities, and more than 80 organized clubs." },
+      { "q": "What are guard-gated options in MacDonald Ranch?", "a": "MacDonald Highlands and The Foothills at MacDonald Ranch are both guard-gated communities. MacDonald Highlands' Dragon Rock enclave is double guard-gated for maximum privacy and exclusivity." },
+      { "q": "What schools serve MacDonald Ranch?", "a": "The area is served by CCSD schools including Vanderburg Elementary (8/10), Del E. Webb Middle School (7/10), and Coronado High School (7/10). Henderson International School and Bishop Gorman are nearby private options." },
+      { "q": "What ZIP codes cover MacDonald Ranch?", "a": "MacDonald Ranch spans ZIP codes 89012 and 89052 in the southeastern Henderson foothills." }
+    ],
+    "nearby": [
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "Henderson's premier luxury community within MacDonald Ranch, with DragonRidge Country Club." },
+      { "name": "Anthem", "href": "/anthem/", "price": "From $400K", "compare": "Large Henderson master plan with Anthem Country Club and Sun City Anthem (55+)." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Henderson master plan with Rio Secco Golf Club and guard-gated enclaves." },
+      { "name": "Green Valley Ranch", "href": "/green-valley-ranch/", "price": "From $400K", "compare": "Established Henderson master plan with extensive parks and top-rated schools." },
+      { "name": "Inspirada", "href": "/inspirada/", "price": "From $420K", "compare": "Newer Henderson master plan with active new construction and family amenities." },
+      { "name": "Ascaya", "href": "/ascaya/", "price": "From $3M", "compare": "Ultra-luxury custom lot community in the Henderson foothills with dramatic views." }
+    ],
+    "testimonials": [
+      { "quote": "Nevada Real Estate Group helped us navigate the MacDonald Ranch area from Sun City to MacDonald Highlands. Their deep knowledge of every sub-community helped us find exactly the right fit for our family.", "name": "Thomas & Karen B.", "detail": "Bought in MacDonald Ranch, Henderson · 2024" },
+      { "quote": "Selling in the MacDonald Ranch area requires understanding the nuances between each community. Nevada Real Estate Group positioned our home perfectly and attracted the right buyers.", "name": "Gregory S.", "detail": "Sold in MacDonald Ranch, Henderson · 2025" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "MacDonald Ranch",
+    "ylopoMinPrice": 300000
+  },
+  {
+    "slug": "four-seasons-private-residences",
+    "name": "Four Seasons Private Residences",
+    "parentCommunity": "MacDonald Highlands",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "Luxury Branded Residences · New Construction",
+    "zipCodes": ["89012"],
+    "center": [-114.985, 36.015],
+    "heroEyebrow": "MacDonald Highlands, Henderson",
+    "priceRange": "$3.67M–$28.95M+",
+    "established": "2024",
+    "developer": "Discovery Land Company / MacDonald Highlands",
+    "acreage": "~15 acres",
+    "homeCount": "171",
+    "guardGated": true,
+    "hoaRange": "$2,000–$5,000+/mo",
+    "overview": [
+      "Four Seasons Private Residences Las Vegas is the most anticipated ultra-luxury residential development in the history of the Las Vegas Valley. Located within the guard-gated MacDonald Highlands community in Henderson, this 171-unit branded residence project brings the legendary Four Seasons hospitality brand to the residential market for the first time in Nevada, offering a level of service and luxury that is unprecedented in the region.",
+      "The project features a curated collection of residences ranging from approximately $3.67 million for entry-level units to over $28.95 million for the most exclusive penthouses and estate residences. Each home is designed with the Four Seasons standard of excellence, featuring premium finishes, expansive floor plans, and floor-to-ceiling glass that frames panoramic views of the Las Vegas Strip, the McCullough Range, and the desert landscape stretching to the horizon.",
+      "Residents of Four Seasons Private Residences enjoy a full suite of Four Seasons services, including 24-hour concierge, valet parking, housekeeping, in-residence dining, spa services, and access to resort-caliber amenities including infinity pools, a state-of-the-art fitness center, private dining rooms, and curated social programming. The development also benefits from its location within MacDonald Highlands, providing access to DragonRidge Country Club's Tom Fazio-designed championship golf course.",
+      "With approximately 75% of units reported sold during pre-construction, Four Seasons Private Residences has validated Las Vegas as a legitimate destination for branded ultra-luxury living. The project is expected to begin deliveries in 2027, establishing a new ceiling for residential real estate pricing in the Las Vegas metro area and attracting an international clientele of high-net-worth individuals seeking a primary residence, second home, or investment property."
+    ],
+    "highlights": [
+      { "title": "Four Seasons Service", "body": "Full Four Seasons hospitality including 24-hour concierge, in-residence dining, housekeeping, valet, and spa services — the first branded residences of this caliber in Nevada.", "iconType": "building" },
+      { "title": "Ultra-Luxury Pricing", "body": "Residences from $3.67 million to over $28.95 million, establishing a new pricing benchmark for the Las Vegas metro luxury market.", "iconType": "trend" },
+      { "title": "Panoramic Strip Views", "body": "Floor-to-ceiling glass frames sweeping views of the Las Vegas Strip, the McCullough Range, and the desert valley from the elevated MacDonald Highlands position.", "iconType": "mountain" },
+      { "title": "DragonRidge Golf Access", "body": "Located within MacDonald Highlands, residents can access DragonRidge Country Club's Tom Fazio-designed championship course, dining, and spa.", "iconType": "golf" },
+      { "title": "Resort-Caliber Amenities", "body": "Infinity pools, state-of-the-art fitness center, private dining rooms, spa treatment rooms, and curated social programming for residents.", "iconType": "pool" },
+      { "title": "Guard-Gated Privacy", "body": "Located within the guard-gated MacDonald Highlands community with additional private security and controlled access for Four Seasons residents.", "iconType": "shield" }
+    ],
+    "neighborhoods": [
+      { "name": "Sky Residences", "type": "Penthouse · Ultra-Luxury", "desc": "The most exclusive residences at Four Seasons, offering full-floor layouts with wrap-around terraces and 360-degree views.", "price": "From $15M+" },
+      { "name": "Estate Residences", "type": "Full-Floor · Premium", "desc": "Expansive residences with generous living spaces, private elevator access, and premium finishes throughout.", "price": "From $8M+" },
+      { "name": "View Residences", "type": "Luxury · Strip Views", "desc": "Residences positioned for maximum Strip and valley views with open floor plans and designer kitchens.", "price": "From $5M+" },
+      { "name": "Garden Residences", "type": "Ground-Level · Luxury", "desc": "Ground-level units with private patios, direct pool access, and seamless indoor-outdoor desert living.", "price": "From $3.67M+" },
+      { "name": "MacDonald Highlands Estates", "type": "Custom · Adjacent", "desc": "Custom single-family estates within the broader MacDonald Highlands community, adjacent to Four Seasons.", "price": "From $2M+" },
+      { "name": "DragonRidge Villas", "type": "Golf · Luxury", "desc": "Golf course homes along DragonRidge fairways within MacDonald Highlands, steps from Four Seasons amenities.", "price": "From $1.5M+" }
+    ],
+    "parks": [
+      { "name": "Cornerstone Park", "address": "1600 Wigwam Pkwy, Henderson, NV 89074", "acreage": "~100 acres", "amenities": ["Lake", "Fishing", "Hiking trails", "Dog park", "Amphitheater"] },
+      { "name": "McCullough Hills Trail", "address": "McCullough Hills Trailhead, Henderson, NV 89012", "acreage": "Linear trail", "amenities": ["Hiking", "Mountain biking", "Desert wildlife", "Scenic views"] },
+      { "name": "Anthem Hills Park", "address": "2880 Reunion Dr, Henderson, NV 89052", "acreage": "~10 acres", "amenities": ["Playgrounds", "Sports courts", "Walking paths", "Picnic areas"] }
+    ],
+    "schools": {
+      "Public": [
+        ["John C. Vanderburg Elementary", "K–5", "8/10"],
+        ["Del E. Webb Middle School", "6–8", "7/10"],
+        ["Coronado High School", "9–12", "7/10"]
+      ],
+      "Private": [
+        ["Henderson International School", "PreK–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"]
+      ],
+      "Charter": [
+        ["Doral Academy of Nevada", "K–12", "9/10"],
+        ["Pinecrest Academy Inspirada", "K–12", "A"]
+      ]
+    },
+    "demographics": {
+      "population": "~350 (projected)",
+      "medianAge": "55",
+      "avgIncome": "$1,000,000+",
+      "households": "171",
+      "homeownership": "95%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-215 West → I-15 North" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-215 West → I-15" },
+      { "time": "~10 min", "destination": "to Henderson Green Valley", "route": "via Horizon Ridge Pkwy" },
+      { "time": "~25 min", "destination": "to Downtown Las Vegas", "route": "via I-515 North" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for Four Seasons Private Residences?", "a": "Residences range from approximately $3.67 million for entry-level units to over $28.95 million for the most exclusive sky residences and penthouses. This establishes a new pricing ceiling for the Las Vegas metro area." },
+      { "q": "When will Four Seasons Private Residences be completed?", "a": "The development is expected to begin delivering residences in 2027. Pre-construction sales have been strong, with approximately 75% of the 171 units reported sold." },
+      { "q": "What services are included with Four Seasons residences?", "a": "Residents receive full Four Seasons hospitality services including 24-hour concierge, valet parking, housekeeping, in-residence dining, spa services, fitness center access, and curated social programming." },
+      { "q": "Is Four Seasons part of MacDonald Highlands?", "a": "Yes. Four Seasons Private Residences is located within the guard-gated MacDonald Highlands community in Henderson. Residents have access to MacDonald Highlands amenities including DragonRidge Country Club." },
+      { "q": "How many units are in Four Seasons Private Residences?", "a": "The development includes 171 residences across multiple floor plan types, from garden-level units to full-floor penthouses and sky residences." },
+      { "q": "What are HOA/service fees at Four Seasons?", "a": "Monthly fees at Four Seasons Private Residences are estimated between $2,000 and $5,000+ per month, reflecting the full-service Four Seasons hospitality model including concierge, security, housekeeping options, and resort amenities." },
+      { "q": "Can I play golf at DragonRidge as a Four Seasons resident?", "a": "Four Seasons Private Residences is located within MacDonald Highlands, which is home to DragonRidge Country Club. Membership at DragonRidge is separate and available to residents on a fee basis." },
+      { "q": "Is this a hotel or private residences?", "a": "Four Seasons Private Residences are privately owned homes — not hotel units. Owners receive Four Seasons-branded services and amenities, but the residences are full-time homes with private ownership, not timeshares or hotel-condo units." }
+    ],
+    "nearby": [
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "The guard-gated luxury community surrounding Four Seasons with DragonRidge Country Club." },
+      { "name": "MacDonald Ranch", "href": "/macdonald-ranch/", "price": "From $300K", "compare": "The broader Henderson master-plan area including Sun City, Foothills, and Sunridge." },
+      { "name": "Ascaya", "href": "/ascaya/", "price": "From $3M", "compare": "Ultra-luxury custom lot community in the Henderson foothills with dramatic desert views." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated enclave — the west valley's equivalent." },
+      { "name": "The Summit Club", "href": "/the-summit-club/", "price": "From $5M", "compare": "Las Vegas' most exclusive private community with Tom Fazio golf. By invitation only." }
+    ],
+    "testimonials": [
+      { "quote": "When we learned Four Seasons was bringing branded residences to Las Vegas, we knew immediately it was the right investment. Nevada Real Estate Group secured our preferred floor and view corridor during the pre-construction phase.", "name": "William & Catherine R.", "detail": "Reserved at Four Seasons Private Residences · 2025" },
+      { "quote": "Nevada Real Estate Group's understanding of the ultra-luxury market and their relationships with the development team gave us access and insight that no other agent could provide.", "name": "Jonathan L.", "detail": "Reserved at Four Seasons Private Residences · 2024" }
+    ],
+    "ylopoCity": "Henderson",
+    "ylopoKeywords": "Four Seasons Private Residences MacDonald Highlands",
+    "ylopoMinPrice": 3670000
+  },
+  {
+    "slug": "heartland-tule-springs",
+    "name": "Heartland at Tule Springs",
+    "parentCommunity": null,
+    "city": "North Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction",
+    "zipCodes": ["89166", "89084"],
+    "center": [-115.240, 36.290],
+    "heroEyebrow": "North Las Vegas, Nevada",
+    "priceRange": "$350K–$550K",
+    "established": "2021",
+    "developer": "Multiple National Builders",
+    "acreage": "~1,200 acres",
+    "homeCount": "3,000+ at build-out",
+    "guardGated": false,
+    "hoaRange": "$80–$200/mo",
+    "overview": [
+      "Heartland at Tule Springs is one of the most dynamic new-construction master-planned communities in the Las Vegas Valley, located in the rapidly growing northern corridor of North Las Vegas. Ranked among the top 50 best-selling master-planned communities nationally, Heartland has attracted thousands of buyers with its combination of brand-new homes, competitive pricing, modern amenities, and proximity to the Tule Springs Fossil Beds National Monument.",
+      "The community features homes from several of the nation's top production builders, including Lennar, KB Home, Century Communities, and Richmond American Homes. Floor plans range from compact single-family homes around 1,400 square feet to spacious two-story residences exceeding 3,000 square feet, with pricing that makes homeownership accessible to first-time buyers, young families, and investors.",
+      "Heartland's master plan includes an extensive network of parks, trails, and community amenities, with planned commercial centers to serve the growing population. The adjacent Tule Springs Fossil Beds National Monument — a 22,650-acre preserve protecting Ice Age fossils — provides a unique natural amenity that no other Las Vegas community can match. Residents also benefit from proximity to the VA Medical Center and the planned developments along the 215 northern beltway extension.",
+      "North Las Vegas has emerged as one of the fastest-growing cities in the United States, and Heartland at Tule Springs is at the center of that growth. For buyers seeking new-construction homes at price points significantly below Summerlin, Henderson, or the southwest valley, Heartland represents one of the strongest value propositions in the Las Vegas metro area."
+    ],
+    "highlights": [
+      { "title": "Nationally Ranked Community", "body": "Ranked among the top 50 best-selling master-planned communities in the nation, reflecting strong buyer demand and builder confidence.", "iconType": "trend" },
+      { "title": "Affordable New Construction", "body": "Brand-new homes from the $350,000s — significantly below comparable new construction in Summerlin, Henderson, or the southwest valley.", "iconType": "home" },
+      { "title": "Multiple National Builders", "body": "Homes by Lennar, KB Home, Century Communities, Richmond American, and others. Wide selection of floor plans and design options.", "iconType": "building" },
+      { "title": "Tule Springs National Monument", "body": "Adjacent to the 22,650-acre Tule Springs Fossil Beds National Monument, providing hiking, wildlife viewing, and preserved desert landscape.", "iconType": "mountain" },
+      { "title": "Parks & Trail Network", "body": "Master-planned parks, community pools, playgrounds, and an expanding trail system connecting neighborhoods to open space.", "iconType": "tree" },
+      { "title": "Rapid Growth Corridor", "body": "Located in one of the fastest-growing corridors in the Las Vegas Valley, with new schools, shopping centers, and infrastructure being built alongside homes.", "iconType": "community" }
+    ],
+    "neighborhoods": [
+      { "name": "Lennar — Sunrise Collection", "type": "New Build · Value", "desc": "Lennar's everything's-included homes with designer finishes, smart home technology, and energy-efficient construction.", "price": "From $380K+" },
+      { "name": "KB Home — Groves", "type": "New Build · Family", "desc": "Energy Star-certified homes with flexible floor plans, modern kitchens, and covered patios on spacious lots.", "price": "From $360K+" },
+      { "name": "Century Communities — Vista", "type": "New Build · Modern", "desc": "Contemporary single-family homes with open-concept layouts and three-car garages.", "price": "From $370K+" },
+      { "name": "Richmond American — Seasons", "type": "New Build · Starter", "desc": "Well-designed starter homes with upgradeable options, ideal for first-time buyers.", "price": "From $350K+" },
+      { "name": "Premium Collection", "type": "New Build · Upgraded", "desc": "Larger floor plans exceeding 3,000 square feet with premium lot positions and upgraded finishes.", "price": "From $475K+" },
+      { "name": "Townhome Collection", "type": "New Build · Attached", "desc": "Low-maintenance attached homes for buyers seeking new construction at the community's most accessible price point.", "price": "From $350K+" }
+    ],
+    "parks": [
+      { "name": "Tule Springs Fossil Beds National Monument", "address": "601 Nevada Hwy 157, Las Vegas, NV 89124", "acreage": "22,650 acres", "amenities": ["Hiking trails", "Fossil viewing", "Wildlife habitat", "Desert preserve", "Visitor center"] },
+      { "name": "Craig Ranch Regional Park", "address": "628 W Craig Rd, North Las Vegas, NV 89032", "acreage": "~170 acres", "amenities": ["Skate park", "BMX track", "Sports fields", "Amphitheater", "Dog park", "Water playground"] },
+      { "name": "Heartland Community Park", "address": "Heartland Village, North Las Vegas, NV 89166", "acreage": "~15 acres (planned)", "amenities": ["Playgrounds", "Walking trails", "Picnic pavilions", "Open fields", "Community pool"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Tule Springs Elementary", "K–5", "6/10"],
+        ["Elise L. Wolff Elementary", "K–5", "6/10"],
+        ["Cheyenne High School", "9–12", "5/10"]
+      ],
+      "Private": [
+        ["Legacy Christian Academy", "K–12", "B+"],
+        ["Mountain View Christian School", "PreK–8", "B+"],
+        ["Bishop Gorman High School", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Doral Academy Fire Mesa", "K–8", "8/10"],
+        ["Explore Academy", "6–12", "7/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~7,500 (growing)",
+      "medianAge": "33",
+      "avgIncome": "$75,000+",
+      "households": "~2,500 (growing)",
+      "homeownership": "78%"
+    },
+    "driveTimes": [
+      { "time": "~30 min", "destination": "to the Strip", "route": "via US-95 South → I-15" },
+      { "time": "~20 min", "destination": "to Centennial Hills", "route": "via N Decatur Blvd" },
+      { "time": "~35 min", "destination": "to Harry Reid Airport", "route": "via US-95 South → I-15 South" },
+      { "time": "~25 min", "destination": "to Downtown Las Vegas", "route": "via I-15 South" }
+    ],
+    "faqs": [
+      { "q": "What is the price range in Heartland at Tule Springs?", "a": "New-construction homes in Heartland at Tule Springs range from approximately $350,000 for entry-level floor plans to around $550,000 for the largest premium homes with upgraded finishes." },
+      { "q": "Is Heartland at Tule Springs in North Las Vegas?", "a": "Yes. Heartland is located in North Las Vegas, in the rapidly growing northern corridor of the Las Vegas Valley, near the Tule Springs Fossil Beds National Monument." },
+      { "q": "What builders are in Heartland at Tule Springs?", "a": "The community features homes from multiple national builders including Lennar, KB Home, Century Communities, and Richmond American Homes, each offering distinct floor plans and design options." },
+      { "q": "Why is Heartland nationally ranked?", "a": "Heartland at Tule Springs has been ranked among the top 50 best-selling master-planned communities nationally due to its strong sales pace, competitive pricing, and the quality of its new-construction offerings." },
+      { "q": "What is the Tule Springs National Monument?", "a": "Tule Springs Fossil Beds National Monument is a 22,650-acre federal preserve adjacent to Heartland that protects Ice Age fossils and desert habitat. It provides hiking, wildlife viewing, and open space that no other Las Vegas community can match." },
+      { "q": "What ZIP code is Heartland at Tule Springs in?", "a": "Heartland at Tule Springs spans ZIP codes 89166 and 89084 in North Las Vegas." },
+      { "q": "What schools serve Heartland at Tule Springs?", "a": "The community is served by CCSD schools. New schools are being planned as the area grows. Charter options like Doral Academy Fire Mesa (8/10) are available nearby." },
+      { "q": "Is Heartland at Tule Springs a good investment?", "a": "Heartland offers strong investment potential due to its below-market pricing for new construction, location in one of the fastest-growing corridors in the valley, and planned infrastructure improvements including the 215 northern beltway extension." }
+    ],
+    "nearby": [
+      { "name": "Aliante", "href": "/aliante/", "price": "From $350K", "compare": "Established North Las Vegas master plan with golf course and casino resort." },
+      { "name": "Skye Canyon", "href": "/skye-canyon/", "price": "From $400K", "compare": "Northwest Las Vegas master plan with skye center amenities and mountain proximity." },
+      { "name": "Providence", "href": "/providence/", "price": "From $450K", "compare": "Northwest Las Vegas master plan by Lennar with parks and community center." },
+      { "name": "Centennial Hills", "href": "/centennial-hills/", "price": "From $400K", "compare": "Established northwest Las Vegas area with mature neighborhoods and amenities." },
+      { "name": "North Las Vegas", "href": "/north-las-vegas/", "price": "From $300K", "compare": "The broader city encompassing Heartland, with diverse housing options." }
+    ],
+    "testimonials": [
+      { "quote": "We got a brand-new home for nearly $200K less than comparable new construction in Summerlin. Nevada Real Estate Group helped us negotiate builder incentives that made the deal even better.", "name": "Carlos & Maria F.", "detail": "Bought in Heartland at Tule Springs · 2025" },
+      { "quote": "As first-time buyers, the process felt overwhelming until Nevada Real Estate Group walked us through every builder option in Heartland. They even attended the design center appointment with us.", "name": "Ashley & Brandon T.", "detail": "Bought in Heartland at Tule Springs · 2024" }
+    ],
+    "ylopoCity": "North Las Vegas",
+    "ylopoKeywords": "Heartland Tule Springs",
+    "ylopoMinPrice": 350000
+  },
+  {
+    "slug": "canyon-gate",
+    "name": "Canyon Gate",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Golf",
+    "zipCodes": ["89117"],
+    "center": [-115.275, 36.150],
+    "heroEyebrow": "Las Vegas, Nevada",
+    "priceRange": "$700K–$2M+",
+    "established": "1989",
+    "developer": "Canyon Gate Development",
+    "acreage": "330 acres",
+    "homeCount": "800+",
+    "guardGated": true,
+    "hoaRange": "$200–$500/mo",
+    "overview": [
+      "Canyon Gate is one of the Las Vegas Valley's most established guard-gated golf course communities, encompassing 330 acres and over 800 homes in a premier location along the western edge of the valley. Developed in 1989, Canyon Gate was one of the first luxury guard-gated communities in Las Vegas and has maintained its reputation as one of the most desirable residential addresses for golf enthusiasts and families seeking privacy, security, and timeless elegance.",
+      "The community is anchored by the Canyon Gate Country Club, an 18-hole championship golf course designed by Ted Robinson Sr., known for its lush fairways, strategic water features, and mature landscaping. The country club offers dining, a pro shop, tennis courts, a swimming pool, and a full calendar of social events, creating a true country club lifestyle within the community's secure perimeter.",
+      "Homes in Canyon Gate range from approximately $700,000 for resale properties to over $2 million for premium golf course lots and renovated custom estates. The architectural styles span Mediterranean, Spanish Colonial, and Contemporary designs on generous lots with mature landscaping. Many homes back directly onto the golf course, offering fairway views and a sense of openness rarely found in a community so centrally located.",
+      "Canyon Gate's central position — 15 minutes to the Strip, 10 minutes to Summerlin, and immediate access to major freeways — makes it one of the most conveniently located guard-gated golf communities in the valley. For buyers who want the country club lifestyle without the remote drive times of newer luxury communities, Canyon Gate delivers a compelling combination of location, privacy, and established community character."
+    ],
+    "highlights": [
+      { "title": "Championship Golf Course", "body": "Canyon Gate Country Club features an 18-hole Ted Robinson Sr.-designed course with water features, mature trees, and meticulously maintained fairways.", "iconType": "golf" },
+      { "title": "Guard-Gated Security", "body": "24-hour staffed guard gate with comprehensive security patrols. One of Las Vegas' most established guard-gated communities since 1989.", "iconType": "shield" },
+      { "title": "Country Club Lifestyle", "body": "Full country club amenities including dining, tennis courts, swimming pool, pro shop, and an active social calendar for members.", "iconType": "community" },
+      { "title": "Central Valley Location", "body": "15 minutes to the Strip, 10 minutes to Summerlin, and immediate freeway access. One of the most centrally located golf communities in Las Vegas.", "iconType": "building" },
+      { "title": "Mature Estate Lots", "body": "Generous lots with decades-old landscaping, many backing directly onto golf course fairways with unobstructed views.", "iconType": "home" },
+      { "title": "Proven Property Values", "body": "35+ years of established property values with consistent appreciation. Canyon Gate homes hold their value through every market cycle.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Golf Course Estates", "type": "Custom · Fairway Views", "desc": "Premium homes backing directly onto Canyon Gate's championship golf course with unobstructed fairway and water feature views.", "price": "From $1.2M+" },
+      { "name": "Canyon Gate South", "type": "Semi-Custom · Established", "desc": "Established section with mature landscaping, spacious lots, and well-maintained semi-custom homes.", "price": "From $800K+" },
+      { "name": "Canyon Gate North", "type": "Semi-Custom · Family", "desc": "Family-friendly section with larger floor plans, updated kitchens and baths, and proximity to the community pool.", "price": "From $750K+" },
+      { "name": "The Enclave", "type": "Custom · Premium", "desc": "Select custom-built estates on the community's most desirable lots, featuring architectural distinction and premium finishes.", "price": "From $1.5M+" },
+      { "name": "Patio Home Collection", "type": "Low-Maintenance · Luxury", "desc": "Luxury patio homes ideal for downsizers seeking guard-gated golf community living without extensive yard maintenance.", "price": "From $700K+" },
+      { "name": "Canyon Gate Terrace", "type": "Single-Family · Entry", "desc": "Entry-level Canyon Gate homes offering guard-gated golf community living at the most accessible price point.", "price": "From $700K+" }
+    ],
+    "parks": [
+      { "name": "Desert Breeze Park", "address": "8275 Spring Mountain Rd, Las Vegas, NV 89147", "acreage": "~20 acres", "amenities": ["Skate park", "Soccer fields", "Playgrounds", "Walking trails", "Community pool"] },
+      { "name": "Canyon Gate Community Pool & Tennis", "address": "2001 Canyon Gate Dr, Las Vegas, NV 89117", "acreage": "~3 acres", "amenities": ["Swimming pool", "Tennis courts", "Clubhouse", "Spa", "Picnic areas"] },
+      { "name": "Peccole Ranch Park", "address": "2600 Torrey Pines Dr, Las Vegas, NV 89146", "acreage": "~12 acres", "amenities": ["Playgrounds", "Basketball courts", "Picnic areas", "Walking paths", "Open fields"] }
+    ],
+    "schools": {
+      "Public": [
+        ["William & Mary Scherkenbach Elementary", "K–5", "7/10"],
+        ["Lawrence & Heidi Canarelli Middle School", "6–8", "7/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Pebble Campus", "K–8", "8/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~2,200",
+      "medianAge": "52",
+      "avgIncome": "$185,000+",
+      "households": "800+",
+      "homeownership": "85%"
+    },
+    "driveTimes": [
+      { "time": "~15 min", "destination": "to the Strip", "route": "via W Flamingo Rd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via W Sahara Ave" },
+      { "time": "~20 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~25 min", "destination": "to Harry Reid Airport", "route": "via I-215 South → I-15" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Canyon Gate?", "a": "Homes in Canyon Gate range from approximately $700,000 for entry-level resale homes to over $2 million for premium golf course estates and custom-renovated properties." },
+      { "q": "Is Canyon Gate guard-gated?", "a": "Yes. Canyon Gate has been guard-gated since it was developed in 1989, with a 24-hour staffed guard gate and comprehensive security patrols throughout the community." },
+      { "q": "What golf course is in Canyon Gate?", "a": "Canyon Gate Country Club features an 18-hole championship course designed by Ted Robinson Sr. The course is known for its water features, mature trees, and meticulously maintained playing surfaces." },
+      { "q": "Is Canyon Gate Country Club membership required?", "a": "Country club membership is not required for homeownership in Canyon Gate. Many residents join for golf, dining, tennis, and social privileges, but it is optional." },
+      { "q": "What ZIP code is Canyon Gate in?", "a": "Canyon Gate is located in ZIP code 89117, in the western Las Vegas Valley near the intersection of Sahara and Durango." },
+      { "q": "How does Canyon Gate compare to other golf communities?", "a": "Canyon Gate is one of the most centrally located guard-gated golf communities in Las Vegas. It offers a more accessible price point than Summerlin's golf enclaves while delivering comparable guard-gated security and a mature country club lifestyle." },
+      { "q": "What schools serve Canyon Gate?", "a": "Canyon Gate is served by CCSD schools including Palo Verde High School (8/10). The Meadows School (A+), one of Nevada's premier private schools, is located nearby." },
+      { "q": "What are HOA fees in Canyon Gate?", "a": "HOA fees in Canyon Gate typically range from $200 to $500 per month, covering guard gate staffing, security patrols, common area maintenance, and community amenities. Country club membership fees are separate." }
+    ],
+    "nearby": [
+      { "name": "Peccole Ranch", "href": "/peccole-ranch/", "price": "From $400K", "compare": "The 640-acre master plan adjacent to Canyon Gate with 22 neighborhoods at every price point." },
+      { "name": "Queensridge", "href": "/queensridge/", "price": "From $800K", "compare": "Guard-gated luxury community within Peccole Ranch with One Queensridge Place towers." },
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "Las Vegas' premier master-planned community, located directly west." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $1.2M", "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer courses." },
+      { "name": "Spring Valley", "href": "/spring-valley/", "price": "From $300K", "compare": "Large unincorporated area south of Canyon Gate with diverse housing options." },
+      { "name": "The Lakes", "href": "/the-lakes/", "price": "From $350K", "compare": "Established waterfront community east of Canyon Gate with lake-front living." }
+    ],
+    "testimonials": [
+      { "quote": "Canyon Gate gives us the country club golf lifestyle right in the heart of Las Vegas. Nevada Real Estate Group found us a golf course lot that perfectly fit our budget and lifestyle.", "name": "John & Diane W.", "detail": "Bought in Canyon Gate · 2024" },
+      { "quote": "We chose Canyon Gate for the location — 15 minutes to the Strip and guard-gated security. Nevada Real Estate Group's marketing attracted a qualified buyer within the first week.", "name": "Margaret C.", "detail": "Sold in Canyon Gate · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Canyon Gate",
+    "ylopoMinPrice": 700000
+  },
+  {
+    "slug": "cello-tower",
+    "name": "Cello Tower",
+    "parentCommunity": null,
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Luxury High-Rise · New Construction",
+    "zipCodes": ["89101"],
+    "center": [-115.148, 36.168],
+    "heroEyebrow": "Downtown Las Vegas",
+    "priceRange": "$700K–$4.5M+",
+    "established": "2025",
+    "developer": "Cello Group",
+    "acreage": "~2 acres",
+    "homeCount": "240",
+    "guardGated": true,
+    "hoaRange": "$500–$2,500/mo",
+    "overview": [
+      "Cello Tower is the first new luxury high-rise condominium development to break ground in Downtown Las Vegas in over 15 years, signaling a new era of urban luxury living in the heart of the city. Rising above the intersection of Symphony Park and the Arts District, this 240-unit tower is bringing a level of residential sophistication to downtown that was previously only available on the Las Vegas Strip or in suburban guard-gated communities.",
+      "The project features residences ranging from approximately $700,000 for studio and one-bedroom units to over $4.5 million for the tower's most exclusive penthouses. Every unit is designed with floor-to-ceiling glass, premium finishes, and smart home technology. The building's architecture makes a deliberate statement — a modern glass tower that adds to the evolving downtown skyline while complementing the nearby Smith Center for the Performing Arts and the World Market Center.",
+      "Residents of Cello Tower will have access to resort-caliber amenities including a rooftop infinity pool and lounge, state-of-the-art fitness center, private dining and entertainment spaces, co-working facilities, concierge services, and secure parking. The building's ground-floor retail component will bring curated dining and shopping directly to residents' doorsteps.",
+      "Cello Tower's location in Downtown Las Vegas positions residents at the epicenter of the city's cultural renaissance. The Arts District, Fremont East, Symphony Park, and the forthcoming developments along the UNLV Medical District corridor are transforming downtown into a vibrant urban neighborhood. For buyers seeking a walkable, culturally rich lifestyle that is distinctly different from suburban Las Vegas, Cello Tower represents the most compelling opportunity in the market."
+    ],
+    "highlights": [
+      { "title": "First in 15 Years", "body": "The first new luxury high-rise to break ground in Downtown Las Vegas in over 15 years, marking a milestone in the city's urban residential renaissance.", "iconType": "building" },
+      { "title": "Rooftop Infinity Pool", "body": "Resort-style rooftop amenity deck with infinity pool, lounge areas, and panoramic views of the Strip, mountains, and downtown skyline.", "iconType": "pool" },
+      { "title": "Floor-to-Ceiling Glass", "body": "Every residence features floor-to-ceiling glass walls with panoramic views, premium finishes, and integrated smart home technology.", "iconType": "home" },
+      { "title": "Arts District Location", "body": "Steps from the Arts District, Fremont East, Smith Center for the Performing Arts, and downtown's growing dining and entertainment scene.", "iconType": "community" },
+      { "title": "Concierge Living", "body": "Full-service concierge, secure parking, fitness center, co-working spaces, private dining rooms, and ground-floor retail.", "iconType": "shield" },
+      { "title": "Urban Investment Opportunity", "body": "Downtown Las Vegas is undergoing a multi-billion-dollar transformation. Cello Tower positions buyers at the center of one of the fastest-appreciating urban corridors in the West.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Penthouse Collection", "type": "Ultra-Luxury · Top Floor", "desc": "The tower's most exclusive residences with expansive layouts, private terraces, and 360-degree views of the Strip and mountains.", "price": "From $3M+" },
+      { "name": "Sky Residences", "type": "Luxury · High Floor", "desc": "Upper-floor residences with premium views, larger floor plans, and upgraded finishes throughout.", "price": "From $1.5M+" },
+      { "name": "View Residences", "type": "Mid-Rise · Panoramic", "desc": "Mid-level residences with Strip and mountain views, modern kitchens, and spacious living areas.", "price": "From $900K+" },
+      { "name": "City Residences", "type": "Urban · Modern", "desc": "Thoughtfully designed urban residences with efficient layouts, designer finishes, and city views.", "price": "From $700K+" },
+      { "name": "Symphony Park", "type": "Adjacent · Cultural", "desc": "The surrounding neighborhood including the Smith Center, Discovery Children's Museum, and planned mixed-use development.", "price": "Adjacent" },
+      { "name": "Arts District", "type": "Adjacent · Creative", "desc": "Las Vegas' vibrant Arts District with galleries, breweries, restaurants, and a thriving creative community within walking distance.", "price": "Adjacent" }
+    ],
+    "parks": [
+      { "name": "Symphony Park", "address": "200 Symphony Park Ave, Las Vegas, NV 89106", "acreage": "~61 acres", "amenities": ["Smith Center for the Performing Arts", "Discovery Children's Museum", "Public plazas", "Walking paths"] },
+      { "name": "Fremont Street Experience", "address": "425 Fremont St, Las Vegas, NV 89101", "acreage": "~5 acres", "amenities": ["LED canopy", "Live entertainment", "Dining", "Shopping", "Events"] },
+      { "name": "Cashman Field & Heritage Park", "address": "850 Las Vegas Blvd N, Las Vegas, NV 89101", "acreage": "~35 acres", "amenities": ["Sports fields", "Event space", "Heritage park", "Walking paths"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Las Vegas Academy of the Arts", "9–12", "9/10"],
+        ["Rancho High School", "9–12", "5/10"],
+        ["West Prep Academy", "6–12", "6/10"]
+      ],
+      "Private": [
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Las Vegas Day School", "PreK–8", "A"]
+      ],
+      "Charter": [
+        ["Explore Academy", "6–12", "7/10"],
+        ["Coral Academy of Science", "K–12", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "~500 (projected)",
+      "medianAge": "40",
+      "avgIncome": "$175,000+",
+      "households": "240",
+      "homeownership": "90%"
+    },
+    "driveTimes": [
+      { "time": "~5 min", "destination": "to the Strip", "route": "via Las Vegas Blvd" },
+      { "time": "~10 min", "destination": "to Harry Reid Airport", "route": "via I-15 South" },
+      { "time": "~5 min", "destination": "to Fremont East", "route": "via Fremont St" },
+      { "time": "~20 min", "destination": "to Summerlin", "route": "via US-95 West" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for Cello Tower?", "a": "Residences in Cello Tower range from approximately $700,000 for entry-level units to over $4.5 million for the most exclusive penthouses with panoramic Strip and mountain views." },
+      { "q": "When will Cello Tower be completed?", "a": "Cello Tower is currently under construction in Downtown Las Vegas. It is the first new luxury high-rise in downtown in over 15 years. Contact our team for the latest delivery timeline." },
+      { "q": "How many units are in Cello Tower?", "a": "Cello Tower includes 240 residences across multiple floor plan types, from efficient city residences to expansive penthouses." },
+      { "q": "Where is Cello Tower located?", "a": "Cello Tower is located in Downtown Las Vegas, near Symphony Park and the Arts District. It is steps from the Smith Center for the Performing Arts, Fremont East, and downtown's growing dining and entertainment corridor." },
+      { "q": "What amenities does Cello Tower offer?", "a": "The tower features a rooftop infinity pool and lounge, state-of-the-art fitness center, co-working spaces, private dining and entertainment rooms, concierge services, secure parking, and ground-floor retail." },
+      { "q": "Is there parking at Cello Tower?", "a": "Yes. Cello Tower includes secure, dedicated parking for residents. Premium parking options may be available for larger residences and penthouses." },
+      { "q": "What is the Arts District like?", "a": "The Las Vegas Arts District, located adjacent to Cello Tower, is a vibrant neighborhood of galleries, breweries, restaurants, vintage shops, and creative studios. Monthly First Friday events attract thousands of visitors." },
+      { "q": "How does Cello Tower compare to Strip high-rises?", "a": "Cello Tower offers brand-new construction, modern design, and lower HOA fees compared to aging Strip high-rises like Veer, Panorama, or Waldorf Astoria. Its downtown location provides a more neighborhood-oriented, walkable lifestyle." }
+    ],
+    "nearby": [
+      { "name": "The Ogden", "href": "/the-ogden/", "price": "From $200K", "compare": "Established downtown high-rise with city views. More accessible price point." },
+      { "name": "Juhl", "href": "/juhl/", "price": "From $200K", "compare": "Boutique loft-style condos in the Arts District with walkable urban living." },
+      { "name": "Soho Lofts", "href": "/soho-lofts/", "price": "From $250K", "compare": "Industrial-chic loft condos in the Arts District with urban character." },
+      { "name": "One Queensridge Place", "href": "/one-queensridge-place/", "price": "From $500K", "compare": "Luxury high-rise towers in Queensridge — suburban luxury vs. urban living." },
+      { "name": "Veer Towers", "href": "/veer-towers/", "price": "From $400K", "compare": "CityCenter Strip high-rise with resort amenities. Different lifestyle profile." }
+    ],
+    "testimonials": [
+      { "quote": "We've been waiting for a new luxury high-rise in downtown for years. Nevada Real Estate Group secured our preferred unit during the pre-construction phase and handled every detail of the reservation process.", "name": "Daniel & Nicole V.", "detail": "Reserved at Cello Tower · 2025" },
+      { "quote": "Downtown Las Vegas is transforming and Cello Tower is at the center of it. Nevada Real Estate Group helped us understand the investment potential and the lifestyle opportunity.", "name": "Kevin S.", "detail": "Reserved at Cello Tower · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Cello Tower Downtown",
+    "ylopoMinPrice": 700000
+  },
+  {
+    "slug": "astra-at-la-madre-peaks",
+    "name": "Astra at La Madre Peaks",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Custom Lots · Ultra-Luxury",
+    "zipCodes": ["89138"],
+    "center": [-115.340, 36.205],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$2M+ (lots)",
+    "established": "2024",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "~250 acres",
+    "homeCount": "167",
+    "guardGated": true,
+    "hoaRange": "$400–$1,000/mo",
+    "overview": [
+      "Astra at La Madre Peaks is the newest ultra-luxury custom lot community within Summerlin, offering 167 premium homesites in one of the most elevated and scenic positions in the entire Las Vegas Valley. Located within the La Madre Peaks village along Summerlin's western rim, Astra backs directly against the Spring Mountains and provides panoramic views of Red Rock Canyon, the Las Vegas Strip, and the surrounding desert landscape.",
+      "Unlike the production and semi-custom communities that comprise most of Summerlin's newer villages, Astra is exclusively a custom lot community — meaning buyers purchase a finished lot and select their own architect and builder to design a one-of-a-kind estate. Lots start at approximately $2 million, with finished homes expected to range from $4 million to well over $10 million depending on size, views, and custom specifications.",
+      "The community is being developed by the Howard Hughes Corporation with the same attention to architectural standards and community design that defined The Ridges and The Summit Club. Guard-gated entry with 24-hour security, underground utilities, and strict design guidelines ensure a cohesive ultra-luxury aesthetic while allowing buyers the freedom of full custom design. Approved builders include some of the valley's most respected luxury home builders.",
+      "Astra at La Madre Peaks represents the next evolution of Summerlin's luxury real estate offering — a community designed for buyers who want the security and infrastructure of a master-planned community with the creative freedom of a full custom build. For high-net-worth individuals seeking to build their dream estate in the most desirable location in Las Vegas, Astra is the definitive opportunity."
+    ],
+    "highlights": [
+      { "title": "167 Custom Lots", "body": "Exclusively custom homesites — no production homes. Buyers select their own architect and builder to create a one-of-a-kind estate on a finished lot.", "iconType": "home" },
+      { "title": "Highest Elevation in Summerlin", "body": "Positioned within La Madre Peaks, one of the most elevated villages in Summerlin, offering panoramic views of Red Rock Canyon, the Strip, and the Spring Mountains.", "iconType": "mountain" },
+      { "title": "Guard-Gated Ultra-Luxury", "body": "24-hour guard-gated entry with comprehensive security, underground utilities, and strict architectural design guidelines for cohesive luxury living.", "iconType": "shield" },
+      { "title": "Howard Hughes Corporation", "body": "Developed by the same team behind The Ridges and The Summit Club — Summerlin's most successful ultra-luxury communities.", "iconType": "building" },
+      { "title": "Full Custom Freedom", "body": "Select from a roster of approved luxury builders or bring your own architect. Full custom design within carefully crafted architectural guidelines.", "iconType": "trend" },
+      { "title": "Premier Summerlin Address", "body": "Full access to Summerlin's 250+ miles of trails, 150+ parks, Downtown Summerlin, and top-rated schools. The ultimate Summerlin lifestyle.", "iconType": "community" }
+    ],
+    "neighborhoods": [
+      { "name": "Summit View Lots", "type": "Custom · Panoramic", "desc": "The most elevated and desirable lots in Astra, offering 360-degree panoramic views of Red Rock Canyon and the Las Vegas Valley.", "price": "From $3M+ (lot)" },
+      { "name": "Canyon Edge Lots", "type": "Custom · Canyon Views", "desc": "Lots positioned along the canyon edge with dramatic western views of Red Rock's sandstone formations.", "price": "From $2.5M+ (lot)" },
+      { "name": "Ridge Line Lots", "type": "Custom · Mountain", "desc": "Elevated lots along the community's ridgeline with sweeping mountain views and maximum privacy.", "price": "From $2.5M+ (lot)" },
+      { "name": "Interior Premium Lots", "type": "Custom · Estate", "desc": "Generous interior lots offering privacy and space for expansive estate designs with motor courts and guest casitas.", "price": "From $2M+ (lot)" },
+      { "name": "La Madre Peaks Village", "type": "Adjacent · Luxury", "desc": "The surrounding La Madre Peaks village includes additional luxury communities at various price points.", "price": "From $800K+" },
+      { "name": "Summerlin West", "type": "Adjacent · Master-Planned", "desc": "The broader Summerlin West Association encompasses Grand Park, Kestrel, and other new villages.", "price": "From $400K+" }
+    ],
+    "parks": [
+      { "name": "Red Rock Canyon NCA", "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161", "acreage": "195,819 acres", "amenities": ["Scenic Loop Drive", "Hiking trails", "Rock climbing", "Visitor center", "Wildlife viewing"] },
+      { "name": "Fox Hill Park", "address": "10100 Trails Dr, Las Vegas, NV 89138", "acreage": "~20 acres", "amenities": ["Adventure playground", "Zip lines", "Disc golf", "Trails", "Picnic areas"] },
+      { "name": "The Paseos Linear Park", "address": "Paseo Hills Dr, Las Vegas, NV 89138", "acreage": "~12 acres", "amenities": ["Walking trails", "Desert gardens", "Open space", "Dog-friendly areas"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Bonner Elementary School", "K–5", "9/10"],
+        ["Sig Rogich Middle School", "6–8", "10/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Alexander Dawson School", "K–8", "A+"]
+      ]
+    },
+    "demographics": {
+      "population": "~400 (projected)",
+      "medianAge": "48",
+      "avgIncome": "$500,000+",
+      "households": "167",
+      "homeownership": "98%"
+    },
+    "driveTimes": [
+      { "time": "~25 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~8 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via W Lake Mead Blvd" },
+      { "time": "~35 min", "destination": "to Harry Reid Airport", "route": "via I-215 South → I-15" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for lots in Astra at La Madre Peaks?", "a": "Custom lots in Astra start at approximately $2 million for interior premium lots, with the most desirable summit view lots commanding $3 million or more. Finished custom homes are expected to range from $4 million to well over $10 million." },
+      { "q": "Is Astra at La Madre Peaks guard-gated?", "a": "Yes. Astra features a guard-gated entry with 24-hour security staffing and comprehensive patrols, consistent with Summerlin's other ultra-luxury communities like The Ridges and The Summit Club." },
+      { "q": "How many lots are in Astra?", "a": "Astra at La Madre Peaks includes 167 custom homesites. This limited inventory and custom-only format ensures exclusivity and a cohesive ultra-luxury community." },
+      { "q": "Can I bring my own builder to Astra?", "a": "Astra has a roster of approved luxury builders, and buyers may also submit their own architect and builder for approval. All designs must comply with the community's architectural guidelines, which ensure a cohesive desert contemporary aesthetic." },
+      { "q": "What is La Madre Peaks?", "a": "La Madre Peaks is one of Summerlin's West Association villages, located along the northwestern edge of the master plan at one of the highest elevations in Summerlin. Astra is the premier custom lot community within this village." },
+      { "q": "Is Astra part of Summerlin?", "a": "Yes. Astra at La Madre Peaks is located within the Summerlin master-planned community. Residents have full access to all Summerlin amenities, trails, parks, and community facilities." },
+      { "q": "What views are available from Astra?", "a": "Depending on lot position, views include Red Rock Canyon's sandstone formations, the Spring Mountains, the Las Vegas Strip, and the broader Las Vegas Valley. Summit view lots offer 360-degree panoramic perspectives." },
+      { "q": "How does Astra compare to The Ridges?", "a": "Astra is exclusively custom lots (no production or semi-custom homes), whereas The Ridges includes both semi-custom and custom options. Astra is at a higher elevation within La Madre Peaks and offers a newer development with the latest infrastructure. Both are guard-gated Summerlin communities by the Howard Hughes Corporation." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community encompassing 20+ villages at every price point." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's established ultra-luxury guard-gated enclave with Bear's Best Golf Club." },
+      { "name": "The Summit Club", "href": "/the-summit-club/", "price": "From $5M", "compare": "Las Vegas' most exclusive private community with Tom Fazio golf. By invitation only." },
+      { "name": "Ascension at The Peaks", "href": "/ascension-at-the-peaks/", "price": "From $1M", "compare": "Guard-gated luxury new construction in Summerlin's Peaks village. 561 homes." },
+      { "name": "Grand Park", "href": "/summerlin-grand-park/", "price": "From $400K", "compare": "Summerlin's newest and largest village with 13 sub-communities." }
+    ],
+    "testimonials": [
+      { "quote": "Building a custom estate in Astra was a once-in-a-lifetime opportunity. Nevada Real Estate Group's knowledge of the lot inventory, view corridors, and approved builders made the process seamless.", "name": "Robert & Christine M.", "detail": "Purchased lot in Astra at La Madre Peaks · 2025" },
+      { "quote": "We compared Astra to every ultra-luxury community in Las Vegas. Nevada Real Estate Group helped us understand the investment thesis for custom lots in Summerlin's newest premium community.", "name": "Alexander P.", "detail": "Purchased lot in Astra at La Madre Peaks · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Astra La Madre Peaks Summerlin",
+    "ylopoMinPrice": 2000000
+  }
+]

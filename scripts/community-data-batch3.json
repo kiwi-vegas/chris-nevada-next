@@ -1,0 +1,1073 @@
+[
+  {
+    "slug": "southern-highlands-the-estates",
+    "name": "The Estates at Southern Highlands",
+    "parentCommunity": "Southern Highlands",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Ultra-Luxury",
+    "zipCodes": ["89141"],
+    "center": [-115.195, 35.985],
+    "heroEyebrow": "Southern Highlands, Las Vegas",
+    "priceRange": "$2M–$10M+",
+    "established": "2001",
+    "developer": "Olympia Group",
+    "acreage": "220 acres",
+    "homeCount": "200+",
+    "guardGated": true,
+    "hoaRange": "$350–$900/mo",
+    "overview": [
+      "The Estates at Southern Highlands is the premier residential enclave within the larger Southern Highlands master-planned community. Tucked behind its own guard gate within the already guard-gated Southern Highlands development, The Estates offers double-gated privacy and some of the most expansive custom home lots in the Las Vegas Valley. Homes here sit on half-acre to full-acre lots, many with direct frontage along the Southern Highlands Golf Club, a private championship course originally designed by Robert Trent Jones Jr. and later redesigned by Jack Nicklaus.",
+      "Custom estates in The Estates range from approximately $2 million to over $10 million, with the most coveted properties occupying elevated positions with unobstructed mountain and golf course views. The architectural character blends desert contemporary, Mediterranean, and transitional styles, with strict CC&Rs maintaining a cohesive and visually impressive streetscape. Homes typically range from 5,000 to 12,000+ square feet, with many featuring resort-style pools, motor courts, and guest casitas.",
+      "The Estates benefits from its position within Southern Highlands, one of Las Vegas's most consistently prestigious addresses. The private golf club, 24-hour security, and the community's proximity to Harry Reid International Airport (approximately 15 minutes via I-15) make it a natural choice for executives, business owners, and high-net-worth individuals who travel frequently. The adjacent Southern Highlands Golf Club is the social anchor of the community, offering dining, fitness, and event facilities reserved for members.",
+      "For buyers seeking the highest tier of Las Vegas living without the Summerlin price premium, The Estates at Southern Highlands delivers custom estate living, private golf, and double guard-gated security at price points that represent genuine value compared to comparable communities like The Ridges or Ascaya."
+    ],
+    "highlights": [
+      { "title": "Double Guard-Gated Security", "body": "Residents pass through the Southern Highlands community guard gate and then a second private guard gate to reach The Estates. Two layers of 24-hour staffed security provide unmatched privacy.", "iconType": "shield" },
+      { "title": "Jack Nicklaus Golf Frontage", "body": "Many estate lots sit directly along the Southern Highlands Golf Club, a Jack Nicklaus-redesigned private championship course consistently ranked among the top courses in Nevada.", "iconType": "golf" },
+      { "title": "Custom Half-Acre+ Lots", "body": "The Estates features some of the largest residential lots in Southern Highlands, with half-acre to full-acre parcels allowing truly custom home construction with resort-style outdoor living.", "iconType": "home" },
+      { "title": "15 Minutes to Airport", "body": "Harry Reid International Airport is approximately 15 minutes south via I-15 — the shortest luxury-community-to-airport commute in Las Vegas, ideal for frequent business travelers.", "iconType": "building" },
+      { "title": "Mountain & Golf Views", "body": "Elevated estate lots offer panoramic views of the Spring Mountains to the west and sweeping fairway views of the Nicklaus course. Sunset views are among the best in the south valley.", "iconType": "mountain" },
+      { "title": "Strong Appreciation History", "body": "The Estates has demonstrated consistent appreciation through market cycles, benefiting from the scarcity of large custom lots within a guard-gated golf community in Las Vegas.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Golf Course Estates", "type": "Custom · Golf Frontage", "desc": "The most prized positions in The Estates — direct frontage along the Nicklaus-designed Southern Highlands Golf Club with fairway and mountain views.", "price": "From $3M+" },
+      { "name": "Hilltop Estates", "type": "Custom · Panoramic Views", "desc": "Elevated lots on the higher terrain within The Estates. Commanding views of the Las Vegas Valley, the Spring Mountains, and the golf course below.", "price": "From $4M+" },
+      { "name": "Interior Estate Lots", "type": "Custom · Privacy", "desc": "Larger lots set back from the golf course with mature landscaping and maximum privacy. Popular with buyers who prioritize seclusion over views.", "price": "From $2M+" },
+      { "name": "New Custom Builds", "type": "Custom · Modern", "desc": "Recently constructed custom homes featuring contemporary desert architecture — floor-to-ceiling glass, clean lines, and indoor-outdoor living designs.", "price": "From $5M+" }
+    ],
+    "parks": [
+      { "name": "Southern Highlands Golf Club", "address": "1 Robert Trent Jones Ln, Las Vegas, NV 89141", "acreage": "250+ acres", "amenities": ["Championship golf course", "Clubhouse dining", "Practice facilities", "Fitness center", "Swimming pool", "Tennis courts"] },
+      { "name": "Southern Highlands Community Park", "address": "11701 Southern Highlands Pkwy, Las Vegas, NV 89141", "acreage": "~15 acres", "amenities": ["Walking trails", "Playground", "Picnic areas", "Basketball courts", "Open space"] },
+      { "name": "Fascia Field Park", "address": "11395 Fascia Field Ave, Las Vegas, NV 89141", "acreage": "~5 acres", "amenities": ["Playground", "Walking paths", "Open grass area", "Shade structures"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Liberty High School", "9–12", "7/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["Elise L. Wolff Elementary", "K–5", "8/10"]
+      ],
+      "Private": [
+        ["Faith Lutheran Middle & High", "6–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Desert Christian Academy", "K–12", "B+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "600+",
+      "medianAge": "50",
+      "avgIncome": "$300,000+",
+      "households": "200+",
+      "homeownership": "95%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-15 N" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-15 N → I-215 W" },
+      { "time": "~15 min", "destination": "to Henderson", "route": "via I-215 E" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in The Estates at Southern Highlands?", "a": "Custom estates in The Estates range from approximately $2 million for older resale homes to over $10 million for new-build custom estates on premium golf course lots with panoramic mountain views." },
+      { "q": "Is The Estates at Southern Highlands guard-gated?", "a": "Yes — The Estates is double guard-gated. Residents pass through the main Southern Highlands community guard gate and then a second private guard gate to enter The Estates. Both gates are staffed 24 hours a day." },
+      { "q": "What ZIP code is The Estates at Southern Highlands in?", "a": "The Estates at Southern Highlands is located in ZIP code 89141 in the southernmost area of Las Vegas, Nevada." },
+      { "q": "What golf course is near The Estates?", "a": "The Estates sits directly along the Southern Highlands Golf Club, a private championship course redesigned by Jack Nicklaus. Many estate lots have direct golf course frontage. Membership is by application and is not automatically included with home purchase." },
+      { "q": "How does The Estates compare to The Ridges in Summerlin?", "a": "Both are ultra-luxury guard-gated communities with golf course frontage. The Ridges is anchored by Bear's Best (Nicklaus design) and backs against Red Rock Canyon, while The Estates fronts the Southern Highlands Golf Club and is 15 minutes from the airport. The Ridges typically commands higher per-square-foot prices, but The Estates offers larger lots and more competitive pricing for comparable square footage." },
+      { "q": "What are HOA fees in The Estates?", "a": "HOA fees in The Estates typically range from $350 to $900 per month, which includes the Southern Highlands master association fee plus The Estates sub-association fee. Fees cover guard gate staffing, security patrols, common area maintenance, and landscaping of common areas." },
+      { "q": "How close is The Estates to the airport?", "a": "Harry Reid International Airport is approximately 15 minutes from The Estates via I-15, making it the closest ultra-luxury community to the airport in Las Vegas. This proximity is a primary draw for executives and frequent travelers." },
+      { "q": "Can I build a custom home in The Estates?", "a": "Yes — The Estates permits custom home construction on approved lots. Architectural plans must be reviewed and approved by the HOA architectural review committee to ensure compliance with community design standards. Several luxury builders, including Sun West Custom Homes, have built in The Estates." }
+    ],
+    "nearby": [
+      { "name": "Southern Highlands", "href": "/southern-highlands/", "price": "From $500K", "compare": "The broader master-planned community that houses The Estates. Guard-gated with private golf club." },
+      { "name": "Olympia Ridge", "href": "/olympia-ridge/", "price": "From $1.5M", "compare": "Another ultra-luxury guard-gated enclave within Southern Highlands with Nicklaus golf frontage." },
+      { "name": "Tuscan Cliffs", "href": "/tuscan-cliffs/", "price": "From $800K", "compare": "Guard-gated Southern Highlands enclave with Mediterranean architecture at more accessible price points." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated community with Bear's Best golf and Red Rock Canyon views." },
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "Henderson's premier luxury community with DragonRidge Country Club and panoramic Strip views." },
+      { "name": "Ascaya", "href": "/ascaya/", "price": "From $3M", "compare": "Ultra-luxury custom lot community in Henderson with dramatic desert canyon views." }
+    ],
+    "testimonials": [
+      { "quote": "The Estates was exactly what we were looking for — a custom lot on the golf course with real privacy. Nevada Real Estate Group walked us through every available parcel and connected us with the right builder. From lot selection to move-in, they managed the entire process.", "name": "Richard & Catherine P.", "detail": "Built Custom Home in The Estates · 2024" },
+      { "quote": "We moved from Beverly Hills and were amazed at what our budget could buy in The Estates. Double guard-gated, golf course views, 8,000 square feet — at a fraction of what we sold for in California. The team understood the luxury market perfectly.", "name": "Jonathan S.", "detail": "Bought in The Estates, Southern Highlands · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Southern Highlands",
+    "ylopoMinPrice": 2000000
+  },
+  {
+    "slug": "olympia-ridge",
+    "name": "Olympia Ridge",
+    "parentCommunity": "Southern Highlands",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Ultra-Luxury · Golf",
+    "zipCodes": ["89141"],
+    "center": [-115.200, 35.980],
+    "heroEyebrow": "Southern Highlands, Las Vegas",
+    "priceRange": "$1.5M–$5M+",
+    "established": "2003",
+    "developer": "Olympia Group",
+    "acreage": "180 acres",
+    "homeCount": "250+",
+    "guardGated": true,
+    "hoaRange": "$300–$800/mo",
+    "overview": [
+      "Olympia Ridge is an ultra-luxury guard-gated enclave within Southern Highlands, positioned along the most coveted fairways of the Southern Highlands Golf Club. Developed by the Olympia Group, the community was conceived as a premier residential address for buyers who demand golf course living, privacy, and architectural distinction — without the Summerlin price premium that communities like The Ridges command.",
+      "Homes in Olympia Ridge range from approximately $1.5 million for resale semi-custom residences to over $5 million for newer custom estates on premium golf course lots. The architectural character is predominantly Mediterranean and Tuscan-inspired, though newer builds have introduced contemporary desert and transitional styles. Homes typically range from 4,000 to 10,000+ square feet, with many featuring expansive outdoor living spaces, infinity pools, and covered loggias overlooking the Jack Nicklaus-redesigned championship course.",
+      "The community's guard gate provides an additional layer of security beyond the Southern Highlands master community gates, creating a double-gated environment that appeals to executives, entertainers, and high-net-worth families. The proximity to the Southern Highlands Golf Club is Olympia Ridge's defining advantage — many homes have direct fairway views, and the clubhouse, dining facilities, and practice areas are within a short cart ride or walk.",
+      "Location is another significant draw. Harry Reid International Airport is approximately 15 minutes away, the Las Vegas Strip is 20 minutes north via I-15, and Henderson's retail and dining corridor along St. Rose Parkway is 15 minutes east. For luxury buyers who want private golf community living with genuine convenience, Olympia Ridge delivers at price points that represent strong value relative to comparable Summerlin guard-gated addresses."
+    ],
+    "highlights": [
+      { "title": "Nicklaus Golf Club Frontage", "body": "Direct frontage along the Southern Highlands Golf Club, a private championship course redesigned by Jack Nicklaus. Fairway and mountain views from nearly every estate.", "iconType": "golf" },
+      { "title": "Double Guard-Gated Privacy", "body": "Protected by its own guard gate within the already guard-gated Southern Highlands community. Two layers of 24-hour staffed security for maximum privacy.", "iconType": "shield" },
+      { "title": "Semi-Custom & Custom Estates", "body": "Homes range from 4,000 to 10,000+ square feet with premium finishes, resort-style pools, and expansive outdoor living. Both resale and custom build opportunities.", "iconType": "home" },
+      { "title": "15-Minute Airport Commute", "body": "One of the closest luxury communities to Harry Reid International Airport — a critical advantage for executives and frequent business travelers.", "iconType": "building" },
+      { "title": "Mountain & Valley Views", "body": "Elevated positions within Olympia Ridge offer panoramic views of the Spring Mountains, the Las Vegas Strip skyline, and the manicured fairways of the golf course.", "iconType": "mountain" },
+      { "title": "Strong Value Proposition", "body": "Comparable quality to Summerlin's ultra-luxury communities at notably lower per-square-foot prices. One of the best value plays in Las Vegas luxury real estate.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Olympia Ridge Estates", "type": "Custom · Ultra-Premium", "desc": "The most exclusive section of Olympia Ridge with the largest lots and most direct golf course views. Full custom homes on half-acre+ parcels.", "price": "From $3M+" },
+      { "name": "Golf Course Villas", "type": "Semi-Custom · Golf Views", "desc": "Semi-custom homes with direct fairway views. Mediterranean and Tuscan architecture with 4,000–7,000 square feet.", "price": "From $1.5M" },
+      { "name": "Ridge View Estates", "type": "Semi-Custom · Mountain Views", "desc": "Elevated homes on the ridge with dramatic mountain views. Newer construction featuring contemporary desert architecture.", "price": "From $2M+" },
+      { "name": "Interior Estates", "type": "Semi-Custom · Private", "desc": "Set back from the golf course with mature landscaping and cul-de-sac privacy. The most accessible entry point into Olympia Ridge.", "price": "From $1.5M" }
+    ],
+    "parks": [
+      { "name": "Southern Highlands Golf Club", "address": "1 Robert Trent Jones Ln, Las Vegas, NV 89141", "acreage": "250+ acres", "amenities": ["Championship golf course", "Clubhouse dining", "Practice facilities", "Fitness center", "Swimming pool", "Tennis courts"] },
+      { "name": "Southern Highlands Community Park", "address": "11701 Southern Highlands Pkwy, Las Vegas, NV 89141", "acreage": "~15 acres", "amenities": ["Walking trails", "Playground", "Picnic areas", "Basketball courts", "Open space"] },
+      { "name": "Olympia Ridge Private Green Space", "address": "Within Olympia Ridge gates, Las Vegas, NV 89141", "acreage": "~8 acres", "amenities": ["Walking paths", "Manicured landscaping", "Pocket parks", "Open space"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Liberty High School", "9–12", "7/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["Elise L. Wolff Elementary", "K–5", "8/10"]
+      ],
+      "Private": [
+        ["Faith Lutheran Middle & High", "6–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Desert Christian Academy", "K–12", "B+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "700+",
+      "medianAge": "48",
+      "avgIncome": "$275,000+",
+      "households": "250+",
+      "homeownership": "93%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-15 N" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-15 N → I-215 W" },
+      { "time": "~15 min", "destination": "to Henderson", "route": "via I-215 E" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Olympia Ridge?", "a": "Homes in Olympia Ridge range from approximately $1.5 million for resale semi-custom residences to over $5 million for newer custom estates on premium golf course lots with panoramic mountain and fairway views." },
+      { "q": "Is Olympia Ridge guard-gated?", "a": "Yes — Olympia Ridge is double guard-gated. The community has its own 24-hour staffed guard gate within the larger Southern Highlands guard-gated master plan, providing two layers of security." },
+      { "q": "What golf course is in Olympia Ridge?", "a": "Olympia Ridge sits along the Southern Highlands Golf Club, a private championship course redesigned by Jack Nicklaus. Many homes have direct fairway frontage. Membership is by application and not included with home purchase." },
+      { "q": "How does Olympia Ridge compare to The Ridges?", "a": "Both are ultra-luxury guard-gated golf communities. The Ridges (Summerlin) backs against Red Rock Canyon and commands higher per-square-foot prices. Olympia Ridge offers comparable quality with larger lots and lower prices per square foot, plus a 15-minute airport commute versus 30+ minutes from The Ridges." },
+      { "q": "What are HOA fees in Olympia Ridge?", "a": "HOA fees in Olympia Ridge typically range from $300 to $800 per month, which includes the Southern Highlands master association fee plus the Olympia Ridge sub-association fee. Fees cover guard gate staffing, security patrols, and common area maintenance." },
+      { "q": "What ZIP code is Olympia Ridge in?", "a": "Olympia Ridge is located in ZIP code 89141 in the Southern Highlands area of Las Vegas, Nevada." },
+      { "q": "Is Olympia Ridge a good investment?", "a": "Olympia Ridge benefits from the same fundamentals that make all of Southern Highlands attractive — guard-gated prestige, private golf club anchoring, limited lot inventory, and consistent demand from executives and high-net-worth buyers. The community has demonstrated strong appreciation and holds value well through market cycles." },
+      { "q": "What is Olympia Ridge Estates?", "a": "Olympia Ridge Estates is the most exclusive section within Olympia Ridge, featuring the largest custom lots (half-acre+) with the most direct golf course views and the highest price points, typically starting above $3 million." }
+    ],
+    "nearby": [
+      { "name": "Southern Highlands", "href": "/southern-highlands/", "price": "From $500K", "compare": "The broader master-planned community. Guard-gated with Arnold Palmer private golf club." },
+      { "name": "The Estates at Southern Highlands", "href": "/southern-highlands-the-estates/", "price": "From $2M", "compare": "Southern Highlands' other premier enclave with the largest custom estate lots." },
+      { "name": "Tuscan Cliffs", "href": "/tuscan-cliffs/", "price": "From $800K", "compare": "Guard-gated Southern Highlands enclave with Mediterranean architecture at more accessible prices." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated community with Bear's Best golf and Red Rock Canyon views." },
+      { "name": "Spanish Trail", "href": "/spanish-trail/", "price": "From $500K", "compare": "Nearby guard-gated golf community with a broader price range and established character." },
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "Henderson's premier luxury community with DragonRidge Country Club." }
+    ],
+    "testimonials": [
+      { "quote": "We compared Olympia Ridge to The Ridges and several Henderson luxury communities. Dollar for dollar, Olympia Ridge gave us the best combination of golf frontage, lot size, and privacy. The team at Nevada Real Estate Group helped us see the value clearly.", "name": "Michael & Susan T.", "detail": "Bought in Olympia Ridge · 2024" },
+      { "quote": "Sold our Olympia Ridge estate in 45 days at 97% of asking. The marketing was exceptional — professional photography, drone video, and targeted outreach to luxury buyers. They understand how to position a high-end property.", "name": "Patricia D.", "detail": "Sold in Olympia Ridge · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Olympia Ridge",
+    "ylopoMinPrice": 1500000
+  },
+  {
+    "slug": "tuscan-cliffs",
+    "name": "Tuscan Cliffs",
+    "parentCommunity": "Southern Highlands",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury",
+    "zipCodes": ["89141"],
+    "center": [-115.188, 35.978],
+    "heroEyebrow": "Southern Highlands, Las Vegas",
+    "priceRange": "$800K–$3M",
+    "established": "2005",
+    "developer": "Olympia Group",
+    "acreage": "160 acres",
+    "homeCount": "400+",
+    "guardGated": true,
+    "hoaRange": "$250–$600/mo",
+    "overview": [
+      "Tuscan Cliffs is one of the most popular guard-gated enclaves within Southern Highlands, offering Mediterranean and Tuscan-inspired luxury homes at price points more accessible than the community's ultra-luxury addresses. The community sits on elevated terrain within Southern Highlands, providing many homes with panoramic views of the Las Vegas Valley, the Spring Mountains, and the fairways of the adjacent Southern Highlands Golf Club.",
+      "Homes in Tuscan Cliffs range from approximately $800,000 for resale homes to over $3 million for premium golf course and ridgeline properties. The architectural character is distinctly Mediterranean — stucco exteriors, clay tile roofs, arched entryways, and stone accents create a cohesive Tuscan aesthetic throughout the community. Homes typically range from 3,000 to 7,000 square feet, with many featuring courtyard entries, wine rooms, and expansive covered patios.",
+      "The guard gate at Tuscan Cliffs provides an additional layer of security within the already guard-gated Southern Highlands master plan. This double-gated configuration, combined with the community's elevated position and manicured streetscapes, creates a sense of exclusivity that attracts professionals, executives, and families relocating from coastal California markets where comparable quality would command significantly higher prices.",
+      "Tuscan Cliffs occupies a strategic position in the Southern Highlands pricing hierarchy — more attainable than The Estates or Olympia Ridge, but with the same double guard-gated security, golf club proximity, and airport convenience that define Southern Highlands' premium enclaves. For buyers seeking guard-gated luxury in the south valley without the $2M+ entry point of the top-tier communities, Tuscan Cliffs represents one of the strongest value propositions in Las Vegas."
+    ],
+    "highlights": [
+      { "title": "Mediterranean Architecture", "body": "Cohesive Tuscan-inspired design throughout — stucco facades, clay tile roofs, stone accents, and courtyard entries create a distinguished Mediterranean village aesthetic.", "iconType": "home" },
+      { "title": "Double Guard-Gated", "body": "Protected by its own 24-hour staffed guard gate within the already guard-gated Southern Highlands. Two layers of security for genuine privacy and peace of mind.", "iconType": "shield" },
+      { "title": "Elevated Valley Views", "body": "Positioned on elevated terrain within Southern Highlands. Many homes enjoy panoramic views of the Las Vegas Valley, Strip skyline, and the Spring Mountains.", "iconType": "mountain" },
+      { "title": "Golf Club Proximity", "body": "Adjacent to the Southern Highlands Golf Club (Jack Nicklaus redesign). Several homes have direct golf course views. Club membership available to residents.", "iconType": "golf" },
+      { "title": "Top-Rated Schools Nearby", "body": "Zoned for strong CCSD schools including Liberty High School. Private options including Faith Lutheran and Bishop Gorman are within 15 minutes.", "iconType": "school" },
+      { "title": "Accessible Luxury Pricing", "body": "Guard-gated luxury living starting around $800K — approximately 40-60% less than comparable quality in Summerlin's ultra-luxury communities like The Ridges.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Ridgeline Estates", "type": "Premium · Valley Views", "desc": "The highest elevation homes in Tuscan Cliffs with the most dramatic Las Vegas Valley and Strip views. Larger lots and premium finishes.", "price": "From $1.5M+" },
+      { "name": "Golf View Terraces", "type": "Semi-Custom · Golf Views", "desc": "Homes with direct views of the Southern Highlands Golf Club fairways. Popular with buyers who want golf course living without paying golf lot premiums.", "price": "From $1.2M" },
+      { "name": "Courtyard Villas", "type": "Mediterranean · Classic", "desc": "Classic Tuscan-inspired homes with interior courtyard entries, covered loggias, and traditional floor plans. The heart of the community.", "price": "From $900K" },
+      { "name": "Cliffs Entry", "type": "Semi-Custom · Value", "desc": "The most accessible entry point into Tuscan Cliffs. Well-maintained homes with 3,000–4,500 square feet, mature landscaping, and community views.", "price": "From $800K" }
+    ],
+    "parks": [
+      { "name": "Southern Highlands Golf Club", "address": "1 Robert Trent Jones Ln, Las Vegas, NV 89141", "acreage": "250+ acres", "amenities": ["Championship golf course", "Clubhouse dining", "Practice facilities", "Fitness center", "Swimming pool"] },
+      { "name": "Southern Highlands Community Park", "address": "11701 Southern Highlands Pkwy, Las Vegas, NV 89141", "acreage": "~15 acres", "amenities": ["Walking trails", "Playground", "Picnic areas", "Basketball courts", "Open space"] },
+      { "name": "Tuscan Cliffs Walking Paths", "address": "Within Tuscan Cliffs gates, Las Vegas, NV 89141", "acreage": "~5 acres", "amenities": ["Walking paths", "Manicured landscaping", "Desert gardens", "Pocket parks"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Liberty High School", "9–12", "7/10"],
+        ["Del E. Webb Middle School", "6–8", "8/10"],
+        ["Elise L. Wolff Elementary", "K–5", "8/10"]
+      ],
+      "Private": [
+        ["Faith Lutheran Middle & High", "6–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Desert Christian Academy", "K–12", "B+"]
+      ],
+      "Charter": [
+        ["Pinecrest Academy of Nevada", "PreK–12", "9/10"],
+        ["Doral Academy", "K–8", "8/10"]
+      ]
+    },
+    "demographics": {
+      "population": "1,200+",
+      "medianAge": "46",
+      "avgIncome": "$225,000+",
+      "households": "400+",
+      "homeownership": "91%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via I-15 N" },
+      { "time": "~15 min", "destination": "to Harry Reid Airport", "route": "via I-15 N → I-215 W" },
+      { "time": "~15 min", "destination": "to Henderson", "route": "via I-215 E" },
+      { "time": "~35 min", "destination": "to Summerlin", "route": "via I-215 W" },
+      { "time": "~4.5 hrs", "destination": "to Los Angeles", "route": "via I-15 S" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Tuscan Cliffs?", "a": "Homes in Tuscan Cliffs range from approximately $800,000 for resale homes to over $3 million for premium golf course and ridgeline properties with panoramic views." },
+      { "q": "Is Tuscan Cliffs guard-gated?", "a": "Yes — Tuscan Cliffs is double guard-gated within the Southern Highlands master plan. The community has its own staffed guard gate, and the broader Southern Highlands community also has guard-gated entry points." },
+      { "q": "What style of homes are in Tuscan Cliffs?", "a": "Tuscan Cliffs features predominantly Mediterranean and Tuscan-inspired architecture — stucco exteriors, clay tile roofs, arched entryways, stone accents, and courtyard entries. Homes typically range from 3,000 to 7,000 square feet." },
+      { "q": "What ZIP code is Tuscan Cliffs in?", "a": "Tuscan Cliffs is located in ZIP code 89141 in the Southern Highlands area of Las Vegas, Nevada." },
+      { "q": "How does Tuscan Cliffs compare to Olympia Ridge?", "a": "Both are guard-gated enclaves within Southern Highlands. Olympia Ridge is more exclusive with higher price points ($1.5M–$5M+) and more direct golf course frontage. Tuscan Cliffs offers a more accessible entry at $800K with the same double guard-gated security and proximity to the golf club." },
+      { "q": "What are HOA fees in Tuscan Cliffs?", "a": "HOA fees in Tuscan Cliffs typically range from $250 to $600 per month, which includes the Southern Highlands master association fee plus the Tuscan Cliffs sub-association fee covering guard gate staffing, security, and common area maintenance." },
+      { "q": "Is there a golf course in Tuscan Cliffs?", "a": "Tuscan Cliffs is adjacent to the Southern Highlands Golf Club, a private championship course redesigned by Jack Nicklaus. Several Tuscan Cliffs homes have direct golf course views. Membership is available by application." },
+      { "q": "Are there views from Tuscan Cliffs homes?", "a": "Yes — Tuscan Cliffs sits on elevated terrain within Southern Highlands. Many homes feature panoramic views of the Las Vegas Valley, the Strip skyline, the Spring Mountains, and the Southern Highlands Golf Club fairways." }
+    ],
+    "nearby": [
+      { "name": "Southern Highlands", "href": "/southern-highlands/", "price": "From $500K", "compare": "The broader master-planned community. Guard-gated with private golf club and multiple enclaves." },
+      { "name": "The Estates at Southern Highlands", "href": "/southern-highlands-the-estates/", "price": "From $2M", "compare": "Southern Highlands' premier custom estate enclave with the largest lots." },
+      { "name": "Olympia Ridge", "href": "/olympia-ridge/", "price": "From $1.5M", "compare": "Ultra-luxury guard-gated enclave with direct Nicklaus golf frontage." },
+      { "name": "Mountains Edge", "href": "/mountains-edge/", "price": "From $400K", "compare": "Large master-planned community nearby with more accessible pricing and family focus." },
+      { "name": "Rhodes Ranch", "href": "/rhodes-ranch/", "price": "From $400K", "compare": "Guard-gated golf community with a broader price range in southwest Las Vegas." },
+      { "name": "Seven Hills", "href": "/seven-hills/", "price": "From $500K", "compare": "Henderson's elevated luxury community with Rio Secco Golf Club and city views." }
+    ],
+    "testimonials": [
+      { "quote": "Tuscan Cliffs gave us everything we wanted — guard-gated security, beautiful Mediterranean architecture, and real views — at a price that was half what we paid in Orange County. The team at Nevada Real Estate Group found us the perfect ridgeline lot.", "name": "Marco & Elena R.", "detail": "Bought in Tuscan Cliffs · 2025" },
+      { "quote": "Our Tuscan Cliffs home sold in three weeks at full asking price. The marketing presentation — professional photography, virtual tour, and targeted luxury buyer outreach — was first-class from day one.", "name": "Daniel K.", "detail": "Sold in Tuscan Cliffs · 2024" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Tuscan Cliffs",
+    "ylopoMinPrice": 800000
+  },
+  {
+    "slug": "carlisle-peak",
+    "name": "Carlisle Peak",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Luxury · New Construction",
+    "zipCodes": ["89138"],
+    "center": [-115.330, 36.195],
+    "heroEyebrow": "Grand Park, Summerlin",
+    "priceRange": "$1.55M–$2M+",
+    "established": "2023",
+    "developer": "Tri Pointe Homes",
+    "acreage": "45 acres",
+    "homeCount": "80+",
+    "guardGated": true,
+    "hoaRange": "$300–$700/mo",
+    "overview": [
+      "Carlisle Peak is one of Summerlin's newest guard-gated luxury communities, located within the Grand Park village in Summerlin West. Developed by Tri Pointe Homes, Carlisle Peak delivers new-construction luxury in a guard-gated setting at price points that represent a compelling alternative to established ultra-luxury communities like The Ridges. The community began sales in 2023 and features homes designed specifically for the Las Vegas luxury buyer — open floor plans, indoor-outdoor living, and dramatic mountain views of the Spring Mountains and Red Rock Canyon escarpment.",
+      "Homes in Carlisle Peak start at approximately $1.55 million and extend beyond $2 million for premium lots with upgraded finishes. Floor plans range from approximately 3,500 to 5,200+ square feet, featuring 4–6 bedrooms, gourmet kitchens, multi-car garages, and the contemporary desert architecture that defines Summerlin's newest construction. Tri Pointe is known for its attention to design and finish quality, and Carlisle Peak reflects that reputation.",
+      "Grand Park is Summerlin's most actively developing village, positioned in the Summerlin West Association. This means Carlisle Peak buyers benefit from the newest infrastructure, the most modern community amenities, and direct proximity to the trail systems that connect to Red Rock Canyon. The village is also adjacent to the future Grand Park community park, which will be one of Summerlin's largest when completed.",
+      "The guard-gated entry at Carlisle Peak sets it apart from the majority of Grand Park's neighborhoods, which are gated but not guard-gated. For luxury buyers who want new construction with the security of a staffed guard gate, proximity to Red Rock Canyon, and the Summerlin address, Carlisle Peak is one of a very small number of current options."
+    ],
+    "highlights": [
+      { "title": "New Construction Luxury", "body": "Brand-new homes by Tri Pointe Homes with the latest designs, finishes, and smart home technology. No renovation or deferred maintenance — move-in ready luxury.", "iconType": "home" },
+      { "title": "Guard-Gated in Grand Park", "body": "One of the few guard-gated communities within Grand Park village. 24-hour staffed guard gate provides a level of security uncommon in new Summerlin construction.", "iconType": "shield" },
+      { "title": "Red Rock Canyon Proximity", "body": "Located in Summerlin West, approximately 5–10 minutes from Red Rock Canyon National Conservation Area. Direct trail connectivity through the Summerlin trail system.", "iconType": "mountain" },
+      { "title": "Tri Pointe Quality", "body": "Tri Pointe Homes is known for premium design and construction quality. Floor plans range from 3,500 to 5,200+ square feet with contemporary desert architecture.", "iconType": "building" },
+      { "title": "Grand Park Amenities", "body": "Adjacent to Grand Park's future community park — one of Summerlin's largest. Access to the broader Summerlin trail system and community recreation facilities.", "iconType": "park" },
+      { "title": "Scarcity-Protected Value", "body": "Guard-gated new construction in Summerlin is extremely limited. Carlisle Peak occupies a narrow market niche with strong long-term value protection from both scarcity and the Summerlin brand.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Canyon View Collection", "type": "Premium · Mountain Views", "desc": "Premium lots at the western edge of Carlisle Peak with the most direct Red Rock Canyon and Spring Mountain views. The highest price points in the community.", "price": "From $1.8M+" },
+      { "name": "Grand Estate Collection", "type": "Luxury · Large Floor Plans", "desc": "Tri Pointe's largest floor plans — 4,800–5,200+ square feet with 5–6 bedrooms, multi-car garages, and gourmet kitchens.", "price": "From $1.7M+" },
+      { "name": "Classic Collection", "type": "Luxury · Entry", "desc": "The most accessible floor plans in Carlisle Peak. 3,500–4,200 square feet with 4–5 bedrooms and contemporary finishes.", "price": "From $1.55M" }
+    ],
+    "parks": [
+      { "name": "Grand Park (Future)", "address": "Grand Park Dr, Las Vegas, NV 89138", "acreage": "~25 acres (planned)", "amenities": ["Community park (under development)", "Playground", "Multi-use fields", "Trail connections", "Open space"] },
+      { "name": "Fox Hill Park", "address": "10100 Trails Dr, Las Vegas, NV 89138", "acreage": "~20 acres", "amenities": ["Adventure playground", "Zip lines", "Disc golf", "Trails", "Picnic areas"] },
+      { "name": "Red Rock Canyon NCA", "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161", "acreage": "195,819 acres", "amenities": ["Scenic Loop Drive", "Hiking trails", "Rock climbing", "Visitor center", "Wildlife viewing"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Bonner Elementary School", "K–5", "9/10"],
+        ["Sig Rogich Middle School", "6–8", "10/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Pinecrest Academy Inspirada", "K–8", "9/10"]
+      ]
+    },
+    "demographics": {
+      "population": "250+",
+      "medianAge": "42",
+      "avgIncome": "$275,000+",
+      "households": "80+",
+      "homeownership": "98%"
+    },
+    "driveTimes": [
+      { "time": "~25 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~8 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via Summerlin Pkwy" },
+      { "time": "~35 min", "destination": "to Harry Reid Airport", "route": "via I-215 South" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in Carlisle Peak?", "a": "Homes in Carlisle Peak start at approximately $1.55 million and extend beyond $2 million for premium lots with upgraded finishes. All homes are new construction by Tri Pointe Homes." },
+      { "q": "Is Carlisle Peak guard-gated?", "a": "Yes — Carlisle Peak is a guard-gated community with a 24-hour staffed guard gate. It is one of the few guard-gated neighborhoods within Grand Park village in Summerlin West." },
+      { "q": "Who builds homes in Carlisle Peak?", "a": "Tri Pointe Homes is the exclusive builder in Carlisle Peak. Floor plans range from approximately 3,500 to 5,200+ square feet with contemporary desert architecture and premium finishes." },
+      { "q": "What village is Carlisle Peak in?", "a": "Carlisle Peak is located in Grand Park village, part of the Summerlin West Association — the newest and westernmost area of Summerlin's master plan." },
+      { "q": "How close is Carlisle Peak to Red Rock Canyon?", "a": "Red Rock Canyon National Conservation Area is approximately 5–10 minutes from Carlisle Peak via W Charleston Blvd. The Summerlin trail system provides direct connectivity to hiking routes." },
+      { "q": "What are HOA fees in Carlisle Peak?", "a": "HOA fees typically range from $300 to $700 per month, which includes the Summerlin master association fee plus the Carlisle Peak sub-association guard gate and community maintenance fees." },
+      { "q": "Is Carlisle Peak a good investment?", "a": "Carlisle Peak benefits from extreme scarcity — guard-gated new construction in Summerlin is very rare. Combined with the Summerlin brand, Red Rock proximity, and Tri Pointe build quality, the long-term value proposition is strong." },
+      { "q": "What ZIP code is Carlisle Peak in?", "a": "Carlisle Peak is located in ZIP code 89138 in the Summerlin West area of Las Vegas." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community. 22,500 acres, 20+ villages, every price point." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated community with Bear's Best golf. Resale only; no new construction." },
+      { "name": "La Madre Peaks", "href": "/summerlin-la-madre-peaks/", "price": "From $800K", "compare": "Summerlin West's luxury village with custom lots and new construction from multiple builders." },
+      { "name": "Stonebridge", "href": "/summerlin-stonebridge/", "price": "From $550K", "compare": "Summerlin's newest major village with contemporary architecture and Red Rock views at lower price points." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $1.2M", "compare": "Guard-gated golf community within Summerlin with two Arnold Palmer-designed courses." },
+      { "name": "The Summit Club", "href": "/the-summit-club/", "price": "From $5M", "compare": "Las Vegas' most exclusive private community with Tom Fazio golf. By invitation only." }
+    ],
+    "testimonials": [
+      { "quote": "We wanted new construction with a guard gate in Summerlin, and Carlisle Peak was one of the only options. Tri Pointe's quality exceeded our expectations — the finishes, the design, and the mountain views are everything we imagined. Nevada Real Estate Group guided us through the entire new-build process.", "name": "David & Jennifer H.", "detail": "Bought in Carlisle Peak · 2024" },
+      { "quote": "The scarcity factor in Carlisle Peak is real. Guard-gated new construction in Summerlin is almost impossible to find. Our home has already appreciated significantly since we closed. The team's advice to move quickly was spot-on.", "name": "Andrew L.", "detail": "Bought in Carlisle Peak · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Carlisle Peak Summerlin",
+    "ylopoMinPrice": 1500000
+  },
+  {
+    "slug": "summerlin-the-hills-south",
+    "name": "The Hills South",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Guard-Gated · Luxury",
+    "zipCodes": ["89135"],
+    "center": [-115.310, 36.160],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$600K–$3M+",
+    "established": "1998",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "850 acres",
+    "homeCount": "2,500+",
+    "guardGated": true,
+    "hoaRange": "$200–$800/mo",
+    "overview": [
+      "The Hills South is one of Summerlin's most prestigious villages, distinguished by the concentration of guard-gated enclaves within its borders. Located in the Summerlin South Association, The Hills South encompasses four separate guard-gated communities — Country Club Hills, Eagle Hills, Corte Bella, and Tournament Hills — each with its own character, price range, and security infrastructure. This makes The Hills South one of the most desirable villages in all of Summerlin for buyers who prioritize privacy and exclusivity.",
+      "Homes in The Hills South range from approximately $600,000 in the non-gated neighborhoods to over $3 million in the guard-gated enclaves, with Country Club Hills and Tournament Hills commanding the highest premiums due to their golf course proximity and larger estate lots. The village benefits from its central Summerlin South location — close to Downtown Summerlin, TPC Summerlin, and the Red Rock Country Club, while remaining a short drive from Red Rock Canyon and the western mountain trails.",
+      "The architectural character in The Hills South evolved over multiple development phases beginning in the late 1990s. The non-gated neighborhoods feature the classic Summerlin aesthetic — Mediterranean and transitional styles with mature landscaping. The guard-gated enclaves are more varied, with Country Club Hills featuring larger custom and semi-custom estates, and Tournament Hills offering golf course frontage along the TPC Summerlin Championship Course.",
+      "For buyers evaluating Summerlin villages, The Hills South represents a sweet spot — it offers genuine guard-gated luxury at price points below The Ridges or The Peaks, while providing the mature landscaping, established neighborhood character, and central location that newer villages like Grand Park and Stonebridge cannot yet match. The presence of four separate guard-gated options within one village also gives buyers unusual flexibility in finding the right fit."
+    ],
+    "highlights": [
+      { "title": "4 Guard-Gated Enclaves", "body": "Country Club Hills, Eagle Hills, Corte Bella, and Tournament Hills — four distinct guard-gated communities within one village, each with its own character and price range.", "iconType": "shield" },
+      { "title": "TPC Summerlin Proximity", "body": "Tournament Hills and Country Club Hills sit adjacent to TPC Summerlin, the PGA Tour championship course that hosts the annual Shriners Children's Open.", "iconType": "golf" },
+      { "title": "Central Summerlin Location", "body": "Ideal central positioning within Summerlin South — close to Downtown Summerlin, Red Rock Country Club, and major trail access without being on the outer perimeter.", "iconType": "building" },
+      { "title": "Mature Landscaping", "body": "Established neighborhoods with 20+ years of mature landscaping. Tree-lined streets and established desert gardens create a neighborhood character that newer communities cannot replicate.", "iconType": "park" },
+      { "title": "Excellent School Zoning", "body": "Zoned for top-performing CCSD schools including Sig Rogich Middle and Palo Verde High School. Private schools like The Meadows School are minutes away.", "iconType": "school" },
+      { "title": "Broad Price Range", "body": "From $600K in non-gated neighborhoods to $3M+ in the guard-gated enclaves. One of the few Summerlin villages that serves both the move-up and luxury buyer.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Country Club Hills", "type": "Guard-Gated · Golf · Luxury", "desc": "The most exclusive enclave in The Hills South. Semi-custom and custom estates near TPC Summerlin with homes ranging from 3,500 to 7,000+ square feet.", "price": "From $900K" },
+      { "name": "Tournament Hills", "type": "Guard-Gated · Golf Course", "desc": "Guard-gated community with direct frontage along TPC Summerlin's championship course. Popular with golf enthusiasts and PGA Tour fans.", "price": "From $800K" },
+      { "name": "Eagle Hills", "type": "Guard-Gated · Premium", "desc": "A guard-gated enclave featuring upscale homes with Red Rock Canyon views. Larger lots and semi-custom architecture.", "price": "From $800K" },
+      { "name": "Corte Bella", "type": "Guard-Gated · Family", "desc": "The most accessible guard-gated option in The Hills South. Well-maintained family homes with a more approachable price point while still offering staffed gate security.", "price": "From $600K" },
+      { "name": "Non-Gated Neighborhoods", "type": "Established · Family", "desc": "The established non-gated neighborhoods of The Hills South. Mature landscaping, classic Summerlin architecture, and a quieter residential character.", "price": "From $600K" }
+    ],
+    "parks": [
+      { "name": "TPC Summerlin", "address": "1700 Village Center Cir, Las Vegas, NV 89134", "acreage": "~200 acres", "amenities": ["PGA Tour championship course", "Clubhouse dining", "Practice facilities", "Pro shop", "Event venue"] },
+      { "name": "Hills Park", "address": "9100 Hillpointe Rd, Las Vegas, NV 89134", "acreage": "~12 acres", "amenities": ["Playground", "Basketball courts", "Walking trails", "Picnic areas", "Open fields"] },
+      { "name": "Summerlin Trail System", "address": "Access throughout The Hills South", "acreage": "Connected network", "amenities": ["Paved multi-use trails", "Desert landscape", "Connects to Red Rock Canyon trails", "Dog-friendly"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Palo Verde High School", "9–12", "8/10"],
+        ["Sig Rogich Middle School", "6–8", "10/10"],
+        ["Red Rock Elementary", "K–5", "8/10"],
+        ["Mervin Iverson Elementary", "K–5", "7/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Alexander Dawson School", "K–8", "A+"]
+      ]
+    },
+    "demographics": {
+      "population": "7,000+",
+      "medianAge": "45",
+      "avgIncome": "$175,000+",
+      "households": "2,500+",
+      "homeownership": "88%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~12 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~5 min", "destination": "to Downtown Summerlin", "route": "via Village Center Dr" },
+      { "time": "~30 min", "destination": "to Harry Reid Airport", "route": "via I-215 South" }
+    ],
+    "faqs": [
+      { "q": "What guard-gated communities are in The Hills South?", "a": "The Hills South contains four separate guard-gated enclaves: Country Club Hills, Eagle Hills, Corte Bella, and Tournament Hills. Each has its own 24-hour staffed guard gate and distinct architectural character." },
+      { "q": "What is the price range in The Hills South?", "a": "Homes in The Hills South range from approximately $600,000 in non-gated neighborhoods and Corte Bella to over $3 million in Country Club Hills and Tournament Hills for premium golf course and estate properties." },
+      { "q": "Is Tournament Hills near TPC Summerlin?", "a": "Yes — Tournament Hills is guard-gated and sits directly adjacent to TPC Summerlin, the PGA Tour championship course that hosts the annual Shriners Children's Open. Several homes have direct course frontage." },
+      { "q": "What ZIP code is The Hills South in?", "a": "The Hills South is located primarily in ZIP code 89135 in the Summerlin South area of Las Vegas." },
+      { "q": "How does The Hills South compare to The Ridges?", "a": "The Ridges is Summerlin's most exclusive community with prices from $2M to $20M+. The Hills South offers guard-gated luxury at significantly lower entry points (from $600K) while still providing excellent security, school zoning, and central Summerlin location." },
+      { "q": "What schools serve The Hills South?", "a": "The Hills South is zoned for top-performing CCSD schools including Sig Rogich Middle (10/10 GreatSchools) and Palo Verde High School (8/10). Private options include The Meadows School (A+) and Bishop Gorman High School (A+) nearby." },
+      { "q": "What are HOA fees in The Hills South?", "a": "HOA fees vary by neighborhood. Non-gated areas typically pay $200–$350/month. Guard-gated enclaves range from $400 to $800/month, which includes the master Summerlin association fee plus sub-association fees for guard gate staffing and enhanced maintenance." },
+      { "q": "Is The Hills South in Summerlin North or South?", "a": "The Hills South is part of the Summerlin South Association, located in the central-southern portion of the Summerlin master plan. It is distinct from The Hills (Summerlin North) village." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community with 20+ villages and every price point." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated community with Bear's Best golf. A tier above The Hills South." },
+      { "name": "The Hills", "href": "/summerlin-the-hills/", "price": "From $500K", "compare": "The sister village in Summerlin North. Similar character with its own guard-gated enclave (Mountain Trails)." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $1.2M", "compare": "Guard-gated golf community with two Arnold Palmer courses. Adjacent to The Hills South." },
+      { "name": "The Paseos", "href": "/summerlin-the-paseos/", "price": "From $550K", "compare": "Summerlin's family-focused village with Fox Hill Park and 29 neighborhoods." },
+      { "name": "Siena", "href": "/summerlin-siena/", "price": "From $400K", "compare": "Guard-gated 55+ village in Summerlin South. Different lifestyle focus, lower price points." }
+    ],
+    "testimonials": [
+      { "quote": "The Hills South gave us exactly what we needed — guard-gated security in Country Club Hills with proximity to TPC Summerlin and Downtown Summerlin. Nevada Real Estate Group showed us all four gated options and helped us pick the right enclave for our family.", "name": "Kevin & Laura M.", "detail": "Bought in Country Club Hills · 2024" },
+      { "quote": "We were deciding between The Ridges and Tournament Hills. The team helped us see that Tournament Hills offered 90% of the lifestyle at 40% of the price. Best decision we've made since moving to Las Vegas.", "name": "Brian S.", "detail": "Bought in Tournament Hills · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Hills South Summerlin",
+    "ylopoMinPrice": 600000
+  },
+  {
+    "slug": "summerlin-siena",
+    "name": "Siena",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · 55+ Active Adult",
+    "zipCodes": ["89135"],
+    "center": [-115.315, 36.148],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$400K–$900K",
+    "established": "2000",
+    "developer": "Shea Homes",
+    "acreage": "270 acres",
+    "homeCount": "1,200+",
+    "guardGated": true,
+    "hoaRange": "$200–$450/mo",
+    "overview": [
+      "Siena is Summerlin's premier guard-gated 55+ active adult community, located in the Summerlin South Association. Developed by Shea Homes beginning in 2000, Siena spans approximately 270 acres and contains over 1,200 homes, making it one of the largest and most established age-qualified communities in the Las Vegas Valley. The community is anchored by a 30,000-square-foot private clubhouse — the Siena Clubhouse — which serves as the social, fitness, and recreational hub for residents.",
+      "Homes in Siena range from approximately $400,000 for smaller single-story patio homes to over $900,000 for the larger premium models in Sun Colony at Siena, the community's most upscale section. The architectural style is uniformly single-story desert contemporary and Mediterranean, with low-maintenance landscaping and open floor plans designed for active adult living. Most homes feature 1,500 to 3,200 square feet with 2–3 bedrooms, gourmet kitchens, and covered patios.",
+      "The Siena Clubhouse is the community's crown jewel — a resort-caliber facility with an indoor pool, outdoor resort pool, state-of-the-art fitness center, tennis courts, pickleball courts, card rooms, arts and crafts studios, a demonstration kitchen, and a full calendar of organized social activities, clubs, and events. The HOA maintains all front-yard landscaping, exterior painting, and common areas, allowing residents to focus on the lifestyle rather than home maintenance.",
+      "Siena's guard-gated entry distinguishes it from other 55+ communities in the valley, including the much larger Sun City Summerlin (which is not guard-gated). For active adults who want the Summerlin address, the security of a staffed guard gate, and a vibrant social infrastructure without the scale of a Sun City, Siena is the clear first choice."
+    ],
+    "highlights": [
+      { "title": "Guard-Gated 55+ Security", "body": "24-hour staffed guard gate provides genuine security and privacy — a feature that distinguishes Siena from larger 55+ communities like Sun City Summerlin which rely on access codes only.", "iconType": "shield" },
+      { "title": "30,000 SF Clubhouse", "body": "The Siena Clubhouse features indoor and outdoor pools, state-of-the-art fitness center, tennis and pickleball courts, card rooms, art studios, and a full social calendar.", "iconType": "building" },
+      { "title": "Low-Maintenance Living", "body": "HOA covers front-yard landscaping, exterior painting, and common area maintenance. Residents enjoy the lifestyle without the upkeep burden.", "iconType": "home" },
+      { "title": "Single-Story Floor Plans", "body": "All homes in Siena are single-story, ranging from 1,500 to 3,200 square feet. Open floor plans with covered patios and desert landscaping.", "iconType": "home" },
+      { "title": "Prime Summerlin Location", "body": "Central Summerlin South location. Minutes from Downtown Summerlin, Red Rock Canyon, and all of Summerlin's dining, shopping, and medical facilities.", "iconType": "building" },
+      { "title": "Active Social Community", "body": "Dozens of organized clubs, groups, and social activities — from golf leagues and tennis teams to book clubs, wine clubs, and community events throughout the year.", "iconType": "park" }
+    ],
+    "neighborhoods": [
+      { "name": "Sun Colony at Siena", "type": "Guard-Gated · Premium 55+", "desc": "The most upscale section of Siena with larger floor plans, premium finishes, and a secondary guard gate. Homes from 2,200 to 3,200+ square feet.", "price": "From $700K" },
+      { "name": "Siena Classic", "type": "55+ · Established", "desc": "The original Siena neighborhoods with mature landscaping and the most established community character. Homes from 1,500 to 2,500 square feet.", "price": "From $400K" },
+      { "name": "Siena Grand", "type": "55+ · Spacious", "desc": "Larger floor plans in the 2,000–2,800 square foot range. Popular with downsizing buyers who want space without the multi-story layout.", "price": "From $550K" },
+      { "name": "Siena Patio Homes", "type": "55+ · Lock & Leave", "desc": "Smaller patio homes ideal for snowbirds and lock-and-leave buyers. Low maintenance, efficient floor plans, and community amenity access.", "price": "From $400K" }
+    ],
+    "parks": [
+      { "name": "Siena Clubhouse & Recreation Complex", "address": "10575 Siena Monte Ave, Las Vegas, NV 89135", "acreage": "~8 acres", "amenities": ["Indoor pool", "Outdoor resort pool", "Fitness center", "Tennis courts", "Pickleball courts", "Card rooms", "Arts & crafts studio", "Demonstration kitchen"] },
+      { "name": "Siena Community Park", "address": "Within Siena gates, Las Vegas, NV 89135", "acreage": "~5 acres", "amenities": ["Walking paths", "Desert gardens", "Seating areas", "Open space"] },
+      { "name": "Red Rock Canyon NCA", "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161", "acreage": "195,819 acres", "amenities": ["Scenic Loop Drive", "Hiking trails", "Visitor center", "Wildlife viewing"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Not applicable — 55+ community", "", ""]
+      ],
+      "Private": [
+        ["The Meadows School (nearby)", "PreK–12", "A+"],
+        ["Bishop Gorman High School (nearby)", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock (nearby)", "K–12", "9/10"]
+      ]
+    },
+    "demographics": {
+      "population": "2,000+",
+      "medianAge": "68",
+      "avgIncome": "$125,000+",
+      "households": "1,200+",
+      "homeownership": "95%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~12 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~5 min", "destination": "to Downtown Summerlin", "route": "via W Charleston Blvd" },
+      { "time": "~30 min", "destination": "to Harry Reid Airport", "route": "via I-215 South" }
+    ],
+    "faqs": [
+      { "q": "What is the age requirement for Siena?", "a": "Siena is a 55+ community. At least one resident in each household must be 55 years of age or older. Some homes may allow residents under 55 subject to community rules, but the primary occupant must meet the age requirement." },
+      { "q": "Is Siena guard-gated?", "a": "Yes — Siena is a guard-gated community with a 24-hour staffed guard gate. Sun Colony at Siena, the premium section, has an additional secondary guard gate for added privacy." },
+      { "q": "What amenities does Siena offer?", "a": "Siena features a 30,000-square-foot clubhouse with indoor and outdoor pools, fitness center, tennis and pickleball courts, card rooms, art studios, a demonstration kitchen, and a full calendar of social clubs and organized activities." },
+      { "q": "What is the price range in Siena?", "a": "Homes in Siena range from approximately $400,000 for smaller patio homes to over $900,000 for the larger premium models in Sun Colony at Siena." },
+      { "q": "How does Siena compare to Sun City Summerlin?", "a": "Sun City Summerlin is much larger (7,700+ homes vs. 1,200+) with its own golf courses but is not guard-gated. Siena is smaller, more intimate, and offers guard-gated security with a more upscale feel. Siena's homes are generally newer and more contemporary." },
+      { "q": "What are HOA fees in Siena?", "a": "HOA fees in Siena range from approximately $200 to $450 per month depending on the section. Fees include guard gate staffing, front-yard landscaping, exterior painting, common area maintenance, and full clubhouse access." },
+      { "q": "Does the HOA maintain the front yard?", "a": "Yes — Siena's HOA maintains all front-yard landscaping and handles exterior painting on a scheduled rotation. This is one of the community's most popular features for active adults." },
+      { "q": "What is Sun Colony at Siena?", "a": "Sun Colony at Siena is the most upscale section of Siena, featuring larger floor plans (2,200–3,200+ sq ft), premium finishes, and its own secondary guard gate. It was the last phase developed and commands the highest prices in the community." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community. All ages, all price points, 20+ villages." },
+      { "name": "Sun City Summerlin", "href": "/sun-city-summerlin/", "price": "From $300K", "compare": "Larger 55+ community with golf courses. Not guard-gated. Lower entry price." },
+      { "name": "Regency at Summerlin", "href": "/regency-at-summerlin/", "price": "From $500K", "compare": "Toll Brothers 55+ guard-gated community. Newer construction with luxury finishes." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury guard-gated community. All ages, significantly higher price points." },
+      { "name": "Trilogy at Summerlin", "href": "/trilogy-at-summerlin/", "price": "From $500K", "compare": "Shea Homes 55+ community in Summerlin. Similar builder, newer construction." },
+      { "name": "Solera at Anthem", "href": "/solera-at-anthem/", "price": "From $350K", "compare": "Henderson's popular 55+ community. Not guard-gated but strong social programming." }
+    ],
+    "testimonials": [
+      { "quote": "After twenty years in Summerlin, we wanted to downsize but didn't want to leave the community. Siena gave us guard-gated security, a beautiful clubhouse, and neighbors who actually use the amenities. Nevada Real Estate Group found us the perfect Sun Colony home.", "name": "Robert & Linda F.", "detail": "Bought in Siena, Sun Colony · 2024" },
+      { "quote": "We sold our family home in The Trails and moved to Siena — the best decision we've made. The HOA handles the landscaping, the social calendar keeps us active, and the guard gate gives us peace of mind when we travel. The team made the transition seamless.", "name": "Carol W.", "detail": "Bought in Siena · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Siena Summerlin",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "summerlin-stonebridge",
+    "name": "Stonebridge",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · New Construction · 55+",
+    "zipCodes": ["89138"],
+    "center": [-115.325, 36.185],
+    "heroEyebrow": "Summerlin West, Las Vegas",
+    "priceRange": "$550K–$1M",
+    "established": "2017",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "500 acres",
+    "homeCount": "3,000+",
+    "guardGated": false,
+    "hoaRange": "$100–$350/mo",
+    "overview": [
+      "Stonebridge is Summerlin's newest and most actively developing major village, located in the Summerlin West Association at the western edge of the master plan. Launched in 2017, Stonebridge has quickly become one of the most popular neighborhoods in the entire Las Vegas Valley, attracting families, move-up buyers, and active adults with contemporary architecture, dramatic Spring Mountain views, and direct connectivity to Red Rock Canyon through the Summerlin trail system.",
+      "Homes in Stonebridge range from approximately $550,000 to over $1 million, with most falling in the $650K–$850K range. Multiple national builders — including Toll Brothers, Taylor Morrison, Lennar, and Shea Homes — are actively building in Stonebridge, offering floor plans from 2,000 to 5,000+ square feet. The architectural style is distinctly contemporary — clean lines, neutral palettes, open floor plans, and large windows designed to frame the mountain views that define the village's character.",
+      "Stonebridge also includes Heritage at Stonebridge, a Toll Brothers age-qualified (55+) guard-gated community that adds a distinct active adult component to the village. Heritage at Stonebridge features single-story homes, a private clubhouse, and resort-style amenities — giving active adult buyers an option within the newest part of Summerlin.",
+      "The defining feature of Stonebridge is its position at the base of the Spring Mountains. The western edge of the village provides some of the most dramatic residential mountain views in the Las Vegas Valley, with sunset vistas that are widely considered the best in the region. The Summerlin trail system runs through and around Stonebridge, connecting residents to hiking and biking routes that extend into Red Rock Canyon — a genuine outdoor lifestyle amenity that sets Stonebridge apart from every other major village in Summerlin."
+    ],
+    "highlights": [
+      { "title": "Dramatic Mountain Views", "body": "Positioned at the base of the Spring Mountains, Stonebridge offers some of the most spectacular residential mountain and sunset views in the Las Vegas Valley.", "iconType": "mountain" },
+      { "title": "Active New Construction", "body": "Multiple national builders — Toll Brothers, Taylor Morrison, Lennar, Shea Homes — are actively building with the newest designs and smart home technology available in Summerlin.", "iconType": "home" },
+      { "title": "Red Rock Canyon Trails", "body": "The Summerlin trail system connects Stonebridge directly to Red Rock Canyon hiking and biking routes. Outdoor access is a daily reality, not a weekend activity.", "iconType": "park" },
+      { "title": "Heritage at Stonebridge (55+)", "body": "A Toll Brothers guard-gated 55+ community within the village. Private clubhouse, resort pool, and single-story homes for active adult buyers.", "iconType": "building" },
+      { "title": "Contemporary Architecture", "body": "The newest architectural style in Summerlin — clean lines, neutral palettes, open floor plans, and oversized windows designed to capture mountain views.", "iconType": "home" },
+      { "title": "Built-In Scarcity", "body": "Stonebridge is part of Summerlin's final westward expansion. Red Rock Canyon to the west means no more land — once built out, new Summerlin construction ends.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Heritage at Stonebridge", "type": "Guard-Gated · 55+ · Toll Brothers", "desc": "Age-qualified guard-gated community by Toll Brothers. Private clubhouse, resort pool, single-story homes from 1,800 to 3,200 square feet.", "price": "From $550K" },
+      { "name": "Toll Brothers Collections", "type": "Luxury · Move-Up", "desc": "Toll Brothers' premium non-age-restricted offerings. Larger floor plans from 3,200 to 5,000+ square feet with upscale finishes and mountain views.", "price": "From $850K" },
+      { "name": "Taylor Morrison at Stonebridge", "type": "Contemporary · Family", "desc": "Taylor Morrison's contemporary designs with open floor plans and mountain views. Popular with families and move-up buyers.", "price": "From $700K" },
+      { "name": "Lennar at Stonebridge", "type": "Family · Everything's Included", "desc": "Lennar's Everything's Included homes with smart home features and premium finishes at no extra cost. The most accessible entry to Stonebridge.", "price": "From $600K" },
+      { "name": "Shea Homes at Stonebridge", "type": "Premium · Design-Forward", "desc": "Shea Homes' design-forward approach with flexible floor plans, indoor-outdoor living, and distinctive contemporary architecture.", "price": "From $700K" }
+    ],
+    "parks": [
+      { "name": "Fox Hill Park", "address": "10100 Trails Dr, Las Vegas, NV 89138", "acreage": "~20 acres", "amenities": ["Adventure playground", "Zip lines", "Disc golf", "Climbing tower", "Trails", "Picnic areas"] },
+      { "name": "The Paseos Linear Park", "address": "Paseo Hills Dr, Las Vegas, NV 89138", "acreage": "~12 acres", "amenities": ["Walking trails", "Desert gardens", "Open space", "Dog-friendly areas"] },
+      { "name": "Red Rock Canyon NCA", "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161", "acreage": "195,819 acres", "amenities": ["Scenic Loop Drive", "Hiking trails", "Rock climbing", "Visitor center"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Bonner Elementary School", "K–5", "9/10"],
+        ["Sig Rogich Middle School", "6–8", "10/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Alexander Dawson School", "K–8", "A+"]
+      ]
+    },
+    "demographics": {
+      "population": "8,000+",
+      "medianAge": "38",
+      "avgIncome": "$150,000+",
+      "households": "3,000+",
+      "homeownership": "85%"
+    },
+    "driveTimes": [
+      { "time": "~25 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~5 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via Summerlin Pkwy" },
+      { "time": "~35 min", "destination": "to Harry Reid Airport", "route": "via I-215 South" }
+    ],
+    "faqs": [
+      { "q": "Is Stonebridge new construction?", "a": "Yes — Stonebridge is Summerlin's most actively developing village with multiple national builders (Toll Brothers, Taylor Morrison, Lennar, Shea Homes) currently building new homes. Development began in 2017 and continues actively." },
+      { "q": "What is Heritage at Stonebridge?", "a": "Heritage at Stonebridge is a Toll Brothers guard-gated 55+ active adult community within the Stonebridge village. It features single-story homes, a private clubhouse with resort pool, and organized social activities." },
+      { "q": "What is the price range in Stonebridge?", "a": "Homes in Stonebridge range from approximately $550,000 for entry-level floor plans and Heritage at Stonebridge homes to over $1 million for Toll Brothers' premium collections with mountain views." },
+      { "q": "Is Stonebridge guard-gated?", "a": "The broader Stonebridge village is gated (key-fob access) but not guard-gated. Heritage at Stonebridge, the 55+ section, is guard-gated with a 24-hour staffed guard gate." },
+      { "q": "What views are available in Stonebridge?", "a": "Stonebridge offers dramatic Spring Mountain and Red Rock Canyon views from many homes, particularly those on the western edge of the village. Sunset views from Stonebridge are widely considered the best residential views in Las Vegas." },
+      { "q": "How close is Stonebridge to Red Rock Canyon?", "a": "Red Rock Canyon National Conservation Area is approximately 5 minutes from Stonebridge. The Summerlin trail system connects Stonebridge directly to Red Rock Canyon hiking and biking routes." },
+      { "q": "What are HOA fees in Stonebridge?", "a": "HOA fees in Stonebridge range from approximately $100 to $350 per month depending on the specific builder and neighborhood. Heritage at Stonebridge 55+ fees are higher due to guard gate staffing and enhanced amenities." },
+      { "q": "What schools serve Stonebridge?", "a": "Stonebridge is zoned for strong CCSD schools including Bonner Elementary (9/10), Sig Rogich Middle School (10/10), and Palo Verde High School (8/10)." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community. 22,500 acres, 20+ villages." },
+      { "name": "Summerlin West", "href": "/summerlin-west/", "price": "From $500K", "compare": "The broader Summerlin West area including Stonebridge, Reverence, and Redpoint." },
+      { "name": "La Madre Peaks", "href": "/summerlin-la-madre-peaks/", "price": "From $800K", "compare": "Summerlin West's luxury village. Higher price points, custom lots, dramatic canyon views." },
+      { "name": "Carlisle Peak", "href": "/carlisle-peak/", "price": "From $1.55M", "compare": "Guard-gated luxury new construction in Grand Park village. Significantly higher price points." },
+      { "name": "The Paseos", "href": "/summerlin-the-paseos/", "price": "From $550K", "compare": "Summerlin's family-focused village with Fox Hill Park. More established, similar price range." },
+      { "name": "Siena", "href": "/summerlin-siena/", "price": "From $400K", "compare": "Guard-gated 55+ community in Summerlin South. Heritage at Stonebridge offers a newer 55+ alternative." }
+    ],
+    "testimonials": [
+      { "quote": "Sold our Summerlin home in Stonebridge in 11 days at $32,000 over asking. The team knew exactly what buyers in this price range in this village were looking for. The pricing strategy was surgical — we listed on Thursday and had three offers by Saturday.", "name": "David K.", "detail": "Sold in Stonebridge, Summerlin · 2025" },
+      { "quote": "We wanted new construction with mountain views and trail access — Stonebridge delivered all three. The Taylor Morrison floor plan we chose maximizes the sunset views. Nevada Real Estate Group negotiated builder upgrades that saved us over $40,000.", "name": "Sarah & Matt R.", "detail": "Bought in Stonebridge · 2024" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "Stonebridge Summerlin",
+    "ylopoMinPrice": 550000
+  },
+  {
+    "slug": "summerlin-the-arbors",
+    "name": "The Arbors",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Family",
+    "zipCodes": ["89134", "89144"],
+    "center": [-115.280, 36.200],
+    "heroEyebrow": "Summerlin North, Las Vegas",
+    "priceRange": "$450K–$800K",
+    "established": "1993",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "600 acres",
+    "homeCount": "3,500+",
+    "guardGated": false,
+    "hoaRange": "$75–$200/mo",
+    "overview": [
+      "The Arbors is one of Summerlin's original and most established villages, located in the Summerlin North Association. Developed beginning in 1993, The Arbors was among the first residential villages built within the Summerlin master plan and has matured into one of the most desirable family neighborhoods in the Las Vegas Valley. The village benefits from mature landscaping, tree-lined streets, and the established community character that only comes with three decades of residential continuity.",
+      "Homes in The Arbors range from approximately $450,000 for smaller single-family homes and townhomes to over $800,000 for larger, renovated estate-style properties on premium lots. The architectural character is classic Summerlin — Mediterranean and transitional styles built by a mix of national and regional builders during the 1990s and early 2000s. Many homes have been significantly updated over the years, with modern kitchens, pools, and desert landscaping.",
+      "The Arbors' location in Summerlin North puts it within easy reach of Downtown Summerlin (approximately 10 minutes), Red Rock Canyon (approximately 15 minutes), and the 215 Beltway for quick access to the rest of the valley. The village is served by strong CCSD schools and is proximate to private options including The Meadows School and Faith Lutheran. For families with school-age children, The Arbors offers a combination of neighborhood stability and school quality that few Las Vegas communities can match.",
+      "The value proposition of The Arbors is straightforward: it delivers the Summerlin address, mature neighborhood character, strong schools, and convenient location at price points significantly below the newer and more premium villages. For buyers who prioritize established neighborhoods over new construction, The Arbors is one of the best values in Summerlin."
+    ],
+    "highlights": [
+      { "title": "Mature, Established Neighborhood", "body": "Over 30 years of mature landscaping, tree-lined streets, and residential continuity create a neighborhood character that newer communities cannot replicate.", "iconType": "park" },
+      { "title": "Strong School Zoning", "body": "Served by well-regarded CCSD schools. Close to top private options including The Meadows School (A+) and Faith Lutheran. A top choice for school-focused families.", "iconType": "school" },
+      { "title": "Accessible Summerlin Pricing", "body": "Entry into the Summerlin address from approximately $450K — one of the most affordable villages in the master plan while still delivering the full Summerlin lifestyle.", "iconType": "trend" },
+      { "title": "Central Summerlin North Location", "body": "Minutes from Downtown Summerlin's 125+ shops and restaurants, Las Vegas Ballpark, and City National Arena. Easy 215 Beltway access for valley-wide commuting.", "iconType": "building" },
+      { "title": "Community Parks & Trails", "body": "Connected to Summerlin's 200+ mile trail network with multiple neighborhood parks, playgrounds, and green spaces throughout the village.", "iconType": "park" },
+      { "title": "Strong Resale Value", "body": "As one of Summerlin's original villages, The Arbors has demonstrated consistent appreciation over three decades. Established neighborhoods with mature trees consistently outperform newer communities on a per-square-foot basis.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Arbors Village", "type": "Family · Established", "desc": "The core of The Arbors — established single-family homes with mature landscaping, neighborhood parks, and tree-lined streets. Classic Summerlin character.", "price": "From $500K" },
+      { "name": "Arbors North", "type": "Family · Larger Lots", "desc": "Larger home sites in the northern section of the village. More spacious floor plans with room for pools and outdoor living.", "price": "From $600K" },
+      { "name": "Willows Edge", "type": "Townhome · Value", "desc": "Attached and semi-attached townhome-style homes at The Arbors' most accessible price points. Popular with first-time buyers and downsizers.", "price": "From $450K" },
+      { "name": "Arbors Premium Lots", "type": "Premium · Cul-de-Sac", "desc": "Premium cul-de-sac and corner lots with mature trees and the largest yards in the village. Many have been significantly updated.", "price": "From $650K" }
+    ],
+    "parks": [
+      { "name": "Gardens Park", "address": "10401 Garden Park Dr, Las Vegas, NV 89134", "acreage": "~15 acres", "amenities": ["Playground", "Basketball courts", "Walking trails", "Picnic areas", "Open fields", "Dog park"] },
+      { "name": "Arbors Community Pool", "address": "Within The Arbors HOA, Las Vegas, NV 89134", "acreage": "~3 acres", "amenities": ["Community swimming pool", "Sun deck", "Restrooms", "Seasonal access"] },
+      { "name": "Summerlin Trail System", "address": "Access points throughout The Arbors", "acreage": "Connected network", "amenities": ["Paved multi-use trails", "Desert landscape", "Connects to Red Rock trails", "Dog-friendly"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Helen Jydstrup Elementary", "K–5", "7/10"],
+        ["Jack & Terry Mannion Middle", "6–8", "7/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"],
+        ["Bishop Gorman High School", "9–12", "A+"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Alexander Dawson School", "K–8", "A+"]
+      ]
+    },
+    "demographics": {
+      "population": "9,500+",
+      "medianAge": "40",
+      "avgIncome": "$125,000+",
+      "households": "3,500+",
+      "homeownership": "82%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~15 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via Summerlin Pkwy" },
+      { "time": "~30 min", "destination": "to Harry Reid Airport", "route": "via I-215 South" }
+    ],
+    "faqs": [
+      { "q": "What is the price range in The Arbors?", "a": "Homes in The Arbors range from approximately $450,000 for smaller homes and townhomes to over $800,000 for larger, renovated properties on premium lots." },
+      { "q": "Is The Arbors guard-gated?", "a": "No — The Arbors is not guard-gated. Most neighborhoods within The Arbors are gated with key-fob or access code entry but do not have a staffed guard gate." },
+      { "q": "When was The Arbors built?", "a": "The Arbors was one of Summerlin's original villages, with development beginning in 1993. Most homes were built between 1993 and the early 2000s." },
+      { "q": "What schools serve The Arbors?", "a": "The Arbors is served by CCSD schools including Jydstrup Elementary (7/10), Mannion Middle (7/10), and Palo Verde High School (8/10). Top private schools including The Meadows School (A+) are nearby." },
+      { "q": "How does The Arbors compare to Stonebridge?", "a": "Stonebridge offers new construction with modern architecture and mountain views. The Arbors offers established neighborhoods with mature landscaping and lower price points. Both are excellent Summerlin villages — the choice depends on whether you prefer new construction or established character." },
+      { "q": "What are HOA fees in The Arbors?", "a": "HOA fees in The Arbors are among the most affordable in Summerlin, ranging from approximately $75 to $200 per month. This includes the Summerlin master association fee plus the village sub-association fee." },
+      { "q": "Is The Arbors a good value in Summerlin?", "a": "Yes — The Arbors is one of the most affordable villages in Summerlin while delivering the full Summerlin lifestyle: trail access, community amenities, strong schools, and proximity to Downtown Summerlin. It represents excellent value for buyers who prefer established neighborhoods." },
+      { "q": "What ZIP code is The Arbors in?", "a": "The Arbors is located primarily in ZIP codes 89134 and 89144 in the Summerlin North area of Las Vegas." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community with 20+ villages." },
+      { "name": "The Hills", "href": "/summerlin-the-hills/", "price": "From $500K", "compare": "Adjacent Summerlin North village with guard-gated Mountain Trails enclave." },
+      { "name": "The Canyons", "href": "/summerlin-the-canyons/", "price": "From $500K", "compare": "Summerlin North village with guard-gated enclaves and a broader price range." },
+      { "name": "Stonebridge", "href": "/summerlin-stonebridge/", "price": "From $550K", "compare": "Summerlin's newest village. New construction with mountain views at slightly higher price points." },
+      { "name": "Sun City Summerlin", "href": "/sun-city-summerlin/", "price": "From $300K", "compare": "Adjacent 55+ community with golf courses and extensive social programming." },
+      { "name": "The Trails", "href": "/summerlin-the-trails/", "price": "From $500K", "compare": "Another established Summerlin North village with guard-gated Country Rose Estates." }
+    ],
+    "testimonials": [
+      { "quote": "The Arbors was exactly right for us — established neighborhood, great schools, and a Summerlin address at a price that let us buy what we actually wanted. Nevada Real Estate Group helped us find a fully updated home with a pool and mature backyard.", "name": "Chris & Amanda N.", "detail": "Bought in The Arbors, Summerlin · 2024" },
+      { "quote": "We've lived in The Arbors for 18 years. When it came time to sell, the team priced it perfectly and had three offers in the first weekend. The mature trees and established character of the neighborhood are what buyers love about this village.", "name": "Tom & Nancy B.", "detail": "Sold in The Arbors, Summerlin · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Arbors Summerlin",
+    "ylopoMinPrice": 400000
+  },
+  {
+    "slug": "summerlin-the-canyons",
+    "name": "The Canyons",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Guard-Gated · Diverse",
+    "zipCodes": ["89134", "89144"],
+    "center": [-115.295, 36.200],
+    "heroEyebrow": "Summerlin North, Las Vegas",
+    "priceRange": "$500K–$4M+",
+    "established": "1996",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "750 acres",
+    "homeCount": "3,000+",
+    "guardGated": true,
+    "hoaRange": "$100–$800/mo",
+    "overview": [
+      "The Canyons is one of Summerlin's most diverse and dynamic villages, spanning a broad price range from approximately $500,000 to over $4 million. Located in the Summerlin North Association, The Canyons contains several guard-gated luxury enclaves — including Bellacere, Aventura, Canyon Fairways, Eagle Rock, and The Palisades — alongside more accessible non-gated neighborhoods. This unusual breadth makes The Canyons one of the few Summerlin villages where first-time Summerlin buyers and ultra-luxury estate buyers coexist within the same village boundaries.",
+      "The guard-gated enclaves within The Canyons are the village's most distinctive feature. Bellacere is the most exclusive, with custom and semi-custom estates ranging from $1.5 million to over $5 million on large lots with Red Rock Canyon views. Eagle Rock and The Palisades offer guard-gated luxury in the $1 million to $4 million range, while Canyon Fairways combines guard-gated living with TPC Summerlin golf course proximity. Aventura rounds out the luxury options with semi-custom homes from $800,000 to $3 million.",
+      "The non-gated neighborhoods of The Canyons offer excellent value — established homes with mature landscaping and the same strong school zoning as the guard-gated enclaves. For families who want the Summerlin North location and school assignments without the premium of a guard-gated address, these neighborhoods represent some of the best values in Summerlin.",
+      "The Canyons' location provides excellent freeway access via the 215 Beltway and Summerlin Parkway, putting the Strip approximately 20 minutes away and Downtown Summerlin approximately 10 minutes away. The village is also adjacent to the Summerlin trail network, offering connected hiking and biking access toward Red Rock Canyon. For buyers who want optionality — the ability to start in a non-gated neighborhood and potentially move up to a guard-gated enclave within the same village — The Canyons offers a rare path."
+    ],
+    "highlights": [
+      { "title": "5 Guard-Gated Enclaves", "body": "Bellacere, Eagle Rock, The Palisades, Canyon Fairways, and Aventura — five distinct guard-gated communities within one village, each with unique character and price range.", "iconType": "shield" },
+      { "title": "Broadest Price Range", "body": "From $500K in non-gated neighborhoods to $4M+ in Bellacere. One of the only Summerlin villages that serves entry buyers and ultra-luxury buyers in the same community.", "iconType": "trend" },
+      { "title": "TPC Golf Proximity", "body": "Canyon Fairways offers guard-gated living adjacent to TPC Summerlin, home of the PGA Tour's Shriners Children's Open.", "iconType": "golf" },
+      { "title": "Strong School Zoning", "body": "Excellent CCSD school assignments serving all neighborhoods within The Canyons. Top private schools including The Meadows School are nearby.", "iconType": "school" },
+      { "title": "Trail-Connected Location", "body": "Adjacent to Summerlin's 200+ mile trail network with connections to Red Rock Canyon hiking routes. Community parks and green spaces throughout.", "iconType": "park" },
+      { "title": "Move-Up Potential", "body": "Start in a non-gated neighborhood and move up to a guard-gated enclave without leaving the village, the school zone, or the neighborhood you know.", "iconType": "home" }
+    ],
+    "neighborhoods": [
+      { "name": "Bellacere", "type": "Guard-Gated · Ultra-Luxury", "desc": "The most exclusive enclave in The Canyons. Custom and semi-custom estates on large lots with Red Rock Canyon views. The pinnacle of the village.", "price": "From $1.5M" },
+      { "name": "Eagle Rock", "type": "Guard-Gated · Luxury", "desc": "Guard-gated luxury homes with dramatic views and larger lot sizes. Semi-custom architecture with 4,000–7,000+ square feet.", "price": "From $1M" },
+      { "name": "The Palisades", "type": "Guard-Gated · Premium", "desc": "A prestigious guard-gated community with semi-custom homes in the $1M–$4M range. Strong architectural standards and mature landscaping.", "price": "From $1M" },
+      { "name": "Canyon Fairways", "type": "Guard-Gated · Golf", "desc": "Guard-gated community adjacent to TPC Summerlin. Golf course views and proximity to the PGA Tour venue make this popular with golf enthusiasts.", "price": "From $800K" },
+      { "name": "Aventura", "type": "Guard-Gated · Semi-Custom", "desc": "Guard-gated semi-custom homes on generous lots. A strong option for buyers seeking guard-gated living at a more accessible price point.", "price": "From $800K" },
+      { "name": "Non-Gated Neighborhoods", "type": "Established · Family", "desc": "Well-maintained family neighborhoods with the same school zoning and village amenities. The most accessible entry point into The Canyons.", "price": "From $500K" }
+    ],
+    "parks": [
+      { "name": "Cottonwood Canyon Park", "address": "2100 N Rampart Blvd, Las Vegas, NV 89134", "acreage": "~10 acres", "amenities": ["Playground", "Walking trails", "Picnic areas", "Open fields", "Basketball courts"] },
+      { "name": "TPC Summerlin", "address": "1700 Village Center Cir, Las Vegas, NV 89134", "acreage": "~200 acres", "amenities": ["PGA Tour championship course", "Clubhouse", "Practice facilities", "Pro shop"] },
+      { "name": "Summerlin Trail System", "address": "Access throughout The Canyons", "acreage": "Connected network", "amenities": ["Paved multi-use trails", "Desert landscape", "Connects to Red Rock Canyon", "Dog-friendly"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Palo Verde High School", "9–12", "8/10"],
+        ["Sig Rogich Middle School", "6–8", "10/10"],
+        ["John W. Bonner Elementary", "K–5", "9/10"],
+        ["Helen Jydstrup Elementary", "K–5", "7/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Alexander Dawson School", "K–8", "A+"]
+      ]
+    },
+    "demographics": {
+      "population": "8,500+",
+      "medianAge": "43",
+      "avgIncome": "$165,000+",
+      "households": "3,000+",
+      "homeownership": "86%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~15 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via Summerlin Pkwy" },
+      { "time": "~30 min", "destination": "to Harry Reid Airport", "route": "via I-215 South" }
+    ],
+    "faqs": [
+      { "q": "What guard-gated communities are in The Canyons?", "a": "The Canyons contains five guard-gated enclaves: Bellacere ($1.5M–$5M+), Eagle Rock ($1M–$4M+), The Palisades ($1M–$4M), Canyon Fairways ($800K–$3M), and Aventura ($800K–$3M+). Each has its own 24-hour staffed guard gate." },
+      { "q": "What is the price range in The Canyons?", "a": "The Canyons spans from approximately $500,000 in non-gated neighborhoods to over $4 million in the guard-gated Bellacere enclave. The average home price in The Canyons is approximately $900K–$1.2M." },
+      { "q": "What is Bellacere?", "a": "Bellacere is the most exclusive guard-gated enclave within The Canyons village. It features custom and semi-custom estates on large lots, many with Red Rock Canyon views, at price points typically ranging from $1.5 million to over $5 million." },
+      { "q": "Is The Canyons near TPC Summerlin?", "a": "Yes — Canyon Fairways, one of The Canyons' guard-gated communities, sits adjacent to TPC Summerlin, the PGA Tour championship course that hosts the annual Shriners Children's Open." },
+      { "q": "What schools serve The Canyons?", "a": "The Canyons is zoned for strong CCSD schools including Sig Rogich Middle (10/10) and Palo Verde High (8/10). Private schools including The Meadows School (A+) and Bishop Gorman (A+) are nearby." },
+      { "q": "What are HOA fees in The Canyons?", "a": "HOA fees vary significantly across The Canyons. Non-gated neighborhoods pay approximately $100–$200/month. Guard-gated enclaves range from $400 to $800/month, covering guard gate staffing, enhanced security, and premium common area maintenance." },
+      { "q": "Is The Canyons in Summerlin North or South?", "a": "The Canyons is part of the Summerlin North Association, located in the northern portion of the Summerlin master plan." },
+      { "q": "Can I start in a non-gated area and move up?", "a": "Yes — The Canyons is one of the few Summerlin villages where you can enter in a non-gated neighborhood (from $500K) and later move up to a guard-gated enclave (from $800K–$1.5M+) without changing school zones, neighborhoods, or community familiarity." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community with 20+ villages." },
+      { "name": "The Arbors", "href": "/summerlin-the-arbors/", "price": "From $450K", "compare": "Adjacent established Summerlin North village. Similar non-gated pricing with mature character." },
+      { "name": "The Hills", "href": "/summerlin-the-hills/", "price": "From $500K", "compare": "Summerlin North village with the guard-gated Mountain Trails enclave." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's ultra-luxury community. A tier above even Bellacere in pricing and exclusivity." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $1.2M", "compare": "Guard-gated golf community. Two Arnold Palmer courses. Comparable to Canyon Fairways pricing." },
+      { "name": "The Trails", "href": "/summerlin-the-trails/", "price": "From $500K", "compare": "Another Summerlin North village with a guard-gated enclave (Country Rose Estates)." }
+    ],
+    "testimonials": [
+      { "quote": "We bought our first Summerlin home in The Canyons' non-gated area, and five years later moved up to Aventura behind the guard gate — same schools, same neighborhood, same community. Nevada Real Estate Group handled both transactions perfectly.", "name": "Ryan & Jessica P.", "detail": "Bought in Aventura, The Canyons · 2025" },
+      { "quote": "Bellacere was the right fit for us — guard-gated privacy, large lots, and Red Rock views — without the $5M+ entry of The Ridges. The team understood exactly what we were looking for and found the lot that checked every box.", "name": "Steven & Diana L.", "detail": "Bought in Bellacere, The Canyons · 2024" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Canyons Summerlin",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "summerlin-the-hills",
+    "name": "The Hills",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Master-Planned · Guard-Gated",
+    "zipCodes": ["89134"],
+    "center": [-115.300, 36.208],
+    "heroEyebrow": "Summerlin North, Las Vegas",
+    "priceRange": "$500K–$900K",
+    "established": "1996",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "550 acres",
+    "homeCount": "2,800+",
+    "guardGated": true,
+    "hoaRange": "$100–$600/mo",
+    "overview": [
+      "The Hills is an established village in the Summerlin North Association, known for its quiet residential character, elevated terrain, and the guard-gated Mountain Trails enclave. Developed beginning in 1996, The Hills has matured into one of Summerlin North's most stable and desirable neighborhoods, offering a mix of family-oriented non-gated neighborhoods and the exclusive Mountain Trails guard-gated community at the village's upper tier.",
+      "Homes in The Hills range from approximately $500,000 in the established non-gated neighborhoods to over $900,000 in Mountain Trails and the premium sections of the village. Mountain Trails is the village's most distinctive feature — a guard-gated enclave featuring larger semi-custom homes on elevated lots with views of the Spring Mountains and the Las Vegas Valley. Homes in Mountain Trails typically range from 3,000 to 5,500 square feet with premium finishes.",
+      "The non-gated neighborhoods of The Hills offer excellent value for families seeking the Summerlin North location and school assignments. Mature landscaping, tree-lined streets, and a quiet residential character make these neighborhoods popular with families who prioritize stability and community over newer construction. The village is well-connected to Summerlin's trail network and is a short drive from both Downtown Summerlin and Red Rock Canyon.",
+      "The Hills should not be confused with The Hills South, a separate village in the Summerlin South Association that contains four guard-gated enclaves. While the names are similar, the two villages have distinct characters, school zonings, and price ranges. The Hills (North) offers a more affordable entry with its own guard-gated option in Mountain Trails, while The Hills South starts higher and contains more guard-gated luxury inventory."
+    ],
+    "highlights": [
+      { "title": "Mountain Trails Guard Gate", "body": "The Hills' premier enclave — guard-gated Mountain Trails features semi-custom homes on elevated lots with Spring Mountain and valley views. 24-hour staffed security.", "iconType": "shield" },
+      { "title": "Elevated Terrain & Views", "body": "The Hills sits on higher terrain within Summerlin North, providing many homes with views of the Spring Mountains and the Las Vegas Valley that flatter communities cannot offer.", "iconType": "mountain" },
+      { "title": "Established Character", "body": "Over 25 years of mature landscaping, tree-lined streets, and residential stability create a neighborhood feel that newer Summerlin villages have not yet achieved.", "iconType": "park" },
+      { "title": "Strong School Zoning", "body": "Zoned for well-regarded CCSD schools in the Summerlin North corridor. Close to top private options including The Meadows School and Faith Lutheran.", "iconType": "school" },
+      { "title": "Trail System Access", "body": "Connected to Summerlin's extensive trail network with walking, biking, and hiking access toward Red Rock Canyon. Community parks and green spaces throughout.", "iconType": "park" },
+      { "title": "Affordable Summerlin Entry", "body": "Non-gated neighborhoods starting around $500K provide one of the more affordable entry points into Summerlin while still delivering strong schools and the Summerlin lifestyle.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "Mountain Trails", "type": "Guard-Gated · Premium", "desc": "The Hills' exclusive guard-gated enclave. Larger semi-custom homes on elevated lots with Spring Mountain views. The village's most prestigious address.", "price": "From $700K" },
+      { "name": "Hills Village Core", "type": "Established · Family", "desc": "The established heart of The Hills with mature landscaping, tree-lined streets, and classic Summerlin architecture. Popular with families.", "price": "From $500K" },
+      { "name": "Hillcrest", "type": "Elevated · Views", "desc": "Elevated position within The Hills with views of the valley and mountains. Well-maintained homes with updated interiors.", "price": "From $600K" },
+      { "name": "Arbor Gate", "type": "Townhome · Value", "desc": "Attached and smaller-lot homes at The Hills' most accessible price points. Near the village boundary with The Arbors.", "price": "From $500K" }
+    ],
+    "parks": [
+      { "name": "Hills Park", "address": "9100 Hillpointe Rd, Las Vegas, NV 89134", "acreage": "~12 acres", "amenities": ["Playground", "Basketball courts", "Walking trails", "Picnic areas", "Open fields"] },
+      { "name": "TPC Summerlin", "address": "1700 Village Center Cir, Las Vegas, NV 89134", "acreage": "~200 acres", "amenities": ["PGA Tour championship course", "Clubhouse", "Practice facilities", "Pro shop"] },
+      { "name": "Summerlin Trail System", "address": "Access throughout The Hills", "acreage": "Connected network", "amenities": ["Paved multi-use trails", "Desert landscape", "Red Rock Canyon connections", "Dog-friendly"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Palo Verde High School", "9–12", "8/10"],
+        ["Jack & Terry Mannion Middle", "6–8", "7/10"],
+        ["Helen Jydstrup Elementary", "K–5", "7/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Alexander Dawson School", "K–8", "A+"]
+      ]
+    },
+    "demographics": {
+      "population": "7,500+",
+      "medianAge": "42",
+      "avgIncome": "$140,000+",
+      "households": "2,800+",
+      "homeownership": "84%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~15 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via Summerlin Pkwy" },
+      { "time": "~30 min", "destination": "to Harry Reid Airport", "route": "via I-215 South" }
+    ],
+    "faqs": [
+      { "q": "What is Mountain Trails in The Hills?", "a": "Mountain Trails is The Hills' guard-gated enclave featuring larger semi-custom homes on elevated lots with Spring Mountain and Las Vegas Valley views. Homes typically range from 3,000 to 5,500 square feet, and the community has a 24-hour staffed guard gate." },
+      { "q": "What is the price range in The Hills?", "a": "Homes in The Hills range from approximately $500,000 in the non-gated neighborhoods to over $900,000 in the Mountain Trails guard-gated enclave." },
+      { "q": "Is The Hills the same as The Hills South?", "a": "No — The Hills and The Hills South are separate Summerlin villages. The Hills is in the Summerlin North Association and contains the Mountain Trails guard-gated enclave. The Hills South is in the Summerlin South Association and contains four guard-gated enclaves (Country Club Hills, Eagle Hills, Corte Bella, Tournament Hills)." },
+      { "q": "Is The Hills guard-gated?", "a": "The broader Hills village is gated (key-fob access) but not guard-gated. Mountain Trails, the premium enclave within The Hills, is guard-gated with a 24-hour staffed guard gate." },
+      { "q": "What schools serve The Hills?", "a": "The Hills is served by CCSD schools including Jydstrup Elementary (7/10), Mannion Middle (7/10), and Palo Verde High School (8/10). Private schools including The Meadows School (A+) are nearby." },
+      { "q": "What are HOA fees in The Hills?", "a": "HOA fees in The Hills range from approximately $100 to $250/month for non-gated neighborhoods. Mountain Trails guard-gated fees are higher, approximately $400 to $600/month, covering guard gate staffing and enhanced maintenance." },
+      { "q": "What ZIP code is The Hills in?", "a": "The Hills is located primarily in ZIP code 89134 in the Summerlin North area of Las Vegas." },
+      { "q": "How does The Hills compare to The Canyons?", "a": "Both are established Summerlin North villages with guard-gated enclaves. The Canyons has five guard-gated options with a broader price range extending to $4M+. The Hills has one guard-gated enclave (Mountain Trails) with a more moderate price ceiling. Both offer strong schools and established character." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community with 20+ villages." },
+      { "name": "The Hills South", "href": "/summerlin-the-hills-south/", "price": "From $600K", "compare": "The sister village in Summerlin South with four guard-gated enclaves." },
+      { "name": "The Canyons", "href": "/summerlin-the-canyons/", "price": "From $500K", "compare": "Adjacent Summerlin North village with five guard-gated enclaves and a broader price range." },
+      { "name": "The Arbors", "href": "/summerlin-the-arbors/", "price": "From $450K", "compare": "Another established Summerlin North village with similar character and slightly lower prices." },
+      { "name": "The Trails", "href": "/summerlin-the-trails/", "price": "From $500K", "compare": "Summerlin North village with the guard-gated Country Rose Estates enclave." },
+      { "name": "Stonebridge", "href": "/summerlin-stonebridge/", "price": "From $550K", "compare": "Summerlin's newest village. New construction vs. established character." }
+    ],
+    "testimonials": [
+      { "quote": "Mountain Trails in The Hills was the perfect move for our family. Guard-gated security, views of the mountains, and the kids stayed in the same schools. Nevada Real Estate Group helped us find a home that checked every box at a price point well below The Ridges.", "name": "Eric & Michelle D.", "detail": "Bought in Mountain Trails, The Hills · 2024" },
+      { "quote": "The established neighborhoods in The Hills have a character you can't replicate — mature trees, quiet streets, and neighbors who've been there for years. The team helped us see the value in buying here versus newer construction.", "name": "Jason T.", "detail": "Bought in The Hills, Summerlin · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Hills Summerlin",
+    "ylopoMinPrice": 500000
+  },
+  {
+    "slug": "summerlin-la-madre-peaks",
+    "name": "La Madre Peaks",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Luxury · New Construction",
+    "zipCodes": ["89138"],
+    "center": [-115.340, 36.200],
+    "heroEyebrow": "Summerlin West, Las Vegas",
+    "priceRange": "$800K–$5M+",
+    "established": "2022",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "400 acres",
+    "homeCount": "500+",
+    "guardGated": false,
+    "hoaRange": "$150–$600/mo",
+    "overview": [
+      "La Madre Peaks is Summerlin's newest luxury village, located in the Summerlin West Association at the westernmost edge of the master plan. Named for the La Madre Mountain range that forms its dramatic western backdrop, this village represents the final chapter of Summerlin's three-decade development story — the last major luxury community to be built before the Red Rock Canyon National Conservation Area boundary prevents any further westward expansion.",
+      "Homes in La Madre Peaks range from approximately $800,000 for production luxury homes to over $5 million for custom estate lots in Astra at La Madre Peaks, the village's most exclusive section. Astra offers 167 custom home lots ranging from one-third acre to over one acre, with many backing directly to natural desert washes and the Red Rock Canyon boundary. For buyers seeking a custom build in Summerlin's most dramatic setting, Astra represents what may be the last opportunity.",
+      "Multiple luxury builders are active in La Madre Peaks, including Toll Brothers, Taylor Morrison, Shea Homes, and several custom builders on the Astra lots. The architectural style throughout the village is contemporary desert — clean lines, natural materials, large glass expanses, and indoor-outdoor living designs that are intentionally oriented toward the mountain and canyon views that define the location.",
+      "The scarcity story at La Madre Peaks is the most compelling investment thesis in Summerlin. Red Rock Canyon to the west is a national conservation area — there will be no more land, no more Summerlin expansion, and no more opportunities to build at the canyon's edge. La Madre Peaks is the last village with this positioning, and once the lots are sold and built out, this inventory disappears permanently. For luxury buyers who understand supply dynamics, La Madre Peaks is the single most compelling new-construction opportunity in the Las Vegas Valley."
+    ],
+    "highlights": [
+      { "title": "Astra Custom Estate Lots", "body": "167 custom home lots from one-third acre to 1+ acre backing directly to Red Rock Canyon. Custom builders, architectural freedom, and the last lots at the canyon's edge.", "iconType": "home" },
+      { "title": "Canyon-Edge Location", "body": "The westernmost residential community in Summerlin, backing directly to the Red Rock Canyon National Conservation Area boundary. Unobstructed canyon and mountain views.", "iconType": "mountain" },
+      { "title": "Final Summerlin Expansion", "body": "La Madre Peaks is the last major luxury village to be developed in Summerlin. Once built out, there will be no new Summerlin luxury construction — permanent scarcity.", "iconType": "trend" },
+      { "title": "Contemporary Desert Architecture", "body": "Clean lines, natural materials, floor-to-ceiling glass, and indoor-outdoor living. Every home is designed to maximize the mountain views and desert setting.", "iconType": "building" },
+      { "title": "Premium Builder Selection", "body": "Toll Brothers, Taylor Morrison, Shea Homes, and custom builders. The highest concentration of luxury builder talent in any active Summerlin village.", "iconType": "home" },
+      { "title": "Trail System at Your Door", "body": "Direct access to the Summerlin trail system connecting to Red Rock Canyon hiking routes. Morning hikes into the canyon from your front door.", "iconType": "park" }
+    ],
+    "neighborhoods": [
+      { "name": "Astra at La Madre Peaks", "type": "Custom · Ultra-Luxury", "desc": "167 custom home lots from 1/3 acre to 1+ acre backing to Red Rock Canyon. The most exclusive new-build opportunity in Summerlin. Custom builders and full architectural freedom.", "price": "From $2M+" },
+      { "name": "Toll Brothers at La Madre Peaks", "type": "Semi-Custom · Premium", "desc": "Toll Brothers' premium luxury collections with floor plans from 3,500 to 5,500+ square feet. Gourmet kitchens, multi-car garages, and mountain view orientation.", "price": "From $1.2M" },
+      { "name": "Taylor Morrison at La Madre Peaks", "type": "Luxury · Contemporary", "desc": "Contemporary desert designs with open floor plans, large windows, and indoor-outdoor living. Family-oriented luxury in the $800K–$1.2M range.", "price": "From $800K" },
+      { "name": "Shea Homes at La Madre Peaks", "type": "Design-Forward · Luxury", "desc": "Shea's signature design-forward approach with flexible floor plans, premium finishes, and distinctive contemporary architecture.", "price": "From $900K" }
+    ],
+    "parks": [
+      { "name": "Red Rock Canyon NCA", "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161", "acreage": "195,819 acres", "amenities": ["Scenic Loop Drive", "Hiking trails", "Rock climbing", "Visitor center", "Wildlife viewing"] },
+      { "name": "Fox Hill Park", "address": "10100 Trails Dr, Las Vegas, NV 89138", "acreage": "~20 acres", "amenities": ["Adventure playground", "Zip lines", "Disc golf", "Climbing tower", "Trails"] },
+      { "name": "La Madre Peaks Community Park (Planned)", "address": "La Madre Peaks Village, Las Vegas, NV 89138", "acreage": "~15 acres (planned)", "amenities": ["Walking trails", "Playground", "Open space", "Picnic areas", "Desert gardens"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Bonner Elementary School", "K–5", "9/10"],
+        ["Sig Rogich Middle School", "6–8", "10/10"],
+        ["Palo Verde High School", "9–12", "8/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Alexander Dawson School", "K–8", "A+"]
+      ]
+    },
+    "demographics": {
+      "population": "1,500+",
+      "medianAge": "40",
+      "avgIncome": "$225,000+",
+      "households": "500+",
+      "homeownership": "92%"
+    },
+    "driveTimes": [
+      { "time": "~25 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~5 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~10 min", "destination": "to Downtown Summerlin", "route": "via Summerlin Pkwy" },
+      { "time": "~35 min", "destination": "to Harry Reid Airport", "route": "via I-215 South" }
+    ],
+    "faqs": [
+      { "q": "What is Astra at La Madre Peaks?", "a": "Astra is the most exclusive section of La Madre Peaks, offering 167 custom home lots ranging from one-third acre to over one acre. Many lots back directly to the Red Rock Canyon National Conservation Area. Custom builders have full architectural freedom within community design guidelines. Lots and completed homes start at approximately $2 million." },
+      { "q": "What is the price range in La Madre Peaks?", "a": "Homes in La Madre Peaks range from approximately $800,000 for production luxury homes by Taylor Morrison and Shea Homes to over $5 million for custom estates on premium Astra lots." },
+      { "q": "Is La Madre Peaks guard-gated?", "a": "The broader La Madre Peaks village is gated but not guard-gated. Some individual neighborhoods within the village may have enhanced gating. Astra at La Madre Peaks has its own gated entry." },
+      { "q": "Why is La Madre Peaks a good investment?", "a": "La Madre Peaks is the last major luxury village in Summerlin. Red Rock Canyon to the west prevents further expansion. Once lots are built out, there will be no new Summerlin luxury inventory at the canyon's edge — creating permanent scarcity that supports long-term appreciation." },
+      { "q": "What builders are in La Madre Peaks?", "a": "Active builders include Toll Brothers, Taylor Morrison, Shea Homes, and multiple custom builders on Astra lots. Floor plans range from 2,500 to 8,000+ square feet across production and custom homes." },
+      { "q": "How close is La Madre Peaks to Red Rock Canyon?", "a": "La Madre Peaks backs directly to the Red Rock Canyon National Conservation Area boundary. Some Astra lots are adjacent to the canyon. The Red Rock Canyon Scenic Loop is approximately 5 minutes away." },
+      { "q": "What ZIP code is La Madre Peaks in?", "a": "La Madre Peaks is located in ZIP code 89138 in the Summerlin West area of Las Vegas." },
+      { "q": "Can I build a custom home in La Madre Peaks?", "a": "Yes — the Astra at La Madre Peaks section offers 167 custom home lots where buyers can work with their chosen builder and architect within community design guidelines. This is the primary custom-build opportunity in Summerlin's newest expansion." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community. 22,500 acres, 20+ villages." },
+      { "name": "Stonebridge", "href": "/summerlin-stonebridge/", "price": "From $550K", "compare": "Summerlin West's largest village with new construction at more accessible price points." },
+      { "name": "Carlisle Peak", "href": "/carlisle-peak/", "price": "From $1.55M", "compare": "Guard-gated luxury new construction in Grand Park. Similar price range, different village." },
+      { "name": "The Ridges", "href": "/summerlin-the-ridges/", "price": "From $2M", "compare": "Summerlin's established ultra-luxury community. Resale only; La Madre Peaks offers new construction." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $1.2M", "compare": "Guard-gated golf community within Summerlin. Established luxury vs. new construction." },
+      { "name": "The Summit Club", "href": "/the-summit-club/", "price": "From $5M", "compare": "Las Vegas' most exclusive private community. A tier above La Madre Peaks in exclusivity and price." }
+    ],
+    "testimonials": [
+      { "quote": "An Astra lot at La Madre Peaks was the last thing we expected to find — a custom building site at the edge of Red Rock Canyon in Summerlin. Nevada Real Estate Group helped us secure the lot we wanted before it was publicly listed. We're building our forever home.", "name": "Gregory & Maria K.", "detail": "Purchased Lot in Astra at La Madre Peaks · 2025" },
+      { "quote": "We looked at every luxury new-build option in Summerlin. La Madre Peaks stood out because of the scarcity — once these homes are built, there's nothing like this left in Summerlin. The team's market knowledge was invaluable in understanding the investment case.", "name": "William R.", "detail": "Bought in La Madre Peaks · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "La Madre Peaks Summerlin",
+    "ylopoMinPrice": 800000
+  }
+]
