@@ -3,6 +3,7 @@ import LifestyleCollectionPage from '@/components/LifestyleCollectionPage'
 
 export const metadata: Metadata = {
   title: 'Luxury Communities & Homes in Las Vegas | Nevada Real Estate Group',
+  alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/luxury-communities' },
   description: 'Explore 90+ luxury communities in Las Vegas, Henderson, and Summerlin. Guard-gated estates, custom homes, golf course properties from $1M to $30M+. Nevada Real Estate Group.',
 }
 

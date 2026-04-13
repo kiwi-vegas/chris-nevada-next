@@ -3,6 +3,7 @@ import LifestyleCollectionPage from '@/components/LifestyleCollectionPage'
 
 export const metadata: Metadata = {
   title: 'Golf Course Communities in Las Vegas | Nevada Real Estate Group',
+  alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/golf-communities' },
   description: 'Explore 30+ golf course communities in Las Vegas, Henderson, and Summerlin. TPC Summerlin, DragonRidge, Bear\'s Best, Southern Highlands, and more. Nevada Real Estate Group.',
 }
 

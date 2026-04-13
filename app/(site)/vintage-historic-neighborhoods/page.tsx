@@ -3,6 +3,7 @@ import LifestyleCollectionPage from '@/components/LifestyleCollectionPage'
 
 export const metadata: Metadata = {
   title: 'Vintage & Historic Neighborhoods in Las Vegas | Nevada Real Estate Group',
+  alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/vintage-historic-neighborhoods' },
   description: 'Explore Las Vegas vintage and historic neighborhoods. Scotch 80s, Rancho Circle, Las Vegas Country Club, Old Town Henderson. Character homes with large lots from $300K to $8M+.',
 }
 

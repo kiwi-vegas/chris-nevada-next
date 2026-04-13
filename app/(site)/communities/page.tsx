@@ -4,8 +4,9 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 
 export const metadata: Metadata = {
-  title: 'Las Vegas Communities & Neighborhoods | 244 Communities | Nevada Real Estate Group',
-  description: 'Explore 244 Las Vegas communities and neighborhoods. Summerlin, Henderson, North Las Vegas, guard-gated, 55+, luxury, high-rise. Find your perfect Las Vegas community.',
+  title: 'Las Vegas Communities & Neighborhoods | 250+ Communities | Nevada Real Estate Group',
+  description: 'Explore 250+ Las Vegas communities and neighborhoods. Summerlin, Henderson, North Las Vegas, guard-gated, 55+, luxury, high-rise. Find your perfect Las Vegas community.',
+  alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/communities' },
 }
 
 interface CommunityEntry {

@@ -3,6 +3,7 @@ import LifestyleCollectionPage from '@/components/LifestyleCollectionPage'
 
 export const metadata: Metadata = {
   title: '55+ Active Adult Communities in Las Vegas | Nevada Real Estate Group',
+  alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/55-plus-communities' },
   description: 'Explore 15+ active adult 55+ communities in Las Vegas and Henderson. Sun City Summerlin, Sun City Anthem, Solera, Trilogy. Resort-style living from $300K. Nevada Real Estate Group.',
 }
 

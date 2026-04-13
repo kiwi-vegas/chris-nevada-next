@@ -3,6 +3,7 @@ import LifestyleCollectionPage from '@/components/LifestyleCollectionPage'
 
 export const metadata: Metadata = {
   title: 'High-Rise Condos in Las Vegas | Luxury Towers | Nevada Real Estate Group',
+  alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/high-rise-condos' },
   description: 'Explore Las Vegas high-rise condos and luxury towers. Veer Towers, Waldorf Astoria, Panorama, Turnberry, Sky, The Martin, and more. Strip views from $200K to $10M+.',
 }
 

@@ -3,6 +3,7 @@ import LifestyleCollectionPage from '@/components/LifestyleCollectionPage'
 
 export const metadata: Metadata = {
   title: 'Guard-Gated Communities in Las Vegas | Nevada Real Estate Group',
+  alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/guard-gated-communities' },
   description: 'Explore 80+ guard-gated communities in Las Vegas, Henderson, and Summerlin. From $400K to $30M+. 24-hour security, private estates, golf course living. Nevada Real Estate Group.',
 }
 

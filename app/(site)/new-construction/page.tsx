@@ -3,6 +3,7 @@ import LifestyleCollectionPage from '@/components/LifestyleCollectionPage'
 
 export const metadata: Metadata = {
   title: 'New Construction Homes in Las Vegas | Nevada Real Estate Group',
+  alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/new-construction' },
   description: 'Explore 40+ new construction communities in Las Vegas, Henderson, and Summerlin. New homes by Toll Brothers, Pulte, KB Home, Taylor Morrison, and more. Nevada Real Estate Group.',
 }
 
