@@ -40,7 +40,7 @@ export default function SkyeCanyonMap() {
           .setLngLat(CENTER)
           .setPopup(
             new mapboxgl.Popup({ offset: 16, className: 'summerlin-popup' })
-              .setHTML('<div style="font-family:DM Sans,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Skye Canyon</div><div style="font-size:11px;color:#555;margin-top:2px;">Las Vegas, NV</div>')
+              .setHTML('<div style="font-family:DM Sans,sans-serif;font-size:13px;font-weight:600;color:#0F0F0F;">Skye Canyon</div><div style="font-size:11px;color:#555;margin-top:2px;">North Las Vegas, NV</div>')
           )
           .addTo(map)
       })
@@ -61,7 +61,7 @@ export default function SkyeCanyonMap() {
           Skye Canyon
         </div>
         <div style={{ fontSize: '11px', color: '#6B6B6B', marginTop: '2px', fontFamily: 'DM Sans,sans-serif' }}>
-          Las Vegas, Nevada · 1,700 acres
+          North Las Vegas, Nevada · 1,700 acres
         </div>
       </div>
     </div>

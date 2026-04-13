@@ -68,10 +68,10 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Skye Hills',
-  description: 'Skye Hills is a master-planned · new construction community in Las Vegas, Nevada.',
+  description: 'Skye Hills is a master-planned · new construction community in North Las Vegas, Nevada.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.3, longitude: -115.29 },
-  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
-  containedInPlace: { '@type': 'City', name: 'Las Vegas' },
+  address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
 }
 
 const AGENT_SCHEMA = {
@@ -90,7 +90,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('skye-hills')
   return {
     title: cms?.metaTitle ?? 'Skye Hills Homes for Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Skye Hills homes for sale in Las Vegas, NV. $450K–$750K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    description: cms?.metaDescription ?? 'Browse Skye Hills homes for sale in North Las Vegas, NV. $450K–$750K. Schools, HOA, market stats. Nevada Real Estate Group.',
     alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/skye-hills' },
   }
 }
@@ -101,8 +101,8 @@ export default async function SkyeHillsPage() {
   const ms = market?.stats
 
   const heroHeadline = cms?.heroHeadline ?? 'Skye Hills'
-  const heroSubtitle = 'Homes for Sale in Las Vegas, Nevada'
-  const overviewTitle = cms?.overviewTitle ?? 'Skye Hills: Master-Planned · New Construction Living in Las Vegas'
+  const heroSubtitle = 'Homes for Sale in North Las Vegas, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Skye Hills: Master-Planned · New Construction Living in North Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
     ['Established', '2019'],
@@ -241,7 +241,7 @@ export default async function SkyeHillsPage() {
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Skye Hills?</h2>
-            <p>Northwest Las Vegas, Nevada &mdash; Las Vegas, Nevada.</p>
+            <p>North Las Vegas, Nevada &mdash; North Las Vegas, Nevada.</p>
           </div>
           <div className="map-container">
             <SkyeHillsMapWrapper />

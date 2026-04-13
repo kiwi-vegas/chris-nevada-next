@@ -68,10 +68,10 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Boulder Hills at Skye Canyon',
-  description: 'Boulder Hills at Skye Canyon is a new construction · family community in Las Vegas, Nevada.',
+  description: 'Boulder Hills at Skye Canyon is a new construction · family community in North Las Vegas, Nevada.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.3, longitude: -115.325 },
-  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
-  containedInPlace: { '@type': 'City', name: 'Las Vegas' },
+  address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
 }
 
 const AGENT_SCHEMA = {
@@ -90,7 +90,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('skye-canyon-boulder-hills')
   return {
     title: cms?.metaTitle ?? 'Boulder Hills at Skye Canyon Homes for Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Boulder Hills at Skye Canyon homes for sale in Las Vegas, NV. $450K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    description: cms?.metaDescription ?? 'Browse Boulder Hills at Skye Canyon homes for sale in North Las Vegas, NV. $450K–$700K. Schools, HOA, market stats. Nevada Real Estate Group.',
     alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/skye-canyon-boulder-hills' },
   }
 }
@@ -101,8 +101,8 @@ export default async function SkyeCanyonBoulderHillsPage() {
   const ms = market?.stats
 
   const heroHeadline = cms?.heroHeadline ?? 'Boulder Hills at Skye Canyon'
-  const heroSubtitle = 'Homes for Sale in Las Vegas, Nevada'
-  const overviewTitle = cms?.overviewTitle ?? 'Boulder Hills at Skye Canyon: New Construction · Family Living in Las Vegas'
+  const heroSubtitle = 'Homes for Sale in North Las Vegas, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Boulder Hills at Skye Canyon: New Construction · Family Living in North Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
     ['Established', '2018'],
@@ -241,7 +241,7 @@ export default async function SkyeCanyonBoulderHillsPage() {
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Boulder Hills at Skye Canyon?</h2>
-            <p>Skye Canyon, Las Vegas &mdash; Las Vegas, Nevada.</p>
+            <p>North Las Vegas, Nevada &mdash; North Las Vegas, Nevada.</p>
           </div>
           <div className="map-container">
             <SkyeCanyonBoulderHillsMapWrapper />

@@ -68,10 +68,10 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Ridgeline at Skye Canyon',
-  description: 'Ridgeline at Skye Canyon is a new construction · premium community in Las Vegas, Nevada.',
+  description: 'Ridgeline at Skye Canyon is a new construction · premium community in North Las Vegas, Nevada.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.31, longitude: -115.33 },
-  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
-  containedInPlace: { '@type': 'City', name: 'Las Vegas' },
+  address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
+  containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
 }
 
 const AGENT_SCHEMA = {
@@ -90,7 +90,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('skye-canyon-ridgeline')
   return {
     title: cms?.metaTitle ?? 'Ridgeline at Skye Canyon Homes for Sale | Nevada Real Estate Group',
-    description: cms?.metaDescription ?? 'Browse Ridgeline at Skye Canyon homes for sale in Las Vegas, NV. $500K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
+    description: cms?.metaDescription ?? 'Browse Ridgeline at Skye Canyon homes for sale in North Las Vegas, NV. $500K–$800K. Schools, HOA, market stats. Nevada Real Estate Group.',
     alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/skye-canyon-ridgeline' },
   }
 }
@@ -101,8 +101,8 @@ export default async function SkyeCanyonRidgelinePage() {
   const ms = market?.stats
 
   const heroHeadline = cms?.heroHeadline ?? 'Ridgeline at Skye Canyon'
-  const heroSubtitle = 'Homes for Sale in Las Vegas, Nevada'
-  const overviewTitle = cms?.overviewTitle ?? 'Ridgeline at Skye Canyon: New Construction · Premium Living in Las Vegas'
+  const heroSubtitle = 'Homes for Sale in North Las Vegas, Nevada'
+  const overviewTitle = cms?.overviewTitle ?? 'Ridgeline at Skye Canyon: New Construction · Premium Living in North Las Vegas'
 
   const HARDCODED_STATS: Array<[string, string] | [string, string, string]> = [
     ['Established', '2019'],
@@ -241,7 +241,7 @@ export default async function SkyeCanyonRidgelinePage() {
           <div className="section-header" style={{ marginBottom: '32px' }}>
             <span className="section-label">Location</span>
             <h2>Where is Ridgeline at Skye Canyon?</h2>
-            <p>Skye Canyon, Las Vegas &mdash; Las Vegas, Nevada.</p>
+            <p>North Las Vegas, Nevada &mdash; North Las Vegas, Nevada.</p>
           </div>
           <div className="map-container">
             <SkyeCanyonRidgelineMapWrapper />

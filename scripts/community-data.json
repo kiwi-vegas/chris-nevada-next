@@ -29853,7 +29853,7 @@
     "slug": "skye-canyon",
     "name": "Skye Canyon",
     "parentCommunity": null,
-    "city": "Las Vegas",
+    "city": "North Las Vegas",
     "state": "NV",
     "type": "Master-Planned · New Construction",
     "zipCodes": [
@@ -29863,7 +29863,7 @@
       -115.336,
       36.318
     ],
-    "heroEyebrow": "Northwest Las Vegas, Nevada",
+    "heroEyebrow": "North Las Vegas, Nevada",
     "priceRange": "$400K–$800K",
     "established": "2015",
     "developer": "Olympia Companies",
@@ -42526,7 +42526,7 @@
     "slug": "skye-hills",
     "name": "Skye Hills",
     "parentCommunity": null,
-    "city": "Las Vegas",
+    "city": "North Las Vegas",
     "state": "NV",
     "type": "Master-Planned · New Construction",
     "zipCodes": [
@@ -42536,7 +42536,7 @@
       -115.29,
       36.3
     ],
-    "heroEyebrow": "Northwest Las Vegas, Nevada",
+    "heroEyebrow": "North Las Vegas, Nevada",
     "priceRange": "$450K–$750K",
     "established": "2019",
     "developer": "Various Builders",
@@ -59466,7 +59466,7 @@
     "slug": "skye-canyon-ridgeline",
     "name": "Ridgeline at Skye Canyon",
     "parentCommunity": "Skye Canyon",
-    "city": "Las Vegas",
+    "city": "North Las Vegas",
     "state": "NV",
     "type": "New Construction · Premium",
     "zipCodes": [
@@ -59476,7 +59476,7 @@
       -115.33,
       36.31
     ],
-    "heroEyebrow": "Skye Canyon, Las Vegas",
+    "heroEyebrow": "North Las Vegas, Nevada",
     "priceRange": "$500K–$800K",
     "established": "2019",
     "developer": "Toll Brothers / Taylor Morrison",
@@ -59750,7 +59750,7 @@
     "slug": "skye-canyon-boulder-hills",
     "name": "Boulder Hills at Skye Canyon",
     "parentCommunity": "Skye Canyon",
-    "city": "Las Vegas",
+    "city": "North Las Vegas",
     "state": "NV",
     "type": "New Construction · Family",
     "zipCodes": [
@@ -59760,7 +59760,7 @@
       -115.325,
       36.3
     ],
-    "heroEyebrow": "Skye Canyon, Las Vegas",
+    "heroEyebrow": "North Las Vegas, Nevada",
     "priceRange": "$450K–$700K",
     "established": "2018",
     "developer": "Lennar / KB Home",
