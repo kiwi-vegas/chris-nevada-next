@@ -11,6 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('spanish-springs')
   return {
     title: cms?.metaTitle ?? 'Spanish Springs NV Homes For Sale | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/spanish-springs' },
     description: cms?.metaDescription ?? "Browse Spanish Springs, NV homes for sale. Northeast Reno's fastest-growing valley — newer construction, mountain views, master-planned neighborhoods from $350K to $1.5M+. Call 725.239.9950.",
   }
 }

@@ -112,6 +112,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: cms?.metaTitle ?? 'Summerlin Las Vegas Homes for Sale | 485+ Listings | Nevada Real Estate Group',
     description: cms?.metaDescription ?? '485+ homes for sale in Summerlin, Las Vegas. $450K\u2013$10M+ \u2014 from condos to custom estates in 20+ villages. Schools, HOA info, builder options. Nevada Real Estate Group \u2014 35+ years of Summerlin expertise.',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/new-summerlin' },
   }
 }
 

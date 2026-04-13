@@ -11,6 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('reno')
   return {
     title: cms?.metaTitle ?? 'Reno NV Homes For Sale | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/reno' },
     description: cms?.metaDescription ?? "Browse Reno, NV homes for sale. The Biggest Little City — tech industry growth, Midtown arts district, 45 min to Lake Tahoe. 1,200+ active listings from $300K to $3M+. Call 725.239.9950.",
   }
 }

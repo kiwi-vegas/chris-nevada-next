@@ -11,6 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('sun-valley')
   return {
     title: cms?.metaTitle ?? 'Sun Valley NV Homes For Sale | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/sun-valley' },
     description: cms?.metaDescription ?? "Browse Sun Valley, NV homes for sale. Reno metro's most affordable established community — entry-level pricing, strong rental demand, US-395 access. 300+ listings from $250K. Call 725.239.9950.",
   }
 }

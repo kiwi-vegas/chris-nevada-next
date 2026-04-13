@@ -11,6 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('incline-village')
   return {
     title: cms?.metaTitle ?? 'Incline Village NV Homes For Sale | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/incline-village' },
     description: cms?.metaDescription ?? "Browse Incline Village, NV homes for sale. Nevada's most coveted Lake Tahoe address — private beach clubs, Diamond Peak ski resort, Nevada tax advantages. 250+ listings from $800K to $15M+. Call 725.239.9950.",
   }
 }

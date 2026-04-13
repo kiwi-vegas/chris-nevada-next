@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'First Time Home Buyers Guide | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/buyers/first-time-buyers' },
   description: 'A complete Nevada home buying guide for first-time buyers. From checking your credit to getting your keys — step-by-step guidance from agents with 35 years of Las Vegas market experience.',
 }
 

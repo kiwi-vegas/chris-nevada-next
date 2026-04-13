@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Mortgage Pre-Approval | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/buyers/mortgage-pre-approval' },
   description: 'Get pre-approved for a mortgage before you shop for Nevada homes. Pre-approved buyers make stronger offers, close faster, and avoid disappointment.',
 }
 

@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: '7-Day Listing Agreement | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/sellers/7-day-listing-agreement' },
   description: 'No long-term contracts. Nevada Real Estate Group offers a 7-day listing agreement — we earn your business every week. If you\'re not satisfied, cancel anytime after 7 days.',
 }
 

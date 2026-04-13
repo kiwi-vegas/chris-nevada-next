@@ -7,6 +7,7 @@ import { getBlogPosts } from '@/sanity/queries'
 
 export const metadata: Metadata = {
   title: 'Las Vegas Real Estate Blog | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/blog' },
   description:
     'Expert insights on Las Vegas and Reno real estate — market updates, buying tips, community spotlights, and investment analysis from Chris Nevada.',
 }

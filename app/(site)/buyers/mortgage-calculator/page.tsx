@@ -4,6 +4,7 @@ import MortgageCalculator from '@/components/MortgageCalculator'
 
 export const metadata: Metadata = {
   title: 'Mortgage Calculator | Estimate Your Payment | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/buyers/mortgage-calculator' },
   description: 'Estimate your monthly mortgage payment with our free Nevada mortgage calculator. Adjust home price, down payment, interest rate, and loan term to plan your budget.',
 }
 

@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Buyers Guide | Buy a Home in Nevada | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/buyers' },
   description: 'Work with Nevada Real Estate Group to buy your next home in Las Vegas or Reno. 35+ years of experience, 1,000+ homes sold, and a no-pressure approach that puts your goals first.',
 }
 

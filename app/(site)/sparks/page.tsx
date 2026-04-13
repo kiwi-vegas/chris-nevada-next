@@ -11,6 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const cms = await getCommunityPage('sparks')
   return {
     title: cms?.metaTitle ?? 'Sparks NV Homes For Sale | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/sparks' },
     description: cms?.metaDescription ?? "Browse Sparks, NV homes for sale. Reno's twin city — Tesla Gigafactory proximity, Sparks Marina, Victorian Square, master-planned communities. 800+ listings from $300K to $2M+. Call 725.239.9950.",
   }
 }

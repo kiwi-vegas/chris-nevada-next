@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Nevada Real Estate Group | Las Vegas',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/contact' },
   description: 'Contact Nevada Real Estate Group for expert Las Vegas real estate guidance. Call 725.239.9950 or visit us at 8945 W Russell Rd, Suite 170, Las Vegas, NV 89148.',
 }
 

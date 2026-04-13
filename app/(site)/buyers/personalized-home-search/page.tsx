@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Get Personalized Home Alerts | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/buyers/personalized-home-search' },
   description: 'Never miss the perfect home. Set up personalized listing alerts and get instant notifications when homes matching your criteria hit the Nevada market.',
 }
 

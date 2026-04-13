@@ -1,9 +1,16 @@
+import type { Metadata } from 'next'
 import TrustBar from '@/components/TrustBar'
 import CommunityTabs from '@/components/CommunityTabs'
 import HomepageListings from '@/components/HomepageListings'
 import { getHomepage, getFeaturedReviews } from '@/sanity/queries'
 
 export const revalidate = 60
+
+export const metadata: Metadata = {
+  title: 'Las Vegas Homes for Sale | #1 Real Estate Team in Nevada | Nevada Real Estate Group',
+  description: 'Search Las Vegas homes for sale with Nevada Real Estate Group — the #1 real estate team in Nevada. 150+ agents across Las Vegas, Henderson, Summerlin, and North Las Vegas. Call 725.239.9950.',
+  alternates: { canonical: 'https://www.lasvegashomesearchexperts.com' },
+}
 
 export default async function HomePage() {
   const [cms, reviews] = await Promise.all([

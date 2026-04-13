@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Sell Your Home in Nevada | Nevada Real Estate Group',
+    alternates: { canonical: 'https://www.lasvegashomesearchexperts.com/sellers' },
   description: 'Sell your Nevada home for top dollar with Nevada Real Estate Group. 35+ years of market experience, 98.6% list-to-sale ratio, and a proven marketing system that gets results.',
 }
 
