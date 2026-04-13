@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "summerlin-the-ridges",
+    "name": "The Ridges",
+    "parentCommunity": "Summerlin",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "Guard-Gated · Ultra-Luxury",
+    "zipCodes": ["89135"],
+    "center": [-115.327, 36.145],
+    "heroEyebrow": "Summerlin, Las Vegas",
+    "priceRange": "$2M–$20M+",
+    "established": "2006",
+    "developer": "Howard Hughes Corporation",
+    "acreage": "793 acres",
+    "homeCount": "800+",
+    "guardGated": true,
+    "hoaRange": "$500–$1,200/mo",
+    "overview": [
+      "The Ridges is the crown jewel of Summerlin and one of the most exclusive residential communities in all of Nevada. Located within a 793-acre guard-gated enclave along the western rim of the Las Vegas Valley, The Ridges backs directly against the Red Rock Canyon National Conservation Area, providing dramatic desert canyon views from virtually every estate.",
+      "Developed by the Howard Hughes Corporation beginning in 2006, The Ridges was designed from the ground up as Summerlin's ultra-luxury showcase. The community is anchored by Bear's Best Las Vegas, a Jack Nicklaus-designed golf course that features replicas of 18 of the greatest holes Nicklaus has ever designed. Membership is available but not required for homeownership.",
+      "Homes in The Ridges range from approximately $2 million for resale semi-custom homes to over $20 million for new-build custom estates on premium lots with unobstructed Red Rock views. The architectural standards are among the strictest in Las Vegas, resulting in a cohesive desert contemporary aesthetic throughout the community.",
+      "The guard-gated entry, 24-hour security, and strict HOA governance create a level of privacy and exclusivity that attracts high-net-worth individuals, executives, professional athletes, and entertainment industry figures. The Ridges consistently commands the highest per-square-foot prices in the Las Vegas metro area."
+    ],
+    "highlights": [
+      { "title": "Bear's Best Golf Club", "body": "Jack Nicklaus-designed 18-hole championship course featuring replicas of his greatest holes. Private membership available to residents.", "iconType": "golf" },
+      { "title": "Guard-Gated Security", "body": "24-hour staffed guard gate with comprehensive security patrols. One of the most secure residential communities in Nevada.", "iconType": "shield" },
+      { "title": "Red Rock Canyon Views", "body": "Homes back directly against the Red Rock Canyon National Conservation Area with unobstructed views of the canyon's dramatic sandstone formations.", "iconType": "mountain" },
+      { "title": "Custom Estate Living", "body": "Semi-custom and full custom homes ranging from 4,000 to 15,000+ square feet with the strictest architectural standards in Las Vegas.", "iconType": "home" },
+      { "title": "Premier Location", "body": "10 minutes to Red Rock Canyon, 20 minutes to the Strip, and adjacent to Downtown Summerlin's 125+ shops and restaurants.", "iconType": "building" },
+      { "title": "Elite Investment Value", "body": "The Ridges consistently commands the highest per-square-foot prices in the Las Vegas metro, with strong appreciation through every market cycle.", "iconType": "trend" }
+    ],
+    "neighborhoods": [
+      { "name": "The Pointe", "type": "Guard-Gated · Custom", "desc": "The most exclusive enclave within The Ridges. Custom estate lots with panoramic Red Rock Canyon views.", "price": "From $5M+" },
+      { "name": "Promontory", "type": "Semi-Custom · Views", "desc": "Elevated lots with sweeping views of the Las Vegas Valley and Red Rock Canyon. Contemporary desert architecture.", "price": "From $3M+" },
+      { "name": "Cloud Chaser", "type": "Modern · New Build", "desc": "Newer construction with modern desert contemporary design. Open floor plans and floor-to-ceiling glass.", "price": "From $2.5M+" },
+      { "name": "Bear's Best", "type": "Golf Course · Luxury", "desc": "Homes along the Bear's Best golf course fairways with direct course and mountain views.", "price": "From $2M+" },
+      { "name": "Falcon Ridge", "type": "Semi-Custom · Established", "desc": "Earlier phase of The Ridges with mature landscaping and established custom homes.", "price": "From $2M+" },
+      { "name": "Topaz Ridge", "type": "Modern · Premium", "desc": "Premium lots with unobstructed views. Popular with buyers seeking new-build custom opportunities.", "price": "From $3.5M+" }
+    ],
+    "parks": [
+      { "name": "Red Rock Canyon NCA", "address": "1000 Scenic Loop Dr, Las Vegas, NV 89161", "acreage": "195,819 acres", "amenities": ["Scenic Loop Drive", "Hiking trails", "Rock climbing", "Visitor center", "Wildlife viewing"] },
+      { "name": "Fox Hill Park", "address": "10100 Trails Dr, Las Vegas, NV 89138", "acreage": "~20 acres", "amenities": ["Adventure playground", "Zip lines", "Disc golf", "Trails", "Picnic areas"] },
+      { "name": "The Paseos Linear Park", "address": "Paseo Hills Dr, Las Vegas, NV 89138", "acreage": "~12 acres", "amenities": ["Walking trails", "Desert gardens", "Open space", "Dog-friendly areas"] }
+    ],
+    "schools": {
+      "Public": [
+        ["Sig Rogich Middle School", "6–8", "10/10"],
+        ["Palo Verde High School", "9–12", "8/10"],
+        ["John W. Bonner Elementary", "K–5", "9/10"]
+      ],
+      "Private": [
+        ["The Meadows School", "PreK–12", "A+"],
+        ["Bishop Gorman High School", "9–12", "A+"],
+        ["Faith Lutheran Middle & High", "6–12", "A"]
+      ],
+      "Charter": [
+        ["Doral Academy Red Rock", "K–12", "9/10"],
+        ["Alexander Dawson School", "K–8", "A+"]
+      ]
+    },
+    "demographics": {
+      "population": "2,500+",
+      "medianAge": "52",
+      "avgIncome": "$350,000+",
+      "households": "800+",
+      "homeownership": "92%"
+    },
+    "driveTimes": [
+      { "time": "~20 min", "destination": "to the Strip", "route": "via Summerlin Pkwy → I-15" },
+      { "time": "~10 min", "destination": "to Red Rock Canyon", "route": "via W Charleston Blvd" },
+      { "time": "~5 min", "destination": "to Downtown Summerlin", "route": "via W Charleston Blvd" },
+      { "time": "~30 min", "destination": "to Harry Reid Airport", "route": "via I-215 South" }
+    ],
+    "faqs": [
+      { "q": "What is the price range for homes in The Ridges?", "a": "Homes in The Ridges range from approximately $2 million for resale semi-custom homes to over $20 million for new-build custom estates on premium lots with unobstructed Red Rock Canyon views." },
+      { "q": "Is The Ridges guard-gated?", "a": "Yes. The Ridges is a fully guard-gated community with a 24-hour staffed guard gate and comprehensive security patrols. It is one of the most secure residential communities in Nevada." },
+      { "q": "What ZIP code is The Ridges in?", "a": "The Ridges is located in ZIP code 89135 in the Summerlin South area of Las Vegas." },
+      { "q": "What golf course is in The Ridges?", "a": "Bear's Best Las Vegas is a Jack Nicklaus-designed 18-hole championship course located within The Ridges. It features replicas of 18 of the greatest holes Nicklaus has ever designed." },
+      { "q": "What are HOA fees in The Ridges?", "a": "HOA fees in The Ridges typically range from $500 to $1,200 per month, which includes the master Summerlin association fee plus The Ridges sub-association fee. Fees cover guard gate staffing, security patrols, common area maintenance, and community amenities." },
+      { "q": "What schools serve The Ridges?", "a": "The Ridges is served by CCSD schools including Sig Rogich Middle School (10/10 GreatSchools) and Palo Verde High School (8/10). Private options include The Meadows School (A+) and Bishop Gorman High School (A+)." },
+      { "q": "Is The Ridges in Las Vegas or Henderson?", "a": "The Ridges is located in Summerlin, which is part of the City of Las Vegas and unincorporated Clark County. It is not part of Henderson." },
+      { "q": "Who built homes in The Ridges?", "a": "The Ridges was master-developed by the Howard Hughes Corporation. Homes include both semi-custom builds by national builders and full custom estates by private architects and luxury builders like Blue Heron, Sun West Custom Homes, and others." }
+    ],
+    "nearby": [
+      { "name": "Summerlin", "href": "/summerlin/", "price": "From $450K", "compare": "The broader master-planned community that The Ridges calls home. 20+ villages, every price point." },
+      { "name": "The Summit Club", "href": "/the-summit-club/", "price": "From $5M", "compare": "Las Vegas' most exclusive private community with Tom Fazio golf. By invitation only." },
+      { "name": "Red Rock Country Club", "href": "/red-rock-country-club/", "price": "From $1.2M", "compare": "Guard-gated golf community within Summerlin. Two Arnold Palmer courses." },
+      { "name": "MacDonald Highlands", "href": "/macdonald-highlands/", "price": "From $800K", "compare": "Henderson's premier luxury community with DragonRidge Country Club." },
+      { "name": "Ascaya", "href": "/ascaya/", "price": "From $3M", "compare": "Ultra-luxury custom lot community in Henderson with dramatic desert views." },
+      { "name": "Southern Highlands", "href": "/southern-highlands/", "price": "From $550K", "compare": "Guard-gated golf community in the south valley with Jack Nicklaus course." }
+    ],
+    "testimonials": [
+      { "quote": "Nevada Real Estate Group understood exactly what we were looking for in The Ridges. They knew every lot, every view corridor, and every builder option. We found our dream estate in three weeks.", "name": "Robert & Elena M.", "detail": "Bought in The Ridges, Summerlin · 2024" },
+      { "quote": "Selling a luxury home in The Ridges requires a team that understands the ultra-luxury market. Nevada Real Estate Group marketed our property to the right buyers and closed at our asking price.", "name": "James W.", "detail": "Sold in The Ridges, Summerlin · 2025" }
+    ],
+    "ylopoCity": "Las Vegas",
+    "ylopoKeywords": "The Ridges",
+    "ylopoMinPrice": 2000000
+  }
+]
