@@ -1,84 +1,70 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
 export const metadata: Metadata = {
-  title: 'Las Vegas Communities & Neighborhoods | Nevada Real Estate Group',
-  description: 'Explore 200+ Las Vegas communities and neighborhoods. From Summerlin luxury to Henderson family homes. Find your perfect Las Vegas community. Nevada Real Estate Group.',
+  title: 'Las Vegas Communities & Neighborhoods | 244 Communities | Nevada Real Estate Group',
+  description: 'Explore 244 Las Vegas communities and neighborhoods. Summerlin, Henderson, North Las Vegas, guard-gated, 55+, luxury, high-rise. Find your perfect Las Vegas community.',
 }
 
-const COMMUNITY_GROUPS = [
-  {
-    label: 'Summerlin',
-    communities: [
-      { name: 'Summerlin', href: '/summerlin/', price: 'From $450K' },
-      { name: 'The Ridges', href: '/summerlin-the-ridges/', price: 'From $2M' },
-      { name: 'The Paseos', href: '/the-paseos/', price: 'From $550K' },
-      { name: 'The Peaks', href: '/the-peaks/', price: 'From $1M' },
-      { name: 'Grand Park', href: '/summerlin-grand-park/', price: 'From $400K' },
-      { name: 'Sun City Summerlin', href: '/sun-city-summerlin/', price: 'From $300K' },
-      { name: 'The Summit Club', href: '/the-summit-club/', price: 'From $5M' },
-      { name: 'Red Rock Country Club', href: '/red-rock-country-club/', price: 'From $800K' },
-      { name: 'Stonebridge', href: '/summerlin-stonebridge/', price: 'From $550K' },
-      { name: 'Siena', href: '/summerlin-siena/', price: 'From $400K' },
-    ],
-  },
-  {
-    label: 'Henderson',
-    communities: [
-      { name: 'Henderson', href: '/henderson/', price: 'From $300K' },
-      { name: 'Anthem', href: '/anthem/', price: 'From $400K' },
-      { name: 'Green Valley', href: '/green-valley/', price: 'From $350K' },
-      { name: 'Seven Hills', href: '/seven-hills/', price: 'From $500K' },
-      { name: 'MacDonald Highlands', href: '/macdonald-highlands/', price: 'From $800K' },
-      { name: 'Lake Las Vegas', href: '/lake-las-vegas/', price: 'From $400K' },
-      { name: 'Ascaya', href: '/ascaya/', price: 'From $3M' },
-      { name: 'Inspirada', href: '/inspirada/', price: 'From $420K' },
-      { name: 'Cadence', href: '/cadence/', price: 'From $350K' },
-      { name: 'Dragon Rock', href: '/dragon-rock/', price: 'From $5M' },
-    ],
-  },
-  {
-    label: 'Las Vegas',
-    communities: [
-      { name: 'Southern Highlands', href: '/southern-highlands/', price: 'From $400K' },
-      { name: 'Mountains Edge', href: '/mountains-edge/', price: 'From $350K' },
-      { name: 'Enterprise', href: '/enterprise/', price: 'From $350K' },
-      { name: 'Spring Valley', href: '/spring-valley/', price: 'From $300K' },
-      { name: 'Rhodes Ranch', href: '/rhodes-ranch/', price: 'From $350K' },
-      { name: 'The Lakes', href: '/the-lakes/', price: 'From $400K' },
-      { name: 'Desert Shores', href: '/desert-shores/', price: 'From $350K' },
-      { name: 'Peccole Ranch', href: '/peccole-ranch/', price: 'From $400K' },
-      { name: 'Queensridge', href: '/queensridge/', price: 'From $800K' },
-      { name: 'Scotch 80s', href: '/scotch-80s/', price: 'From $800K' },
-    ],
-  },
-  {
-    label: 'North Las Vegas',
-    communities: [
-      { name: 'North Las Vegas', href: '/north-las-vegas/', price: 'From $250K' },
-      { name: 'Aliante', href: '/aliante/', price: 'From $300K' },
-      { name: 'Skye Canyon', href: '/skye-canyon/', price: 'From $400K' },
-      { name: 'Centennial Hills', href: '/centennial-hills/', price: 'From $350K' },
-      { name: 'Providence', href: '/providence/', price: 'From $350K' },
-      { name: 'Heartland at Tule Springs', href: '/heartland-tule-springs/', price: 'From $350K' },
-      { name: 'Sunstone', href: '/sunstone/', price: 'From $380K' },
-    ],
-  },
-  {
-    label: 'Luxury & High-Rise',
-    communities: [
-      { name: 'Waldorf Astoria', href: '/waldorf-astoria-las-vegas/', price: 'From $500K' },
-      { name: 'Veer Towers', href: '/veer-towers/', price: 'From $400K' },
-      { name: 'Four Seasons Residences', href: '/four-seasons-private-residences/', price: 'From $3.67M' },
-      { name: 'Cello Tower', href: '/cello-tower/', price: 'From $700K' },
-      { name: 'Turnberry Place', href: '/turnberry-place/', price: 'From $500K' },
-      { name: 'The Martin', href: '/the-martin/', price: 'From $400K' },
-      { name: 'One Queensridge Place', href: '/one-queensridge-place/', price: 'From $500K' },
-    ],
-  },
-]
+interface CommunityEntry {
+  slug: string
+  name: string
+  parentCommunity?: string
+  city: string
+  priceRange: string
+  type: string
+  guardGated: boolean
+  pageType?: string
+}
+
+function loadCommunities(): CommunityEntry[] {
+  try {
+    const filePath = join(process.cwd(), 'scripts', 'community-data.json')
+    const raw = readFileSync(filePath, 'utf-8')
+    return JSON.parse(raw).filter((c: any) => !c.pageType)
+  } catch {
+    return []
+  }
+}
+
+function groupCommunities(communities: CommunityEntry[]) {
+  // Primary groupings by area
+  const summerlin: CommunityEntry[] = []
+  const henderson: CommunityEntry[] = []
+  const lasVegas: CommunityEntry[] = []
+  const northLV: CommunityEntry[] = []
+  const highRise: CommunityEntry[] = []
+
+  communities.forEach(c => {
+    const type = c.type?.toLowerCase() || ''
+    if (type.includes('high-rise') || type.includes('high rise') || type.includes('tower') || type.includes('condo') && c.city === 'Las Vegas' && ['veer-towers','waldorf-astoria-las-vegas','panorama-towers','turnberry-towers','turnberry-place','sky-las-vegas','allure-las-vegas','juhl','the-ogden','soho-lofts','newport-lofts','the-martin','one-queensridge-place','cello-tower','four-seasons-private-residences'].includes(c.slug)) {
+      highRise.push(c)
+    } else if (c.parentCommunity === 'Summerlin' || c.parentCommunity === 'Summerlin West' || c.parentCommunity === 'Sun City Summerlin' || c.slug.startsWith('summerlin') || ['the-summit-club','mesa-ridge','regency-at-summerlin','heritage-at-stonebridge','trilogy-at-summerlin','sun-colony-at-siena','mira-villa','shawood-at-arcadia','the-loughton','sun-city-summerlin','red-rock-country-club','aventura-summerlin','bellacere','canyon-fairways','eagle-rock-summerlin','the-palisades-summerlin','mountain-trails-summerlin','corte-bella-summerlin','country-club-hills-summerlin','eagle-hills-summerlin','tournament-hills','the-pointe-summerlin','country-rose-estates','the-vineyards-summerlin','glenrock','carlisle-peak','astra-at-la-madre-peaks','ascension-at-the-peaks','the-paseos','the-peaks','eagle-crest'].includes(c.slug)) {
+      summerlin.push(c)
+    } else if (c.city === 'Henderson' || c.parentCommunity === 'Henderson' || c.parentCommunity === 'Anthem' || c.parentCommunity === 'Green Valley' || c.parentCommunity === 'MacDonald Ranch' || c.parentCommunity === 'MacDonald Highlands' || c.parentCommunity === 'Seven Hills' || c.parentCommunity === 'Lake Las Vegas' || c.parentCommunity === 'Cadence' || c.parentCommunity === 'Inspirada' || c.parentCommunity === 'Sun City Anthem') {
+      henderson.push(c)
+    } else if (c.city === 'North Las Vegas' || c.parentCommunity === 'Aliante') {
+      northLV.push(c)
+    } else {
+      lasVegas.push(c)
+    }
+  })
+
+  return [
+    { label: 'Summerlin', count: summerlin.length, communities: summerlin.sort((a, b) => a.name.localeCompare(b.name)) },
+    { label: 'Henderson', count: henderson.length, communities: henderson.sort((a, b) => a.name.localeCompare(b.name)) },
+    { label: 'Las Vegas', count: lasVegas.length, communities: lasVegas.sort((a, b) => a.name.localeCompare(b.name)) },
+    { label: 'North Las Vegas', count: northLV.length, communities: northLV.sort((a, b) => a.name.localeCompare(b.name)) },
+    { label: 'High-Rise & Condos', count: highRise.length, communities: highRise.sort((a, b) => a.name.localeCompare(b.name)) },
+  ]
+}
 
 export default function CommunitiesPage() {
+  const communities = loadCommunities()
+  const groups = groupCommunities(communities)
+
   return (
     <main>
       <div className="breadcrumb">
@@ -94,18 +80,26 @@ export default function CommunitiesPage() {
           <div className="section-header" style={{ textAlign: 'center' }}>
             <span className="section-label">Explore Las Vegas</span>
             <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: 'var(--text-2xl)', fontWeight: 400, color: 'var(--navy)', marginBottom: '16px' }}>Las Vegas Communities &amp; Neighborhoods</h1>
-            <p style={{ maxWidth: '640px', margin: '0 auto', textAlign: 'center' }}>200+ communities across Las Vegas, Henderson, Summerlin, and North Las Vegas. From luxury guard-gated estates to family-friendly master plans.</p>
+            <p style={{ maxWidth: '640px', margin: '0 auto', textAlign: 'center' }}>{communities.length} communities across Las Vegas, Henderson, Summerlin, and North Las Vegas. From luxury guard-gated estates to family-friendly master plans.</p>
           </div>
 
-          {COMMUNITY_GROUPS.map(group => (
-            <div key={group.label} style={{ marginBottom: '56px' }}>
-              <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'var(--text-xl)', color: 'var(--navy)', marginBottom: '24px', paddingBottom: '12px', borderBottom: '2px solid var(--gold)' }}>{group.label}</h2>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '12px' }}>
+          <div className="comm-hub-nav">
+            {groups.map(g => (
+              <a key={g.label} href={`#${g.label.toLowerCase().replace(/\s+/g, '-')}`} className="comm-hub-nav-item">
+                {g.label} <span className="comm-hub-nav-count">{g.count}</span>
+              </a>
+            ))}
+          </div>
+
+          {groups.map(group => (
+            <div key={group.label} id={group.label.toLowerCase().replace(/\s+/g, '-')} className="comm-hub-section">
+              <h2 className="comm-hub-section-title">{group.label} <span className="comm-hub-section-count">{group.count} communities</span></h2>
+              <div className="comm-hub-grid">
                 {group.communities.map(c => (
-                  <Link key={c.name} href={c.href} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 18px', background: 'var(--white)', border: '1px solid var(--border-light)', borderRadius: '8px', textDecoration: 'none', transition: 'border-color 0.2s, transform 0.2s' }}>
-                    <span style={{ fontFamily: 'var(--font-serif)', fontSize: '16px', color: 'var(--navy)' }}>{c.name}</span>
-                    <span style={{ fontSize: '12px', fontWeight: 600, color: 'var(--gold-hover)' }}>{c.price}</span>
-                  </Link>
+                  <a key={c.slug} href={`/${c.slug}/`} className="comm-hub-card">
+                    <span className="comm-hub-card-name">{c.name}</span>
+                    <span className="comm-hub-card-price">{c.priceRange.split('\u2013')[0]}</span>
+                  </a>
                 ))}
               </div>
             </div>
