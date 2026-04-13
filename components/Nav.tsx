@@ -54,7 +54,7 @@ export default function Nav() {
                 <Link href="/sellers/">Work With a Realtor</Link>
               </div>
             </div>
-            <a href="https://nevadarealestategroup.hifello.com/lp/63ef80d5109ae10018e62028" target="_blank" rel="noopener noreferrer" className="nav-link">Get a Cash Offer</a>
+            <a href="/cash-offer" className="nav-link">Get a Cash Offer</a>
           </div>
 
           {/* CENTER LOGO */}
@@ -129,7 +129,7 @@ export default function Nav() {
       <div className={`nav-mobile${mobileOpen ? ' open' : ''}`}>
         <Link href="/buyers/" className="mobile-nav-link" onClick={closeMobile}>Buy a Home</Link>
         <Link href="/sellers/" className="mobile-nav-link" onClick={closeMobile}>Sell a Home</Link>
-        <a href="https://nevadarealestategroup.hifello.com/lp/63ef80d5109ae10018e62028" target="_blank" rel="noopener noreferrer" className="mobile-nav-link" onClick={closeMobile}>Get a Cash Offer</a>
+        <Link href="/cash-offer" className="mobile-nav-link" onClick={closeMobile}>Get a Cash Offer</Link>
         <button className={`mob-group-toggle${commOpen ? ' open' : ''}`} onClick={() => setCommOpen(!commOpen)}>
           Communities
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M6 9l6 6 6-6"/></svg>
