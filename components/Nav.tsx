@@ -40,7 +40,20 @@ export default function Nav() {
                 <Link href="/new-construction/">New Construction</Link>
               </div>
             </div>
-            <Link href="/sellers/" className="nav-link">Sell a Home</Link>
+            <div className="nav-item">
+              <a href="/sellers/" className="nav-trigger">
+                Sell a Home
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M6 9l6 6 6-6"/></svg>
+              </a>
+              <div className="nav-dropdown">
+                <a href="https://nevadarealestategroup.hifello.com/lp/63ef80d5109ae10018e62028" target="_blank" rel="noopener noreferrer">Free Home Valuation</a>
+                <Link href="/sellers/7-day-listing-agreement/">7-Day Listing Agreement</Link>
+                <a href="https://nevadarealestategroup.hifello.com/lp/63ef80d5109ae10018e62028" target="_blank" rel="noopener noreferrer">Get a Cash Offer</a>
+                <hr />
+                <Link href="/sellers/">Selling Tips &amp; Resources</Link>
+                <Link href="/sellers/">Work With a Realtor</Link>
+              </div>
+            </div>
             <a href="https://nevadarealestategroup.hifello.com/lp/63ef80d5109ae10018e62028" target="_blank" rel="noopener noreferrer" className="nav-link">Get a Cash Offer</a>
           </div>
 
