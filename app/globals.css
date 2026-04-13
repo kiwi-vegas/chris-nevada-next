@@ -59,8 +59,8 @@ ul { list-style: none; }
 .gold { color: var(--gold); }
 
 /* NAV */
-#nav { position: absolute; top: 0; left: 0; right: 0; z-index: 1000; height: var(--nav-h); display: flex; align-items: center; background: transparent; border-bottom: none; }
-#nav.scrolled { background: transparent; }
+#nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: var(--nav-h); display: flex; align-items: center; background: transparent; border-bottom: none; transition: opacity 0.3s ease, transform 0.3s ease; }
+#nav.scrolled { opacity: 0; pointer-events: none; transform: translateY(-100%); }
 .nav-inner { max-width: var(--container); margin: 0 auto; padding: 0 24px; width: 100%; display: flex; align-items: center; justify-content: space-between; }
 .nav-left, .nav-right { display: flex; align-items: center; gap: 0; }
 .nav-logo { flex-shrink: 0; height: 72px; display: flex; align-items: center; margin-top: 120px; }
