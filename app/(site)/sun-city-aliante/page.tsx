@@ -84,7 +84,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sun City Aliante',
-  description: 'Sun City Aliante is a 55+ · active adult community in North Las Vegas, Nevada.',
+  description: 'Sun City Aliante is a 55+ · active adult community in North Las Vegas, Nevada (ZIP 89084), established in 2004 by Del Webb / Pulte Group, spanning ~500 acres. Home prices range from $300K–$500K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.295, longitude: -115.23 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89084', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },

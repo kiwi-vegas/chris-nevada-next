@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Newport Lofts',
-  description: 'Newport Lofts is a loft conversion · urban · downtown community in Las Vegas, Nevada.',
+  description: 'Newport Lofts is a loft conversion · urban · downtown community in Las Vegas, Nevada (ZIP 89101), established in 2008 by Christopher Homes, spanning ~1 acre. Home prices range from $200K–$500K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.163, longitude: -115.151 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89101', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function NewportLoftsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Newport Lofts is a 23-story residential tower located in Downtown Las Vegas, offering authentic loft-style condominiums with a raw, industrial character that distinguishes it from the city's more conventional high-rise communities. Completed in 2008, the building contains 168 residences and has earned a loyal following among buyers who appreciate genuine urban design and the energy of downtown living.</p>
+                  <p>Newport Lofts is a loft conversion · urban · downtown community in Las Vegas, Nevada (ZIP 89101), developed by Christopher Homes, spanning ~1 acre, where home prices range from $200K–$500K. Newport Lofts is a 23-story residential tower located in Downtown Las Vegas, offering authentic loft-style condominiums with a raw, industrial character that distinguishes it from the city's more conventional high-rise communities. Completed in 2008, the building contains 168 residences and has earned a loyal following among buyers who appreciate genuine urban design and the energy of downtown living.</p>
                   <p>Residences at Newport Lofts range from approximately $200,000 for studios and one-bedrooms to around $500,000 for two-bedroom and penthouse-level units. The design aesthetic emphasizes raw industrial elements — polished concrete floors, exposed ductwork, floor-to-ceiling windows, open floor plans with minimal interior walls, and ceiling heights that give every unit an airy, expansive feel. Many units offer direct views of the Stratosphere Tower, the downtown skyline, and the Spring Mountains.</p>
                   <p>Building amenities include a pool deck, fitness center, controlled building access, and dedicated resident parking. While the amenity package is more streamlined than some competing towers, Newport Lofts' appeal lies in its authentic loft character and its central downtown location — not in resort-style extras.</p>
                   <p>Newport Lofts is positioned between the Fremont East entertainment district and the Arts District, giving residents walkable access to both neighborhoods. The building is within blocks of the Mob Museum, Container Park, Fremont Street Experience, and the growing concentration of restaurants, bars, and creative businesses that are transforming downtown Las Vegas. For buyers seeking the most authentic loft living experience in Las Vegas at the most accessible price point, Newport Lofts delivers.</p>

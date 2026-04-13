@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Ridges',
-  description: 'The Ridges is a guard-gated · ultra-luxury community in Las Vegas, Nevada.',
+  description: 'The Ridges is a guard-gated · ultra-luxury community in Las Vegas, Nevada (ZIP 89135), established in 2006 by Howard Hughes Corporation, spanning 793 acres. Home prices range from $2M–$20M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.145, longitude: -115.327 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function SummerlinTheRidgesPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Ridges is the crown jewel of Summerlin and one of the most exclusive residential communities in all of Nevada. Located within a 793-acre guard-gated enclave along the western rim of the Las Vegas Valley, The Ridges backs directly against the Red Rock Canyon National Conservation Area, providing dramatic desert canyon views from virtually every estate.</p>
+                  <p>The Ridges is a guard-gated · ultra-luxury community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2006, developed by Howard Hughes Corporation, spanning 793 acres. The Ridges is the crown jewel of Summerlin and one of the most exclusive residential communities in all of Nevada. Located within a 793-acre guard-gated enclave along the western rim of the Las Vegas Valley, The Ridges backs directly against the Red Rock Canyon National Conservation Area, providing dramatic desert canyon views from virtually every estate.</p>
                   <p>Developed by the Howard Hughes Corporation beginning in 2006, The Ridges was designed from the ground up as Summerlin's ultra-luxury showcase. The community is anchored by Bear's Best Las Vegas, a Jack Nicklaus-designed golf course that features replicas of 18 of the greatest holes Nicklaus has ever designed. Membership is available but not required for homeownership.</p>
                   <p>Homes in The Ridges range from approximately $2 million for resale semi-custom homes to over $20 million for new-build custom estates on premium lots with unobstructed Red Rock views. The architectural standards are among the strictest in Las Vegas, resulting in a cohesive desert contemporary aesthetic throughout the community.</p>
                   <p>The guard-gated entry, 24-hour security, and strict HOA governance create a level of privacy and exclusivity that attracts high-net-worth individuals, executives, professional athletes, and entertainment industry figures. The Ridges consistently commands the highest per-square-foot prices in the Las Vegas metro area.</p>

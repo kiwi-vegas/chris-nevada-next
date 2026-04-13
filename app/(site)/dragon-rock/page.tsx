@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Dragon Rock',
-  description: 'Dragon Rock is a double guard-gated · ultra-luxury community in Henderson, Nevada.',
+  description: 'Dragon Rock is a double guard-gated · ultra-luxury community in Henderson, Nevada (ZIP 89012), established in 2016 by Blue Heron, spanning ~45 acres. Home prices range from $5M–$15M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.01, longitude: -114.99 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89012', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function DragonRockPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Dragon Rock is the most exclusive enclave within MacDonald Highlands, a double guard-gated collection of approximately 30 custom homesites developed by Blue Heron on some of the most dramatic terrain in the Las Vegas Valley. Named for the dramatic rock formations visible from the community, Dragon Rock occupies a premium elevated position within the already-elevated MacDonald Highlands master plan, delivering panoramic views of the Strip, the valley, and the surrounding mountain ranges.</p>
+                  <p>Dragon Rock is a double guard-gated · ultra-luxury community within MacDonald Highlands in Henderson, Nevada (ZIP 89012), established in 2016, spanning ~45 acres, with 30 homesites homes. Dragon Rock is the most exclusive enclave within MacDonald Highlands, a double guard-gated collection of approximately 30 custom homesites developed by Blue Heron on some of the most dramatic terrain in the Las Vegas Valley. Named for the dramatic rock formations visible from the community, Dragon Rock occupies a premium elevated position within the already-elevated MacDonald Highlands master plan, delivering panoramic views of the Strip, the valley, and the surrounding mountain ranges.</p>
                   <p>Blue Heron is the sole builder and developer of Dragon Rock, bringing their signature desert-contemporary aesthetic to every home. Blue Heron's design philosophy emphasizes disappearing glass walls, negative-edge pools, natural stone, and seamless indoor-outdoor living. Homes range from approximately $5 million to over $15 million, with finished residences typically spanning 6,000 to 12,000+ square feet.</p>
                   <p>The double guard-gated security means residents pass through the MacDonald Highlands guard gate first, then through the private Dragon Rock gate — creating two layers of controlled access. This arrangement delivers an exceptional level of privacy and exclusivity, attracting high-net-worth individuals, executives, and celebrities who value discretion above all else.</p>
                   <p>Dragon Rock residents have access to the DragonRidge Country Club, which features a Jay Morrish and David Druzisky-designed 18-hole championship course, a full-service clubhouse with dining and events, resort-style pools, tennis courts, and a fitness center. Membership is separate from homeownership. The community's location in Henderson provides access to I-215 for a direct corridor to the Strip, the airport, and Lake Mead.</p>

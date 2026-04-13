@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Discovery',
-  description: 'Discovery is a master-planned · new construction community in Las Vegas, Nevada.',
+  description: 'Discovery is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89134), established in 2016 by Howard Hughes Corporation, spanning 350 acres. Home prices range from $450K–$750K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.218, longitude: -115.298 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinDiscoveryPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Discovery is one of Summerlin North's newer villages, representing the next generation of Summerlin living. Launched in 2016 by the Howard Hughes Corporation, Discovery offers modern construction with contemporary desert architecture, energy-efficient design, and open floor plans that reflect current buyer preferences. The village has attracted a mix of young professionals, growing families, and move-up buyers looking for new-build quality within the established Summerlin framework.</p>
+                  <p>Discovery is a master-planned · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89134/89138), spanning 350 acres, with 1,800+ homes, where home prices range from $450K–$750K. Discovery is one of Summerlin North's newer villages, representing the next generation of Summerlin living. Launched in 2016 by the Howard Hughes Corporation, Discovery offers modern construction with contemporary desert architecture, energy-efficient design, and open floor plans that reflect current buyer preferences. The village has attracted a mix of young professionals, growing families, and move-up buyers looking for new-build quality within the established Summerlin framework.</p>
                   <p>Homes in Discovery range from approximately $450,000 for smaller production homes to around $750,000 for larger floor plans on premium lots. Builders active in Discovery include Toll Brothers, Lennar, Pulte, and KB Home, offering a range of architectural styles from modern farmhouse to desert contemporary. Most homes feature 10-foot ceilings, covered patios, smart-home wiring, and energy-efficient construction that meaningfully reduces utility costs compared to the valley's older housing stock.</p>
                   <p>Discovery benefits from its position in the northwest corridor of Summerlin North, with direct access to the 215 Beltway and Summerlin Parkway. Downtown Summerlin is approximately 10 minutes south, offering 125+ shops and restaurants, Las Vegas Ballpark, and City National Arena. Red Rock Canyon is approximately 15 minutes west, and the Strip is about 25 minutes southeast.</p>
                   <p>The village's appeal is its combination of new-construction quality at mid-range Summerlin pricing. Buyers get modern floor plans, builder warranties, and current building codes without paying the significant premiums associated with Summerlin's luxury and guard-gated villages. For families and professionals who want new construction within a proven master plan, Discovery is one of the smartest buys in Summerlin.</p>

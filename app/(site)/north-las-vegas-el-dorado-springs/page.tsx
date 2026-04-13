@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'El Dorado Springs',
-  description: 'El Dorado Springs is a established · affordable · family community in North Las Vegas, Nevada.',
+  description: 'El Dorado Springs is a established · affordable · family community in North Las Vegas, Nevada (ZIP 89031), established in 1995 by Various Builders, spanning ~600 acres. Home prices range from $300K–$500K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.228, longitude: -115.152 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89031', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function NorthLasVegasElDoradoSpringsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>El Dorado Springs is an established residential area in central North Las Vegas, encompassing neighborhoods along and near the Carey Avenue and Cheyenne Avenue corridors between Losee Road and the I-15 freeway. Developed primarily between 1995 and 2008, the area offers some of the most affordable single-family housing in the Las Vegas metro, with homes ranging from approximately $300,000 to $500,000.</p>
+                  <p>El Dorado Springs is a established · affordable · family community in North Las Vegas, Nevada (ZIP 89031/89032), developed by Various Builders, spanning ~600 acres, with 4,000+ homes. El Dorado Springs is an established residential area in central North Las Vegas, encompassing neighborhoods along and near the Carey Avenue and Cheyenne Avenue corridors between Losee Road and the I-15 freeway. Developed primarily between 1995 and 2008, the area offers some of the most affordable single-family housing in the Las Vegas metro, with homes ranging from approximately $300,000 to $500,000.</p>
                   <p>The El Dorado Springs area features a mix of single-family homes, townhomes, and some multi-family development. Single-family homes typically range from 1,200 to 2,600 square feet, with both single-story and two-story floor plans available. Construction quality varies by builder and era, with homes from the early 2000s generally featuring the best construction standards. Desert landscaping, tile roofs, and stucco exteriors are standard throughout.</p>
                   <p>What makes El Dorado Springs compelling for buyers is the combination of affordability and improving infrastructure. North Las Vegas has invested heavily in community parks, public safety, and commercial development in recent years. The Eldorado neighborhood park system, Craig Ranch Regional Park (one of the best parks in the metro), and expanding retail corridors along Craig Road and Las Vegas Boulevard North have significantly improved the area's livability.</p>
                   <p>El Dorado Springs attracts first-time buyers, working families, military personnel from nearby Nellis Air Force Base, and investors seeking positive cash flow rental properties. The area's affordability premium over comparable Las Vegas and Henderson neighborhoods — often $100K–$200K less for similar square footage — makes it an important entry point for buyers who want homeownership in the Las Vegas Valley at today's pricing.</p>

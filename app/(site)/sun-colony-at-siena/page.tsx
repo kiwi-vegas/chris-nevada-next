@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sun Colony at Siena',
-  description: 'Sun Colony at Siena is a 55+ · guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'Sun Colony at Siena is a 55+ · guard-gated · luxury community in Las Vegas, Nevada (ZIP 89135), established in 2004 by William Lyon Homes / Taylor Morrison, spanning ~100 acres. Home prices range from $700K–$1.3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.158, longitude: -115.308 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function SunColonyAtSienaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Sun Colony at Siena is the luxury tier of 55+ guard-gated living within Summerlin's Siena village. Nestled within the guard-gated Siena community in the southern foothills, Sun Colony offers larger homes, premium lots, and an elevated lifestyle compared to the broader Siena neighborhood. With prices ranging from approximately $700,000 to over $1.3 million, it is the most upscale 55+ community in the Summerlin master plan.</p>
+                  <p>Sun Colony at Siena is a 55+ · guard-gated · luxury community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2004, developed by William Lyon Homes / Taylor Morrison, spanning ~100 acres. Sun Colony at Siena is the luxury tier of 55+ guard-gated living within Summerlin's Siena village. Nestled within the guard-gated Siena community in the southern foothills, Sun Colony offers larger homes, premium lots, and an elevated lifestyle compared to the broader Siena neighborhood. With prices ranging from approximately $700,000 to over $1.3 million, it is the most upscale 55+ community in the Summerlin master plan.</p>
                   <p>The community shares access to the Siena Golf Club, an 18-hole championship course designed by Schmidt-Curley that winds through the master plan with dramatic mountain backdrops. Residents also enjoy the Siena Community Center, which features a pool and spa, fitness center, tennis courts, and community gathering spaces. Sun Colony's position within the guard-gated perimeter provides an additional layer of security and exclusivity.</p>
                   <p>Homes in Sun Colony at Siena are predominantly single-story, ranging from approximately 2,200 to 3,800 square feet. The architecture reflects Tuscan and Mediterranean influences with upgraded natural stone exteriors, tile roofing, and mature landscaping. Interior features include gourmet kitchens, formal living and dining rooms, home offices, and spacious master suites with luxury bath fixtures.</p>
                   <p>Sun Colony's location within Siena places residents minutes from Downtown Summerlin, Red Rock Canyon, and the broader Summerlin amenity package. For active adults seeking a premium 55+ lifestyle with golf course access, guard-gated security, and larger luxury homes, Sun Colony at Siena occupies a unique position in the Las Vegas market — it is the only upscale golf-community 55+ option within Summerlin.</p>

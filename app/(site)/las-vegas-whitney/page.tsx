@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Whitney',
-  description: 'Whitney is a established · unincorporated community in Las Vegas, Nevada.',
+  description: 'Whitney is a established · unincorporated community in Las Vegas, Nevada (ZIP 89122), established in 1960s, spanning ~12 sq mi. Home prices range from $200K–$400K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.1, longitude: -115.075 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89122', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasWhitneyPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Whitney is an unincorporated community in Clark County situated in the east-central Las Vegas Valley between Paradise to the west, Henderson to the south, and Sunrise Manor to the north. Named after the Whitney neighborhood that developed in the mid-20th century, the area has grown into a substantial residential community serving over 38,000 residents with a diverse mix of housing styles and price points.</p>
+                  <p>Whitney is a established · unincorporated community in Las Vegas, Nevada (ZIP 89122/89121), established in 1960s, spanning ~12 sq mi, with 25,000+ homes. Whitney is an unincorporated community in Clark County situated in the east-central Las Vegas Valley between Paradise to the west, Henderson to the south, and Sunrise Manor to the north. Named after the Whitney neighborhood that developed in the mid-20th century, the area has grown into a substantial residential community serving over 38,000 residents with a diverse mix of housing styles and price points.</p>
                   <p>The community's housing stock spans multiple decades, from 1960s ranch homes in the western sections to 2000s-era tract homes in the eastern areas near Whitney Ranch Park. This variety creates a wide pricing spectrum, with homes starting around $200,000 for older properties and reaching $400,000 or more for newer or renovated residences. The predominant architecture is single-story and two-story single-family homes, with scattered condo and townhome developments near major arterials.</p>
                   <p>Whitney's location provides solid access to multiple employment centers. The community sits along the Boulder Highway corridor, providing a direct route to Henderson, Boulder City, and Lake Mead. Tropicana Avenue and Flamingo Road connect west to the Strip and I-15, while the I-515/US-95 interchange serves commuters heading north or south. Sam's Town and the Eastside Cannery add local entertainment options.</p>
                   <p>For budget-conscious buyers and investors, Whitney offers entry-level pricing in a location that benefits from proximity to Henderson's superior services and amenities without Henderson's premium pricing. The community's ongoing infrastructure improvements, including road upgrades and park renovations, continue to enhance livability and support property value appreciation.</p>

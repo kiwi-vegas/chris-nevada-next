@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Neo',
-  description: 'Neo is a luxury · new construction community in Henderson, Nevada.',
+  description: 'Neo is a luxury · new construction community in Henderson, Nevada (ZIP 89012), established in 2023 by William Lyon Homes / Taylor Morrison, spanning ~40 acres. Home prices range from $2.34M–$4.97M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.013, longitude: -114.993 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89012', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function NeoMacdonaldHighlandsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Neo is one of the newest luxury enclaves within MacDonald Highlands, Henderson's most prestigious mountainside community. Positioned along the ridgeline of the McCullough Range, Neo delivers the panoramic Las Vegas Strip and valley views that MacDonald Highlands is famous for, paired with brand-new construction and contemporary desert architecture that appeals to today's luxury buyer.</p>
+                  <p>Neo is a luxury · new construction community within MacDonald Highlands in Henderson, Nevada (ZIP 89012), established in 2023, developed by William Lyon Homes / Taylor Morrison, spanning ~40 acres. Neo is one of the newest luxury enclaves within MacDonald Highlands, Henderson's most prestigious mountainside community. Positioned along the ridgeline of the McCullough Range, Neo delivers the panoramic Las Vegas Strip and valley views that MacDonald Highlands is famous for, paired with brand-new construction and contemporary desert architecture that appeals to today's luxury buyer.</p>
                   <p>Homes in Neo range from approximately $2.34 million to $4.97 million, featuring open floor plans with 3,500 to 6,000+ square feet of living space. The residences showcase modern desert-contemporary design with clean lines, floor-to-ceiling glass walls, soaring ceilings, and seamless indoor-outdoor living. Premium finishes include imported stone, custom cabinetry, Wolf and Sub-Zero appliance packages, and smart-home automation throughout.</p>
                   <p>As part of the MacDonald Highlands master plan, Neo residents enjoy full access to DragonRidge Country Club — an 18-hole Tom Fazio-designed championship course that is widely regarded as one of the best private clubs in Nevada. The clubhouse offers fine dining, resort-style pools, tennis and pickleball courts, a fitness center, and a robust social calendar. Club membership is available but not required for homeownership.</p>
                   <p>The community benefits from MacDonald Highlands' guard-gated security with 24-hour staffed entry, creating an enclave of privacy within an already exclusive community. Henderson's infrastructure is minutes away via Horizon Ridge Parkway, with the I-215 beltway providing a direct corridor to the Strip, Harry Reid International Airport, and the valley's best shopping and dining destinations.</p>

@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Waldorf Astoria Las Vegas',
-  description: 'Waldorf Astoria Las Vegas is a ultra-luxury high-rise · five-star community in Las Vegas, Nevada.',
+  description: 'Waldorf Astoria Las Vegas is a ultra-luxury high-rise · five-star community in Las Vegas, Nevada (ZIP 89158), established in 2010 by MGM Resorts International / Infinity World Development, spanning ~1.5 acres. Home prices range from $500K–$10M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.107, longitude: -115.178 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89158', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function WaldorfAstoriaLasVegasPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Waldorf Astoria Las Vegas is the most prestigious residential high-rise address on the Las Vegas Strip. Rising 47 stories within the CityCenter complex, this five-star branded residence offers approximately 225 privately owned condominiums that come with the full suite of Waldorf Astoria hotel services — including housekeeping, room service, concierge, valet, spa access, and priority dining reservations at the hotel's acclaimed restaurants.</p>
+                  <p>Waldorf Astoria Las Vegas is a ultra-luxury high-rise · five-star community in Las Vegas, Nevada (ZIP 89158), established in 2010, developed by MGM Resorts International / Infinity World Development, spanning ~1.5 acres. The Waldorf Astoria Las Vegas is the most prestigious residential high-rise address on the Las Vegas Strip. Rising 47 stories within the CityCenter complex, this five-star branded residence offers approximately 225 privately owned condominiums that come with the full suite of Waldorf Astoria hotel services — including housekeeping, room service, concierge, valet, spa access, and priority dining reservations at the hotel's acclaimed restaurants.</p>
                   <p>Originally opened as the Mandarin Oriental Las Vegas in 2010, the property was rebranded to Waldorf Astoria in 2018, elevating the brand prestige while maintaining the building's refined Asian-inspired design aesthetic. Residences range from approximately $500,000 for entry-level studios to well over $10 million for the tower's most exclusive penthouses and combined units with direct Strip views.</p>
                   <p>Every residence features floor-to-ceiling windows, Italian marble bathrooms, Sub-Zero and Wolf kitchens, smart home technology, and the kind of finish quality that defines five-star hospitality. The building amenities include a 27th-floor sky pool and lounge, a premier spa and fitness center, the celebrated Twist by Pierre Gagnaire restaurant (Michelin-starred), and 24-hour Waldorf Astoria concierge services available to all residential owners.</p>
                   <p>For buyers seeking the pinnacle of luxury living in Las Vegas — where your home comes with the services of a five-star hotel and you can walk to any destination on the Strip — the Waldorf Astoria Las Vegas is in a class by itself. It is the only Waldorf Astoria branded residential property in Nevada and one of only a handful in the world, making it a globally recognized address for discerning buyers.</p>

@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Centennial Springs',
-  description: 'Centennial Springs is a suburban · master-planned community in Las Vegas, Nevada.',
+  description: 'Centennial Springs is a suburban · master-planned community in Las Vegas, Nevada (ZIP 89149), established in 2010, spanning ~800 acres. Home prices range from $400K–$650K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.275, longitude: -115.268 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89149', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasCentennialSpringsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Centennial Springs is a growing suburban community in the northwest Las Vegas Valley, positioned between Centennial Hills and Lone Mountain along the Durango Drive and Centennial Parkway corridors. The area began developing around 2010 and has since grown into a collection of family-friendly neighborhoods featuring modern construction, community parks, and convenient access to the 215 Beltway and US-95.</p>
+                  <p>Centennial Springs is a suburban · master-planned community in Las Vegas, Nevada (ZIP 89149/89131), spanning ~800 acres, with 3,500+ homes, where home prices range from $400K–$650K. Centennial Springs is a growing suburban community in the northwest Las Vegas Valley, positioned between Centennial Hills and Lone Mountain along the Durango Drive and Centennial Parkway corridors. The area began developing around 2010 and has since grown into a collection of family-friendly neighborhoods featuring modern construction, community parks, and convenient access to the 215 Beltway and US-95.</p>
                   <p>The community occupies a transitional zone between the established Centennial Hills neighborhoods to the east and the newer Lone Mountain and Skye Canyon developments to the west. This positioning gives residents access to the mature retail and dining infrastructure of Centennial Hills while enjoying the newer homes and modern floor plans that characterize the area's more recent construction.</p>
                   <p>Homes in Centennial Springs range from approximately $400,000 for production single-family homes to $650,000 for larger residences with premium lot positioning. National builders including Lennar, KB Home, and DR Horton have been active in the area, delivering energy-efficient homes with open floor plans, modern kitchens, and desert-adapted landscaping. Both single-story and two-story options are available throughout the community.</p>
                   <p>Centennial Springs benefits from its northwest valley elevation, which provides slightly cooler temperatures and mountain views not available on the valley floor. The area's schools are among the newer CCSD campuses, and community parks feature modern playgrounds, walking trails, and sports facilities. For families seeking newer construction at moderate prices with strong northwest valley connectivity, Centennial Springs represents an excellent value proposition.</p>

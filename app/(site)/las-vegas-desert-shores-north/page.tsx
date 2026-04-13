@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Desert Shores North',
-  description: 'Desert Shores North is a waterfront · established community in Las Vegas, Nevada.',
+  description: 'Desert Shores North is a waterfront · established community in Las Vegas, Nevada (ZIP 89128), established in 1988 by Desert Shores Development, spanning ~350 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.195, longitude: -115.264 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89128', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasDesertShoresNorthPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Desert Shores North is the northern section of the Desert Shores community, one of the Las Vegas Valley's most unique residential developments built around four man-made lakes. Located in the west-central valley north of Sahara Avenue and west of Durango Drive, Desert Shores North features lakefront homes, townhomes, and condos that provide a waterfront lifestyle found nowhere else in the desert city.</p>
+                  <p>Desert Shores North is a waterfront · established community within Desert Shores in Las Vegas, Nevada (ZIP 89128/89117), established in 1988, developed by Desert Shores Development, spanning ~350 acres. Desert Shores North is the northern section of the Desert Shores community, one of the Las Vegas Valley's most unique residential developments built around four man-made lakes. Located in the west-central valley north of Sahara Avenue and west of Durango Drive, Desert Shores North features lakefront homes, townhomes, and condos that provide a waterfront lifestyle found nowhere else in the desert city.</p>
                   <p>The northern section of Desert Shores includes two of the community's four lakes, with walking paths, small beaches, and green spaces lining the shoreline. Homes built in the late 1980s through early 1990s feature a mix of Mediterranean, southwestern, and traditional architectural styles. Many properties offer direct lake views or lakefront access, with premium lots commanding the highest values in the community.</p>
                   <p>Pricing in Desert Shores North ranges from approximately $350,000 for interior condos and townhomes to $600,000 or more for lakefront single-family homes with water views. The community's HOA maintains the lakes, beaches, community center, and extensive common areas, providing a resort-like environment with regular social events, seasonal activities, and recreational programming.</p>
                   <p>Desert Shores North appeals to a diverse buyer profile. Families appreciate the community center and lake activities, professionals value the central-west location and quick commute times, and retirees enjoy the walking paths and social calendar. The proximity to Summerlin, the 215 Beltway, and US-95 ensures that residents can reach any part of the valley quickly while returning home to a waterfront lifestyle that most Las Vegas residents only dream about.</p>

@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Fort Apache Corridor',
-  description: 'Fort Apache Corridor is a suburban · upscale corridor community in Las Vegas, Nevada.',
+  description: 'Fort Apache Corridor is a suburban · upscale corridor community in Las Vegas, Nevada (ZIP 89148), established in 1990s, spanning ~12 sq mi. Home prices range from $400K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.15, longitude: -115.295 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasFortApacheCorridorPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Fort Apache Corridor is one of the most desirable north-south residential corridors in the Las Vegas Valley, stretching along Fort Apache Road from the southern I-215 interchange near Enterprise northward through Summerlin's western neighborhoods and into the Lone Mountain area. The corridor serves as a de facto dividing line between established central valley communities to the east and the premium Summerlin neighborhoods to the west.</p>
+                  <p>Fort Apache Corridor is a suburban · upscale corridor community in Las Vegas, Nevada (ZIP 89148/89135), established in 1990s, spanning ~12 sq mi, with 20,000+ homes. The Fort Apache Corridor is one of the most desirable north-south residential corridors in the Las Vegas Valley, stretching along Fort Apache Road from the southern I-215 interchange near Enterprise northward through Summerlin's western neighborhoods and into the Lone Mountain area. The corridor serves as a de facto dividing line between established central valley communities to the east and the premium Summerlin neighborhoods to the west.</p>
                   <p>Fort Apache Road has evolved from a secondary residential street into a major arterial with significant commercial development. Shopping centers, medical complexes, fitness facilities, and restaurants line the route, particularly at its intersections with major east-west arterials like Flamingo Road, Charleston Boulevard, Sahara Avenue, and Cheyenne Avenue. This commercial development has enhanced property values along the corridor while providing residents with walkable or short-drive access to daily necessities.</p>
                   <p>Housing along the Fort Apache Corridor spans a wide range. Southern sections near Enterprise and I-215 feature newer construction from the 2000s and 2010s, with single-family homes starting around $400,000. The mid-section near Spring Valley and Peccole Ranch offers established homes from the 1990s in the $500K-$650K range. Northern sections near Summerlin and the foothills command premium prices up to $800,000 or more, particularly for homes with mountain views.</p>
                   <p>The corridor's versatility is its greatest strength. Buyers at every price point and life stage can find suitable housing along Fort Apache, from first-time buyer townhomes to executive-level single-family homes. The consistent north-south connectivity, growing commercial infrastructure, and proximity to both Summerlin amenities and central valley services make the Fort Apache Corridor one of the most strategic residential addresses in Las Vegas.</p>

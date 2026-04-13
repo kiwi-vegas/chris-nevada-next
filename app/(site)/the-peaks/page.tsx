@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Peaks',
-  description: 'The Peaks is a guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'The Peaks is a guard-gated · luxury community in Las Vegas, Nevada (ZIP 89135), established in 2018 by Howard Hughes Corporation, spanning ~320 acres. Home prices range from $1M–$4M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.158, longitude: -115.33 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function ThePeaksPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Peaks is Summerlin's newest guard-gated luxury village, positioned in the western reaches of the master plan along the base of the Spring Mountains. Developed by the Howard Hughes Corporation beginning in 2018, The Peaks represents the latest evolution of luxury living in Summerlin, offering new-construction custom and semi-custom homes with contemporary desert architecture and modern floor plans.</p>
+                  <p>The Peaks is a guard-gated · luxury community within Summerlin in Las Vegas, Nevada (ZIP 89135), spanning ~320 acres, with 800+ homes, where home prices range from $1M–$4M+. The Peaks is Summerlin's newest guard-gated luxury village, positioned in the western reaches of the master plan along the base of the Spring Mountains. Developed by the Howard Hughes Corporation beginning in 2018, The Peaks represents the latest evolution of luxury living in Summerlin, offering new-construction custom and semi-custom homes with contemporary desert architecture and modern floor plans.</p>
                   <p>The guard-gated village features multiple neighborhoods developed by premier builders including Toll Brothers, William Lyon Homes, and Shea Homes. Homes range from approximately $1 million for production luxury residences to over $4 million for custom estates on premium lots. The architectural standards emphasize clean desert-contemporary lines, natural stone and stucco exteriors, and open floor plans with indoor-outdoor living.</p>
                   <p>The Peaks benefits from its position at the highest elevations within Summerlin, providing dramatic views of Red Rock Canyon to the west and the Las Vegas Valley and Strip to the east. The village is connected to Summerlin's extensive trail system, with direct access to hiking and biking paths leading toward Red Rock Canyon.</p>
                   <p>As one of the newest villages in Summerlin, The Peaks offers the advantage of modern construction with current building codes, energy-efficient systems, smart-home technology, and contemporary finishes. The village's proximity to Downtown Summerlin, The Ridges, and Red Rock Canyon creates a premium location within an already premium master plan.</p>

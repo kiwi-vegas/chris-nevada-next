@@ -84,7 +84,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'South Square',
-  description: 'South Square is a master-planned · 55+ · active adult community in Las Vegas, Nevada.',
+  description: 'South Square is a master-planned · 55+ · active adult community in Las Vegas, Nevada (ZIP 89135), established in 2005 by Howard Hughes Corporation, spanning 250 acres. Home prices range from $400K–$750K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.155, longitude: -115.308 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -302,7 +302,7 @@ export default async function SummerlinSouthSquarePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>South Square is a 55+ active adult village within the Summerlin South Association, offering age-restricted living in one of the most desirable master-planned communities in Nevada. Developed beginning in 2005 by the Howard Hughes Corporation, South Square was designed specifically for active adults who want the Summerlin lifestyle — trails, parks, shopping, dining — without the maintenance burden of a traditional large-lot home.</p>
+                  <p>South Square is a master-planned · 55+ · active adult community within Summerlin in Las Vegas, Nevada (ZIP 89135), spanning 250 acres, with 1,400+ homes, where home prices range from $400K–$750K. South Square is a 55+ active adult village within the Summerlin South Association, offering age-restricted living in one of the most desirable master-planned communities in Nevada. Developed beginning in 2005 by the Howard Hughes Corporation, South Square was designed specifically for active adults who want the Summerlin lifestyle — trails, parks, shopping, dining — without the maintenance burden of a traditional large-lot home.</p>
                   <p>Homes in South Square range from approximately $400,000 for smaller single-story homes and attached products to around $750,000 for larger, updated properties with premium finishes. The village features predominantly single-story floor plans designed for aging in place, with features like wide hallways, zero-step entries, first-floor master suites, and low-maintenance desert landscaping. Home sizes typically range from 1,200 to 2,800 square feet.</p>
                   <p>South Square residents benefit from community amenities designed for the active adult lifestyle, including a clubhouse, fitness facilities, social programming, and organized activities. The village is connected to Summerlin's trail system for walking and cycling, and Downtown Summerlin is approximately 10 minutes north with 125+ shops and restaurants.</p>
                   <p>For buyers aged 55 and over who want an active adult community within a premier master plan, South Square offers a compelling alternative to Sun City Summerlin — newer construction, smaller community size, and integration into the broader Summerlin South village system. The combination of age-restricted tranquility, low-maintenance living, and full access to Summerlin's amenities makes South Square one of the most desirable 55+ communities in the Las Vegas Valley.</p>

@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Stephanie Street Corridor',
-  description: 'Stephanie Street Corridor is a established · mixed residential community in Henderson, Nevada.',
+  description: 'Stephanie Street Corridor is a established · mixed residential community in Henderson, Nevada (ZIP 89014), established in 1990 by Various Builders, spanning ~1,200 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.058, longitude: -115.095 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89014', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },

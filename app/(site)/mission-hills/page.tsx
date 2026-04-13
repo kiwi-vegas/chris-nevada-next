@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Mission Hills',
-  description: 'Mission Hills is a established · family community community in Henderson, Nevada.',
+  description: 'Mission Hills is a established · family community community in Henderson, Nevada (ZIP 89002), established in 1996 by Various National Builders, spanning ~500 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.03, longitude: -115.01 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89002', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },

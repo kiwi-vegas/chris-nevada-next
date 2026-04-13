@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Warm Springs',
-  description: 'Warm Springs is a established · mixed residential · southwest community in Las Vegas, Nevada.',
+  description: 'Warm Springs is a established · mixed residential · southwest community in Las Vegas, Nevada (ZIP 89148), established in 1996 by Various Builders, spanning ~900 acres. Home prices range from $350K–$650K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.06, longitude: -115.24 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasWarmspringsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Warm Springs area is a well-established residential corridor in southwest Las Vegas, centered along Warm Springs Road between Durango Drive and Las Vegas Boulevard South. Named for the historic warm springs that once flowed in the area, this broad neighborhood encompasses dozens of subdivisions built between the mid-1990s and mid-2000s, offering a diverse mix of single-family homes, townhomes, and condominiums at price points between $350,000 and $650,000.</p>
+                  <p>Warm Springs is a established · mixed residential · southwest community in Las Vegas, Nevada (ZIP 89148/89113), established in 1996, developed by Various Builders, spanning ~900 acres. The Warm Springs area is a well-established residential corridor in southwest Las Vegas, centered along Warm Springs Road between Durango Drive and Las Vegas Boulevard South. Named for the historic warm springs that once flowed in the area, this broad neighborhood encompasses dozens of subdivisions built between the mid-1990s and mid-2000s, offering a diverse mix of single-family homes, townhomes, and condominiums at price points between $350,000 and $650,000.</p>
                   <p>The Warm Springs corridor occupies a strategic position in the southwest valley with excellent access to I-215 and I-15, placing the Strip approximately 15 minutes away and Harry Reid Airport within 20 minutes. The area is flanked by commercial corridors along Durango Drive and Rainbow Boulevard, providing abundant grocery, dining, medical, and retail options. The newer commercial development along the I-215 corridor has added significant convenience in recent years.</p>
                   <p>Housing stock in the Warm Springs area ranges from approximately 1,200-square-foot attached products to 3,200-square-foot single-family homes on standard lots. The architectural character is typical of the Las Vegas building boom era — stucco, tile roofs, desert landscaping — with some newer infill projects bringing contemporary design. Many neighborhoods feature community pools, pocket parks, and sidewalk connectivity.</p>
                   <p>Warm Springs appeals to a broad buyer base including families, professionals, commuters, and investors. The combination of central southwest location, freeway access, diverse housing options, and moderate pricing makes it one of the more practical residential areas in the valley. For buyers who want to be close to everything without paying master-planned community premiums, Warm Springs delivers a compelling balance of value and convenience.</p>

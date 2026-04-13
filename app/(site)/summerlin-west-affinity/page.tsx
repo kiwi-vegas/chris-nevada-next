@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Affinity by Taylor Morrison',
-  description: 'Affinity by Taylor Morrison is a new construction · master-planned community in Las Vegas, Nevada.',
+  description: 'Affinity by Taylor Morrison is a new construction · master-planned community in Las Vegas, Nevada (ZIP 89138), established in 2019 by Taylor Morrison, spanning ~60 acres. Home prices range from $500K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.188, longitude: -115.348 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function SummerlinWestAffinityPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Affinity by Taylor Morrison is one of the most popular new-construction neighborhoods in Summerlin West, delivering modern desert-contemporary architecture, energy-efficient construction, and the full Summerlin lifestyle at price points that represent genuine value within the master plan. Located in the western expansion of Summerlin, Affinity offers brand-new and nearly-new homes with contemporary floor plans, smart-home technology, and proximity to Red Rock Canyon.</p>
+                  <p>Affinity by Taylor Morrison is a new construction · master-planned community within Summerlin West in Las Vegas, Nevada (ZIP 89138), established in 2019, spanning ~60 acres, with 300+ homes. Affinity by Taylor Morrison is one of the most popular new-construction neighborhoods in Summerlin West, delivering modern desert-contemporary architecture, energy-efficient construction, and the full Summerlin lifestyle at price points that represent genuine value within the master plan. Located in the western expansion of Summerlin, Affinity offers brand-new and nearly-new homes with contemporary floor plans, smart-home technology, and proximity to Red Rock Canyon.</p>
                   <p>Taylor Morrison, one of the nation's top five homebuilders, designed Affinity with the modern buyer in mind. Homes range from approximately $500,000 to $800,000, with floor plans spanning 1,800 to 3,500 square feet. Standard features include quartz countertops, modern cabinetry, energy-efficient windows, tankless water heaters, and pre-wired smart-home systems. Open-concept great rooms, large kitchen islands, and seamless indoor-outdoor living are hallmarks of the Affinity designs.</p>
                   <p>Affinity's location within Summerlin West provides access to the full suite of Summerlin amenities — over 200 miles of trails, award-winning parks, top-rated schools, and the retail and dining hub of Downtown Summerlin with its 125+ shops and restaurants. The proximity to Red Rock Canyon National Conservation Area means residents can be hiking, rock climbing, or driving the scenic loop within 10 minutes.</p>
                   <p>For buyers who want new construction in Summerlin without paying guard-gated or luxury-tier prices, Affinity delivers. The Taylor Morrison brand carries weight in the Las Vegas market for build quality and warranty support, and the community's position in Summerlin West means buyers are purchasing in the most active growth corridor within the valley's most prestigious master plan.</p>

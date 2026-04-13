@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Green Valley Highlands',
-  description: 'Green Valley Highlands is a established · premium subdivision community in Henderson, Nevada.',
+  description: 'Green Valley Highlands is a established · premium subdivision community in Henderson, Nevada (ZIP 89052), established in 1998 by American Nevada Corporation / Various, spanning ~400 acres. Home prices range from $500K–$1M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.035, longitude: -115.07 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },

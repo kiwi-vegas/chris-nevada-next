@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Spring Valley South',
-  description: 'Spring Valley South is a established · family · central community in Las Vegas, Nevada.',
+  description: 'Spring Valley South is a established · family · central community in Las Vegas, Nevada (ZIP 89147), established in 1992 by Various Builders, spanning ~800 acres. Home prices range from $350K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.085, longitude: -115.23 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89147', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasSpringValleySouthPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Spring Valley South is the southern portion of the Spring Valley census-designated place in Las Vegas, encompassing the residential neighborhoods south of Flamingo Road between Rainbow Boulevard and Durango Drive. This well-established area offers a diverse mix of single-family homes, townhomes, and condominiums at price points between $350,000 and $700,000, making it one of the most practical residential areas in the central-southwest Las Vegas Valley.</p>
+                  <p>Spring Valley South is a established · family · central community within Spring Valley in Las Vegas, Nevada (ZIP 89147/89148), established in 1992, developed by Various Builders, spanning ~800 acres. Spring Valley South is the southern portion of the Spring Valley census-designated place in Las Vegas, encompassing the residential neighborhoods south of Flamingo Road between Rainbow Boulevard and Durango Drive. This well-established area offers a diverse mix of single-family homes, townhomes, and condominiums at price points between $350,000 and $700,000, making it one of the most practical residential areas in the central-southwest Las Vegas Valley.</p>
                   <p>Developed primarily between 1992 and 2008, Spring Valley South features housing stock that ranges from compact 1,400-square-foot starter homes to spacious 3,500-square-foot family estates. The area is characterized by wide, well-maintained streets, established desert landscaping, mature trees, and a mix of builder styles that give each pocket neighborhood its own identity. Many neighborhoods feature community pools, pocket parks, and HOA-maintained common areas.</p>
                   <p>The area's central-southwest location is a major draw for buyers. Spring Valley South provides quick access to multiple freeways including I-215 and I-15, placing the Strip approximately 12-15 minutes away. The surrounding commercial corridors along Rainbow Boulevard, Durango Drive, and Flamingo Road offer abundant grocery, dining, medical, and retail options. Desert Breeze Park, one of Las Vegas' best community parks, sits within the area.</p>
                   <p>For buyers seeking central Las Vegas living with moderate pricing, diverse housing options, and excellent access to everything the valley offers, Spring Valley South delivers strong fundamentals. The area attracts families, professionals, hospitality workers, and investors who value a proven neighborhood with convenient commutes, established community character, and room to grow.</p>

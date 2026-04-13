@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Meadows Village',
-  description: 'Meadows Village is a established suburban · family community in Las Vegas, Nevada.',
+  description: 'Meadows Village is a established suburban · family community in Las Vegas, Nevada (ZIP 89107), established in 1970s, spanning ~4 sq mi. Home prices range from $300K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.158, longitude: -115.226 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89107', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasMeadowsVillagePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Meadows Village is a well-established residential neighborhood in the west-central Las Vegas Valley, situated between Charleston Boulevard and Sahara Avenue and centered roughly along Valley View Boulevard and Decatur. The area takes its name from The Meadows Mall, the valley's first major indoor shopping center, which has served as a commercial anchor since 1978 and continues to draw retail activity to the corridor.</p>
+                  <p>Meadows Village is a established suburban · family community in Las Vegas, Nevada (ZIP 89107/89146), established in 1970s, spanning ~4 sq mi, with 8,000+ homes. Meadows Village is a well-established residential neighborhood in the west-central Las Vegas Valley, situated between Charleston Boulevard and Sahara Avenue and centered roughly along Valley View Boulevard and Decatur. The area takes its name from The Meadows Mall, the valley's first major indoor shopping center, which has served as a commercial anchor since 1978 and continues to draw retail activity to the corridor.</p>
                   <p>Homes in Meadows Village were built primarily in the 1970s through 1990s, offering a mix of single-story ranch homes, two-story residences, and scattered condo and townhome developments. The neighborhood's appeal lies in its central location, mature landscaping, and price point that remains accessible to first-time buyers, young families, and investors. Properties range from approximately $300,000 for smaller homes to $600,000 for larger renovated residences.</p>
                   <p>The area's greatest asset is arguably its connectivity. Meadows Village sits at the intersection of several major arterials and is minutes from both I-15 and US-95, providing fast commutes to the Strip, downtown, Summerlin, and the northwest valley. The commercial infrastructure along Valley View, Decatur, and Charleston is robust, with grocery stores, medical offices, restaurants, and fitness facilities within walking or short driving distance of most homes.</p>
                   <p>For buyers seeking value in a proven location, Meadows Village delivers. The mature trees, quiet interior streets, and neighborhood character provide a residential feel despite the urban context. The nearby Meadows School, one of Nevada's most prestigious private schools, adds educational prestige to the area. Renovation activity has increased significantly in recent years as buyers recognize the long-term upside of a central Las Vegas location at below-market prices.</p>

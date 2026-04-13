@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Panorama Towers',
-  description: 'Panorama Towers is a high-rise · luxury · strip-adjacent community in Las Vegas, Nevada.',
+  description: 'Panorama Towers is a high-rise · luxury · strip-adjacent community in Las Vegas, Nevada (ZIP 89158), established in 2006 by Panorama Group / Laurence Hallier, spanning ~6 acres. Home prices range from $300K–$2M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.108, longitude: -115.181 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89158', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function PanoramaTowersPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Panorama Towers is a twin-tower luxury high-rise condominium community located on Dean Martin Drive, directly adjacent to the Las Vegas Strip and CityCenter. Completed in phases between 2006 and 2008, the two 33-story towers contain approximately 650 residences and offer some of the most compelling high-rise living in the Las Vegas corridor, combining spacious floor plans with panoramic Strip, mountain, and valley views.</p>
+                  <p>Panorama Towers is a high-rise · luxury · strip-adjacent community in Las Vegas, Nevada (ZIP 89158), developed by Panorama Group / Laurence Hallier, spanning ~6 acres, with ~650 homes. Panorama Towers is a twin-tower luxury high-rise condominium community located on Dean Martin Drive, directly adjacent to the Las Vegas Strip and CityCenter. Completed in phases between 2006 and 2008, the two 33-story towers contain approximately 650 residences and offer some of the most compelling high-rise living in the Las Vegas corridor, combining spacious floor plans with panoramic Strip, mountain, and valley views.</p>
                   <p>Panorama Towers was one of the first purpose-built luxury residential high-rises in the Las Vegas market, and it set the standard for amenity-rich condo living near the Strip. Residences range from approximately $300,000 for one-bedroom units to over $2 million for penthouses and combined corner units with sweeping views. Floor plans are notably generous compared to many Strip and Strip-adjacent towers, with two- and three-bedroom units offering substantial living space.</p>
                   <p>The complex features two resort-style pool decks, a fully equipped fitness center, 24-hour concierge and security, valet parking, tennis courts, a business center, and private resident lounges. The gated entry and dedicated residential parking provide a sense of privacy and security, while the location on Dean Martin Drive offers direct access to the Strip, CityCenter, T-Mobile Arena, and the I-15 freeway.</p>
                   <p>For buyers seeking the convenience of Strip-adjacent living with more space and value than on-Strip towers like Veer or the Waldorf Astoria, Panorama Towers has been a go-to address for over 15 years. Its established reputation, strong HOA reserves, and large floor plans continue to attract both primary residents and investors looking for a proven high-rise community in the heart of the Las Vegas corridor.</p>

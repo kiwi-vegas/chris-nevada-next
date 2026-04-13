@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Seven Hills',
-  description: 'Seven Hills is a guard-gated · golf · luxury community in Henderson, Nevada.',
+  description: 'Seven Hills is a guard-gated · golf · luxury community in Henderson, Nevada (ZIP 89052), established in 1996 by American Nevada Corporation, spanning 1,300 acres. Home prices range from $500K–$7M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.007, longitude: -115.09 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function SevenHillsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Seven Hills is one of Henderson's most prestigious guard-gated communities, spanning 1,300 acres across an elevated hillside position that delivers some of the most spectacular views in the Las Vegas Valley. Named for the seven prominent knolls that define its rolling terrain, the community offers a compelling mix of luxury living, championship golf, and panoramic Strip and mountain vistas at price points ranging from $500,000 to over $7 million.</p>
+                  <p>Seven Hills is a guard-gated · golf · luxury community in Henderson, Nevada (ZIP 89052), established in 1996, developed by American Nevada Corporation, with 2,800+ homes. Seven Hills is one of Henderson's most prestigious guard-gated communities, spanning 1,300 acres across an elevated hillside position that delivers some of the most spectacular views in the Las Vegas Valley. Named for the seven prominent knolls that define its rolling terrain, the community offers a compelling mix of luxury living, championship golf, and panoramic Strip and mountain vistas at price points ranging from $500,000 to over $7 million.</p>
                   <p>The centerpiece of Seven Hills is Rio Secco Golf Club, a Rees Jones-designed 18-hole championship course that has hosted multiple PGA Tour and celebrity events. The course plays through dramatic desert terrain with elevation changes that showcase sweeping views of the Las Vegas Strip, the Spring Mountains, and the entire valley. The Rio Secco clubhouse and the Butch Harmon School of Golf — one of the most renowned golf instruction facilities in the world — add prestige to the community's golf identity.</p>
                   <p>Homes in Seven Hills range from approximately $500,000 for well-maintained resale homes in the community's production neighborhoods to over $7 million for custom estates on premium lots with direct golf course and Strip views. The ultra-luxury enclave of Terracina at Seven Hills, guard-gated within the already guard-gated community, features custom estates from $2 million to $7 million. Builders include Toll Brothers, Pulte, and custom architects.</p>
                   <p>Seven Hills' central Henderson location provides excellent connectivity. The I-215 beltway and Eastern Avenue are minutes away, offering direct corridors to the Strip, Harry Reid Airport, and the valley's best shopping and dining. Green Valley Ranch Resort is a 10-minute drive, and the Galleria at Sunset is nearby. For buyers who want guard-gated security, championship golf, dramatic views, and Henderson's safety at a more accessible price point than MacDonald Highlands or Ascaya, Seven Hills is the answer.</p>

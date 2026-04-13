@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Willows',
-  description: 'The Willows is a master-planned · family community in Las Vegas, Nevada.',
+  description: 'The Willows is a master-planned · family community in Las Vegas, Nevada (ZIP 89134), established in 1998 by Howard Hughes Corporation, spanning 400 acres. Home prices range from $450K–$750K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.215, longitude: -115.285 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinTheWillowsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Willows is a well-established Summerlin North village known for its family-friendly character, mature landscaping, and strong sense of community. Developed beginning in 1998 by the Howard Hughes Corporation, The Willows was designed as a classic residential village with parks, walking trails, and the quiet, tree-lined streets that define the best of Summerlin's established neighborhoods.</p>
+                  <p>The Willows is a master-planned · family community within Summerlin in Las Vegas, Nevada (ZIP 89134), spanning 400 acres, with 2,500+ homes, where home prices range from $450K–$750K. The Willows is a well-established Summerlin North village known for its family-friendly character, mature landscaping, and strong sense of community. Developed beginning in 1998 by the Howard Hughes Corporation, The Willows was designed as a classic residential village with parks, walking trails, and the quiet, tree-lined streets that define the best of Summerlin's established neighborhoods.</p>
                   <p>Homes in The Willows range from approximately $450,000 for smaller single-family homes to around $750,000 for larger, updated properties on premium lots. The architectural style is predominantly Mediterranean and transitional, consistent with the late-1990s Summerlin aesthetic. Many homes have been significantly updated with modern kitchens, new flooring, energy-efficient windows, and desert landscaping. The village offers a mix of single-family homes and attached products, providing options for various household sizes and budgets.</p>
                   <p>The Willows benefits from a central position in Summerlin North with convenient access to multiple amenities. Downtown Summerlin is approximately 10 minutes south, the 215 Beltway is minutes east for valley-wide commuting, and Red Rock Canyon is approximately 15 minutes to the west. The village is also close to Summerlin's community centers, library, and recreation facilities.</p>
                   <p>For buyers seeking an established Summerlin neighborhood with mature trees, community parks, strong schools, and a genuine neighborhood feel, The Willows represents one of the most reliable values in the master plan. The village's consistent appeal with families has created a stable, close-knit community that many residents call home for decades.</p>

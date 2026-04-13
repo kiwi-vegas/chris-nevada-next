@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Skye Hills',
-  description: 'Skye Hills is a master-planned · new construction community in North Las Vegas, Nevada.',
+  description: 'Skye Hills is a master-planned · new construction community in North Las Vegas, Nevada (ZIP 89166), established in 2019 by Various Builders, spanning ~600 acres. Home prices range from $450K–$750K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.3, longitude: -115.29 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SkyeHillsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Skye Hills is a newer master-planned community in northwest Las Vegas, positioned at the scenic base of the Sheep Range foothills. The community delivers contemporary new-construction homes with dramatic mountain views, modern amenities, and the open-space character that defines the northwest Las Vegas lifestyle. Skye Hills has emerged as a strong alternative to nearby Skye Canyon for buyers seeking newer construction with mountain proximity at an accessible price point.</p>
+                  <p>Skye Hills is a master-planned · new construction community in North Las Vegas, Nevada (ZIP 89166), established in 2019, developed by Various Builders, spanning ~600 acres. Skye Hills is a newer master-planned community in northwest Las Vegas, positioned at the scenic base of the Sheep Range foothills. The community delivers contemporary new-construction homes with dramatic mountain views, modern amenities, and the open-space character that defines the northwest Las Vegas lifestyle. Skye Hills has emerged as a strong alternative to nearby Skye Canyon for buyers seeking newer construction with mountain proximity at an accessible price point.</p>
                   <p>Homes in Skye Hills range from approximately 1,600 to 3,800 square feet, built by a mix of national and regional builders including KB Home, Lennar, and Century Communities. Architecture is contemporary desert — clean lines, flat or low-profile rooflines, open floor plans, and earth-toned exteriors that blend with the natural terrain. Most homes feature energy-efficient construction, smart-home technology, and outdoor living spaces designed for the Las Vegas climate.</p>
                   <p>The community features a central amenity area with a pool, parks, playgrounds, and a network of walking trails that connect neighborhoods and provide views of the surrounding mountains. The northwest Las Vegas location provides relatively easy access to outdoor recreation including Red Rock Canyon, Floyd Lamb Park, Tule Springs Fossil Beds National Monument, and the vast BLM desert lands north of the valley.</p>
                   <p>Skye Hills appeals to families, young professionals, and active adults seeking newer construction with mountain views at prices significantly below Summerlin. The US-95 corridor provides a direct commute to downtown Las Vegas and the Strip, while the growing retail and dining along Centennial Parkway and the 215 Beltway corridor reduces the need for long shopping trips. The community's continued buildout and the northwest's population growth support a positive long-term investment outlook.</p>

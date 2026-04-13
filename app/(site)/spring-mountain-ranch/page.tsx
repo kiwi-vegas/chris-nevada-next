@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Spring Mountain Ranch',
-  description: 'Spring Mountain Ranch is a suburban · family community in Las Vegas, Nevada.',
+  description: 'Spring Mountain Ranch is a suburban · family community in Las Vegas, Nevada (ZIP 89148), established in 2003 by Various Builders, spanning ~600 acres. Home prices range from $500K–$1.2M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.055, longitude: -115.28 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SpringMountainRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Spring Mountain Ranch is a well-established residential community in southwest Las Vegas that offers a compelling blend of quality construction, mountain views, and accessibility at price points between the more affordable Mountains Edge and the premium Southern Highlands. Named for the nearby Spring Mountain Ranch State Park, the community captures the spirit of desert living with homes that range from upscale family residences to executive-caliber estates.</p>
+                  <p>Spring Mountain Ranch is a suburban · family community in Las Vegas, Nevada (ZIP 89148/89113), established in 2003, developed by Various Builders, spanning ~600 acres. Spring Mountain Ranch is a well-established residential community in southwest Las Vegas that offers a compelling blend of quality construction, mountain views, and accessibility at price points between the more affordable Mountains Edge and the premium Southern Highlands. Named for the nearby Spring Mountain Ranch State Park, the community captures the spirit of desert living with homes that range from upscale family residences to executive-caliber estates.</p>
                   <p>Homes in Spring Mountain Ranch range from approximately $500,000 to $1.2 million, with most properties built between 2003 and 2015 by a variety of respected builders. Floor plans typically range from 2,200 to 4,500 square feet, with architecture spanning Mediterranean, Tuscan, and transitional desert styles. Many homes feature upgraded finishes including granite or quartz countertops, travertine or hardwood flooring, and resort-style backyards with pools, spas, and outdoor kitchens.</p>
                   <p>The community's southwest valley location provides excellent mountain views toward the Spring Mountains and Red Rock Canyon to the west and northwest. The elevated terrain on the community's western side offers premium view lots that command a significant premium. Spring Mountain Ranch State Park is a short drive away, offering hiking, picnicking, and scenic desert landscapes within a state-managed preserve.</p>
                   <p>Spring Mountain Ranch sits near the intersection of several major corridors including Durango Drive and Blue Diamond Road, providing quick access to retail, dining, and medical services. The I-215 beltway and I-15 are both within a 10-minute drive, making commutes to the Strip, airport, and other valley destinations convenient. For buyers seeking quality homes with mountain views in the southwest valley at a price point below the guard-gated communities, Spring Mountain Ranch is an outstanding option.</p>

@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Fountains',
-  description: 'The Fountains is a guard-gated · luxury community in Henderson, Nevada.',
+  description: 'The Fountains is a guard-gated · luxury community in Henderson, Nevada (ZIP 89074), established in 1995 by American Nevada Corporation, spanning 250 acres. Home prices range from $800K–$3M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.05, longitude: -115.072 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89074', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -311,7 +311,7 @@ export default async function TheFountainsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Fountains is a guard-gated luxury community in Henderson's Green Valley, known for its spacious custom and semi-custom homes, mature landscaping, and one of the most prestigious residential addresses in the Green Valley corridor. Developed in the mid-1990s, The Fountains was conceived as a premier residential enclave for affluent families, executives, and professionals seeking guard-gated privacy and large-lot estate living within a convenient Henderson location.</p>
+                  <p>The Fountains is a guard-gated · luxury community within Green Valley in Henderson, Nevada (ZIP 89074), established in 1995, developed by American Nevada Corporation, spanning 250 acres. The Fountains is a guard-gated luxury community in Henderson's Green Valley, known for its spacious custom and semi-custom homes, mature landscaping, and one of the most prestigious residential addresses in the Green Valley corridor. Developed in the mid-1990s, The Fountains was conceived as a premier residential enclave for affluent families, executives, and professionals seeking guard-gated privacy and large-lot estate living within a convenient Henderson location.</p>
                   <p>Homes in The Fountains range from approximately $800,000 for smaller semi-custom resales to $3 million for expansive custom estates on premium corner or cul-de-sac lots. The community's lot sizes are among the most generous in Henderson's guard-gated communities — many homes sit on quarter-acre to half-acre parcels, allowing for resort-style pools, outdoor living rooms, motor courts, and guest casitas. Homes typically range from 3,000 to 7,000+ square feet.</p>
                   <p>The architectural character of The Fountains blends Mediterranean, Tuscan, and desert contemporary styles, with the newer custom builds trending toward modern clean-line design with floor-to-ceiling glass and indoor-outdoor living. The community's namesake fountains, manicured entrance boulevard, and mature landscape create a resort-like atmosphere that begins the moment you pass through the guard gate.</p>
                   <p>The Fountains benefits from a central Henderson location near the intersection of Eastern Avenue and Paseo Verde Parkway. The District at Green Valley Ranch, Paseo Verde Park, Henderson Hospital, and multiple dining and retail options are all within a short drive. Harry Reid International Airport and the Las Vegas Strip are approximately 15 minutes away. For luxury buyers who want large-lot estate living with guard-gated security in a proven, established Henderson location, The Fountains is one of the Green Valley area's premier choices.</p>

@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Cheyenne Corridor',
-  description: 'Cheyenne Corridor is a suburban · mixed community in Las Vegas, Nevada.',
+  description: 'Cheyenne Corridor is a suburban · mixed community in Las Vegas, Nevada (ZIP 89129), established in 1990s, spanning ~8 sq mi. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.222, longitude: -115.26 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89129', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasCheyenneCorridorPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Cheyenne Corridor is a well-positioned residential area in the northwest Las Vegas Valley, stretching along Cheyenne Avenue from the US-95 interchange westward toward the foothills. The corridor spans established neighborhoods from the 1990s through newer construction from the 2010s, creating a diverse residential landscape with a strong suburban character and improving commercial infrastructure.</p>
+                  <p>Cheyenne Corridor is a suburban · mixed community in Las Vegas, Nevada (ZIP 89129/89131), spanning ~8 sq mi, with 12,000+ homes, where home prices range from $350K–$600K. The Cheyenne Corridor is a well-positioned residential area in the northwest Las Vegas Valley, stretching along Cheyenne Avenue from the US-95 interchange westward toward the foothills. The corridor spans established neighborhoods from the 1990s through newer construction from the 2010s, creating a diverse residential landscape with a strong suburban character and improving commercial infrastructure.</p>
                   <p>The area's primary appeal is its balance of location and value. Situated between the established communities of Centennial Hills to the north and the Summerlin transition zone to the south, the Cheyenne Corridor benefits from the commercial infrastructure of both areas. Major shopping centers, grocery stores, medical offices, and dining establishments line Cheyenne Avenue and intersecting arterials like Durango Drive, Fort Apache Road, and Buffalo Drive.</p>
                   <p>Homes along the Cheyenne Corridor range from approximately $350,000 for 1990s-era single-family homes to $600,000 for newer or larger residences in premium sections. The housing stock includes a healthy mix of single-story and two-story single-family homes, townhomes, and some condo developments. Newer construction on the western end near the foothills commands the highest prices, while established sections closer to US-95 offer more affordable entry points.</p>
                   <p>The corridor's freeway access is a significant advantage. The US-95 interchange at Cheyenne provides fast commuting to downtown Las Vegas, the Strip, and Henderson, while the 215 Beltway connects to Summerlin and the western valley. For buyers seeking a well-connected northwest valley location with moderate pricing and established neighborhood infrastructure, the Cheyenne Corridor delivers consistent value.</p>

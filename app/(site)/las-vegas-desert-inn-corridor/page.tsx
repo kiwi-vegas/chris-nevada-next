@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Desert Inn Corridor',
-  description: 'Desert Inn Corridor is a urban · mixed-use corridor community in Las Vegas, Nevada.',
+  description: 'Desert Inn Corridor is a urban · mixed-use corridor community in Las Vegas, Nevada (ZIP 89109), established in 1950s, spanning ~8 sq mi. Home prices range from $300K–$1M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.128, longitude: -115.175 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89109', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasDesertInnCorridorPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Desert Inn Corridor is one of the most dynamic and diverse residential corridors in the Las Vegas Valley, stretching along Desert Inn Road from the eastern edge of Summerlin through the heart of the city to the areas east of the Strip. This east-west arterial connects some of the valley's most iconic neighborhoods, from the legacy estates of the Las Vegas Country Club and Scotch 80s to the mid-century modern pockets near the Convention Center and the growing condo market near the Strip.</p>
+                  <p>Desert Inn Corridor is a urban · mixed-use corridor community in Las Vegas, Nevada (ZIP 89109/89169), established in 1950s, spanning ~8 sq mi, with 12,000+ homes. The Desert Inn Corridor is one of the most dynamic and diverse residential corridors in the Las Vegas Valley, stretching along Desert Inn Road from the eastern edge of Summerlin through the heart of the city to the areas east of the Strip. This east-west arterial connects some of the valley's most iconic neighborhoods, from the legacy estates of the Las Vegas Country Club and Scotch 80s to the mid-century modern pockets near the Convention Center and the growing condo market near the Strip.</p>
                   <p>The corridor's western end intersects with some of the most desirable addresses in Las Vegas, including sections of Spring Valley, Peccole Ranch, and the transition zone into Summerlin. Moving east, the corridor passes through established single-family neighborhoods built in the 1960s through 1990s, many of which offer mature landscaping, larger lots, and architectural character that newer tract developments cannot replicate. The eastern section near the Strip features high-rise condos, resort-adjacent residences, and walkable urban living.</p>
                   <p>Pricing along the Desert Inn Corridor varies dramatically by location. Western sections near Summerlin command $500K to $800K for single-family homes, while mid-corridor neighborhoods offer strong value in the $300K to $500K range. East of I-15 near the Strip, luxury condos and high-rise units range from $400K to well over $1 million. This diversity makes the corridor appealing to a wide spectrum of buyers, from first-timers to luxury investors.</p>
                   <p>The corridor's commercial infrastructure is exceptional. Desert Inn Road provides direct access to major shopping centers, medical facilities, the Las Vegas Convention Center, and the Strip itself. The Las Vegas Country Club, the Desert Inn golf course site (now Wynn Golf Club), and several parks line the route, providing green space and recreation in an otherwise urban environment.</p>

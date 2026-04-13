@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Vistas',
-  description: 'The Vistas is a master-planned · guard-gated community in Las Vegas, Nevada.',
+  description: 'The Vistas is a master-planned · guard-gated community in Las Vegas, Nevada (ZIP 89134), established in 1996 by Howard Hughes Corporation, spanning 600 acres. Home prices range from $450K–$1.5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.205, longitude: -115.312 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function SummerlinTheVistasPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Vistas is one of Summerlin North's premier villages, offering an impressive range of housing from family-oriented single-family homes to luxurious custom estates within the guard-gated Vineyards enclave. Developed beginning in 1996 by the Howard Hughes Corporation, The Vistas quickly established itself as one of the most desirable addresses in Summerlin North, thanks to its elevated position, mountain views, and diverse neighborhood offerings.</p>
+                  <p>The Vistas is a master-planned · guard-gated community within Summerlin in Las Vegas, Nevada (ZIP 89134/89144), spanning 600 acres, with 3,000+ homes, where home prices range from $450K–$1.5M+. The Vistas is one of Summerlin North's premier villages, offering an impressive range of housing from family-oriented single-family homes to luxurious custom estates within the guard-gated Vineyards enclave. Developed beginning in 1996 by the Howard Hughes Corporation, The Vistas quickly established itself as one of the most desirable addresses in Summerlin North, thanks to its elevated position, mountain views, and diverse neighborhood offerings.</p>
                   <p>Homes in The Vistas range from approximately $450,000 for well-maintained single-family homes in the village's core neighborhoods to over $1.5 million for premium properties in The Vineyards — the guard-gated luxury enclave that anchors the western portion of the village. The Vineyards features custom and semi-custom homes on large lots with mountain views, staffed guard-gate security, and some of the most expansive properties in Summerlin North.</p>
                   <p>The village's western position provides many homes with views of the Spring Mountains and Red Rock Canyon, particularly in the elevated neighborhoods along the village's western boundary. Mature landscaping throughout The Vistas creates a lush, established feel with tree-lined streets, manicured common areas, and the kind of neighborhood character that only develops over decades.</p>
                   <p>The Vistas is ideally positioned for access to both Downtown Summerlin (approximately 10 minutes) and Red Rock Canyon (approximately 12 minutes). The 215 Beltway and Summerlin Parkway provide quick connections to the rest of the valley. For buyers who want the combination of established neighborhood character, mountain views, and the option to live within a guard-gated enclave, The Vistas is one of the most compelling villages in Summerlin.</p>

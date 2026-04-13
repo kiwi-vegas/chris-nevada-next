@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Skye Canyon',
-  description: 'Skye Canyon is a master-planned · new construction community in North Las Vegas, Nevada.',
+  description: 'Skye Canyon is a master-planned · new construction community in North Las Vegas, Nevada (ZIP 89166), established in 2015 by Olympia Companies, spanning 1,700 acres. Home prices range from $400K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.318, longitude: -115.336 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SkyeCanyonPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Skye Canyon is one of the newest and most innovative master-planned communities in the Las Vegas Valley. Developed by Olympia Companies beginning in 2015, the 1,700-acre community sits at the base of the Spring Mountains in northwest Las Vegas, offering residents direct access to mountain recreation, sweeping valley views, and a lifestyle center that has become one of the most popular gathering spots in the region.</p>
+                  <p>Skye Canyon is a master-planned · new construction community in North Las Vegas, Nevada (ZIP 89166), spanning 1,700 acres, with 5,000+ homes, where home prices range from $400K–$800K. Skye Canyon is one of the newest and most innovative master-planned communities in the Las Vegas Valley. Developed by Olympia Companies beginning in 2015, the 1,700-acre community sits at the base of the Spring Mountains in northwest Las Vegas, offering residents direct access to mountain recreation, sweeping valley views, and a lifestyle center that has become one of the most popular gathering spots in the region.</p>
                   <p>The Skye Center is the community's flagship amenity — a 7,500-square-foot recreation facility featuring resort-style pools, a fitness center, outdoor event lawns, sports courts, and a commercial village with restaurants and shops. Skye Canyon Park, adjacent to the center, adds playgrounds, splash pads, basketball and tennis courts, and walking paths. The community hosts regular events including outdoor movie nights, farmers markets, fitness classes, and holiday celebrations.</p>
                   <p>What distinguishes Skye Canyon from older master-planned communities is its emphasis on outdoor adventure and mountain access. The community is located at the gateway to the Lee Canyon ski area, Mount Charleston recreation, and the Kyle Canyon hiking corridor. Residents can be on mountain trails in 15 minutes — a proximity that no other major Las Vegas community can match. The elevated northwest position also provides some of the best sunrise and valley views in the metro.</p>
                   <p>Homes in Skye Canyon range from approximately $400,000 to $800,000, with active new construction from builders including Shea Homes, Woodside Homes, Century Communities, Lennar, and Taylor Morrison. Floor plans range from 1,600 to 4,000+ square feet with contemporary desert-inspired architecture and energy-efficient construction. The community continues to expand with new phases and builder programs, making it one of the few places in the valley where buyers can purchase brand-new construction in a well-established master plan.</p>

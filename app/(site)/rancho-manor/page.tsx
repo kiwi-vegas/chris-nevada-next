@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Rancho Manor',
-  description: 'Rancho Manor is a established · classic neighborhood community in Las Vegas, Nevada.',
+  description: 'Rancho Manor is a established · classic neighborhood community in Las Vegas, Nevada (ZIP 89107), established in 1950s–1960s by Various Private Developers, spanning ~150 acres. Home prices range from $400K–$1M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.165, longitude: -115.21 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89107', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function RanchoManorPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Rancho Manor is one of Las Vegas' most charming and established neighborhoods, occupying approximately 150 acres in the central-west area of the city near Rancho Drive and Charleston Boulevard. Developed primarily in the 1950s and 1960s, the neighborhood features generous lot sizes, mature trees, and a relaxed residential character that reflects the era before master-planned communities became the Las Vegas norm.</p>
+                  <p>Rancho Manor is a established · classic neighborhood community in Las Vegas, Nevada (ZIP 89107), established in 1950s–1960s, developed by Various Private Developers, spanning ~150 acres. Rancho Manor is one of Las Vegas' most charming and established neighborhoods, occupying approximately 150 acres in the central-west area of the city near Rancho Drive and Charleston Boulevard. Developed primarily in the 1950s and 1960s, the neighborhood features generous lot sizes, mature trees, and a relaxed residential character that reflects the era before master-planned communities became the Las Vegas norm.</p>
                   <p>Homes in Rancho Manor range from approximately $400,000 for well-maintained original ranch-style homes to over $1 million for fully renovated or expanded properties on larger lots. The neighborhood's lot sizes — typically a quarter-acre to half-acre — are significantly larger than what you'll find in most modern Las Vegas subdivisions, and many properties feature detached garages, RV gates, workshops, and room for additions.</p>
                   <p>The neighborhood's central location is a major draw. Rancho Manor sits within minutes of the Summerlin Parkway, Downtown Summerlin, the Las Vegas Strip, and the burgeoning Arts District. Grocery stores, restaurants, and daily services are all within a short drive or bike ride. The area has seen increasing interest from young professionals and creatives drawn to the neighborhood's character, affordability relative to nearby guard-gated communities, and renovation potential.</p>
                   <p>While Rancho Manor is not a guard-gated or HOA-governed community in the traditional sense, the neighborhood benefits from a strong sense of community among long-term residents and newer arrivals who have invested in thoughtful renovations. For buyers seeking character, generous lot sizes, and a central Las Vegas location at a fraction of the cost of neighboring luxury enclaves like Rancho Bel Air and Rancho Circle, Rancho Manor offers exceptional value and upside potential.</p>

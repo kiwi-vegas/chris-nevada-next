@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Elkhorn',
-  description: 'Elkhorn is a suburban · established community in Las Vegas, Nevada.',
+  description: 'Elkhorn is a suburban · established community in Las Vegas, Nevada (ZIP 89129), established in 1990s, spanning ~5 sq mi. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.24, longitude: -115.28 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89129', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasElkhornPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Elkhorn area is a well-established residential corridor in the northwest Las Vegas Valley, centered along Elkhorn Road between the 215 Beltway and the northern desert foothills. The area developed primarily in the 1990s and 2000s, resulting in mature neighborhoods with proven infrastructure, established landscaping, and a family-oriented suburban character.</p>
+                  <p>Elkhorn is a suburban · established community in Las Vegas, Nevada (ZIP 89129/89131), spanning ~5 sq mi, with 8,000+ homes, where home prices range from $350K–$600K. The Elkhorn area is a well-established residential corridor in the northwest Las Vegas Valley, centered along Elkhorn Road between the 215 Beltway and the northern desert foothills. The area developed primarily in the 1990s and 2000s, resulting in mature neighborhoods with proven infrastructure, established landscaping, and a family-oriented suburban character.</p>
                   <p>Elkhorn Road itself serves as the community's spine, providing a direct north-south route through the area and connecting to major east-west arterials including Cheyenne Avenue, Alexander Road, and the 215 Beltway. The corridor benefits from growing commercial development with grocery stores, restaurants, medical offices, and retail services increasingly lining the route.</p>
                   <p>Homes in the Elkhorn area range from approximately $350,000 for established 1990s construction to $600,000 for larger or newer homes in the western sections near the foothills. The housing stock includes single-family homes in various sizes, with both single-story and two-story options available. Many homes feature the classic Nevada suburban design of the era — stucco exteriors, tile roofing, attached two-car garages, and desert-adapted landscaping.</p>
                   <p>The Elkhorn area is popular with families due to its proximity to multiple CCSD schools, community parks, and the overall safe suburban character of the neighborhoods. The area's elevation provides views of Lone Mountain, the Spring Mountains, and the broader valley, adding scenic value that flat-terrain communities closer to the valley floor cannot offer.</p>

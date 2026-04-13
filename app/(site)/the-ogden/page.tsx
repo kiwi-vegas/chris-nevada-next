@@ -84,7 +84,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Ogden',
-  description: 'The Ogden is a high-rise · urban · downtown community in Las Vegas, Nevada.',
+  description: 'The Ogden is a high-rise · urban · downtown community in Las Vegas, Nevada (ZIP 89101), established in 2008 by Loft Holdings / David Friedman, spanning ~1 acre. Home prices range from $200K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.171, longitude: -115.142 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89101', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -302,7 +302,7 @@ export default async function TheOgdenPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Ogden is a 21-story high-rise condominium tower located in the heart of Downtown Las Vegas, directly above the Fremont East entertainment district. Completed in 2008 and repositioned in the 2010s, The Ogden contains 275 residences and has become one of the most popular urban condo addresses in the city, attracting young professionals, remote workers, and buyers who want a walkable, culturally rich downtown lifestyle.</p>
+                  <p>The Ogden is a high-rise · urban · downtown community in Las Vegas, Nevada (ZIP 89101), developed by Loft Holdings / David Friedman, spanning ~1 acre, where home prices range from $200K–$700K. The Ogden is a 21-story high-rise condominium tower located in the heart of Downtown Las Vegas, directly above the Fremont East entertainment district. Completed in 2008 and repositioned in the 2010s, The Ogden contains 275 residences and has become one of the most popular urban condo addresses in the city, attracting young professionals, remote workers, and buyers who want a walkable, culturally rich downtown lifestyle.</p>
                   <p>Residences at The Ogden range from approximately $200,000 for studios and one-bedrooms to around $700,000 for penthouses and premium corner units with Strip and mountain views. Floor plans are modern and efficient, with clean lines, contemporary finishes, and floor-to-ceiling windows that maximize natural light and views. The building underwent a significant renovation and modernization in the 2010s, resulting in updated common areas, amenities, and unit finishes.</p>
                   <p>The Ogden's amenity package includes a rooftop pool deck and lounge with panoramic views, a fitness center, 24-hour security, controlled building access, resident event spaces, and ground-floor retail. The building's rooftop is one of the most popular social spaces in downtown Las Vegas, offering sweeping views of the Fremont Street Experience, the Strip, and the surrounding mountains.</p>
                   <p>Location is The Ogden's greatest asset. The building sits at the intersection of Ogden Avenue and Las Vegas Boulevard, placing residents within steps of Fremont East's bars and restaurants, Container Park, the Mob Museum, the Arts District, and the Fremont Street Experience. For buyers who want to be at the epicenter of downtown's cultural and culinary renaissance, The Ogden is the most centrally located residential tower in the district.</p>

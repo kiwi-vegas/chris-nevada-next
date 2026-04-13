@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Northwest Las Vegas',
-  description: 'Northwest Las Vegas is a suburban · area hub community in Las Vegas, Nevada.',
+  description: 'Northwest Las Vegas is a suburban · area hub community in Las Vegas, Nevada (ZIP 89129), established in 1990, spanning ~55 sq mi. Home prices range from $350K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.26, longitude: -115.28 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89129', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function NorthwestLasVegasPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Northwest Las Vegas is the growth engine of the Las Vegas Valley — a sprawling corridor that stretches from the US-95/I-215 interchange north to the edge of the Sheep Range foothills and west toward the Spring Mountains. This area encompasses some of the valley's most popular master-planned communities including Centennial Hills, Skye Canyon, Providence, Lone Mountain, and Aliante, along with dozens of smaller neighborhoods that together form one of the most dynamic residential markets in Nevada.</p>
+                  <p>Northwest Las Vegas is a suburban · area hub community in Las Vegas, Nevada (ZIP 89129/89130), established in 1990, spanning ~55 sq mi, with 90,000+ homes. Northwest Las Vegas is the growth engine of the Las Vegas Valley — a sprawling corridor that stretches from the US-95/I-215 interchange north to the edge of the Sheep Range foothills and west toward the Spring Mountains. This area encompasses some of the valley's most popular master-planned communities including Centennial Hills, Skye Canyon, Providence, Lone Mountain, and Aliante, along with dozens of smaller neighborhoods that together form one of the most dynamic residential markets in Nevada.</p>
                   <p>The northwest corridor offers a compelling combination of newer construction, mountain views, growing commercial infrastructure, and family-friendly amenities at price points generally below Summerlin and Henderson. Homes range from the mid-$300,000s for starter properties to $800,000 or more for premium lots with mountain views and custom finishes. Active builders including Lennar, Toll Brothers, Taylor Morrison, and Pulte Homes maintain new-construction communities throughout the area.</p>
                   <p>Infrastructure investment has followed the population boom. The 215 Beltway, US-95, and Centennial Parkway provide efficient commute routes to the Strip, downtown, and Summerlin. Retail hubs along Centennial Parkway, Ann Road, and Aliante Parkway have matured into full-service commercial corridors with grocery, medical, dining, and entertainment options. The 120-acre Centennial Hills Park and Floyd Lamb Park at Tule Springs anchor the area's recreation network.</p>
                   <p>For buyers seeking newer construction, strong school zones, and a northwest Las Vegas address at a meaningful discount to Summerlin, the northwest corridor represents one of the best value propositions in the valley. Continued population growth, limited remaining developable land, and ongoing commercial investment support strong long-term appreciation throughout the area.</p>

@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The District at Green Valley Ranch',
-  description: 'The District at Green Valley Ranch is a mixed-use · urban village community in Henderson, Nevada.',
+  description: 'The District at Green Valley Ranch is a mixed-use · urban village community in Henderson, Nevada (ZIP 89052), established in 2004 by American Nevada Corporation, spanning ~40 acres. Home prices range from $300K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.042, longitude: -115.082 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function TheDistrictPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The District at Green Valley Ranch is Henderson's premier mixed-use urban village, blending residential living with walkable shopping, dining, and entertainment in a cohesive open-air setting. Developed by American Nevada Corporation beginning in 2004, The District occupies approximately 40 acres at the intersection of Green Valley Parkway and I-215, anchoring the Green Valley Ranch master-planned community with a lifestyle-centered destination.</p>
+                  <p>The District at Green Valley Ranch is a mixed-use · urban village community within Green Valley in Henderson, Nevada (ZIP 89052), spanning ~40 acres, with 600+ homes, where home prices range from $300K–$600K. The District at Green Valley Ranch is Henderson's premier mixed-use urban village, blending residential living with walkable shopping, dining, and entertainment in a cohesive open-air setting. Developed by American Nevada Corporation beginning in 2004, The District occupies approximately 40 acres at the intersection of Green Valley Parkway and I-215, anchoring the Green Valley Ranch master-planned community with a lifestyle-centered destination.</p>
                   <p>Residential options at The District include luxury condominiums and townhomes ranging from approximately $300,000 for well-maintained resale units to $600,000 for premium top-floor condos and larger townhomes with upgraded finishes. The development features walkable streetscape design with ground-floor retail and restaurant space topped by residential units, creating a true live-work-play environment that is rare in the Las Vegas Valley.</p>
                   <p>The shopping and dining at The District is among the best in Henderson, with a curated mix of boutiques, national retailers, specialty food shops, and restaurants anchored by REI, Williams-Sonoma, Pottery Barn, and a variety of locally owned eateries. The central green space hosts community events, live music, seasonal markets, and outdoor gatherings year-round, creating an active village atmosphere.</p>
                   <p>For buyers seeking a walkable urban lifestyle within the safety and family-friendly character of Henderson, The District offers something unique in the Las Vegas metro. The community is minutes from Green Valley Ranch Resort, the I-215 beltway, and the extensive trail and park system of the broader Green Valley community. Young professionals, empty-nesters, and anyone who values the ability to walk to restaurants, shops, and entertainment will find The District to be one of the best-planned urban communities in Southern Nevada.</p>

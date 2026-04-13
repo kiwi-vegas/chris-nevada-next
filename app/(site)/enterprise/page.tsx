@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Enterprise',
-  description: 'Enterprise is a unincorporated · growing suburban community in Las Vegas, Nevada.',
+  description: 'Enterprise is a unincorporated · growing suburban community in Las Vegas, Nevada (ZIP 89113), established in 2003, spanning ~42 sq mi. Home prices range from $350K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.03, longitude: -115.236 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89113', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function EnterprisePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Enterprise is one of the fastest-growing and most geographically expansive residential areas in the Las Vegas Valley. Designated as an unincorporated town within Clark County in 2003, Enterprise covers approximately 42 square miles in the southwest portion of the valley, encompassing major communities like Southern Highlands and Mountains Edge while also including vast stretches of newer residential development, commercial corridors, and open desert slated for future growth.</p>
+                  <p>Enterprise is a unincorporated · growing suburban community in Las Vegas, Nevada (ZIP 89113/89139), spanning ~42 sq mi, with 50,000+ homes, where home prices range from $350K–$700K. Enterprise is one of the fastest-growing and most geographically expansive residential areas in the Las Vegas Valley. Designated as an unincorporated town within Clark County in 2003, Enterprise covers approximately 42 square miles in the southwest portion of the valley, encompassing major communities like Southern Highlands and Mountains Edge while also including vast stretches of newer residential development, commercial corridors, and open desert slated for future growth.</p>
                   <p>The area's appeal lies in its combination of newer construction, master-planned community access, and relative affordability compared to Summerlin or Henderson. Much of Enterprise's housing stock was built from the mid-2000s through the present day, meaning buyers benefit from modern floor plans, energy-efficient construction, and contemporary design at price points that are typically 15–25% below comparable homes in more established communities to the west and east.</p>
                   <p>Enterprise is anchored by several commercial corridors, including Southern Highlands Parkway, Blue Diamond Road, and the Warm Springs/Durango intersection. Major retailers, restaurants, medical facilities, and grocery stores are distributed throughout the area, reducing the commute burden for daily errands. The I-15 and I-215 freeways provide direct access to the Strip, Harry Reid Airport, and Henderson, with most destinations reachable in 15–25 minutes.</p>
                   <p>For buyers seeking newer construction with mountain views, proximity to outdoor recreation at Red Rock Canyon and Sloan Canyon, and an unincorporated Clark County tax advantage, Enterprise represents one of the strongest value propositions in the Las Vegas metro. The area continues to attract national builders who are actively developing new subdivisions in the southwest corridor.</p>

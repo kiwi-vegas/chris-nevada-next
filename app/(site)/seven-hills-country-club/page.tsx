@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Seven Hills Country Club',
-  description: 'Seven Hills Country Club is a guard-gated · golf · luxury community in Henderson, Nevada.',
+  description: 'Seven Hills Country Club is a guard-gated · golf · luxury community in Henderson, Nevada (ZIP 89052), established in 1999 by Seven Hills Development, spanning ~250 acres. Home prices range from $1.2M–$7M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.007, longitude: -115.108 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function SevenHillsCountryClubPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Seven Hills Country Club is the guard-gated golf community at the heart of the Seven Hills master plan in Henderson. Anchored by the acclaimed Rio Secco Golf Club — a Rees Jones-designed championship course that hosted PGA Tour events and serves as home to the Butch Harmon School of Golf — the Country Club area represents the pinnacle of living within Seven Hills.</p>
+                  <p>Seven Hills Country Club is a guard-gated · golf · luxury community within Seven Hills in Henderson, Nevada (ZIP 89052), established in 1999, developed by Seven Hills Development, spanning ~250 acres. Seven Hills Country Club is the guard-gated golf community at the heart of the Seven Hills master plan in Henderson. Anchored by the acclaimed Rio Secco Golf Club — a Rees Jones-designed championship course that hosted PGA Tour events and serves as home to the Butch Harmon School of Golf — the Country Club area represents the pinnacle of living within Seven Hills.</p>
                   <p>Behind the community's 24-hour staffed guard gate, approximately 350 homes range from elegant golf-course residences to sprawling custom estates. Home sizes span from approximately 3,500 to 10,000+ square feet on lots that rank among the largest in Seven Hills. Architectural styles include Mediterranean, Tuscan, transitional, and contemporary desert-modern, with many original homes having undergone extensive renovations to meet current luxury standards.</p>
                   <p>The golf lifestyle is central to Seven Hills Country Club. Rio Secco's 18-hole championship course winds through dramatic desert canyon terrain with views of the Las Vegas Strip and the surrounding mountains. The club offers fine dining, a full-service spa, fitness facilities, tennis and pickleball courts, and a resort-style pool complex. Social memberships are also available for residents who prefer the club lifestyle without golf.</p>
                   <p>Prices in Seven Hills Country Club range from approximately $1.2 million for golf-course homes to over $7 million for custom estates on premium lots with panoramic Strip and mountain views. The community's combination of guard-gated security, championship golf, custom-home architecture, and Henderson's consistently high safety rankings makes it one of the most sought-after luxury addresses in the Las Vegas Valley.</p>

@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Ridgeline at Skye Canyon',
-  description: 'Ridgeline at Skye Canyon is a new construction · premium community in North Las Vegas, Nevada.',
+  description: 'Ridgeline at Skye Canyon is a new construction · premium community in North Las Vegas, Nevada (ZIP 89166), established in 2019 by Toll Brothers / Taylor Morrison, spanning ~200 acres. Home prices range from $500K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.31, longitude: -115.33 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -286,7 +286,7 @@ export default async function SkyeCanyonRidgelinePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Ridgeline at Skye Canyon occupies one of the most elevated positions within the Skye Canyon master-planned community in northwest Las Vegas, offering premium home sites with dramatic views of the Spring Mountains and the Las Vegas Valley below. This newer section of Skye Canyon features larger lots and more upscale floor plans than the community's core neighborhoods, attracting move-up buyers who want Skye Canyon's trail-oriented lifestyle with a step up in size, finish quality, and view premium.</p>
+                  <p>Ridgeline at Skye Canyon is a new construction · premium community within Skye Canyon in North Las Vegas, Nevada (ZIP 89166), established in 2019, developed by Toll Brothers / Taylor Morrison, spanning ~200 acres. Ridgeline at Skye Canyon occupies one of the most elevated positions within the Skye Canyon master-planned community in northwest Las Vegas, offering premium home sites with dramatic views of the Spring Mountains and the Las Vegas Valley below. This newer section of Skye Canyon features larger lots and more upscale floor plans than the community's core neighborhoods, attracting move-up buyers who want Skye Canyon's trail-oriented lifestyle with a step up in size, finish quality, and view premium.</p>
                   <p>Homes in Ridgeline range from approximately $500,000 to $800,000, with floor plans from 2,400 to 4,200 square feet built by premier builders including Toll Brothers and Taylor Morrison. The elevated positioning provides unobstructed mountain views from west-facing home sites and valley panoramas from east-facing lots. Interior finishes include gourmet kitchens with oversized islands, covered outdoor living areas, and the energy-efficient construction that modern buyers expect.</p>
                   <p>Ridgeline residents enjoy full access to Skye Canyon's resort-style Skye Center — a community hub featuring a resort pool, splash pad, fitness center, gathering spaces, and the trailhead for the Skye Canyon trail network that connects to regional hiking and mountain biking routes in the Spring Mountain foothills. The community's event programming, from outdoor movie nights to seasonal festivals, fosters a connected neighborhood culture.</p>
                   <p>For buyers seeking the largest and most premium homes within Skye Canyon, Ridgeline delivers a compelling combination of elevation, views, builder quality, and trail-oriented lifestyle. The section's newer construction and elevated positioning make it Skye Canyon's premier residential address.</p>

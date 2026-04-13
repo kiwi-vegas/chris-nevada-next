@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Rhodes Ranch South',
-  description: 'Rhodes Ranch South is a guard-gated · golf · family community in Las Vegas, Nevada.',
+  description: 'Rhodes Ranch South is a guard-gated · golf · family community in Las Vegas, Nevada (ZIP 89148), established in 2001 by Rhodes Homes / Rhodes Design & Development, spanning ~350 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.065, longitude: -115.26 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function LasVegasRhodesRanchSouthPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Rhodes Ranch South is the southern section of the Rhodes Ranch guard-gated community in southwest Las Vegas, one of the valley's most popular communities for families, professionals, and golfers seeking guard-gated living at an accessible price point. Located south of Russell Road near Durango Drive, this section features the community's newer phases of construction and proximity to the southern amenities of the broader Rhodes Ranch development.</p>
+                  <p>Rhodes Ranch South is a guard-gated · golf · family community within Rhodes Ranch in Las Vegas, Nevada (ZIP 89148), established in 2001, developed by Rhodes Homes / Rhodes Design & Development, spanning ~350 acres. Rhodes Ranch South is the southern section of the Rhodes Ranch guard-gated community in southwest Las Vegas, one of the valley's most popular communities for families, professionals, and golfers seeking guard-gated living at an accessible price point. Located south of Russell Road near Durango Drive, this section features the community's newer phases of construction and proximity to the southern amenities of the broader Rhodes Ranch development.</p>
                   <p>Rhodes Ranch is anchored by a Ted Robinson-designed 18-hole championship golf course that winds through the community, adding significant green space, views, and value. Rhodes Ranch South residents enjoy access to the community's extensive amenities including the golf club, resort-style community pools, fitness center, tennis courts, basketball courts, and a network of walking trails that connect throughout the guard-gated community.</p>
                   <p>Homes in Rhodes Ranch South range from approximately $350,000 for smaller single-family homes and attached products to $600,000 for larger detached homes on premium lots. Floor plans range from approximately 1,400 to 3,000 square feet. The newer phases in the southern section tend to feature more contemporary floor plans, updated builder standards, and modern desert landscaping compared to the community's earlier northern phases.</p>
                   <p>For buyers seeking guard-gated community living with golf, pools, and resort amenities at a price point below the valley's premium gated communities, Rhodes Ranch South delivers exceptional value. The southern location provides quick access to I-215 and I-15 for commuters, while the Mountains Edge and Southern Highlands commercial corridors along Blue Diamond Road and Southern Highlands Parkway keep shopping and dining close.</p>

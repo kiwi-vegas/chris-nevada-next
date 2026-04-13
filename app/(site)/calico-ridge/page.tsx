@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Calico Ridge',
-  description: 'Calico Ridge is a foothill community community in Henderson, Nevada.',
+  description: 'Calico Ridge is a foothill community community in Henderson, Nevada (ZIP 89012), established in 2003 by Various builders, spanning ~250 acres. Home prices range from $500K–$1.2M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.02, longitude: -115.05 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89012', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function CalicoRidgePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Calico Ridge is a residential community perched in the Henderson foothills east of Anthem, offering elevated desert views and a quiet, semi-rural atmosphere that sets it apart from the valley-floor neighborhoods below. Built by multiple builders beginning in the early 2000s, Calico Ridge features single-family homes on generous lots with views of the Las Vegas Strip, the Henderson Valley, and the surrounding mountain ranges.</p>
+                  <p>Calico Ridge is a foothill community community in Henderson, Nevada (ZIP 89012/89052), established in 2003, developed by Various builders, spanning ~250 acres. Calico Ridge is a residential community perched in the Henderson foothills east of Anthem, offering elevated desert views and a quiet, semi-rural atmosphere that sets it apart from the valley-floor neighborhoods below. Built by multiple builders beginning in the early 2000s, Calico Ridge features single-family homes on generous lots with views of the Las Vegas Strip, the Henderson Valley, and the surrounding mountain ranges.</p>
                   <p>The community's elevated terrain is its primary asset. Homes in Calico Ridge sit at higher elevations than most Henderson neighborhoods, providing sunrise views over the valley and dramatic nighttime Strip panoramas from many backyards and living spaces. The lots are generally larger than those in newer communities, giving homeowners more outdoor space for pools, outdoor kitchens, and desert landscaping.</p>
                   <p>Homes range from approximately $500,000 for established homes in the lower sections to $1.2 million or more for larger custom and semi-custom properties on premium elevated lots. The architecture is a mix of Mediterranean, Tuscan, and desert-contemporary styles, reflecting the era in which the community was built. Many homes have been tastefully updated with modern kitchens, flooring, and outdoor improvements.</p>
                   <p>Calico Ridge's location provides a balance of seclusion and convenience. The community is approximately 10 minutes from the shops and restaurants of St. Rose Parkway, 15 minutes from The District at Green Valley Ranch, and 20–25 minutes from the Strip via I-215. For buyers seeking elevated views, larger lots, and a foothill setting in Henderson without guard-gated pricing premiums, Calico Ridge is an excellent option.</p>

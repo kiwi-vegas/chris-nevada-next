@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Summerlin Centre',
-  description: 'Summerlin Centre is a master-planned · central · convenient community in Las Vegas, Nevada.',
+  description: 'Summerlin Centre is a master-planned · central · convenient community in Las Vegas, Nevada (ZIP 89135), established in 2001 by Howard Hughes Corporation, spanning 400 acres. Home prices range from $450K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.165, longitude: -115.29 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinCentrePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Summerlin Centre is a well-positioned village at the geographic heart of the Summerlin South Association, offering convenient access to the community's commercial, recreational, and educational amenities. Developed beginning in 2001 by the Howard Hughes Corporation, Summerlin Centre was designed around the concept of central convenience — a residential village where everything Summerlin has to offer is within a short drive or walk.</p>
+                  <p>Summerlin Centre is a master-planned · central · convenient community within Summerlin in Las Vegas, Nevada (ZIP 89135/89144), spanning 400 acres, with 2,500+ homes, where home prices range from $450K–$800K. Summerlin Centre is a well-positioned village at the geographic heart of the Summerlin South Association, offering convenient access to the community's commercial, recreational, and educational amenities. Developed beginning in 2001 by the Howard Hughes Corporation, Summerlin Centre was designed around the concept of central convenience — a residential village where everything Summerlin has to offer is within a short drive or walk.</p>
                   <p>Homes in Summerlin Centre range from approximately $450,000 for smaller single-family homes to around $800,000 for larger, updated properties on premium lots. The architectural character reflects early-2000s Summerlin design with Mediterranean and transitional styling, stucco construction, and tile roofs. Home sizes typically range from 1,600 to 3,800 square feet, providing options for families of all sizes.</p>
                   <p>The village's central location is its defining advantage. Downtown Summerlin is approximately 8 minutes north, the 215 Beltway is minutes away for efficient valley-wide commuting, and the commercial corridors along West Sahara and West Charleston provide everyday shopping and services within walking distance. Multiple parks and the Summerlin trail system are accessible from within the village.</p>
                   <p>Summerlin Centre delivers the core Summerlin proposition at moderate price points: strong schools, community amenities, well-maintained neighborhoods, and the central location that makes the most of the Summerlin lifestyle. For buyers who want to be in the middle of everything Summerlin offers without paying a premium for mountain views or guard-gated security, Summerlin Centre is one of the most practical and well-located villages in the master plan.</p>

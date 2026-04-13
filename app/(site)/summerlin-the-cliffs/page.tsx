@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Cliffs',
-  description: 'The Cliffs is a master-planned · elevated living community in Las Vegas, Nevada.',
+  description: 'The Cliffs is a master-planned · elevated living community in Las Vegas, Nevada (ZIP 89135), established in 2003 by Howard Hughes Corporation, spanning 380 acres. Home prices range from $600K–$1.2M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.165, longitude: -115.318 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinTheCliffsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Cliffs is a desirable Summerlin South village known for its elevated position, mountain proximity, and move-up home quality. Developed beginning in 2003 by the Howard Hughes Corporation, The Cliffs was positioned along the western edge of the Summerlin master plan where the valley floor begins to rise toward the Spring Mountains, giving many homes elevated perspectives and views that are uncommon at this price point.</p>
+                  <p>The Cliffs is a master-planned · elevated living community within Summerlin in Las Vegas, Nevada (ZIP 89135), spanning 380 acres, with 1,800+ homes, where home prices range from $600K–$1.2M. The Cliffs is a desirable Summerlin South village known for its elevated position, mountain proximity, and move-up home quality. Developed beginning in 2003 by the Howard Hughes Corporation, The Cliffs was positioned along the western edge of the Summerlin master plan where the valley floor begins to rise toward the Spring Mountains, giving many homes elevated perspectives and views that are uncommon at this price point.</p>
                   <p>Homes in The Cliffs range from approximately $600,000 for well-maintained single-family homes to around $1.2 million for larger properties on premium lots with upgraded finishes and views. The architectural character reflects the early 2000s shift toward more contemporary Summerlin design — cleaner lines, natural stone accents, and larger windows compared to the Mediterranean-heavy style of the 1990s villages. Home sizes typically range from 2,200 to 4,500 square feet.</p>
                   <p>The village's western position places it among the closest Summerlin villages to Red Rock Canyon, approximately 10 minutes away via West Charleston Boulevard. Downtown Summerlin is about 8 minutes north, and the community benefits from proximity to the TPC Las Vegas and the Summerlin trail system. The 215 Beltway provides efficient connections to the south side of the valley and Harry Reid Airport.</p>
                   <p>The Cliffs occupies a sweet spot in the Summerlin market — it delivers elevated living, mountain proximity, and quality construction at price points below the village's guard-gated luxury neighbors like The Ridges and Red Rock Country Club. For move-up buyers who want more home, more views, and more proximity to the outdoor lifestyle without the premium of ultra-luxury communities, The Cliffs is one of the smartest buys in Summerlin South.</p>

@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Paseos',
-  description: 'The Paseos is a master-planned · family village community in Las Vegas, Nevada.',
+  description: 'The Paseos is a master-planned · family village community in Las Vegas, Nevada (ZIP 89138), established in 2004 by Howard Hughes Corporation, spanning ~500 acres. Home prices range from $550K–$1.2M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.185, longitude: -115.312 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function ThePaseosPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Paseos is one of Summerlin's most sought-after family villages, located in the western portion of the master plan along the base of the Spring Mountains. Developed by the Howard Hughes Corporation beginning in 2004, the village spans approximately 500 acres and is home to over 2,800 residences organized around an extensive network of parks, trails, and green spaces.</p>
+                  <p>The Paseos is a master-planned · family village community within Summerlin in Las Vegas, Nevada (ZIP 89138), spanning ~500 acres, with 2,800+ homes, where home prices range from $550K–$1.2M. The Paseos is one of Summerlin's most sought-after family villages, located in the western portion of the master plan along the base of the Spring Mountains. Developed by the Howard Hughes Corporation beginning in 2004, the village spans approximately 500 acres and is home to over 2,800 residences organized around an extensive network of parks, trails, and green spaces.</p>
                   <p>The village earned its name from the paseo trail system that winds throughout the community, connecting neighborhoods to parks, schools, and open spaces. Fox Hill Park, one of Summerlin's signature parks, is located within The Paseos and features zip lines, an adventure playground, disc golf, and miles of trails. The park system gives The Paseos a resort-like atmosphere that sets it apart from other Summerlin villages.</p>
                   <p>Families are drawn to The Paseos for its school zones. The village feeds into some of the highest-rated schools in the CCSD system, including consistently top-ranked elementary and middle schools. The proximity to The Meadows School and other private options in western Summerlin adds further educational appeal.</p>
                   <p>Homes in The Paseos range from approximately $550,000 for established single-family homes to $1.2 million or more for larger estate-style homes on premium lots. Builders who have built in The Paseos include Toll Brothers, Pulte Homes, KB Home, and Richmond American. The village's location provides easy access to Downtown Summerlin, Red Rock Canyon, and the Summerlin Parkway commute corridor.</p>

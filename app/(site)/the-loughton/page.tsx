@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Loughton',
-  description: 'The Loughton is a luxury · new construction community in Las Vegas, Nevada.',
+  description: 'The Loughton is a luxury · new construction community in Las Vegas, Nevada (ZIP 89138), established in 2024 by Christopher Homes, spanning ~40 acres. Home prices range from $500K+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.175, longitude: -115.312 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function TheLoughtonPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Loughton is a luxury new-construction community in Summerlin developed by Christopher Homes, one of Las Vegas' most respected local luxury homebuilders. Known for a design-forward approach and attention to detail, Christopher Homes delivers a boutique luxury experience at The Loughton with floor plans and finishes that rival guard-gated communities at a more accessible price point, starting from approximately $500,000.</p>
+                  <p>The Loughton is a luxury · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89138), established in 2024, spanning ~40 acres, with 150+ at buildout homes. The Loughton is a luxury new-construction community in Summerlin developed by Christopher Homes, one of Las Vegas' most respected local luxury homebuilders. Known for a design-forward approach and attention to detail, Christopher Homes delivers a boutique luxury experience at The Loughton with floor plans and finishes that rival guard-gated communities at a more accessible price point, starting from approximately $500,000.</p>
                   <p>Homes at The Loughton feature contemporary desert architecture with clean lines, generous window packages for natural light, open-concept living areas, and outdoor living spaces designed for the Las Vegas climate. Floor plans range from approximately 2,200 to 3,800 square feet with options for single-story and two-story configurations. Standard features include quartz countertops, designer lighting, soft-close cabinetry, and tankless water heaters.</p>
                   <p>Christopher Homes has a long track record of building luxury homes in Summerlin and Henderson, and The Loughton reflects their expertise in creating communities that feel curated rather than mass-produced. The streetscapes, landscaping, and architectural standards create a cohesive, polished aesthetic that distinguishes The Loughton from nearby production-builder neighborhoods.</p>
                   <p>The Loughton's Summerlin location provides access to the master plan's trail system, Downtown Summerlin, Red Rock Canyon, and highly rated schools. For buyers seeking luxury new construction from a boutique local builder without the premium of a guard-gated community, The Loughton offers exceptional value within the Summerlin address.</p>

@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Rancho Bel Air',
-  description: 'Rancho Bel Air is a guard-gated · luxury estates community in Las Vegas, Nevada.',
+  description: 'Rancho Bel Air is a guard-gated · luxury estates community in Las Vegas, Nevada (ZIP 89107), established in 1960s by Various Private Developers, spanning ~200 acres. Home prices range from $1M–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.16, longitude: -115.226 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89107', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function RanchoBelAirPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Rancho Bel Air is one of the original luxury estate communities in Las Vegas, established in the 1960s as the city's first guard-gated residential enclave west of the Strip. Occupying approximately 200 acres near the intersection of Charleston Boulevard and Rancho Drive, the community offers half-acre to full-acre lots with mature trees, circular drives, and an old-money character that is increasingly rare in a city known for new construction.</p>
+                  <p>Rancho Bel Air is a guard-gated · luxury estates community in Las Vegas, Nevada (ZIP 89107), developed by Various Private Developers, spanning ~200 acres, with ~300 homes. Rancho Bel Air is one of the original luxury estate communities in Las Vegas, established in the 1960s as the city's first guard-gated residential enclave west of the Strip. Occupying approximately 200 acres near the intersection of Charleston Boulevard and Rancho Drive, the community offers half-acre to full-acre lots with mature trees, circular drives, and an old-money character that is increasingly rare in a city known for new construction.</p>
                   <p>Homes in Rancho Bel Air range from approximately $1 million for updated mid-century properties to over $5 million for fully renovated modern estates on premium lots. The architectural diversity is one of the community's defining features — you'll find original 1960s ranch-style homes alongside complete ground-up rebuilds with contemporary desert-modern design. Many buyers are drawn to the opportunity to purchase a large lot in a central location and create their vision from scratch.</p>
                   <p>The guard-gated entry provides 24-hour security, and the community's wide, tree-lined streets and generous setbacks create a sense of space and privacy that is difficult to replicate in newer developments. Rancho Bel Air's mature landscaping — including towering palms, mature shade trees, and established gardens — gives the community a lush, estate-like atmosphere that stands in stark contrast to the desert landscaping found in most Las Vegas communities.</p>
                   <p>Location is arguably Rancho Bel Air's greatest asset. The community sits just 10 minutes from the Las Vegas Strip, 5 minutes from the Summerlin Parkway on-ramp, and within easy reach of Downtown Summerlin shopping, the Arts District, and premier dining along Restaurant Row on West Flamingo. For buyers seeking a central luxury estate with character and history in a city that constantly reinvents itself, Rancho Bel Air is irreplaceable.</p>

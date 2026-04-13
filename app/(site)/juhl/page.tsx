@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Juhl',
-  description: 'Juhl is a loft-style · urban · downtown community in Las Vegas, Nevada.',
+  description: 'Juhl is a loft-style · urban · downtown community in Las Vegas, Nevada (ZIP 89101), established in 2009 by CityMark Development, spanning ~2 acres. Home prices range from $200K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.164, longitude: -115.148 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89101', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function JuhlPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Juhl is a boutique loft-style condominium community in the heart of Downtown Las Vegas, located just south of the Fremont Street Experience and adjacent to the growing Arts District. Developed by CityMark Development and completed in 2009, Juhl contains 341 residences across a mid-rise campus and stands as one of the pioneering residential developments that helped spark downtown's urban renaissance.</p>
+                  <p>Juhl is a loft-style · urban · downtown community in Las Vegas, Nevada (ZIP 89101), spanning ~2 acres, where home prices range from $200K–$600K. Juhl is a boutique loft-style condominium community in the heart of Downtown Las Vegas, located just south of the Fremont Street Experience and adjacent to the growing Arts District. Developed by CityMark Development and completed in 2009, Juhl contains 341 residences across a mid-rise campus and stands as one of the pioneering residential developments that helped spark downtown's urban renaissance.</p>
                   <p>What sets Juhl apart from every other condo community in Las Vegas is its design philosophy. Inspired by urban loft living in cities like New York, San Francisco, and Portland, Juhl features open floor plans with soaring ceilings, exposed concrete columns, oversized windows, and a deliberately creative aesthetic. Residences range from approximately $200,000 for studios and one-bedrooms to around $600,000 for two-story townhome-style lofts and premium corner units.</p>
                   <p>The community's amenities reflect its urban-creative identity. Residents have access to a resort-style pool and spa, a communal Sky Deck with Strip and mountain views, an indoor/outdoor Sky Lounge, a co-working studio, a screening room, a dog park, a community art gallery, and fitness facilities. The ground-floor retail and restaurants add walkable dining and shopping directly to the community.</p>
                   <p>Juhl's location in Downtown Las Vegas positions residents within walking distance of the Fremont East entertainment district, the Arts District's galleries and breweries, the Smith Center for the Performing Arts, and the emerging Symphony Park development corridor. For buyers seeking a lifestyle that is genuinely urban and creative — distinctly different from the suburban master-planned communities that dominate Las Vegas — Juhl is the definitive downtown address.</p>

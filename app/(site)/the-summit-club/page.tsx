@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Summit Club',
-  description: 'The Summit Club is a ultra-private · golf · ultra-luxury community in Las Vegas, Nevada.',
+  description: 'The Summit Club is a ultra-private · golf · ultra-luxury community in Las Vegas, Nevada (ZIP 89135), established in 2017 by Discovery Land Company, spanning 555 acres. Home prices range from $5M–$30M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.165, longitude: -115.32 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function TheSummitClubPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Summit Club is the most exclusive residential community in Las Vegas and one of the most prestigious private clubs in the American West. Developed by Discovery Land Company on 555 acres within Summerlin, The Summit Club features a Tom Fazio-designed championship golf course, an ultra-luxury clubhouse, and just 146 homesites reserved for members and their guests.</p>
+                  <p>The Summit Club is a ultra-private · golf · ultra-luxury community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2017, where home prices range from $5M–$30M+. The Summit Club is the most exclusive residential community in Las Vegas and one of the most prestigious private clubs in the American West. Developed by Discovery Land Company on 555 acres within Summerlin, The Summit Club features a Tom Fazio-designed championship golf course, an ultra-luxury clubhouse, and just 146 homesites reserved for members and their guests.</p>
                   <p>Discovery Land Company is known for creating the world's most exclusive private residential communities, including Yellowstone Club in Montana, Kukio in Hawaii, and Baker's Bay in the Bahamas. The Summit Club brings that same level of exclusivity, design, and service to the Las Vegas market. Membership is by invitation only, and the initiation fees are among the highest of any private club in the country.</p>
                   <p>The Tom Fazio-designed golf course plays through natural desert terrain with dramatic elevation changes and unobstructed views of Red Rock Canyon, the Spring Mountains, and the Las Vegas Strip. The clubhouse complex includes a full-service restaurant, resort-style pool and cabana village, a fitness and wellness center, indoor and outdoor tennis courts, a children's activity center, and concierge services.</p>
                   <p>Homesites at The Summit Club range from one-third of an acre to over two acres. Finished homes range from approximately $5 million for smaller custom builds to over $30 million for the largest estates. The architectural palette emphasizes desert-contemporary design with natural stone, glass, and steel. Homes are built by approved builders including Shapiro & Sher, Sun West Custom Homes, and other luxury firms.</p>

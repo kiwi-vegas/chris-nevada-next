@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Madeira Canyon',
-  description: 'Madeira Canyon is a master-planned · guard-gated community in Henderson, Nevada.',
+  description: 'Madeira Canyon is a master-planned · guard-gated community in Henderson, Nevada (ZIP 89052), established in 2004 by Toll Brothers / Focus Property Group, spanning ~800 acres. Home prices range from $400K–$1.5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.975, longitude: -115.075 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -298,7 +298,7 @@ export default async function MadeiraCanyonPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Madeira Canyon is a guard-gated master-planned community in the southern foothills of Henderson, set against the McCullough Range with dramatic desert mountain views and a strong sense of seclusion. Originally developed by Toll Brothers and Focus Property Group beginning in 2004, Madeira Canyon offers a wide range of home styles from family-friendly single-family residences to luxury custom estates, all within a secure, gated environment.</p>
+                  <p>Madeira Canyon is a master-planned · guard-gated community in Henderson, Nevada (ZIP 89052/89044), developed by Toll Brothers / Focus Property Group, spanning ~800 acres, with 1,200+ homes. Madeira Canyon is a guard-gated master-planned community in the southern foothills of Henderson, set against the McCullough Range with dramatic desert mountain views and a strong sense of seclusion. Originally developed by Toll Brothers and Focus Property Group beginning in 2004, Madeira Canyon offers a wide range of home styles from family-friendly single-family residences to luxury custom estates, all within a secure, gated environment.</p>
                   <p>The community features a private recreation center with a resort-style pool and spa, fitness center, tennis courts, basketball courts, and a community room for events and gatherings. An extensive trail system winds through the community's natural desert terrain, connecting neighborhoods and providing access to the surrounding foothills for hiking and outdoor recreation.</p>
                   <p>Homes in Madeira Canyon range from approximately $400,000 for established single-family homes to over $1.5 million for larger custom and semi-custom estates on premium lots with mountain views. The community also includes Club M (The Club at Madeira Canyon), a 55+ guard-gated neighborhood within the broader Madeira Canyon community that provides age-restricted living with its own amenities.</p>
                   <p>Madeira Canyon's location in far southeast Henderson provides a distinctly quieter, more rural feel than many Las Vegas master-planned communities while still maintaining convenient access to I-215, shopping centers, and Henderson's infrastructure. The combination of guard-gated security, mountain setting, and diverse price range makes Madeira Canyon a compelling option for buyers seeking privacy and natural beauty.</p>

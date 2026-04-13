@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Cadence Park',
-  description: 'Cadence Park is a master-planned · new construction community in Henderson, Nevada.',
+  description: 'Cadence Park is a master-planned · new construction community in Henderson, Nevada (ZIP 89011), established in 2018 by LandWell Company / Multiple Builders, spanning ~100 acres. Home prices range from $400K–$650K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.02, longitude: -115 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89011', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function HendersonCadenceParkPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Cadence Park is one of the most dynamic and family-friendly neighborhoods within the Cadence master-planned community in Henderson. Located adjacent to the community's signature Central Park — a 50-acre civic amenity with amphitheater, sports fields, playgrounds, and gathering spaces — Cadence Park puts residents at the center of one of Henderson's most active community lifestyles.</p>
+                  <p>Cadence Park is a master-planned · new construction community within Cadence in Henderson, Nevada (ZIP 89011), established in 2018, developed by LandWell Company / Multiple Builders, spanning ~100 acres. Cadence Park is one of the most dynamic and family-friendly neighborhoods within the Cadence master-planned community in Henderson. Located adjacent to the community's signature Central Park — a 50-acre civic amenity with amphitheater, sports fields, playgrounds, and gathering spaces — Cadence Park puts residents at the center of one of Henderson's most active community lifestyles.</p>
                   <p>Homes in Cadence Park range from approximately $400,000 to $650,000, with active new construction and nearly-new resale options from builders including Lennar, Richmond American, Woodside Homes, and Century Communities. Floor plans span 1,600 to 3,200 square feet with contemporary desert-inspired architecture, open-concept living areas, and energy-efficient construction. Many homes feature first-floor master suites, upstairs lofts, and covered rear patios oriented toward the community's parks and open spaces.</p>
                   <p>The Central Park is the defining amenity for Cadence Park residents. This 50-acre facility includes a performance amphitheater, sports courts, multi-use athletic fields, a splash pad, playground, community garden, and walking trails. The park hosts regular community events including outdoor concerts, movie nights, farmers markets, and holiday festivals. A commercial village along Lake Mead Parkway adds restaurants, retail, and services within walking distance.</p>
                   <p>Cadence Park benefits from Henderson's reputation as one of the safest and best-managed cities in the country. The community sits along the Lake Mead Parkway corridor with direct access to I-215, putting the Strip and Harry Reid Airport approximately 20 minutes away. For families and professionals seeking new construction in a design-forward community with genuine neighborhood character, Cadence Park delivers.</p>

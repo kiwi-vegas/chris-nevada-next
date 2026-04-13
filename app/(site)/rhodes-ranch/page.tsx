@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Rhodes Ranch',
-  description: 'Rhodes Ranch is a guard-gated · golf community in Las Vegas, Nevada.',
+  description: 'Rhodes Ranch is a guard-gated · golf community in Las Vegas, Nevada (ZIP 89148), established in 1997 by Rhodes Homes, spanning 1,350 acres. Home prices range from $350K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.064, longitude: -115.278 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },

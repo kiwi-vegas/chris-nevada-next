@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Vistana',
-  description: 'Vistana is a new construction · lake community community in Henderson, Nevada.',
+  description: 'Vistana is a new construction · lake community community in Henderson, Nevada (ZIP 89011), established in 2019 by Toll Brothers / William Lyon, spanning ~80 acres. Home prices range from $500K–$1.2M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.09, longitude: -114.94 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89011', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function LakeLasVegasVistanaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Vistana at Lake Las Vegas is one of the newest residential neighborhoods within the Lake Las Vegas resort community, offering contemporary new-construction homes with lake, mountain, and golf course views at a more accessible price point than the guard-gated South Shore section. Built by Toll Brothers and William Lyon Homes, Vistana represents the next chapter of Lake Las Vegas development — bringing modern architecture and fresh energy to this established resort community.</p>
+                  <p>Vistana is a new construction · lake community community within Lake Las Vegas in Henderson, Nevada (ZIP 89011), established in 2019, developed by Toll Brothers / William Lyon, spanning ~80 acres. Vistana at Lake Las Vegas is one of the newest residential neighborhoods within the Lake Las Vegas resort community, offering contemporary new-construction homes with lake, mountain, and golf course views at a more accessible price point than the guard-gated South Shore section. Built by Toll Brothers and William Lyon Homes, Vistana represents the next chapter of Lake Las Vegas development — bringing modern architecture and fresh energy to this established resort community.</p>
                   <p>Homes in Vistana range from approximately 2,000 to 4,200 square feet with contemporary desert architecture that marks a departure from Lake Las Vegas' earlier Mediterranean style. Open floor plans, gourmet kitchens with oversized islands, multi-slide glass doors for indoor-outdoor living, and energy-efficient construction are standard features. Floor plans typically offer 3 to 5 bedrooms with options for casitas, home offices, and multi-generational suites.</p>
                   <p>Vistana residents enjoy the full Lake Las Vegas lifestyle without the premium of a guard-gated address. The 320-acre private lake is available for kayaking, paddleboarding, and sailing. The Village at Lake Las Vegas offers lakefront dining and shopping. Two championship golf courses — SouthShore (Jack Nicklaus) and Reflection Bay (Jack Nicklaus) — are accessible to residents. The Westin and Hilton resorts provide additional dining, spa, and pool amenities.</p>
                   <p>Priced from approximately $500,000 to $1.2 million, Vistana provides an attractive entry point into the Lake Las Vegas lifestyle. The community appeals to buyers relocating from higher-cost markets who want resort-style living, scenic beauty, and proximity to Lake Mead at a fraction of what comparable waterfront communities cost in California, Arizona, or Hawaii.</p>

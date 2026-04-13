@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Portofino at Southern Highlands',
-  description: 'Portofino at Southern Highlands is a guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'Portofino at Southern Highlands is a guard-gated · luxury community in Las Vegas, Nevada (ZIP 89141), established in 2002 by Olympia Group, spanning ~120 acres. Home prices range from $600K–$1.5M.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.999, longitude: -115.248 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89141', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function SouthernHighlandsPortofinoPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Portofino at Southern Highlands is one of the most sought-after guard-gated enclaves within the Southern Highlands master-planned community. Named after the Italian Riviera fishing village, Portofino captures a Mediterranean lifestyle aesthetic with Tuscan-inspired architecture, lush landscaping, and tree-lined streets that create a warm, inviting atmosphere unique among Las Vegas luxury communities.</p>
+                  <p>Portofino at Southern Highlands is a guard-gated · luxury community within Southern Highlands in Las Vegas, Nevada (ZIP 89141), established in 2002, developed by Olympia Group, spanning ~120 acres. Portofino at Southern Highlands is one of the most sought-after guard-gated enclaves within the Southern Highlands master-planned community. Named after the Italian Riviera fishing village, Portofino captures a Mediterranean lifestyle aesthetic with Tuscan-inspired architecture, lush landscaping, and tree-lined streets that create a warm, inviting atmosphere unique among Las Vegas luxury communities.</p>
                   <p>Behind its staffed guard gate within the already-gated Southern Highlands community, Portofino features approximately 400 homes ranging from $600,000 to $1.5 million. Homes typically range from 2,800 to 5,500 square feet, with floor plans featuring grand foyers, formal living and dining rooms, gourmet kitchens, and expansive rear yards with room for resort-style pools. The architectural standards emphasize Mediterranean and Tuscan design elements — stucco exteriors, tile roofs, arched entryways, and wrought-iron details.</p>
                   <p>What distinguishes Portofino from the higher-priced enclaves within Southern Highlands is its balance of luxury and accessibility. Buyers get double guard-gated security, the Mediterranean character, and access to the broader Southern Highlands amenity package — including proximity to the private Jack Nicklaus Golf Club — at price points that are significantly more accessible than The Estates, Olympia Ridge, or Tuscan Cliffs.</p>
                   <p>Portofino residents enjoy all the benefits of the Southern Highlands location: 15 minutes to the Strip via I-15, 20 minutes to Harry Reid Airport, top-rated schools in the CCSD southwest cluster, and the Southern Highlands commercial corridor with grocery, dining, and retail along Southern Highlands Parkway. For buyers seeking guard-gated Mediterranean luxury in one of Las Vegas's most established master-planned communities, Portofino represents outstanding value.</p>

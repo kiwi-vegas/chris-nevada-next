@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Anthem Coventry',
-  description: 'Anthem Coventry is a master-planned · family community in Henderson, Nevada.',
+  description: 'Anthem Coventry is a master-planned · family community in Henderson, Nevada (ZIP 89052), established in 1998 by Del Webb / Pulte Group, spanning 350 acres. Home prices range from $500K–$900K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.003, longitude: -115.065 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -299,7 +299,7 @@ export default async function AnthemCoventryPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Anthem Coventry is a well-established residential neighborhood within the Anthem master-planned community in Henderson. Developed in the late 1990s and early 2000s as one of the original villages of Anthem, Coventry offers a mix of single-family homes ranging from approximately 1,500 to 3,500 square feet. The neighborhood appeals to families, professionals, and move-up buyers who want Anthem's amenities and top-rated schools at price points below the guard-gated Anthem Country Club enclave.</p>
+                  <p>Anthem Coventry is a master-planned · family community within Anthem in Henderson, Nevada (ZIP 89052), established in 1998, developed by Del Webb / Pulte Group, spanning 350 acres. Anthem Coventry is a well-established residential neighborhood within the Anthem master-planned community in Henderson. Developed in the late 1990s and early 2000s as one of the original villages of Anthem, Coventry offers a mix of single-family homes ranging from approximately 1,500 to 3,500 square feet. The neighborhood appeals to families, professionals, and move-up buyers who want Anthem's amenities and top-rated schools at price points below the guard-gated Anthem Country Club enclave.</p>
                   <p>Homes in Anthem Coventry range from approximately $500,000 for well-maintained resales to $900,000 for larger updated homes on premium lots with mountain or park views. The architectural style is predominantly Southwest and Mediterranean, with stucco exteriors, tile roofs, and desert-adapted landscaping. Many homes have been extensively updated with modern kitchens, pools, and outdoor living spaces that take advantage of Henderson's 300+ days of sunshine.</p>
                   <p>The neighborhood benefits from all of Anthem's master-plan amenities — the Anthem Center community hub with pools, fitness facilities, and sports courts; miles of connected walking and biking trails; and multiple neighborhood parks. Coventry residents are within the attendance boundaries of some of Henderson's highest-rated CCSD schools, including Del E. Webb Middle School and Coronado High School, which consistently rank among the top public schools in Clark County.</p>
                   <p>Location is a significant advantage. Anthem Coventry is just minutes from the shops and dining along St. Rose Parkway and Eastern Avenue, with easy access to I-215 and I-15 for commutes to the Strip, Henderson's business districts, and Harry Reid International Airport. For buyers who want a proven Anthem address without the guard-gated premium, Coventry delivers exceptional value with a strong track record of appreciation.</p>

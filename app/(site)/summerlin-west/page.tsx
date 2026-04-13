@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Summerlin West',
-  description: 'Summerlin West is a master-planned · new construction community in Las Vegas, Nevada.',
+  description: 'Summerlin West is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89138), established in 2014 by Howard Hughes Corporation, spanning 5,600+ acres. Home prices range from $400K–$1M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.195, longitude: -115.346 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinWestPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Summerlin West is the newest and fastest-growing section of the Summerlin master-planned community, representing the western frontier of residential development in the Las Vegas Valley. Spanning over 5,600 acres along the base of the Spring Mountains, Summerlin West offers the most current architecture, the newest community amenities, and some of the most dramatic mountain and canyon views available in the Las Vegas metro area.</p>
+                  <p>Summerlin West is a master-planned · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89138/89166), established in 2014, developed by Howard Hughes Corporation, spanning 5,600+ acres. Summerlin West is the newest and fastest-growing section of the Summerlin master-planned community, representing the western frontier of residential development in the Las Vegas Valley. Spanning over 5,600 acres along the base of the Spring Mountains, Summerlin West offers the most current architecture, the newest community amenities, and some of the most dramatic mountain and canyon views available in the Las Vegas metro area.</p>
                   <p>Developed by the Howard Hughes Corporation beginning around 2014, Summerlin West is organized into distinct villages including Grand Park, Kestrel, Kestrel Commons, Redpoint, Redpoint Square, Reverence, and La Madre Peaks. Each village contains multiple neighborhoods built by a mix of national and regional builders — Toll Brothers, Lennar, Shea Homes, Pulte, Taylor Morrison, and Woodside Homes among them. The variety of builders translates into a wide range of architectural styles, floor plans, and price points.</p>
                   <p>The village of Grand Park anchors Summerlin West with some of its most premium offerings, including the guard-gated luxury neighborhoods of Carlisle Peak and Glenrock. At the top of the price spectrum, La Madre Peaks delivers custom estate lots with panoramic Red Rock Canyon views, while Kestrel and Reverence provide attainable newer-construction options for move-up buyers and young families.</p>
                   <p>Summerlin West residents enjoy immediate proximity to Red Rock Canyon National Conservation Area, the extensive Summerlin trail network, and the newest parks and recreation facilities in the Summerlin system. Downtown Summerlin — with its 125+ shops, restaurants, and the Las Vegas Ballpark — is a short drive east. The area is served by top-rated CCSD schools and several acclaimed private and charter school options.</p>

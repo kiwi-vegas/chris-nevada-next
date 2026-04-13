@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sunrise Manor',
-  description: 'Sunrise Manor is a established · unincorporated community in Las Vegas, Nevada.',
+  description: 'Sunrise Manor is a established · unincorporated community in Las Vegas, Nevada (ZIP 89110), established in 1950s, spanning ~33 sq mi. Home prices range from $200K–$400K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.18, longitude: -115.075 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89110', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasSunriseManorPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Sunrise Manor is one of the largest unincorporated communities in Clark County, covering approximately 33 square miles in the eastern Las Vegas Valley. With a population exceeding 190,000, it is home to more residents than many independently incorporated Nevada cities. The community stretches from east of downtown Las Vegas toward the foothills of Frenchman Mountain and Sunrise Mountain, offering vast panoramic views of the desert landscape and surrounding mountain ranges.</p>
+                  <p>Sunrise Manor is a established · unincorporated community in Las Vegas, Nevada (ZIP 89110/89115), established in 1950s, spanning ~33 sq mi, with 50,000+ homes. Sunrise Manor is one of the largest unincorporated communities in Clark County, covering approximately 33 square miles in the eastern Las Vegas Valley. With a population exceeding 190,000, it is home to more residents than many independently incorporated Nevada cities. The community stretches from east of downtown Las Vegas toward the foothills of Frenchman Mountain and Sunrise Mountain, offering vast panoramic views of the desert landscape and surrounding mountain ranges.</p>
                   <p>Development in Sunrise Manor began in the 1950s and has continued through every subsequent decade, resulting in a remarkably diverse housing stock. The western sections near downtown feature older ranch homes and modest bungalows, while the eastern areas toward Nellis Air Force Base and the foothill communities include newer construction from the 2000s and 2010s. This diversity is reflected in the pricing, which ranges from approximately $200,000 for older homes in need of updating to $400,000 or more for newer or renovated properties in desirable sections.</p>
                   <p>Sunrise Manor's proximity to Nellis Air Force Base is a defining characteristic. The base provides a steady stream of military families seeking housing in the surrounding neighborhoods, supporting consistent rental demand and a built-in tenant pool. The Sunrise Marketplace, Nellis Boulevard corridor, and the growing retail infrastructure along Lake Mead Boulevard provide essential commercial services to the community.</p>
                   <p>For investors and budget-conscious buyers, Sunrise Manor offers some of the lowest entry prices in the Las Vegas metro with meaningful upside potential. The community's eastern sections near Sunrise Mountain provide scenic desert views and newer construction, while western sections closer to downtown benefit from urban revitalization and improving infrastructure. The area is served by multiple CCSD schools and charter options, and ongoing Clark County improvements continue to enhance livability.</p>

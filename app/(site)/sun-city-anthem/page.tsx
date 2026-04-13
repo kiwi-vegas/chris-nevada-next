@@ -84,7 +84,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sun City Anthem',
-  description: 'Sun City Anthem is a 55+ active adult community in Henderson, Nevada.',
+  description: 'Sun City Anthem is a 55+ active adult community in Henderson, Nevada (ZIP 89052), established in 1998 by Del Webb / Pulte Homes, spanning 2,400 acres. Home prices range from $350K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.983, longitude: -115.06 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -302,7 +302,7 @@ export default async function SunCityAnthemPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Sun City Anthem is one of the most acclaimed 55+ active adult communities in the United States. Developed by Del Webb beginning in 1998 and spanning approximately 2,400 acres in southeast Henderson, the community is home to over 7,200 residences built around two championship golf courses, multiple recreation centers, and one of the most active social calendars in the Las Vegas Valley.</p>
+                  <p>Sun City Anthem is a 55+ active adult community in Henderson, Nevada (ZIP 89052/89044), developed by Del Webb / Pulte Homes, with 7,219 homes, where home prices range from $350K–$700K. Sun City Anthem is one of the most acclaimed 55+ active adult communities in the United States. Developed by Del Webb beginning in 1998 and spanning approximately 2,400 acres in southeast Henderson, the community is home to over 7,200 residences built around two championship golf courses, multiple recreation centers, and one of the most active social calendars in the Las Vegas Valley.</p>
                   <p>The community features three recreation centers totaling over 100,000 square feet of amenity space. The Anthem Center serves as the primary hub with resort-style pools, a fitness center, tennis and pickleball courts, a ballroom, and meeting rooms for the 100+ chartered clubs and organizations. The Liberty Center and Independence Center provide additional fitness, arts and crafts, and social gathering spaces spread throughout the community.</p>
                   <p>Two golf courses anchor the community: the Anthem Course and the Revere Golf Club at Anthem, offering championship-caliber desert golf with views of the McCullough Range. The community's trail system connects to Henderson's broader network, providing miles of walking and biking paths through the foothills terrain. Outdoor amphitheaters, community gardens, and sports courts round out the amenity package.</p>
                   <p>Homes in Sun City Anthem range from approximately $350,000 for well-maintained single-story villas to $700,000 or more for larger estate-style homes on premium lots with golf course or mountain views. The community's location in southeast Henderson provides easy access to shopping, dining, medical facilities, Lake Mead, and the I-215 beltway corridor for travel to the Strip and airport.</p>

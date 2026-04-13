@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Allure Las Vegas',
-  description: 'Allure Las Vegas is a high-rise · urban · strip-adjacent community in Las Vegas, Nevada.',
+  description: 'Allure Las Vegas is a high-rise · urban · strip-adjacent community in Las Vegas, Nevada (ZIP 89102), established in 2007 by Mac Homes / Gary Carlin, spanning ~2 acres. Home prices range from $250K–$1M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.151, longitude: -115.171 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89102', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function AllureLasVegasPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Allure Las Vegas is a 41-story luxury high-rise condominium tower located on West Sahara Avenue, just north of the Las Vegas Strip. Completed in 2007, the tower contains 428 residences and offers one of the most accessible entry points into the Las Vegas luxury high-rise market, with one-bedroom units starting around $250,000 and penthouses reaching over $1 million.</p>
+                  <p>Allure Las Vegas is a high-rise · urban · strip-adjacent community in Las Vegas, Nevada (ZIP 89102), developed by Mac Homes / Gary Carlin, spanning ~2 acres, where home prices range from $250K–$1M+. Allure Las Vegas is a 41-story luxury high-rise condominium tower located on West Sahara Avenue, just north of the Las Vegas Strip. Completed in 2007, the tower contains 428 residences and offers one of the most accessible entry points into the Las Vegas luxury high-rise market, with one-bedroom units starting around $250,000 and penthouses reaching over $1 million.</p>
                   <p>The tower features a sleek glass-and-steel design with floor-to-ceiling windows throughout, providing panoramic views of the Strip skyline, the Spring Mountains, and the Las Vegas Valley from virtually every unit. Floor plans range from efficient studios and one-bedrooms to spacious two- and three-bedroom residences and penthouses. Finishes include granite countertops, stainless steel appliances, and hardwood-style flooring.</p>
                   <p>Amenities at Allure include a resort-style pool deck with cabanas and Strip views, a fitness center, 24-hour concierge and security, valet parking, a media room, a business center, and resident lounge areas. The gated entry and controlled building access provide the security and privacy expected of a luxury high-rise community.</p>
                   <p>Allure's location on Sahara Avenue provides convenient access to the Strip, the emerging Arts District and Downtown Las Vegas, and the I-15 and US-95 freeways. For buyers seeking a luxury high-rise lifestyle near the Strip without the premium pricing of CityCenter or Turnberry, Allure Las Vegas offers a compelling combination of quality construction, strong amenities, and value.</p>

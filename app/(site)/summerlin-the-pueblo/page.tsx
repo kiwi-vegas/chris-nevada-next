@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Pueblo',
-  description: 'The Pueblo is a master-planned · value community in Las Vegas, Nevada.',
+  description: 'The Pueblo is a master-planned · value community in Las Vegas, Nevada (ZIP 89135), established in 2000 by Howard Hughes Corporation, spanning 380 acres. Home prices range from $400K–$650K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.16, longitude: -115.302 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinThePuebloPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Pueblo is one of Summerlin South's most accessible villages, offering a genuine Summerlin address and full access to the master plan's amenities at price points that are among the lowest in the community. Developed beginning in 2000 by the Howard Hughes Corporation, The Pueblo was positioned as an entry point into Summerlin South living — a well-designed residential village with parks, trails, and convenient access to everything Summerlin has to offer.</p>
+                  <p>The Pueblo is a master-planned · value community within Summerlin in Las Vegas, Nevada (ZIP 89135), spanning 380 acres, with 2,400+ homes, where home prices range from $400K–$650K. The Pueblo is one of Summerlin South's most accessible villages, offering a genuine Summerlin address and full access to the master plan's amenities at price points that are among the lowest in the community. Developed beginning in 2000 by the Howard Hughes Corporation, The Pueblo was positioned as an entry point into Summerlin South living — a well-designed residential village with parks, trails, and convenient access to everything Summerlin has to offer.</p>
                   <p>Homes in The Pueblo range from approximately $400,000 for smaller single-family homes and attached products to around $650,000 for larger homes on premium lots. The architectural character reflects the turn-of-the-millennium Summerlin style — clean Mediterranean lines, stucco and tile construction, and efficient floor plans from 1,400 to 3,200 square feet. Many homes have been updated over the past two decades with modern kitchens, energy-efficient upgrades, and desert landscaping.</p>
                   <p>The village's central position in Summerlin South provides convenient access to Downtown Summerlin (approximately 10 minutes), the 215 Beltway, and the shopping and dining along West Sahara Avenue. Red Rock Canyon is approximately 12 minutes west, and the Strip is about 20 minutes via Summerlin Parkway and I-15.</p>
                   <p>The Pueblo is the right choice for buyers who prioritize the Summerlin address — the schools, the trails, the amenities, the community — without the price premium of newer or more upscale villages. It delivers honest, well-built homes in a well-maintained community at price points that represent the best entry into the Summerlin South Association.</p>

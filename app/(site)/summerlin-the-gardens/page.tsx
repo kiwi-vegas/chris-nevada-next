@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Gardens',
-  description: 'The Gardens is a master-planned · family community in Las Vegas, Nevada.',
+  description: 'The Gardens is a master-planned · family community in Las Vegas, Nevada (ZIP 89135), established in 1999 by Howard Hughes Corporation, spanning 420 acres. Home prices range from $450K–$750K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.175, longitude: -115.295 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinTheGardensPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Gardens is a well-established Summerlin South village that lives up to its name with lush landscaping, community parks, and a green, inviting neighborhood character. Developed beginning in 1999 by the Howard Hughes Corporation, The Gardens was designed around the concept of community green spaces — parks, trails, and landscaped common areas woven throughout the residential neighborhoods to create one of the most livable villages in Summerlin.</p>
+                  <p>The Gardens is a master-planned · family community within Summerlin in Las Vegas, Nevada (ZIP 89135/89134), spanning 420 acres, with 2,600+ homes, where home prices range from $450K–$750K. The Gardens is a well-established Summerlin South village that lives up to its name with lush landscaping, community parks, and a green, inviting neighborhood character. Developed beginning in 1999 by the Howard Hughes Corporation, The Gardens was designed around the concept of community green spaces — parks, trails, and landscaped common areas woven throughout the residential neighborhoods to create one of the most livable villages in Summerlin.</p>
                   <p>Homes in The Gardens range from approximately $450,000 for smaller single-family homes to around $750,000 for larger, updated properties on premium lots. The architectural character is late-1990s and early-2000s Summerlin — Mediterranean and transitional styles with stucco exteriors, tile roofs, and covered patios. Many homes have been updated with modern kitchens, new pools, and contemporary finishes while maintaining the village's warm residential character.</p>
                   <p>The village is centrally located within Summerlin South, providing convenient access to Downtown Summerlin (approximately 10 minutes), the 215 Beltway, and the commercial amenities along West Sahara and West Charleston. Gardens Park, a major Summerlin community park, anchors the village and provides playgrounds, basketball courts, walking trails, and open green space that serve as a gathering point for the community.</p>
                   <p>For buyers seeking a well-maintained Summerlin address with genuine neighborhood character, community parks, and price points that remain accessible relative to Summerlin's newer and more premium villages, The Gardens delivers reliable value. The village's emphasis on green space and community amenities creates a quality of daily life that resonates particularly well with families and active adults.</p>

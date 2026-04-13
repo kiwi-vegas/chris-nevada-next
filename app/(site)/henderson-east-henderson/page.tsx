@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'East Henderson',
-  description: 'East Henderson is a suburban · growing community in Henderson, Nevada.',
+  description: 'East Henderson is a suburban · growing community in Henderson, Nevada (ZIP 89011), established in 2000s, spanning ~15 sq mi. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.04, longitude: -114.97 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89011', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function HendersonEastHendersonPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>East Henderson encompasses the growing residential areas east of the I-515/US-95 corridor and south of Lake Mead Drive, stretching toward Boulder City and the foothills of the River Mountains. This part of Henderson has experienced significant development since the early 2000s, transforming from largely undeveloped desert into a collection of newer suburban neighborhoods with mountain views, open space, and a quieter pace of life compared to the western valley.</p>
+                  <p>East Henderson is a suburban · growing community in Henderson, Nevada (ZIP 89011/89015), spanning ~15 sq mi, with 12,000+ homes, where home prices range from $350K–$600K. East Henderson encompasses the growing residential areas east of the I-515/US-95 corridor and south of Lake Mead Drive, stretching toward Boulder City and the foothills of the River Mountains. This part of Henderson has experienced significant development since the early 2000s, transforming from largely undeveloped desert into a collection of newer suburban neighborhoods with mountain views, open space, and a quieter pace of life compared to the western valley.</p>
                   <p>The area's appeal begins with its dramatic setting. East Henderson sits at a higher elevation than the valley floor, with many homes enjoying views of the River Mountains, Frenchman Mountain, and the broader Las Vegas Valley. The terrain is more rugged and natural than the flat subdivisions of the western valley, giving neighborhoods here a distinctive desert landscape character that attracts buyers seeking a more scenic residential environment.</p>
                   <p>Homes in East Henderson range from approximately $350,000 for townhomes and smaller single-family homes to $600,000 or more for larger residences on premium view lots. The housing stock is predominantly from the 2000s and 2010s, with several active new-construction communities continuing to expand. Builders including Beazer, Pulte, and KB Home have been active in the area, offering modern floor plans with energy-efficient features.</p>
                   <p>East Henderson benefits from Henderson's municipal services, which consistently rank among the best in Nevada. The area is convenient to Henderson Executive Airport, Galleria at Sunset mall, and the shops and restaurants along Stephanie Street and Horizon Drive. Lake Mead National Recreation Area is approximately 15 minutes east, making East Henderson a natural choice for outdoor enthusiasts who want lake access with suburban convenience.</p>

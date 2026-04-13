@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Village Park',
-  description: 'Village Park is a master-planned · family community in Henderson, Nevada.',
+  description: 'Village Park is a master-planned · family community in Henderson, Nevada (ZIP 89011), established in 2017 by Lennar / Richmond American, spanning ~80 acres. Home prices range from $400K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.025, longitude: -115.005 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89011', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function CadenceVillageParkPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Village Park is one of the most popular neighborhoods within the Cadence master-planned community in Henderson. Designed around the community's central park system, Village Park offers newer-construction single-family homes with direct access to Cadence's extensive amenity package — including the 50-acre Central Park, the Cadence Clubhouse, resort-style pools, and miles of walking and biking trails.</p>
+                  <p>Village Park is a master-planned · family community within Cadence in Henderson, Nevada (ZIP 89011), established in 2017, developed by Lennar / Richmond American, spanning ~80 acres. Village Park is one of the most popular neighborhoods within the Cadence master-planned community in Henderson. Designed around the community's central park system, Village Park offers newer-construction single-family homes with direct access to Cadence's extensive amenity package — including the 50-acre Central Park, the Cadence Clubhouse, resort-style pools, and miles of walking and biking trails.</p>
                   <p>Homes in Village Park were built primarily by Lennar and Richmond American Homes beginning around 2017, featuring contemporary designs with open floor plans, modern kitchens, and energy-efficient construction. Floor plans range from approximately 1,600 to 3,200 square feet, with most offering 3 to 5 bedrooms, two-car garages, and private yards. The neighborhood appeals to families, young professionals, and move-up buyers drawn to the combination of newer construction, strong amenities, and Henderson's quality of life.</p>
                   <p>Cadence's Central Park is the neighborhood's signature amenity — a 50-acre destination park with sports fields, playgrounds, splash pads, outdoor event spaces, and walking paths. The Cadence Clubhouse offers a resort-style pool, fitness center, and community event space. A network of trails connects Village Park to the park system, retail centers, and other Cadence neighborhoods.</p>
                   <p>Located in eastern Henderson, Village Park provides quick access to the I-215 beltway, Henderson's growing commercial corridor, and Lake Mead National Recreation Area to the east. The neighborhood is served by newer CCSD schools built specifically for the Cadence community. For buyers seeking new-construction value in Henderson's most active new master plan, Village Park delivers an excellent balance of price, quality, and lifestyle.</p>

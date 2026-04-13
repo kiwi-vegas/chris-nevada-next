@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Cello Tower',
-  description: 'Cello Tower is a luxury high-rise · new construction community in Las Vegas, Nevada.',
+  description: 'Cello Tower is a luxury high-rise · new construction community in Las Vegas, Nevada (ZIP 89101), established in 2025 by Cello Group, spanning ~2 acres. Home prices range from $700K–$4.5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.168, longitude: -115.148 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89101', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function CelloTowerPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Cello Tower is the first new luxury high-rise condominium development to break ground in Downtown Las Vegas in over 15 years, signaling a new era of urban luxury living in the heart of the city. Rising above the intersection of Symphony Park and the Arts District, this 240-unit tower is bringing a level of residential sophistication to downtown that was previously only available on the Las Vegas Strip or in suburban guard-gated communities.</p>
+                  <p>Cello Tower is a luxury high-rise · new construction community in Las Vegas, Nevada (ZIP 89101), established in 2025, developed by Cello Group, spanning ~2 acres. Cello Tower is the first new luxury high-rise condominium development to break ground in Downtown Las Vegas in over 15 years, signaling a new era of urban luxury living in the heart of the city. Rising above the intersection of Symphony Park and the Arts District, this 240-unit tower is bringing a level of residential sophistication to downtown that was previously only available on the Las Vegas Strip or in suburban guard-gated communities.</p>
                   <p>The project features residences ranging from approximately $700,000 for studio and one-bedroom units to over $4.5 million for the tower's most exclusive penthouses. Every unit is designed with floor-to-ceiling glass, premium finishes, and smart home technology. The building's architecture makes a deliberate statement — a modern glass tower that adds to the evolving downtown skyline while complementing the nearby Smith Center for the Performing Arts and the World Market Center.</p>
                   <p>Residents of Cello Tower will have access to resort-caliber amenities including a rooftop infinity pool and lounge, state-of-the-art fitness center, private dining and entertainment spaces, co-working facilities, concierge services, and secure parking. The building's ground-floor retail component will bring curated dining and shopping directly to residents' doorsteps.</p>
                   <p>Cello Tower's location in Downtown Las Vegas positions residents at the epicenter of the city's cultural renaissance. The Arts District, Fremont East, Symphony Park, and the forthcoming developments along the UNLV Medical District corridor are transforming downtown into a vibrant urban neighborhood. For buyers seeking a walkable, culturally rich lifestyle that is distinctly different from suburban Las Vegas, Cello Tower represents the most compelling opportunity in the market.</p>

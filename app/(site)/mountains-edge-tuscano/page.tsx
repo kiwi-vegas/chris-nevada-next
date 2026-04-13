@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Tuscano at Mountains Edge',
-  description: 'Tuscano at Mountains Edge is a master-planned · family community in Las Vegas, Nevada.',
+  description: 'Tuscano at Mountains Edge is a master-planned · family community in Las Vegas, Nevada (ZIP 89178), established in 2006 by Focus Property Group / Pardee Homes, spanning ~150 acres. Home prices range from $400K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.018, longitude: -115.27 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89178', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function MountainsEdgeTuscanoPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Tuscano at Mountains Edge is one of the most established and desirable neighborhoods within the larger Mountains Edge master-planned community. Developed primarily by Pardee Homes beginning around 2006, Tuscano features well-built single-family homes with Tuscan-inspired architectural elements — warm stucco tones, clay tile accents, and stone veneer details — that give the neighborhood a distinctive character within the broader community.</p>
+                  <p>Tuscano at Mountains Edge is a master-planned · family community within Mountains Edge in Las Vegas, Nevada (ZIP 89178), developed by Focus Property Group / Pardee Homes, spanning ~150 acres, with 800+ homes. Tuscano at Mountains Edge is one of the most established and desirable neighborhoods within the larger Mountains Edge master-planned community. Developed primarily by Pardee Homes beginning around 2006, Tuscano features well-built single-family homes with Tuscan-inspired architectural elements — warm stucco tones, clay tile accents, and stone veneer details — that give the neighborhood a distinctive character within the broader community.</p>
                   <p>Homes in Tuscano range from approximately $400,000 to $600,000, with floor plans spanning 1,800 to 3,200 square feet. Most homes feature three to five bedrooms, two-car garages, open-concept living areas, and rear yards large enough for pools and outdoor entertaining. The neighborhood's mature landscaping and established trees give it a settled, comfortable feel that newer sections of Mountains Edge are still developing.</p>
                   <p>Tuscano benefits from its location near the heart of the Mountains Edge master plan, with easy access to Mountains Edge Regional Park — a 100-acre facility with athletic fields, playgrounds, splash pads, and walking trails. The community's extensive trail network connects Tuscano to parks, schools, and the commercial corridor along Blue Diamond Road. Exploration Peak Park, with its hiking trails and mountain summit views, is a short drive away.</p>
                   <p>The neighborhood is served by well-regarded CCSD schools and is within the attendance boundaries for some of the highest-rated elementary schools in the southwest valley. For families seeking a well-built, well-located home in one of Las Vegas's most successful master-planned communities at price points well below Summerlin, Tuscano delivers outstanding value.</p>

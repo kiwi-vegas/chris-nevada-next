@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Silverstone',
-  description: 'Silverstone is a suburban · established community in Henderson, Nevada.',
+  description: 'Silverstone is a suburban · established community in Henderson, Nevada (ZIP 89074), established in 2000, spanning ~700 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.052, longitude: -115.08 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89074', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function HendersonSilverstonePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Silverstone is a well-established residential community in central Henderson, located along the Eastern Avenue and Stephanie Street corridors between Green Valley Ranch and Anthem. The community was developed primarily in the early 2000s and features quality single-family homes, community parks, and a convenient location that provides access to some of Henderson's best shopping, dining, and medical facilities.</p>
+                  <p>Silverstone is a suburban · established community in Henderson, Nevada (ZIP 89074/89052), spanning ~700 acres, with 3,500+ homes, where home prices range from $400K–$700K. Silverstone is a well-established residential community in central Henderson, located along the Eastern Avenue and Stephanie Street corridors between Green Valley Ranch and Anthem. The community was developed primarily in the early 2000s and features quality single-family homes, community parks, and a convenient location that provides access to some of Henderson's best shopping, dining, and medical facilities.</p>
                   <p>The community's name derives from the Silverstone Ranch and Silverstone Golf Club that once anchored the area. Today the residential neighborhoods feature a mix of single-family homes ranging from approximately $400,000 for smaller floor plans to $700,000 for larger homes on premium lots. The construction quality is typical of early 2000s Henderson development — solid block and stucco with tile roofing, open floor plans, and well-designed community spaces.</p>
                   <p>Silverstone's central Henderson location is arguably its greatest asset. The community is equidistant from Green Valley Ranch Resort to the north and the Anthem Marketplace to the south, with the Galleria at Sunset mall, Henderson Hospital, and numerous professional offices within a five-to-ten minute drive. The I-215 beltway and I-515/US-95 are both accessible, providing connectivity to every part of the Las Vegas Valley.</p>
                   <p>For families, Silverstone offers a combination of good schools, safe neighborhoods, and community amenities at price points that are more moderate than the premium guard-gated communities nearby. The area's mature landscaping, established HOAs, and proven infrastructure give it a settled, well-maintained character that newer communities in the eastern valley cannot yet match.</p>

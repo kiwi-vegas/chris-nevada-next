@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Vineyards',
-  description: 'The Vineyards is a guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'The Vineyards is a guard-gated · luxury community in Las Vegas, Nevada (ZIP 89134), established in 1998 by Howard Hughes Corporation, spanning 100 acres. Home prices range from $900K–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.206, longitude: -115.314 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function TheVineyardsSummerlinPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Vineyards is the premier guard-gated enclave within The Vistas village of Summerlin, distinguished by its custom estate homes, elevated terrain, and panoramic views of the Spring Mountains, Red Rock Canyon, and the Las Vegas Valley. With homes ranging from approximately $900,000 to over $3 million, The Vineyards attracts luxury buyers who want the established character and mature landscaping of Summerlin North with the privacy and exclusivity of a 24-hour guard-gated community.</p>
+                  <p>The Vineyards is a guard-gated · luxury community within Summerlin in Las Vegas, Nevada (ZIP 89134), established in 1998, developed by Howard Hughes Corporation, spanning 100 acres. The Vineyards is the premier guard-gated enclave within The Vistas village of Summerlin, distinguished by its custom estate homes, elevated terrain, and panoramic views of the Spring Mountains, Red Rock Canyon, and the Las Vegas Valley. With homes ranging from approximately $900,000 to over $3 million, The Vineyards attracts luxury buyers who want the established character and mature landscaping of Summerlin North with the privacy and exclusivity of a 24-hour guard-gated community.</p>
                   <p>Custom and semi-custom homes in The Vineyards range from 3,200 to 7,000+ square feet, featuring Mediterranean, Tuscan, and transitional architectural styles. Premium finishes include natural stone flooring, custom cabinetry, gourmet kitchens with professional-grade appliances, wine cellars (a fitting amenity given the community's name), home theaters, and resort-style outdoor living with pools, spas, and covered entertainment areas. The community's approximately 200 homes across 100 acres maintain a low-density character.</p>
                   <p>The Vistas village is one of Summerlin North's most established and desirable villages, and The Vineyards represents its highest-end residential option. The village's terrain rises gradually to the west, giving The Vineyards homes an elevated vantage point with expansive views. This elevation, combined with the mature landscaping that comes from over two decades of establishment, creates a residential environment with genuine estate-quality character.</p>
                   <p>The Vineyards' Summerlin North location provides convenient access to the Summerlin Parkway for quick travel to the Strip and airport, while Downtown Summerlin, Red Rock Canyon, and TPC Summerlin are all within a 5–10 minute drive. For luxury buyers seeking guard-gated living in one of Summerlin's most established villages, The Vineyards offers a compelling combination of custom-quality homes, views, privacy, and proven long-term value.</p>

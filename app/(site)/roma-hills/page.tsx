@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Roma Hills',
-  description: 'Roma Hills is a guard-gated · luxury community in Henderson, Nevada.',
+  description: 'Roma Hills is a guard-gated · luxury community in Henderson, Nevada (ZIP 89052), established in 2001 by Various luxury builders, spanning ~250 acres. Home prices range from $600K–$15M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.002, longitude: -115.065 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function RomaHillsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Roma Hills is a guard-gated luxury community in the Henderson foothills that has quietly established itself as one of the most desirable addresses in the southeastern Las Vegas Valley. Located along the foothills east of Anthem, Roma Hills offers estate-style living with panoramic views of the Las Vegas Strip, the entire valley, and the surrounding mountain ranges — all within a secure, guard-gated environment.</p>
+                  <p>Roma Hills is a guard-gated · luxury community in Henderson, Nevada (ZIP 89052), established in 2001, developed by Various luxury builders, spanning ~250 acres. Roma Hills is a guard-gated luxury community in the Henderson foothills that has quietly established itself as one of the most desirable addresses in the southeastern Las Vegas Valley. Located along the foothills east of Anthem, Roma Hills offers estate-style living with panoramic views of the Las Vegas Strip, the entire valley, and the surrounding mountain ranges — all within a secure, guard-gated environment.</p>
                   <p>The community's elevated position is its defining feature. Homes in Roma Hills sit on hillside lots ranging from a quarter-acre to over an acre, with many offering unobstructed 180-degree views that stretch from the Strip skyline to the mountains. The terrain creates a terraced effect where even interior lots enjoy elevated sightlines that valley-floor communities cannot match.</p>
                   <p>Homes in Roma Hills range dramatically — from approximately $600,000 for established homes in the lower sections to over $15 million for ultra-luxury custom estates in the most exclusive enclaves, including the double guard-gated Obsidian neighborhood. The community attracts a mix of luxury buyers: executives, professionals, and high-net-worth individuals seeking elevated views, privacy, and Henderson's renowned safety.</p>
                   <p>Roma Hills provides a distinctly different luxury experience from the west-side Summerlin communities. Where Summerlin offers Red Rock Canyon proximity and master-planned infrastructure, Roma Hills delivers distinctive valley and Strip views from an elevated hillside setting in Henderson. The guard-gated security, panoramic views, and diverse price range make Roma Hills one of the most compelling luxury communities in the Las Vegas Valley.</p>

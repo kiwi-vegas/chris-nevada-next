@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Green Valley Ranch',
-  description: 'Green Valley Ranch is a master-planned · established community in Henderson, Nevada.',
+  description: 'Green Valley Ranch is a master-planned · established community in Henderson, Nevada (ZIP 89012), established in 1994 by American Nevada Corporation, spanning ~1,600 acres. Home prices range from $400K–$900K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.05, longitude: -115.085 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89012', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function GreenValleyRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Green Valley Ranch is one of the most desirable and well-established master-planned communities in the Las Vegas Valley. Developed by American Nevada Corporation beginning in the mid-1990s, the community spans approximately 1,600 acres in the heart of Henderson and has become synonymous with family-friendly living, top-rated schools, parks, and everyday convenience.</p>
+                  <p>Green Valley Ranch is a master-planned · established community in Henderson, Nevada (ZIP 89012/89052), established in 1994, spanning ~1,600 acres, with 6,000+ homes. Green Valley Ranch is one of the most desirable and well-established master-planned communities in the Las Vegas Valley. Developed by American Nevada Corporation beginning in the mid-1990s, the community spans approximately 1,600 acres in the heart of Henderson and has become synonymous with family-friendly living, top-rated schools, parks, and everyday convenience.</p>
                   <p>The community is anchored by Green Valley Ranch Resort Casino & Spa — a AAA Four-Diamond property that serves as a premier dining, entertainment, and relaxation destination right in the neighborhood. The District at Green Valley Ranch adds an outdoor lifestyle shopping center with boutiques, restaurants, and entertainment. Combined with multiple grocery stores, medical facilities, and professional services, Green Valley Ranch offers a complete live-work-play environment.</p>
                   <p>Homes in Green Valley Ranch range from approximately $400,000 for well-maintained resale homes with 1,500–2,000 square feet to $900,000 for larger estate-style properties on premium lots with mountain and valley views. The community features a mix of national builders including Pardee, American West, and Pulte who delivered homes across multiple phases. Mature landscaping, tree-lined streets, and well-maintained common areas give the community a polished, established character.</p>
                   <p>Green Valley Ranch's central Henderson location provides outstanding connectivity. The I-215 beltway and Green Valley Parkway are the community's primary corridors, offering 20-minute access to the Strip, Harry Reid Airport, and Summerlin. The community is served by several of Henderson's highest-rated CCSD schools, making it one of the most popular choices for families relocating to the Las Vegas area.</p>

@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Centennial Hills North',
-  description: 'Centennial Hills North is a new construction · family community in Las Vegas, Nevada.',
+  description: 'Centennial Hills North is a new construction · family community in Las Vegas, Nevada (ZIP 89149), established in 2015 by Various Builders, spanning ~500 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.285, longitude: -115.265 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89149', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function CentennialHillsNorthPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Centennial Hills North represents the newest section of the Centennial Hills area in northwest Las Vegas, featuring contemporary new-construction homes from a variety of national and regional builders. This rapidly growing area extends north of the 215 Beltway along the Centennial Parkway corridor, offering modern floor plans, newer schools, and proximity to the growing retail and dining options that have followed the population northward.</p>
+                  <p>Centennial Hills North is a new construction · family community within Centennial Hills in Las Vegas, Nevada (ZIP 89149/89166), established in 2015, developed by Various Builders, spanning ~500 acres. Centennial Hills North represents the newest section of the Centennial Hills area in northwest Las Vegas, featuring contemporary new-construction homes from a variety of national and regional builders. This rapidly growing area extends north of the 215 Beltway along the Centennial Parkway corridor, offering modern floor plans, newer schools, and proximity to the growing retail and dining options that have followed the population northward.</p>
                   <p>Homes in Centennial Hills North are built by builders including Lennar, Pulte, Taylor Morrison, KB Home, and Century Communities, with construction beginning around 2015 and continuing with active new-home sales today. Floor plans range from approximately 1,400 to 3,500 square feet with contemporary open layouts, energy-efficient construction, and smart-home features. The price range of $400,000 to $700,000 makes this one of the most accessible newer-construction areas in Las Vegas' northwest corridor.</p>
                   <p>The area benefits from newer infrastructure including recently built CCSD schools, modern shopping centers anchored by major retailers, medical facilities, and well-maintained parks. The Centennial Hills Park — a 120-acre regional park with sports fields, playgrounds, a skate park, and walking trails — serves as the area's primary recreation hub. Mountain views of the Spring Mountains and Sheep Range are visible from elevated positions.</p>
                   <p>Centennial Hills North appeals to families, first-time move-up buyers, and professionals seeking newer construction with a northwest Las Vegas address at a price point well below Summerlin. The US-95 corridor provides efficient commutes downtown and to the Strip, while the 215 Beltway connects to employment centers throughout the valley. The area's continued growth trajectory suggests strong long-term value for early buyers.</p>

@@ -164,7 +164,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: '${c.name}',
-  description: '${c.name} is a ${c.type.toLowerCase()} community in ${c.city}, Nevada.',
+  description: '${c.name} is a ${c.type.toLowerCase()} community in ${c.city}, Nevada (ZIP ${c.zipCodes[0]})${c.established ? ", established in " + c.established : ""}${c.developer && c.developer !== "Various" ? " by " + c.developer : ""}${c.acreage ? ", spanning " + c.acreage : ""}. Home prices range from ${c.priceRange}.',
   geo: { '@type': 'GeoCoordinates', latitude: ${c.center[1]}, longitude: ${c.center[0]} },
   address: { '@type': 'PostalAddress', addressLocality: '${c.city}', addressRegion: 'NV', postalCode: '${c.zipCodes[0]}', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: '${c.city}' },

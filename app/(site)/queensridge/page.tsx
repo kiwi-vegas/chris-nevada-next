@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Queensridge',
-  description: 'Queensridge is a guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'Queensridge is a guard-gated · luxury community in Las Vegas, Nevada (ZIP 89117), established in 1997 by Peccole Family / EHB Companies, spanning ~300 acres. Home prices range from $800K–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.165, longitude: -115.288 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89117', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function QueensridgePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Queensridge is one of the most prestigious guard-gated communities in the Las Vegas Valley, encompassing 987 luxury homes across approximately 300 acres within the Peccole Ranch master plan. Developed beginning in 1997, Queensridge quickly established itself as the premier address in the western valley, attracting executives, entrepreneurs, and high-net-worth individuals seeking estate-caliber living with exceptional convenience.</p>
+                  <p>Queensridge is a guard-gated · luxury community within Peccole Ranch in Las Vegas, Nevada (ZIP 89117/89145), developed by Peccole Family / EHB Companies, spanning ~300 acres, where home prices range from $800K–$5M+. Queensridge is one of the most prestigious guard-gated communities in the Las Vegas Valley, encompassing 987 luxury homes across approximately 300 acres within the Peccole Ranch master plan. Developed beginning in 1997, Queensridge quickly established itself as the premier address in the western valley, attracting executives, entrepreneurs, and high-net-worth individuals seeking estate-caliber living with exceptional convenience.</p>
                   <p>The community is anchored by the iconic One Queensridge Place — twin 18-story luxury condominium towers that define the western Las Vegas skyline. Below the towers, the neighborhood features an impressive collection of custom and semi-custom single-family homes ranging from approximately 3,000 to over 10,000 square feet, many set on generous lots with mature landscaping, private pools, and sweeping views of the mountains and city lights.</p>
                   <p>Queensridge's guard-gated entry with 24-hour security staffing, combined with its meticulously maintained common areas and lush greenbelts, creates an atmosphere of exclusivity that rivals Summerlin's most expensive enclaves — at a more accessible price point. Homes range from approximately $800,000 for resale properties to over $5 million for premium estates and penthouse units in One Queensridge Place.</p>
                   <p>The community's central location is one of its greatest advantages. Queensridge sits just 15 minutes from the Las Vegas Strip, 10 minutes from Downtown Summerlin, and has immediate access to the 215 Beltway. For buyers who want guard-gated luxury without the drive times associated with more remote communities, Queensridge offers a rare combination of prestige, privacy, and proximity.</p>

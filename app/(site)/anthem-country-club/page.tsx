@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Anthem Country Club',
-  description: 'Anthem Country Club is a guard-gated · golf · luxury community in Henderson, Nevada.',
+  description: 'Anthem Country Club is a guard-gated · golf · luxury community in Henderson, Nevada (ZIP 89052), established in 1999 by Del Webb / Pulte Homes, spanning ~800 acres. Home prices range from $1.2M–$8M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.002, longitude: -115.064 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function AnthemCountryClubPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Anthem Country Club is the premier guard-gated luxury community within the broader Anthem master plan in Henderson. Anchored by an 18-hole championship golf course designed by Hale Irwin and Keith Foster, the community occupies some of the highest elevation in the Anthem foothills, delivering panoramic views of the Las Vegas Strip, the Spring Mountains, and the McCullough Range from virtually every neighborhood.</p>
+                  <p>Anthem Country Club is a guard-gated · golf · luxury community within Anthem in Henderson, Nevada (ZIP 89052), established in 1999, developed by Del Webb / Pulte Homes, spanning ~800 acres. Anthem Country Club is the premier guard-gated luxury community within the broader Anthem master plan in Henderson. Anchored by an 18-hole championship golf course designed by Hale Irwin and Keith Foster, the community occupies some of the highest elevation in the Anthem foothills, delivering panoramic views of the Las Vegas Strip, the Spring Mountains, and the McCullough Range from virtually every neighborhood.</p>
                   <p>The private country club features a 72-par championship course that plays through natural desert terrain at elevations ranging from 2,900 to 3,400 feet. The clubhouse offers full-service dining, a resort-style pool, tennis courts, a fitness center, and a full calendar of member events. Club membership is separate from homeownership and available in golf, social, and fitness tiers.</p>
                   <p>Homes in Anthem Country Club range from approximately $1.2 million for semi-custom homes in established neighborhoods to over $8 million for custom estates on premium lots with direct golf course and Strip views. The community features a mix of production luxury homes by Toll Brothers, semi-custom builds, and full custom estates. Architectural standards emphasize desert-Mediterranean and contemporary styles.</p>
                   <p>The guard-gated entry with 24-hour staffing provides security and exclusivity while maintaining easy access to Henderson's infrastructure. The I-215 beltway is minutes away, providing a clean commute corridor to the Strip, Harry Reid Airport, and the rest of the valley. Lake Mead is approximately 25 minutes east, and the Galleria at Sunset shopping center is a 10-minute drive.</p>

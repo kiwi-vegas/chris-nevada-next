@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Southwest Ranch',
-  description: 'Southwest Ranch is a estate · semi-rural · luxury community in Las Vegas, Nevada.',
+  description: 'Southwest Ranch is a estate · semi-rural · luxury community in Las Vegas, Nevada (ZIP 89178), established in 2000 by Various Builders, spanning ~800 acres. Home prices range from $600K–$1.5M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.01, longitude: -115.28 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89178', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasSouthwestRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Southwest Ranch is an upscale residential area in the southwestern portion of the Las Vegas Valley, characterized by larger lot sizes, custom and semi-custom homes, and a semi-rural atmosphere that sets it apart from the more densely developed master-planned communities nearby. Located south of Blue Diamond Road and west of Las Vegas Boulevard South, the area offers a sense of space and privacy that is increasingly rare in the Las Vegas metro.</p>
+                  <p>Southwest Ranch is a estate · semi-rural · luxury community in Las Vegas, Nevada (ZIP 89178/89139), established in 2000, developed by Various Builders, spanning ~800 acres. Southwest Ranch is an upscale residential area in the southwestern portion of the Las Vegas Valley, characterized by larger lot sizes, custom and semi-custom homes, and a semi-rural atmosphere that sets it apart from the more densely developed master-planned communities nearby. Located south of Blue Diamond Road and west of Las Vegas Boulevard South, the area offers a sense of space and privacy that is increasingly rare in the Las Vegas metro.</p>
                   <p>Homes in Southwest Ranch range from approximately $600,000 for semi-custom production homes to over $1.5 million for larger custom estates on half-acre to one-acre lots. The architectural character tends toward Southwestern and Mediterranean styles, though newer construction has introduced desert contemporary design. Many properties feature equestrian facilities, RV storage, detached workshops, and the kind of generous lot sizes that attract buyers seeking a retreat atmosphere within city limits.</p>
                   <p>The area's appeal lies in its combination of relative seclusion and practical accessibility. Southern Highlands is just minutes to the east, the I-15 corridor provides 15-20 minute access to the Strip and Harry Reid Airport, and the Mountains Edge commercial corridor along Blue Diamond Road offers grocery, dining, and essential services. Yet the lower density, desert views, and mountain backdrop create a distinct character that feels removed from the urban core.</p>
                   <p>Southwest Ranch attracts executives, entrepreneurs, equestrian enthusiasts, and families who want more land and privacy than a typical master-planned community offers. The lack of guard gates keeps the price-to-square-footage ratio attractive, while the larger lots and custom construction provide an estate-like living experience. For buyers who prioritize space, views, and autonomy over HOA-managed amenities, Southwest Ranch delivers a compelling lifestyle.</p>

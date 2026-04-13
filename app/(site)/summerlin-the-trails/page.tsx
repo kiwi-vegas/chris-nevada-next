@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Trails',
-  description: 'The Trails is a master-planned · guard-gated community in Las Vegas, Nevada.',
+  description: 'The Trails is a master-planned · guard-gated community in Las Vegas, Nevada (ZIP 89134), established in 1995 by Howard Hughes Corporation, spanning 650 acres. Home prices range from $500K–$2M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.208, longitude: -115.305 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function SummerlinTheTrailsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Trails is one of Summerlin North's most diverse and desirable villages, spanning a wide range of home styles and price points from approximately $500,000 to over $2 million. Developed beginning in 1995 by the Howard Hughes Corporation, The Trails earned its name from the extensive trail system that winds through the village, connecting neighborhoods to parks, open spaces, and the broader Summerlin trail network.</p>
+                  <p>The Trails is a master-planned · guard-gated community within Summerlin in Las Vegas, Nevada (ZIP 89134/89144), spanning 650 acres, with 3,200+ homes, where home prices range from $500K–$2M+. The Trails is one of Summerlin North's most diverse and desirable villages, spanning a wide range of home styles and price points from approximately $500,000 to over $2 million. Developed beginning in 1995 by the Howard Hughes Corporation, The Trails earned its name from the extensive trail system that winds through the village, connecting neighborhoods to parks, open spaces, and the broader Summerlin trail network.</p>
                   <p>The village's defining feature is its breadth. The Trails encompasses everything from accessible single-family homes in family-oriented neighborhoods to the prestigious guard-gated enclave of Country Rose Estates, where custom homes on large lots can exceed $2 million. This range makes The Trails appealing to a wide variety of buyers — from young families entering the Summerlin market to established professionals seeking privacy and space within a guard-gated community.</p>
                   <p>Country Rose Estates is the crown jewel of The Trails — a guard-gated neighborhood with a staffed entry gate, large custom lots, mature landscaping, and some of the most substantial estate-style homes in Summerlin North. Homes in Country Rose typically feature 4,000 to 7,000+ square feet, pools, expansive yards, and architectural character that reflects the community's custom-home heritage.</p>
                   <p>The Trails' central location in Summerlin North places it within easy reach of Downtown Summerlin (approximately 10 minutes), Red Rock Canyon (approximately 15 minutes), and the 215 Beltway for quick access throughout the valley. For buyers who want the flexibility of choosing their price point within a single, well-established village, The Trails is one of the most versatile communities in all of Summerlin.</p>

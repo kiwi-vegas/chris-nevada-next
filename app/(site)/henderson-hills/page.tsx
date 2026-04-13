@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Henderson Hills',
-  description: 'Henderson Hills is a established · hillside community in Henderson, Nevada.',
+  description: 'Henderson Hills is a established · hillside community in Henderson, Nevada (ZIP 89015), established in 1990s by Various Builders, spanning ~600 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.02, longitude: -114.97 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89015', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function HendersonHillsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Henderson Hills refers to the collection of residential neighborhoods occupying the elevated terrain along the eastern foothills of Henderson, near Black Mountain and the McCullough Range. These neighborhoods sit at higher elevations than the valley floor, providing many homes with sweeping panoramic views of the Las Vegas Valley, the Strip skyline, and the surrounding mountain ranges. The area spans approximately 600 acres with over 2,500 homes built primarily in the 1990s and 2000s.</p>
+                  <p>Henderson Hills is a established · hillside community in Henderson, Nevada (ZIP 89015/89002), developed by Various Builders, spanning ~600 acres, with 2,500+ homes. Henderson Hills refers to the collection of residential neighborhoods occupying the elevated terrain along the eastern foothills of Henderson, near Black Mountain and the McCullough Range. These neighborhoods sit at higher elevations than the valley floor, providing many homes with sweeping panoramic views of the Las Vegas Valley, the Strip skyline, and the surrounding mountain ranges. The area spans approximately 600 acres with over 2,500 homes built primarily in the 1990s and 2000s.</p>
                   <p>Homes in Henderson Hills range from approximately $400,000 for single-story homes in established subdivisions to $700,000 for larger homes on premium view lots at higher elevations. The terrain creates natural variation in lot positioning, and the most desirable properties are those at elevation with unobstructed valley views. The mix of builders who developed the area — including Richmond American, Beazer, and Pulte — provided a range of floor plans from 1,500 to 3,500 square feet.</p>
                   <p>The hillside location provides immediate access to hiking and trail opportunities in the surrounding desert terrain. Black Mountain is a popular hiking destination with trails ranging from moderate to challenging, and the McCullough Range provides additional outdoor recreation opportunities. For residents who enjoy an active outdoor lifestyle with quick access to nature, Henderson Hills delivers a compelling daily experience.</p>
                   <p>Henderson Hills benefits from Henderson's consistently high safety rankings, well-maintained infrastructure, and responsive city services. The area is within a reasonable drive of Henderson's commercial corridors, Galleria at Sunset, St. Rose Dominican Hospital, and the I-215 beltway. For buyers seeking elevated views, hillside character, and Henderson's quality of life at moderate price points, the Henderson Hills neighborhoods represent strong value.</p>

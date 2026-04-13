@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Mountains Edge',
-  description: 'Mountains Edge is a master-planned community community in Las Vegas, Nevada.',
+  description: 'Mountains Edge is a master-planned community community in Las Vegas, Nevada (ZIP 89178), established in 2004 by Focus Property Group, spanning 3,500 acres. Home prices range from $350K–$650K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.013, longitude: -115.278 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89178', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },

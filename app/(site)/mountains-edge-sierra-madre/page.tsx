@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sierra Madre at Mountains Edge',
-  description: 'Sierra Madre at Mountains Edge is a master-planned · family community in Las Vegas, Nevada.',
+  description: 'Sierra Madre at Mountains Edge is a master-planned · family community in Las Vegas, Nevada (ZIP 89178), established in 2008 by Focus Property Group / Pulte Homes, spanning ~130 acres. Home prices range from $450K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.01, longitude: -115.285 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89178', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function MountainsEdgeSierraMadrePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Sierra Madre at Mountains Edge is a premium neighborhood within the Mountains Edge master-planned community, situated on the community's western edge where the desert terrain begins to rise toward the Spring Mountains. This elevated position gives Sierra Madre homes some of the best mountain views within the broader master plan, with many homesites offering sweeping vistas of Red Rock Canyon's sandstone formations to the northwest.</p>
+                  <p>Sierra Madre at Mountains Edge is a master-planned · family community within Mountains Edge in Las Vegas, Nevada (ZIP 89178), established in 2008, developed by Focus Property Group / Pulte Homes, spanning ~130 acres. Sierra Madre at Mountains Edge is a premium neighborhood within the Mountains Edge master-planned community, situated on the community's western edge where the desert terrain begins to rise toward the Spring Mountains. This elevated position gives Sierra Madre homes some of the best mountain views within the broader master plan, with many homesites offering sweeping vistas of Red Rock Canyon's sandstone formations to the northwest.</p>
                   <p>Homes in Sierra Madre range from approximately $450,000 to $700,000, with floor plans spanning 2,200 to 3,800 square feet. Built primarily by Pulte Homes beginning around 2008, the neighborhood features thoughtful floor plans with open-concept living areas, gourmet kitchens, and generous master suites. Construction quality reflects Pulte's Energy Star-rated building practices, with many homes featuring upgraded insulation, high-efficiency HVAC systems, and smart-home wiring.</p>
                   <p>What sets Sierra Madre apart from other Mountains Edge neighborhoods is its position and views. The western edge location provides direct mountain views that most of the master plan's interior neighborhoods cannot match. The proximity to Exploration Peak Park — a 98-acre natural desert park with hiking trails, a mountain summit, and panoramic valley views — adds a recreational dimension that resonates with outdoor-oriented buyers.</p>
                   <p>Sierra Madre offers the Mountains Edge lifestyle — excellent schools, trail connectivity, community parks, and attainable pricing — with a premium position and mountain proximity that buyers typically only find in more expensive communities like Summerlin. For families and move-up buyers seeking value with views, Sierra Madre is one of the best-kept secrets in the southwest valley.</p>

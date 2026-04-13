@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Tule Springs',
-  description: 'Tule Springs is a established · family community in North Las Vegas, Nevada.',
+  description: 'Tule Springs is a established · family community in North Las Vegas, Nevada (ZIP 89131), established in 2003 by Various Builders, spanning ~800 acres. Home prices range from $300K–$500K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.265, longitude: -115.23 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89131', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function TuleSpringsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Tule Springs is an established residential area in North Las Vegas that has grown into one of the city's most popular family-oriented communities. Named for the historic Tule Springs ranch area (now Floyd Lamb Park) and adjacent to the Tule Springs Fossil Beds National Monument, the community offers a combination of affordable single-family homes, natural desert open space, and a growing amenity package that has attracted thousands of families since development began in the early 2000s.</p>
+                  <p>Tule Springs is a established · family community in North Las Vegas, Nevada (ZIP 89131/89085), established in 2003, developed by Various Builders, spanning ~800 acres. Tule Springs is an established residential area in North Las Vegas that has grown into one of the city's most popular family-oriented communities. Named for the historic Tule Springs ranch area (now Floyd Lamb Park) and adjacent to the Tule Springs Fossil Beds National Monument, the community offers a combination of affordable single-family homes, natural desert open space, and a growing amenity package that has attracted thousands of families since development began in the early 2000s.</p>
                   <p>Homes in Tule Springs span multiple neighborhoods developed by a variety of builders including Pardee, KB Home, DR Horton, Beazer, and others. Floor plans range from approximately 1,200 to 3,000 square feet with prices from $300,000 to $500,000 — making Tule Springs one of the most affordable established communities in the northwest Las Vegas Valley. While homes are older than those in the newest master plans, many have been updated and well-maintained.</p>
                   <p>The area's greatest natural asset is Floyd Lamb Park at Tule Springs — a 680-acre oasis featuring fishing ponds, historic ranch structures, mature trees, walking trails, and abundant wildlife. The park provides a green escape from the desert that is unique in North Las Vegas. The adjacent Tule Springs Fossil Beds National Monument adds a layer of natural heritage, with fossil sites documenting Ice Age megafauna that once roamed the area.</p>
                   <p>Tule Springs is positioned along the US-95/I-215 corridor, providing efficient access to Centennial Hills shopping and dining, Downtown Las Vegas, the Strip, and the broader metro area. Active new-construction communities like Heartland at Tule Springs and The Villages at Tule Springs are adding fresh inventory to the area, blending the established character of the original neighborhoods with the energy of new development.</p>

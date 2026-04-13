@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Valley Vista',
-  description: 'Valley Vista is a new construction · emerging community in North Las Vegas, Nevada.',
+  description: 'Valley Vista is a new construction · emerging community in North Las Vegas, Nevada (ZIP 89086), established in 2018 by Lennar / KB Home / Various, spanning ~600 acres. Home prices range from $350K–$550K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.31, longitude: -115.175 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89086', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },

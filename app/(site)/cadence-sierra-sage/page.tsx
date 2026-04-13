@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sierra Sage',
-  description: 'Sierra Sage is a new construction · move-up community in Henderson, Nevada.',
+  description: 'Sierra Sage is a new construction · move-up community in Henderson, Nevada (ZIP 89011), established in 2018 by Toll Brothers / Woodside Homes, spanning ~90 acres. Home prices range from $450K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.02, longitude: -115 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89011', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function CadenceSierraSagePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Sierra Sage is a premium neighborhood within the Cadence master-planned community in Henderson, offering move-up caliber new-construction homes with larger floor plans, enhanced finishes, and a step above the standard Cadence neighborhoods in terms of quality and pricing. Built by Toll Brothers and Woodside Homes, Sierra Sage targets buyers seeking more space, upgraded features, and a premium position within one of Henderson's fastest-growing master plans.</p>
+                  <p>Sierra Sage is a new construction · move-up community within Cadence in Henderson, Nevada (ZIP 89011), established in 2018, developed by Toll Brothers / Woodside Homes, spanning ~90 acres. Sierra Sage is a premium neighborhood within the Cadence master-planned community in Henderson, offering move-up caliber new-construction homes with larger floor plans, enhanced finishes, and a step above the standard Cadence neighborhoods in terms of quality and pricing. Built by Toll Brothers and Woodside Homes, Sierra Sage targets buyers seeking more space, upgraded features, and a premium position within one of Henderson's fastest-growing master plans.</p>
                   <p>Homes in Sierra Sage range from approximately 2,200 to 4,000 square feet with 3 to 6 bedrooms. Toll Brothers brings its signature attention to detail with premium standard finishes, gourmet kitchens, spa-inspired bathrooms, and flexible room configurations. Woodside Homes offers thoughtfully designed floor plans with open-concept living, dedicated home offices, and multi-generational suite options. Both builders emphasize energy efficiency, smart-home technology, and indoor-outdoor living suited to the Las Vegas climate.</p>
                   <p>As part of the Cadence master plan, Sierra Sage residents have full access to all community amenities: the 50-acre Central Park, the Cadence Clubhouse with resort-style pool and fitness center, miles of trails, sports courts, playgrounds, and community programming. Sierra Sage's position within Cadence typically provides slightly larger lots and more premium views compared to other Cadence neighborhoods.</p>
                   <p>Sierra Sage appeals to move-up buyers, growing families, and professionals relocating to Henderson who want newer construction with premium features at a price point below Henderson's guard-gated luxury communities. The I-215 beltway provides efficient commutes, and Henderson's growing commercial corridor along Lake Mead Parkway and Eastern Avenue continues to add retail, dining, and services.</p>

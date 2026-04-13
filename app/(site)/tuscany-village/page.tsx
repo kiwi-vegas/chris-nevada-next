@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Tuscany Village',
-  description: 'Tuscany Village is a guard-gated · golf community in Henderson, Nevada.',
+  description: 'Tuscany Village is a guard-gated · golf community in Henderson, Nevada (ZIP 89074), established in 1997 by Tuscany Golf Management, spanning ~450 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.04, longitude: -115.065 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89074', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -298,7 +298,7 @@ export default async function TuscanyVillagePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Tuscany Village is a guard-gated golf community in the heart of Henderson that delivers country club living at an accessible price point. Built around the Chimera Golf Club — an 18-hole championship course that winds through the community's rolling terrain — Tuscany Village offers the rare combination of guard-gated security, golf course views, and Henderson's central location, all without the seven-figure price tags found at Henderson's luxury guard-gated enclaves.</p>
+                  <p>Tuscany Village is a guard-gated · golf community in Henderson, Nevada (ZIP 89074), established in 1997, developed by Tuscany Golf Management, spanning ~450 acres. Tuscany Village is a guard-gated golf community in the heart of Henderson that delivers country club living at an accessible price point. Built around the Chimera Golf Club — an 18-hole championship course that winds through the community's rolling terrain — Tuscany Village offers the rare combination of guard-gated security, golf course views, and Henderson's central location, all without the seven-figure price tags found at Henderson's luxury guard-gated enclaves.</p>
                   <p>Developed in the late 1990s, Tuscany Village features approximately 1,200 homes built by a variety of national and regional builders. Residences range from approximately $400,000 for well-maintained single-story homes to $700,000 for larger homes on premium golf course lots. Floor plans span from 1,600 to 3,200 square feet with a mix of single-story and two-story configurations. The Tuscan-Mediterranean architectural theme gives the community a warm, cohesive character.</p>
                   <p>Chimera Golf Club (formerly Tuscany Golf Club) is an 18-hole, par-72 championship course open to both members and the public. The course features well-maintained fairways, strategic bunkering, and mountain views that make it one of Henderson's most enjoyable golf experiences. For non-golfers, the community's guard-gated perimeter, walking paths, and quiet streetscapes provide a secure and pleasant environment.</p>
                   <p>Tuscany Village's central Henderson location puts residents within minutes of Green Valley Ranch resort, the Galleria at Sunset, multiple grocery stores, and St. Rose Dominican Hospital. The I-215 beltway interchange is a short drive away, offering direct commute corridors to the Strip, Harry Reid Airport, and the broader valley. For buyers who want guard-gated golf community living without paying luxury premiums, Tuscany Village is one of Henderson's best-kept secrets.</p>

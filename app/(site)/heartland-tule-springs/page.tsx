@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Heartland at Tule Springs',
-  description: 'Heartland at Tule Springs is a master-planned · new construction community in North Las Vegas, Nevada.',
+  description: 'Heartland at Tule Springs is a master-planned · new construction community in North Las Vegas, Nevada (ZIP 89166), established in 2021 by Multiple National Builders, spanning ~1,200 acres. Home prices range from $350K–$550K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.29, longitude: -115.24 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function HeartlandTuleSpringsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Heartland at Tule Springs is one of the most dynamic new-construction master-planned communities in the Las Vegas Valley, located in the rapidly growing northern corridor of North Las Vegas. Ranked among the top 50 best-selling master-planned communities nationally, Heartland has attracted thousands of buyers with its combination of brand-new homes, competitive pricing, modern amenities, and proximity to the Tule Springs Fossil Beds National Monument.</p>
+                  <p>Heartland at Tule Springs is a master-planned · new construction community in North Las Vegas, Nevada (ZIP 89166/89084), established in 2021, developed by Multiple National Builders, spanning ~1,200 acres. Heartland at Tule Springs is one of the most dynamic new-construction master-planned communities in the Las Vegas Valley, located in the rapidly growing northern corridor of North Las Vegas. Ranked among the top 50 best-selling master-planned communities nationally, Heartland has attracted thousands of buyers with its combination of brand-new homes, competitive pricing, modern amenities, and proximity to the Tule Springs Fossil Beds National Monument.</p>
                   <p>The community features homes from several of the nation's top production builders, including Lennar, KB Home, Century Communities, and Richmond American Homes. Floor plans range from compact single-family homes around 1,400 square feet to spacious two-story residences exceeding 3,000 square feet, with pricing that makes homeownership accessible to first-time buyers, young families, and investors.</p>
                   <p>Heartland's master plan includes an extensive network of parks, trails, and community amenities, with planned commercial centers to serve the growing population. The adjacent Tule Springs Fossil Beds National Monument — a 22,650-acre preserve protecting Ice Age fossils — provides a unique natural amenity that no other Las Vegas community can match. Residents also benefit from proximity to the VA Medical Center and the planned developments along the 215 northern beltway extension.</p>
                   <p>North Las Vegas has emerged as one of the fastest-growing cities in the United States, and Heartland at Tule Springs is at the center of that growth. For buyers seeking new-construction homes at price points significantly below Summerlin, Henderson, or the southwest valley, Heartland represents one of the strongest value propositions in the Las Vegas metro area.</p>

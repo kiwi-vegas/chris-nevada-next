@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Anthem Highlands',
-  description: 'Anthem Highlands is a master-planned · family community in Henderson, Nevada.',
+  description: 'Anthem Highlands is a master-planned · family community in Henderson, Nevada (ZIP 89052), established in 2000 by Del Webb / Pulte Group, spanning 300 acres. Home prices range from $500K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.008, longitude: -115.058 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -299,7 +299,7 @@ export default async function AnthemHighlandsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Anthem Highlands is one of the most popular residential villages within the Anthem master-planned community in Henderson. Built primarily between 2000 and 2006 by national builders including Pulte, KB Home, and Richmond American, the neighborhood features a wide range of single-family homes from approximately 1,400 to 3,200 square feet. The community sits on elevated terrain along the eastern slopes of Anthem, offering many homes panoramic views of the Las Vegas Valley and the surrounding mountain ranges.</p>
+                  <p>Anthem Highlands is a master-planned · family community within Anthem in Henderson, Nevada (ZIP 89052), developed by Del Webb / Pulte Group, spanning 300 acres, with 1,000+ homes. Anthem Highlands is one of the most popular residential villages within the Anthem master-planned community in Henderson. Built primarily between 2000 and 2006 by national builders including Pulte, KB Home, and Richmond American, the neighborhood features a wide range of single-family homes from approximately 1,400 to 3,200 square feet. The community sits on elevated terrain along the eastern slopes of Anthem, offering many homes panoramic views of the Las Vegas Valley and the surrounding mountain ranges.</p>
                   <p>Homes in Anthem Highlands range from approximately $500,000 for smaller, well-maintained resales to $800,000 for larger homes on premium view lots that have been fully updated. The architectural style follows the Southwest and Mediterranean palette that characterizes much of Anthem — stucco exteriors, tile roofs, and earth-tone color schemes. Many homeowners have invested significantly in renovations, adding modern kitchens, outdoor living spaces, and energy-efficient upgrades.</p>
                   <p>Like all Anthem villages, Highlands residents enjoy full access to the Anthem Center with resort-style pools, fitness facilities, tennis courts, and community gathering spaces. The neighborhood also has its own parks, pocket greenbelts, and connections to Anthem's extensive trail network that winds through the community's natural desert washes and up into the surrounding foothills.</p>
                   <p>Anthem Highlands is a proven family neighborhood with reliable resale performance. The school zoning — including Vanderburg Elementary, Webb Middle, and Coronado High — is among the most desirable in Henderson. The combination of Anthem's brand-name recognition, top-tier schools, family-friendly amenities, and easy access to Henderson's retail and employment corridors makes Highlands one of the steadiest performers in the Henderson resale market.</p>

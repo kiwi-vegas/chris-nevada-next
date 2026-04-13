@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Anthem',
-  description: 'Anthem is a master-planned · multi-community community in Henderson, Nevada.',
+  description: 'Anthem is a master-planned · multi-community community in Henderson, Nevada (ZIP 89052), established in 1998 by Del Webb / Pulte Homes, spanning 4,775 acres. Home prices range from $400K–$8M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.995, longitude: -115.065 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function AnthemPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Anthem is the largest and most diverse master-planned community in Henderson, spanning 4,775 acres across the McCullough Range foothills in the southeastern quadrant of the city. With over 14,000 homes across multiple distinct sub-communities, Anthem offers an extraordinary range of lifestyles — from the guard-gated luxury of Anthem Country Club and its $8M+ custom estates to the active retirement living of Sun City Anthem and the family-friendly neighborhoods of Anthem Highlands and Coventry.</p>
+                  <p>Anthem is a master-planned · multi-community community in Henderson, Nevada (ZIP 89052/89044), established in 1998, developed by Del Webb / Pulte Homes, with 14,000+ homes. Anthem is the largest and most diverse master-planned community in Henderson, spanning 4,775 acres across the McCullough Range foothills in the southeastern quadrant of the city. With over 14,000 homes across multiple distinct sub-communities, Anthem offers an extraordinary range of lifestyles — from the guard-gated luxury of Anthem Country Club and its $8M+ custom estates to the active retirement living of Sun City Anthem and the family-friendly neighborhoods of Anthem Highlands and Coventry.</p>
                   <p>The community's elevated foothills terrain is one of its greatest assets. Many Anthem neighborhoods sit at elevations between 2,500 and 3,400 feet, delivering panoramic views of the Las Vegas Strip, the Spring Mountains, and the surrounding McCullough Range that are among the most dramatic in the valley. The desert-mountain setting also provides cooler temperatures and a more natural landscape than the valley floor.</p>
                   <p>Anthem's amenity infrastructure is extensive. The community features multiple parks, including the award-winning Anthem Hills Park and the popular Madeira Canyon trailhead for hiking and biking. Sun City Anthem operates three recreation centers with over 100,000 square feet of amenity space. Anthem Country Club offers an 18-hole Hale Irwin-designed championship golf course with a full-service clubhouse. Neighborhood parks, pools, and walking trails are distributed throughout.</p>
                   <p>Located along the I-215 beltway corridor in southeast Henderson, Anthem provides direct commute access to the Strip and Harry Reid Airport in approximately 20–25 minutes. The Galleria at Sunset, St. Rose Dominican Hospital, and Henderson's infrastructure are all within easy reach. Lake Mead National Recreation Area is just 20 minutes east. For buyers who want Henderson's safety and lifestyle with mountain views and community depth, Anthem is the gold standard.</p>

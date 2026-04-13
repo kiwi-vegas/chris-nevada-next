@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Las Vegas Country Club',
-  description: 'Las Vegas Country Club is a guard-gated · golf · established community in Las Vegas, Nevada.',
+  description: 'Las Vegas Country Club is a guard-gated · golf · established community in Las Vegas, Nevada (ZIP 89109), established in 1967 by Irwin Molasky / Pardee Homes, spanning ~800 acres. Home prices range from $400K–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.115, longitude: -115.143 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89109', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },

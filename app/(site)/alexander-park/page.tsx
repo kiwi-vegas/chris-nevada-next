@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Alexander Park',
-  description: 'Alexander Park is a new construction · master-planned community in North Las Vegas, Nevada.',
+  description: 'Alexander Park is a new construction · master-planned community in North Las Vegas, Nevada (ZIP 89032), established in 2020 by Various Builders, spanning ~300 acres. Home prices range from $350K–$550K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.268, longitude: -115.12 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89032', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function AlexanderParkPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Alexander Park is one of North Las Vegas's newest residential communities, bringing contemporary architecture, energy-efficient construction, and modern community design to the rapidly growing northern Las Vegas Valley. Developed beginning around 2020, the community features brand-new and nearly-new homes from national builders including Lennar, KB Home, and Century Communities, offering buyers the latest in floor plan design and building technology.</p>
+                  <p>Alexander Park is a new construction · master-planned community in North Las Vegas, Nevada (ZIP 89032/89086), developed by Various Builders, spanning ~300 acres, with 1,500+ homes. Alexander Park is one of North Las Vegas's newest residential communities, bringing contemporary architecture, energy-efficient construction, and modern community design to the rapidly growing northern Las Vegas Valley. Developed beginning around 2020, the community features brand-new and nearly-new homes from national builders including Lennar, KB Home, and Century Communities, offering buyers the latest in floor plan design and building technology.</p>
                   <p>Homes in Alexander Park range from approximately $350,000 to $550,000, with floor plans spanning 1,500 to 3,000 square feet. As a new-construction community, every home features modern amenities — open-concept great rooms, quartz or granite countertops, energy-efficient windows and HVAC systems, smart-home wiring, and covered rear patios. Single-story and two-story options are available, with some plans offering first-floor master suites and upstairs lofts or bonus rooms.</p>
                   <p>The community is designed around a central park and trail system that connects neighborhoods to schools, commercial areas, and the broader North Las Vegas recreation network. Craig Ranch Regional Park, one of the valley's premier park facilities, is a short drive away. North Las Vegas's rapidly expanding commercial infrastructure means new restaurants, shops, and services are opening regularly along the community's main corridors.</p>
                   <p>Alexander Park represents the next generation of North Las Vegas housing. As the city continues its transformation from an overlooked bedroom community into one of the valley's fastest-growing municipalities, communities like Alexander Park are attracting first-time buyers, young families, and investors who recognize the value of new construction at price points that are typically $100K–$200K below comparable new homes in Summerlin or Henderson.</p>

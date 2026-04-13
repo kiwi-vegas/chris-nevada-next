@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Ascaya',
-  description: 'Ascaya is a guard-gated · ultra-luxury community in Henderson, Nevada.',
+  description: 'Ascaya is a guard-gated · ultra-luxury community in Henderson, Nevada (ZIP 89012), established in 2007 by Ascaya Development LLC, spanning 313 acres. Home prices range from $3M–$20M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.003, longitude: -115.029 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89012', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function AscayaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Ascaya is one of the most exclusive luxury communities in the American Southwest. Set on 313 acres along the McCullough Range ridgeline in Henderson, the community occupies a dramatic elevated position that provides panoramic views of the entire Las Vegas Valley, the Strip skyline, and the surrounding mountain ranges. Every lot was engineered for unobstructed views, and the desert-modern architectural standards are among the most exacting in Nevada.</p>
+                  <p>Ascaya is a guard-gated · ultra-luxury community in Henderson, Nevada (ZIP 89012), established in 2007, developed by Ascaya Development LLC, with 313 lots homes. Ascaya is one of the most exclusive luxury communities in the American Southwest. Set on 313 acres along the McCullough Range ridgeline in Henderson, the community occupies a dramatic elevated position that provides panoramic views of the entire Las Vegas Valley, the Strip skyline, and the surrounding mountain ranges. Every lot was engineered for unobstructed views, and the desert-modern architectural standards are among the most exacting in Nevada.</p>
                   <p>Originally entitled in the mid-2000s, the community went through development pauses during the recession before being revitalized with fresh investment and infrastructure. Ascaya's 313 custom lots range from approximately one-third of an acre to over an acre, with finished pad sites, underground utilities, and paved streets already in place. Buyers purchase a lot and then work with an approved architect and builder to create a fully custom home.</p>
                   <p>Blue Heron is the most prominent builder at Ascaya, known for sleek desert-contemporary design with disappearing glass walls, negative-edge pools, and dramatic indoor-outdoor living spaces. Finished homes at Ascaya range from approximately $3 million to well over $20 million, with several estates exceeding 10,000 square feet. The community clubhouse features a resort-style pool, fitness center, and private event space.</p>
                   <p>Ascaya sits just minutes from Henderson's executive airport, the shops and restaurants of The District at Green Valley Ranch, and Interstate 215 for a direct corridor to the Strip and Harry Reid International Airport. The combination of extreme privacy, architectural freedom, and some of the best panoramic views in the Las Vegas Valley makes Ascaya a top destination for ultra-high-net-worth buyers seeking a one-of-a-kind estate.</p>

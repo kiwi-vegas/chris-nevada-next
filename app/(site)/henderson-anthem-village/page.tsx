@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Anthem Village',
-  description: 'Anthem Village is a master-planned · family community in Henderson, Nevada.',
+  description: 'Anthem Village is a master-planned · family community in Henderson, Nevada (ZIP 89052), established in 1998 by Del Webb / Pulte Homes, spanning ~800 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.003, longitude: -115.068 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function HendersonAnthemVillagePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Anthem Village is the non-age-restricted family neighborhood section of the broader Anthem master-planned community in Henderson. While Sun City Anthem serves the 55+ market and Anthem Country Club offers guard-gated luxury, Anthem Village provides the core family-oriented housing that makes Anthem one of the most desirable addresses in the southeast valley.</p>
+                  <p>Anthem Village is a master-planned · family community within Anthem in Henderson, Nevada (ZIP 89052), established in 1998, developed by Del Webb / Pulte Homes, spanning ~800 acres. Anthem Village is the non-age-restricted family neighborhood section of the broader Anthem master-planned community in Henderson. While Sun City Anthem serves the 55+ market and Anthem Country Club offers guard-gated luxury, Anthem Village provides the core family-oriented housing that makes Anthem one of the most desirable addresses in the southeast valley.</p>
                   <p>Developed by Del Webb and Pulte Homes beginning in the late 1990s, Anthem Village features a diverse mix of single-family homes, townhomes, and attached residences spread across rolling desert terrain at the base of the McCullough Range. Homes range from approximately $400,000 for well-maintained attached homes to $700,000 or more for larger single-family residences on premium lots with mountain or golf course views.</p>
                   <p>The community benefits from Anthem's extensive amenity package, including multiple community parks, the Anthem Hills Park trail system, community pools, sports courts, and playgrounds. The Anthem community center hosts events, fitness classes, and seasonal activities year-round. Anthem's trail network connects to Henderson's broader system, providing miles of walking and cycling paths through the foothill terrain.</p>
                   <p>Anthem Village's location in southeast Henderson provides convenient access to shopping and dining at the Anthem Marketplace and the shops along Eastern Avenue, as well as quick connectivity to I-215 and I-15 for commuting to the Strip, downtown, and Harry Reid Airport. The area is served by some of Henderson's highest-rated CCSD schools, making it a perennial favorite among families relocating to the Las Vegas Valley.</p>

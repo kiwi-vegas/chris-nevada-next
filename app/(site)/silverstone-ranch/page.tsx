@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Silverstone Ranch',
-  description: 'Silverstone Ranch is a guard-gated · golf community in Las Vegas, Nevada.',
+  description: 'Silverstone Ranch is a guard-gated · golf community in Las Vegas, Nevada (ZIP 89131), established in 2001 by Olympia Group, spanning ~800 acres. Home prices range from $400K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.26, longitude: -115.26 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89131', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function SilverstoneRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Silverstone Ranch is a guard-gated golf community in northwest Las Vegas that offers an exceptional combination of security, golf course living, and attainable pricing. Developed by Olympia Group beginning in 2001, the community centers around the 18-hole Silverstone Golf Club, which winds through the residential neighborhoods and provides golf course frontage and views for hundreds of homes.</p>
+                  <p>Silverstone Ranch is a guard-gated · golf community in Las Vegas, Nevada (ZIP 89131), spanning ~800 acres, with 2,500+ homes, where home prices range from $400K–$800K. Silverstone Ranch is a guard-gated golf community in northwest Las Vegas that offers an exceptional combination of security, golf course living, and attainable pricing. Developed by Olympia Group beginning in 2001, the community centers around the 18-hole Silverstone Golf Club, which winds through the residential neighborhoods and provides golf course frontage and views for hundreds of homes.</p>
                   <p>Homes in Silverstone Ranch range from approximately $400,000 to $800,000, with most properties built between 2001 and 2010. Floor plans span 1,800 to 4,000 square feet, with architecture primarily in Mediterranean and transitional desert styles. The community's guard-gated entry with 24-hour staffed security creates a sense of privacy and exclusivity that elevates the everyday living experience. Golf course frontage homes with fairway and mountain views command a premium.</p>
                   <p>The Silverstone Golf Club is the community's centerpiece — an 18-hole championship course that has hosted professional events and maintains a strong reputation among Las Vegas golfers. The course is available for public play but offers preferred rates and tee times for Silverstone Ranch residents. The clubhouse provides dining, a pro shop, and event space. Beyond golf, the community features parks, walking trails, and common areas maintained by the HOA.</p>
                   <p>Silverstone Ranch's northwest Las Vegas location puts residents near the US-95 freeway corridor for convenient access to the Strip, downtown, and the northwest valley's growing retail and dining scene. Centennial Hills, Desert Shores, and The Lakes are all neighboring communities. For buyers seeking guard-gated golf community living at price points that don't require a seven-figure budget, Silverstone Ranch is one of the best values in the Las Vegas Valley.</p>

@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Charleston Heights',
-  description: 'Charleston Heights is a established · urban residential community in Las Vegas, Nevada.',
+  description: 'Charleston Heights is a established · urban residential community in Las Vegas, Nevada (ZIP 89107), established in 1950s, spanning ~6 sq mi. Home prices range from $250K–$500K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.183, longitude: -115.196 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89107', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasCharlestonHeightsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Charleston Heights is one of the oldest and most established residential neighborhoods in the City of Las Vegas, located just west of downtown along the Charleston Boulevard corridor. Developed primarily in the 1950s through 1970s, the neighborhood represents a significant chapter in Las Vegas's residential history and today offers some of the most affordable housing in a centrally located part of the valley.</p>
+                  <p>Charleston Heights is a established · urban residential community in Las Vegas, Nevada (ZIP 89107/89106), spanning ~6 sq mi, with 15,000+ homes, where home prices range from $250K–$500K. Charleston Heights is one of the oldest and most established residential neighborhoods in the City of Las Vegas, located just west of downtown along the Charleston Boulevard corridor. Developed primarily in the 1950s through 1970s, the neighborhood represents a significant chapter in Las Vegas's residential history and today offers some of the most affordable housing in a centrally located part of the valley.</p>
                   <p>The neighborhood is anchored by the Charleston Heights Arts Center, one of the city's premier visual and performing arts venues, and several large community parks. Homes in Charleston Heights are predominantly single-story ranch-style residences on standard city lots, with block construction typical of the era. Many homes feature detached garages, mature shade trees, and the spacious lot layouts that were standard before the compact tract developments of the 1990s and beyond.</p>
                   <p>Pricing in Charleston Heights remains among the most affordable in central Las Vegas, with homes ranging from approximately $250,000 for smaller fixer-uppers to $500,000 for fully renovated or larger properties. The neighborhood has attracted significant renovation interest in recent years as buyers priced out of trendier areas like the Arts District and Downtown discover the value of Charleston Heights' central location, larger lots, and vintage character.</p>
                   <p>The area's appeal for investors and value-conscious buyers is straightforward: central location, established infrastructure, and entry-level pricing with significant upside. Charleston Boulevard provides a direct corridor to both downtown Las Vegas and the western suburbs, while the neighborhood's proximity to I-15 and US-95 enables fast commutes in any direction. As Las Vegas continues to grow outward, infill neighborhoods like Charleston Heights stand to benefit from the urban revitalization trend.</p>

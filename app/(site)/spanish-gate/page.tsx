@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Spanish Gate',
-  description: 'Spanish Gate is a guard-gated · established community in Las Vegas, Nevada.',
+  description: 'Spanish Gate is a guard-gated · established community in Las Vegas, Nevada (ZIP 89113), established in 1997 by Various builders, spanning ~120 acres. Home prices range from $500K–$900K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.068, longitude: -115.26 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89113', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function SpanishGatePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Spanish Gate is a guard-gated residential community located in the southwest Las Vegas valley along South Rainbow Boulevard. Established in the late 1990s, the community contains approximately 400 homes and offers the security and exclusivity of a gated neighborhood at a price point that is significantly more accessible than many of the valley's other guard-gated communities.</p>
+                  <p>Spanish Gate is a guard-gated · established community in Las Vegas, Nevada (ZIP 89113), established in 1997, developed by Various builders, spanning ~120 acres. Spanish Gate is a guard-gated residential community located in the southwest Las Vegas valley along South Rainbow Boulevard. Established in the late 1990s, the community contains approximately 400 homes and offers the security and exclusivity of a gated neighborhood at a price point that is significantly more accessible than many of the valley's other guard-gated communities.</p>
                   <p>Homes in Spanish Gate range from approximately $500,000 to $900,000, with most residences being well-maintained single-family homes built between 1997 and 2002. The community features a mix of one- and two-story homes with traditional and Mediterranean-inspired architecture, generous lot sizes, and mature landscaping that gives the neighborhood an established, settled character. Many homes have been updated and remodeled by subsequent owners.</p>
                   <p>The community amenities include the guard-gated entry with 24-hour staffed gate, community parks, walking paths, and well-maintained common areas. HOA fees are notably reasonable compared to many guard-gated communities, typically ranging from $150 to $350 per month, making Spanish Gate an attractive option for buyers who want the security of a gated community without the premium pricing of Summerlin or Henderson guard-gated neighborhoods.</p>
                   <p>Spanish Gate's location in the southwest valley provides convenient access to the I-215 Beltway, the Las Vegas Strip, and the growing retail and dining corridor along South Rainbow Boulevard and Blue Diamond Road. For families and professionals seeking guard-gated security, established homes, and a strong value proposition in the southwest Las Vegas market, Spanish Gate is a community that delivers substance without excess.</p>

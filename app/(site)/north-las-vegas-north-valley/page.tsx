@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'North Valley',
-  description: 'North Valley is a suburban · growing community in North Las Vegas, Nevada.',
+  description: 'North Valley is a suburban · growing community in North Las Vegas, Nevada (ZIP 89084), established in 2005, spanning ~10 sq mi. Home prices range from $300K–$500K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.28, longitude: -115.158 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89084', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function NorthLasVegasNorthValleyPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>North Valley is a rapidly growing residential area in the northern section of North Las Vegas, spanning the corridor between Aliante to the west and the I-15 corridor to the east. The area has experienced explosive growth since the mid-2000s, transforming from open desert into a thriving suburban community with newer homes, improving schools, and expanding commercial infrastructure.</p>
+                  <p>North Valley is a suburban · growing community in North Las Vegas, Nevada (ZIP 89084/89085), established in 2005, spanning ~10 sq mi, with 15,000+ homes. North Valley is a rapidly growing residential area in the northern section of North Las Vegas, spanning the corridor between Aliante to the west and the I-15 corridor to the east. The area has experienced explosive growth since the mid-2000s, transforming from open desert into a thriving suburban community with newer homes, improving schools, and expanding commercial infrastructure.</p>
                   <p>The majority of homes in North Valley were built between 2005 and the present, with several active new-construction communities still expanding. National builders including Lennar, KB Home, DR Horton, and Century Communities have been active in the area, delivering modern single-family homes with open floor plans, energy-efficient features, and community amenities. The newer vintage of the housing stock means lower maintenance costs and more contemporary design compared to older parts of the valley.</p>
                   <p>Pricing in North Valley ranges from approximately $300,000 for production homes to $500,000 for larger residences on premium lots. This represents one of the most affordable new-construction markets in the Las Vegas metro, attracting families, first-time buyers, and investors seeking modern homes at below-market prices. The value proposition is straightforward: comparable construction quality to Summerlin or Henderson at 20-30% lower prices.</p>
                   <p>North Valley's infrastructure continues to expand. The VA Hospital complex, growing retail along Craig Road and Centennial Parkway, and the planned northern extension of city services are bringing amenities closer to residents. The I-15 corridor provides direct commuting access to the Strip, downtown, and Henderson, while the 215 Beltway connects to the northwest valley. As North Las Vegas continues to mature, North Valley stands to benefit from appreciation driven by improving amenities and limited new land supply.</p>

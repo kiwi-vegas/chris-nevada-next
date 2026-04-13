@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Crossing',
-  description: 'The Crossing is a master-planned · family community in Las Vegas, Nevada.',
+  description: 'The Crossing is a master-planned · family community in Las Vegas, Nevada (ZIP 89134), established in 1997 by Howard Hughes Corporation, spanning 450 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.212, longitude: -115.292 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinTheCrossingPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Crossing is one of Summerlin North's most accessible and family-friendly villages, offering solid Summerlin living at price points that are among the most affordable in the master plan. Developed beginning in 1997 by the Howard Hughes Corporation, The Crossing was designed as a classic suburban neighborhood with curving streets, cul-de-sacs, community parks, and easy access to Summerlin's trail network.</p>
+                  <p>The Crossing is a master-planned · family community within Summerlin in Las Vegas, Nevada (ZIP 89134), spanning 450 acres, with 2,800+ homes, where home prices range from $400K–$700K. The Crossing is one of Summerlin North's most accessible and family-friendly villages, offering solid Summerlin living at price points that are among the most affordable in the master plan. Developed beginning in 1997 by the Howard Hughes Corporation, The Crossing was designed as a classic suburban neighborhood with curving streets, cul-de-sacs, community parks, and easy access to Summerlin's trail network.</p>
                   <p>Homes in The Crossing range from approximately $400,000 for smaller single-family homes to around $700,000 for larger, updated properties on premium lots. The architectural character reflects the late-1990s and early-2000s Summerlin aesthetic — Mediterranean-influenced single-family homes built by a mix of regional and national builders. Many homeowners have invested significantly in modern updates, including renovated kitchens, updated pools, and desert-friendly landscaping.</p>
                   <p>The village's position in Summerlin North provides quick access to Downtown Summerlin, which is approximately 10 minutes south via Summerlin Parkway. The 215 Beltway runs along the eastern edge of the area, making valley-wide commutes straightforward. Red Rock Canyon is about 15 minutes to the west, and the Las Vegas Strip is reachable in about 20 minutes via Summerlin Parkway and I-15.</p>
                   <p>For buyers looking for a well-established Summerlin address with strong schools, community parks, and a true neighborhood feel without the premium pricing of newer or guard-gated villages, The Crossing delivers one of the best value propositions in the master plan. The mature landscaping and three decades of residential continuity create a warmth and livability that newer communities are still working to develop.</p>

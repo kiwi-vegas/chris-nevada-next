@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Paseo Verde',
-  description: 'Paseo Verde is a suburban · established community in Henderson, Nevada.',
+  description: 'Paseo Verde is a suburban · established community in Henderson, Nevada (ZIP 89012), established in 1996, spanning ~1,200 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.03, longitude: -115.055 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89012', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function HendersonPaseoVerdePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Paseo Verde is one of Henderson's most established and well-regarded family neighborhoods, situated along the Paseo Verde corridor between Green Valley Ranch and the Anthem area. The community was developed primarily in the late 1990s and early 2000s by a mix of national and regional builders, resulting in a mature, tree-lined neighborhood with a diverse housing stock and strong community infrastructure.</p>
+                  <p>Paseo Verde is a suburban · established community in Henderson, Nevada (ZIP 89012/89052), established in 1996, spanning ~1,200 acres, with 4,500+ homes. Paseo Verde is one of Henderson's most established and well-regarded family neighborhoods, situated along the Paseo Verde corridor between Green Valley Ranch and the Anthem area. The community was developed primarily in the late 1990s and early 2000s by a mix of national and regional builders, resulting in a mature, tree-lined neighborhood with a diverse housing stock and strong community infrastructure.</p>
                   <p>The community's anchor is the Paseo Verde Library and the adjacent Paseo Verde Park, which together form one of the finest public amenity complexes in Henderson. The park features sports fields, walking trails, playgrounds, and open space, while the library serves as a community gathering point. The area's extensive sidewalk and trail network makes it one of the most walkable established neighborhoods in the southeast valley.</p>
                   <p>Homes in Paseo Verde range from approximately $400,000 for well-maintained single-family homes to $700,000 or more for larger residences on premium lots. The neighborhood features predominantly single-story and two-story single-family homes with traditional Nevada architecture, attached garages, and desert-adapted landscaping. The mature trees and established HOA standards give the community a settled, well-maintained character.</p>
                   <p>Paseo Verde's central Henderson location provides excellent connectivity. The community is minutes from the Henderson Executive Airport, the shops and restaurants along Eastern Avenue and Stephanie Street, and the I-215 beltway for commuting to the Strip and airport. The area's schools are among the best-rated in the CCSD system, and the proximity to both Green Valley Ranch Resort and the Anthem Marketplace adds lifestyle convenience.</p>

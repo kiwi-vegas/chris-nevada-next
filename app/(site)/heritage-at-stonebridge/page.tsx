@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Heritage at Stonebridge',
-  description: 'Heritage at Stonebridge is a 55+ · guard-gated · new construction community in Las Vegas, Nevada.',
+  description: 'Heritage at Stonebridge is a 55+ · guard-gated · new construction community in Las Vegas, Nevada (ZIP 89135), established in 2022 by Taylor Morrison, spanning ~80 acres. Home prices range from $500K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.162, longitude: -115.318 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function HeritageAtStonebridgePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Heritage at Stonebridge is one of the newest 55+ guard-gated communities in Summerlin, developed by Taylor Morrison within the Stonebridge village of the master plan. Offering brand-new construction with modern floor plans, a private residents' club, and guard-gated security, Heritage at Stonebridge represents the latest evolution of active adult living in Las Vegas' most prestigious master-planned community.</p>
+                  <p>Heritage at Stonebridge is a 55+ · guard-gated · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2022, spanning ~80 acres, with 300+ at buildout homes. Heritage at Stonebridge is one of the newest 55+ guard-gated communities in Summerlin, developed by Taylor Morrison within the Stonebridge village of the master plan. Offering brand-new construction with modern floor plans, a private residents' club, and guard-gated security, Heritage at Stonebridge represents the latest evolution of active adult living in Las Vegas' most prestigious master-planned community.</p>
                   <p>The community's private clubhouse serves as the social and recreational center, featuring a resort-style pool and spa, fitness center, pickleball courts, bocce ball, a multi-purpose room for events and classes, and outdoor gathering spaces with fire features. The emphasis on pickleball reflects the sport's explosive growth among active adults, and Heritage at Stonebridge was designed with dedicated courts from the start.</p>
                   <p>Taylor Morrison offers single-story homes ranging from approximately 1,600 to 2,800 square feet, with open floor plans, gourmet kitchen islands, spa-inspired master suites, and covered outdoor living spaces. Buyers can personalize their homes through Taylor Morrison's design studio, selecting finishes, fixtures, and layout options. Energy-efficient construction meets current building codes with smart-home pre-wiring standard.</p>
                   <p>Heritage at Stonebridge's Summerlin location provides residents with access to the master plan's 150+ miles of trails, Downtown Summerlin shopping and dining, Red Rock Canyon, and multiple championship golf courses — all within a short drive of the guard gate. For active adults seeking brand-new construction in a guard-gated 55+ setting within Summerlin, Heritage at Stonebridge offers exceptional value.</p>

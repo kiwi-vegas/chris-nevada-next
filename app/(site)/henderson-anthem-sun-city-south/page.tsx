@@ -84,7 +84,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sun City Anthem South',
-  description: 'Sun City Anthem South is a 55+ active adult community in Henderson, Nevada.',
+  description: 'Sun City Anthem South is a 55+ active adult community in Henderson, Nevada (ZIP 89044), established in 2001 by Del Webb / Pulte Homes, spanning ~800 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.975, longitude: -115.05 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89044', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -302,7 +302,7 @@ export default async function HendersonAnthemSunCitySouthPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Sun City Anthem South is the southern expansion phase of the celebrated Sun City Anthem 55+ active adult community in Henderson. Developed by Del Webb beginning in 2001, this section extends the Sun City Anthem experience into the foothills of the McCullough Range, providing residents with slightly more elevated terrain, wider lot options, and dramatic desert views that complement the broader community's renowned amenity package.</p>
+                  <p>Sun City Anthem South is a 55+ active adult community within Sun City Anthem in Henderson, Nevada (ZIP 89044/89052), developed by Del Webb / Pulte Homes, spanning ~800 acres, with 2,800+ homes. Sun City Anthem South is the southern expansion phase of the celebrated Sun City Anthem 55+ active adult community in Henderson. Developed by Del Webb beginning in 2001, this section extends the Sun City Anthem experience into the foothills of the McCullough Range, providing residents with slightly more elevated terrain, wider lot options, and dramatic desert views that complement the broader community's renowned amenity package.</p>
                   <p>Residents of Sun City Anthem South enjoy full access to all three Sun City Anthem recreation centers — the Anthem Center, Liberty Center, and Independence Center — totaling over 100,000 square feet of amenity space. This includes resort-style pools, fitness facilities, tennis and pickleball courts, ballrooms, arts studios, and meeting rooms for the community's 100+ chartered clubs and organizations. The social calendar is one of the most active of any 55+ community in the United States.</p>
                   <p>Homes in Sun City Anthem South range from approximately $350,000 for well-maintained single-story homes to $600,000 for larger floor plans on premium lots with golf course or mountain views. Virtually every home is single-story, designed for comfort and accessibility with open floor plans, covered patios, and attached two-car garages. Floor plans range from approximately 1,200 to 3,200 square feet.</p>
                   <p>The southern section's location provides convenient access to the Sun City Anthem golf courses, including the Anthem Course and the Revere Golf Club at Anthem. The community trail system extends into this section, connecting to Henderson's broader trail network for walking and cycling. The proximity to I-215 and the growing commercial corridor along Eastern Avenue ensures that shopping, dining, and medical services are within a short drive.</p>

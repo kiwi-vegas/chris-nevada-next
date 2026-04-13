@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Aliante North',
-  description: 'Aliante North is a master-planned · family community in North Las Vegas, Nevada.',
+  description: 'Aliante North is a master-planned · family community in North Las Vegas, Nevada (ZIP 89084), established in 2003 by Del Webb / Pulte Group / American Nevada Corp, spanning ~400 acres. Home prices range from $350K–$550K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.29, longitude: -115.206 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89084', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function NorthLasVegasAlianteNorthPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Aliante North encompasses the northern portion of the Aliante master-planned community in North Las Vegas, one of the most successful and well-regarded master plans in the city. Located north of Aliante Parkway and extending toward Elkhorn Road, this section features newer construction, wider lots, and a more open feel compared to the community's earlier southern phases.</p>
+                  <p>Aliante North is a master-planned · family community within Aliante in North Las Vegas, Nevada (ZIP 89084), established in 2003, developed by Del Webb / Pulte Group / American Nevada Corp, spanning ~400 acres. Aliante North encompasses the northern portion of the Aliante master-planned community in North Las Vegas, one of the most successful and well-regarded master plans in the city. Located north of Aliante Parkway and extending toward Elkhorn Road, this section features newer construction, wider lots, and a more open feel compared to the community's earlier southern phases.</p>
                   <p>Built primarily between 2003 and 2010 with some newer infill, Aliante North offers single-family homes ranging from approximately 1,400 to 3,200 square feet at price points between $350,000 and $550,000. The area benefits from its proximity to the Aliante Nature Discovery Park, a 20-acre park featuring walking trails, playgrounds, and wetland areas that provide a green oasis in the desert landscape.</p>
                   <p>The Aliante master plan was designed with community amenities at its core, and the northern section is no exception. The Aliante Casino + Hotel + Spa, Aliante Golf Club (an 18-hole course open to the public), Aliante Library, and multiple neighborhood parks are all within the community. The 215 Northern Beltway provides convenient freeway access for commuters working on the Strip, in Summerlin, or in Henderson.</p>
                   <p>Aliante North attracts first-time buyers, young families, and value-conscious purchasers who want the structure and amenities of a master-planned community at North Las Vegas pricing. The area offers significantly more square footage per dollar than comparable communities in Las Vegas or Henderson, and the quality of the community infrastructure — parks, trails, golf, casino — rivals many higher-priced neighborhoods across the valley.</p>

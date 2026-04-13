@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Mesa Ridge',
-  description: 'Mesa Ridge is a guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'Mesa Ridge is a guard-gated · luxury community in Las Vegas, Nevada (ZIP 89135), established in 2016 by Toll Brothers, spanning ~200 acres. Home prices range from $1M–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.155, longitude: -115.315 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function MesaRidgePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Mesa Ridge is a guard-gated luxury community in Summerlin built by Toll Brothers, one of the nation's premier luxury homebuilders. Located in the southern foothills of the master plan, Mesa Ridge offers semi-custom and custom homes ranging from approximately $1 million to over $3 million, set against a backdrop of Red Rock Canyon views and the Spring Mountains.</p>
+                  <p>Mesa Ridge is a guard-gated · luxury community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2016, spanning ~200 acres, with 350+ homes. Mesa Ridge is a guard-gated luxury community in Summerlin built by Toll Brothers, one of the nation's premier luxury homebuilders. Located in the southern foothills of the master plan, Mesa Ridge offers semi-custom and custom homes ranging from approximately $1 million to over $3 million, set against a backdrop of Red Rock Canyon views and the Spring Mountains.</p>
                   <p>The community features a 24-hour staffed guard gate, private streets, and beautifully landscaped common areas. Homes in Mesa Ridge are characterized by their contemporary desert architecture, generous lot sizes, and premium finishes including quartz countertops, designer lighting packages, and multi-slide glass doors that open to expansive outdoor living spaces with views.</p>
                   <p>Mesa Ridge homes range from approximately 3,000 to 6,000+ square feet across multiple floor plans. Many homes feature casitas, home theaters, wine rooms, and resort-style backyards with pools, spas, and outdoor kitchens. The architectural standards are among the most stringent in Summerlin, ensuring a cohesive luxury aesthetic throughout the community.</p>
                   <p>The location provides convenient access to Downtown Summerlin's 125+ shops and restaurants, Red Rock Canyon National Conservation Area, and the 215 Beltway. Mesa Ridge appeals to executives, professionals, and families seeking guard-gated security, premium construction quality, and the prestige of a Summerlin address without the ultra-luxury pricing of The Ridges or The Summit Club.</p>

@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Silver Ridge',
-  description: 'Silver Ridge is a semi-custom · luxury views community in Henderson, Nevada.',
+  description: 'Silver Ridge is a semi-custom · luxury views community in Henderson, Nevada (ZIP 89052), established in 2001 by Pardee Homes / American West, spanning ~80 acres. Home prices range from $800K–$2M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.008, longitude: -115.097 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function SevenHillsSilverRidgePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Silver Ridge is one of the most prestigious neighborhoods within the Seven Hills master-planned community, known for its elevated positioning, premium lot sizes, and commanding views of the Las Vegas Strip, the McCullough Range, and the surrounding desert terrain. Located along the southern ridgeline of Seven Hills in Henderson, Silver Ridge attracts buyers seeking semi-custom caliber homes with the panoramic vistas typically reserved for guard-gated communities.</p>
+                  <p>Silver Ridge is a semi-custom · luxury views community within Seven Hills in Henderson, Nevada (ZIP 89052), established in 2001, developed by Pardee Homes / American West, spanning ~80 acres. Silver Ridge is one of the most prestigious neighborhoods within the Seven Hills master-planned community, known for its elevated positioning, premium lot sizes, and commanding views of the Las Vegas Strip, the McCullough Range, and the surrounding desert terrain. Located along the southern ridgeline of Seven Hills in Henderson, Silver Ridge attracts buyers seeking semi-custom caliber homes with the panoramic vistas typically reserved for guard-gated communities.</p>
                   <p>Homes in Silver Ridge were built primarily by Pardee Homes and American West between 2001 and 2006, featuring generously sized floor plans ranging from approximately 3,000 to 5,500 square feet on lots that are larger than the Seven Hills average. The architectural style is predominantly Mediterranean and Tuscan, with tile roofs, stone accents, and courtyard entries. Many homes have been extensively updated with modern interiors, resort-style pools, and outdoor living spaces that take full advantage of the views.</p>
                   <p>Silver Ridge's elevated position provides one of the best view corridors in Seven Hills. North-facing homes enjoy unobstructed views of the Las Vegas Strip skyline — particularly distinctive at night. East and south-facing homes look out over the McCullough Range and Sloan Canyon. The combination of views, lot sizes, and home quality positions Silver Ridge as a step above the standard Seven Hills neighborhoods while remaining below the price tier of the guard-gated Terracina and Country Club sections.</p>
                   <p>The neighborhood is minutes from Rio Secco Golf Club, Sloan Canyon National Conservation Area, and the full complement of Henderson's shopping, dining, and medical facilities along St. Rose Parkway and Eastern Avenue. The I-215 beltway provides an efficient commute corridor to the Strip, airport, and south valley employment centers.</p>

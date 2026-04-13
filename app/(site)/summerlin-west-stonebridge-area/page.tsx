@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Stonebridge Area',
-  description: 'Stonebridge Area is a master-planned · new construction community in Las Vegas, Nevada.',
+  description: 'Stonebridge Area is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89138), established in 2018 by Howard Hughes Corporation, spanning ~400 acres. Home prices range from $600K–$1M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.195, longitude: -115.328 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinWestStonebridgeAreaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Stonebridge Area is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89138). The Stonebridge area of Summerlin West represents one of the newest and most active new-construction zones in the entire Summerlin master plan. Located along the western edge of the Las Vegas Valley near the intersection of Far Hills Avenue and Flamingo Road, this area has seen explosive growth since 2018 with multiple national and regional builders delivering homes across a range of price points from the mid-$600s to over $1 million.</p>
+                  <p>Stonebridge Area is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89138).  Stonebridge Area was developed by Howard Hughes Corporation and spanning ~400 acres. The Stonebridge area of Summerlin West represents one of the newest and most active new-construction zones in the entire Summerlin master plan. Located along the western edge of the Las Vegas Valley near the intersection of Far Hills Avenue and Flamingo Road, this area has seen explosive growth since 2018 with multiple national and regional builders delivering homes across a range of price points from the mid-$600s to over $1 million.</p>
                   <p>What makes the Stonebridge area particularly attractive is its position within Summerlin West, the newest association of the Howard Hughes Corporation's flagship master-planned community. Buyers here get the benefit of brand-new infrastructure, modern floor plans with energy-efficient construction, and proximity to Summerlin's expanding western amenities including new parks, trails, and the expanding trail system that connects to Red Rock Canyon's foothills.</p>
                   <p>The area features production homes from builders including Toll Brothers, Lennar, Pulte, Taylor Morrison, and Woodside Homes. Floor plans range from approximately 1,800 to 4,500 square feet, with both single-story and two-story options. Many neighborhoods within the Stonebridge area offer courtyard entries, multi-generational suites, and upgraded desert contemporary architecture that reflects the modern Summerlin West aesthetic.</p>
                   <p>For buyers seeking new construction in Summerlin without the ultra-luxury price tag of communities like The Peaks or La Madre Peaks, the Stonebridge area delivers modern design, quality construction, and the full Summerlin lifestyle at a more accessible price point. The western location also means proximity to Red Rock Canyon, Downtown Summerlin, and the Summerlin trail system that active buyers value.</p>

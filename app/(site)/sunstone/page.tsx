@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sunstone',
-  description: 'Sunstone is a master-planned community in North Las Vegas, Nevada.',
+  description: 'Sunstone is a master-planned community in North Las Vegas, Nevada (ZIP 89081), established in 2019 by Lennar / KB Home / Century Communities, spanning ~1,200 acres. Home prices range from $380K–$650K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.295, longitude: -115.182 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89081', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },

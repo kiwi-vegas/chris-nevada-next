@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'One Queensridge Place',
-  description: 'One Queensridge Place is a high-rise · guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'One Queensridge Place is a high-rise · guard-gated · luxury community in Las Vegas, Nevada (ZIP 89145), established in 2006 by Turnberry Associates / Jaffe Group, spanning ~20 acres. Home prices range from $500K–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.178, longitude: -115.278 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89145', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function OneQueensridgePlacePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>One Queensridge Place is the most prestigious luxury high-rise condominium in Las Vegas, consisting of two 18-story towers set within the guard-gated Queensridge community. Located along the Badlands Golf Course and offering panoramic views of the Las Vegas Strip, the Spring Mountains, and Red Rock Canyon, One Queensridge Place has been the address of choice for Las Vegas' most discerning high-rise buyers since its completion in 2006.</p>
+                  <p>One Queensridge Place is a high-rise · guard-gated · luxury community in Las Vegas, Nevada (ZIP 89145), developed by Turnberry Associates / Jaffe Group, spanning ~20 acres, with 219 residences homes. One Queensridge Place is the most prestigious luxury high-rise condominium in Las Vegas, consisting of two 18-story towers set within the guard-gated Queensridge community. Located along the Badlands Golf Course and offering panoramic views of the Las Vegas Strip, the Spring Mountains, and Red Rock Canyon, One Queensridge Place has been the address of choice for Las Vegas' most discerning high-rise buyers since its completion in 2006.</p>
                   <p>The 219 residences range from approximately 2,800 to over 10,000 square feet across multiple floor plan configurations including one-story flats, two-story penthouses, and full-floor Sky Residences. Every unit features floor-to-ceiling glass, private elevator access, gourmet kitchens with premium appliances, and expansive terraces designed for outdoor entertaining with views. The finishes and appointments rival any luxury high-rise in the country.</p>
                   <p>Building amenities include a resort-style pool deck with cabanas, concierge services, valet parking, a state-of-the-art fitness center, business center, private wine storage, and a residents' lounge. The guard-gated entry ensures privacy and security for residents, many of whom are high-net-worth individuals, corporate executives, and entertainment industry professionals.</p>
                   <p>One Queensridge Place's location in the Queensridge neighborhood provides easy access to Summerlin, the 215 Beltway, and the western Las Vegas corridor. The combination of full-service luxury living, panoramic views, guard-gated security, and distinctive unit sizes makes One Queensridge Place the definitive Las Vegas high-rise for buyers who refuse to compromise.</p>

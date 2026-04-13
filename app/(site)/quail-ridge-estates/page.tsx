@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Quail Ridge Estates',
-  description: 'Quail Ridge Estates is a guard-gated · luxury community in Henderson, Nevada.',
+  description: 'Quail Ridge Estates is a guard-gated · luxury community in Henderson, Nevada (ZIP 89014), established in 1997 by American Nevada Corporation, spanning 150 acres. Home prices range from $1M–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.06, longitude: -115.085 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89014', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -311,7 +311,7 @@ export default async function QuailRidgeEstatesPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Quail Ridge Estates is one of Henderson's most prestigious guard-gated luxury communities, located within the Green Valley corridor. Developed in the late 1990s, the community features spacious custom and semi-custom homes on large lots with a level of exclusivity that rivals Henderson's more well-known luxury addresses. With fewer than 200 homes behind the guard gate, Quail Ridge offers an intimate, private residential experience that larger communities cannot provide.</p>
+                  <p>Quail Ridge Estates is a guard-gated · luxury community within Green Valley in Henderson, Nevada (ZIP 89014), established in 1997, developed by American Nevada Corporation, spanning 150 acres. Quail Ridge Estates is one of Henderson's most prestigious guard-gated luxury communities, located within the Green Valley corridor. Developed in the late 1990s, the community features spacious custom and semi-custom homes on large lots with a level of exclusivity that rivals Henderson's more well-known luxury addresses. With fewer than 200 homes behind the guard gate, Quail Ridge offers an intimate, private residential experience that larger communities cannot provide.</p>
                   <p>Homes in Quail Ridge Estates range from approximately $1 million for semi-custom resales to over $3 million for custom estates on premium lots. The housing stock features homes from 3,000 to 7,000+ square feet, with many featuring resort-style pools, motor courts, wine rooms, home theaters, and expansive outdoor living areas. Lot sizes are generous, with many parcels exceeding a quarter acre — ample space for the resort-style living that Henderson's luxury buyers demand.</p>
                   <p>The architectural character of Quail Ridge leans Mediterranean and Tuscan, though newer custom builds and renovations have introduced contemporary desert and transitional styles. The community's streets are wide and quiet, with mature trees and lush common areas creating a parklike atmosphere. The guard gate is staffed 24 hours a day, and the limited number of homes means traffic within the community is minimal.</p>
                   <p>Quail Ridge Estates' location within the established Green Valley corridor provides immediate access to Henderson's best amenities. The District at Green Valley Ranch, Green Valley Ranch Resort, Henderson Hospital, and multiple dining and retail destinations are all within minutes. Harry Reid Airport and the Strip are approximately 15 minutes away. For luxury buyers seeking an intimate, guard-gated community with large lots and custom-quality homes in a proven Henderson location, Quail Ridge Estates is a compelling choice.</p>

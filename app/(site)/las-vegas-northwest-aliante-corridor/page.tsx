@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Aliante Corridor',
-  description: 'Aliante Corridor is a growth corridor · mixed residential community in North Las Vegas, Nevada.',
+  description: 'Aliante Corridor is a growth corridor · mixed residential community in North Las Vegas, Nevada (ZIP 89084), established in 2000 by Various Builders, spanning ~800 acres. Home prices range from $300K–$500K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.275, longitude: -115.2 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89084', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasNorthwestAlianteCorridorPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Aliante Corridor encompasses the residential neighborhoods along and surrounding Aliante Parkway in North Las Vegas, extending from the Aliante master plan's perimeter outward through adjacent subdivisions and newer development. This growth corridor represents one of the most active areas of residential development in the north Las Vegas Valley, with new homes, commercial projects, and infrastructure improvements reshaping the area.</p>
+                  <p>Aliante Corridor is a growth corridor · mixed residential community in North Las Vegas, Nevada (ZIP 89084/89085), established in 2000, developed by Various Builders, spanning ~800 acres. The Aliante Corridor encompasses the residential neighborhoods along and surrounding Aliante Parkway in North Las Vegas, extending from the Aliante master plan's perimeter outward through adjacent subdivisions and newer development. This growth corridor represents one of the most active areas of residential development in the north Las Vegas Valley, with new homes, commercial projects, and infrastructure improvements reshaping the area.</p>
                   <p>Homes in the Aliante Corridor range from approximately $300,000 to $500,000, offering some of the best value per square foot in the Las Vegas metro. Housing stock includes a mix of 1990s-2000s established subdivisions and newer infill construction from the 2010s-2020s. Floor plans range from 1,200 to 2,800 square feet in both single-story and two-story configurations, with desert landscaping and tile roofs standard throughout.</p>
                   <p>The corridor benefits from its proximity to the Aliante master plan's amenities — the Aliante Casino + Hotel + Spa, Aliante Golf Club, Aliante Nature Discovery Park, and the Aliante Library — without the higher HOA fees of the master plan itself. The 215 Northern Beltway and I-15 provide freeway access for commuters, while the Aliante Parkway commercial corridor offers grocery, dining, and essential services.</p>
                   <p>For buyers seeking affordable homeownership in a growth corridor with improving amenities and infrastructure, the Aliante Corridor delivers strong fundamentals. North Las Vegas is the fastest-growing city in Nevada, and the areas surrounding the Aliante master plan are benefiting directly from that growth. New schools, parks, and commercial development continue to enhance the area's livability and investment potential.</p>

@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Stonybrook',
-  description: 'Stonybrook is a master-planned · family community in Henderson, Nevada.',
+  description: 'Stonybrook is a master-planned · family community in Henderson, Nevada (ZIP 89052), established in 2000 by American West Homes, spanning ~120 acres. Home prices range from $600K–$1.2M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.013, longitude: -115.102 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function SevenHillsStonybrookPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Stonybrook is one of the most desirable family-oriented neighborhoods within the Seven Hills master-planned community in Henderson. Located in the central-eastern portion of Seven Hills, Stonybrook features well-built single-family homes on comfortable lots with easy access to Seven Hills' network of parks, trails, and community amenities.</p>
+                  <p>Stonybrook is a master-planned · family community within Seven Hills in Henderson, Nevada (ZIP 89052), established in 2000, developed by American West Homes, spanning ~120 acres. Stonybrook is one of the most desirable family-oriented neighborhoods within the Seven Hills master-planned community in Henderson. Located in the central-eastern portion of Seven Hills, Stonybrook features well-built single-family homes on comfortable lots with easy access to Seven Hills' network of parks, trails, and community amenities.</p>
                   <p>Built primarily by American West Homes in the early 2000s, Stonybrook offers a range of floor plans from approximately 2,000 to 4,000 square feet. Homes feature the Mediterranean and Tuscan-inspired architecture that characterizes much of Seven Hills, with tile roofs, stucco exteriors, and desert-appropriate landscaping. Many homes have been updated with modern interiors while retaining the community's established, tree-lined streetscape.</p>
                   <p>Stonybrook sits within walking distance of several Seven Hills parks and is connected to the community's trail system, which links neighborhoods to the Seven Hills recreation center, local schools, and nearby retail centers. The neighborhood benefits from Seven Hills' overall reputation as one of Henderson's premier communities — known for its safety, well-maintained common areas, and strong property values.</p>
                   <p>Residents enjoy proximity to Rio Secco Golf Club, Sloan Canyon National Conservation Area, and the shops and restaurants along Eastern Avenue and St. Rose Parkway. The I-215 beltway provides efficient commutes to the Strip, airport, and the broader Henderson commercial corridor. Homes in Stonybrook range from approximately $600,000 for standard floor plans to $1.2 million for premium lots with mountain or Strip views.</p>

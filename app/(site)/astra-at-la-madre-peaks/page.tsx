@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Astra at La Madre Peaks',
-  description: 'Astra at La Madre Peaks is a guard-gated · custom lots · ultra-luxury community in Las Vegas, Nevada.',
+  description: 'Astra at La Madre Peaks is a guard-gated · custom lots · ultra-luxury community in Las Vegas, Nevada (ZIP 89138), established in 2024 by Howard Hughes Corporation, spanning ~250 acres. Home prices range from $2M+ (lots).',
   geo: { '@type': 'GeoCoordinates', latitude: 36.205, longitude: -115.34 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function AstraAtLaMadrePeaksPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Astra at La Madre Peaks is the newest ultra-luxury custom lot community within Summerlin, offering 167 premium homesites in one of the most elevated and scenic positions in the entire Las Vegas Valley. Located within the La Madre Peaks village along Summerlin's western rim, Astra backs directly against the Spring Mountains and provides panoramic views of Red Rock Canyon, the Las Vegas Strip, and the surrounding desert landscape.</p>
+                  <p>Astra at La Madre Peaks is a guard-gated · custom lots · ultra-luxury community within Summerlin in Las Vegas, Nevada (ZIP 89138), established in 2024, developed by Howard Hughes Corporation, spanning ~250 acres. Astra at La Madre Peaks is the newest ultra-luxury custom lot community within Summerlin, offering 167 premium homesites in one of the most elevated and scenic positions in the entire Las Vegas Valley. Located within the La Madre Peaks village along Summerlin's western rim, Astra backs directly against the Spring Mountains and provides panoramic views of Red Rock Canyon, the Las Vegas Strip, and the surrounding desert landscape.</p>
                   <p>Unlike the production and semi-custom communities that comprise most of Summerlin's newer villages, Astra is exclusively a custom lot community — meaning buyers purchase a finished lot and select their own architect and builder to design a one-of-a-kind estate. Lots start at approximately $2 million, with finished homes expected to range from $4 million to well over $10 million depending on size, views, and custom specifications.</p>
                   <p>The community is being developed by the Howard Hughes Corporation with the same attention to architectural standards and community design that defined The Ridges and The Summit Club. Guard-gated entry with 24-hour security, underground utilities, and strict design guidelines ensure a cohesive ultra-luxury aesthetic while allowing buyers the freedom of full custom design. Approved builders include some of the valley's most respected luxury home builders.</p>
                   <p>Astra at La Madre Peaks represents the next evolution of Summerlin's luxury real estate offering — a community designed for buyers who want the security and infrastructure of a master-planned community with the creative freedom of a full custom build. For high-net-worth individuals seeking to build their dream estate in the most desirable location in Las Vegas, Astra is the definitive opportunity.</p>

@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Green Valley',
-  description: 'Green Valley is a master-planned community in Henderson, Nevada.',
+  description: 'Green Valley is a master-planned community in Henderson, Nevada (ZIP 89014), established in 1978 by American Nevada Corporation, spanning 8,400 acres. Home prices range from $350K–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.048, longitude: -115.075 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89014', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function GreenValleyPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Green Valley is Henderson's original master-planned community and one of the first large-scale planned developments in the Las Vegas Valley. Developed by the American Nevada Corporation beginning in 1978, the community spans approximately 8,400 acres and is home to over 35,000 residences ranging from entry-level condominiums to luxury guard-gated estates.</p>
+                  <p>Green Valley is a master-planned community in Henderson, Nevada (ZIP 89014/89074), with 35,000+ homes, where home prices range from $350K–$3M+. Green Valley is Henderson's original master-planned community and one of the first large-scale planned developments in the Las Vegas Valley. Developed by the American Nevada Corporation beginning in 1978, the community spans approximately 8,400 acres and is home to over 35,000 residences ranging from entry-level condominiums to luxury guard-gated estates.</p>
                   <p>The community is organized into distinct neighborhoods and sub-communities that were built over several decades. Green Valley proper includes the original neighborhoods from the late 1970s and 1980s, while Green Valley Ranch and Green Valley South represent later phases with newer construction and expanded amenities. The District at Green Valley Ranch serves as the community's retail and dining hub with 40+ shops and restaurants in an open-air setting.</p>
                   <p>Green Valley's maturity is one of its greatest assets. Established landscaping, tree-lined streets, mature parks, and a proven track record of stable property values give the community a settled, permanent feel that newer developments cannot replicate. The community also benefits from some of the strongest public schools in the Las Vegas Valley, with several elementary and middle schools earning top ratings.</p>
                   <p>The location in the heart of Henderson provides easy access to the I-215 beltway, which serves as the primary commute corridor to the Strip, the airport, and the rest of the valley. Lake Mead is approximately 20 minutes east. The Galleria at Sunset, St. Rose Dominican Hospital, and the Henderson city government campus are all within or immediately adjacent to Green Valley.</p>

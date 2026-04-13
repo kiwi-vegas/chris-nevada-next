@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Palms Place Hotel and Spa',
-  description: 'Palms Place Hotel and Spa is a high-rise · condo-hotel community in Las Vegas, Nevada.',
+  description: 'Palms Place Hotel and Spa is a high-rise · condo-hotel community in Las Vegas, Nevada (ZIP 89103), established in 2008 by Palms Casino Resort / Maloof Family, spanning ~2 acres. Home prices range from $200K–$1.5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.116, longitude: -115.184 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89103', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function PalmsPlacePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Palms Place Hotel and Spa is a 47-story luxury condo-hotel tower connected to the Palms Casino Resort, one of the most iconic off-Strip resorts in Las Vegas. Completed in 2008, the tower contains approximately 599 individually owned residential units and offers a distinctive lifestyle that blends private high-rise living with full access to the Palms' premier entertainment, dining, and nightlife venues.</p>
+                  <p>Palms Place Hotel and Spa is a high-rise · condo-hotel community in Las Vegas, Nevada (ZIP 89103), developed by Palms Casino Resort / Maloof Family, spanning ~2 acres, with ~599 units homes. Palms Place Hotel and Spa is a 47-story luxury condo-hotel tower connected to the Palms Casino Resort, one of the most iconic off-Strip resorts in Las Vegas. Completed in 2008, the tower contains approximately 599 individually owned residential units and offers a distinctive lifestyle that blends private high-rise living with full access to the Palms' premier entertainment, dining, and nightlife venues.</p>
                   <p>The Palms Casino Resort underwent a $690 million renovation completed in 2019, transforming the property into one of the most visually striking resorts in Las Vegas with Damien Hirst artwork installations, a reimagined pool complex, and new restaurant and entertainment concepts. Palms Place owners benefit directly from this investment through access to the resort's upgraded amenities, including the KAOS dayclub and nightclub venue spaces, multiple celebrity-chef restaurants, and the resort's signature pool scene.</p>
                   <p>Units at Palms Place range from studios starting around $200,000 to premium one- and two-bedroom suites and penthouses exceeding $1.5 million. Every unit features floor-to-ceiling windows, modern kitchens with stainless steel appliances, marble bathrooms, and designer furnishings. The building offers its own dedicated amenities separate from the casino, including a private resort-style pool, a 15,000-square-foot spa and fitness center, 24-hour concierge, and valet parking.</p>
                   <p>Palms Place's location on Flamingo Road, just one block west of the Strip, provides the convenience of Strip proximity without the density of a Strip-front address. The property is minutes from CityCenter, the Bellagio, Caesars Palace, and the entire central Strip corridor. For buyers seeking an affordable entry into Las Vegas condo-hotel ownership with access to a fully renovated resort property, Palms Place remains one of the most compelling value propositions in the market.</p>

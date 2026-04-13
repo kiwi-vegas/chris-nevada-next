@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'South Shore',
-  description: 'South Shore is a guard-gated · luxury resort community in Henderson, Nevada.',
+  description: 'South Shore is a guard-gated · luxury resort community in Henderson, Nevada (ZIP 89011), established in 2003 by Lake Las Vegas Resort, spanning ~350 acres. Home prices range from $800K–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.082, longitude: -114.935 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89011', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function LakeLasVegasSouthShorePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>South Shore at Lake Las Vegas is the premier guard-gated luxury enclave within the Lake Las Vegas resort community in Henderson. Occupying the southern bank of the 320-acre private lake, South Shore offers waterfront estates, custom hilltop homes, and Mediterranean-inspired villas with direct lake, mountain, and golf course views — a lifestyle experience unlike anything else in the Las Vegas Valley.</p>
+                  <p>South Shore is a guard-gated · luxury resort community within Lake Las Vegas in Henderson, Nevada (ZIP 89011), established in 2003, developed by Lake Las Vegas Resort, spanning ~350 acres. South Shore at Lake Las Vegas is the premier guard-gated luxury enclave within the Lake Las Vegas resort community in Henderson. Occupying the southern bank of the 320-acre private lake, South Shore offers waterfront estates, custom hilltop homes, and Mediterranean-inspired villas with direct lake, mountain, and golf course views — a lifestyle experience unlike anything else in the Las Vegas Valley.</p>
                   <p>Behind South Shore's 24-hour staffed guard gate, approximately 400 homes range from lakefront villas starting around $800,000 to waterfront custom estates exceeding $5 million. Architectural standards favor Mediterranean, Tuscan, and Italian-inspired design — consistent with the Lake Las Vegas vision of a European-style resort village transplanted to the Nevada desert. Many homes feature private docks, infinity pools, outdoor living pavilions, and direct water access.</p>
                   <p>The SouthShore Golf Club, a Jack Nicklaus-designed championship course, is the community's anchor amenity. The course wraps along the lake's southern shoreline with dramatic water and mountain views on virtually every hole. Club amenities include fine dining, a resort-style pool, fitness center, spa, tennis courts, and social event spaces. Golf and social memberships are available to residents.</p>
                   <p>South Shore residents enjoy the full Lake Las Vegas lifestyle: kayaking and paddleboarding on the lake, lakefront dining at the Village, the Westin and Hilton resort properties, and proximity to Lake Mead National Recreation Area. Despite its resort-like setting, South Shore is only 25-30 minutes from the Strip, Harry Reid Airport, and Henderson's commercial corridor — making it viable for full-time luxury living, not just a vacation retreat.</p>

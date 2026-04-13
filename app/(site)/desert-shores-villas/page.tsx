@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Desert Shores Villas',
-  description: 'Desert Shores Villas is a lakefront · condos community in Las Vegas, Nevada.',
+  description: 'Desert Shores Villas is a lakefront · condos community in Las Vegas, Nevada (ZIP 89128), established in 1988 by Greenspun Corporation, spanning ~40 acres. Home prices range from $200K–$450K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.21, longitude: -115.268 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89128', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function DesertShoresVillasPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Desert Shores Villas is a collection of lakefront and lake-adjacent condominium and townhome communities within the larger Desert Shores development in northwest Las Vegas. Built beginning in 1988 as part of the Greenspun Corporation's Desert Shores master plan, the Villas offer an affordable entry point to one of Las Vegas' most unique residential environments — a community centered around four man-made recreational lakes totaling over 30 acres of waterfront.</p>
+                  <p>Desert Shores Villas is a lakefront · condos community within Desert Shores in Las Vegas, Nevada (ZIP 89128), spanning ~40 acres, with ~600 homes, where home prices range from $200K–$450K. Desert Shores Villas is a collection of lakefront and lake-adjacent condominium and townhome communities within the larger Desert Shores development in northwest Las Vegas. Built beginning in 1988 as part of the Greenspun Corporation's Desert Shores master plan, the Villas offer an affordable entry point to one of Las Vegas' most unique residential environments — a community centered around four man-made recreational lakes totaling over 30 acres of waterfront.</p>
                   <p>The Desert Shores Villas include several distinct condo and townhome complexes positioned along or near the community's lakes. Units range from approximately $200,000 for one-bedroom condos to $450,000 for larger waterfront townhomes with lake views, private patios, and updated interiors. Many units have been renovated with modern kitchens, new flooring, and updated bathrooms, while others present opportunities for buyers who want to customize.</p>
                   <p>Desert Shores' four lakes — Lake Jacqueline, Lake Ashley, Lake Tiffany, and Lake Serena — provide a lifestyle uncommon in the Las Vegas desert. Residents enjoy kayaking, paddleboarding, fishing (catch and release), and lakeside walking trails. The community's beaches, parks, and open spaces create a resort-like atmosphere, and the Desert Shores Community Association maintains the lakes, beaches, and common areas to a high standard.</p>
                   <p>The Villas' northwest Las Vegas location provides good access to the US-95 freeway, the shopping and dining along N Rancho Drive and W Lake Mead Boulevard, and the Summerlin corridor. The community is also close to The Lakes, another established community, and the growing Centennial Hills area. For buyers seeking waterfront living at a fraction of Lake Las Vegas pricing, Desert Shores Villas delivers remarkable value.</p>

@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Hills',
-  description: 'The Hills is a master-planned · guard-gated community in Las Vegas, Nevada.',
+  description: 'The Hills is a master-planned · guard-gated community in Las Vegas, Nevada (ZIP 89134), established in 1996 by Howard Hughes Corporation, spanning 550 acres. Home prices range from $500K–$900K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.208, longitude: -115.3 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function SummerlinTheHillsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Hills is an established village in the Summerlin North Association, known for its quiet residential character, elevated terrain, and the guard-gated Mountain Trails enclave. Developed beginning in 1996, The Hills has matured into one of Summerlin North's most stable and desirable neighborhoods, offering a mix of family-oriented non-gated neighborhoods and the exclusive Mountain Trails guard-gated community at the village's upper tier.</p>
+                  <p>The Hills is a master-planned · guard-gated community within Summerlin in Las Vegas, Nevada (ZIP 89134), developed by Howard Hughes Corporation, spanning 550 acres, with 2,800+ homes. The Hills is an established village in the Summerlin North Association, known for its quiet residential character, elevated terrain, and the guard-gated Mountain Trails enclave. Developed beginning in 1996, The Hills has matured into one of Summerlin North's most stable and desirable neighborhoods, offering a mix of family-oriented non-gated neighborhoods and the exclusive Mountain Trails guard-gated community at the village's upper tier.</p>
                   <p>Homes in The Hills range from approximately $500,000 in the established non-gated neighborhoods to over $900,000 in Mountain Trails and the premium sections of the village. Mountain Trails is the village's most distinctive feature — a guard-gated enclave featuring larger semi-custom homes on elevated lots with views of the Spring Mountains and the Las Vegas Valley. Homes in Mountain Trails typically range from 3,000 to 5,500 square feet with premium finishes.</p>
                   <p>The non-gated neighborhoods of The Hills offer excellent value for families seeking the Summerlin North location and school assignments. Mature landscaping, tree-lined streets, and a quiet residential character make these neighborhoods popular with families who prioritize stability and community over newer construction. The village is well-connected to Summerlin's trail network and is a short drive from both Downtown Summerlin and Red Rock Canyon.</p>
                   <p>The Hills should not be confused with The Hills South, a separate village in the Summerlin South Association that contains four guard-gated enclaves. While the names are similar, the two villages have distinct characters, school zonings, and price ranges. The Hills (North) offers a more affordable entry with its own guard-gated option in Mountain Trails, while The Hills South starts higher and contains more guard-gated luxury inventory.</p>

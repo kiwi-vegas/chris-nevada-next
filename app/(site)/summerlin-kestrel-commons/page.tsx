@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Kestrel Commons',
-  description: 'Kestrel Commons is a master-planned · new construction · mixed community in Las Vegas, Nevada.',
+  description: 'Kestrel Commons is a master-planned · new construction · mixed community in Las Vegas, Nevada (ZIP 89138), established in 2021 by Howard Hughes Corporation, spanning 350 acres. Home prices range from $450K–$900K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.19, longitude: -115.33 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinKestrelCommonsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Kestrel Commons is one of the newest and most diverse villages in the Summerlin West Association, offering a broad product mix that ranges from modern townhomes to larger single-family homes. Launched in 2021 by the Howard Hughes Corporation, Kestrel Commons was designed to serve the full spectrum of Summerlin West buyers — from first-time buyers and young professionals to growing families seeking more space.</p>
+                  <p>Kestrel Commons is a master-planned · new construction · mixed community within Summerlin in Las Vegas, Nevada (ZIP 89138), spanning 350 acres, with 1,500+ homes, where home prices range from $450K–$900K. Kestrel Commons is one of the newest and most diverse villages in the Summerlin West Association, offering a broad product mix that ranges from modern townhomes to larger single-family homes. Launched in 2021 by the Howard Hughes Corporation, Kestrel Commons was designed to serve the full spectrum of Summerlin West buyers — from first-time buyers and young professionals to growing families seeking more space.</p>
                   <p>Homes in Kestrel Commons range from approximately $450,000 for townhomes and smaller attached products to around $900,000 for larger single-family homes on premium lots. The village features multiple builders offering a variety of floor plans, from efficient 1,400-square-foot townhomes to spacious 3,800-square-foot single-family homes. The architectural character is modern and cohesive — desert contemporary styling with clean lines, mixed materials, and covered outdoor living spaces.</p>
                   <p>Kestrel Commons benefits from its position in the heart of the Summerlin West expansion area. Red Rock Canyon is approximately 10 minutes west, and the village is connected to the growing network of parks, trails, and community spaces being developed throughout Summerlin West. Downtown Summerlin is approximately 15 minutes east via West Lake Mead Boulevard or Summerlin Parkway.</p>
                   <p>The village's strength is its diversity. Kestrel Commons is one of the few Summerlin West villages where a first-time buyer can enter in the $450Ks and a move-up buyer can find a 3,500+ square-foot home under $900K — all within the same community. For buyers who want the newest construction in Summerlin with flexibility in product type and price point, Kestrel Commons delivers the broadest range of options in Summerlin West.</p>

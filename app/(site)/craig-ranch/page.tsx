@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Craig Ranch',
-  description: 'Craig Ranch is a master-planned · family community in North Las Vegas, Nevada.',
+  description: 'Craig Ranch is a master-planned · family community in North Las Vegas, Nevada (ZIP 89032), established in 2005 by Various Builders, spanning ~400 acres. Home prices range from $300K–$500K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.242, longitude: -115.14 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89032', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function CraigRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Craig Ranch is a well-established family-friendly community in North Las Vegas anchored by the award-winning Craig Ranch Regional Park — one of the most impressive public park facilities in the entire Las Vegas Valley. The park and surrounding residential neighborhoods have transformed this area of North Las Vegas into a desirable family destination with an identity all its own.</p>
+                  <p>Craig Ranch is a master-planned · family community in North Las Vegas, Nevada (ZIP 89032/89081), established in 2005, developed by Various Builders, spanning ~400 acres. Craig Ranch is a well-established family-friendly community in North Las Vegas anchored by the award-winning Craig Ranch Regional Park — one of the most impressive public park facilities in the entire Las Vegas Valley. The park and surrounding residential neighborhoods have transformed this area of North Las Vegas into a desirable family destination with an identity all its own.</p>
                   <p>Homes in Craig Ranch range from approximately $300,000 to $500,000, with floor plans spanning 1,400 to 2,800 square feet. Most homes were built between 2005 and 2015 by a mix of national builders. The architecture reflects the desert contemporary and Mediterranean styles common to Las Vegas construction of that era, with functional floor plans, two-car garages, and rear yards that accommodate pools and outdoor living spaces.</p>
                   <p>Craig Ranch Regional Park is the community's defining asset. This 170-acre facility features one of the largest skateparks in the western United States, championship-quality sports fields, a dog park, playgrounds, walking and biking trails, and event facilities. The park draws visitors from across the valley and hosts youth sports leagues, tournaments, and community events throughout the year. For families with active children, the park alone justifies choosing Craig Ranch.</p>
                   <p>The community's North Las Vegas location along Craig Road provides direct access to I-15 and I-215 for commutes to the Strip, downtown, and other valley destinations. The VA Medical Center and several major employers are nearby. Craig Ranch's affordable pricing, park amenities, and established neighborhood character make it one of the strongest value propositions for families in the Las Vegas metro.</p>

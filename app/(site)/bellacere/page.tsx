@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Bellacere',
-  description: 'Bellacere is a guard-gated · ultra-luxury community in Las Vegas, Nevada.',
+  description: 'Bellacere is a guard-gated · ultra-luxury community in Las Vegas, Nevada (ZIP 89144), established in 2003 by Howard Hughes Corporation, spanning 85 acres. Home prices range from $1.5M–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.196, longitude: -115.293 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89144', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function BellacerePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Bellacere is one of the most exclusive guard-gated enclaves in all of Summerlin, positioned within The Canyons village of the Summerlin North Association. With home prices ranging from approximately $1.5 million to over $5 million, Bellacere sits in the upper tier of Summerlin luxury — rivaling The Ridges in quality while maintaining the intimate scale and privacy that only a smaller, tightly controlled community can offer. The name 'Bellacere' translates loosely to 'wax' in Italian, reflecting the community's refined Mediterranean aesthetic.</p>
+                  <p>Bellacere is a guard-gated · ultra-luxury community within Summerlin in Las Vegas, Nevada (ZIP 89144), established in 2003, developed by Howard Hughes Corporation, spanning 85 acres. Bellacere is one of the most exclusive guard-gated enclaves in all of Summerlin, positioned within The Canyons village of the Summerlin North Association. With home prices ranging from approximately $1.5 million to over $5 million, Bellacere sits in the upper tier of Summerlin luxury — rivaling The Ridges in quality while maintaining the intimate scale and privacy that only a smaller, tightly controlled community can offer. The name 'Bellacere' translates loosely to 'wax' in Italian, reflecting the community's refined Mediterranean aesthetic.</p>
                   <p>Custom and semi-custom estates in Bellacere range from 4,000 to over 10,000 square feet, featuring soaring ceilings, imported stone and tile, gourmet kitchens with commercial-grade appliances, wine rooms, home theaters, and resort-style outdoor living spaces with infinity pools, fire features, and outdoor kitchens. Many homes occupy elevated lots with panoramic views of the Spring Mountains, Red Rock Canyon, and the Las Vegas Strip in the distance.</p>
                   <p>The community's 24-hour staffed guard gate, strict architectural standards, and limited number of homes — approximately 120 residences across 85 acres — create a level of exclusivity and privacy that attracts high-net-worth individuals, executives, and entertainers. Lot sizes in Bellacere are notably generous by Summerlin standards, providing enhanced privacy between estates and ample room for custom landscaping and outdoor living.</p>
                   <p>Bellacere's location within The Canyons village places residents minutes from Downtown Summerlin, TPC Summerlin, and the Red Rock Canyon scenic loop. For ultra-luxury buyers who want the established character and mature landscaping that newer communities like Grand Park cannot yet offer, Bellacere represents one of Summerlin North's finest addresses.</p>

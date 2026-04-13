@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Eagle Hills',
-  description: 'Eagle Hills is a guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'Eagle Hills is a guard-gated · luxury community in Las Vegas, Nevada (ZIP 89135), established in 2000 by Howard Hughes Corporation, spanning 80 acres. Home prices range from $800K–$2.5M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.157, longitude: -115.315 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function EagleHillsSummerlinPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Eagle Hills is a distinguished guard-gated enclave within The Hills South village of Summerlin, positioned on elevated terrain with commanding views of Red Rock Canyon, the Spring Mountains, and the western Las Vegas Valley. With homes ranging from approximately $800,000 to $2.5 million, Eagle Hills occupies the luxury middle ground within The Hills South — above Corte Bella in size and finish quality, while offering a more accessible entry point than Country Club Hills.</p>
+                  <p>Eagle Hills is a guard-gated · luxury community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2000, developed by Howard Hughes Corporation, spanning 80 acres. Eagle Hills is a distinguished guard-gated enclave within The Hills South village of Summerlin, positioned on elevated terrain with commanding views of Red Rock Canyon, the Spring Mountains, and the western Las Vegas Valley. With homes ranging from approximately $800,000 to $2.5 million, Eagle Hills occupies the luxury middle ground within The Hills South — above Corte Bella in size and finish quality, while offering a more accessible entry point than Country Club Hills.</p>
                   <p>Homes in Eagle Hills range from approximately 2,800 to 5,500 square feet, featuring Mediterranean and transitional architectural styles with premium appointments. Semi-custom and custom-finished homes include features such as natural stone flooring, gourmet kitchens with professional-grade appliances, wine storage, home offices, and resort-style outdoor living areas. The community's 225+ homes across 80 acres offer a balance of privacy and community character, with mature landscaping throughout.</p>
                   <p>The elevated terrain is Eagle Hills' signature feature. West-facing homes enjoy expansive sunset views over Red Rock Canyon's sandstone formations, while other vantage points capture panoramic views of the Spring Mountains, the TPC Summerlin course landscape, and the Las Vegas Valley to the east. This elevation advantage, combined with larger-than-average lot sizes for The Hills South, gives Eagle Hills a sense of prominence within the village.</p>
                   <p>Eagle Hills sits in the heart of Summerlin South's luxury corridor, with TPC Summerlin, Downtown Summerlin, and Red Rock Country Club all within a five-to-ten-minute drive. The school zoning — Sig Rogich Middle and Palo Verde High — is among the strongest in the Clark County School District. For buyers who want guard-gated luxury with exceptional views in an established Summerlin community, Eagle Hills delivers outstanding value.</p>

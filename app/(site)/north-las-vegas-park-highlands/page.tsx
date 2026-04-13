@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Park Highlands',
-  description: 'Park Highlands is a master-planned · new construction community in North Las Vegas, Nevada.',
+  description: 'Park Highlands is a master-planned · new construction community in North Las Vegas, Nevada (ZIP 89085), established in 2014 by Shea Homes / Lennar / Various, spanning ~2,000 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.305, longitude: -115.195 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89085', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },

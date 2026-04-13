@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Los Prados',
-  description: 'Los Prados is a guard-gated · golf community in Las Vegas, Nevada.',
+  description: 'Los Prados is a guard-gated · golf community in Las Vegas, Nevada (ZIP 89130), established in 1983 by Los Prados Development, spanning ~260 acres. Home prices range from $300K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.247, longitude: -115.214 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89130', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function LosPradosPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Los Prados is one of the most affordable guard-gated golf communities in the Las Vegas Valley. Developed beginning in 1983, this approximately 260-acre community in northwest Las Vegas features an 18-hole golf course, guard-gated security, and approximately 1,100 homes in a mature, well-established setting. With homes ranging from approximately $300,000 to $600,000, Los Prados provides country club living at a price point that makes it accessible to a wider range of buyers.</p>
+                  <p>Los Prados is a guard-gated · golf community in Las Vegas, Nevada (ZIP 89130), developed by Los Prados Development, spanning ~260 acres, with ~1,100 homes. Los Prados is one of the most affordable guard-gated golf communities in the Las Vegas Valley. Developed beginning in 1983, this approximately 260-acre community in northwest Las Vegas features an 18-hole golf course, guard-gated security, and approximately 1,100 homes in a mature, well-established setting. With homes ranging from approximately $300,000 to $600,000, Los Prados provides country club living at a price point that makes it accessible to a wider range of buyers.</p>
                   <p>The Los Prados Golf Course is a par-70 layout that winds through the community, providing golf course frontage and views for many homes. The course features mature trees, water features, and a comfortable walking layout that appeals to golfers of all skill levels. The community clubhouse offers dining, social events, and a gathering space for residents. Golf membership is available and affordable compared to the valley's private clubs.</p>
                   <p>Homes in Los Prados include a mix of single-family homes, townhomes, and patio homes built across several development phases from the mid-1980s through the 1990s. Many homes have been updated and renovated with modern kitchens, bathrooms, and flooring. The community has an established, park-like feel with mature trees and landscaping that creates shade and visual appeal uncommon in newer Las Vegas communities.</p>
                   <p>Los Prados sits in the northwest valley near the intersection of Lone Mountain Road and N Decatur Boulevard, providing good access to the US-95 freeway, the Centennial Hills shopping corridor, and the amenities along N Rancho Drive. The community attracts a diverse buyer pool including active retirees, young professionals, and families seeking guard-gated security and golf course living at a value price point.</p>

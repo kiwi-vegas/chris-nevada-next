@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Aliante',
-  description: 'Aliante is a master-planned community community in North Las Vegas, Nevada.',
+  description: 'Aliante is a master-planned community community in North Las Vegas, Nevada (ZIP 89084), established in 2003 by American West Development / North Valley Enterprises, spanning 1,905 acres. Home prices range from $300K–$650K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.289, longitude: -115.216 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89084', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },

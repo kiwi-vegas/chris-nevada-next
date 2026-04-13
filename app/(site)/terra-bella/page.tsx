@@ -84,7 +84,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Terra Bella',
-  description: 'Terra Bella is a 55+ · active adult community in Henderson, Nevada.',
+  description: 'Terra Bella is a 55+ · active adult community in Henderson, Nevada (ZIP 89044), established in 2004 by Shea Homes, spanning 120 acres. Home prices range from $300K–$600K+.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.995, longitude: -115.05 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89044', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -307,7 +307,7 @@ export default async function TerraBellaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Terra Bella is a 55+ active adult community located within the Anthem master plan in Henderson. Developed by Shea Homes beginning in 2004, Terra Bella offers single-story homes ranging from approximately 1,100 to 2,200 square feet, with a focus on open floor plans, energy efficiency, and low-maintenance desert living. The community provides a comfortable, social retirement lifestyle at price points that are among the most accessible in the Anthem area.</p>
+                  <p>Terra Bella is a 55+ · active adult community within Anthem in Henderson, Nevada (ZIP 89044), spanning 120 acres, with 550+ homes, where home prices range from $300K–$600K+. Terra Bella is a 55+ active adult community located within the Anthem master plan in Henderson. Developed by Shea Homes beginning in 2004, Terra Bella offers single-story homes ranging from approximately 1,100 to 2,200 square feet, with a focus on open floor plans, energy efficiency, and low-maintenance desert living. The community provides a comfortable, social retirement lifestyle at price points that are among the most accessible in the Anthem area.</p>
                   <p>Homes in Terra Bella range from approximately $300,000 for smaller floor plans to over $600,000 for larger detached homes on premium lots. The community features a variety of floor plans including attached garden homes and detached single-family residences. Shea Homes' Trilogy brand is known for quality construction, thoughtful floor plans, and attention to indoor-outdoor flow — many Terra Bella homes feature covered patios, courtyards, and low-water landscaping.</p>
                   <p>The Terra Bella community center serves as the neighborhood's social hub, featuring a swimming pool, spa, fitness room, and multi-purpose activity space. While smaller than the clubhouses at Sun City Anthem or the larger Del Webb communities, Terra Bella's amenity center has a friendly, intimate character that residents appreciate. The community hosts regular social events, potlucks, fitness classes, and hobby groups.</p>
                   <p>Terra Bella's location within Anthem means residents enjoy convenient access to Henderson's medical facilities, shopping, and dining along St. Rose Parkway and Eastern Avenue. The community is also close to outdoor recreation — Sloan Canyon National Conservation Area and Lake Mead are both within a 30-minute drive. For 55+ buyers who want an active lifestyle in a well-located Henderson community without the higher price tags of guard-gated alternatives, Terra Bella delivers genuine value.</p>

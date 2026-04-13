@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'MacDonald Ranch',
-  description: 'MacDonald Ranch is a master-planned · golf community in Henderson, Nevada.',
+  description: 'MacDonald Ranch is a master-planned · golf community in Henderson, Nevada (ZIP 89012), established in 1994 by MacDonald Properties, spanning ~3,200 acres. Home prices range from $300K–$15M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.02, longitude: -115 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89012', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },

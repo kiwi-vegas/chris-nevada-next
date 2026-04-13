@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sky Las Vegas',
-  description: 'Sky Las Vegas is a high-rise · strip-front community in Las Vegas, Nevada.',
+  description: 'Sky Las Vegas is a high-rise · strip-front community in Las Vegas, Nevada (ZIP 89109), established in 2007 by Molasky Group of Companies, spanning ~2 acres. Home prices range from $300K–$2M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.131, longitude: -115.163 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89109', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function SkyLasVegasPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Sky Las Vegas is a 45-story luxury high-rise condominium tower located directly on Las Vegas Boulevard, offering one of the purest Strip-front living experiences in the city. Completed in 2007 by the Molasky Group of Companies, the tower contains 409 residences and stands on the west side of the Strip near the intersection with Sahara Avenue, providing direct views of the Strip corridor, the Wynn and Encore resorts, and the Spring Mountains.</p>
+                  <p>Sky Las Vegas is a high-rise · strip-front community in Las Vegas, Nevada (ZIP 89109), spanning ~2 acres, where home prices range from $300K–$2M+. Sky Las Vegas is a 45-story luxury high-rise condominium tower located directly on Las Vegas Boulevard, offering one of the purest Strip-front living experiences in the city. Completed in 2007 by the Molasky Group of Companies, the tower contains 409 residences and stands on the west side of the Strip near the intersection with Sahara Avenue, providing direct views of the Strip corridor, the Wynn and Encore resorts, and the Spring Mountains.</p>
                   <p>Residences at Sky Las Vegas range from approximately $300,000 for studio and one-bedroom units to over $2 million for penthouses and larger combined units with premium Strip views. Every unit features floor-to-ceiling glass, high-end finishes, and modern open floor plans. The tower's position on Las Vegas Boulevard means that east-facing units look directly down the Strip, offering one of the most iconic residential views in the world.</p>
                   <p>The building amenities include a rooftop pool deck with Strip views, a fitness center, 24-hour concierge and security, valet parking, a business center, and resident lounges. Sky's location at the north end of the Strip provides easy access to both the Strip's entertainment corridor and the emerging Sahara Avenue redevelopment zone, which is driving new investment and energy into the area.</p>
                   <p>For buyers who want to live directly on the Las Vegas Strip — with the lights, energy, and excitement of the boulevard as their front yard — Sky Las Vegas delivers that experience at a price point that is significantly more accessible than CityCenter or the Waldorf Astoria. The combination of Strip-front location, 45-story height, and a sub-$300K entry point makes Sky one of the strongest value propositions in the Las Vegas high-rise market.</p>

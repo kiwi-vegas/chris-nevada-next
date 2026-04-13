@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Solitude at Seven Hills',
-  description: 'Solitude at Seven Hills is a guard-gated · semi-custom community in Henderson, Nevada.',
+  description: 'Solitude at Seven Hills is a guard-gated · semi-custom community in Henderson, Nevada (ZIP 89052), established in 2003 by American West Homes, spanning ~120 acres. Home prices range from $500K–$900K.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.995, longitude: -115.095 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -298,7 +298,7 @@ export default async function HendersonSolitudePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Solitude at Seven Hills is a guard-gated enclave within the prestigious Seven Hills master-planned community in Henderson. Situated on elevated terrain along the southeastern foothills, Solitude offers semi-custom homes with sweeping views of the Las Vegas Valley, Strip skyline, and surrounding mountain ranges. The guard-gated entry, 24-hour security, and elevated positioning create a sense of privacy and exclusivity that distinguishes Solitude from the broader Seven Hills community.</p>
+                  <p>Solitude at Seven Hills is a guard-gated · semi-custom community within Seven Hills in Henderson, Nevada (ZIP 89052), established in 2003, developed by American West Homes, spanning ~120 acres. Solitude at Seven Hills is a guard-gated enclave within the prestigious Seven Hills master-planned community in Henderson. Situated on elevated terrain along the southeastern foothills, Solitude offers semi-custom homes with sweeping views of the Las Vegas Valley, Strip skyline, and surrounding mountain ranges. The guard-gated entry, 24-hour security, and elevated positioning create a sense of privacy and exclusivity that distinguishes Solitude from the broader Seven Hills community.</p>
                   <p>Homes in Solitude range from approximately $500,000 for resale single-family homes to $900,000 or more for premium view lots with upgraded construction and custom-quality finishes. Developed primarily by American West Homes starting in 2003, the community features semi-custom floor plans from 2,200 to 4,200 square feet with design elements that take advantage of the elevated terrain — large windows, view balconies, and rear-facing entertainment areas oriented toward the valley lights.</p>
                   <p>As part of Seven Hills, Solitude residents enjoy access to the Seven Hills community amenities including parks, walking trails, and community events, as well as proximity to the Rio Secco Golf Club — a Rees Jones-designed 18-hole championship course that has hosted PGA Tour events. The Seven Hills master plan is one of Henderson's most desirable addresses, and Solitude represents its most private and view-oriented section.</p>
                   <p>Solitude appeals to move-up buyers and luxury seekers who want guard-gated privacy and panoramic views at a price point below Henderson's ultra-luxury communities like MacDonald Highlands and Ascaya. The combination of Seven Hills' established reputation, Henderson's safety and services, and Solitude's guard-gated exclusivity creates a compelling value proposition for discerning buyers.</p>

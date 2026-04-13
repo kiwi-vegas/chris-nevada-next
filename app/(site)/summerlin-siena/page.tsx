@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Siena',
-  description: 'Siena is a guard-gated · 55+ active adult community in Las Vegas, Nevada.',
+  description: 'Siena is a guard-gated · 55+ active adult community in Las Vegas, Nevada (ZIP 89135), established in 2000 by Shea Homes, spanning 270 acres. Home prices range from $400K–$900K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.148, longitude: -115.315 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },

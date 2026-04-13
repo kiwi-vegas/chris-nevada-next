@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Peccole Ranch',
-  description: 'Peccole Ranch is a master-planned · established community in Las Vegas, Nevada.',
+  description: 'Peccole Ranch is a master-planned · established community in Las Vegas, Nevada (ZIP 89117), established in 1989 by Peccole Family / William Peccole, spanning 640 acres. Home prices range from $400K–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.159, longitude: -115.28 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89117', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },

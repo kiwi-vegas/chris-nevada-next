@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Turnberry Place',
-  description: 'Turnberry Place is a high-rise · luxury · four towers community in Las Vegas, Nevada.',
+  description: 'Turnberry Place is a high-rise · luxury · four towers community in Las Vegas, Nevada (ZIP 89109), established in 2001 by Turnberry Associates / Jeffrey Soffer, spanning ~16 acres. Home prices range from $500K–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.121, longitude: -115.149 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89109', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function TurnberryPlacePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Turnberry Place is a four-tower luxury high-rise condominium community located on Paradise Road, just east of the Las Vegas Strip. Developed by Turnberry Associates between 2001 and 2006, the complex was the development that proved Las Vegas could sustain a premier luxury residential high-rise market. Its four 36-story towers contain approximately 720 residences spread across 16 resort-style acres, making it one of the largest and most established luxury high-rise communities in the valley.</p>
+                  <p>Turnberry Place is a high-rise · luxury · four towers community in Las Vegas, Nevada (ZIP 89109), developed by Turnberry Associates / Jeffrey Soffer, spanning ~16 acres, with ~720 homes. Turnberry Place is a four-tower luxury high-rise condominium community located on Paradise Road, just east of the Las Vegas Strip. Developed by Turnberry Associates between 2001 and 2006, the complex was the development that proved Las Vegas could sustain a premier luxury residential high-rise market. Its four 36-story towers contain approximately 720 residences spread across 16 resort-style acres, making it one of the largest and most established luxury high-rise communities in the valley.</p>
                   <p>Residences at Turnberry Place range from approximately $500,000 for one- and two-bedroom units to well over $5 million for the community's most expansive penthouses and combined units. Floor plans are exceptionally generous — many two-bedroom units exceed 2,000 square feet and three-bedroom penthouses can surpass 5,000 square feet. Every unit features private balconies, floor-to-ceiling windows, marble and granite finishes, and Sub-Zero/Wolf kitchen appliances.</p>
                   <p>The community's 16-acre campus is the most resort-like of any Las Vegas high-rise. Amenities include a 3-acre pool deck with waterfalls and private cabanas, a championship tennis court complex, a 10,000-square-foot fitness center, a full-service spa, a putting green, 24-hour concierge and valet, private wine storage, and dedicated dog parks. The lush landscaping and resort grounds are maintained to five-star standards.</p>
                   <p>Turnberry Place occupies a unique position in the Las Vegas high-rise market — it offers the spacious floor plans and resort grounds that newer glass towers cannot match, combined with a location that puts residents minutes from the Strip, the Convention Center, and Harry Reid Airport. For buyers who prioritize space, amenities, and a resort lifestyle over the newest construction, Turnberry Place remains one of the most compelling options in the valley.</p>

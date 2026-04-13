@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Turnberry Towers',
-  description: 'Turnberry Towers is a high-rise · luxury · strip-adjacent community in Las Vegas, Nevada.',
+  description: 'Turnberry Towers is a high-rise · luxury · strip-adjacent community in Las Vegas, Nevada (ZIP 89109), established in 2007 by Turnberry Associates / Jeffrey Soffer, spanning ~8 acres. Home prices range from $400K–$2.5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.125, longitude: -115.152 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89109', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function TurnberryTowersPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Turnberry Towers is a twin-tower luxury high-rise condominium community located on Karen Avenue, just east of the Las Vegas Strip and adjacent to the Las Vegas Convention Center. Developed by Turnberry Associates and completed in 2007 and 2008, the two 45-story towers contain approximately 636 residences and offer a resort-caliber living experience that has established Turnberry as one of the most recognizable luxury high-rise brands in Las Vegas.</p>
+                  <p>Turnberry Towers is a high-rise · luxury · strip-adjacent community in Las Vegas, Nevada (ZIP 89109), developed by Turnberry Associates / Jeffrey Soffer, spanning ~8 acres, with ~636 homes. Turnberry Towers is a twin-tower luxury high-rise condominium community located on Karen Avenue, just east of the Las Vegas Strip and adjacent to the Las Vegas Convention Center. Developed by Turnberry Associates and completed in 2007 and 2008, the two 45-story towers contain approximately 636 residences and offer a resort-caliber living experience that has established Turnberry as one of the most recognizable luxury high-rise brands in Las Vegas.</p>
                   <p>Residences at Turnberry Towers range from approximately $400,000 for one-bedroom units to over $2.5 million for penthouses and combined units with premium Strip views. Floor plans are generous and well-designed, with one-, two-, and three-bedroom configurations featuring high-end finishes, floor-to-ceiling windows, European-style kitchens, and private balconies — a feature that many competing Strip towers do not offer.</p>
                   <p>The community's amenity package is among the most comprehensive of any Las Vegas high-rise. Residents enjoy two resort-style pool decks with private cabanas, a state-of-the-art fitness center with personal training, a full-service spa, tennis courts, a business center, private dining and entertainment rooms, 24-hour concierge and valet, and lushly landscaped grounds that provide a genuine resort atmosphere despite the tower's urban location.</p>
                   <p>Turnberry Towers' location near the Convention Center, the Wynn/Encore resorts, and the Las Vegas Monorail makes it an ideal choice for both primary residents and those who want easy access to Strip entertainment while maintaining a residential feel. The gated entry, mature landscaping, and resort-style grounds create a sense of escape that distinguishes Turnberry Towers from glass-and-steel competitors.</p>

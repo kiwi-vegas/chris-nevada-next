@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Lone Mountain West',
-  description: 'Lone Mountain West is a suburban · master-planned community in Las Vegas, Nevada.',
+  description: 'Lone Mountain West is a suburban · master-planned community in Las Vegas, Nevada (ZIP 89166), established in 2015, spanning ~3,500 acres. Home prices range from $500K–$1M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.278, longitude: -115.328 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasLoneMountainWestPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Lone Mountain West is one of the fastest-growing residential corridors in the northwest Las Vegas Valley. Situated west of the landmark Lone Mountain peak and north of the 215 Beltway, this area has transformed from open desert into a thriving collection of newer master-planned neighborhoods with modern floor plans, energy-efficient construction, and dramatic mountain views in every direction.</p>
+                  <p>Lone Mountain West is a suburban · master-planned community in Las Vegas, Nevada (ZIP 89166/89149), established in 2015, spanning ~3,500 acres, with 5,000+ homes. Lone Mountain West is one of the fastest-growing residential corridors in the northwest Las Vegas Valley. Situated west of the landmark Lone Mountain peak and north of the 215 Beltway, this area has transformed from open desert into a thriving collection of newer master-planned neighborhoods with modern floor plans, energy-efficient construction, and dramatic mountain views in every direction.</p>
                   <p>Development in Lone Mountain West accelerated significantly after 2015, with national builders like Toll Brothers, Lennar, KB Home, and Richmond American acquiring large parcels for new communities. The result is a landscape dominated by contemporary two-story and single-story homes built to the latest building codes, featuring open floor plans, gourmet kitchens, and generous lot sizes compared to older parts of the valley.</p>
                   <p>The area's appeal centers on its balance of relative newness and accessibility. Homes in the $500K to $1M range offer square footage and lot sizes that would cost significantly more in Summerlin or Henderson. The 215 Beltway provides a direct corridor to Summerlin, the Strip, and the airport, while the US-95 interchange at Durango connects north to Centennial Hills and south to downtown. Retail and dining options along Deer Springs Way and Farm Road continue to expand rapidly.</p>
                   <p>For families, Lone Mountain West offers access to some of the newer CCSD schools in the district, with several campuses built within the last decade. The area's elevation provides cooler summer temperatures than the valley floor, and the proximity to Floyd Lamb Park at Tule Springs and the desert foothills gives outdoor enthusiasts hiking and cycling access that rivals any community in Las Vegas.</p>

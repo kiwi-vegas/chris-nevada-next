@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Inspirada',
-  description: 'Inspirada is a master-planned · new construction community in Henderson, Nevada.',
+  description: 'Inspirada is a master-planned · new construction community in Henderson, Nevada (ZIP 89044), established in 2007 by Focus Property Group / Multiple builders, spanning 1,700 acres. Home prices range from $420K–$1.1M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.975, longitude: -115.076 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89044', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },

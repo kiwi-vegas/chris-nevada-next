@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Redpoint Square',
-  description: 'Redpoint Square is a master-planned · new construction community in Las Vegas, Nevada.',
+  description: 'Redpoint Square is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89166), established in 2021 by Howard Hughes Corporation, spanning ~400 acres. Home prices range from $450K–$1.5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.218, longitude: -115.346 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinRedpointSquarePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Redpoint Square is one of the newest villages in Summerlin West, representing the next generation of master-planned living along the western edge of the Las Vegas Valley. Developed by the Howard Hughes Corporation, Redpoint Square offers a curated mix of production homes from nationally recognized builders, with pricing that spans from attainable new construction in the mid-$400s to premium semi-custom homes exceeding $1.5 million.</p>
+                  <p>Redpoint Square is a master-planned · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89166), established in 2021, spanning ~400 acres, with 1,500+ at buildout homes. Redpoint Square is one of the newest villages in Summerlin West, representing the next generation of master-planned living along the western edge of the Las Vegas Valley. Developed by the Howard Hughes Corporation, Redpoint Square offers a curated mix of production homes from nationally recognized builders, with pricing that spans from attainable new construction in the mid-$400s to premium semi-custom homes exceeding $1.5 million.</p>
                   <p>The village is anchored by a central park and gathering area that reflects Summerlin's commitment to connected, walkable neighborhoods. Extensive trail networks link Redpoint Square to the broader Summerlin trail system, providing residents with direct access to miles of jogging, cycling, and walking paths. The village sits at a slightly higher elevation than older Summerlin neighborhoods, offering improved mountain views toward the Spring Mountains and Red Rock Canyon.</p>
                   <p>Builders in Redpoint Square include Toll Brothers, Taylor Morrison, Woodside Homes, Shea Homes, and Tri Pointe Homes, offering floor plans ranging from approximately 1,800 to 4,500+ square feet. The architectural standards maintain Summerlin's desert-modern aesthetic with contemporary elevations, courtyards, and energy-efficient construction that meets current Nevada building codes.</p>
                   <p>Redpoint Square's location in Summerlin West provides convenient access to the 215 Beltway, Downtown Summerlin's 125+ shops and restaurants, and the upcoming commercial development planned for the western corridor. New schools, parks, and retail are being built alongside the residential neighborhoods, creating a fully integrated community from day one.</p>

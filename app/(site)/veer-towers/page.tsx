@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Veer Towers',
-  description: 'Veer Towers is a high-rise · luxury · strip community in Las Vegas, Nevada.',
+  description: 'Veer Towers is a high-rise · luxury · strip community in Las Vegas, Nevada (ZIP 89158), established in 2010 by MGM Resorts International / Infinity World Development, spanning ~2 acres. Home prices range from $400K–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.108, longitude: -115.176 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89158', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function VeerTowersPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Veer Towers is a pair of striking 37-story residential towers located at the heart of CityCenter on the Las Vegas Strip. Designed by the Pritzker Prize-winning firm Helmut Jahn, the twin towers are iconic for their five-degree lean away from each other, creating one of the most visually dramatic architectural statements on the Strip. Completed in 2010, Veer remains one of the premier luxury high-rise condominium addresses in Las Vegas.</p>
+                  <p>Veer Towers is a high-rise · luxury · strip community in Las Vegas, Nevada (ZIP 89158), developed by MGM Resorts International / Infinity World Development, spanning ~2 acres, with 670 homes. Veer Towers is a pair of striking 37-story residential towers located at the heart of CityCenter on the Las Vegas Strip. Designed by the Pritzker Prize-winning firm Helmut Jahn, the twin towers are iconic for their five-degree lean away from each other, creating one of the most visually dramatic architectural statements on the Strip. Completed in 2010, Veer remains one of the premier luxury high-rise condominium addresses in Las Vegas.</p>
                   <p>The towers contain approximately 670 residences ranging from efficient studios and one-bedroom units starting around $400,000 to expansive penthouses and combined units exceeding $5 million. Every residence features floor-to-ceiling glass curtain walls, high-end finishes, European-style kitchens with premium appliances, and sweeping views of the Strip, the Bellagio Fountains, the Spring Mountains, or the Las Vegas Valley skyline.</p>
                   <p>Veer Towers offers residents a fully amenitized luxury lifestyle including a resort-style pool deck, state-of-the-art fitness center, 24-hour concierge, valet parking, private residential lobbies, and direct access to CityCenter's premier shopping at ARIA, Crystals, and the Waldorf Astoria Las Vegas. The building's location at the geographic center of the Strip places residents within walking distance of virtually every major resort and entertainment venue.</p>
                   <p>For buyers seeking the ultimate Strip-adjacent lifestyle — where you can walk to a Michelin-starred dinner, catch a premier show, and return home to a private luxury residence — Veer Towers represents one of the strongest value propositions in the Las Vegas high-rise market. The combination of iconic architecture, CityCenter amenities, and an unbeatable location makes Veer one of the most sought-after addresses in the valley.</p>

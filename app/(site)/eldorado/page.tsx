@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Eldorado',
-  description: 'Eldorado is a established · family community in North Las Vegas, Nevada.',
+  description: 'Eldorado is a established · family community in North Las Vegas, Nevada (ZIP 89032), established in 1998 by Various Builders, spanning ~700 acres. Home prices range from $300K–$500K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.235, longitude: -115.165 },
   address: { '@type': 'PostalAddress', addressLocality: 'North Las Vegas', addressRegion: 'NV', postalCode: '89032', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'North Las Vegas' },
@@ -294,7 +294,7 @@ export default async function EldoradoPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Eldorado is an established residential area in North Las Vegas that offers some of the most affordable single-family homes in the northwest Las Vegas Valley. Located along the North 5th Street and Decatur Boulevard corridors in the central-northern section of North Las Vegas, Eldorado features a mix of single-family homes, townhomes, and newer infill development that has brought fresh inventory to an area with deep roots in the community.</p>
+                  <p>Eldorado is a established · family community in North Las Vegas, Nevada (ZIP 89032/89031), established in 1998, developed by Various Builders, spanning ~700 acres. Eldorado is an established residential area in North Las Vegas that offers some of the most affordable single-family homes in the northwest Las Vegas Valley. Located along the North 5th Street and Decatur Boulevard corridors in the central-northern section of North Las Vegas, Eldorado features a mix of single-family homes, townhomes, and newer infill development that has brought fresh inventory to an area with deep roots in the community.</p>
                   <p>Homes in Eldorado were built by a variety of builders — Pardee, Beazer, KB Home, DR Horton, and others — with construction spanning from the late 1990s through the 2010s. Floor plans range from approximately 1,000 to 2,800 square feet with prices from $300,000 to $500,000. The area offers exceptional square-footage value compared to communities further west, making it a popular choice for first-time buyers, investors, and families seeking maximum space on a budget.</p>
                   <p>Eldorado is served by the broader North Las Vegas parks and recreation system, with Craig Ranch Regional Park — a 170-acre facility featuring the largest skate park in the world, an amphitheater, sports fields, and event spaces — serving as the area's premier recreation destination. The North Las Vegas Library and nearby community centers provide additional family resources. Shopping and dining options along Craig Road and North 5th Street continue to expand.</p>
                   <p>The community's central North Las Vegas location provides access to multiple commute corridors: I-15 to the east, US-95 to the west, and the 215 Beltway to the north. Downtown Las Vegas and the Strip are approximately 20-25 minutes south. For buyers seeking affordable homeownership in a family-oriented area with improving infrastructure and services, Eldorado delivers strong value.</p>

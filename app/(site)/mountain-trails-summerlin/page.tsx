@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Mountain Trails',
-  description: 'Mountain Trails is a guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'Mountain Trails is a guard-gated · luxury community in Las Vegas, Nevada (ZIP 89134), established in 1998 by Howard Hughes Corporation, spanning 150 acres. Home prices range from $1M–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.21, longitude: -115.302 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function MountainTrailsSummerlinPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Mountain Trails is the crown jewel of The Hills village in Summerlin North — a guard-gated luxury enclave featuring custom and semi-custom estates on elevated lots with some of the most commanding views in the entire Summerlin master plan. With homes ranging from approximately $1 million to over $5 million, Mountain Trails attracts buyers who want the established character and mature landscaping of Summerlin North combined with the privacy and exclusivity of a 24-hour guard-gated community.</p>
+                  <p>Mountain Trails is a guard-gated · luxury community within Summerlin in Las Vegas, Nevada (ZIP 89134), established in 1998, developed by Howard Hughes Corporation, spanning 150 acres. Mountain Trails is the crown jewel of The Hills village in Summerlin North — a guard-gated luxury enclave featuring custom and semi-custom estates on elevated lots with some of the most commanding views in the entire Summerlin master plan. With homes ranging from approximately $1 million to over $5 million, Mountain Trails attracts buyers who want the established character and mature landscaping of Summerlin North combined with the privacy and exclusivity of a 24-hour guard-gated community.</p>
                   <p>Homes in Mountain Trails range from 3,000 to 7,500+ square feet, showcasing a mix of Mediterranean, Tuscan, and contemporary desert architectural styles. Many homes were built by Las Vegas's most respected luxury builders, with features including grand entries, soaring ceilings, gourmet kitchens, wine rooms, home theaters, and expansive outdoor living spaces with pools, spas, fire features, and panoramic mountain views. The community's 250+ homes across 150 acres maintain a low-density character with generous lot sizes.</p>
                   <p>The elevated terrain of Mountain Trails provides sweeping views in multiple directions — the Spring Mountains and Red Rock Canyon to the west, the Las Vegas Valley and Strip skyline to the southeast, and the Sheep Range to the north. This multi-directional view exposure is unusual even among Summerlin's luxury communities and makes Mountain Trails particularly desirable for buyers who prioritize vistas.</p>
                   <p>Mountain Trails' position within The Hills village provides convenient access to Summerlin North's infrastructure — excellent CCSD schools, the Summerlin trail network, and proximity to both Downtown Summerlin and the Summerlin Parkway for quick valley access. For luxury buyers who want guard-gated living in an established Summerlin North village with exceptional views, Mountain Trails is one of the area's most compelling options.</p>

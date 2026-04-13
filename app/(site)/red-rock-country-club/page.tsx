@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Red Rock Country Club',
-  description: 'Red Rock Country Club is a guard-gated · golf · luxury community in Las Vegas, Nevada.',
+  description: 'Red Rock Country Club is a guard-gated · golf · luxury community in Las Vegas, Nevada (ZIP 89135), established in 2002 by Howard Hughes Corporation, spanning ~700 acres. Home prices range from $800K–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.155, longitude: -115.315 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function RedRockCountryClubPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Red Rock Country Club is one of the premier guard-gated golf communities in the Las Vegas Valley. Located within Summerlin along the western rim of the valley, the community is built around two Arnold Palmer-designed championship golf courses — the Mountain Course and the Arroyo Course — with Red Rock Canyon's dramatic sandstone formations serving as a distinctive natural backdrop.</p>
+                  <p>Red Rock Country Club is a guard-gated · golf · luxury community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2002, developed by Howard Hughes Corporation, spanning ~700 acres. Red Rock Country Club is one of the premier guard-gated golf communities in the Las Vegas Valley. Located within Summerlin along the western rim of the valley, the community is built around two Arnold Palmer-designed championship golf courses — the Mountain Course and the Arroyo Course — with Red Rock Canyon's dramatic sandstone formations serving as a distinctive natural backdrop.</p>
                   <p>The community spans approximately 700 acres with over 1,200 homes ranging from $800,000 for resale homes in established neighborhoods to over $3 million for custom estates on premium golf course lots with unobstructed Red Rock views. Architectural styles blend desert-Mediterranean and contemporary elements, with strict design guidelines maintaining a cohesive, upscale aesthetic throughout. Homes range from approximately 2,500 to 8,000+ square feet.</p>
                   <p>The Red Rock Country Club clubhouse is the social centerpiece of the community, offering fine dining, casual dining, resort-style pools, tennis and pickleball courts, a full-service fitness center, spa services, and a year-round calendar of member events. Golf memberships offer access to both the Mountain and Arroyo courses, two of the most scenic courses in Nevada with distinctive Red Rock Canyon views from elevated tee boxes and greens.</p>
                   <p>Red Rock Country Club's Summerlin location provides exceptional convenience. Downtown Summerlin's 125+ shops and restaurants are a 5-minute drive. Red Rock Canyon National Conservation Area is just 10 minutes west. The Summerlin Parkway provides a direct corridor to the I-15 and downtown Las Vegas, putting the Strip approximately 20 minutes away. For buyers who want guard-gated golf community living with Red Rock Canyon views and Summerlin's lifestyle, Red Rock Country Club is the definitive choice.</p>

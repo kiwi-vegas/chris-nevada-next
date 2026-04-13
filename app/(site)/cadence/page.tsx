@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Cadence',
-  description: 'Cadence is a master-planned · new construction community in Henderson, Nevada.',
+  description: 'Cadence is a master-planned · new construction community in Henderson, Nevada (ZIP 89011), established in 2014 by The LandWell Company, spanning 2,200 acres. Home prices range from $350K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.05, longitude: -114.968 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89011', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },

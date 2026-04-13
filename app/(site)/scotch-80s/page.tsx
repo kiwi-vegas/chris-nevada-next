@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Scotch 80s',
-  description: 'Scotch 80s is a vintage luxury · guard-gated · historic community in Las Vegas, Nevada.',
+  description: 'Scotch 80s is a vintage luxury · guard-gated · historic community in Las Vegas, Nevada (ZIP 89102), established in 1960s by Irwin Molasky / Paradise Development, spanning ~180 acres. Home prices range from $800K–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.137, longitude: -115.169 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89102', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function Scotch80sPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Scotch 80s is one of the most storied and prestigious residential neighborhoods in Las Vegas, a guard-gated enclave of approximately 300 homes located just minutes from the Las Vegas Strip. Developed beginning in the early 1960s, the neighborhood takes its name from Section 80 of the city plat map and has been home to some of the most prominent figures in Las Vegas history — from casino executives and entertainers to professional athletes and business leaders.</p>
+                  <p>Scotch 80s is a vintage luxury · guard-gated · historic community in Las Vegas, Nevada (ZIP 89102), developed by Irwin Molasky / Paradise Development, spanning ~180 acres, with ~300 homes. Scotch 80s is one of the most storied and prestigious residential neighborhoods in Las Vegas, a guard-gated enclave of approximately 300 homes located just minutes from the Las Vegas Strip. Developed beginning in the early 1960s, the neighborhood takes its name from Section 80 of the city plat map and has been home to some of the most prominent figures in Las Vegas history — from casino executives and entertainers to professional athletes and business leaders.</p>
                   <p>Homes in Scotch 80s range from approximately $800,000 for original-era properties to well over $5 million for custom-remodeled estates on the neighborhood's largest lots. What makes Scotch 80s unique is its lot sizes — many properties sit on half-acre to full-acre lots, giving the neighborhood a spacious, estate-like character that is impossible to replicate in modern master-planned communities. Mature trees, expansive lawns, circular driveways, and midcentury-modern architecture define the neighborhood's iconic aesthetic.</p>
                   <p>The neighborhood has experienced a significant renaissance in recent years as buyers rediscover the value of its irreplaceable location and oversized lots. Many original homes are being acquired and either meticulously remodeled or replaced with striking contemporary estates, creating an exciting juxtaposition of vintage charm and modern luxury. The trend has attracted architects, designers, and discerning buyers who appreciate the neighborhood's character and potential.</p>
                   <p>Scotch 80s occupies a unique position in the Las Vegas market — it is the only guard-gated neighborhood of this scale and character within minutes of the Strip, with lots and mature landscaping that no new community can match. For buyers seeking old Las Vegas prestige, oversized lots, and a location that puts the Strip, the airport, and the entire valley within easy reach, Scotch 80s is an address with no equal.</p>

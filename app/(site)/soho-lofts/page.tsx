@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Soho Lofts',
-  description: 'Soho Lofts is a loft conversion · urban · downtown community in Las Vegas, Nevada.',
+  description: 'Soho Lofts is a loft conversion · urban · downtown community in Las Vegas, Nevada (ZIP 89101), established in 2007 by Molasky Group of Companies, spanning ~1.5 acres. Home prices range from $200K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.159, longitude: -115.15 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89101', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function SohoLoftsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Soho Lofts is a 15-story residential tower located in the heart of the Las Vegas Arts District, offering industrial-chic loft-style condominiums that are unlike anything else in the Las Vegas market. Completed in 2007 by the Molasky Group of Companies, the building contains 178 residences and has become a defining address for the Arts District's creative community.</p>
+                  <p>Soho Lofts is a loft conversion · urban · downtown community in Las Vegas, Nevada (ZIP 89101), spanning ~1.5 acres, where home prices range from $200K–$600K. Soho Lofts is a 15-story residential tower located in the heart of the Las Vegas Arts District, offering industrial-chic loft-style condominiums that are unlike anything else in the Las Vegas market. Completed in 2007 by the Molasky Group of Companies, the building contains 178 residences and has become a defining address for the Arts District's creative community.</p>
                   <p>Residences at Soho Lofts range from approximately $200,000 for studios and one-bedrooms to around $600,000 for two-story loft units and premium penthouses. The design aesthetic is deliberately raw and urban — exposed concrete ceilings, oversized warehouse-style windows, open floor plans with minimal walls, and soaring ceiling heights that give every unit a sense of volume and light. Many units feature mezzanine sleeping lofts accessed by floating staircases.</p>
                   <p>The building amenities include a rooftop pool deck with downtown and mountain views, a fitness center, controlled building access with security, dedicated resident parking, and a ground-floor lobby that reflects the building's industrial-creative character. The rooftop pool is one of the Arts District's most popular social spaces.</p>
                   <p>Soho Lofts sits at the epicenter of the Las Vegas Arts District, surrounded by galleries, breweries, craft coffee shops, restaurants, and creative studios. The monthly First Friday art walk draws thousands of visitors to the neighborhood. For buyers seeking authentic urban loft living with genuine neighborhood character — the kind of community that defines arts districts in cities like Los Angeles, Portland, and Brooklyn — Soho Lofts is the address.</p>

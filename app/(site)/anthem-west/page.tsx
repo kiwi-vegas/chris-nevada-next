@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Anthem West',
-  description: 'Anthem West is a master-planned · family community in Henderson, Nevada.',
+  description: 'Anthem West is a master-planned · family community in Henderson, Nevada (ZIP 89052), established in 2000 by Del Webb / Various, spanning ~600 acres. Home prices range from $450K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.99, longitude: -115.12 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function AnthemWestPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Anthem West encompasses the western neighborhoods of Henderson's expansive Anthem master-planned community, stretching from Eastern Avenue west to the community's boundary near the Seven Hills border. This family-focused section of Anthem offers a diverse collection of single-family homes, townhomes, and age-restricted properties organized around community parks, trail connections, and the shared amenities that make Anthem one of Henderson's most desirable addresses.</p>
+                  <p>Anthem West is a master-planned · family community within Anthem in Henderson, Nevada (ZIP 89052), established in 2000, developed by Del Webb / Various, spanning ~600 acres. Anthem West encompasses the western neighborhoods of Henderson's expansive Anthem master-planned community, stretching from Eastern Avenue west to the community's boundary near the Seven Hills border. This family-focused section of Anthem offers a diverse collection of single-family homes, townhomes, and age-restricted properties organized around community parks, trail connections, and the shared amenities that make Anthem one of Henderson's most desirable addresses.</p>
                   <p>Homes in Anthem West range from approximately $450,000 for smaller single-family homes and townhomes to $800,000 or more for premium single-family residences with mountain views, upgraded finishes, and three-car garages. Floor plans span 1,400 to 3,800 square feet, with the majority built between 2000 and 2010 by national builders including Del Webb, Pulte Homes, KB Home, and Richmond American. The mature construction era provides established landscaping and proven infrastructure.</p>
                   <p>Anthem West benefits from the full Anthem amenity package while offering a more accessible price point than the community's guard-gated sections like Anthem Country Club. Parks, walking trails, community pools, and the Anthem Community Center provide recreation and gathering spaces. The Anthem Hills trail system connects to regional trail networks that extend into the McCullough Mountains, offering hiking and mountain biking opportunities within the community.</p>
                   <p>The area's schools are among Henderson's best, with above-average CCSD campuses and access to top-rated charter and private options. The St. Rose Parkway commercial corridor provides a growing base of shopping, dining, and medical services. For families seeking Anthem's reputation, Henderson's quality of life, and a property at a price below the guard-gated sections, Anthem West delivers outstanding value.</p>

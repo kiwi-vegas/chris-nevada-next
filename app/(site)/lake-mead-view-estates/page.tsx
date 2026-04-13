@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Lake Mead View Estates',
-  description: 'Lake Mead View Estates is a luxury · lake views community in Henderson, Nevada.',
+  description: 'Lake Mead View Estates is a luxury · lake views community in Henderson, Nevada (ZIP 89011), established in 2004 by Various Builders, spanning ~200 acres. Home prices range from $600K–$2M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.1, longitude: -114.93 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89011', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function LakeMeadViewEstatesPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Lake Mead View Estates occupies one of the most visually striking positions in the Henderson foothills, offering panoramic views of Lake Mead, the River Mountains, and the surrounding desert terrain. Located in the greater Lake Las Vegas corridor east of Henderson, this residential enclave provides a quieter, more spacious alternative to the denser communities closer to the Las Vegas Valley core.</p>
+                  <p>Lake Mead View Estates is a luxury · lake views community within Lake Las Vegas in Henderson, Nevada (ZIP 89011), established in 2004, developed by Various Builders, spanning ~200 acres. Lake Mead View Estates occupies one of the most visually striking positions in the Henderson foothills, offering panoramic views of Lake Mead, the River Mountains, and the surrounding desert terrain. Located in the greater Lake Las Vegas corridor east of Henderson, this residential enclave provides a quieter, more spacious alternative to the denser communities closer to the Las Vegas Valley core.</p>
                   <p>Developed primarily in the mid-2000s, Lake Mead View Estates features custom and semi-custom homes on larger-than-average lots, many exceeding a quarter acre. The elevated terrain means most homes enjoy unobstructed sightlines — sunrise views over Lake Mead to the east and mountain panoramas in every direction. Architecture ranges from Mediterranean and Tuscan-inspired designs to contemporary desert-modern styles.</p>
                   <p>The community benefits from its proximity to the Lake Las Vegas resort community, which offers residents access to lakefront dining, the Westin Lake Las Vegas resort, the Village at Lake Las Vegas shopping area, kayaking and paddleboarding on the private lake, and two championship golf courses. Lake Mead National Recreation Area is just minutes away, providing boating, fishing, hiking, and scenic drives.</p>
                   <p>Homes in Lake Mead View Estates range from approximately $600,000 for updated resale homes to well over $2 million for larger custom estates on premium view lots. The area attracts buyers seeking space, privacy, and natural beauty while remaining within a 30-minute drive of the Strip, Harry Reid International Airport, and Henderson's full complement of shopping, dining, and medical services.</p>

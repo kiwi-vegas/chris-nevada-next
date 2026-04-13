@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Trilogy at Summerlin',
-  description: 'Trilogy at Summerlin is a 55+ · guard-gated community in Las Vegas, Nevada.',
+  description: 'Trilogy at Summerlin is a 55+ · guard-gated community in Las Vegas, Nevada (ZIP 89135), established in 2017 by Shea Homes, spanning ~120 acres. Home prices range from $500K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.165, longitude: -115.32 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function TrilogyAtSummerlinPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Trilogy at Summerlin is a guard-gated 55+ active adult community built by Shea Homes, known nationally for creating resort-style communities under the Trilogy brand. Located within the Summerlin master plan, Trilogy offers single-story luxury homes, a distinctive private clubhouse, and a lifestyle program designed to keep active adults engaged, connected, and healthy.</p>
+                  <p>Trilogy at Summerlin is a 55+ · guard-gated community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2017, spanning ~120 acres, with 350+ homes. Trilogy at Summerlin is a guard-gated 55+ active adult community built by Shea Homes, known nationally for creating resort-style communities under the Trilogy brand. Located within the Summerlin master plan, Trilogy offers single-story luxury homes, a distinctive private clubhouse, and a lifestyle program designed to keep active adults engaged, connected, and healthy.</p>
                   <p>The centerpiece of Trilogy at Summerlin is the Outlook Club, a private amenity center featuring a resort-style pool and spa, indoor-outdoor event spaces, a full-service restaurant and bar, fitness center, movement studio, culinary studio, arts and crafts workshops, and an outdoor amphitheater for live entertainment. The Outlook Club is staffed by a full-time Lifestyle Director who curates events, classes, and social programming year-round.</p>
                   <p>Homes in Trilogy at Summerlin range from approximately $500,000 to $800,000, with single-story floor plans spanning 1,700 to 3,100 square feet. Shea Homes' SheaXero and SheaConnect technology packages come standard, offering advanced energy efficiency and smart-home connectivity. Floor plans feature open great rooms, gourmet kitchens with quartz countertops, spa master suites, and flexible bonus rooms.</p>
                   <p>Trilogy's Summerlin location places residents minutes from Downtown Summerlin, Red Rock Canyon, and the master plan's extensive trail system. The Trilogy brand has a loyal following among active adults who want more than just a house — they want a lifestyle community with built-in social infrastructure, resort amenities, and like-minded neighbors.</p>

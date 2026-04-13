@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Coronado Ranch',
-  description: 'Coronado Ranch is a established community community in Henderson, Nevada.',
+  description: 'Coronado Ranch is a established community community in Henderson, Nevada (ZIP 89052), established in 2000 by Various builders, spanning ~300 acres. Home prices range from $400K–$650K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.01, longitude: -115.1 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function CoronadoRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Coronado Ranch is an established residential community in southeast Henderson that offers well-built single-family homes at one of the most accessible price points in the city. Developed in the early 2000s during Henderson's growth boom, Coronado Ranch features a mix of one-story and two-story homes on quiet residential streets, with community parks, walking paths, and easy access to Henderson's infrastructure.</p>
+                  <p>Coronado Ranch is a established community community in Henderson, Nevada (ZIP 89052), developed by Various builders, spanning ~300 acres, with 1,800+ homes. Coronado Ranch is an established residential community in southeast Henderson that offers well-built single-family homes at one of the most accessible price points in the city. Developed in the early 2000s during Henderson's growth boom, Coronado Ranch features a mix of one-story and two-story homes on quiet residential streets, with community parks, walking paths, and easy access to Henderson's infrastructure.</p>
                   <p>The community's appeal lies in its combination of Henderson location, solid construction quality, and attainable pricing. Homes in Coronado Ranch typically range from approximately $400,000 to $650,000, offering three-to-five-bedroom floor plans from 1,400 to 3,000+ square feet. The neighborhood has matured nicely with established landscaping, and many homeowners have invested in pool installations, outdoor kitchens, and backyard improvements.</p>
                   <p>Coronado Ranch sits in a convenient location near the intersection of Coronado Center Drive and major Henderson corridors, providing easy access to shopping, dining, and daily conveniences. The community is within a short drive of Henderson's recreation amenities including Cornerstone Park, the Henderson Pavilion amphitheater, and the city's extensive trail network.</p>
                   <p>For buyers seeking an affordable Henderson address with good schools, low HOA fees, and the safety and quality of life that Henderson is known for, Coronado Ranch represents strong value. The community attracts families, first-time buyers, and investors who recognize that Henderson's real estate fundamentals — safety, growth, and demand — apply at every price point.</p>

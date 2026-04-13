@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'La Madre Peaks',
-  description: 'La Madre Peaks is a luxury · new construction community in Las Vegas, Nevada.',
+  description: 'La Madre Peaks is a luxury · new construction community in Las Vegas, Nevada (ZIP 89138), established in 2022 by Howard Hughes Corporation, spanning 400 acres. Home prices range from $800K–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.2, longitude: -115.34 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function SummerlinLaMadrePeaksPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>La Madre Peaks is Summerlin's newest luxury village, located in the Summerlin West Association at the westernmost edge of the master plan. Named for the La Madre Mountain range that forms its dramatic western backdrop, this village represents the final chapter of Summerlin's three-decade development story — the last major luxury community to be built before the Red Rock Canyon National Conservation Area boundary prevents any further westward expansion.</p>
+                  <p>La Madre Peaks is a luxury · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89138), established in 2022, developed by Howard Hughes Corporation, spanning 400 acres. La Madre Peaks is Summerlin's newest luxury village, located in the Summerlin West Association at the westernmost edge of the master plan. Named for the La Madre Mountain range that forms its dramatic western backdrop, this village represents the final chapter of Summerlin's three-decade development story — the last major luxury community to be built before the Red Rock Canyon National Conservation Area boundary prevents any further westward expansion.</p>
                   <p>Homes in La Madre Peaks range from approximately $800,000 for production luxury homes to over $5 million for custom estate lots in Astra at La Madre Peaks, the village's most exclusive section. Astra offers 167 custom home lots ranging from one-third acre to over one acre, with many backing directly to natural desert washes and the Red Rock Canyon boundary. For buyers seeking a custom build in Summerlin's most dramatic setting, Astra represents what may be the last opportunity.</p>
                   <p>Multiple luxury builders are active in La Madre Peaks, including Toll Brothers, Taylor Morrison, Shea Homes, and several custom builders on the Astra lots. The architectural style throughout the village is contemporary desert — clean lines, natural materials, large glass expanses, and indoor-outdoor living designs that are intentionally oriented toward the mountain and canyon views that define the location.</p>
                   <p>The scarcity story at La Madre Peaks is the most compelling investment thesis in Summerlin. Red Rock Canyon to the west is a national conservation area — there will be no more land, no more Summerlin expansion, and no more opportunities to build at the canyon's edge. La Madre Peaks is the last village with this positioning, and once the lots are sold and built out, this inventory disappears permanently. For luxury buyers who understand supply dynamics, La Madre Peaks is the single most compelling new-construction opportunity in the Las Vegas Valley.</p>

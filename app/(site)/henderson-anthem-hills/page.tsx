@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Anthem Hills',
-  description: 'Anthem Hills is a master-planned · elevated · premium community in Henderson, Nevada.',
+  description: 'Anthem Hills is a master-planned · elevated · premium community in Henderson, Nevada (ZIP 89052), established in 2000 by Del Webb / Pulte Group, spanning ~350 acres. Home prices range from $600K–$1M.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.995, longitude: -115.065 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function HendersonAnthemHillsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Anthem Hills is the elevated premium section of the Anthem master-planned community in Henderson, encompassing the hillside neighborhoods south of Anthem Parkway and west of Anthem Country Club. Perched on the foothills of the McCullough Range, Anthem Hills offers some of the most dramatic views in the entire Anthem community — sweeping panoramas of the Las Vegas Valley, the Strip skyline, and the surrounding desert mountains from homes positioned at higher elevations than the valley floor.</p>
+                  <p>Anthem Hills is a master-planned · elevated · premium community within Anthem in Henderson, Nevada (ZIP 89052), established in 2000, developed by Del Webb / Pulte Group, spanning ~350 acres. Anthem Hills is the elevated premium section of the Anthem master-planned community in Henderson, encompassing the hillside neighborhoods south of Anthem Parkway and west of Anthem Country Club. Perched on the foothills of the McCullough Range, Anthem Hills offers some of the most dramatic views in the entire Anthem community — sweeping panoramas of the Las Vegas Valley, the Strip skyline, and the surrounding desert mountains from homes positioned at higher elevations than the valley floor.</p>
                   <p>Homes in Anthem Hills range from approximately $600,000 for established single-family homes to over $1 million for larger hillside properties with premium views and upgraded finishes. Floor plans typically range from 2,200 to 4,000 square feet, with both single-story and two-story options. The elevated positioning means many homes enjoy unobstructed views that lower-elevation properties in Anthem Center cannot match.</p>
                   <p>The architectural character in Anthem Hills reflects the early-2000s Henderson building standards, with quality stucco and stone construction, tile roofs, and desert landscaping. Many homes have been updated by owners with modern finishes, outdoor living spaces, and pool additions. The hillside positioning creates varied lot sizes and configurations, with some properties featuring walkout basements — a rarity in Las Vegas — and dramatic rear elevation views.</p>
                   <p>Anthem Hills provides a step up from the Anthem Center neighborhoods in terms of views, lot sizes, and home quality, while remaining more accessible than the guard-gated Anthem Country Club. For buyers who want Anthem's parks, trails, schools, and community amenities combined with elevated views and a premium feel, Anthem Hills delivers an excellent combination of lifestyle, location, and relative value.</p>

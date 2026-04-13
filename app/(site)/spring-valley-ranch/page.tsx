@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Spring Valley Ranch',
-  description: 'Spring Valley Ranch is a suburban · family community in Las Vegas, Nevada.',
+  description: 'Spring Valley Ranch is a suburban · family community in Las Vegas, Nevada (ZIP 89147), established in 1992 by Various Builders, spanning ~800 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.095, longitude: -115.26 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89147', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SpringValleyRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Spring Valley Ranch is a well-established family neighborhood within the broader Spring Valley area of Las Vegas, located south of Spring Mountain Road and west of the Rainbow Boulevard corridor. Developed primarily in the 1990s and early 2000s, the community offers a mix of single-family homes, townhomes, and patio homes set within mature, tree-lined streets that give the neighborhood a settled, comfortable character that newer developments cannot replicate.</p>
+                  <p>Spring Valley Ranch is a suburban · family community within Spring Valley in Las Vegas, Nevada (ZIP 89147/89148), established in 1992, developed by Various Builders, spanning ~800 acres. Spring Valley Ranch is a well-established family neighborhood within the broader Spring Valley area of Las Vegas, located south of Spring Mountain Road and west of the Rainbow Boulevard corridor. Developed primarily in the 1990s and early 2000s, the community offers a mix of single-family homes, townhomes, and patio homes set within mature, tree-lined streets that give the neighborhood a settled, comfortable character that newer developments cannot replicate.</p>
                   <p>Homes in Spring Valley Ranch typically range from $350,000 for smaller townhome-style properties to $600,000 or more for larger single-family homes with upgraded features and premium lot positions. The floor plans are generous by the era's standards, with many homes offering 1,600 to 3,000 square feet on lots that are larger than what current builders typically deliver. Community pools, pocket parks, and walking paths provide shared amenities, while the established HOAs maintain neighborhood standards without excessive fees.</p>
                   <p>The neighborhood's central location within Spring Valley provides exceptional access to the valley's commercial infrastructure. Desert Breeze Park — one of the best recreation facilities in Las Vegas — is within minutes, as are major shopping corridors along Flamingo Road, Fort Apache Road, and Rainbow Boulevard. Multiple grocery anchors, medical offices, restaurants, and professional services are accessible without highway driving.</p>
                   <p>Spring Valley Ranch appeals to families who prioritize established neighborhoods with proven HOAs, mature landscaping, and neighborhood stability over the newness of outlying communities. The central location shortens commutes to the Strip, downtown, and Summerlin alike. For buyers seeking the quality of a planned community at a price well below Summerlin and Henderson, Spring Valley Ranch delivers outstanding long-term value.</p>

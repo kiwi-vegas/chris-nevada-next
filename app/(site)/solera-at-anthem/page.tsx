@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Solera at Anthem',
-  description: 'Solera at Anthem is a 55+ · guard-gated · active adult community in Henderson, Nevada.',
+  description: 'Solera at Anthem is a 55+ · guard-gated · active adult community in Henderson, Nevada (ZIP 89044), established in 2001 by Del Webb, spanning 200 acres. Home prices range from $350K–$650K.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.988, longitude: -115.055 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89044', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -303,7 +303,7 @@ export default async function SoleraAtAnthemPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Solera at Anthem is a guard-gated 55+ active adult community located within the Anthem master plan in Henderson. Developed by Del Webb beginning in 2001, Solera offers single-story homes ranging from approximately 1,200 to 2,400 square feet, designed specifically for active adults who want low-maintenance living with resort-style amenities in one of Henderson's most desirable locations.</p>
+                  <p>Solera at Anthem is a 55+ · guard-gated · active adult community within Anthem in Henderson, Nevada (ZIP 89044), spanning 200 acres, with 900+ homes, where home prices range from $350K–$650K. Solera at Anthem is a guard-gated 55+ active adult community located within the Anthem master plan in Henderson. Developed by Del Webb beginning in 2001, Solera offers single-story homes ranging from approximately 1,200 to 2,400 square feet, designed specifically for active adults who want low-maintenance living with resort-style amenities in one of Henderson's most desirable locations.</p>
                   <p>Homes in Solera at Anthem range from approximately $350,000 for smaller floor plans to $650,000 for premium end-unit or detached homes on oversized lots with mountain views. The community features a mix of attached patio homes and detached single-family homes, all single-story for accessibility. Architecture is Southwest-inspired with stucco exteriors, tile roofs, and desert landscaping maintained by the HOA, minimizing homeowner yard work.</p>
                   <p>The heart of Solera is its private clubhouse, which serves as the community's social center. Facilities include a resort-style swimming pool, spa, fitness center, tennis courts, bocce ball courts, a multi-purpose activity room, and a billiards lounge. The community hosts regular social events, fitness classes, card groups, and clubs that keep residents connected and active. It's a smaller, more intimate alternative to the much larger Sun City Anthem 55+ community nearby.</p>
                   <p>Solera's guard-gated entry provides 24-hour controlled access, adding a layer of security and privacy that distinguishes it from non-gated 55+ communities. The location within Anthem means residents benefit from Henderson's top-tier medical facilities, dining along St. Rose Parkway, and easy access to I-215 and US-95 for day trips to Lake Mead, Red Rock Canyon, and the Las Vegas Strip.</p>

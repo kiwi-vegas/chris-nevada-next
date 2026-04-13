@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Reverence',
-  description: 'Reverence is a master-planned · new construction community in Las Vegas, Nevada.',
+  description: 'Reverence is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89166), established in 2019 by Howard Hughes Corporation / Pulte Homes, spanning 300+ acres. Home prices range from $600K–$1.5M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.21, longitude: -115.338 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -286,7 +286,7 @@ export default async function SummerlinReverencePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Reverence is a premier village in Summerlin West that occupies a coveted position along the western rim of the Las Vegas Valley, offering residents dramatic mountain views and direct access to some of the best trail systems in Southern Nevada. Developed by Pulte Homes within the Howard Hughes Corporation's Summerlin master plan, Reverence was designed from the ground up as an elevated living experience with resort-caliber amenities.</p>
+                  <p>Reverence is a master-planned · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89166), established in 2019, developed by Howard Hughes Corporation / Pulte Homes, spanning 300+ acres. Reverence is a premier village in Summerlin West that occupies a coveted position along the western rim of the Las Vegas Valley, offering residents dramatic mountain views and direct access to some of the best trail systems in Southern Nevada. Developed by Pulte Homes within the Howard Hughes Corporation's Summerlin master plan, Reverence was designed from the ground up as an elevated living experience with resort-caliber amenities.</p>
                   <p>The centerpiece of Reverence is its private residents' club, featuring a resort-style pool with cabanas, a state-of-the-art fitness center, outdoor gathering spaces with fire pits, bocce ball courts, and event lawns. The community's trail system connects directly to the Summerlin trail network and provides access to Red Rock Canyon trailheads, making it one of the most trail-connected neighborhoods in the entire master plan.</p>
                   <p>Homes in Reverence range from approximately $600,000 for single-story ranch plans to $1.5 million for larger two-story estate-style homes on premium lots. Pulte Homes delivers modern desert-contemporary architecture with open floor plans, multi-slide glass doors, chef-grade kitchens, and energy-efficient construction. Many floor plans feature casitas, courtyards, and multi-generational suites.</p>
                   <p>Reverence's elevated position in Summerlin West provides mountain views from many homesites, particularly those along the western edge of the community. The combination of resort amenities, trail connectivity, mountain views, and the Summerlin address makes Reverence one of the most desirable new-construction communities for buyers seeking a premium lifestyle without guard-gated pricing.</p>

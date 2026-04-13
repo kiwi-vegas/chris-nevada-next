@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Anthem Park',
-  description: 'Anthem Park is a master-planned · park-oriented community in Henderson, Nevada.',
+  description: 'Anthem Park is a master-planned · park-oriented community in Henderson, Nevada (ZIP 89052), established in 2000 by Del Webb / Pulte Group, spanning ~350 acres. Home prices range from $500K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.01, longitude: -115.058 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function AnthemParkPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Anthem Park is a park-oriented residential neighborhood within the broader Anthem master-planned community in Henderson. As the name suggests, the neighborhood was designed around a network of community parks, walking paths, and green spaces that create an outdoor-focused lifestyle within one of Henderson's most sought-after communities. Spanning approximately 350 acres with over 1,800 homes, Anthem Park delivers the Anthem lifestyle with an emphasis on parks and family recreation.</p>
+                  <p>Anthem Park is a master-planned · park-oriented community within Anthem in Henderson, Nevada (ZIP 89052), established in 2000, developed by Del Webb / Pulte Group, spanning ~350 acres. Anthem Park is a park-oriented residential neighborhood within the broader Anthem master-planned community in Henderson. As the name suggests, the neighborhood was designed around a network of community parks, walking paths, and green spaces that create an outdoor-focused lifestyle within one of Henderson's most sought-after communities. Spanning approximately 350 acres with over 1,800 homes, Anthem Park delivers the Anthem lifestyle with an emphasis on parks and family recreation.</p>
                   <p>Homes in Anthem Park range from approximately $500,000 for single-story homes in established sections to $800,000 for larger two-story homes on premium park-adjacent and view lots. The neighborhood features a mix of builders including Pulte, KB Home, and Beazer who delivered homes between 2000 and 2008. Floor plans range from 1,800 to 3,500 square feet with designs oriented toward indoor-outdoor living.</p>
                   <p>The centerpiece of the neighborhood is the Anthem Park recreation area, which includes playing fields, playgrounds, walking trails, picnic pavilions, and open green space. The park connects to the broader Anthem trail system, which links to the surrounding desert wilderness and the Sloan Canyon National Conservation Area. Residents also have access to the shared Anthem Center community recreation facility.</p>
                   <p>Anthem Park's location in the heart of the Anthem community provides access to some of Henderson's top-rated schools, including Elise L. Wolff Elementary and Coronado High School. The I-215 beltway is easily accessible, and the neighborhood benefits from Henderson's consistently high safety rankings. For families seeking an active, park-centered lifestyle within the established Anthem community, Anthem Park is the natural choice.</p>

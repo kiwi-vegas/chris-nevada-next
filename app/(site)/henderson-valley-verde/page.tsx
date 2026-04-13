@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Valley Verde',
-  description: 'Valley Verde is a suburban · established community in Henderson, Nevada.',
+  description: 'Valley Verde is a suburban · established community in Henderson, Nevada (ZIP 89014), established in 1996, spanning ~900 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.055, longitude: -115.06 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89014', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function HendersonValleyVerdePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Valley Verde is a well-established residential community in central Henderson, situated between the Green Valley and Anthem corridors along the Warm Springs Road and Eastern Avenue intersection. Developed primarily in the mid-to-late 1990s, Valley Verde features quality single-family homes, mature landscaping, and a convenient location that has made it a perennial favorite among families and professionals seeking Henderson's quality of life at moderate price points.</p>
+                  <p>Valley Verde is a suburban · established community in Henderson, Nevada (ZIP 89014/89074), established in 1996, spanning ~900 acres, with 4,000+ homes. Valley Verde is a well-established residential community in central Henderson, situated between the Green Valley and Anthem corridors along the Warm Springs Road and Eastern Avenue intersection. Developed primarily in the mid-to-late 1990s, Valley Verde features quality single-family homes, mature landscaping, and a convenient location that has made it a perennial favorite among families and professionals seeking Henderson's quality of life at moderate price points.</p>
                   <p>The community's homes reflect the quality construction standards of 1990s Henderson development — solid block and stucco construction with tile roofing, attached garages, and well-designed floor plans. Properties range from approximately $400,000 for smaller single-family homes to $700,000 for larger residences on premium lots with upgraded features. The mature trees, established HOA standards, and neighborhood pride give Valley Verde a settled, well-maintained character.</p>
                   <p>Valley Verde's central Henderson location provides excellent access to the city's commercial infrastructure. The Warm Springs/Eastern intersection is a major commercial node with grocery, dining, medical, and retail services. The Galleria at Sunset mall, Green Valley Ranch Resort, and the shops along Stephanie Street are all within a short drive. Henderson's municipal services, consistently rated among the best in Nevada, serve the community.</p>
                   <p>For families, Valley Verde offers a combination of good schools, safe neighborhoods, and community amenities at price points more moderate than premium Henderson addresses like Seven Hills or Anthem Country Club. The area's established infrastructure, walkable design, and proven property value performance make it a low-risk, high-quality choice for buyers seeking long-term value in Henderson.</p>

@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Mira Villa',
-  description: 'Mira Villa is a guard-gated · luxury · new construction community in Las Vegas, Nevada.',
+  description: 'Mira Villa is a guard-gated · luxury · new construction community in Las Vegas, Nevada (ZIP 89135), established in 2023 by William Lyon Homes / Taylor Morrison, spanning ~60 acres. Home prices range from $1M–$2.2M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.15, longitude: -115.322 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function MiraVillaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Mira Villa is a guard-gated luxury new-construction community in Summerlin delivering resort-caliber homes in a secure, private setting. Developed by Taylor Morrison (formerly William Lyon Homes), Mira Villa offers spacious floor plans from approximately 2,800 to 4,800 square feet with the contemporary desert architecture, premium finishes, and elevated indoor-outdoor living that define Summerlin's newest luxury neighborhoods.</p>
+                  <p>Mira Villa is a guard-gated · luxury · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2023, developed by William Lyon Homes / Taylor Morrison, spanning ~60 acres. Mira Villa is a guard-gated luxury new-construction community in Summerlin delivering resort-caliber homes in a secure, private setting. Developed by Taylor Morrison (formerly William Lyon Homes), Mira Villa offers spacious floor plans from approximately 2,800 to 4,800 square feet with the contemporary desert architecture, premium finishes, and elevated indoor-outdoor living that define Summerlin's newest luxury neighborhoods.</p>
                   <p>The community's guard-gated entry ensures privacy and exclusivity, while the landscaped streets, pocket parks, and walking paths within the gates create a polished residential environment. Mira Villa homes feature open floor plans with multi-slide glass doors, gourmet kitchen islands with quartz countertops, spa-inspired master suites, and covered outdoor living spaces designed for year-round entertaining.</p>
                   <p>Many Mira Villa floor plans offer optional casitas, home offices, wine rooms, and multi-generational suites, providing the flexibility that today's luxury buyers demand. The architectural standards enforce a cohesive desert-contemporary aesthetic with flat rooflines, natural stone and stucco exteriors, and contemporary landscape design that complements the desert environment.</p>
                   <p>Mira Villa's location in the Summerlin foothills places residents just minutes from Red Rock Canyon, Downtown Summerlin, and the 215 Beltway. For buyers seeking new-construction luxury with guard-gated security in the $1M to $2.2M range, Mira Villa fills the gap between Summerlin's upper-middle-market communities and the ultra-luxury pricing of The Ridges.</p>

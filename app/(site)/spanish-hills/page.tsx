@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Spanish Hills',
-  description: 'Spanish Hills is a guard-gated · luxury estates community in Las Vegas, Nevada.',
+  description: 'Spanish Hills is a guard-gated · luxury estates community in Las Vegas, Nevada (ZIP 89113), established in 1998 by Various Custom Builders, spanning ~640 acres. Home prices range from $1M–$10M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.065, longitude: -115.263 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89113', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function SpanishHillsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Spanish Hills is one of the most prestigious guard-gated luxury estate communities in Las Vegas, situated on elevated terrain just south of the Strip corridor with sweeping views of the Las Vegas Valley, the Strip skyline, and the surrounding mountain ranges. Encompassing approximately 640 acres with only around 300 homesites, Spanish Hills offers a level of privacy and exclusivity that few Las Vegas communities can match.</p>
+                  <p>Spanish Hills is a guard-gated · luxury estates community in Las Vegas, Nevada (ZIP 89113/89148), established in 1998, developed by Various Custom Builders, spanning ~640 acres. Spanish Hills is one of the most prestigious guard-gated luxury estate communities in Las Vegas, situated on elevated terrain just south of the Strip corridor with sweeping views of the Las Vegas Valley, the Strip skyline, and the surrounding mountain ranges. Encompassing approximately 640 acres with only around 300 homesites, Spanish Hills offers a level of privacy and exclusivity that few Las Vegas communities can match.</p>
                   <p>Developed beginning in the late 1990s, Spanish Hills was conceived as a custom-home enclave where buyers could purchase large lots and build estate-caliber homes with the architect and builder of their choosing. Lots in Spanish Hills range from approximately half an acre to well over an acre, and many feature dramatic elevated positions that provide unobstructed views of the Strip, the mountains, and the desert valley floor below.</p>
                   <p>Homes in Spanish Hills range from approximately $1 million for resale properties to over $10 million for newer custom-build estates on premium view lots. Architectural styles vary from Mediterranean and Tuscan to contemporary desert modern, reflecting the community's evolution over more than two decades. Many homes feature expansive motor courts, resort-style pools, home theaters, wine cellars, and multi-car garages designed for luxury car collections.</p>
                   <p>Spanish Hills' location along the south Strip corridor provides a rare combination of privacy and proximity. Residents are just minutes from the Strip's premier dining, entertainment, and nightlife, as well as Harry Reid International Airport. The community's elevation, guard-gated security, large lots, and mature desert landscaping create a secluded estate atmosphere that continues to attract executives, entertainers, professional athletes, and high-net-worth buyers seeking a legacy property in Las Vegas.</p>

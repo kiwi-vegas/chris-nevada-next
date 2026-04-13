@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'MacDonald Highlands',
-  description: 'MacDonald Highlands is a guard-gated · ultra-luxury · golf community in Henderson, Nevada.',
+  description: 'MacDonald Highlands is a guard-gated · ultra-luxury · golf community in Henderson, Nevada (ZIP 89012), established in 2000 by MacDonald Properties, spanning 1,200 acres. Home prices range from $800K–$28.95M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.015, longitude: -114.998 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89012', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function MacdonaldHighlandsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>MacDonald Highlands is the undisputed pinnacle of luxury real estate in Henderson and one of the most exclusive residential communities in the American West. Set across 1,200 acres on the McCullough Range mountainside, the community commands a dramatic elevated position that provides 270-degree panoramic views of the entire Las Vegas Valley, the Strip skyline, and the surrounding mountain ranges from virtually every estate.</p>
+                  <p>MacDonald Highlands is a guard-gated · ultra-luxury · golf community in Henderson, Nevada (ZIP 89012), established in 2000, developed by MacDonald Properties, with 1,500+ homes. MacDonald Highlands is the undisputed pinnacle of luxury real estate in Henderson and one of the most exclusive residential communities in the American West. Set across 1,200 acres on the McCullough Range mountainside, the community commands a dramatic elevated position that provides 270-degree panoramic views of the entire Las Vegas Valley, the Strip skyline, and the surrounding mountain ranges from virtually every estate.</p>
                   <p>The community is anchored by DragonRidge Country Club, a Tom Fazio-designed 18-hole championship course widely regarded as one of the finest private clubs in Nevada. The course plays through natural desert terrain with dramatic elevation changes and mountain backdrops. The DragonRidge clubhouse features fine dining, a resort-style pool, tennis and pickleball courts, a full-service fitness center, spa services, and a year-round calendar of member events.</p>
                   <p>Homes in MacDonald Highlands span an extraordinary range — from approximately $800,000 for SkyVu residences to $28.95 million and beyond for the most exclusive custom estates in Dragon Rock. The community features multiple distinct luxury enclaves: Dragon Rock (Blue Heron ultra-luxury, $5M–$15M+), Neo (new contemporary construction, $2.34M–$4.97M), Cresta Rosa ($2.83M–$3.95M), Four Seasons Private Residences (branded residences by Luxus), SkyVu ($800K–$2M+), and Vu Residences ($1M–$3M+).</p>
                   <p>MacDonald Highlands' guard-gated security with 24-hour staffing creates an distinctive level of privacy and exclusivity. Dragon Rock adds a second guard gate for its ultra-luxury enclave. The community's Henderson location provides easy access to the I-215 beltway, Green Valley Ranch resort, and The District shopping center — all within 15 minutes. For ultra-high-net-worth buyers seeking the finest views, architecture, and lifestyle in the Las Vegas Valley, MacDonald Highlands sets the standard.</p>

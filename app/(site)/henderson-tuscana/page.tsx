@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Tuscana',
-  description: 'Tuscana is a master-planned · suburban community in Henderson, Nevada.',
+  description: 'Tuscana is a master-planned · suburban community in Henderson, Nevada (ZIP 89052), established in 2003 by Various Builders, spanning ~250 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.015, longitude: -115.105 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function HendersonTuscanaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Tuscana is a well-established residential community in the southern Henderson corridor, positioned along the Eastern Avenue and Horizon Ridge Parkway area. Developed starting in 2003 by a mix of national builders, Tuscana features Tuscan-inspired architecture, community parks, walking paths, and an amenity center that reflects the Mediterranean design influence that was popular in Henderson developments of that era. The community's 2,000+ homes are organized around shared green spaces that give the neighborhood a cohesive, finished feel.</p>
+                  <p>Tuscana is a master-planned · suburban community within Henderson in Henderson, Nevada (ZIP 89052), developed by Various Builders, spanning ~250 acres, with ~2,000 homes. Tuscana is a well-established residential community in the southern Henderson corridor, positioned along the Eastern Avenue and Horizon Ridge Parkway area. Developed starting in 2003 by a mix of national builders, Tuscana features Tuscan-inspired architecture, community parks, walking paths, and an amenity center that reflects the Mediterranean design influence that was popular in Henderson developments of that era. The community's 2,000+ homes are organized around shared green spaces that give the neighborhood a cohesive, finished feel.</p>
                   <p>Homes in Tuscana range from approximately $350,000 for smaller single-family homes and attached patio homes to $600,000 or more for premium single-family residences with upgraded finishes and premium lot positions. Floor plans typically span 1,400 to 3,000 square feet with stucco exteriors, tile roofs, and desert-adapted landscaping. The 2003–2012 construction era means homes include more modern infrastructure than older Henderson neighborhoods while having the benefit of established landscaping.</p>
                   <p>Tuscana's location in southern Henderson provides convenient access to the St. Rose Parkway commercial corridor — one of the fastest-growing retail zones in the valley — as well as established shopping and dining along Eastern Avenue and Horizon Ridge Parkway. The Henderson Multigenerational Center, Henderson's crown-jewel recreation facility, is nearby, and several parks and trail connections are within walking or short driving distance.</p>
                   <p>The community draws families and professionals who want Henderson's quality of life — safe streets, strong schools, excellent city services — at a price point below the area's premium communities. Tuscana's combination of Tuscan architectural character, established landscaping, and modest HOA fees makes it an attractive option for buyers seeking a move-in-ready Henderson home without guard-gate pricing.</p>

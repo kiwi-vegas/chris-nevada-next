@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Terracina',
-  description: 'Terracina is a guard-gated · luxury community in Henderson, Nevada.',
+  description: 'Terracina is a guard-gated · luxury community in Henderson, Nevada (ZIP 89052), established in 2001 by Pacific Rim / Various Custom, spanning ~100 acres. Home prices range from $1M–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.005, longitude: -115.093 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -306,7 +306,7 @@ export default async function SevenHillsTerracinaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Terracina is the premier guard-gated luxury enclave within Seven Hills, offering custom and semi-custom homes on generous lots with some of the most expansive views in Henderson. Situated along the elevated southern rim of Seven Hills overlooking the McCullough Range and the Las Vegas Strip, Terracina provides the exclusivity and architectural quality that distinguish it from the broader Seven Hills community.</p>
+                  <p>Terracina is a guard-gated · luxury community within Seven Hills in Henderson, Nevada (ZIP 89052), established in 2001, developed by Pacific Rim / Various Custom, spanning ~100 acres. Terracina is the premier guard-gated luxury enclave within Seven Hills, offering custom and semi-custom homes on generous lots with some of the most expansive views in Henderson. Situated along the elevated southern rim of Seven Hills overlooking the McCullough Range and the Las Vegas Strip, Terracina provides the exclusivity and architectural quality that distinguish it from the broader Seven Hills community.</p>
                   <p>Behind Terracina's 24-hour staffed guard gate, approximately 180 homes occupy lots that range from 10,000 to over 20,000 square feet. Homes are a mix of original custom builds from the early 2000s and extensively renovated estates, with sizes ranging from approximately 3,500 to 7,000+ square feet. Architectural styles include Mediterranean, Tuscan, and transitional contemporary, with many homeowners undertaking full modern renovations that have brought sleek desert-contemporary aesthetics to the community.</p>
                   <p>The views from Terracina are among the community's greatest assets. North-facing properties command panoramic Las Vegas Strip views that are particularly spectacular at night. South and east-facing homes look over the McCullough Range, Sloan Canyon, and the undeveloped desert beyond. The combination of guard-gated security, custom-home architecture, and premium views positions Terracina as a true luxury address within Henderson.</p>
                   <p>Terracina's location provides quick access to Rio Secco Golf Club, Sloan Canyon National Conservation Area, and Henderson's full amenity package along St. Rose Parkway and Eastern Avenue. The I-215 beltway is minutes away, connecting residents to the Strip, Harry Reid Airport, and the broader metro area. For buyers seeking guard-gated luxury in Henderson without the ultra-premium pricing of MacDonald Highlands or Ascaya, Terracina offers exceptional value.</p>

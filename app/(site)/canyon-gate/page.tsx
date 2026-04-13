@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Canyon Gate',
-  description: 'Canyon Gate is a guard-gated · golf community in Las Vegas, Nevada.',
+  description: 'Canyon Gate is a guard-gated · golf community in Las Vegas, Nevada (ZIP 89117), established in 1989 by Canyon Gate Development, spanning 330 acres. Home prices range from $700K–$2M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.15, longitude: -115.275 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89117', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },

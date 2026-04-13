@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Desert Shores',
-  description: 'Desert Shores is a lakefront · master-planned community in Las Vegas, Nevada.',
+  description: 'Desert Shores is a lakefront · master-planned community in Las Vegas, Nevada (ZIP 89128), established in 1988, spanning ~600 acres. Home prices range from $350K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.198, longitude: -115.264 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89128', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function DesertShoresPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Desert Shores is one of the most distinctive communities in the Las Vegas Valley, built around four man-made lakes that create a resort-like waterfront lifestyle in the heart of the desert. Located in northwest Las Vegas along Cheyenne Avenue west of the 95 freeway, Desert Shores was developed in the late 1980s and has matured into a beloved community prized for its waterfront living, community center amenities, and unique neighborhood character.</p>
+                  <p>Desert Shores is a lakefront · master-planned community in Las Vegas, Nevada (ZIP 89128/89145), established in 1988, spanning ~600 acres, with 3,000+ homes. Desert Shores is one of the most distinctive communities in the Las Vegas Valley, built around four man-made lakes that create a resort-like waterfront lifestyle in the heart of the desert. Located in northwest Las Vegas along Cheyenne Avenue west of the 95 freeway, Desert Shores was developed in the late 1980s and has matured into a beloved community prized for its waterfront living, community center amenities, and unique neighborhood character.</p>
                   <p>The community's four interconnected lakes — covering approximately 50 acres — are the defining feature. Residents enjoy private beaches, fishing, kayaking, paddleboarding, and lakeside walking paths. The Desert Shores Community Association operates a community center with resort-style pools, a fitness center, tennis courts, and event spaces. The annual calendar includes lakeside festivals, movie nights, and seasonal celebrations that foster a tight-knit community atmosphere.</p>
                   <p>Homes in Desert Shores range from approximately $350,000 for interior-lot properties to $800,000 or more for lakefront homes with private docks and water views. The housing stock includes single-family homes, townhomes, and patio homes, most built between 1988 and the mid-1990s. Waterfront properties command a significant premium and are among the most unique residential offerings in the Las Vegas Valley — very few communities in the metro offer true lakefront living.</p>
                   <p>Desert Shores' northwest location provides convenient access to Summerlin's shopping and dining at Downtown Summerlin (10 minutes), Red Rock Canyon (15 minutes), and the 95 freeway for commutes to the Strip and downtown. The community's mature landscaping, established HOA governance, and waterfront lifestyle make it particularly appealing to buyers seeking something beyond the typical desert suburban experience.</p>

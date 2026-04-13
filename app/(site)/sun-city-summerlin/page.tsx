@@ -84,7 +84,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Sun City Summerlin',
-  description: 'Sun City Summerlin is a 55+ active adult community in Las Vegas, Nevada.',
+  description: 'Sun City Summerlin is a 55+ active adult community in Las Vegas, Nevada (ZIP 89134), established in 1989 by Del Webb, spanning 2,400 acres. Home prices range from $300K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.209, longitude: -115.305 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },

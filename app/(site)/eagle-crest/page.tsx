@@ -84,7 +84,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Eagle Crest',
-  description: 'Eagle Crest is a 55+ · golf community community in Las Vegas, Nevada.',
+  description: 'Eagle Crest is a 55+ · golf community community in Las Vegas, Nevada (ZIP 89134), established in 1996 by Del Webb, spanning ~120 acres (golf course). Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.205, longitude: -115.295 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -302,7 +302,7 @@ export default async function EagleCrestPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Eagle Crest is one of three golf courses within Sun City Summerlin, the Las Vegas Valley's original and largest 55+ active adult community. The Eagle Crest Golf Course, designed by Billy Casper and Greg Nash, is an 18-hole executive layout that emphasizes playability and enjoyment over extreme difficulty, making it a favorite among Sun City residents who golf regularly. Homes surrounding the Eagle Crest course benefit from fairway views, open space setbacks, and the mature desert landscaping that defines this section of the community.</p>
+                  <p>Eagle Crest is a 55+ · golf community community within Sun City Summerlin in Las Vegas, Nevada (ZIP 89134), established in 1996, developed by Del Webb, spanning ~120 acres (golf course). Eagle Crest is one of three golf courses within Sun City Summerlin, the Las Vegas Valley's original and largest 55+ active adult community. The Eagle Crest Golf Course, designed by Billy Casper and Greg Nash, is an 18-hole executive layout that emphasizes playability and enjoyment over extreme difficulty, making it a favorite among Sun City residents who golf regularly. Homes surrounding the Eagle Crest course benefit from fairway views, open space setbacks, and the mature desert landscaping that defines this section of the community.</p>
                   <p>The Eagle Crest course features well-maintained fairways, strategic bunkering, and several water features that add both beauty and challenge. As an executive-length course (par 60), it plays shorter than the community's other two courses — Highland Falls and Palm Valley — making it popular for walkers, senior golfers, and players who prefer a quicker round. Preferred tee times and resident rates make golf an affordable daily activity.</p>
                   <p>Homes along the Eagle Crest corridor range from approximately $400,000 to $700,000, with the premium driven by golf course frontage, views, and lot position. Most are single-story Del Webb floor plans ranging from 1,400 to 2,800+ square feet, featuring open layouts, covered patios, and low-maintenance desert landscaping. Many homes have been updated with modern kitchens, flooring, and bathroom finishes.</p>
                   <p>As part of Sun City Summerlin, Eagle Crest residents have full access to four recreation centers, resort-style pools, fitness facilities, tennis and pickleball courts, and over 100 chartered clubs and organizations. The community's location in the western Summerlin corridor provides proximity to Downtown Summerlin's shopping and dining, Red Rock Canyon, and the I-215 beltway.</p>

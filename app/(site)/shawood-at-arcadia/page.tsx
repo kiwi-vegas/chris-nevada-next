@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'SHAWOOD at Arcadia',
-  description: 'SHAWOOD at Arcadia is a guard-gated · luxury · new construction community in Las Vegas, Nevada.',
+  description: 'SHAWOOD at Arcadia is a guard-gated · luxury · new construction community in Las Vegas, Nevada (ZIP 89135), established in 2024 by Sekisui House, spanning ~30 acres. Home prices range from $1.56M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.148, longitude: -115.33 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function ShawoodAtArcadiaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>SHAWOOD at Arcadia is one of the most distinctive luxury communities in Las Vegas, representing the first U.S. residential development by Sekisui House — Japan's largest homebuilder and a global leader in precision-engineered, sustainable luxury construction. Located within the guard-gated Summerlin master plan, SHAWOOD brings an entirely new level of build quality to the Las Vegas market with homes starting from $1.56 million.</p>
+                  <p>SHAWOOD at Arcadia is a guard-gated · luxury · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2024, spanning ~30 acres, with 75+ at buildout homes. SHAWOOD at Arcadia is one of the most distinctive luxury communities in Las Vegas, representing the first U.S. residential development by Sekisui House — Japan's largest homebuilder and a global leader in precision-engineered, sustainable luxury construction. Located within the guard-gated Summerlin master plan, SHAWOOD brings an entirely new level of build quality to the Las Vegas market with homes starting from $1.56 million.</p>
                   <p>The SHAWOOD construction system uses precision-milled steel-framed panels manufactured in Sekisui House's facilities and assembled on-site, resulting in homes with tolerances measured in millimeters rather than inches. The result is a level of fit, finish, and structural integrity that surpasses conventional American stick-frame construction. Each home undergoes rigorous quality inspections at multiple stages of the build process.</p>
                   <p>Homes in SHAWOOD at Arcadia range from approximately 3,200 to 5,000+ square feet with floor plans designed around the Japanese concept of 'slow living' — seamless indoor-outdoor flow, natural light optimization, courtyard gardens, and spaces designed for contemplation and comfort. Premium standard features include multi-slide glass walls, floating cabinetry, integrated smart-home systems, and imported fixtures and materials.</p>
                   <p>The guard-gated setting provides security and exclusivity, while the Summerlin address gives residents access to the master plan's 150+ miles of trails, Downtown Summerlin shopping, Red Rock Canyon, and championship golf courses. SHAWOOD at Arcadia appeals to discerning buyers who value premier construction quality, architectural innovation, and a fundamentally different approach to luxury homebuilding.</p>

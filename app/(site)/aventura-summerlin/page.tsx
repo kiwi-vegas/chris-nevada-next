@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Aventura',
-  description: 'Aventura is a guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'Aventura is a guard-gated · luxury community in Las Vegas, Nevada (ZIP 89144), established in 2000 by Howard Hughes Corporation, spanning 120 acres. Home prices range from $800K–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.198, longitude: -115.29 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89144', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function AventuraSummerlinPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Aventura is one of the most desirable guard-gated enclaves within The Canyons village of Summerlin North. Developed as part of Howard Hughes Corporation's master-planned vision for upscale living along Summerlin's western rim, Aventura delivers luxury living with 24-hour guard-gated security, generous lot sizes, and proximity to Red Rock Canyon's dramatic sandstone formations. The community features semi-custom and custom homes ranging from approximately $800,000 to over $3 million, with architectural styles spanning Mediterranean, Tuscan, and contemporary desert design.</p>
+                  <p>Aventura is a guard-gated · luxury community within Summerlin in Las Vegas, Nevada (ZIP 89144), established in 2000, spanning 120 acres, with 350+ homes. Aventura is one of the most desirable guard-gated enclaves within The Canyons village of Summerlin North. Developed as part of Howard Hughes Corporation's master-planned vision for upscale living along Summerlin's western rim, Aventura delivers luxury living with 24-hour guard-gated security, generous lot sizes, and proximity to Red Rock Canyon's dramatic sandstone formations. The community features semi-custom and custom homes ranging from approximately $800,000 to over $3 million, with architectural styles spanning Mediterranean, Tuscan, and contemporary desert design.</p>
                   <p>Homes in Aventura typically range from 2,800 to 6,000+ square feet, featuring open floor plans, gourmet kitchens, resort-style backyards with pools and spas, and multi-car garages. Many homes sit on elevated lots that provide sweeping views of the Spring Mountains, Red Rock Canyon, and the Las Vegas Valley skyline. The mature landscaping throughout the community — a hallmark of established Summerlin neighborhoods — gives Aventura a sense of permanence and privacy that newer communities cannot replicate.</p>
                   <p>The Canyons village location places Aventura residents within minutes of Downtown Summerlin's 125+ shops and restaurants, TPC Summerlin where the PGA Tour's Shriners Children's Open is held annually, and the trail systems that connect to Red Rock Canyon National Conservation Area. The village also benefits from some of the highest-rated school zones in the Clark County School District.</p>
                   <p>For luxury buyers who want guard-gated security within an established Summerlin village — without the $2M+ entry point of The Ridges — Aventura represents one of the most compelling options in Summerlin North. The combination of generous lot sizes, mature landscaping, mountain views, and the Summerlin brand name makes Aventura a strong value proposition in the Las Vegas luxury market.</p>

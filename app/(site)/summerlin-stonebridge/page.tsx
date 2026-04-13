@@ -84,7 +84,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Stonebridge',
-  description: 'Stonebridge is a master-planned · new construction · 55+ community in Las Vegas, Nevada.',
+  description: 'Stonebridge is a master-planned · new construction · 55+ community in Las Vegas, Nevada (ZIP 89138), established in 2017 by Howard Hughes Corporation, spanning 500 acres. Home prices range from $550K–$1M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.185, longitude: -115.325 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -302,7 +302,7 @@ export default async function SummerlinStonebridgePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Stonebridge is Summerlin's newest and most actively developing major village, located in the Summerlin West Association at the western edge of the master plan. Launched in 2017, Stonebridge has quickly become one of the most popular neighborhoods in the entire Las Vegas Valley, attracting families, move-up buyers, and active adults with contemporary architecture, dramatic Spring Mountain views, and direct connectivity to Red Rock Canyon through the Summerlin trail system.</p>
+                  <p>Stonebridge is a master-planned · new construction · 55+ community within Summerlin in Las Vegas, Nevada (ZIP 89138), developed by Howard Hughes Corporation, spanning 500 acres, with 3,000+ homes. Stonebridge is Summerlin's newest and most actively developing major village, located in the Summerlin West Association at the western edge of the master plan. Launched in 2017, Stonebridge has quickly become one of the most popular neighborhoods in the entire Las Vegas Valley, attracting families, move-up buyers, and active adults with contemporary architecture, dramatic Spring Mountain views, and direct connectivity to Red Rock Canyon through the Summerlin trail system.</p>
                   <p>Homes in Stonebridge range from approximately $550,000 to over $1 million, with most falling in the $650K–$850K range. Multiple national builders — including Toll Brothers, Taylor Morrison, Lennar, and Shea Homes — are actively building in Stonebridge, offering floor plans from 2,000 to 5,000+ square feet. The architectural style is distinctly contemporary — clean lines, neutral palettes, open floor plans, and large windows designed to frame the mountain views that define the village's character.</p>
                   <p>Stonebridge also includes Heritage at Stonebridge, a Toll Brothers age-qualified (55+) guard-gated community that adds a distinct active adult component to the village. Heritage at Stonebridge features single-story homes, a private clubhouse, and resort-style amenities — giving active adult buyers an option within the newest part of Summerlin.</p>
                   <p>The defining feature of Stonebridge is its position at the base of the Spring Mountains. The western edge of the village provides some of the most dramatic residential mountain views in the Las Vegas Valley, with sunset vistas that are widely considered the best in the region. The Summerlin trail system runs through and around Stonebridge, connecting residents to hiking and biking routes that extend into Red Rock Canyon — a genuine outdoor lifestyle amenity that sets Stonebridge apart from every other major village in Summerlin.</p>

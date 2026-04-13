@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Whitney Ranch',
-  description: 'Whitney Ranch is a master-planned · established community in Henderson, Nevada.',
+  description: 'Whitney Ranch is a master-planned · established community in Henderson, Nevada (ZIP 89014), established in 1992 by American Nevada Corporation, spanning ~1,800 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.047, longitude: -115.036 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89014', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function WhitneyRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Whitney Ranch is one of Henderson's most established and centrally located master-planned communities. Developed by American Nevada Corporation beginning in the early 1990s, the community spans approximately 1,800 acres in the heart of Henderson and has grown to include over 5,500 homes, making it one of the larger residential communities in the city.</p>
+                  <p>Whitney Ranch is a master-planned · established community in Henderson, Nevada (ZIP 89014/89074), established in 1992, spanning ~1,800 acres, with 5,500+ homes. Whitney Ranch is one of Henderson's most established and centrally located master-planned communities. Developed by American Nevada Corporation beginning in the early 1990s, the community spans approximately 1,800 acres in the heart of Henderson and has grown to include over 5,500 homes, making it one of the larger residential communities in the city.</p>
                   <p>The community's central Henderson location is its greatest asset. Whitney Ranch sits within minutes of the Galleria at Sunset mall, St. Rose Dominican Hospital, Henderson's Water Street District, and a deep concentration of grocery stores, restaurants, and everyday services. The I-215 beltway and US-95 are both easily accessible, providing quick commute corridors to the Strip, Harry Reid Airport, and every corner of the valley.</p>
                   <p>Homes in Whitney Ranch range from approximately $350,000 for smaller single-story homes to $600,000 for larger two-story homes with upgraded finishes on premium lots. The community features a mix of builders who delivered homes across multiple phases over a 15-year build-out period. Mature landscaping, wide streets, and well-maintained common areas give the community a settled, comfortable character.</p>
                   <p>Whitney Ranch is a family-friendly community with multiple parks, playgrounds, and walking paths throughout. The community is served by several well-regarded CCSD schools, and the centralized Henderson location means that families have easy access to sports leagues, cultural activities, and youth programs across the city. For buyers seeking an established Henderson address at an accessible price point, Whitney Ranch offers exceptional value.</p>

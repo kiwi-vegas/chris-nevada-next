@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Kestrel',
-  description: 'Kestrel is a master-planned · new construction community in Las Vegas, Nevada.',
+  description: 'Kestrel is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89138), established in 2020 by Howard Hughes Corporation, spanning 320 acres. Home prices range from $500K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.195, longitude: -115.335 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89138', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinKestrelPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Kestrel is one of the newest villages in the Summerlin West Association, representing the latest generation of Summerlin living with modern architecture, energy-efficient construction, and thoughtfully designed community spaces. Launched in 2020 by the Howard Hughes Corporation, Kestrel is part of Summerlin's active western expansion, bringing new residential neighborhoods to the foothills of the Spring Mountains.</p>
+                  <p>Kestrel is a master-planned · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89138), spanning 320 acres, with 1,200+ homes, where home prices range from $500K–$800K. Kestrel is one of the newest villages in the Summerlin West Association, representing the latest generation of Summerlin living with modern architecture, energy-efficient construction, and thoughtfully designed community spaces. Launched in 2020 by the Howard Hughes Corporation, Kestrel is part of Summerlin's active western expansion, bringing new residential neighborhoods to the foothills of the Spring Mountains.</p>
                   <p>Homes in Kestrel range from approximately $500,000 for production homes to around $800,000 for larger floor plans on premium lots. Active builders include Toll Brothers, Lennar, Taylor Morrison, and Woodside Homes, offering a range of contemporary floor plans from approximately 1,800 to 3,600 square feet. The architectural standard is distinctly modern — clean lines, mixed materials, flat and low-slope rooflines, and large windows that embrace the desert landscape.</p>
                   <p>Kestrel's position in Summerlin West places it among the closest villages to Red Rock Canyon (approximately 8 minutes) and the outdoor recreation opportunities of the western Las Vegas Valley. The village sits at a slightly higher elevation than most of Summerlin, providing many homes with views of the Spring Mountains, Red Rock Canyon, and the Las Vegas Valley below. Downtown Summerlin is approximately 15 minutes east.</p>
                   <p>For buyers who want new construction in the newest section of Summerlin with proximity to Red Rock Canyon and contemporary desert architecture, Kestrel is one of the most compelling options. The village is still actively developing, offering buyers the opportunity to purchase from builders, customize finishes, and be among the first residents in an emerging Summerlin West neighborhood.</p>

@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Olympia Ridge',
-  description: 'Olympia Ridge is a guard-gated · ultra-luxury · golf community in Las Vegas, Nevada.',
+  description: 'Olympia Ridge is a guard-gated · ultra-luxury · golf community in Las Vegas, Nevada (ZIP 89141), established in 2003 by Olympia Group, spanning 180 acres. Home prices range from $1.5M–$5M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.98, longitude: -115.2 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89141', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -311,7 +311,7 @@ export default async function OlympiaRidgePage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Olympia Ridge is an ultra-luxury guard-gated enclave within Southern Highlands, positioned along the most coveted fairways of the Southern Highlands Golf Club. Developed by the Olympia Group, the community was conceived as a premier residential address for buyers who demand golf course living, privacy, and architectural distinction — without the Summerlin price premium that communities like The Ridges command.</p>
+                  <p>Olympia Ridge is a guard-gated · ultra-luxury · golf community within Southern Highlands in Las Vegas, Nevada (ZIP 89141), established in 2003, spanning 180 acres, with 250+ homes. Olympia Ridge is an ultra-luxury guard-gated enclave within Southern Highlands, positioned along the most coveted fairways of the Southern Highlands Golf Club. Developed by the Olympia Group, the community was conceived as a premier residential address for buyers who demand golf course living, privacy, and architectural distinction — without the Summerlin price premium that communities like The Ridges command.</p>
                   <p>Homes in Olympia Ridge range from approximately $1.5 million for resale semi-custom residences to over $5 million for newer custom estates on premium golf course lots. The architectural character is predominantly Mediterranean and Tuscan-inspired, though newer builds have introduced contemporary desert and transitional styles. Homes typically range from 4,000 to 10,000+ square feet, with many featuring expansive outdoor living spaces, infinity pools, and covered loggias overlooking the Jack Nicklaus-redesigned championship course.</p>
                   <p>The community's guard gate provides an additional layer of security beyond the Southern Highlands master community gates, creating a double-gated environment that appeals to executives, entertainers, and high-net-worth families. The proximity to the Southern Highlands Golf Club is Olympia Ridge's defining advantage — many homes have direct fairway views, and the clubhouse, dining facilities, and practice areas are within a short cart ride or walk.</p>
                   <p>Location is another significant draw. Harry Reid International Airport is approximately 15 minutes away, the Las Vegas Strip is 20 minutes north via I-15, and Henderson's retail and dining corridor along St. Rose Parkway is 15 minutes east. For luxury buyers who want private golf community living with genuine convenience, Olympia Ridge delivers at price points that represent strong value relative to comparable Summerlin guard-gated addresses.</p>

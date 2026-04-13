@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Mesa',
-  description: 'The Mesa is a master-planned · new construction community in Las Vegas, Nevada.',
+  description: 'The Mesa is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89135), established in 2018 by Howard Hughes Corporation, spanning 300 acres. Home prices range from $600K–$1M.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.158, longitude: -115.322 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinTheMesaPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Mesa is one of Summerlin South's newest villages, bringing modern new construction to one of the most desirable positions in the master plan. Launched in 2018 by the Howard Hughes Corporation, The Mesa features contemporary desert architecture, energy-efficient homes, and thoughtfully designed community spaces that reflect current design sensibilities and buyer expectations.</p>
+                  <p>The Mesa is a master-planned · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89135), spanning 300 acres, with 1,200+ homes, where home prices range from $600K–$1M. The Mesa is one of Summerlin South's newest villages, bringing modern new construction to one of the most desirable positions in the master plan. Launched in 2018 by the Howard Hughes Corporation, The Mesa features contemporary desert architecture, energy-efficient homes, and thoughtfully designed community spaces that reflect current design sensibilities and buyer expectations.</p>
                   <p>Homes in The Mesa range from approximately $600,000 for production homes to around $1 million for larger semi-custom homes on premium lots. Active builders include Toll Brothers, Lennar, and Taylor Morrison, offering a range of floor plans from approximately 2,000 to 4,000 square feet. The architectural standard is distinctly modern — flat and low-slope rooflines, clean stucco lines, natural stone accents, and large windows that connect indoor and outdoor living.</p>
                   <p>The Mesa's position in the western portion of Summerlin South places it close to Red Rock Canyon (approximately 10 minutes), the Summerlin trail system, and the outdoor recreation opportunities that define the western Summerlin lifestyle. Downtown Summerlin is approximately 10 minutes north, and the 215 Beltway provides efficient connections throughout the valley.</p>
                   <p>For buyers who want new-construction quality in Summerlin South with modern architecture and proximity to Red Rock Canyon, The Mesa hits a compelling price-to-value ratio. It delivers contemporary design and builder warranties at price points below the guard-gated luxury communities like The Ridges, while still commanding the premium location and mountain proximity that make western Summerlin so desirable.</p>

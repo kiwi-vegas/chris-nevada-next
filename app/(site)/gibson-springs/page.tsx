@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Gibson Springs',
-  description: 'Gibson Springs is a established · family-friendly community in Henderson, Nevada.',
+  description: 'Gibson Springs is a established · family-friendly community in Henderson, Nevada (ZIP 89074), established in 1993 by Lewis Homes / Various Builders, spanning ~400 acres. Home prices range from $350K–$550K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.055, longitude: -115.05 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89074', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },

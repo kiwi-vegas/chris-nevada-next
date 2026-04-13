@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Black Mountain Ranch',
-  description: 'Black Mountain Ranch is a suburban · established community in Henderson, Nevada.',
+  description: 'Black Mountain Ranch is a suburban · established community in Henderson, Nevada (ZIP 89002), established in 1999 by Various builders, spanning ~600 acres. Home prices range from $400K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.028, longitude: -114.965 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89002', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function BlackMountainRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Black Mountain Ranch is a well-established residential community nestled against the base of Black Mountain in Henderson's eastern foothills. Named for the prominent dark-colored volcanic peak that rises above the neighborhood, the community offers a compelling mix of single-family homes with desert mountain views at price points that remain accessible compared to Henderson's luxury guard-gated enclaves.</p>
+                  <p>Black Mountain Ranch is a suburban · established community in Henderson, Nevada (ZIP 89002/89015), established in 1999, developed by Various builders, spanning ~600 acres. Black Mountain Ranch is a well-established residential community nestled against the base of Black Mountain in Henderson's eastern foothills. Named for the prominent dark-colored volcanic peak that rises above the neighborhood, the community offers a compelling mix of single-family homes with desert mountain views at price points that remain accessible compared to Henderson's luxury guard-gated enclaves.</p>
                   <p>Developed primarily between 1999 and the mid-2000s, Black Mountain Ranch features homes built by a mix of national and regional builders including KB Home, Pardee Homes, and Richmond American. Residences range from approximately 1,400 to 3,500 square feet across a variety of single-story and two-story floor plans. The community's gently sloping terrain means many homes enjoy elevated views of the Las Vegas Valley, the Strip, and the surrounding McCullough Range.</p>
                   <p>Black Mountain anchors the community's outdoor lifestyle. The Black Mountain Trail system provides miles of hiking and mountain biking directly from the neighborhood, connecting to Henderson's broader trail network. The community is also close to Sloan Canyon National Conservation Area, home to one of the largest known concentrations of Native American rock art in the United States. Equestrian properties on larger lots along the community's eastern fringe add to the ranch-style character.</p>
                   <p>Henderson's infrastructure surrounds Black Mountain Ranch, with the Galleria at Sunset mall, St. Rose Dominican Hospital, and multiple grocery and dining options within a 10-minute drive. The I-215 beltway provides a direct corridor to the Strip and Harry Reid Airport in approximately 20 minutes. For families, the area is served by solid CCSD schools with several charter and private alternatives nearby.</p>

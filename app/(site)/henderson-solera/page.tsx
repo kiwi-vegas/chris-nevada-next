@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Solera Henderson',
-  description: 'Solera Henderson is a 55+ · guard-gated · active adult community in Henderson, Nevada.',
+  description: 'Solera Henderson is a 55+ · guard-gated · active adult community in Henderson, Nevada (ZIP 89052), established in 2003 by Del Webb, spanning ~200 acres. Home prices range from $350K–$550K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.012, longitude: -115.06 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89052', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -298,7 +298,7 @@ export default async function HendersonSoleraPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Solera Henderson is a guard-gated 55+ active adult community in Henderson, developed by Del Webb and offering an intimate, resort-style lifestyle for active adults seeking community, convenience, and low-maintenance living. Located near the intersection of Eastern Avenue and Horizon Ridge Parkway, Solera provides a quieter alternative to the larger Sun City communities while delivering the same Del Webb quality and amenity standards.</p>
+                  <p>Solera Henderson is a 55+ · guard-gated · active adult community in Henderson, Nevada (ZIP 89052), established in 2003, spanning ~200 acres, with 1,200+ homes. Solera Henderson is a guard-gated 55+ active adult community in Henderson, developed by Del Webb and offering an intimate, resort-style lifestyle for active adults seeking community, convenience, and low-maintenance living. Located near the intersection of Eastern Avenue and Horizon Ridge Parkway, Solera provides a quieter alternative to the larger Sun City communities while delivering the same Del Webb quality and amenity standards.</p>
                   <p>The community features approximately 1,200 single-story homes ranging from about 1,200 to 2,400 square feet, with prices between $350,000 and $550,000. Floor plans emphasize open layouts, covered patios, and low-maintenance desert landscaping. The single-story-only design throughout the community ensures accessibility and aging-in-place capability for all residents.</p>
                   <p>Solera Henderson's clubhouse is the social heart of the community, featuring a resort-style pool and spa, fitness center, ballroom, library, arts and crafts studios, and card rooms. The community offers an active social calendar with clubs, classes, events, and organized activities that foster connection among residents. Walking trails, a community garden, and outdoor recreation areas round out the amenities.</p>
                   <p>The Henderson location places Solera within easy reach of Henderson's excellent medical facilities, shopping centers, restaurants, and parks. The Galleria at Sunset, The District at Green Valley Ranch, and Henderson Hospital are all within a short drive. For active adults who want guard-gated security, social programming, and a Henderson address at a price point below the larger Sun City communities, Solera delivers an exceptional value proposition.</p>

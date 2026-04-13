@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Ridgebrook',
-  description: 'Ridgebrook is a master-planned · new construction community in Las Vegas, Nevada.',
+  description: 'Ridgebrook is a master-planned · new construction community in Las Vegas, Nevada (ZIP 89135), established in 2019 by Howard Hughes Corporation, spanning 280 acres. Home prices range from $600K–$900K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.152, longitude: -115.315 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinRidgebrookPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Ridgebrook is one of Summerlin South's newest villages, delivering fresh new-construction homes with modern architecture in the premium western Summerlin corridor. Launched in 2019 by the Howard Hughes Corporation, Ridgebrook was designed to offer move-up quality new construction at price points accessible to a broad range of buyers — from young professionals to growing families upgrading to more space.</p>
+                  <p>Ridgebrook is a master-planned · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89135), spanning 280 acres, with 1,000+ homes, where home prices range from $600K–$900K. Ridgebrook is one of Summerlin South's newest villages, delivering fresh new-construction homes with modern architecture in the premium western Summerlin corridor. Launched in 2019 by the Howard Hughes Corporation, Ridgebrook was designed to offer move-up quality new construction at price points accessible to a broad range of buyers — from young professionals to growing families upgrading to more space.</p>
                   <p>Homes in Ridgebrook range from approximately $600,000 to around $900,000, with a mix of production and semi-custom homes built by national and regional builders. Floor plans typically range from 2,200 to 3,800 square feet, featuring open layouts, modern kitchens with quartz counters, covered patios for outdoor entertaining, and energy-efficient construction. The architectural character blends desert contemporary elements with transitional styling.</p>
                   <p>Ridgebrook's position in the southwestern portion of Summerlin South places it near Red Rock Canyon (approximately 10 minutes), the premium western Summerlin communities, and the trail system that connects to the broader outdoor recreation network. Downtown Summerlin is approximately 12 minutes north, and the 215 Beltway provides efficient access throughout the valley.</p>
                   <p>For buyers seeking new construction in Summerlin South without the ultra-luxury price points of nearby communities like The Ridges or The Peaks, Ridgebrook delivers a compelling combination of modern design, builder warranties, and western Summerlin location. The village is still actively under development, meaning buyers have the opportunity to purchase new-build homes and choose their finishes.</p>

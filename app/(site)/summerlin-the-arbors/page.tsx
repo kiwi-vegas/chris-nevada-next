@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Arbors',
-  description: 'The Arbors is a master-planned · family community in Las Vegas, Nevada.',
+  description: 'The Arbors is a master-planned · family community in Las Vegas, Nevada (ZIP 89134), established in 1993 by Howard Hughes Corporation, spanning 600 acres. Home prices range from $450K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.2, longitude: -115.28 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89134', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinTheArborsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Arbors is one of Summerlin's original and most established villages, located in the Summerlin North Association. Developed beginning in 1993, The Arbors was among the first residential villages built within the Summerlin master plan and has matured into one of the most desirable family neighborhoods in the Las Vegas Valley. The village benefits from mature landscaping, tree-lined streets, and the established community character that only comes with three decades of residential continuity.</p>
+                  <p>The Arbors is a master-planned · family community within Summerlin in Las Vegas, Nevada (ZIP 89134/89144), developed by Howard Hughes Corporation, spanning 600 acres, with 3,500+ homes. The Arbors is one of Summerlin's original and most established villages, located in the Summerlin North Association. Developed beginning in 1993, The Arbors was among the first residential villages built within the Summerlin master plan and has matured into one of the most desirable family neighborhoods in the Las Vegas Valley. The village benefits from mature landscaping, tree-lined streets, and the established community character that only comes with three decades of residential continuity.</p>
                   <p>Homes in The Arbors range from approximately $450,000 for smaller single-family homes and townhomes to over $800,000 for larger, renovated estate-style properties on premium lots. The architectural character is classic Summerlin — Mediterranean and transitional styles built by a mix of national and regional builders during the 1990s and early 2000s. Many homes have been significantly updated over the years, with modern kitchens, pools, and desert landscaping.</p>
                   <p>The Arbors' location in Summerlin North puts it within easy reach of Downtown Summerlin (approximately 10 minutes), Red Rock Canyon (approximately 15 minutes), and the 215 Beltway for quick access to the rest of the valley. The village is served by strong CCSD schools and is proximate to private options including The Meadows School and Faith Lutheran. For families with school-age children, The Arbors offers a combination of neighborhood stability and school quality that few Las Vegas communities can match.</p>
                   <p>The value proposition of The Arbors is straightforward: it delivers the Summerlin address, mature neighborhood character, strong schools, and convenient location at price points significantly below the newer and more premium villages. For buyers who prioritize established neighborhoods over new construction, The Arbors is one of the best values in Summerlin.</p>

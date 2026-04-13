@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Regency at Summerlin',
-  description: 'Regency at Summerlin is a 55+ · guard-gated community in Las Vegas, Nevada.',
+  description: 'Regency at Summerlin is a 55+ · guard-gated community in Las Vegas, Nevada (ZIP 89135), established in 2015 by Toll Brothers, spanning ~120 acres. Home prices range from $500K–$800K+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.16, longitude: -115.31 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89135', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -298,7 +298,7 @@ export default async function RegencyAtSummerlinPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Regency at Summerlin is a premier 55+ guard-gated active adult community built by Toll Brothers within the Summerlin master plan. Designed for active adults who demand more than a typical age-restricted community, Regency combines guard-gated security, resort-caliber amenities, and the luxury construction quality that Toll Brothers is known for — all wrapped in the distinctive Summerlin lifestyle.</p>
+                  <p>Regency at Summerlin is a 55+ · guard-gated community within Summerlin in Las Vegas, Nevada (ZIP 89135), established in 2015, spanning ~120 acres, with 400+ homes. Regency at Summerlin is a premier 55+ guard-gated active adult community built by Toll Brothers within the Summerlin master plan. Designed for active adults who demand more than a typical age-restricted community, Regency combines guard-gated security, resort-caliber amenities, and the luxury construction quality that Toll Brothers is known for — all wrapped in the distinctive Summerlin lifestyle.</p>
                   <p>The community's private clubhouse is the social and recreational hub, featuring a resort-style pool and spa, state-of-the-art fitness center, movement studio, demonstration kitchen, card and game rooms, and outdoor terraces with fire features. A bocce ball court, putting green, and community gardens provide additional outdoor recreation within the gates.</p>
                   <p>Homes in Regency at Summerlin are exclusively single-story, ranging from approximately 1,800 to 3,200 square feet. Toll Brothers offers several collections with flexible floor plans, gourmet kitchens, spa-inspired master bathrooms, and optional upgrades including casitas, extended covered patios, and multi-slide glass doors. The desert-contemporary architecture features clean lines, stone accents, and landscaped courtyards.</p>
                   <p>The Summerlin address gives Regency residents access to Downtown Summerlin's 125+ shops and restaurants, Red Rock Canyon, championship golf courses, and the entire Summerlin trail system — all within minutes of the guard gate. For active adults seeking a luxury 55+ lifestyle with Toll Brothers quality and Summerlin's amenity infrastructure, Regency at Summerlin is one of the top choices in the Las Vegas Valley.</p>

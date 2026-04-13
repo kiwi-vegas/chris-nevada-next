@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Tuscan Cliffs',
-  description: 'Tuscan Cliffs is a guard-gated · luxury community in Las Vegas, Nevada.',
+  description: 'Tuscan Cliffs is a guard-gated · luxury community in Las Vegas, Nevada (ZIP 89141), established in 2005 by Olympia Group, spanning 160 acres. Home prices range from $800K–$3M.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.978, longitude: -115.188 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89141', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -311,7 +311,7 @@ export default async function TuscanCliffsPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Tuscan Cliffs is one of the most popular guard-gated enclaves within Southern Highlands, offering Mediterranean and Tuscan-inspired luxury homes at price points more accessible than the community's ultra-luxury addresses. The community sits on elevated terrain within Southern Highlands, providing many homes with panoramic views of the Las Vegas Valley, the Spring Mountains, and the fairways of the adjacent Southern Highlands Golf Club.</p>
+                  <p>Tuscan Cliffs is a guard-gated · luxury community within Southern Highlands in Las Vegas, Nevada (ZIP 89141), established in 2005, developed by Olympia Group, spanning 160 acres. Tuscan Cliffs is one of the most popular guard-gated enclaves within Southern Highlands, offering Mediterranean and Tuscan-inspired luxury homes at price points more accessible than the community's ultra-luxury addresses. The community sits on elevated terrain within Southern Highlands, providing many homes with panoramic views of the Las Vegas Valley, the Spring Mountains, and the fairways of the adjacent Southern Highlands Golf Club.</p>
                   <p>Homes in Tuscan Cliffs range from approximately $800,000 for resale homes to over $3 million for premium golf course and ridgeline properties. The architectural character is distinctly Mediterranean — stucco exteriors, clay tile roofs, arched entryways, and stone accents create a cohesive Tuscan aesthetic throughout the community. Homes typically range from 3,000 to 7,000 square feet, with many featuring courtyard entries, wine rooms, and expansive covered patios.</p>
                   <p>The guard gate at Tuscan Cliffs provides an additional layer of security within the already guard-gated Southern Highlands master plan. This double-gated configuration, combined with the community's elevated position and manicured streetscapes, creates a sense of exclusivity that attracts professionals, executives, and families relocating from coastal California markets where comparable quality would command significantly higher prices.</p>
                   <p>Tuscan Cliffs occupies a strategic position in the Southern Highlands pricing hierarchy — more attainable than The Estates or Olympia Ridge, but with the same double guard-gated security, golf club proximity, and airport convenience that define Southern Highlands' premium enclaves. For buyers seeking guard-gated luxury in the south valley without the $2M+ entry point of the top-tier communities, Tuscan Cliffs represents one of the strongest value propositions in Las Vegas.</p>

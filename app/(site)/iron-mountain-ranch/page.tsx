@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Iron Mountain Ranch',
-  description: 'Iron Mountain Ranch is a master-planned · family community in Las Vegas, Nevada.',
+  description: 'Iron Mountain Ranch is a master-planned · family community in Las Vegas, Nevada (ZIP 89131), established in 2004 by Richmond American / KB Home, spanning ~500 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.282, longitude: -115.28 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89131', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function IronMountainRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Iron Mountain Ranch is a well-established family-friendly community in northwest Las Vegas that has quietly become one of the best values in the valley. Located near the intersection of Iron Mountain Road and Farm Road, the community encompasses approximately 2,800+ homes spread across ~500 acres of the northwest valley's gently sloping terrain. The elevated position provides many homes with views of the Spring Mountains, Sheep Range, and the Las Vegas Valley.</p>
+                  <p>Iron Mountain Ranch is a master-planned · family community in Las Vegas, Nevada (ZIP 89131), established in 2004, developed by Richmond American / KB Home, where home prices range from $350K–$600K. Iron Mountain Ranch is a well-established family-friendly community in northwest Las Vegas that has quietly become one of the best values in the valley. Located near the intersection of Iron Mountain Road and Farm Road, the community encompasses approximately 2,800+ homes spread across ~500 acres of the northwest valley's gently sloping terrain. The elevated position provides many homes with views of the Spring Mountains, Sheep Range, and the Las Vegas Valley.</p>
                   <p>Homes in Iron Mountain Ranch range from approximately $350,000 to $600,000, with floor plans spanning 1,500 to 3,200 square feet. The majority of homes were built between 2004 and 2012 by builders including Richmond American, KB Home, and Beazer Homes. Architecture follows the desert contemporary and Mediterranean styles common to Las Vegas neighborhoods of that era, with stucco exteriors, tile roofs, and functional floor plans designed for family living.</p>
                   <p>The community is centered around Iron Mountain Ranch Park, which provides sports fields, playgrounds, walking paths, and picnic areas. Several smaller pocket parks are distributed throughout the neighborhoods, creating green spaces within walking distance of most homes. The community's HOA maintains common areas, landscaping, and community standards that keep Iron Mountain Ranch looking well-cared-for.</p>
                   <p>Iron Mountain Ranch's northwest location provides convenient access to the growing Centennial Hills commercial corridor, the US-95 freeway, and the northwest valley's expanding retail and dining options. Skye Canyon and Providence are nearby newer communities, but Iron Mountain Ranch offers the advantage of mature landscaping, established schools, and proven long-term value at more accessible price points.</p>

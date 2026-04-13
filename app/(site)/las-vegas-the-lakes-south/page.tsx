@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Lakes South',
-  description: 'The Lakes South is a waterfront · established community in Las Vegas, Nevada.',
+  description: 'The Lakes South is a waterfront · established community in Las Vegas, Nevada (ZIP 89117), established in 1990 by Lakes Development Company, spanning ~400 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.135, longitude: -115.262 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89117', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasTheLakesSouthPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Lakes South is the southern portion of The Lakes master-planned community, one of Las Vegas's most distinctive residential developments built around a system of man-made lakes in the west-central valley. The broader Lakes community was developed beginning in the late 1980s and remains one of the few waterfront residential areas in the Las Vegas Valley, providing a unique lifestyle that standard desert communities cannot replicate.</p>
+                  <p>The Lakes South is a waterfront · established community within The Lakes in Las Vegas, Nevada (ZIP 89117/89147), established in 1990, developed by Lakes Development Company, spanning ~400 acres. The Lakes South is the southern portion of The Lakes master-planned community, one of Las Vegas's most distinctive residential developments built around a system of man-made lakes in the west-central valley. The broader Lakes community was developed beginning in the late 1980s and remains one of the few waterfront residential areas in the Las Vegas Valley, providing a unique lifestyle that standard desert communities cannot replicate.</p>
                   <p>The Lakes South area features homes built primarily in the early to mid-1990s, with a mix of single-family residences, townhomes, and patio homes. Many properties in this section enjoy views of the community's lakefront areas or proximity to the walking trails and green space that ring the water features. The mature landscaping and established character of the community give it a settled, resort-like atmosphere that newer developments cannot yet match.</p>
                   <p>Pricing in The Lakes South ranges from approximately $350,000 for smaller townhomes and patio homes to $600,000 or more for larger single-family lakefront or lake-view properties. The community's HOA maintains the lakes, common areas, walking trails, and community amenities, ensuring consistent upkeep and property value protection throughout.</p>
                   <p>The Lakes South benefits from an exceptional central-west location with quick access to Summerlin, the Strip, and multiple freeway interchanges. Sahara Avenue and Desert Foothills Drive provide direct connectivity, and the commercial infrastructure along both corridors includes grocery, dining, medical, and retail services. For buyers seeking waterfront living in a desert city, The Lakes South offers a rare combination of lakefront lifestyle and urban convenience.</p>

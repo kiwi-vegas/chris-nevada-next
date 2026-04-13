@@ -80,7 +80,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Southfork',
-  description: 'Southfork is a guard-gated · family community in Henderson, Nevada.',
+  description: 'Southfork is a guard-gated · family community in Henderson, Nevada (ZIP 89074), established in 1993 by American Nevada Corporation, spanning 120 acres. Home prices range from $450K–$750K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.045, longitude: -115.065 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89074', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -303,7 +303,7 @@ export default async function SouthforkHendersonPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Southfork is a guard-gated residential community in Henderson's Green Valley corridor, offering the security and prestige of a gated address at price points significantly below Henderson's luxury guard-gated enclaves. Developed in the early-to-mid 1990s, Southfork features well-built single-family homes ranging from approximately 1,800 to 3,200 square feet, making it one of the most accessible guard-gated communities in the entire Las Vegas Valley.</p>
+                  <p>Southfork is a guard-gated · family community within Green Valley in Henderson, Nevada (ZIP 89074), established in 1993, developed by American Nevada Corporation, spanning 120 acres. Southfork is a guard-gated residential community in Henderson's Green Valley corridor, offering the security and prestige of a gated address at price points significantly below Henderson's luxury guard-gated enclaves. Developed in the early-to-mid 1990s, Southfork features well-built single-family homes ranging from approximately 1,800 to 3,200 square feet, making it one of the most accessible guard-gated communities in the entire Las Vegas Valley.</p>
                   <p>Homes in Southfork range from approximately $450,000 for smaller homes in the community's interior to $750,000 for larger corner lots and premium positions. The architectural style is classic Southwest — stucco exteriors, tile roofs, and desert-adapted landscaping. Many homeowners have invested in significant renovations over the years, updating kitchens, bathrooms, and outdoor living spaces while maintaining the community's cohesive appearance.</p>
                   <p>The community's guard gate, staffed 24 hours a day, provides a level of security that sets Southfork apart from non-gated neighborhoods in the same price range. For families, the peace of mind of knowing that traffic within the community is exclusively residential creates a safer environment for children. Southfork's streets are quiet, with low traffic volume and a neighborhood feel that many larger communities lack.</p>
                   <p>Location is a key advantage. Southfork sits near Eastern Avenue and Paseo Verde Parkway, minutes from Green Valley Ranch Resort, The District at Green Valley Ranch, Henderson Hospital, and major retail corridors. Freeway access via I-215 puts the Strip and Harry Reid Airport within 15 minutes. For buyers who want guard-gated living without the $1 million+ price tags of Henderson's luxury communities, Southfork is one of the best value propositions in the valley.</p>

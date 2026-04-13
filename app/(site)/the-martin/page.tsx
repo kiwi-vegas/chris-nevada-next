@@ -88,7 +88,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'The Martin',
-  description: 'The Martin is a high-rise · luxury · strip-adjacent community in Las Vegas, Nevada.',
+  description: 'The Martin is a high-rise · luxury · strip-adjacent community in Las Vegas, Nevada (ZIP 89103), established in 2009 by Focus Property Group, spanning ~2 acres. Home prices range from $400K–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.112, longitude: -115.183 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89103', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -306,7 +306,7 @@ export default async function TheMartinPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>The Martin is a 45-story luxury high-rise condominium tower located on Dean Martin Drive, directly adjacent to the Las Vegas Strip and CityCenter. Completed in 2009, the tower contains 372 residences and is named after the legendary Las Vegas entertainer whose spirit embodies the building's combination of sophistication, style, and Strip-adjacent luxury.</p>
+                  <p>The Martin is a high-rise · luxury · strip-adjacent community in Las Vegas, Nevada (ZIP 89103), developed by Focus Property Group, spanning ~2 acres, where home prices range from $400K–$3M+. The Martin is a 45-story luxury high-rise condominium tower located on Dean Martin Drive, directly adjacent to the Las Vegas Strip and CityCenter. Completed in 2009, the tower contains 372 residences and is named after the legendary Las Vegas entertainer whose spirit embodies the building's combination of sophistication, style, and Strip-adjacent luxury.</p>
                   <p>Residences at The Martin range from approximately $400,000 for one-bedroom units to over $3 million for the tower's most expansive penthouses with panoramic Strip, mountain, and valley views. Floor plans are generous by Strip-area standards, with many two-bedroom units exceeding 1,800 square feet. Every residence features floor-to-ceiling glass, European-style kitchens with premium appliances, and spa-inspired bathrooms with designer finishes.</p>
                   <p>The building amenities include a resort-style pool deck with cabanas and Strip views, a state-of-the-art fitness center, a resident lounge, a business center, 24-hour concierge and valet, and a private screening room. The tower's modern glass design makes a striking architectural statement on the Las Vegas skyline, particularly when illuminated at night.</p>
                   <p>The Martin's location on Dean Martin Drive places residents within a five-minute walk of CityCenter, ARIA, Crystals, T-Mobile Arena, and the heart of the Strip. The building also benefits from immediate freeway access via I-15, making it easy to reach the airport, Summerlin, or Henderson. For buyers seeking a luxury high-rise with spacious floor plans, strong amenities, and a Strip-adjacent location at a more accessible price point than CityCenter, The Martin offers an exceptional value proposition.</p>

@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Grand Park',
-  description: 'Grand Park is a master-planned village · new construction community in Las Vegas, Nevada.',
+  description: 'Grand Park is a master-planned village · new construction community in Las Vegas, Nevada (ZIP 89166), established in 2022 by Howard Hughes Corporation, spanning ~2,000 acres. Home prices range from $400K–$3M+.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.215, longitude: -115.345 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function SummerlinGrandParkPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Grand Park is the newest and largest village within the Summerlin master-planned community, representing the next generation of desert living in the Las Vegas Valley. Spanning approximately 2,000 acres along the northwestern edge of Summerlin, Grand Park is being developed by the Howard Hughes Corporation as a self-contained village with its own parks, trails, schools, and commercial centers — while maintaining full integration with Summerlin's broader amenity network.</p>
+                  <p>Grand Park is a master-planned village · new construction community within Summerlin in Las Vegas, Nevada (ZIP 89166/89138), established in 2022, spanning ~2,000 acres, with 5,000+ at build-out homes. Grand Park is the newest and largest village within the Summerlin master-planned community, representing the next generation of desert living in the Las Vegas Valley. Spanning approximately 2,000 acres along the northwestern edge of Summerlin, Grand Park is being developed by the Howard Hughes Corporation as a self-contained village with its own parks, trails, schools, and commercial centers — while maintaining full integration with Summerlin's broader amenity network.</p>
                   <p>With 13 distinct sub-communities planned at full build-out, Grand Park offers a remarkable breadth of housing options rarely found within a single village. Entry-level homes from builders like Lennar and KB Home start in the $400,000 range, while guard-gated enclaves like Carlisle Peak and Glenrock deliver semi-custom luxury homes exceeding $2 million. This diversity makes Grand Park attractive to first-time buyers, move-up families, and luxury buyers alike.</p>
                   <p>Grand Park's location along the western valley rim provides many homesites with dramatic views of Red Rock Canyon and the Spring Mountains. The village is anchored by a planned 50-acre community park — one of the largest in Summerlin's history — that will include athletic fields, playgrounds, event lawns, and extensive trail connections to Summerlin's 250+ mile trail network.</p>
                   <p>Active construction from more than a dozen national and regional builders means inventory turns over rapidly, with new model homes and floor plans regularly introduced. Grand Park is expected to be one of the primary growth engines for Summerlin through the end of the decade, making it both a compelling lifestyle choice and a strong investment opportunity in one of Nevada's most proven real estate markets.</p>

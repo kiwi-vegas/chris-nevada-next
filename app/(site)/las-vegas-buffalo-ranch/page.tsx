@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Buffalo Ranch',
-  description: 'Buffalo Ranch is a established · family · northwest community in Las Vegas, Nevada.',
+  description: 'Buffalo Ranch is a established · family · northwest community in Las Vegas, Nevada (ZIP 89149), established in 1998 by Various Builders, spanning ~500 acres. Home prices range from $400K–$700K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.228, longitude: -115.272 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89149', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
@@ -294,7 +294,7 @@ export default async function LasVegasBuffaloRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Buffalo Ranch is a well-established residential area in northwest Las Vegas, centered along Buffalo Drive between Cheyenne Avenue and Ann Road. Developed primarily between 1998 and 2008, the area offers a solid mix of single-family homes at price points ranging from approximately $400,000 to $700,000 — placing it squarely in the sweet spot for families and professionals seeking quality northwest Las Vegas living without the premium of a master-planned community.</p>
+                  <p>Buffalo Ranch is a established · family · northwest community in Las Vegas, Nevada (ZIP 89149/89129), developed by Various Builders, spanning ~500 acres, with 3,500+ homes. Buffalo Ranch is a well-established residential area in northwest Las Vegas, centered along Buffalo Drive between Cheyenne Avenue and Ann Road. Developed primarily between 1998 and 2008, the area offers a solid mix of single-family homes at price points ranging from approximately $400,000 to $700,000 — placing it squarely in the sweet spot for families and professionals seeking quality northwest Las Vegas living without the premium of a master-planned community.</p>
                   <p>The Buffalo Ranch area sits in a convenient northwest corridor with quick access to the US-95 freeway, providing 15-20 minute commutes to the Strip, Downtown Las Vegas, and the Summerlin business corridor. The area is flanked by major retail centers, grocery stores, and services along Buffalo Drive, making daily errands walkable or a short drive for most residents. Centennial Hills Hospital is nearby, and the TPC Las Vegas golf course is just to the northwest.</p>
                   <p>Housing stock in Buffalo Ranch consists primarily of two-story and single-story single-family homes ranging from approximately 1,600 to 3,200 square feet. Most homes feature stucco and tile roof construction typical of the era, with desert-adapted landscaping. Many neighborhoods have mature trees and established community character. The area attracts repeat buyers who want a proven neighborhood with good schools, convenient access, and steady appreciation at a moderate price point.</p>
                   <p>Buffalo Ranch's location in the northwest growth corridor means the area continues to benefit from surrounding development. New retail, restaurants, and medical facilities along the 215 Beltway and Centennial Parkway have significantly improved the area's convenience in recent years. For buyers who want a northwest Las Vegas address with established value and room to grow, Buffalo Ranch delivers a strong combination of location, livability, and long-term investment potential.</p>

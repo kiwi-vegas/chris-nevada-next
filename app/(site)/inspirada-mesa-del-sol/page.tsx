@@ -68,7 +68,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Mesa del Sol',
-  description: 'Mesa del Sol is a new construction · family community in Henderson, Nevada.',
+  description: 'Mesa del Sol is a new construction · family community in Henderson, Nevada (ZIP 89044), established in 2019 by Lennar / Toll Brothers, spanning ~100 acres. Home prices range from $500K–$800K.',
   geo: { '@type': 'GeoCoordinates', latitude: 35.988, longitude: -115.075 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89044', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -286,7 +286,7 @@ export default async function InspiradaMesaDelSolPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Mesa del Sol is one of the newest and most sought-after neighborhoods within the Inspirada master-planned community in Henderson. Featuring contemporary new construction from premier national builders, Mesa del Sol delivers modern floor plans, energy-efficient design, and the full lifestyle amenities that have made Inspirada one of Henderson's most popular communities for families and move-up buyers.</p>
+                  <p>Mesa del Sol is a new construction · family community within Inspirada in Henderson, Nevada (ZIP 89044), established in 2019, developed by Lennar / Toll Brothers, spanning ~100 acres. Mesa del Sol is one of the newest and most sought-after neighborhoods within the Inspirada master-planned community in Henderson. Featuring contemporary new construction from premier national builders, Mesa del Sol delivers modern floor plans, energy-efficient design, and the full lifestyle amenities that have made Inspirada one of Henderson's most popular communities for families and move-up buyers.</p>
                   <p>Homes in Mesa del Sol are built primarily by Lennar and Toll Brothers, offering a range of floor plans from approximately 1,800 to 3,800 square feet. Architecture is decidedly contemporary — clean lines, open floor plans, gourmet kitchens with large islands, and upgraded standard finishes that reflect the builders' latest design packages. Most homes include two-car garages, private yards, and options for outdoor living spaces.</p>
                   <p>As part of the Inspirada master plan, Mesa del Sol residents enjoy access to the community's extensive amenity package: 3,000+ acres of parks and open space, multiple recreation centers, resort-style pools, sports courts, playgrounds, and an extensive trail system that connects neighborhoods throughout the community. The Inspirada Club campus serves as the social hub with fitness facilities, event spaces, and organized community activities.</p>
                   <p>Mesa del Sol's location in southeastern Henderson provides access to top-rated schools, proximity to the I-215 beltway for commuting, and easy access to Henderson's growing retail and dining options along St. Rose Parkway. For buyers seeking new-construction homes with modern design in a well-amenitized master plan at Henderson's most attainable luxury price point, Mesa del Sol is one of the strongest options available.</p>

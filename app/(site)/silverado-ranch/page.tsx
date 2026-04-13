@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Silverado Ranch',
-  description: 'Silverado Ranch is a master-planned · established community in Henderson, Nevada.',
+  description: 'Silverado Ranch is a master-planned · established community in Henderson, Nevada (ZIP 89123), established in 1996 by Various builders, spanning ~2,000 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.02, longitude: -115.118 },
   address: { '@type': 'PostalAddress', addressLocality: 'Henderson', addressRegion: 'NV', postalCode: '89123', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Henderson' },
@@ -294,7 +294,7 @@ export default async function SilveradoRanchPage() {
                 <PortableText value={cms.overviewBody} />
               ) : (
                 <>
-                  <p>Silverado Ranch is one of the most accessible and centrally located residential communities in the Las Vegas Valley. Straddling the border of Henderson and unincorporated Clark County (Las Vegas address), the community spans approximately 2,000 acres and over 8,000 homes, making it one of the largest residential areas in the southern valley corridor. Its central position between the Strip, Henderson, and the I-15/I-215 interchange makes it exceptionally convenient for commuters.</p>
+                  <p>Silverado Ranch is a master-planned · established community in Henderson, Nevada (ZIP 89123/89183), established in 1996, developed by Various builders, spanning ~2,000 acres. Silverado Ranch is one of the most accessible and centrally located residential communities in the Las Vegas Valley. Straddling the border of Henderson and unincorporated Clark County (Las Vegas address), the community spans approximately 2,000 acres and over 8,000 homes, making it one of the largest residential areas in the southern valley corridor. Its central position between the Strip, Henderson, and the I-15/I-215 interchange makes it exceptionally convenient for commuters.</p>
                   <p>Developed primarily from the mid-1990s through the early 2000s by a variety of national and regional builders, Silverado Ranch features homes ranging from approximately $350,000 for smaller single-story homes to $600,000 for larger upgraded properties on premium lots. The community offers a straightforward, no-frills approach to suburban living — quality single-family homes with yards, parks, and easy access to shopping, schools, and major highways.</p>
                   <p>Silverado Ranch's location along Silverado Ranch Boulevard and Eastern Avenue puts residents within minutes of multiple shopping centers, grocery stores, restaurants, and medical facilities. The Galleria at Sunset mall is a short drive north, and the premium outlets at Las Vegas South are nearby. St. Rose Dominican Hospital's Siena Campus is within the community's boundaries, providing immediate access to emergency and specialty care.</p>
                   <p>For buyers seeking an established, centrally located community with honest price points and excellent commute access, Silverado Ranch delivers outstanding value. The community's proximity to the I-215 beltway and I-15 means the Strip, Harry Reid Airport, Henderson, and Summerlin are all reachable in 15–25 minutes. Low HOA fees, solid infrastructure, and a stable resale market round out the appeal.</p>

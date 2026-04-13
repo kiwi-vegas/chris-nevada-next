@@ -76,7 +76,7 @@ const PLACE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Place',
   name: 'Providence',
-  description: 'Providence is a master-planned community community in Las Vegas, Nevada.',
+  description: 'Providence is a master-planned community community in Las Vegas, Nevada (ZIP 89166), established in 2006 by Focus Property Group, spanning 1,200 acres. Home prices range from $350K–$600K.',
   geo: { '@type': 'GeoCoordinates', latitude: 36.295, longitude: -115.31 },
   address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89166', addressCountry: 'US' },
   containedInPlace: { '@type': 'City', name: 'Las Vegas' },
