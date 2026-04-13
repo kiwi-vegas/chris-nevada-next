@@ -390,18 +390,20 @@ footer { background: var(--navy-deep); border-top: 1px solid rgba(255,255,255,0.
 .schools-tab:hover { color: var(--white); background: rgba(255,255,255,0.15); }
 .schools-tab.active { color: var(--navy); background: var(--gold); border-color: var(--gold); font-weight: 700; }
 .schools-v2-table { border-radius: 0 var(--radius-lg) var(--radius-lg) var(--radius-lg); overflow: hidden; border: 1px solid rgba(255,255,255,0.12); }
-.schools-v2-header { display: grid; grid-template-columns: 1fr 120px; padding: 14px 24px; background: rgba(255,255,255,0.1); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
-.schools-v2-row { display: grid; grid-template-columns: 1fr 120px; padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,0.08); transition: background var(--transition); }
+.schools-v2-header { display: grid; grid-template-columns: 1fr 120px 80px; padding: 14px 24px; background: rgba(255,255,255,0.1); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+.schools-v2-row { display: grid; grid-template-columns: 1fr 120px 80px; padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,0.08); transition: background var(--transition); }
 .schools-v2-row:last-child { border-bottom: none; }
 .schools-v2-row:nth-child(odd) { background: rgba(255,255,255,0.04); }
 .schools-v2-row:nth-child(even) { background: rgba(255,255,255,0.07); }
 .schools-v2-row:hover { background: rgba(255,255,255,0.12); }
 .schools-v2-name { font-size: 14px; font-weight: 500; color: var(--white); }
-.schools-v2-grades { font-size: 13px; color: rgba(255,255,255,0.5); text-align: right; }
+.schools-v2-grades { font-size: 13px; color: rgba(255,255,255,0.5); }
+.schools-v2-rating { font-size: 12px; font-weight: 700; color: var(--white); background: rgba(255,255,255,0.12); padding: 3px 10px; border-radius: 4px; text-align: center; justify-self: center; }
+.schools-v2-rating.top-rated { background: var(--gold); color: var(--navy); }
 .schools-v2-note { font-size: 12px; color: rgba(255,255,255,0.35); font-style: italic; margin-top: 16px; }
 @media (max-width: 600px) {
   .schools-tab { padding: 10px 16px; font-size: 12px; }
-  .schools-v2-header, .schools-v2-row { grid-template-columns: 1fr 80px; padding: 12px 16px; }
+  .schools-v2-header, .schools-v2-row { grid-template-columns: 1fr 70px 60px; padding: 12px 16px; }
   .schools-v2-name { font-size: 13px; }
 }
 .schools-layout { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; margin-top: 48px; }
