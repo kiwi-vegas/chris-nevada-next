@@ -87,7 +87,7 @@ export default function PreApprovalForm() {
         </p>
         <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="tel:+17252399950" className="btn-gold">Call 725.239.9950</a>
-          <a href="mailto:chris@nevadarealestategroup.net" className="btn-outline">Email Us</a>
+          <a href="mailto:info@nevadagroup.com" className="btn-outline">Email Us</a>
         </div>
       </div>
     )

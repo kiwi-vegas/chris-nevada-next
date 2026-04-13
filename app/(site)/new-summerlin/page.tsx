@@ -53,7 +53,7 @@ const AGENT_SCHEMA = {
   name: 'Nevada Real Estate Group',
   url: 'https://www.nevadarealestategroup.com',
   telephone: '+17252399950',
-  email: 'info@nevadarealestategroup.com',
+  email: 'info@nevadagroup.com',
   address: { '@type': 'PostalAddress', streetAddress: '8945 W Russell Rd #170', addressLocality: 'Las Vegas', addressRegion: 'NV', postalCode: '89148', addressCountry: 'US' },
   areaServed: [
     { '@type': 'City', name: 'Las Vegas' },

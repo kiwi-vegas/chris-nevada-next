@@ -51,8 +51,8 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <h4>Contact Us</h4>
-            <p>Email: <a href="mailto:chris@reno775.com">chris@reno775.com</a></p>
-            <p>Phone: <a href="tel:+17027476419">(702) 747-6419</a></p>
+            <p>Email: <a href="mailto:info@nevadagroup.com">info@nevadagroup.com</a></p>
+            <p>Phone: <a href="tel:+17252399950">725.239.9950</a></p>
           </div>
           <div className="footer-col">
             <h4>Follow Us</h4>
