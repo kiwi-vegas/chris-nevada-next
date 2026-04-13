@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "Is Anthem Village good for families?",
     "a": "Yes. Anthem Village is one of the most popular family communities in Henderson, with top-rated schools, extensive parks and trails, community pools, and a safe, well-maintained environment."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Anthem Village?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Anthem Village can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Anthem Village?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Anthem Village have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

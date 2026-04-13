@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "Is Kestrel Commons still building?",
     "a": "Yes — Kestrel Commons is an actively developing village with new construction available from multiple builders. Buyers can purchase new homes and customize finishes."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Kestrel Commons?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Kestrel Commons can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Kestrel Commons?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Kestrel Commons have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

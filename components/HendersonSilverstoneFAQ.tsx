@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How does Silverstone compare to Seven Hills?",
     "a": "Silverstone offers similar Henderson quality at a lower price point. Seven Hills has a golf course and slightly more premium positioning, but Silverstone delivers excellent value."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Silverstone?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Silverstone can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Silverstone?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Silverstone have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

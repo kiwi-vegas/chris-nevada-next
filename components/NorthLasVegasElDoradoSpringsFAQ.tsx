@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "Is El Dorado Springs near Nellis Air Force Base?",
     "a": "Yes. El Dorado Springs is approximately 10 minutes from Nellis Air Force Base via Craig Road East, making it a popular choice for military families and civilian employees."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within El Dorado Springs?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in El Dorado Springs can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in El Dorado Springs?",
+    "a": "New construction availability varies by season and builder phase. Some sections of El Dorado Springs have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

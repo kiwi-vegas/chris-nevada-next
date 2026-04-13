@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How does The Gardens compare to The Pueblo?",
     "a": "Both are established Summerlin South villages at accessible price points. The Gardens emphasizes park-centered design with extensive green spaces. The Pueblo tends to have slightly lower entry pricing. Both offer excellent Summerlin South value."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within The Gardens?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in The Gardens can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in The Gardens?",
+    "a": "New construction availability varies by season and builder phase. Some sections of The Gardens have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

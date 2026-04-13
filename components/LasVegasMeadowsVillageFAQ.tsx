@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What schools serve Meadows Village?",
     "a": "Public schools include Bracken Elementary, Johnson Middle School, and Valley High School. The top private option is The Meadows School (A+), located within the neighborhood."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Meadows Village?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Meadows Village can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Meadows Village?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Meadows Village have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

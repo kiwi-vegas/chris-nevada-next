@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How far is Boulder City from the Strip?",
     "a": "Boulder City is approximately 30 minutes from the Las Vegas Strip via I-11 and I-215. Harry Reid International Airport is about 35 minutes away."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Boulder City?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Boulder City can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Boulder City?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Boulder City have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

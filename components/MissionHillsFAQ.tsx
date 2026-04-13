@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How does Mission Hills compare to Anthem?",
     "a": "Mission Hills offers established Henderson living at lower price points than Anthem, with less mountainous terrain but similarly good schools and family amenities. Anthem offers more trail access and mountain views at a premium."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Mission Hills?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Mission Hills can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Mission Hills?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Mission Hills have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

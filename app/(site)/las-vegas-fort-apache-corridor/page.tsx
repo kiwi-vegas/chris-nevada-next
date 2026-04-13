@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is the Fort Apache Corridor a good investment?",
     "a": "Yes. The corridor benefits from Summerlin proximity, growing commercial development, and limited west-side land supply. Consistent demand supports steady appreciation."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Fort Apache Corridor?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Fort Apache Corridor can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Fort Apache Corridor?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Fort Apache Corridor have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

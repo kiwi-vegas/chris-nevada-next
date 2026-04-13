@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "When was Tuscana built?",
     "a": "Tuscana was developed starting in 2003, with most homes built between 2003 and 2012. The community features established landscaping and a settled neighborhood character."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Tuscana?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Tuscana can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Tuscana?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Tuscana have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

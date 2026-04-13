@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What is near Coronado Ranch?",
     "a": "Coronado Ranch is near Cornerstone Park, the Henderson Pavilion, Galleria at Sunset mall, and the I-215 Beltway for easy access to the Strip, airport, and the broader valley."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Coronado Ranch?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Coronado Ranch can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Coronado Ranch?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Coronado Ranch have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

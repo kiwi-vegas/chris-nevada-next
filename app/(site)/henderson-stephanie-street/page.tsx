@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "What are HOA fees in the Stephanie Street corridor?",
     "a": "HOA fees vary by neighborhood and range from approximately $50 to $150 per month. Some standalone homes have no HOA. Gated condo communities may have fees up to $200/mo covering amenities and maintenance."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Stephanie Street Corridor?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Stephanie Street Corridor can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Stephanie Street Corridor?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Stephanie Street Corridor have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

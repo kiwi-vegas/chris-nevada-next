@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "What is near the Coronado Ranch area?",
     "a": "The area is near Seven Hills, Anthem, Galleria at Sunset, Henderson Hospital, and the I-215/St. Rose Parkway commercial corridor. Shopping, dining, and medical facilities are within minutes."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Coronado Ranch Area?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Coronado Ranch Area can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Coronado Ranch Area?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Coronado Ranch Area have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How far is The Paseos from Downtown Summerlin?",
     "a": "The Paseos is approximately a 5-minute drive from Downtown Summerlin, which offers 125+ shops and restaurants, the Las Vegas Ballpark, and the Red Rock Resort Casino."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within The Paseos?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in The Paseos can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in The Paseos?",
+    "a": "New construction availability varies by season and builder phase. Some sections of The Paseos have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

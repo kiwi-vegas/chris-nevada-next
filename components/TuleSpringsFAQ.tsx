@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What schools serve Tule Springs?",
     "a": "Tule Springs is served by CCSD schools including Carl A. Hanson Elementary and Legacy High School. Charter options include Coral Academy of Science and Doral Academy."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Tule Springs?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Tule Springs can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Tule Springs?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Tule Springs have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

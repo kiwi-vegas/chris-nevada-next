@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "What schools serve Anthem?",
     "a": "Anthem is served by CCSD schools including John C. Vanderburg Elementary (8/10), Del E. Webb Middle School (7/10), and Coronado High School (6/10). Private options include Henderson International School and Bishop Gorman."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Anthem?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Anthem can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Anthem?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Anthem have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

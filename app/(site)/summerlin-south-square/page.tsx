@@ -51,6 +51,22 @@ const FAQ_DATA = [
   {
     "q": "How does South Square compare to Siena?",
     "a": "Siena is a guard-gated 55+ village with higher price points and staffed security. South Square offers similar age-restricted living at more accessible price points without guard-gated security."
+  },
+  {
+    "q": "What is the age requirement?",
+    "a": "Under the Housing for Older Persons Act (HOPA), at least one resident in each household must be 55 years of age or older. Some communities apply an 80/20 rule where 80% of occupied units must have at least one resident 55+."
+  },
+  {
+    "q": "What social activities and clubs are available?",
+    "a": "Active adult communities typically offer dozens of organized clubs and activities including golf leagues, tennis groups, fitness classes, card and game groups, cultural excursions, seasonal events, and volunteer opportunities. Most have a dedicated activities director."
+  },
+  {
+    "q": "Are grandchildren allowed to visit or stay?",
+    "a": "Yes. Grandchildren and family members of any age can visit and stay temporarily. The age restriction applies to permanent residents, not guests. Each community has specific guest stay policies, typically allowing visits of 30-90 days."
+  },
+  {
+    "q": "What recreational facilities are included?",
+    "a": "Typical 55+ communities include fitness centers, swimming pools, spa facilities, tennis and pickleball courts, walking trails, and a main clubhouse with meeting rooms, a restaurant or cafe, and event spaces. Some include golf courses."
   }
 ]
 

@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How far is Silverado Ranch from the Strip?",
     "a": "Silverado Ranch is approximately 15 minutes from the Las Vegas Strip via I-15. Harry Reid International Airport is also about 15 minutes away. The community's central location makes it one of the most convenient in the valley."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Silverado Ranch?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Silverado Ranch can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Silverado Ranch?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Silverado Ranch have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

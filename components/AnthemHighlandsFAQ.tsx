@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "Is Anthem Highlands a good area for families?",
     "a": "Yes. Anthem Highlands is one of the most popular family neighborhoods in Henderson, with top-rated schools, safe cul-de-sac street design, multiple parks, and a community center that serves as a social hub for families."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Anthem Highlands?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Anthem Highlands can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Anthem Highlands?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Anthem Highlands have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

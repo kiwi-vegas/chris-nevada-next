@@ -51,6 +51,22 @@ const FAQ_DATA = [
   {
     "q": "Was The Ogden renovated?",
     "a": "Yes. The Ogden underwent a significant renovation and modernization in the 2010s, updating common areas, amenities, and unit finishes to contemporary standards."
+  },
+  {
+    "q": "What are the HOA/condo fees and what do they cover?",
+    "a": "Monthly fees vary by building and unit size but typically range from  to ,000+ per month. Fees generally cover building insurance, common area maintenance, pools, fitness center, concierge, valet, and building reserves. Higher floors and larger units pay proportionally more."
+  },
+  {
+    "q": "Can units be rented out?",
+    "a": "Rental policies vary by building. Condo-hotel buildings like Trump International and Palms Place are designed for short-term rental income. Traditional residential high-rises may have minimum lease terms (typically 6-12 months). Check each building's CC&Rs for specific rental restrictions."
+  },
+  {
+    "q": "What views are available?",
+    "a": "Las Vegas high-rises offer Strip views, mountain views, golf course views, and city panoramas depending on the building location, floor level, and unit orientation. Premium floors and corner units command significant price premiums for unobstructed views."
+  },
+  {
+    "q": "Is there concierge service?",
+    "a": "Most luxury high-rises in Las Vegas offer concierge services ranging from basic package receiving and dry cleaning coordination to full-service concierge with restaurant reservations, event tickets, car service, and personal shopping assistance."
   }
 ]
 

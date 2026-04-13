@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is North Valley good for investment?",
     "a": "Yes. North Valley offers affordable entry prices, newer construction, and strong rental demand. It is one of the fastest-appreciating areas in the valley."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within North Valley?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in North Valley can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in North Valley?",
+    "a": "New construction availability varies by season and builder phase. Some sections of North Valley have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

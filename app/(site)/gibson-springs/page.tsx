@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is Gibson Springs good for first-time buyers?",
     "a": "Yes. Gibson Springs is one of the best first-time buyer communities in Henderson due to its affordable price points, low HOA fees, central location, good schools, and Henderson's high safety rankings."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Gibson Springs?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Gibson Springs can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Gibson Springs?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Gibson Springs have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How does Alexander Park compare to Aliante?",
     "a": "Alexander Park offers newer construction at comparable pricing. Aliante offers a more mature master-planned community with golf, casino, and nature park amenities. Both are strong North Las Vegas options — Alexander Park for new construction, Aliante for established community character."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Alexander Park?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Alexander Park can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Alexander Park?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Alexander Park have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

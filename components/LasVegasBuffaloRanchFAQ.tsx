@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What is the commute from Buffalo Ranch?",
     "a": "Buffalo Ranch is well-positioned for commutes with US-95 providing 15-20 minute access to the Strip, Downtown, and Summerlin. The 215 Beltway is also nearby for access to Henderson and the south valley."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Buffalo Ranch?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Buffalo Ranch can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Buffalo Ranch?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Buffalo Ranch have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

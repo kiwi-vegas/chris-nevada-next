@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "When will Grand Park be fully built out?",
     "a": "Grand Park is expected to continue active construction through the end of the decade. As Summerlin's primary growth area, new sub-communities, parks, and amenities are being added on an ongoing basis."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Grand Park?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Grand Park can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Grand Park?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Grand Park have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

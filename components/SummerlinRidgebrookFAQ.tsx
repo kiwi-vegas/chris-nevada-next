@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "When was Ridgebrook established?",
     "a": "Ridgebrook was launched in 2019 and is still actively under development. It is one of the newest villages in the Summerlin South Association."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Ridgebrook?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Ridgebrook can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Ridgebrook?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Ridgebrook have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

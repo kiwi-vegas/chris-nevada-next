@@ -33,6 +33,26 @@ const FAQS = [
   {
     "q": "How does Queensridge compare to Summerlin luxury communities?",
     "a": "Queensridge offers guard-gated luxury comparable to Summerlin's high-end enclaves but at a more central location — 15 minutes to the Strip versus 20-25 minutes from most Summerlin communities. The trade-off is that Queensridge is a more established community without new construction."
+  },
+  {
+    "q": "How does the guard gate entry process work?",
+    "a": "Residents receive transponders or access codes for automatic entry. Guests must be called in by the homeowner or added to a pre-approved list. Delivery drivers and service providers follow the community's vendor access policy. Most guard-gated communities staff the gate 24 hours a day, 7 days a week."
+  },
+  {
+    "q": "Can non-residents access the community for viewings?",
+    "a": "Yes. Prospective buyers can access the community with a licensed real estate agent who coordinates entry with the guard gate in advance. Nevada Real Estate Group handles all gate access arrangements for property showings."
+  },
+  {
+    "q": "What security features are included beyond the guard gate?",
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
+  },
+  {
+    "q": "Are there custom home lot opportunities?",
+    "a": "Some luxury communities offer vacant lots for custom home construction. Lot sizes, architectural guidelines, and approved builders vary by community. Nevada Real Estate Group can help identify available custom lot inventory and connect you with approved builders."
+  },
+  {
+    "q": "What is the resale value trend for luxury homes in this area?",
+    "a": "Luxury properties in guard-gated and premium communities have historically outperformed the broader market in terms of value retention during downturns and appreciation during growth periods. Limited supply in guard-gated communities creates structural price support."
   }
 ]
 

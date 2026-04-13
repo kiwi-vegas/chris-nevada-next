@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "When was Desert Shores built?",
     "a": "Desert Shores was developed in the late 1980s, with most homes built between 1988 and the mid-1990s. The community features some of the most mature landscaping and tree canopy in the Las Vegas Valley."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Desert Shores?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Desert Shores can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Desert Shores?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Desert Shores have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

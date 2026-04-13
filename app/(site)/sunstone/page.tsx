@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is Sunstone a good investment?",
     "a": "Sunstone offers new construction at significantly lower price points than comparable communities in Summerlin or Henderson, positioned in one of the fastest-growing corridors of the Las Vegas Valley. The value proposition is strong for buyers comfortable with the North Las Vegas location."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Sunstone?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Sunstone can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Sunstone?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Sunstone have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

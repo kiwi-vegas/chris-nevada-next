@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Are there trails near Anthem Park?",
     "a": "Yes. Anthem Park connects to the broader Anthem trail system, which links to the surrounding desert wilderness and the 48,000-acre Sloan Canyon National Conservation Area."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Anthem Park?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Anthem Park can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Anthem Park?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Anthem Park have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

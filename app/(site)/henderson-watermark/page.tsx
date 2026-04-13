@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How does Watermark compare to other Henderson communities?",
     "a": "Watermark offers Henderson's quality of life at a lower price point than Seven Hills, Anthem, and MacDonald Highlands. It's ideal for families seeking modern construction and strong schools without guard-gate pricing."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Watermark?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Watermark can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Watermark?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Watermark have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

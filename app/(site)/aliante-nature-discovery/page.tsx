@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is Nature Discovery at Aliante good for families?",
     "a": "Yes. The nature park, community pools, walking trails, and affordable pricing make the Nature Discovery area one of the most family-friendly sections of Aliante."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Nature Discovery at Aliante?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Nature Discovery at Aliante can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Nature Discovery at Aliante?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Nature Discovery at Aliante have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

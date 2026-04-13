@@ -33,6 +33,26 @@ const FAQS = [
   {
     "q": "Is Southwest Las Vegas good for investment?",
     "a": "Southwest Las Vegas offers strong investment fundamentals: newer construction, growing population, strong rental demand, and limited remaining developable land. Appreciation has been consistent across market cycles."
+  },
+  {
+    "q": "What are the best neighborhoods for families?",
+    "a": "Family-oriented neighborhoods with top-rated schools, parks, and community amenities are found throughout the area. The best fit depends on budget, school preferences, and commute needs. Nevada Real Estate Group can provide neighborhood-specific guidance based on your family's priorities."
+  },
+  {
+    "q": "How do property taxes compare to other areas?",
+    "a": "Nevada has no state income tax, and property tax rates are among the lowest in the country. Clark County property taxes are typically 0.5-0.7% of assessed value (not market value). A ,000 home might pay ,500-,500 per year in property taxes."
+  },
+  {
+    "q": "What is the rental market like for investors?",
+    "a": "The Las Vegas metro area has a strong rental market driven by population growth, tourism industry employment, and relocation from higher-cost states. Rental yields vary by area and property type but typically range from 4-7% gross depending on location and price point."
+  },
+  {
+    "q": "How has the market performed over the past year?",
+    "a": "The Las Vegas housing market has shown steady appreciation with moderate inventory growth. Prices have increased year-over-year while days on market have normalized from pandemic-era lows. Contact Nevada Real Estate Group for the most current market data specific to this area."
+  },
+  {
+    "q": "What should I know about buying in Nevada as an out-of-state buyer?",
+    "a": "Nevada offers significant tax advantages including no state income tax, no inheritance tax, and relatively low property taxes. The buying process is similar to most states. Out-of-state buyers can complete most of the process remotely with the help of a local agent. Nevada Real Estate Group works with relocation buyers regularly."
   }
 ]
 

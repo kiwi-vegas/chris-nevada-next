@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What schools serve Boulder Hills?",
     "a": "The area is served by CCSD schools including Jydstrup Elementary (7/10) and Shadow Ridge High School (6/10). Doral Academy (9/10) and Coral Academy (8/10) are nearby charter options."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Boulder Hills at Skye Canyon?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Boulder Hills at Skye Canyon can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Boulder Hills at Skye Canyon?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Boulder Hills at Skye Canyon have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

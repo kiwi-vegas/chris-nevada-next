@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is Iron Mountain Ranch a good investment?",
     "a": "Iron Mountain Ranch has shown strong long-term appreciation and the affordable price points create strong rental demand. The northwest valley's continued growth supports ongoing value."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Iron Mountain Ranch?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Iron Mountain Ranch can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Iron Mountain Ranch?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Iron Mountain Ranch have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

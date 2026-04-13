@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How does Discovery compare to The Crossing?",
     "a": "Discovery offers modern new construction with current floor plans and energy efficiency, while The Crossing offers established neighborhoods at slightly lower price points. Discovery appeals to buyers who prioritize new construction; The Crossing appeals to buyers who value mature neighborhoods."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Discovery?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Discovery can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Discovery?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Discovery have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

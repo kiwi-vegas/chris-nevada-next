@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What is near Paseo Verde?",
     "a": "Paseo Verde is near Green Valley Ranch Resort & Casino, Anthem Marketplace, Henderson Executive Airport, and the I-215 beltway. Shopping, dining, and medical facilities are within minutes."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Paseo Verde?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Paseo Verde can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Paseo Verde?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Paseo Verde have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

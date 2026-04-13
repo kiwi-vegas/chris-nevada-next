@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How far is Summerlin South from the Strip?",
     "a": "Summerlin South is approximately 20 minutes from the Las Vegas Strip via Summerlin Parkway and I-15."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Summerlin South Area?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Summerlin South Area can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Summerlin South Area?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Summerlin South Area have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

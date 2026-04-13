@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How far is Black Mountain Ranch from the Strip?",
     "a": "Black Mountain Ranch is approximately 20 minutes from the Las Vegas Strip via the I-215 beltway and I-15. Harry Reid International Airport is also about 20 minutes away."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Black Mountain Ranch?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Black Mountain Ranch can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Black Mountain Ranch?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Black Mountain Ranch have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

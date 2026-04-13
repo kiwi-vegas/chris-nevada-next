@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "What are the newest homes near Tropical Parkway?",
     "a": "Recent construction by national builders has delivered homes with contemporary floor plans, energy efficiency, and modern finishes. Active new-construction communities are nearby in Park Highlands and Valley Vista."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Tropical Parkway Corridor?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Tropical Parkway Corridor can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Tropical Parkway Corridor?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Tropical Parkway Corridor have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

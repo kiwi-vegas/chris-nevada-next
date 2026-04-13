@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How far is the Green Valley Plaza area from the Strip?",
     "a": "The Green Valley Plaza area is approximately 18 minutes from the Las Vegas Strip via I-215 and I-15."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Green Valley Plaza Area?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Green Valley Plaza Area can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Green Valley Plaza Area?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Green Valley Plaza Area have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

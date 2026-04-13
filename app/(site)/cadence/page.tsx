@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is there a 55+ community in Cadence?",
     "a": "Yes. Heritage at Cadence is a guard-gated 55+ active adult community within the Cadence master plan, offering single-story homes, a private recreation center, and age-restricted living."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Cadence?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Cadence can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Cadence?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Cadence have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

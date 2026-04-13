@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What schools serve Desert Shores North?",
     "a": "Desert Shores North is served by CCSD schools including Cimarron-Memorial High School. Private options include The Meadows School (A+) and Faith Lutheran (A)."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Desert Shores North?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Desert Shores North can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Desert Shores North?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Desert Shores North have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

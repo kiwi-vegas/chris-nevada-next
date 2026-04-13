@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "Is there new construction in Enterprise?",
     "a": "Yes. Enterprise has some of the most active new construction in the Las Vegas Valley. National builders are developing new subdivisions throughout the southern portions of the area, with new homes typically priced from the high $300s to mid $600s."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Enterprise?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Enterprise can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Enterprise?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Enterprise have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

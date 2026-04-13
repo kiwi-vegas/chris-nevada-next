@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What schools serve Skye Hills?",
     "a": "Skye Hills is served by CCSD schools including Scherkenbach Elementary and Centennial High School. Charter options include Coral Academy of Science and Doral Academy of Nevada."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Skye Hills?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Skye Hills can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Skye Hills?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Skye Hills have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "Is East Henderson good for outdoor enthusiasts?",
     "a": "Yes. East Henderson's proximity to Lake Mead, the River Mountains Trail, and the Bootleg Canyon trail system makes it one of the best communities in the valley for outdoor recreation."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within East Henderson?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in East Henderson can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in East Henderson?",
+    "a": "New construction availability varies by season and builder phase. Some sections of East Henderson have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is Downtown Summerlin near Summerlin North?",
     "a": "Yes. Downtown Summerlin is approximately 5 minutes from most Summerlin North neighborhoods, offering 125+ shops, restaurants, City National Arena, and the Las Vegas Ballpark."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Summerlin North Area?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Summerlin North Area can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Summerlin North Area?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Summerlin North Area have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

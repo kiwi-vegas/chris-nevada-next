@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is Green Valley South a good area for families?",
     "a": "Yes. Green Valley South is one of Henderson's most popular family areas, with highly rated schools, multiple parks, connected trails, and safe neighborhoods. The community amenities and central location make it practical for daily family life."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Green Valley South?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Green Valley South can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Green Valley South?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Green Valley South have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

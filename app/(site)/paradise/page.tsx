@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How close is Paradise to the airport?",
     "a": "Paradise contains Harry Reid International Airport within its boundaries. Depending on the neighborhood, residents can be at the airport terminal in 5–15 minutes — the shortest airport commute of any community in the valley."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Paradise?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Paradise can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Paradise?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Paradise have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

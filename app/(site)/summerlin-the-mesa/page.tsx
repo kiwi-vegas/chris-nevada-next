@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How does The Mesa compare to Ridgebrook?",
     "a": "Both are new-construction Summerlin South villages at similar price points. The Mesa tends toward contemporary flat-roof architecture, while Ridgebrook offers a mix of styles. Both deliver modern construction and builder warranties in premium Summerlin South locations."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within The Mesa?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in The Mesa can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in The Mesa?",
+    "a": "New construction availability varies by season and builder phase. Some sections of The Mesa have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

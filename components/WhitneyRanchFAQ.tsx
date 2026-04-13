@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "Is Whitney Ranch a good area for families?",
     "a": "Yes. Whitney Ranch is one of Henderson's most popular family communities due to its central location, well-regarded schools, multiple parks and playgrounds, walking paths, and easy access to youth sports leagues and activities throughout Henderson."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Whitney Ranch?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Whitney Ranch can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Whitney Ranch?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Whitney Ranch have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

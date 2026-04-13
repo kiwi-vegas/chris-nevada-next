@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What are HOA fees in Summerlin West?",
     "a": "HOA fees in Summerlin West typically range from $150 to $400 per month, covering the Summerlin master association fee plus individual neighborhood sub-association fees. Guard-gated communities may have higher fees."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Summerlin West?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Summerlin West can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Summerlin West?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Summerlin West have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

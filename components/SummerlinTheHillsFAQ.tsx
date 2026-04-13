@@ -33,6 +33,18 @@ const FAQS = [
   {
     "q": "How does The Hills compare to The Canyons?",
     "a": "Both are established Summerlin North villages with guard-gated enclaves. The Canyons has five guard-gated options with a broader price range extending to $4M+. The Hills has one guard-gated enclave (Mountain Trails) with a more moderate price ceiling. Both offer strong schools and established character."
+  },
+  {
+    "q": "How does the guard gate entry process work?",
+    "a": "Residents receive transponders or access codes for automatic entry. Guests must be called in by the homeowner or added to a pre-approved list. Delivery drivers and service providers follow the community's vendor access policy. Most guard-gated communities staff the gate 24 hours a day, 7 days a week."
+  },
+  {
+    "q": "Can non-residents access the community for viewings?",
+    "a": "Yes. Prospective buyers can access the community with a licensed real estate agent who coordinates entry with the guard gate in advance. Nevada Real Estate Group handles all gate access arrangements for property showings."
+  },
+  {
+    "q": "What security features are included beyond the guard gate?",
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
   }
 ]
 

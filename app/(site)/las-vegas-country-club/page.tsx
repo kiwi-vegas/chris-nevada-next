@@ -51,6 +51,18 @@ const FAQ_DATA = [
   {
     "q": "Are the homes midcentury?",
     "a": "Many original homes date to the late 1960s and 1970s with midcentury architecture. Many have been fully remodeled with contemporary interiors while preserving the exterior character. The community offers renovation potential at every price point."
+  },
+  {
+    "q": "How does the guard gate entry process work?",
+    "a": "Residents receive transponders or access codes for automatic entry. Guests must be called in by the homeowner or added to a pre-approved list. Delivery drivers and service providers follow the community's vendor access policy. Most guard-gated communities staff the gate 24 hours a day, 7 days a week."
+  },
+  {
+    "q": "Can non-residents access the community for viewings?",
+    "a": "Yes. Prospective buyers can access the community with a licensed real estate agent who coordinates entry with the guard gate in advance. Nevada Real Estate Group handles all gate access arrangements for property showings."
+  },
+  {
+    "q": "What security features are included beyond the guard gate?",
+    "a": "Most guard-gated communities include perimeter walls, security patrols, surveillance cameras at entry points, and emergency response coordination. Some communities also offer interior patrol routes and resident notification systems."
   }
 ]
 

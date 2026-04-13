@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How does Nevada Trails compare to Cadence?",
     "a": "Nevada Trails offers a more established neighborhood with mature landscaping, while Cadence has more active new construction. Both are excellent Henderson master-planned communities with strong amenity packages."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Nevada Trails at Inspirada?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Nevada Trails at Inspirada can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Nevada Trails at Inspirada?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Nevada Trails at Inspirada have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

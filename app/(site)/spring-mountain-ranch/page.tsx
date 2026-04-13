@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Who built homes in Spring Mountain Ranch?",
     "a": "Various respected builders contributed to Spring Mountain Ranch over the 2003–2015 build period. The diversity of builders means a wide range of floor plans and architectural styles."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Spring Mountain Ranch?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Spring Mountain Ranch can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Spring Mountain Ranch?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Spring Mountain Ranch have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

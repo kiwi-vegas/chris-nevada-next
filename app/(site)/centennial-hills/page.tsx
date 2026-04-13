@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Is there new construction in Centennial Hills?",
     "a": "Yes. Several areas within Centennial Hills have active new construction, particularly in the Tule Springs area and the western sections. National builders are developing new subdivisions with contemporary floor plans."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Centennial Hills?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Centennial Hills can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Centennial Hills?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Centennial Hills have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

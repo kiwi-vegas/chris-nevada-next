@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How does Aliante compare to Summerlin?",
     "a": "Aliante offers a similar master-planned community experience to Summerlin — with golf, parks, trails, and commercial amenities — at price points typically 20–30% lower. The trade-off is a longer commute to the Strip and a North Las Vegas address."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Aliante?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Aliante can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Aliante?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Aliante have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

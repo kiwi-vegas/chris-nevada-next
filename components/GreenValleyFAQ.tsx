@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "What are HOA fees in Green Valley?",
     "a": "HOA fees in Green Valley range from approximately $30 to $300+ per month depending on the specific neighborhood and amenities. Guard-gated and golf communities have higher fees, while established neighborhoods may have minimal association fees."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Green Valley?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Green Valley can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Green Valley?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Green Valley have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

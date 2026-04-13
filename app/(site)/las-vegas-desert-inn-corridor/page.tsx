@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How far is the Desert Inn Corridor from the airport?",
     "a": "The eastern end of the corridor is approximately 15 minutes from Harry Reid International Airport via I-15 South. Western sections are 20-25 minutes depending on traffic."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Desert Inn Corridor?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Desert Inn Corridor can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Desert Inn Corridor?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Desert Inn Corridor have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

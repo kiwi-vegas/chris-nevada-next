@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "What are HOA fees in the Arts District?",
     "a": "HOA fees vary widely from $100 to $400 per month depending on the building type. Condo and loft buildings typically have higher fees covering shared amenities. Standalone homes and townhomes may have lower or no HOA fees."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Arts District / 18b?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Arts District / 18b can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Arts District / 18b?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Arts District / 18b have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

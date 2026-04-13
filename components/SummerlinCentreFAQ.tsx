@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How does Summerlin Centre compare to The Gardens?",
     "a": "Both are established Summerlin South villages at similar price points. The Gardens emphasizes parks and green spaces. Summerlin Centre emphasizes central location and commercial convenience. Both are excellent mid-range Summerlin South values."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Summerlin Centre?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Summerlin Centre can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Summerlin Centre?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Summerlin Centre have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

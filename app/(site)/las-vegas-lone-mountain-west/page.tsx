@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "What is the elevation of Lone Mountain West?",
     "a": "Lone Mountain West sits at approximately 3,000 to 3,400 feet elevation, noticeably higher than the valley floor. This provides slightly cooler temperatures in summer and dramatic views of the surrounding mountain ranges."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Lone Mountain West?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Lone Mountain West can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Lone Mountain West?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Lone Mountain West have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

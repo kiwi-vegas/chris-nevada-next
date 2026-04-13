@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "How does Green Valley Ranch compare to Summerlin?",
     "a": "Both are premier master-planned communities. Summerlin is on the west side near Red Rock Canyon with a broader price range. Green Valley Ranch is in Henderson with a focus on family-friendly living, top schools, and central convenience. Both offer excellent quality of life at similar entry-level price points."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Green Valley Ranch?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Green Valley Ranch can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Green Valley Ranch?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Green Valley Ranch have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

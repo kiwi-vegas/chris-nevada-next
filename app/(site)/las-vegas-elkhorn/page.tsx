@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "What is near the Elkhorn area?",
     "a": "The Elkhorn area is near Lone Mountain, Centennial Hills, Summerlin, and Floyd Lamb Park at Tule Springs. Shopping and dining are available along Elkhorn Road and Cheyenne Avenue."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Elkhorn?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Elkhorn can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Elkhorn?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Elkhorn have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

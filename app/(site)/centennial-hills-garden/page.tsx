@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "When were homes in the Garden area built?",
     "a": "Most homes were built between 2003 and 2010 by national builders. The established construction era provides mature landscaping and proven neighborhood infrastructure."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Garden at Centennial Hills?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Garden at Centennial Hills can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Garden at Centennial Hills?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Garden at Centennial Hills have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

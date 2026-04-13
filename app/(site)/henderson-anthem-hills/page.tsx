@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Are there hiking trails near Anthem Hills?",
     "a": "Yes. The McCullough Hills Trail system provides direct access to desert hiking, mountain biking, and wildlife viewing from the edges of the community. Anthem's internal trail system also connects throughout the master plan."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Anthem Hills?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Anthem Hills can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Anthem Hills?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Anthem Hills have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

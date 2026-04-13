@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How old is Peccole Ranch?",
     "a": "Development of Peccole Ranch began in 1989, making it one of the more established master-planned communities in Las Vegas. The mature landscaping and proven property values are among its key selling points."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Peccole Ranch?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Peccole Ranch can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Peccole Ranch?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Peccole Ranch have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "When was Anthem Center built?",
     "a": "Most homes in the Anthem Center area were built between 1998 and 2006 during the original phases of the Anthem master plan. Construction quality is typical of Del Webb and Pulte Group production homes from this era."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Anthem Center?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Anthem Center can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Anthem Center?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Anthem Center have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

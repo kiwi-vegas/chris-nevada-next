@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "Are there HOAs in Whitney?",
     "a": "Many older homes in Whitney have no HOA. Newer subdivisions typically have modest HOA fees ranging from $25 to $75 per month covering basic common area maintenance."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Whitney?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Whitney can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Whitney?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Whitney have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

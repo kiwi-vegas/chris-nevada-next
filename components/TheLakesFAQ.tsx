@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "When was The Lakes built?",
     "a": "The Lakes was developed beginning in the late 1980s by the Collins Brothers. Most homes were built from the late 1980s through the early 2000s, giving the community mature landscaping and established neighborhood character."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within The Lakes?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in The Lakes can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in The Lakes?",
+    "a": "New construction availability varies by season and builder phase. Some sections of The Lakes have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

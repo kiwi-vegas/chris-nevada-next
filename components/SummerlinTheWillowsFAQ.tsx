@@ -33,6 +33,14 @@ const FAQS = [
   {
     "q": "How does The Willows compare to The Arbors?",
     "a": "Both are established Summerlin North villages at similar price points. The Arbors is slightly older with more mature trees. The Willows was built a few years later and has a slightly newer feel. Both offer excellent Summerlin value for families."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within The Willows?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in The Willows can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in The Willows?",
+    "a": "New construction availability varies by season and builder phase. Some sections of The Willows have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 

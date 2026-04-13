@@ -51,6 +51,14 @@ const FAQ_DATA = [
   {
     "q": "Are there HOAs in Charleston Heights?",
     "a": "Most homes in Charleston Heights do not have HOA fees or have minimal association dues under $50 per month. This is a significant cost advantage compared to newer master-planned communities."
+  },
+  {
+    "q": "What are the best sub-neighborhoods within Charleston Heights?",
+    "a": "The best sub-neighborhood depends on your priorities — school zones, lot size, home age, and proximity to amenities all vary within the community. Nevada Real Estate Group agents who specialize in Charleston Heights can walk you through the specific blocks and streets that match your criteria."
+  },
+  {
+    "q": "How is new construction availability in Charleston Heights?",
+    "a": "New construction availability varies by season and builder phase. Some sections of Charleston Heights have active new home sales while others are fully built out with resale-only inventory. Contact Nevada Real Estate Group for the most current new construction options."
   }
 ]
 
